@@ -526,7 +526,7 @@
                                     </angle>
                                 </rotate>
                                 <orientation clockwise="false"/>
-                                <file name="PFD.ogfx" path="."/>
+                                <file name="pfd.ogfx" path="."/>
                                 <crc value="3692398630"/>
                                 <inputParameters>
                                     <parameter control="false" name="drawingOrder" oid="92d6b391-38d8-40bf-b0b6-2f6cd17b47cb" type="int32">

@@ -333,10 +333,10 @@ $(CreatedDate)</value>
 						<Prop id="175" name="@SDY:MODELEXTLIBRARIES"/>
 					</props>
 				</FileRef>
-				<FileRef id="104" persistAs="PFD.ogfx">
+				<FileRef id="104" persistAs="pfd.ogfx">
 					<props>
 						<Prop id="107" name="@SDY:MODELICON">
-							<value>ico/PFD.jpg</value>
+							<value>ico/pfd.jpg</value>
 						</Prop>
 					</props>
 				</FileRef>
