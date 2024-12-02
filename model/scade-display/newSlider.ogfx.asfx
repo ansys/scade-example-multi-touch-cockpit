@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="19.0" ?>
+
+<animation>
+    <rule enabled="true" kind="triangular" maximum_value="100.0" minimum_value="0.0" name="value" oid="ce73baa6-e05d-47bd-a39e-6ea1c21cd43d" step="1.0"/>
+</animation>
+
+<!-- crc32 : 4220285754 -->
+

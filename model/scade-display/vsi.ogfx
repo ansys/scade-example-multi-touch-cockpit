@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="19.0" ?>
+
+<object>
+    <IDE>
+        <ratio horizontal="1" vertical="1"/>
+        <project path="GCS.etp"/>
+        <preview height="128" width="54">
+            <raw numberOfBytes="1427">
+-119,80,78,71,13,10,26,10,0,0,0,13,73,72,68,82,0,0,0,54,0,0,0,-128,8,2,0,0,0,-49,-76,13,-30,0,0,5,90,73,68,65,84,120,94,-19,-100,-39,78,42,75,20,-122,27,20,100,16,-112,65,38,1,17,1,69,17,18,81,17,46,8,-111,-112,56,64,-116,18,39,-116,104,48,122,97,-68,-16,-62,-3,22,62,-126,-113,-29,-125,-19,63,85,-39,-99,-74,-40,-25,-100,125,114,-114,-12,79,-30,119,97,-24,85,-96,-53,85,-11,-81,90,-85,7,52,-19,-101,111,-58,-117,-43,106,-75,88,44,-86,-107,1,-72,101,-73,-37,-89,-89,-89,25,-3,67,-40,-32,-100,-51,102,-61,11,-72,-88,14,-101,-114,-45,-23,116,56,28,122,-28,-32,-24,-25,113,83,-103,-103,-103,9,4,2,-120,-97,-47,104,17,24,45,-1,63,94,-81,23,63,23,4,-22,-40,47,-90,-90,-90,124,62,31,92,-124,55,110,-73,91,29,-2,82,-86,-43,-22,-19,-19,45,-68,-20,-9,-5,-61,-31,48,20,10,41,111,-112,62,121,60,30,-29,-52,42,-127,-4,90,-16,-25,7,-125,1,-30,-41,106,-75,-10,-10,-10,18,-119,-124,113,20,106,-120,70,-93,-93,126,-113,27,-72,24,-113,-57,27,-115,6,-68,52,-70,8,89,-64,57,4,-49,-17,-9,99,-118,13,-97,24,59,-89,-89,-89,
+80,-24,-51,-51,-51,-53,-53,-117,92,-105,96,110,110,78,127,13,47,-51,15,-92,17,56,-76,-69,-69,59,110,77,-4,57,-56,-61,-104,-12,90,-83,-42,-21,-11,-44,49,6,-80,-32,98,-79,-104,-36,45,58,-99,14,98,-87,-66,-61,92,-112,74,16,63,72,88,30,-30,5,84,-14,-7,45,-90,-126,60,-105,-49,-25,85,43,15,-112,51,-30,-121,89,-122,-118,-43,49,6,48,-65,-23,116,90,-50,47,-68,-92,19,50,118,-34,76,38,-93,-81,63,58,-112,-1,-42,-41,-41,-71,74,41,-123,84,42,-123,-59,-121,109,-125,52,-118,-111,72,36,24,12,106,34,87,115,37,23,-119,-53,-27,90,92,92,84,-83,60,64,34,-71,92,78,-75,82,-111,-51,102,-109,-55,36,28,85,7,72,-64,-78,11,-121,-61,-48,7,84,-126,66,90,29,54,29,100,-103,-75,-75,-75,47,111,-123,-2,11,-104,-30,-79,-10,28,-1,-106,-39,-39,-39,-27,-27,101,-43,74,69,-79,88,68,46,-92,40,20,32,8,116,73,88,115,70,35,-60,-127,70,78,19,69,-115,-34,-111,-104,-58,-2,-2,126,-87,84,82,-94,-123,-67,-104,72,37,-113,-113,-113,104,58,49,-83,-70,5,-13,27,8,4,12,111,49,27,20,7,72,123,87,87,87,-14,16,-63,-85,-41,-21,68,33,4,-27,114,-71,
+-33,-17,-81,-84,-84,-56,67,-44,10,112,-9,-23,-23,-87,90,-83,50,-98,101,-45,126,-83,66,-108,-45,-107,74,-59,124,-95,-116,-126,92,72,93,-47,104,-4,-37,-119,-36,-111,85,43,21,-24,59,87,87,87,-111,113,120,3,9,81,-53,107,13,72,-118,92,73,71,2,-97,10,-123,-126,106,-91,2,117,43,-41,25,-63,81,-40,-123,-126,89,-34,-34,-34,-58,18,36,109,-112,53,-111,-79,51,-103,-116,-51,102,-61,116,59,-99,78,117,-104,-127,88,44,70,81,-70,-2,13,72,-121,-86,-119,13,-108,14,-86,-119,10,72,-124,-35,69,20,-120,-71,92,46,42,32,45,16,23,22,22,-40,-75,-110,78,-89,-47,-26,-87,86,42,32,103,-58,-94,-63,-120,-34,-75,-16,-78,-71,-71,57,39,32,-35,87,52,-111,20,103,4,-92,114,6,-44,23,-95,36,-116,107,-47,-29,-15,92,95,95,-21,87,61,25,-93,-40,-19,118,125,62,-33,-61,-61,-125,60,-44,-41,34,81,-79,56,24,12,-12,-97,-32,-11,-11,-11,-3,-3,-3,-29,-29,-29,-19,-19,-19,-57,88,56,58,58,-6,-28,-48,40,-19,118,27,53,-84,30,69,76,52,62,-93,-2,-102,-81,-92,-43,106,125,-10,104,4,-28,-65,-53,-53,75,116,2,-14,-112,113,45,42,48,42,90,97,2,-94,88,46,
+-105,33,112,-81,-41,-53,-69,1,22,-117,69,-105,-128,-9,18,-38,4,-12,86,-112,11,123,-67,-104,74,-91,-24,110,-63,80,64,-97,15,-71,104,-30,114,61,105,56,-95,101,-120,58,18,-119,-124,66,33,-34,-110,113,2,20,-61,126,-26,78,-101,-120,40,98,21,-50,-49,-49,-85,86,42,-80,-11,33,-112,104,2,-93,-47,40,-17,54,-72,-75,-75,101,-14,13,-70,-1,-56,4,40,6,-39,49,-103,76,-86,86,42,38,-32,-70,-117,38,-22,9,-69,-35,14,-71,64,52,-92,59,97,48,24,44,-107,74,-116,-41,-96,-115,76,-128,104,-106,-106,-106,-48,-65,-86,86,42,28,14,71,54,-101,85,-83,108,64,-41,86,-85,21,69,-28,-59,-59,5,-53,57,-16,76,38,51,28,14,-21,-11,-70,60,-12,120,60,-49,-49,-49,-3,126,-97,104,-41,-18,118,-69,-119,68,-62,120,-50,105,99,99,-125,-85,27,60,62,62,62,57,57,105,54,-101,-70,-59,-17,-9,115,-35,103,82,-87,84,-112,-82,-49,-50,-50,-116,70,-92,113,-94,38,33,30,-113,-9,122,-67,112,56,108,52,34,-11,96,-53,-58,30,35,79,84,24,-121,-120,64,26,-57,26,-91,-66,106,100,-77,-39,-40,-17,-107,-42,-60,-27,65,-39,98,83,-109,-49,-25,101,2,-62,-70,36,-99,116,
+-73,-37,-99,78,-89,81,-92,65,79,-68,-49,104,96,-70,-31,37,105,5,41,-127,115,-6,116,-13,-126,52,-114,10,-120,58,-112,-102,40,47,-28,-93,-58,16,13,-41,-51,-64,70,34,-111,-120,124,112,72,29,-96,2,-27,5,-5,-7,82,44,71,-88,-101,-3,-68,5,-68,68,44,-27,-99,-94,-88,48,72,-125,10,-127,-61,75,-108,-107,46,-105,75,29,-29,1,105,18,-19,34,81,77,-7,91,48,-29,-16,82,-33,21,49,-11,-116,-35,35,58,30,84,-60,-14,107,43,-18,-17,-17,25,93,-44,68,44,-47,43,-98,-97,-97,-41,106,53,117,-116,10,116,17,-54,35,-106,102,46,83,-76,53,59,59,59,-112,11,-70,91,-76,-114,-6,125,-22,80,-73,-2,-72,42,70,-51,108,-61,-31,-33,-35,-35,29,54,-61,118,-69,125,112,112,96,-4,-114,16,68,14,94,-54,-30,-46,-28,-101,65,6,-125,1,58,-81,61,-127,-14,-19,27,-102,104,-61,71,111,17,31,119,-107,4,23,-31,68,-93,-47,-24,116,58,80,-76,58,44,90,51,52,61,-6,114,-124,-28,-57,-67,52,11,-123,2,-94,-46,108,54,15,15,15,-1,-22,111,91,-60,-105,-83,0,-52,56,-23,38,41,-63,63,-128,-30,77,-23,-53,-28,-61,22,70,-117,-7,96,-34,-99,78,-89,30,111,-34,54,13,46,-94,
+-118,-125,127,-20,109,16,-4,-125,-81,38,-89,-92,63,-63,34,80,-83,-33,124,-61,-61,79,77,23,-9,-25,-34,2,112,-41,0,0,0,0,73,69,78,68,-82,66,96,-126</raw>
+        </preview>
+    </IDE>
+    <symbology>
+        <dimension height="768" width="768"/>
+    </symbology>
+    <declaration>
+        <inputs>
+            <input name="pitch" oid="f1eea068-5c94-469c-a118-c67fac2565d1" type="float32">
+                <init>0.0</init>
+            </input>
+        </inputs>
+    </declaration>
+    <children>
+        <container oid="a314ac71-4816-467f-9a7b-715cc841ab12">
+            <pathFromRoot value="0"/>
+            <properties name="VSI">
+                <visible>
+                    <init>true</init>
+                </visible>
+                <origin>
+                    <x>
+                        <init>0.0</init>
+                    </x>
+                    <y>
+                        <init>0.0</init>
+                    </y>
+                </origin>
+                <priority>
+                    <init>-1</init>
+                </priority>
+                <scale>
+                    <x>
+                        <init>1.0</init>
+                    </x>
+                    <y>
+                        <init>1.0</init>
+                    </y>
+                </scale>
+                <rotate>
+                    <angle>
+                        <init>0.0</init>
+                    </angle>
+                </rotate>
+                <orientation clockwise="false"/>
+                <static editorLinked="true" generateStaticSequence="true" maxX="69.0" maxY="173.5" minX="-159.0" minY="-174.5">
+                    <init>false</init>
+                </static>
+            </properties>
+            <children>
+                <container oid="533948ea-a3a4-4256-bde7-c9b39ca146b8">
+                    <pathFromRoot value="0,0"/>
+                    <properties name="numbers">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <static editorLinked="true" generateStaticSequence="true" maxX="69.0" maxY="173.5" minX="-76.999954" minY="-174.5">
+                            <init>true</init>
+                        </static>
+                    </properties>
+                    <children>
+                        <rectangle oid="fc179b67-a000-4c87-bb1c-298f57d81477">
+                            <pathFromRoot value="0,0,0"/>
+                            <properties name="rectangle">
+                                <visible>
+                                    <init>false</init>
+                                </visible>
+                                <firstPoint>
+                                    <x>
+                                        <init>62.0</init>
+                                    </x>
+                                    <y>
+                                        <init>157.0</init>
+                                    </y>
+                                </firstPoint>
+                                <thirdPoint>
+                                    <x>
+                                        <init>-62.0</init>
+                                    </x>
+                                    <y>
+                                        <init>-159.0</init>
+                                    </y>
+                                </thirdPoint>
+                                <lineWidth>
+                                    <init>0</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>-1</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                                <fillColor>
+                                    <init>-1</init>
+                                </fillColor>
+                                <fillOpacity>
+                                    <init>255</init>
+                                </fillOpacity>
+                                <polygonSmooth>
+                                    <init>true</init>
+                                </polygonSmooth>
+                                <textureControl>
+                                    <init>false</init>
+                                </textureControl>
+                                <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                                    <textureId>
+                                        <init>9</init>
+                                    </textureId>
+                                </texture>
+                                <gradient>
+                                    <init>-1</init>
+                                </gradient>
+                                <modulate>
+                                    <init>false</init>
+                                </modulate>
+                                <tessellate>
+                                    <init>false</init>
+                                </tessellate>
+                            </properties>
+                        </rectangle>
+                        <biFont oid="0d9c8e6e-4659-4acf-bcf9-ae943362ac61">
+                            <pathFromRoot value="1,0,0"/>
+                            <properties name="10">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <position>
+                                    <x>
+                                        <init>0.0</init>
+                                    </x>
+                                    <y>
+                                        <init>138.0</init>
+                                    </y>
+                                </position>
+                                <value>
+                                    <init>10.0</init>
+                                </value>
+                                <format separator="46">
+                                    <integralPart>
+                                        <init>2</init>
+                                    </integralPart>
+                                    <fractionalPart>
+                                        <init>0</init>
+                                    </fractionalPart>
+                                    <secondFontPos>
+                                        <init>0</init>
+                                    </secondFontPos>
+                                    <leadingZeros>
+                                        <init>false</init>
+                                    </leadingZeros>
+                                    <displaySign>
+                                        <init>never</init>
+                                    </displaySign>
+                                </format>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <outlineColor>
+                                    <init>1</init>
+                                </outlineColor>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <firstLineWidth>
+                                    <init>2</init>
+                                </firstLineWidth>
+                                <firstFont>
+                                    <init>0</init>
+                                </firstFont>
+                                <secondLineWidth>
+                                    <init>2</init>
+                                </secondLineWidth>
+                                <secondFont>
+                                    <init>0</init>
+                                </secondFont>
+                                <horizAlign>
+                                    <init>right</init>
+                                </horizAlign>
+                                <vertAlign>
+                                    <init>bottom</init>
+                                </vertAlign>
+                            </properties>
+                        </biFont>
+                        <biFont oid="5d0a09a9-eadb-4be7-b26c-172ab7e9d10b">
+                            <pathFromRoot value="2,0,0"/>
+                            <properties name="5">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <position>
+                                    <x>
+                                        <init>-50.0</init>
+                                    </x>
+                                    <y>
+                                        <init>78.0</init>
+                                    </y>
+                                </position>
+                                <value>
+                                    <init>5.0</init>
+                                </value>
+                                <format separator="46">
+                                    <integralPart>
+                                        <init>2</init>
+                                    </integralPart>
+                                    <fractionalPart>
+                                        <init>0</init>
+                                    </fractionalPart>
+                                    <secondFontPos>
+                                        <init>0</init>
+                                    </secondFontPos>
+                                    <leadingZeros>
+                                        <init>false</init>
+                                    </leadingZeros>
+                                    <displaySign>
+                                        <init>never</init>
+                                    </displaySign>
+                                </format>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <outlineColor>
+                                    <init>1</init>
+                                </outlineColor>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <firstLineWidth>
+                                    <init>2</init>
+                                </firstLineWidth>
+                                <firstFont>
+                                    <init>0</init>
+                                </firstFont>
+                                <secondLineWidth>
+                                    <init>2</init>
+                                </secondLineWidth>
+                                <secondFont>
+                                    <init>0</init>
+                                </secondFont>
+                                <horizAlign>
+                                    <init>right</init>
+                                </horizAlign>
+                                <vertAlign>
+                                    <init>middle</init>
+                                </vertAlign>
+                            </properties>
+                        </biFont>
+                        <biFont oid="50c31338-8263-460e-907e-0fda898e31f1">
+                            <pathFromRoot value="3,0,0"/>
+                            <properties name="0">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <position>
+                                    <x>
+                                        <init>-71.0</init>
+                                    </x>
+                                    <y>
+                                        <init>-5.0</init>
+                                    </y>
+                                </position>
+                                <value>
+                                    <init>0.0</init>
+                                </value>
+                                <format separator="46">
+                                    <integralPart>
+                                        <init>2</init>
+                                    </integralPart>
+                                    <fractionalPart>
+                                        <init>0</init>
+                                    </fractionalPart>
+                                    <secondFontPos>
+                                        <init>0</init>
+                                    </secondFontPos>
+                                    <leadingZeros>
+                                        <init>false</init>
+                                    </leadingZeros>
+                                    <displaySign>
+                                        <init>never</init>
+                                    </displaySign>
+                                </format>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <outlineColor>
+                                    <init>1</init>
+                                </outlineColor>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <firstLineWidth>
+                                    <init>2</init>
+                                </firstLineWidth>
+                                <firstFont>
+                                    <init>0</init>
+                                </firstFont>
+                                <secondLineWidth>
+                                    <init>2</init>
+                                </secondLineWidth>
+                                <secondFont>
+                                    <init>0</init>
+                                </secondFont>
+                                <horizAlign>
+                                    <init>left</init>
+                                </horizAlign>
+                                <vertAlign>
+                                    <init>bottom</init>
+                                </vertAlign>
+                            </properties>
+                        </biFont>
+                        <biFont oid="9ae92d84-736e-4295-94cd-af32fa9b4532">
+                            <pathFromRoot value="4,0,0"/>
+                            <properties name="-10">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <position>
+                                    <x>
+                                        <init>0.0</init>
+                                    </x>
+                                    <y>
+                                        <init>-138.0</init>
+                                    </y>
+                                </position>
+                                <value>
+                                    <init>10.0</init>
+                                </value>
+                                <format separator="46">
+                                    <integralPart>
+                                        <init>2</init>
+                                    </integralPart>
+                                    <fractionalPart>
+                                        <init>0</init>
+                                    </fractionalPart>
+                                    <secondFontPos>
+                                        <init>0</init>
+                                    </secondFontPos>
+                                    <leadingZeros>
+                                        <init>false</init>
+                                    </leadingZeros>
+                                    <displaySign>
+                                        <init>never</init>
+                                    </displaySign>
+                                </format>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <outlineColor>
+                                    <init>1</init>
+                                </outlineColor>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <firstLineWidth>
+                                    <init>2</init>
+                                </firstLineWidth>
+                                <firstFont>
+                                    <init>0</init>
+                                </firstFont>
+                                <secondLineWidth>
+                                    <init>2</init>
+                                </secondLineWidth>
+                                <secondFont>
+                                    <init>0</init>
+                                </secondFont>
+                                <horizAlign>
+                                    <init>right</init>
+                                </horizAlign>
+                                <vertAlign>
+                                    <init>top</init>
+                                </vertAlign>
+                            </properties>
+                        </biFont>
+                        <biFont oid="a8150291-7dff-4f41-a46a-a45191aac2f4">
+                            <pathFromRoot value="5,0,0"/>
+                            <properties name="-5">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <position>
+                                    <x>
+                                        <init>-50.0</init>
+                                    </x>
+                                    <y>
+                                        <init>-78.0</init>
+                                    </y>
+                                </position>
+                                <value>
+                                    <init>5.0</init>
+                                </value>
+                                <format separator="46">
+                                    <integralPart>
+                                        <init>2</init>
+                                    </integralPart>
+                                    <fractionalPart>
+                                        <init>0</init>
+                                    </fractionalPart>
+                                    <secondFontPos>
+                                        <init>0</init>
+                                    </secondFontPos>
+                                    <leadingZeros>
+                                        <init>false</init>
+                                    </leadingZeros>
+                                    <displaySign>
+                                        <init>never</init>
+                                    </displaySign>
+                                </format>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <outlineColor>
+                                    <init>1</init>
+                                </outlineColor>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <firstLineWidth>
+                                    <init>2</init>
+                                </firstLineWidth>
+                                <firstFont>
+                                    <init>0</init>
+                                </firstFont>
+                                <secondLineWidth>
+                                    <init>2</init>
+                                </secondLineWidth>
+                                <secondFont>
+                                    <init>0</init>
+                                </secondFont>
+                                <horizAlign>
+                                    <init>right</init>
+                                </horizAlign>
+                                <vertAlign>
+                                    <init>middle</init>
+                                </vertAlign>
+                            </properties>
+                        </biFont>
+                        <bitmap oid="3dab0722-31bd-476e-ade4-ce4fd8a5ce71">
+                            <pathFromRoot value="6,0,0"/>
+                            <properties name="bitmap">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <position>
+                                    <x>
+                                        <init>-61.0</init>
+                                    </x>
+                                    <y>
+                                        <init>-168.5</init>
+                                    </y>
+                                </position>
+                                <textureId>
+                                    <init>9</init>
+                                </textureId>
+                            </properties>
+                        </bitmap>
+                    </children>
+                </container>
+                <rotationContainer oid="a48ce935-588f-492c-b8a3-338b02355df3">
+                    <pathFromRoot value="1,0"/>
+                    <properties name="rotate group">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>99.0</init>
+                            </x>
+                            <y>
+                                <init>-1.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <refAngle>
+                            <angle>
+                                <init>179.874</init>
+                            </angle>
+                        </refAngle>
+                        <startRotationAngle>
+                            <angle>
+                                <init>180.0</init>
+                            </angle>
+                        </startRotationAngle>
+                        <endRotationAngle>
+                            <angle>
+                                <init>126.416</init>
+                            </angle>
+                        </endRotationAngle>
+                        <startRotationValue>
+                            <init>0.0</init>
+                        </startRotationValue>
+                        <endRotationValue>
+                            <init>10.0</init>
+                        </endRotationValue>
+                        <orientation clockwise="true"/>
+                        <startRotationLocked>
+                            <init>false</init>
+                        </startRotationLocked>
+                        <endRotationLocked>
+                            <init>false</init>
+                        </endRotationLocked>
+                        <functionalRotationValue>
+                            <init>0.024</init>
+                            <expr>pitch</expr>
+                        </functionalRotationValue>
+                    </properties>
+                    <children>
+                        <line oid="cd0b25a9-7e4f-4a2e-aec7-0ca0e9a52a05">
+                            <pathFromRoot value="0,1,0"/>
+                            <properties name="needle">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>-153.0</init>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>-53.0</init>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>0</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>1</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                        <bitmap oid="decf5204-26d0-46d9-9945-c7b092aac81e">
+                            <pathFromRoot value="1,1,0"/>
+                            <properties name="bitmap">
+                                <visible>
+                                    <init>false</init>
+                                </visible>
+                                <position>
+                                    <x>
+                                        <init>-156.0</init>
+                                    </x>
+                                    <y>
+                                        <init>-1.5</init>
+                                    </y>
+                                </position>
+                                <textureId>
+                                    <init>13</init>
+                                </textureId>
+                            </properties>
+                        </bitmap>
+                        <rectangle oid="a4015e41-2412-416b-9e8a-0028e9feec09">
+                            <pathFromRoot value="2,1,0"/>
+                            <properties name="rectangle">
+                                <visible>
+                                    <init>false</init>
+                                </visible>
+                                <firstPoint>
+                                    <x>
+                                        <init>-157.0</init>
+                                    </x>
+                                    <y>
+                                        <init>-1.0</init>
+                                    </y>
+                                </firstPoint>
+                                <thirdPoint>
+                                    <x>
+                                        <init>-44.0</init>
+                                    </x>
+                                    <y>
+                                        <init>2.0</init>
+                                    </y>
+                                </thirdPoint>
+                                <lineWidth>
+                                    <init>2</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>-1</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                                <fillColor>
+                                    <init>-1</init>
+                                </fillColor>
+                                <fillOpacity>
+                                    <init>255</init>
+                                </fillOpacity>
+                                <polygonSmooth>
+                                    <init>true</init>
+                                </polygonSmooth>
+                                <textureControl>
+                                    <init>false</init>
+                                </textureControl>
+                                <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                                    <textureId>
+                                        <init>13</init>
+                                    </textureId>
+                                </texture>
+                                <gradient>
+                                    <init>-1</init>
+                                </gradient>
+                                <modulate>
+                                    <init>false</init>
+                                </modulate>
+                                <tessellate>
+                                    <init>false</init>
+                                </tessellate>
+                            </properties>
+                        </rectangle>
+                    </children>
+                </rotationContainer>
+            </children>
+        </container>
+    </children>
+</object>
+
+<!-- crc32 : 3359644607 -->
+

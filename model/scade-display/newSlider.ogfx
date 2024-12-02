@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="19.0" ?>
+
+<object>
+    <IDE>
+        <ratio horizontal="1" vertical="1"/>
+        <project path="GCS.etp"/>
+        <preview height="53" width="128">
+            <raw numberOfBytes="412">
+-119,80,78,71,13,10,26,10,0,0,0,13,73,72,68,82,0,0,0,-128,0,0,0,53,8,2,0,0,0,6,91,116,90,0,0,1,99,73,68,65,84,120,94,-19,-41,61,106,2,65,24,-58,113,119,-59,47,118,-60,66,16,4,21,54,96,35,-111,-11,2,-126,-123,-106,91,59,88,-38,-27,12,42,10,11,42,86,106,45,86,118,11,74,32,-91,39,-16,10,-74,94,-63,78,72,6,3,65,-89,73,-109,-39,52,-1,95,-75,-16,-66,-43,-13,-64,-52,78,44,6,0,0,0,0,0,0,0,-64,127,-80,44,-85,-43,106,-83,86,-85,-27,114,-39,108,54,-11,49,76,75,38,-109,-61,-31,-80,88,44,-70,-82,27,4,-127,-22,67,-33,-128,81,-114,-29,-116,70,35,-5,110,58,-99,82,64,-44,-78,-39,-20,108,54,-5,-2,94,-81,-41,20,16,53,33,-60,100,50,-79,-18,22,-117,5,5,68,45,-99,78,15,6,-125,76,38,-93,-102,24,-113,-57,20,16,53,-107,120,-65,-33,87,-89,-1,124,62,-105,82,-22,99,68,64,-3,8,-107,-53,-27,82,-87,-108,72,36,-12,25,-116,106,52,26,111,-49,-38,-19,118,60,30,-41,-9,96,72,-81,-41,-5,124,118,60,30,115,-71,-100,-66,7,67,-14,-7,-4,110,-73,-5,73,-1,114,-71,84,42,21,125,9,70,21,10,-123,-61,-31,112,-69,-35,84,-6,-99,78,71,31,
+35,2,-86,-125,-51,102,-45,-19,118,-11,1,0,-104,103,-37,118,-83,86,-85,86,-85,47,48,-64,117,-35,95,30,88,-22,9,-90,110,-32,-45,-23,-12,14,3,-62,48,-84,-41,-21,122,-24,-113,124,-33,-65,94,-81,-25,-13,-7,3,6,-20,-9,123,-49,-13,-12,-48,31,9,33,-74,-37,-83,-108,-14,21,6,-88,-29,61,-107,74,-23,-95,3,0,0,0,0,0,0,0,0,0,-64,-97,-5,2,-99,112,-86,-1,-123,52,109,27,0,0,0,0,73,69,78,68,-82,66,96,-126</raw>
+        </preview>
+    </IDE>
+    <symbology>
+        <dimension height="768" width="768"/>
+    </symbology>
+    <declaration>
+        <inputs>
+            <input name="playingColor" oid="93c9b398-5b88-44fb-bb2f-e8ccb12f00df" representation="color" type="int32">
+                <init>7</init>
+            </input>
+        </inputs>
+        <locals>
+            <local memory="true" name="inside" oid="3d0fe838-779f-4f16-b057-70bc9644f982" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="true" name="wP" oid="cf2650a9-9818-4760-a8ae-282439a3bc81" type="float32">
+                <init>0.0</init>
+            </local>
+            <local memory="true" name="pressed" oid="1c284371-635f-42a1-88e8-215fda926a20" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="true" name="value" oid="ce73baa6-e05d-47bd-a39e-6ea1c21cd43d" type="float32">
+                <init>50.0</init>
+            </local>
+        </locals>
+    </declaration>
+    <children>
+        <container oid="eb889327-288f-493d-a79b-fb1222aaef82">
+            <pathFromRoot value="0"/>
+            <properties name="slider">
+                <visible>
+                    <init>true</init>
+                </visible>
+                <origin>
+                    <x>
+                        <init>0.0</init>
+                    </x>
+                    <y>
+                        <init>0.0</init>
+                    </y>
+                </origin>
+                <priority>
+                    <init>-1</init>
+                </priority>
+                <scale>
+                    <x>
+                        <init>1.0</init>
+                    </x>
+                    <y>
+                        <init>1.0</init>
+                    </y>
+                </scale>
+                <rotate>
+                    <angle>
+                        <init>0.0</init>
+                    </angle>
+                </rotate>
+                <orientation clockwise="false"/>
+                <static editorLinked="true" generateStaticSequence="true" maxX="206.0" maxY="55.0" minX="-15.0" minY="-36.0">
+                    <init>false</init>
+                </static>
+            </properties>
+            <children>
+                <pointerEventListener oid="c649fb92-5b1a-44e7-b688-81707c78be0e">
+                    <pathFromRoot value="0,0"/>
+                    <properties name="pointer event listener">
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <eventId>
+                            <init>0</init>
+                            <expr>0</expr>
+                        </eventId>
+                        <relative>
+                            <init>false</init>
+                        </relative>
+                        <output>
+                            <pressed>
+                                <expr>pressed</expr>
+                            </pressed>
+                            <pointerPosition/>
+                        </output>
+                    </properties>
+                </pointerEventListener>
+                <rectangleArea oid="2cc59698-8a07-4bdc-8e49-938ae04cfb94">
+                    <pathFromRoot value="1,0"/>
+                    <properties name="rectangle area">
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <pointerId>
+                            <init>0</init>
+                        </pointerId>
+                        <firstPoint>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>-30.0</init>
+                            </y>
+                        </firstPoint>
+                        <thirdPoint>
+                            <x>
+                                <init>200.0</init>
+                            </x>
+                            <y>
+                                <init>49.0</init>
+                            </y>
+                        </thirdPoint>
+                        <output>
+                            <inside>
+                                <expr>inside</expr>
+                            </inside>
+                            <percentWidth>
+                                <expr>wP</expr>
+                            </percentWidth>
+                        </output>
+                    </properties>
+                </rectangleArea>
+                <line oid="bd57a705-9105-4dca-8294-864f82daaea6">
+                    <pathFromRoot value="2,0"/>
+                    <properties name="back">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <points>
+                            <point>
+                                <x>
+                                    <init>0.0</init>
+                                </x>
+                                <y>
+                                    <init>0.0</init>
+                                </y>
+                            </point>
+                            <point>
+                                <x>
+                                    <init>200.0</init>
+                                </x>
+                                <y>
+                                    <init>0.0</init>
+                                </y>
+                            </point>
+                        </points>
+                        <lineWidth>
+                            <init>5</init>
+                        </lineWidth>
+                        <lineStipple>
+                            <init>0</init>
+                        </lineStipple>
+                        <lineCap>
+                            <init>round</init>
+                        </lineCap>
+                        <haloing>
+                            <init>false</init>
+                        </haloing>
+                        <haloColor>
+                            <init>-1</init>
+                        </haloColor>
+                        <outlineColor>
+                            <init>3</init>
+                        </outlineColor>
+                        <outlineOpacity>
+                            <init>255</init>
+                        </outlineOpacity>
+                    </properties>
+                </line>
+                <assignment oid="035500fb-3097-4a68-9e24-385a81a7c79f">
+                    <pathFromRoot value="3,0"/>
+                    <properties name="assignment">
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <input>
+                            <init>0.0</init>
+                            <expr>(pressed and inside) ? (wP * 100.0) : value</expr>
+                        </input>
+                        <output>
+                            <expr>value</expr>
+                        </output>
+                    </properties>
+                </assignment>
+                <filterTranslationContainer oid="caffed16-d49d-40c5-bb13-ec6d727cdc59">
+                    <pathFromRoot value="4,0"/>
+                    <properties name="translation filter">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <startTranslationPoint>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>-1.0</init>
+                            </y>
+                        </startTranslationPoint>
+                        <endTranslationPoint>
+                            <x>
+                                <init>200.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </endTranslationPoint>
+                        <startTranslationValue>
+                            <init>0.0</init>
+                        </startTranslationValue>
+                        <endTranslationValue>
+                            <init>100.0</init>
+                        </endTranslationValue>
+                        <startTranslationLocked>
+                            <init>true</init>
+                        </startTranslationLocked>
+                        <endTranslationLocked>
+                            <init>true</init>
+                        </endTranslationLocked>
+                    </properties>
+                    <children>
+                        <shape oid="4a8d97b7-88eb-41b1-8521-ec293c6124f0">
+                            <pathFromRoot value="0,4,0"/>
+                            <properties name="shape">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>-5.0</init>
+                                        </x>
+                                        <y>
+                                            <init>13.75</init>
+                                        </y>
+                                        <interp>
+                                            <expr>value</expr>
+                                        </interp>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>5.0</init>
+                                        </x>
+                                        <y>
+                                            <init>13.75</init>
+                                        </y>
+                                        <interp>
+                                            <expr>value</expr>
+                                        </interp>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>0.0</init>
+                                        </x>
+                                        <y>
+                                            <init>7.75</init>
+                                        </y>
+                                        <interp>
+                                            <expr>value</expr>
+                                        </interp>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>5</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>-1</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                                <fillColor>
+                                    <init>1</init>
+                                    <expr>(pressed and inside) ? playingColor : 1</expr>
+                                </fillColor>
+                                <fillOpacity>
+                                    <init>255</init>
+                                </fillOpacity>
+                                <polygonSmooth>
+                                    <init>true</init>
+                                </polygonSmooth>
+                                <textureControl>
+                                    <init>false</init>
+                                </textureControl>
+                                <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                                    <textureId>
+                                        <init>-1</init>
+                                    </textureId>
+                                </texture>
+                                <gradient>
+                                    <init>-1</init>
+                                </gradient>
+                                <modulate>
+                                    <init>false</init>
+                                </modulate>
+                                <tessellate>
+                                    <init>false</init>
+                                </tessellate>
+                            </properties>
+                        </shape>
+                        <line oid="f3f0089c-9548-4df0-ba22-ab3d1a67d3c5">
+                            <pathFromRoot value="1,4,0"/>
+                            <properties name="front">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>0.0</init>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>0.0</init>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                        </y>
+                                        <interp>
+                                            <expr>value</expr>
+                                        </interp>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>5</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>1</init>
+                                    <expr>(pressed and inside) ? playingColor : 1</expr>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                        <biFont oid="dad482ed-c186-4821-bfac-73459c54c27d">
+                            <pathFromRoot value="2,4,0"/>
+                            <properties name="bi-font">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <position>
+                                    <x>
+                                        <init>0.0</init>
+                                    </x>
+                                    <y>
+                                        <init>17.0</init>
+                                    </y>
+                                    <interp>
+                                        <expr>value</expr>
+                                    </interp>
+                                </position>
+                                <value>
+                                    <init>0.0</init>
+                                    <expr>value</expr>
+                                </value>
+                                <format separator="46">
+                                    <integralPart>
+                                        <init>3</init>
+                                    </integralPart>
+                                    <fractionalPart>
+                                        <init>0</init>
+                                    </fractionalPart>
+                                    <secondFontPos>
+                                        <init>0</init>
+                                    </secondFontPos>
+                                    <leadingZeros>
+                                        <init>false</init>
+                                    </leadingZeros>
+                                    <displaySign>
+                                        <init>never</init>
+                                    </displaySign>
+                                </format>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <outlineColor>
+                                    <init>1</init>
+                                    <expr>(pressed and inside) ? playingColor : 1</expr>
+                                </outlineColor>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <firstLineWidth>
+                                    <init>2</init>
+                                </firstLineWidth>
+                                <firstFont>
+                                    <init>1</init>
+                                </firstFont>
+                                <secondLineWidth>
+                                    <init>2</init>
+                                </secondLineWidth>
+                                <secondFont>
+                                    <init>0</init>
+                                </secondFont>
+                                <horizAlign>
+                                    <init>center</init>
+                                </horizAlign>
+                                <vertAlign>
+                                    <init>bottom</init>
+                                </vertAlign>
+                            </properties>
+                        </biFont>
+                    </children>
+                </filterTranslationContainer>
+            </children>
+        </container>
+    </children>
+</object>
+
+<!-- crc32 : 1502447878 -->
+

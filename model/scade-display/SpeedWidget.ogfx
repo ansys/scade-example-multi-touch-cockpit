@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="19.0" ?>
+
+<object>
+    <IDE>
+        <ratio horizontal="1" vertical="1"/>
+        <project path="GCS.etp"/>
+        <preview height="128" width="57">
+            <raw numberOfBytes="1255">
+-119,80,78,71,13,10,26,10,0,0,0,13,73,72,68,82,0,0,0,57,0,0,0,-128,8,2,0,0,0,62,-65,86,111,0,0,4,-82,73,68,65,84,120,94,-19,-100,-37,43,124,107,24,-57,49,-122,25,-77,25,102,26,103,38,-25,113,24,100,-100,25,-4,-58,97,48,-114,37,57,-90,72,114,-56,41,-5,-58,13,18,-105,20,-78,73,78,23,-94,36,73,74,40,-92,16,-27,-62,-123,-30,-62,-123,27,-1,-58,-17,-37,90,-103,52,-65,-4,106,-17,-26,49,123,-73,-97,-49,-59,-76,-42,-102,119,-83,-9,-13,-66,-21,121,-98,-9,-67,90,78,78,12,-13,-1,65,34,-111,-72,-72,-72,88,79,53,26,77,118,118,54,46,42,20,-118,-68,-68,-68,-128,-128,0,87,87,-41,-84,-84,-84,-56,-56,-56,79,55,57,-120,-76,-76,52,-99,78,103,61,-43,-21,-11,106,-75,-38,96,48,-64,88,-87,84,-102,-51,-26,-124,-124,-124,-96,-96,-96,-94,-94,34,-87,84,-6,-23,62,71,0,39,-40,88,79,49,-93,-91,-91,-91,90,-83,-42,100,50,-31,-44,36,-128,3,76,-83,92,46,-73,54,115,12,54,-82,42,-107,-54,-39,-39,-71,-80,-80,-48,104,52,34,54,-14,-13,-13,51,51,51,-35,-35,-35,-15,43,-109,-55,62,-35,-25,8,108,92,83,82,82,48,-111,-31,-31,-31,97,
+97,97,22,-117,37,53,53,21,-111,80,85,85,-11,-29,-57,15,-116,-31,-45,125,-114,-64,-58,-11,95,13,-69,-46,-64,-82,52,-80,43,13,-20,74,3,-69,-46,-64,-82,52,-80,43,13,-20,74,3,-69,-46,-64,-82,52,-80,43,13,-20,74,3,-69,-46,-64,-82,52,-80,43,13,-20,74,3,-69,-46,-64,-82,52,-80,43,13,-20,74,3,-69,-46,-64,-82,52,-80,43,13,-20,74,3,-69,-46,-64,-82,52,-80,43,13,-20,74,3,-69,-46,-64,-82,52,-80,43,13,-20,74,3,-69,-46,-64,-82,52,-80,43,13,-20,74,3,-69,-46,-64,-82,52,-80,43,13,-20,74,3,-69,-46,-64,-82,52,-80,43,13,-20,74,3,-69,-46,-64,-82,52,-80,43,13,-20,74,3,-69,-46,-16,31,115,-83,-84,-84,-52,-56,-56,72,75,75,51,24,12,41,41,41,-55,-55,-55,-119,-119,-119,122,-67,62,62,62,62,54,54,86,-89,-45,69,71,71,71,70,70,-118,31,-4,-48,106,-75,33,33,33,-63,-63,-63,-127,-127,-127,-2,-2,-2,-66,-66,-66,26,-115,70,-83,86,-5,-8,-8,40,-107,74,79,79,79,-123,66,-31,-31,-31,33,-109,-55,-36,-36,-36,-92,82,-87,68,34,-79,-19,-14,31,3,-41,-90,-90,38,-117,-59,82,86,86,86,82,82,82,84,84,100,50,-103,42,42,42,90,91,91,75,75,75,-77,
+-78,-78,48,-116,-44,-44,84,-116,-92,-70,-70,26,-61,-64,0,112,92,94,94,-98,-103,-103,9,-5,-48,-48,80,-47,-37,-49,-49,15,-46,42,-107,-54,-37,-37,-37,-53,-53,11,-58,114,-71,28,-70,112,-75,-37,7,76,126,117,109,108,108,60,63,63,-65,-69,-69,59,58,58,-86,-83,-83,21,-89,124,116,116,-12,-30,-30,2,-115,-51,102,-13,-63,-63,-63,-2,-2,62,-2,-83,-81,-81,-73,-77,43,-34,-44,-56,-56,-56,-97,95,-80,-80,-80,-80,-71,-71,-39,-43,-43,-123,-87,18,93,91,90,90,-106,-106,-106,6,6,6,78,78,78,-122,-121,-121,-31,-38,-36,-36,-68,-73,-73,-121,1,-64,-75,-69,-69,123,114,114,50,46,46,14,127,-51,-50,-50,-38,-39,-75,-90,-90,-26,-27,-27,-27,-18,11,-98,-98,-98,94,95,95,-33,-34,-34,-96,2,99,-72,-62,24,30,-37,-37,-37,55,55,55,8,6,-116,97,119,119,-73,-95,-95,-31,-20,-20,12,-82,98,16,35,-102,87,86,86,122,123,123,-19,-17,-6,-8,-8,120,-15,5,15,15,15,-49,-49,-49,-17,-17,-17,56,-18,-20,-20,20,93,7,7,7,-31,113,122,122,-118,-103,91,93,93,-59,52,15,13,13,93,94,94,-74,-75,-75,-63,21,-31,-69,-68,-68,60,63,63,-113,-39,-75,-77,43,50,96,113,
+113,-15,-81,47,-40,-38,-38,58,60,60,-20,-21,-21,-77,-58,43,38,21,90,8,80,-40,-20,-20,-20,-52,-52,-52,64,119,99,99,-29,-6,-6,122,98,98,2,-94,-21,-21,-21,83,83,83,49,49,49,40,11,118,118,-3,61,120,16,-78,-5,115,110,-31,-91,67,-15,-2,-2,-2,-8,-8,24,-79,43,-42,-127,-68,-68,60,49,6,122,122,122,110,111,111,-81,-82,-82,48,30,12,-29,91,93,1,-86,-87,77,-51,-62,47,-82,20,22,22,90,107,22,74,-81,-47,104,76,74,74,-62,1,-86,85,122,122,58,46,34,106,29,-17,90,80,80,0,-77,-100,-100,28,-85,43,-42,8,-120,90,23,8,-84,14,17,17,17,-33,29,3,0,-53,12,58,80,10,120,9,120,10,-4,33,-96,16,-16,16,-112,11,-56,4,-36,5,-36,4,-92,2,-82,2,18,1,23,1,103,1,-37,-2,-2,46,120,-112,56,98,-79,51,39,-31,-117,100,-114,-1,74,-38,-81,96,-12,72,17,44,87,88,-27,-41,-42,-42,-58,-57,-57,49,115,-45,-45,-45,-88,80,-56,110,-37,-42,-114,5,-118,88,-18,-31,-118,-20,-103,-101,-101,67,-43,68,68,-94,-38,71,69,69,-75,-73,-73,-37,-74,-2,0,-63,-118,-120,68,104,34,112,59,58,58,16,36,-88,-81,88,20,109,-37,-39,29,116,12,87,100,21,50,26,-82,-3,-3,-3,
+117,117,117,-88,-60,88,14,108,-101,126,-128,-58,-56,54,-28,28,34,-89,-72,-72,24,105,-121,-51,100,64,64,-128,109,59,-69,35,-70,-94,51,44,-18,120,-5,56,69,121,31,27,27,67,73,-78,109,-6,65,-94,0,-34,0,-110,15,-27,34,40,40,8,-43,-29,59,92,-111,-56,-40,113,98,-122,-60,61,-88,-109,-16,5,61,116,-1,-101,-76,69,-87,-62,62,21,-79,-114,109,87,110,110,46,-82,96,-105,40,-34,-53,56,-108,-97,27,-27,16,10,-15,-118,-63,35,0,0,0,0,73,69,78,68,-82,66,96,-126</raw>
+        </preview>
+    </IDE>
+    <symbology>
+        <dimension height="800" width="1280"/>
+    </symbology>
+    <declaration>
+        <constants>
+            <constant name="maxSpeed" oid="fc1ce40a-29da-44c1-baa7-49c233f53360" type="float32">
+                <init>300.0</init>
+            </constant>
+        </constants>
+        <inputs>
+            <input name="speed" oid="2308129c-3f92-4b2d-84b2-14b09008ed1b" type="float32">
+                <init>0.0</init>
+            </input>
+            <input name="enable" oid="d1ca42f3-d661-4e1e-bae6-d36425d83c26" type="bool">
+                <init>false</init>
+            </input>
+        </inputs>
+        <outputs>
+            <output memory="true" name="targetSpeed" oid="b0c0a1e5-a6c7-48f1-87be-67d80a0437d0" type="float32">
+                <init>0.0</init>
+            </output>
+        </outputs>
+        <locals>
+            <local memory="false" name="speedAreaIn" oid="7db89e53-8f73-40f3-8698-14e1ac932d0e" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="false" name="speedAreaHPercent" oid="82aea9ff-f8e0-468b-948d-b763752662ce" type="float32">
+                <init>0.0</init>
+            </local>
+            <local memory="false" name="p1Pressed" oid="1778fba7-27ed-402a-8a46-7489a55bfe89" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="false" name="showTargetSpeed" oid="cc9defea-5d06-4063-973d-dac9f61a8de6" type="bool">
+                <init>false</init>
+            </local>
+        </locals>
+    </declaration>
+    <children>
+        <container oid="1138d1af-ce93-471d-95da-e7db2591d0f9">
+            <pathFromRoot value="0"/>
+            <properties name="SpeedWidget">
+                <visible>
+                    <init>true</init>
+                </visible>
+                <origin>
+                    <x>
+                        <init>69.0</init>
+                    </x>
+                    <y>
+                        <init>-157.25</init>
+                    </y>
+                </origin>
+                <priority>
+                    <init>-1</init>
+                </priority>
+                <scale>
+                    <x>
+                        <init>1.0</init>
+                    </x>
+                    <y>
+                        <init>1.0</init>
+                    </y>
+                </scale>
+                <rotate>
+                    <angle>
+                        <init>0.0</init>
+                    </angle>
+                </rotate>
+                <orientation clockwise="false"/>
+                <static editorLinked="true" generateStaticSequence="true" maxX="30.0" maxY="486.50012" minX="-131.0" minY="111.75">
+                    <init>false</init>
+                </static>
+            </properties>
+            <children>
+                <pointerEventListener oid="caf04b2f-ea62-45a4-94a2-ce7314e1a932">
+                    <pathFromRoot value="0,0"/>
+                    <properties name="pointer event listener">
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <eventId>
+                            <init>0</init>
+                        </eventId>
+                        <relative>
+                            <init>false</init>
+                        </relative>
+                        <output>
+                            <pressed>
+                                <expr>p1Pressed</expr>
+                            </pressed>
+                            <pointerPosition/>
+                        </output>
+                    </properties>
+                </pointerEventListener>
+                <line oid="4d2bdcf5-442b-4fcc-a5d4-f264a49093dc">
+                    <pathFromRoot value="1,0"/>
+                    <properties name="line">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <points>
+                            <point>
+                                <x>
+                                    <init>0.0</init>
+                                </x>
+                                <y>
+                                    <init>314.75</init>
+                                </y>
+                            </point>
+                            <point>
+                                <x>
+                                    <init>0.0</init>
+                                </x>
+                                <y>
+                                    <init>0.0</init>
+                                </y>
+                            </point>
+                        </points>
+                        <lineWidth>
+                            <init>2</init>
+                        </lineWidth>
+                        <lineStipple>
+                            <init>0</init>
+                        </lineStipple>
+                        <lineCap>
+                            <init>round</init>
+                        </lineCap>
+                        <haloing>
+                            <init>false</init>
+                        </haloing>
+                        <haloColor>
+                            <init>-1</init>
+                        </haloColor>
+                        <outlineColor>
+                            <init>2</init>
+                        </outlineColor>
+                        <outlineOpacity>
+                            <init>255</init>
+                        </outlineOpacity>
+                    </properties>
+                </line>
+                <rectangleArea oid="6a0f9b25-e70d-4d8c-8c22-a20c8bb41578">
+                    <pathFromRoot value="2,0"/>
+                    <properties name="rectangle area">
+                        <enable>
+                            <init>true</init>
+                            <expr>enable</expr>
+                        </enable>
+                        <pointerId>
+                            <init>0</init>
+                        </pointerId>
+                        <firstPoint>
+                            <x>
+                                <init>-56.0</init>
+                            </x>
+                            <y>
+                                <init>319.25</init>
+                            </y>
+                        </firstPoint>
+                        <thirdPoint>
+                            <x>
+                                <init>57.0</init>
+                            </x>
+                            <y>
+                                <init>3.25</init>
+                            </y>
+                        </thirdPoint>
+                        <output>
+                            <inside>
+                                <expr>speedAreaIn</expr>
+                            </inside>
+                            <percentHeight>
+                                <expr>speedAreaHPercent</expr>
+                            </percentHeight>
+                        </output>
+                    </properties>
+                </rectangleArea>
+                <translationContainer oid="6d6c68f0-58bc-47fa-b5c9-c444c39d7034">
+                    <pathFromRoot value="3,0"/>
+                    <properties name="CURRENT_SPEED">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <refPoint>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </refPoint>
+                        <startTranslationPoint>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </startTranslationPoint>
+                        <endTranslationPoint>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>300.0</init>
+                            </y>
+                        </endTranslationPoint>
+                        <startTranslationValue>
+                            <init>0.0</init>
+                        </startTranslationValue>
+                        <endTranslationValue>
+                            <init>300.0</init>
+                            <expr>maxSpeed</expr>
+                        </endTranslationValue>
+                        <startTranslationLocked>
+                            <init>true</init>
+                        </startTranslationLocked>
+                        <endTranslationLocked>
+                            <init>true</init>
+                        </endTranslationLocked>
+                        <functionalTranslationValue>
+                            <init>0.0</init>
+                            <expr>speed</expr>
+                        </functionalTranslationValue>
+                    </properties>
+                    <children>
+                        <referenceContainer oid="78392d6d-b0e4-4a48-83d4-8be473dbb770">
+                            <pathFromRoot value="0,3,0"/>
+                            <properties modular="false" name="SpeedArrow">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>-8.125</init>
+                                    </x>
+                                    <y>
+                                        <init>4.9375</init>
+                                    </y>
+                                </origin>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <file name="SpeedArrow.ogfx" path="."/>
+                                <crc value="3194284018"/>
+                                <inputParameters>
+                                    <parameter control="false" name="color" oid="d56edc29-08c0-4e6f-8333-c9be001b1b07" representation="color" type="int32">
+                                        <init>2</init>
+                                    </parameter>
+                                </inputParameters>
+                            </properties>
+                            <children/>
+                        </referenceContainer>
+                    </children>
+                </translationContainer>
+                <behavior oid="894049c5-3d89-4e21-b605-16782cd31261">
+                    <pathFromRoot value="4,0"/>
+                    <properties name="showTarget">
+                        <file name="libHMI.etp" path="N/A"/>
+                        <function isNode="false" name="showTarget"/>
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <inputParameters>
+                            <parameter name="Current" oid="!ed/6ba0/4CB1/27A0/5a25739a5482" type="float32">
+                                <expr>speed</expr>
+                                <init>0.0</init>
+                            </parameter>
+                            <parameter name="Target" oid="!ed/6b9f/4CB1/27A0/5a25739a4a22" type="float32">
+                                <expr>targetSpeed</expr>
+                                <init>0.0</init>
+                            </parameter>
+                        </inputParameters>
+                        <outputParameters>
+                            <parameter name="ShowTarget" oid="!ed/6b9e/4CB1/27A0/5a25739a4308" type="bool">
+                                <expr>showTargetSpeed</expr>
+                            </parameter>
+                        </outputParameters>
+                    </properties>
+                </behavior>
+                <translationContainer oid="9c118135-b4d3-4342-b8c1-e2c8f25b75ca">
+                    <pathFromRoot value="5,0"/>
+                    <properties name="TARGET_SPEED">
+                        <visible>
+                            <init>true</init>
+                            <expr>showTargetSpeed</expr>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <refPoint>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </refPoint>
+                        <startTranslationPoint>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </startTranslationPoint>
+                        <endTranslationPoint>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>300.0</init>
+                            </y>
+                        </endTranslationPoint>
+                        <startTranslationValue>
+                            <init>0.0</init>
+                        </startTranslationValue>
+                        <endTranslationValue>
+                            <init>300.0</init>
+                            <expr>maxSpeed</expr>
+                        </endTranslationValue>
+                        <startTranslationLocked>
+                            <init>true</init>
+                        </startTranslationLocked>
+                        <endTranslationLocked>
+                            <init>true</init>
+                        </endTranslationLocked>
+                        <functionalTranslationValue>
+                            <init>0.0</init>
+                            <expr>targetSpeed</expr>
+                        </functionalTranslationValue>
+                    </properties>
+                    <children>
+                        <bitmap oid="80554016-c3f3-4e47-9313-ebffdffbb2b4">
+                            <pathFromRoot value="0,5,0"/>
+                            <properties name="bitmap">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <position>
+                                    <x>
+                                        <init>0.0</init>
+                                    </x>
+                                    <y>
+                                        <init>-10.75</init>
+                                    </y>
+                                </position>
+                                <textureId>
+                                    <init>29</init>
+                                </textureId>
+                            </properties>
+                        </bitmap>
+                        <container oid="87b65f57-2368-4cce-8f6c-7707910d9d80">
+                            <pathFromRoot value="1,5,0"/>
+                            <properties name="group">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>0.0</init>
+                                    </x>
+                                    <y>
+                                        <init>30.0</init>
+                                    </y>
+                                </origin>
+                                <priority>
+                                    <init>-1</init>
+                                </priority>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="true"/>
+                                <static editorLinked="true" generateStaticSequence="true" maxX="78.00003" maxY="-34.5" minX="-5.9999657" minY="-75.5">
+                                    <init>false</init>
+                                </static>
+                            </properties>
+                            <children>
+                                <biFont oid="bdbe5028-7282-45ad-87db-9854258ab39e">
+                                    <pathFromRoot value="0,1,5,0"/>
+                                    <properties name="bi-font">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <position>
+                                            <x>
+                                                <init>35.750002</init>
+                                            </x>
+                                            <y>
+                                                <init>-24.75</init>
+                                            </y>
+                                        </position>
+                                        <value>
+                                            <init>342.0</init>
+                                            <expr>targetSpeed</expr>
+                                        </value>
+                                        <format separator="46">
+                                            <integralPart>
+                                                <init>3</init>
+                                            </integralPart>
+                                            <fractionalPart>
+                                                <init>0</init>
+                                            </fractionalPart>
+                                            <secondFontPos>
+                                                <init>0</init>
+                                            </secondFontPos>
+                                            <leadingZeros>
+                                                <init>false</init>
+                                            </leadingZeros>
+                                            <displaySign>
+                                                <init>never</init>
+                                            </displaySign>
+                                        </format>
+                                        <haloing>
+                                            <init>false</init>
+                                        </haloing>
+                                        <outlineColor>
+                                            <init>2</init>
+                                        </outlineColor>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <firstLineWidth>
+                                            <init>2</init>
+                                        </firstLineWidth>
+                                        <firstFont>
+                                            <init>3</init>
+                                        </firstFont>
+                                        <secondLineWidth>
+                                            <init>2</init>
+                                        </secondLineWidth>
+                                        <secondFont>
+                                            <init>0</init>
+                                        </secondFont>
+                                        <horizAlign>
+                                            <init>center</init>
+                                        </horizAlign>
+                                        <vertAlign>
+                                            <init>middle</init>
+                                        </vertAlign>
+                                    </properties>
+                                </biFont>
+                            </children>
+                        </container>
+                        <referenceContainer oid="171cdaaf-3bee-4f36-bee5-6e40a04bb9c1">
+                            <pathFromRoot value="2,5,0"/>
+                            <properties modular="false" name="SpeedArrow">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>-8.0625</init>
+                                    </x>
+                                    <y>
+                                        <init>5.0</init>
+                                    </y>
+                                </origin>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <file name="SpeedArrow.ogfx" path="."/>
+                                <crc value="3194284018"/>
+                                <inputParameters>
+                                    <parameter control="false" name="color" oid="d56edc29-08c0-4e6f-8333-c9be001b1b07" representation="color" type="int32">
+                                        <init>-1</init>
+                                    </parameter>
+                                </inputParameters>
+                            </properties>
+                            <children/>
+                        </referenceContainer>
+                    </children>
+                </translationContainer>
+                <container oid="a72f4b3c-0119-41a8-8346-2f64f7634a0f">
+                    <pathFromRoot value="6,0"/>
+                    <properties name="display_current">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>-6.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <static editorLinked="true" generateStaticSequence="true" maxX="80.0" maxY="8.99999" minX="-33.0" minY="-22.74998">
+                            <init>false</init>
+                        </static>
+                    </properties>
+                    <children>
+                        <biFont oid="dc5a65e4-f72e-4c16-9df6-24b89c2793c9">
+                            <pathFromRoot value="0,6,0"/>
+                            <properties name="Current_alt">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <position>
+                                    <x>
+                                        <init>-0.499998</init>
+                                    </x>
+                                    <y>
+                                        <init>-20.75</init>
+                                    </y>
+                                </position>
+                                <value>
+                                    <init>150.0</init>
+                                    <expr>speed</expr>
+                                </value>
+                                <format separator="46">
+                                    <integralPart>
+                                        <init>4</init>
+                                    </integralPart>
+                                    <fractionalPart>
+                                        <init>0</init>
+                                    </fractionalPart>
+                                    <secondFontPos>
+                                        <init>0</init>
+                                    </secondFontPos>
+                                    <leadingZeros>
+                                        <init>false</init>
+                                    </leadingZeros>
+                                    <displaySign>
+                                        <init>never</init>
+                                    </displaySign>
+                                </format>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <outlineColor>
+                                    <init>2</init>
+                                </outlineColor>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <firstLineWidth>
+                                    <init>2</init>
+                                </firstLineWidth>
+                                <firstFont>
+                                    <init>4</init>
+                                </firstFont>
+                                <secondLineWidth>
+                                    <init>2</init>
+                                </secondLineWidth>
+                                <secondFont>
+                                    <init>4</init>
+                                </secondFont>
+                                <horizAlign>
+                                    <init>center</init>
+                                </horizAlign>
+                                <vertAlign>
+                                    <init>bottom</init>
+                                </vertAlign>
+                            </properties>
+                        </biFont>
+                        <text oid="48775350-9576-41ed-95ad-916c207e59de">
+                            <pathFromRoot value="1,6,0"/>
+                            <properties name="text">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <position>
+                                    <x>
+                                        <init>38.25</init>
+                                    </x>
+                                    <y>
+                                        <init>-22.750004</init>
+                                    </y>
+                                </position>
+                                <maxLength>
+                                    <init>255</init>
+                                </maxLength>
+                                <textValue type="char">
+                                    <init>[75, 78, 0]</init>
+                                </textValue>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>2</init>
+                                </outlineColor>
+                                <lineWidth>
+                                    <init>2</init>
+                                </lineWidth>
+                                <font>
+                                    <init>0</init>
+                                </font>
+                                <horizAlign>
+                                    <init>left</init>
+                                </horizAlign>
+                                <vertAlign>
+                                    <init>bottom</init>
+                                </vertAlign>
+                            </properties>
+                        </text>
+                    </children>
+                </container>
+                <text oid="cc66957c-efb8-4f16-ada7-809aa5363fa7">
+                    <pathFromRoot value="7,0"/>
+                    <properties name="Max">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <position>
+                            <x>
+                                <init>10.5</init>
+                            </x>
+                            <y>
+                                <init>304.5</init>
+                            </y>
+                        </position>
+                        <maxLength>
+                            <init>255</init>
+                        </maxLength>
+                        <textValue type="char">
+                            <init>[51, 48, 48, 0]</init>
+                        </textValue>
+                        <haloing>
+                            <init>false</init>
+                        </haloing>
+                        <haloColor>
+                            <init>-1</init>
+                        </haloColor>
+                        <outlineColor>
+                            <init>2</init>
+                        </outlineColor>
+                        <lineWidth>
+                            <init>2</init>
+                        </lineWidth>
+                        <font>
+                            <init>1</init>
+                        </font>
+                        <horizAlign>
+                            <init>left</init>
+                        </horizAlign>
+                        <vertAlign>
+                            <init>bottom</init>
+                        </vertAlign>
+                    </properties>
+                </text>
+                <text oid="b1c603c5-edc5-432d-80c0-71b08fb00631">
+                    <pathFromRoot value="8,0"/>
+                    <properties name="text">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <position>
+                            <x>
+                                <init>16.0</init>
+                            </x>
+                            <y>
+                                <init>-0.5</init>
+                            </y>
+                        </position>
+                        <maxLength>
+                            <init>255</init>
+                        </maxLength>
+                        <textValue type="char">
+                            <init>[48, 0]</init>
+                        </textValue>
+                        <haloing>
+                            <init>false</init>
+                        </haloing>
+                        <haloColor>
+                            <init>-1</init>
+                        </haloColor>
+                        <outlineColor>
+                            <init>2</init>
+                        </outlineColor>
+                        <lineWidth>
+                            <init>2</init>
+                        </lineWidth>
+                        <font>
+                            <init>1</init>
+                        </font>
+                        <horizAlign>
+                            <init>left</init>
+                        </horizAlign>
+                        <vertAlign>
+                            <init>bottom</init>
+                        </vertAlign>
+                    </properties>
+                </text>
+                <assignment oid="cca6e1ef-d1fe-4b65-870b-48b7790ec161">
+                    <pathFromRoot value="9,0"/>
+                    <properties name="assignment">
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <input>
+                            <init>0.0</init>
+                            <expr>(p1Pressed and speedAreaIn) ? (speedAreaHPercent * maxSpeed) : targetSpeed</expr>
+                        </input>
+                        <output>
+                            <expr>targetSpeed</expr>
+                        </output>
+                    </properties>
+                </assignment>
+            </children>
+        </container>
+    </children>
+</object>
+
+<!-- crc32 : 4057426200 -->
+
