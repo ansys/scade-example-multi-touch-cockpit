@@ -92,7 +92,7 @@
                     </angle>
                 </rotate>
                 <orientation clockwise="false"/>
-                <static editorLinked="true" generateStaticSequence="true" maxX="667.0005" maxY="406.0" minX="-646.0" minY="334.0">
+                <static editorLinked="true" generateStaticSequence="true" maxX="659.00037" maxY="406.0" minX="-646.0" minY="334.0">
                     <init>false</init>
                 </static>
             </properties>
@@ -128,7 +128,7 @@
                             </angle>
                         </rotate>
                         <orientation clockwise="false"/>
-                        <static editorLinked="true" generateStaticSequence="true" maxX="667.0005" maxY="406.0" minX="-646.0" minY="334.0">
+                        <static editorLinked="true" generateStaticSequence="true" maxX="659.00037" maxY="406.0" minX="-646.0" minY="334.0">
                             <init>false</init>
                         </static>
                     </properties>
@@ -274,7 +274,7 @@
                                     </angle>
                                 </rotate>
                                 <orientation clockwise="false"/>
-                                <static editorLinked="true" generateStaticSequence="true" maxX="659.00037" maxY="400.00024" minX="470.0" minY="367.75">
+                                <static editorLinked="true" generateStaticSequence="true" maxX="659.00037" maxY="399.99982" minX="470.0" minY="367.75">
                                     <init>false</init>
                                 </static>
                             </properties>
@@ -310,10 +310,10 @@
                                         <file name="DateAndTime.ogfx" path="$(SCADEDISPLAY_HOME)\examples\objects\Widgets_behavior"/>
                                         <crc value="721636494"/>
                                         <inputParameters>
-                                            <parameter control="false" name="DateFormat" oid="952d8025-158f-4775-a9b9-c3fc053184b1" representation="index" type="int32">
+                                            <parameter control="false" name="DateFormat" oid="952d8025-158f-4775-a9b9-c3fc053184b1" representation="index" type="int">
                                                 <init>1</init>
                                             </parameter>
-                                            <parameter control="false" name="TimeFormat" oid="d6d7d75c-3ebf-4778-a005-92fda0a4016c" representation="index" type="int32">
+                                            <parameter control="false" name="TimeFormat" oid="d6d7d75c-3ebf-4778-a005-92fda0a4016c" representation="index" type="int">
                                                 <init>1</init>
                                             </parameter>
                                             <parameter control="false" name="WeekDayNames" oid="59daa199-15d8-4df0-bec8-2fe82db37c77" representation="as_string" type="char^10^7">
@@ -322,32 +322,32 @@
                                             <parameter control="false" name="MonthNames" oid="01553442-33ec-43d8-aeeb-6bd6a1b0bdea" representation="as_string" type="char^10^12">
                                                 <init>[[74,97,110,117,97,114,121,0],[70,101,98,114,117,97,114,121,0],[77,97,114,99,104,0],[65,112,114,105,108,0],[77,97,121,0],[74,117,110,101,0],[74,117,108,121,0],[65,117,103,117,115,116,0],[83,101,112,116,101,109,98,101,114,0],[79,99,116,111,98,101,114,0],[78,111,118,101,109,98,101,114,0],[68,101,99,101,109,98,101,114,0]]</init>
                                             </parameter>
-                                            <parameter control="false" name="Font" oid="2f213ea3-bce3-43e6-9c8d-eec1b0f18ee0" representation="font" type="int32">
+                                            <parameter control="false" name="Font" oid="2f213ea3-bce3-43e6-9c8d-eec1b0f18ee0" representation="font" type="int">
                                                 <init>1</init>
                                             </parameter>
-                                            <parameter control="false" name="TextColor" oid="3835440f-49e6-4073-a5d5-a23b5d77356b" representation="color" type="int32">
+                                            <parameter control="false" name="TextColor" oid="3835440f-49e6-4073-a5d5-a23b5d77356b" representation="color" type="int">
                                                 <init>-1</init>
                                             </parameter>
                                         </inputParameters>
                                         <outputParameters>
                                             <parameter name="day_name" oid="73c85a8e-4543-4c76-9987-169685907fc1" representation="as_string" type="char^10"/>
                                             <parameter name="month_name" oid="627be405-6f66-4540-bca9-0faabdfe1a02" representation="as_string" type="char^10"/>
-                                            <parameter name="year" oid="7b14244c-ba9c-429c-aa08-3a456b023d1d" type="int32">
+                                            <parameter name="year" oid="7b14244c-ba9c-429c-aa08-3a456b023d1d" type="int">
                                                 <expr>year</expr>
                                             </parameter>
-                                            <parameter name="month" oid="75669eee-9410-4336-86e1-5a635e8c4356" type="int32">
+                                            <parameter name="month" oid="75669eee-9410-4336-86e1-5a635e8c4356" type="int">
                                                 <expr>month</expr>
                                             </parameter>
-                                            <parameter name="day" oid="84ea0958-1b18-416b-9085-42a89e632afd" type="int32">
+                                            <parameter name="day" oid="84ea0958-1b18-416b-9085-42a89e632afd" type="int">
                                                 <expr>day</expr>
                                             </parameter>
-                                            <parameter name="hour" oid="450d63c2-f8e0-4444-af0d-86c60a8ca11d" type="int32">
+                                            <parameter name="hour" oid="450d63c2-f8e0-4444-af0d-86c60a8ca11d" type="int">
                                                 <expr>hour</expr>
                                             </parameter>
-                                            <parameter name="minute" oid="a6d953d4-3f82-434b-9dce-7f36e997c41f" type="int32">
+                                            <parameter name="minute" oid="a6d953d4-3f82-434b-9dce-7f36e997c41f" type="int">
                                                 <expr>minute</expr>
                                             </parameter>
-                                            <parameter name="second" oid="62e13e8c-6dc2-4eb4-9eb7-cc72fddcae82" type="int32">
+                                            <parameter name="second" oid="62e13e8c-6dc2-4eb4-9eb7-cc72fddcae82" type="int">
                                                 <expr>second</expr>
                                             </parameter>
                                             <parameter name="date_string" oid="60586f01-dd61-44d8-8142-e4047b056f44" type="char^255"/>
@@ -434,7 +434,7 @@
                                             </angle>
                                         </rotate>
                                         <orientation clockwise="false"/>
-                                        <static editorLinked="true" generateStaticSequence="true" maxX="576.9999" maxY="400.00024" minX="478.00027" minY="368.99982">
+                                        <static editorLinked="true" generateStaticSequence="true" maxX="576.9999" maxY="399.99982" minX="478.00027" minY="368.99982">
                                             <init>false</init>
                                         </static>
                                     </properties>
@@ -797,7 +797,7 @@
                                             </angle>
                                         </rotate>
                                         <orientation clockwise="false"/>
-                                        <static editorLinked="true" generateStaticSequence="true" maxX="659.00037" maxY="400.00024" minX="559.9998" minY="368.99982">
+                                        <static editorLinked="true" generateStaticSequence="true" maxX="659.00037" maxY="399.99982" minX="559.9998" minY="368.99982">
                                             <init>false</init>
                                         </static>
                                     </properties>
@@ -1269,7 +1269,7 @@
                                     </angle>
                                 </rotate>
                                 <orientation clockwise="false"/>
-                                <static editorLinked="true" generateStaticSequence="true" maxX="667.0004" maxY="378.00015" minX="537.0004" minY="347.00015">
+                                <static editorLinked="true" generateStaticSequence="true" maxX="613.0" maxY="359.0" minX="537.0" minY="347.0">
                                     <init>false</init>
                                 </static>
                             </properties>
@@ -1714,5 +1714,5 @@
     </children>
 </object>
 
-<!-- crc32 : 2224660846 -->
+<!-- crc32 : 1526828400 -->
 

@@ -164,45 +164,45 @@
                     <pathFromRoot value="2,0"/>
                     <properties name="MyToggleButton">
                         <file name="libHMI.etp" path="N/A"/>
-                        <function isNode="true" name="MyToggleButton"/>
+                        <function isNode="true" name="myToggleButton"/>
                         <enable>
                             <init>true</init>
                         </enable>
                         <inputParameters>
-                            <parameter name="EmitCondition" oid="!ed/5610/2E74/2B00/5a0c1300707f" type="int32">
+                            <parameter name="emitCondition" oid="!ed/5610/2E74/2B00/5a0c1300707f" type="int32">
                                 <init>2</init>
                             </parameter>
-                            <parameter name="MouseInside" oid="!ed/5611/2E74/2B00/5a0c13004497" type="bool">
+                            <parameter name="mouseInside" oid="!ed/5611/2E74/2B00/5a0c13004497" type="bool">
                                 <expr>area</expr>
                                 <init>false</init>
                             </parameter>
-                            <parameter name="MousePressed" oid="!ed/5612/2E74/2B00/5a0c13006ba7" type="bool">
+                            <parameter name="mousePressed" oid="!ed/5612/2E74/2B00/5a0c13006ba7" type="bool">
                                 <expr>pressed</expr>
                                 <init>false</init>
                             </parameter>
-                            <parameter name="MouseReleased" oid="!ed/5613/2E74/2B00/5a0c130041a" type="bool">
+                            <parameter name="mouseReleased" oid="!ed/5613/2E74/2B00/5a0c130041a" type="bool">
                                 <expr>released</expr>
                                 <init>false</init>
                             </parameter>
-                            <parameter name="MouseButton" oid="!ed/5614/2E74/2B00/5a0c13006acd" type="int32">
+                            <parameter name="mouseButton" oid="!ed/5614/2E74/2B00/5a0c13006acd" type="int32">
                                 <expr>button</expr>
                                 <init>0</init>
                             </parameter>
-                            <parameter name="ToggleState" oid="!ed/5615/2E74/2B00/5a0c13005bbf" type="bool">
+                            <parameter name="toggleState" oid="!ed/5615/2E74/2B00/5a0c13005bbf" type="bool">
                                 <init>false</init>
                             </parameter>
-                            <parameter name="SetToggleState" oid="!ed/5616/2E74/2B00/5a0c13003a31" type="bool">
+                            <parameter name="setToggleState" oid="!ed/5616/2E74/2B00/5a0c13003a31" type="bool">
                                 <init>false</init>
                             </parameter>
-                            <parameter name="KeyEvent" oid="!ed/5617/2E74/2B00/5a0c130069b4" type="bool">
+                            <parameter name="keyEvent" oid="!ed/5617/2E74/2B00/5a0c130069b4" type="bool">
                                 <init>false</init>
                             </parameter>
                         </inputParameters>
                         <outputParameters>
-                            <parameter name="StateChangeEmit" oid="!ed/560e/2E74/2B00/5a0c130073e6" type="bool">
+                            <parameter name="stateChangeEmit" oid="!ed/560e/2E74/2B00/5a0c130073e6" type="bool">
                                 <expr>stateChangeEmit</expr>
                             </parameter>
-                            <parameter name="StateChangeValue" oid="!ed/560f/2E74/2B00/5a0c13004b68" type="bool">
+                            <parameter name="stateChangeValue" oid="!ed/560f/2E74/2B00/5a0c13004b68" type="bool">
                                 <expr>state</expr>
                             </parameter>
                         </outputParameters>
@@ -399,5 +399,5 @@
     </children>
 </object>
 
-<!-- crc32 : 1188491570 -->
+<!-- crc32 : 237601979 -->
 

@@ -6448,7 +6448,7 @@
                             </angle>
                         </rotate>
                         <orientation clockwise="false"/>
-                        <static editorLinked="true" generateStaticSequence="true" maxX="58.99998" maxY="173.50015" minX="-58.99998" minY="142.50015">
+                        <static editorLinked="true" generateStaticSequence="true" maxX="59.0" maxY="173.50015" minX="-59.0" minY="142.50015">
                             <init>false</init>
                         </static>
                     </properties>
@@ -6484,7 +6484,7 @@
                                     </angle>
                                 </rotate>
                                 <orientation clockwise="false"/>
-                                <static editorLinked="true" generateStaticSequence="true" maxX="58.99998" maxY="173.00015" minX="-58.99998" minY="143.00015">
+                                <static editorLinked="true" generateStaticSequence="true" maxX="59.0" maxY="164.0" minX="-59.0" minY="152.0">
                                     <init>false</init>
                                 </static>
                             </properties>
@@ -6683,7 +6683,7 @@
                             </angle>
                         </rotate>
                         <orientation clockwise="false"/>
-                        <static editorLinked="true" generateStaticSequence="true" maxX="58.99998" maxY="-142.50015" minX="-58.99998" minY="-173.50015">
+                        <static editorLinked="true" generateStaticSequence="true" maxX="59.0" maxY="-142.50015" minX="-59.0" minY="-173.50015">
                             <init>false</init>
                         </static>
                     </properties>
@@ -6719,7 +6719,7 @@
                                     </angle>
                                 </rotate>
                                 <orientation clockwise="false"/>
-                                <static editorLinked="true" generateStaticSequence="true" maxX="58.99998" maxY="-143.00015" minX="-58.99998" minY="-173.00015">
+                                <static editorLinked="true" generateStaticSequence="true" maxX="59.0" maxY="-152.0" minX="-59.0" minY="-164.0">
                                     <init>false</init>
                                 </static>
                             </properties>
@@ -7004,5 +7004,5 @@
     </children>
 </object>
 
-<!-- crc32 : 1877946689 -->
+<!-- crc32 : 1581907467 -->
 

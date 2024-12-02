@@ -21,8 +21,8 @@ Multi-touch Cockpit
    :target: https://opensource.org/licenses/MIT
    :alt: MIT License
 
-.. |doc| image:: https://img.shields.io/badge/docs-smartboiler-green.svg?style=flat
-   :target: https://smart-boiler-control.examples.scade.docs.pyansys.com/
+.. |doc| image:: https://img.shields.io/badge/docs-multitouchcockpit-green.svg?style=flat
+   :target: https://multi-touch-cockpit.examples.scade.docs.pyansys.com/
    :alt: Doc
 
 Overview
@@ -41,7 +41,7 @@ Ansys SCADE, starting from 2024 R2.
 Documentation and issues
 ------------------------
 Documentation for the latest stable release of Ansys SCADE Multi-touch Cockpit Example  is hosted at
-`Ansys SCADE Multi-touch Cockpit Example documentation <https://smart-boiler-control.examples.scade.docs.pyansys.com/>`_.
+`Ansys SCADE Multi-touch Cockpit Example documentation <https://multi-touch-cockpit.examples.scade.docs.pyansys.com/>`_.
 
 In the upper right corner of the documentation's title bar, there is an option for
 switching from viewing the documentation for the latest stable release to viewing the

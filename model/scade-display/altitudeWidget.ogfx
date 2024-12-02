@@ -448,9 +448,9 @@
                                 </rotate>
                                 <orientation clockwise="false"/>
                                 <file name="altitudeArrow.ogfx" path="."/>
-                                <crc value="3648342935"/>
+                                <crc value="3749984353"/>
                                 <inputParameters>
-                                    <parameter control="false" name="color" oid="c00f8d34-6e7e-430e-8369-fb73befdb1b2" representation="color" type="int32">
+                                    <parameter control="false" name="color" oid="c00f8d34-6e7e-430e-8369-fb73befdb1b2" representation="color" type="int">
                                         <init>2</init>
                                     </parameter>
                                 </inputParameters>
@@ -468,17 +468,17 @@
                             <init>true</init>
                         </enable>
                         <inputParameters>
-                            <parameter name="Current" oid="!ed/6ba0/4CB1/27A0/5a25739a5482" type="float32">
+                            <parameter name="current" oid="!ed/6ba0/4CB1/27A0/5a25739a5482" type="float32">
                                 <expr>altitude</expr>
                                 <init>0.0</init>
                             </parameter>
-                            <parameter name="Target" oid="!ed/6b9f/4CB1/27A0/5a25739a4a22" type="float32">
+                            <parameter name="target" oid="!ed/6b9f/4CB1/27A0/5a25739a4a22" type="float32">
                                 <expr>targetAltitusz</expr>
                                 <init>0.0</init>
                             </parameter>
                         </inputParameters>
                         <outputParameters>
-                            <parameter name="ShowTarget" oid="!ed/6b9e/4CB1/27A0/5a25739a4308" type="bool">
+                            <parameter name="showTargetOut" oid="!ed/6b9e/4CB1/27A0/5a25739a4308" type="bool">
                                 <expr>showTargetAll</expr>
                             </parameter>
                         </outputParameters>
@@ -574,9 +574,9 @@
                                 </rotate>
                                 <orientation clockwise="false"/>
                                 <file name="altitudeArrow.ogfx" path="."/>
-                                <crc value="3648342935"/>
+                                <crc value="3749984353"/>
                                 <inputParameters>
-                                    <parameter control="false" name="color" oid="c00f8d34-6e7e-430e-8369-fb73befdb1b2" representation="color" type="int32">
+                                    <parameter control="false" name="color" oid="c00f8d34-6e7e-430e-8369-fb73befdb1b2" representation="color" type="int">
                                         <init>-1</init>
                                     </parameter>
                                 </inputParameters>
@@ -797,5 +797,5 @@
     </children>
 </object>
 
-<!-- crc32 : 2038273851 -->
+<!-- crc32 : 1898831834 -->
 
