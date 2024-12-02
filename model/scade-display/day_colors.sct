@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="19.0" ?>
+
+<colorTable backgroundIndex="0" name="color_table" size="256">
+    <colorDefinition alpha="0xFF" index="0" name="BLACK" rgb="0x000000"/>
+    <colorDefinition alpha="0xFF" index="1" name="WHITE" rgb="0xFFFFFF"/>
+    <colorDefinition alpha="0xBF" index="2" name="WHITE75" rgb="0xFFFFFF"/>
+    <colorDefinition alpha="0x66" index="3" name="WHITE40" rgb="0xFFFFFF"/>
+    <colorDefinition alpha="0x26" index="4" name="WHITE15" rgb="0xFFFFFF"/>
+    <colorDefinition alpha="0xFF" index="5" name="RED" rgb="0xD30000"/>
+    <colorDefinition alpha="0xFF" index="6" name="ORANGE" rgb="0xFBB03C"/>
+    <colorDefinition alpha="0xFF" index="7" name="DAY MODE" rgb="0x00DC0F"/>
+    <colorDefinition alpha="0xFF" index="8" name="SKY" rgb="0x2D8CCD"/>
+    <colorDefinition alpha="0xFF" index="9" name="EARTH" rgb="0x375A19"/>
+    <colorDefinition alpha="0xFF" index="105" name="RED_NIGHT" rgb="0xCD7373"/>
+    <colorDefinition alpha="0xFF" index="106" name="ORANGE_NIGHT" rgb="0xBCA87D"/>
+    <colorDefinition alpha="0xFF" index="107" name="NIGHT MODE" rgb="0x00FFFF"/>
+    <colorDefinition alpha="0xFF" index="108" name="SKY N" rgb="0x282D64"/>
+    <colorDefinition alpha="0xFF" index="109" name="EARTH N" rgb="0x3A4B7D"/>
+    <colorDefinition alpha="0x19" index="110" name="BLACK10" rgb="0x000000"/>
+    <colorDefinition alpha="0x80" index="111" name="BLACK50" rgb="0x000000"/>
+    <colorDefinition alpha="0x19" index="112" name="WHITE10" rgb="0xFFFFFF"/>
+    <colorDefinition alpha="0x80" index="113" name="WHITE50" rgb="0xFFFFFF"/>
+    <colorDefinition alpha="0xFF" index="114" name="camera" rgb="0x424242"/>
+</colorTable>
+
+<!-- crc32 : 837216009 -->
+

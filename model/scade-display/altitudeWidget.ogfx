@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="19.0" ?>
+
+<object>
+    <IDE>
+        <ratio horizontal="1" vertical="1"/>
+        <project path="GCS.etp"/>
+        <preview height="128" width="59">
+            <raw numberOfBytes="1417">
+-119,80,78,71,13,10,26,10,0,0,0,13,73,72,68,82,0,0,0,59,0,0,0,-128,8,2,0,0,0,58,74,-122,82,0,0,5,80,73,68,65,84,120,94,-19,-100,-57,75,116,103,20,-121,117,-116,37,-74,79,39,-10,-82,99,-17,99,-41,-79,59,118,-79,-127,-120,-6,-127,34,88,80,20,-20,29,59,22,-36,100,37,88,80,65,119,-118,13,20,65,-52,66,55,-118,-118,-32,66,-125,-101,-20,20,-4,39,-14,-29,94,28,-28,-122,-111,124,113,-114,19,-110,-13,44,-122,119,-18,-36,-14,-68,-25,-98,115,-34,119,53,6,6,-52,127,10,67,1,-23,-47,127,51,65,65,65,-95,-95,-95,-46,-93,95,-128,-75,-75,117,74,74,-118,-103,-128,74,-91,-78,-77,-77,67,-28,98,98,98,124,124,124,-16,107,64,64,64,100,100,-92,-12,26,-127,-88,-88,-88,-40,-40,88,-23,-47,47,32,41,41,-55,-40,-40,56,45,45,13,3,-71,92,-98,-97,-97,15,75,-24,102,102,102,-70,-71,-71,-59,-57,-57,35,-112,94,94,94,-46,-53,-12,104,12,-77,-62,-62,66,-91,82,-119,-127,-8,85,28,68,68,68,32,-46,-34,-34,-34,-90,-90,-90,-120,-67,-12,50,61,26,-89,-89,-89,27,25,25,-87,-43,-22,-44,-44,84,-103,76,-122,-81,8,-74,-119,-119,9,-110,33,60,
+60,92,-95,80,88,89,89,65,93,122,-103,30,-115,-15,-44,-84,-84,44,-68,-6,-64,-64,-64,-94,-94,34,120,-37,-38,-38,-106,-105,-105,23,20,20,-104,-101,-101,23,23,23,-105,-107,-107,89,90,90,74,47,-45,-93,-15,63,-122,-115,-23,97,99,122,-40,-104,30,54,-90,-121,-115,-23,97,99,122,-40,-104,30,54,-90,-121,-115,-23,97,99,122,-40,-104,30,54,-90,-121,-115,-23,97,99,122,-40,-104,30,54,-90,-121,-115,-23,97,99,122,-40,-104,30,54,-90,-121,-115,-23,97,99,122,-40,-104,30,54,-90,-121,-115,-23,97,99,122,-40,-104,30,54,-90,-121,-115,-23,97,99,122,-40,-104,30,54,-90,-121,-115,-23,97,99,122,-40,-104,30,54,-90,-121,-115,-23,97,99,122,-40,-104,30,54,-90,-121,-115,-23,97,99,122,-40,-104,30,54,-90,-121,-115,-23,97,99,122,-40,-104,30,54,-90,-25,127,111,108,104,104,104,100,100,-12,-109,-128,-119,-128,-103,-103,-39,-49,2,22,22,22,-106,2,-42,-42,-42,-33,4,108,5,126,17,-80,-77,-77,-77,-73,-73,119,112,112,112,116,116,116,114,114,114,118,118,118,113,113,113,117,117,117,115,115,115,119,119,-9,-16,-16,-16,-12,-12,-60,0,-9,-41,
+-91,-79,-88,11,75,-47,-49,-54,-54,10,90,114,-71,28,42,-16,-128,4,30,-113,103,123,123,123,43,20,10,63,63,-65,-64,-64,-64,-32,-32,-32,-80,-80,-80,-120,-120,8,-91,82,25,19,19,19,23,23,-105,-112,-112,-96,82,-87,82,82,82,-46,-46,-46,50,50,50,-44,106,117,78,78,78,94,94,94,65,65,1,6,50,-103,-20,-21,-116,91,91,91,123,123,123,69,99,-116,-9,-10,-10,118,118,118,106,107,107,-95,59,60,60,124,124,124,-68,-75,-75,85,88,88,40,26,-25,-25,-25,-17,-18,-18,-74,-76,-76,-24,-51,-72,-86,-86,-22,-12,-12,116,108,108,12,-58,73,73,73,71,71,71,56,-46,-40,-40,120,118,118,-106,-99,-99,-67,-71,-71,89,93,93,-3,-85,0,-116,83,83,83,-105,-106,-106,110,110,110,-6,-6,-6,-12,102,60,63,63,63,51,51,35,26,35,25,-16,-70,-3,-3,-3,33,113,114,114,18,25,25,-119,48,-41,-43,-43,109,111,111,-9,-9,-9,-61,120,104,104,104,117,117,-11,-4,-4,124,121,121,-71,-78,-78,-14,-67,49,-54,3,51,-84,-81,-81,-113,-45,2,110,-5,3,-1,-13,-11,-127,49,-78,-94,-83,-83,77,52,22,-13,56,51,51,-13,-16,-16,16,-23,33,-26,-15,-44,-44,-44,-63,-63,-63,-8,-8,-8,-9,-17,
+-33,-111,45,21,21,21,-41,-41,-41,29,29,29,-99,-99,-99,-94,49,18,6,-29,-11,-11,-11,-105,-105,-105,-25,-25,-25,63,-76,-16,-12,-12,-124,-14,-107,-102,105,-29,-17,27,35,77,-95,-37,-44,-44,20,18,18,-126,28,64,80,-29,-29,-29,17,-68,-53,-53,-53,-59,-59,69,-72,-34,-34,-34,62,62,62,-118,-119,33,26,35,-117,94,95,95,31,30,30,-82,-82,-82,112,-38,111,90,-72,-65,-65,-41,-67,49,-6,3,-86,10,-127,68,68,39,38,38,18,19,19,-9,-9,-9,87,86,86,80,121,27,27,27,-120,61,-26,83,82,82,114,113,113,-79,-74,-74,6,81,77,86,32,67,112,-121,-69,-69,-69,-33,-75,-125,73,-30,-119,82,51,109,124,108,-116,16,-106,-106,-106,-62,24,93,12,-7,58,56,56,-120,22,49,50,50,-126,-108,-64,79,8,115,79,79,79,122,122,-70,-90,-69,-31,-124,-122,-122,-122,-65,86,30,90,-72,-117,118,-16,44,-87,-42,7,124,108,-84,-85,126,44,125,-22,39,-63,29,-59,-43,-50,-44,-44,20,-34,-26,-26,-26,-102,69,78,92,-34,-80,-74,-119,11,27,38,32,46,105,-30,122,-122,105,-8,-8,-8,-8,-6,-6,98,38,1,1,1,-30,100,-112,-27,-104,79,120,120,56,-6,9,-90,-124,-127,-18,-115,25,-26,-13,
+32,-23,-47,-35,48,-64,90,-107,-101,-101,-117,-20,71,-118,99,-79,64,-67,-94,6,80,109,-110,-65,42,-60,9,40,12,-108,53,-118,68,-36,9,-94,102,112,19,99,99,99,3,-95,-12,53,-37,70,124,69,27,-48,113,-34,-29,-42,93,93,93,11,11,11,40,74,-84,121,104,-67,53,53,53,104,-46,104,-58,3,3,3,88,95,-48,13,103,103,103,-95,-82,-71,-92,-68,-68,28,-51,36,58,58,26,117,-119,-75,26,-3,4,-27,-101,-107,-107,-43,-36,-36,-116,109,45,106,23,-41,-94,-67,-32,90,-44,58,10,23,-11,-3,-18,-127,-97,6,49,64,68,-25,-26,-26,-48,-20,-80,43,-126,-39,-24,-24,40,20,17,42,124,98,31,-126,8,117,119,119,-93,-67,104,46,41,43,43,-61,54,8,27,101,-116,-47,4,17,105,68,61,57,57,-71,-88,-88,8,-99,17,-53,39,94,20,-116,-47,-32,-79,-33,10,13,13,-43,-79,-79,8,-116,-47,-29,-38,-37,-37,17,45,-20,28,-90,-89,-89,17,-98,-55,-55,73,-84,47,54,54,54,88,89,-16,6,52,39,-93,49,-29,87,-124,-45,-32,-51,24,-51,17,13,49,91,0,-21,-91,-6,13,-72,22,23,23,-109,24,99,-45,-116,96,-29,61,66,29,-39,-116,104,97,-93,-121,23,-115,101,5,71,-80,-127,126,-97,-117,-17,-1,-49,
+18,-71,1,117,-100,-122,-105,-125,-29,88,110,48,103,-43,27,56,1,-73,-6,-127,61,6,-93,99,-2,4,-105,120,94,-90,29,77,59,42,0,0,0,0,73,69,78,68,-82,66,96,-126</raw>
+        </preview>
+    </IDE>
+    <symbology>
+        <dimension height="800" width="1280"/>
+    </symbology>
+    <declaration>
+        <inputs>
+            <input name="altitude" oid="2278e46f-e5cc-430b-8bb4-efdbb1a1765f" type="float32">
+                <init>0.0</init>
+            </input>
+            <input name="enable" oid="57abd5c2-52e1-4c97-afd7-69800d7e56c4" type="bool">
+                <init>false</init>
+            </input>
+        </inputs>
+        <outputs>
+            <output memory="true" name="targetAltitusz" oid="3208351f-51b8-43b2-8681-bbcd2a004e1e" type="float32">
+                <init>0.0</init>
+            </output>
+        </outputs>
+        <locals>
+            <local memory="false" name="p1Pressed" oid="c57c428b-db72-4423-8670-9bba70c0af64" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="false" name="altAreaIn" oid="a23195c4-180f-4870-9d67-09103ef5c1d6" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="true" name="showTargetAll" oid="19f3695c-6d18-497f-b5ec-1ad2c66fa16c" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="true" name="p1Released" oid="211e5275-1109-4900-bdb2-226739fab6a4" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="true" name="areah" oid="7ccd54f7-9cb3-429e-a31e-276ec67d4549" type="float32">
+                <init>0.0</init>
+            </local>
+        </locals>
+        <localConstants>
+            <localConstant name="MAX_ALTITUDE" oid="57070fc8-464a-4acd-8f79-bcb05d8fcbb9" type="float32">
+                <init>8000.0</init>
+            </localConstant>
+        </localConstants>
+    </declaration>
+    <children>
+        <container oid="8d23da7e-e2b6-480d-a37a-ba79c0d9e887">
+            <pathFromRoot value="0"/>
+            <properties name="altitudeWidget">
+                <visible>
+                    <init>true</init>
+                </visible>
+                <origin>
+                    <x>
+                        <init>528.5</init>
+                    </x>
+                    <y>
+                        <init>-153.0</init>
+                    </y>
+                </origin>
+                <priority>
+                    <init>-1</init>
+                </priority>
+                <scale>
+                    <x>
+                        <init>1.0</init>
+                    </x>
+                    <y>
+                        <init>1.0</init>
+                    </y>
+                </scale>
+                <rotate>
+                    <angle>
+                        <init>0.0</init>
+                    </angle>
+                </rotate>
+                <orientation clockwise="false"/>
+                <static editorLinked="true" generateStaticSequence="true" maxX="-409.25" maxY="472.00012" minX="-593.5" minY="113.000015">
+                    <init>false</init>
+                </static>
+            </properties>
+            <children>
+                <pointerEventListener oid="64506f23-583d-4701-8960-3314d8ceb2d3">
+                    <pathFromRoot value="0,0"/>
+                    <properties name="pointer event listener">
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <eventId>
+                            <init>0</init>
+                        </eventId>
+                        <relative>
+                            <init>false</init>
+                        </relative>
+                        <output>
+                            <pressed>
+                                <expr>p1Pressed</expr>
+                            </pressed>
+                            <released>
+                                <expr>p1Released</expr>
+                            </released>
+                            <pointerPosition/>
+                        </output>
+                    </properties>
+                </pointerEventListener>
+                <rectangleArea oid="5b9dc6c7-ac31-42bf-8850-7e278d730180">
+                    <pathFromRoot value="1,0"/>
+                    <properties name="rectangle area">
+                        <enable>
+                            <init>true</init>
+                            <expr>enable</expr>
+                        </enable>
+                        <pointerId>
+                            <init>-1</init>
+                        </pointerId>
+                        <firstPoint>
+                            <x>
+                                <init>4.0</init>
+                            </x>
+                            <y>
+                                <init>310.0</init>
+                            </y>
+                        </firstPoint>
+                        <thirdPoint>
+                            <x>
+                                <init>93.5</init>
+                            </x>
+                            <y>
+                                <init>-2.0</init>
+                            </y>
+                        </thirdPoint>
+                        <output>
+                            <inside>
+                                <expr>altAreaIn</expr>
+                            </inside>
+                            <percentHeight>
+                                <expr>areah</expr>
+                            </percentHeight>
+                        </output>
+                    </properties>
+                </rectangleArea>
+                <line oid="159850f3-28b3-4511-adc7-0320e08e73c6">
+                    <pathFromRoot value="2,0"/>
+                    <properties name="line">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <points>
+                            <point>
+                                <x>
+                                    <init>50.0</init>
+                                </x>
+                                <y>
+                                    <init>310.0</init>
+                                </y>
+                            </point>
+                            <point>
+                                <x>
+                                    <init>50.0</init>
+                                </x>
+                                <y>
+                                    <init>-0.000004</init>
+                                </y>
+                            </point>
+                        </points>
+                        <lineWidth>
+                            <init>2</init>
+                        </lineWidth>
+                        <lineStipple>
+                            <init>0</init>
+                        </lineStipple>
+                        <lineCap>
+                            <init>round</init>
+                        </lineCap>
+                        <haloing>
+                            <init>false</init>
+                        </haloing>
+                        <haloColor>
+                            <init>-1</init>
+                        </haloColor>
+                        <outlineColor>
+                            <init>2</init>
+                        </outlineColor>
+                        <outlineOpacity>
+                            <init>255</init>
+                        </outlineOpacity>
+                    </properties>
+                </line>
+                <container oid="7817b63f-27c5-4694-b6ae-5f4b87f857c5">
+                    <pathFromRoot value="3,0"/>
+                    <properties name="display_current">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>39.25</init>
+                            </x>
+                            <y>
+                                <init>-0.250004</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <static editorLinked="true" generateStaticSequence="true" maxX="80.00001" maxY="-9.499981" minX="-104.24999" minY="-39.74998">
+                            <init>false</init>
+                        </static>
+                    </properties>
+                    <children>
+                        <biFont oid="3ed6e34c-472f-40a8-b957-0603f653ae26">
+                            <pathFromRoot value="0,3,0"/>
+                            <properties name="Current_alt">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <position>
+                                    <x>
+                                        <init>-22.999998</init>
+                                    </x>
+                                    <y>
+                                        <init>-34.0</init>
+                                    </y>
+                                </position>
+                                <value>
+                                    <init>1000.0</init>
+                                    <expr>altitude</expr>
+                                </value>
+                                <format separator="46">
+                                    <integralPart>
+                                        <init>4</init>
+                                    </integralPart>
+                                    <fractionalPart>
+                                        <init>0</init>
+                                    </fractionalPart>
+                                    <secondFontPos>
+                                        <init>0</init>
+                                    </secondFontPos>
+                                    <leadingZeros>
+                                        <init>false</init>
+                                    </leadingZeros>
+                                    <displaySign>
+                                        <init>never</init>
+                                    </displaySign>
+                                </format>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <outlineColor>
+                                    <init>2</init>
+                                </outlineColor>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <firstLineWidth>
+                                    <init>2</init>
+                                </firstLineWidth>
+                                <firstFont>
+                                    <init>4</init>
+                                </firstFont>
+                                <secondLineWidth>
+                                    <init>2</init>
+                                </secondLineWidth>
+                                <secondFont>
+                                    <init>4</init>
+                                </secondFont>
+                                <horizAlign>
+                                    <init>center</init>
+                                </horizAlign>
+                                <vertAlign>
+                                    <init>bottom</init>
+                                </vertAlign>
+                            </properties>
+                        </biFont>
+                        <text oid="a6da16cd-73e4-4260-8a88-2499d7c5e03c">
+                            <pathFromRoot value="1,3,0"/>
+                            <properties name="text">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <position>
+                                    <x>
+                                        <init>5.25</init>
+                                    </x>
+                                    <y>
+                                        <init>-34.0</init>
+                                    </y>
+                                </position>
+                                <maxLength>
+                                    <init>255</init>
+                                </maxLength>
+                                <textValue type="char">
+                                    <init>[70, 84, 47, 77, 73, 78, 0]</init>
+                                </textValue>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>2</init>
+                                </outlineColor>
+                                <lineWidth>
+                                    <init>2</init>
+                                </lineWidth>
+                                <font>
+                                    <init>0</init>
+                                </font>
+                                <horizAlign>
+                                    <init>left</init>
+                                </horizAlign>
+                                <vertAlign>
+                                    <init>bottom</init>
+                                </vertAlign>
+                            </properties>
+                        </text>
+                    </children>
+                </container>
+                <assignment oid="24d55fbf-0582-4dc4-94aa-73e79a4ab053">
+                    <pathFromRoot value="4,0"/>
+                    <properties name="assignment">
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <input>
+                            <init>0.0</init>
+                            <expr>(p1Pressed and altAreaIn) ? (areah * MAX_ALTITUDE) : targetAltitusz</expr>
+                        </input>
+                        <output>
+                            <expr>targetAltitusz</expr>
+                        </output>
+                    </properties>
+                </assignment>
+                <translationContainer oid="1918a92c-9c96-4600-84df-781f16bcb510">
+                    <pathFromRoot value="5,0"/>
+                    <properties name="CURRENT_ALT">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>6.0</init>
+                            </x>
+                            <y>
+                                <init>153.5</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <refPoint>
+                            <x>
+                                <init>6.0</init>
+                            </x>
+                            <y>
+                                <init>68.5</init>
+                            </y>
+                        </refPoint>
+                        <startTranslationPoint>
+                            <x>
+                                <init>6.0</init>
+                            </x>
+                            <y>
+                                <init>68.5</init>
+                            </y>
+                        </startTranslationPoint>
+                        <endTranslationPoint>
+                            <x>
+                                <init>6.0</init>
+                            </x>
+                            <y>
+                                <init>368.5</init>
+                            </y>
+                        </endTranslationPoint>
+                        <startTranslationValue>
+                            <init>0.0</init>
+                        </startTranslationValue>
+                        <endTranslationValue>
+                            <init>8000.0</init>
+                            <expr>MAX_ALTITUDE</expr>
+                        </endTranslationValue>
+                        <startTranslationLocked>
+                            <init>true</init>
+                        </startTranslationLocked>
+                        <endTranslationLocked>
+                            <init>true</init>
+                        </endTranslationLocked>
+                        <functionalTranslationValue>
+                            <init>0.0</init>
+                            <expr>altitude</expr>
+                        </functionalTranslationValue>
+                    </properties>
+                    <children>
+                        <referenceContainer oid="4967e8a3-df17-47bc-9e59-1f3287461d0d">
+                            <pathFromRoot value="0,5,0"/>
+                            <properties modular="false" name="altitudeArrow">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>50.875</init>
+                                    </x>
+                                    <y>
+                                        <init>-152.5</init>
+                                    </y>
+                                </origin>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <file name="altitudeArrow.ogfx" path="."/>
+                                <crc value="3648342935"/>
+                                <inputParameters>
+                                    <parameter control="false" name="color" oid="c00f8d34-6e7e-430e-8369-fb73befdb1b2" representation="color" type="int32">
+                                        <init>2</init>
+                                    </parameter>
+                                </inputParameters>
+                            </properties>
+                            <children/>
+                        </referenceContainer>
+                    </children>
+                </translationContainer>
+                <behavior oid="f30bf16b-b329-4825-903a-cdc65797f110">
+                    <pathFromRoot value="6,0"/>
+                    <properties name="showTarget">
+                        <file name="libHMI.etp" path="N/A"/>
+                        <function isNode="false" name="showTarget"/>
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <inputParameters>
+                            <parameter name="Current" oid="!ed/6ba0/4CB1/27A0/5a25739a5482" type="float32">
+                                <expr>altitude</expr>
+                                <init>0.0</init>
+                            </parameter>
+                            <parameter name="Target" oid="!ed/6b9f/4CB1/27A0/5a25739a4a22" type="float32">
+                                <expr>targetAltitusz</expr>
+                                <init>0.0</init>
+                            </parameter>
+                        </inputParameters>
+                        <outputParameters>
+                            <parameter name="ShowTarget" oid="!ed/6b9e/4CB1/27A0/5a25739a4308" type="bool">
+                                <expr>showTargetAll</expr>
+                            </parameter>
+                        </outputParameters>
+                    </properties>
+                </behavior>
+                <translationContainer oid="57b6af9a-b983-4e97-b3ac-bf6b94c1cf61">
+                    <pathFromRoot value="7,0"/>
+                    <properties name="TARGET_ALT">
+                        <visible>
+                            <init>true</init>
+                            <expr>showTargetAll</expr>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>-1.0</init>
+                            </x>
+                            <y>
+                                <init>-0.000004</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <refPoint>
+                            <x>
+                                <init>-1.0</init>
+                            </x>
+                            <y>
+                                <init>-0.000004</init>
+                            </y>
+                        </refPoint>
+                        <startTranslationPoint>
+                            <x>
+                                <init>-1.0</init>
+                            </x>
+                            <y>
+                                <init>-0.000004</init>
+                            </y>
+                        </startTranslationPoint>
+                        <endTranslationPoint>
+                            <x>
+                                <init>-1.0</init>
+                            </x>
+                            <y>
+                                <init>300.0</init>
+                            </y>
+                        </endTranslationPoint>
+                        <startTranslationValue>
+                            <init>0.0</init>
+                        </startTranslationValue>
+                        <endTranslationValue>
+                            <init>8000.0</init>
+                            <expr>MAX_ALTITUDE</expr>
+                        </endTranslationValue>
+                        <startTranslationLocked>
+                            <init>true</init>
+                        </startTranslationLocked>
+                        <endTranslationLocked>
+                            <init>true</init>
+                        </endTranslationLocked>
+                        <functionalTranslationValue>
+                            <init>0.0</init>
+                            <expr>targetAltitusz</expr>
+                        </functionalTranslationValue>
+                    </properties>
+                    <children>
+                        <referenceContainer oid="4717b4fd-6be1-45f0-90fd-c7e9996a627d">
+                            <pathFromRoot value="0,7,0"/>
+                            <properties modular="false" name="altitudeArrow">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>58.25</init>
+                                    </x>
+                                    <y>
+                                        <init>0.625</init>
+                                    </y>
+                                </origin>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <file name="altitudeArrow.ogfx" path="."/>
+                                <crc value="3648342935"/>
+                                <inputParameters>
+                                    <parameter control="false" name="color" oid="c00f8d34-6e7e-430e-8369-fb73befdb1b2" representation="color" type="int32">
+                                        <init>-1</init>
+                                    </parameter>
+                                </inputParameters>
+                            </properties>
+                            <children/>
+                        </referenceContainer>
+                        <biFont oid="7a7a8bfe-d4da-4b39-9339-72b3cfeb4ef3">
+                            <pathFromRoot value="1,7,0"/>
+                            <properties name="bi-font">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <position>
+                                    <x>
+                                        <init>4.0</init>
+                                    </x>
+                                    <y>
+                                        <init>3.5</init>
+                                    </y>
+                                </position>
+                                <value>
+                                    <init>1234.0</init>
+                                    <expr>targetAltitusz</expr>
+                                </value>
+                                <format separator="46">
+                                    <integralPart>
+                                        <init>4</init>
+                                    </integralPart>
+                                    <fractionalPart>
+                                        <init>0</init>
+                                    </fractionalPart>
+                                    <secondFontPos>
+                                        <init>0</init>
+                                    </secondFontPos>
+                                    <leadingZeros>
+                                        <init>false</init>
+                                    </leadingZeros>
+                                    <displaySign>
+                                        <init>never</init>
+                                    </displaySign>
+                                </format>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <outlineColor>
+                                    <init>2</init>
+                                </outlineColor>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <firstLineWidth>
+                                    <init>2</init>
+                                </firstLineWidth>
+                                <firstFont>
+                                    <init>3</init>
+                                </firstFont>
+                                <secondLineWidth>
+                                    <init>2</init>
+                                </secondLineWidth>
+                                <secondFont>
+                                    <init>0</init>
+                                </secondFont>
+                                <horizAlign>
+                                    <init>center</init>
+                                </horizAlign>
+                                <vertAlign>
+                                    <init>middle</init>
+                                </vertAlign>
+                            </properties>
+                        </biFont>
+                        <container oid="05e71c9d-47cd-4241-8eb0-b72cf535b6e4">
+                            <pathFromRoot value="2,7,0"/>
+                            <properties name="group">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>26.5</init>
+                                    </x>
+                                    <y>
+                                        <init>5.5</init>
+                                    </y>
+                                </origin>
+                                <priority>
+                                    <init>-1</init>
+                                </priority>
+                                <scale>
+                                    <x>
+                                        <init>-1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <static editorLinked="true" generateStaticSequence="true" maxX="52.75" maxY="13.0" minX="-52.25" minY="-29.0">
+                                    <init>false</init>
+                                </static>
+                            </properties>
+                            <children>
+                                <bitmap oid="28110e86-712d-4ed2-9475-d5df34cb9540">
+                                    <pathFromRoot value="0,2,7,0"/>
+                                    <properties name="bitmap">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <position>
+                                            <x>
+                                                <init>-19.75</init>
+                                            </x>
+                                            <y>
+                                                <init>-17.5</init>
+                                            </y>
+                                        </position>
+                                        <textureId>
+                                            <init>29</init>
+                                        </textureId>
+                                    </properties>
+                                </bitmap>
+                            </children>
+                        </container>
+                    </children>
+                </translationContainer>
+                <text oid="0895660d-f2c6-4e02-a7cf-3095c2ccc80c">
+                    <pathFromRoot value="8,0"/>
+                    <properties name="Max">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <position>
+                            <x>
+                                <init>-6.125</init>
+                            </x>
+                            <y>
+                                <init>294.25</init>
+                            </y>
+                        </position>
+                        <maxLength>
+                            <init>255</init>
+                        </maxLength>
+                        <textValue type="char">
+                            <init>[56, 48, 48, 48, 0]</init>
+                        </textValue>
+                        <haloing>
+                            <init>false</init>
+                        </haloing>
+                        <haloColor>
+                            <init>-1</init>
+                        </haloColor>
+                        <outlineColor>
+                            <init>2</init>
+                        </outlineColor>
+                        <lineWidth>
+                            <init>2</init>
+                        </lineWidth>
+                        <font>
+                            <init>1</init>
+                        </font>
+                        <horizAlign>
+                            <init>left</init>
+                        </horizAlign>
+                        <vertAlign>
+                            <init>bottom</init>
+                        </vertAlign>
+                    </properties>
+                </text>
+                <text oid="0bbef39c-6e74-4213-b172-24d99e8203fc">
+                    <pathFromRoot value="9,0"/>
+                    <properties name="Min">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <position>
+                            <x>
+                                <init>23.5</init>
+                            </x>
+                            <y>
+                                <init>-4.375004</init>
+                            </y>
+                        </position>
+                        <maxLength>
+                            <init>255</init>
+                        </maxLength>
+                        <textValue type="char">
+                            <init>[48, 0]</init>
+                        </textValue>
+                        <haloing>
+                            <init>false</init>
+                        </haloing>
+                        <haloColor>
+                            <init>-1</init>
+                        </haloColor>
+                        <outlineColor>
+                            <init>2</init>
+                        </outlineColor>
+                        <lineWidth>
+                            <init>2</init>
+                        </lineWidth>
+                        <font>
+                            <init>1</init>
+                        </font>
+                        <horizAlign>
+                            <init>left</init>
+                        </horizAlign>
+                        <vertAlign>
+                            <init>bottom</init>
+                        </vertAlign>
+                    </properties>
+                </text>
+            </children>
+        </container>
+    </children>
+</object>
+
+<!-- crc32 : 2038273851 -->
+
