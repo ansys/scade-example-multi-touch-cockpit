@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Package name="Pointers">
+			<declarations>
+				<Constant name="CLICKBUTTON">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="1"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/4a94/28C9/1944/594245b71871"/>
+					</pragmas>
+				</Constant>
+				<Constant name="ON_PRESSED">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="1"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/4a95/28C9/1944/594245b72812"/>
+					</pragmas>
+				</Constant>
+				<Constant name="ON_RELEASED">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="2"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/4a96/28C9/1944/594245b799e"/>
+					</pragmas>
+				</Constant>
+				<Constant name="BLINKING_PERIOD">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="10"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/4a97/28C9/1944/594245b741e2"/>
+					</pragmas>
+				</Constant>
+				<Constant name="UPWHEEL">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="4"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/4a98/28C9/1944/594245b717d1"/>
+					</pragmas>
+				</Constant>
+				<Constant name="DOWNWHEEL">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="5"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/4a99/28C9/1944/594245b7197f"/>
+					</pragmas>
+				</Constant>
+				<Constant name="WHEELBUTTON">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="3"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/4a9a/28C9/1944/594245b74af4"/>
+					</pragmas>
+				</Constant>
+				<Constant name="KEY_VALID">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="13"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/4a9b/28C9/1944/594245b7104c"/>
+					</pragmas>
+				</Constant>
+				<Constant name="KEY_DELETE">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="127"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/4a9c/28C9/1944/594245b77b8c"/>
+					</pragmas>
+				</Constant>
+				<Constant name="KEY_BACKSPACE">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="8"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/4a9d/28C9/1944/594245b76e9e"/>
+					</pragmas>
+				</Constant>
+				<Constant name="KEY_ABORT">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="27"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/4a9e/28C9/1944/594245b72e3"/>
+					</pragmas>
+				</Constant>
+				<Constant name="KEY_SHIFT">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="1"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/4a9f/28C9/1944/594245b719d9"/>
+					</pragmas>
+				</Constant>
+				<Constant name="TABLET_BUTTON">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="0"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/4aa0/28C9/1944/594245b74519"/>
+					</pragmas>
+				</Constant>
+				<Operator name="EditBoxCursorVisibility" href="EditBoxCursorVisibility.xscade"/>
+				<Operator name="MouseClicked" href="MouseClicked1.xscade"/>
+			</declarations>
+			<pragmas>
+				<ed:Package oid="!ed/4a90/28C9/1944/594245b73bde" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<diagrams>
+						<TreeDiagram landscape="true" format="A4 (210 297)" oid="!ed/4a91/28C9/1944/594245b73e75" blockKind="constants"/>
+						<TreeDiagram landscape="true" format="A4 (210 297)" oid="!ed/4a92/28C9/1944/594245b7743a" blockKind="types"/>
+						<TreeDiagram landscape="true" format="A4 (210 297)" oid="!ed/4a93/28C9/1944/594245b7697c" blockKind="sensors"/>
+					</diagrams>
+				</ed:Package>
+			</pragmas>
+		</Package>
+	</declarations>
+</File>

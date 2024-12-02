@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Constant name="HIGH_DRAWING_ORDER">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="2"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/494b/28C9/1944/594244521ee1"/>
+			</pragmas>
+		</Constant>
+		<Constant name="LOW_DRAWING_ORDER">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4969/28C9/1944/594244707056"/>
+			</pragmas>
+		</Constant>
+		<Constant name="LONG_PRESSED_CYCLES">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="10"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/527f/28C9/1944/594259747a05"/>
+			</pragmas>
+		</Constant>
+		<Constant name="PFD_AREA">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/191aa/28C9/1944/5943976f2e55"/>
+			</pragmas>
+		</Constant>
+		<Constant name="HUD_AREA">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="2"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/191ab/28C9/1944/594397881eb"/>
+			</pragmas>
+		</Constant>
+		<Constant name="SCALE_FACTOR">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="0.85"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4f6f/4348/27F8/5947c7386a5e"/>
+			</pragmas>
+		</Constant>
+		<Constant name="STEPX">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="70.0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4fa8/4348/27F8/5947c79b36a3"/>
+			</pragmas>
+		</Constant>
+		<Constant name="SCREEN_WIDTH">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1280.0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4f17/1D18/2664/5a05b1661eb8"/>
+			</pragmas>
+		</Constant>
+		<Constant name="SCREEN_WIDTH4">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- SCREEN_WIDTH / 4.0 -->
+				<BinaryOp operator="/">
+					<operands>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="SCREEN_WIDTH"/>
+							</path>
+						</IdExpression>
+						<ConstValue value="4.0"/>
+					</operands>
+				</BinaryOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4f3d/1D18/2664/5a05b275657a"/>
+			</pragmas>
+		</Constant>
+		<Constant name="NO_ACTIVITY_PERIOD">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="200"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/56e3/3AC5/2868/5a15ae176332"/>
+			</pragmas>
+		</Constant>
+		<Constant name="TOGGLE_UNSELECTED">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/5a07/33E8/42A0/5a202088f68"/>
+			</pragmas>
+		</Constant>
+		<Constant name="TOGGLE_SELECTED">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="3"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/59f9/33E8/42A0/5a2020887c6c"/>
+			</pragmas>
+		</Constant>
+		<Constant name="TOGGLE_PRESSED">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="2"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/59eb/33E8/42A0/5a20208850fa"/>
+			</pragmas>
+		</Constant>
+		<Constant name="PI">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="3.14159265359"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/59dd/33E8/42A0/5a202088501e"/>
+			</pragmas>
+		</Constant>
+		<Constant name="MODE_ON">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="2"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/59cf/33E8/42A0/5a2020886be"/>
+			</pragmas>
+		</Constant>
+		<Constant name="MODE_OFF">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/59c1/33E8/42A0/5a2020881e38"/>
+			</pragmas>
+		</Constant>
+		<Constant name="MODE_AUTO">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="3"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/59b3/33E8/42A0/5a2020886441"/>
+			</pragmas>
+		</Constant>
+		<Constant name="FINE_SPEED_DELTA">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1."/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/59a5/33E8/42A0/5a2020882da5"/>
+			</pragmas>
+		</Constant>
+		<Constant name="FINE_HEADING_DELTA">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1."/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/5997/33E8/42A0/5a20208814dd"/>
+			</pragmas>
+		</Constant>
+		<Constant name="FINE_ALTITUDE_DELTA">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="100."/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/5989/33E8/42A0/5a2020883a8b"/>
+			</pragmas>
+		</Constant>
+		<Constant name="COARSE_SPEED_DELTA">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="10."/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/597b/33E8/42A0/5a2020886d63"/>
+			</pragmas>
+		</Constant>
+		<Constant name="COARSE_HEADING_DELTA">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="10."/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/596d/33E8/42A0/5a202088480c"/>
+			</pragmas>
+		</Constant>
+		<Constant name="COARSE_ALTITUDE_DELTA">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1000."/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/595f/33E8/42A0/5a20208836f8"/>
+			</pragmas>
+		</Constant>
+	</declarations>
+</File>

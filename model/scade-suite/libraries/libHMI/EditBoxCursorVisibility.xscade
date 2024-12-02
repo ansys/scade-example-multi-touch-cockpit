@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="node" name="EditBoxCursorVisibility">
+	<outputs>
+		<Variable name="CursorVisible">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4af1/28C9/1944/594245b714ae"/>
+			</pragmas>
+		</Variable>
+	</outputs>
+	<data>
+		<StateMachine name="EditBoxCursorVisibility_SM">
+			<states>
+				<State initial="true" name="CursorVisible">
+					<unless>
+						<Transition kind="restart">
+							<target>
+								<StateRef name="CursorHidden"/>
+							</target>
+							<condition>
+								<!-- BLINKING_PERIOD times true -->
+								<BinaryOp name="1" operator="times">
+									<operands>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="BLINKING_PERIOD"/>
+											</path>
+										</IdExpression>
+										<ConstValue value="true"/>
+									</operands>
+								</BinaryOp>
+							</condition>
+							<pragmas>
+								<ed:Transition oid="!ed/4aec/28C9/1944/594245b71e6b"/>
+							</pragmas>
+						</Transition>
+					</unless>
+					<data>
+						<!-- CursorVisible = true; -->
+						<Equation>
+							<lefts>
+								<VariableRef name="CursorVisible"/>
+							</lefts>
+							<right>
+								<ConstValue value="true"/>
+							</right>
+							<pragmas>
+								<ed:Equation oid="!ed/4aeb/28C9/1944/594245b71b52"/>
+							</pragmas>
+						</Equation>
+					</data>
+					<pragmas>
+						<ed:State oid="!ed/4aea/28C9/1944/594245b7359e"/>
+					</pragmas>
+				</State>
+				<State name="CursorHidden">
+					<unless>
+						<Transition kind="restart">
+							<target>
+								<StateRef name="CursorVisible"/>
+							</target>
+							<condition>
+								<!-- BLINKING_PERIOD times true -->
+								<BinaryOp name="2" operator="times">
+									<operands>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="BLINKING_PERIOD"/>
+											</path>
+										</IdExpression>
+										<ConstValue value="true"/>
+									</operands>
+								</BinaryOp>
+							</condition>
+							<pragmas>
+								<ed:Transition oid="!ed/4aef/28C9/1944/594245b7350"/>
+							</pragmas>
+						</Transition>
+					</unless>
+					<data>
+						<!-- CursorVisible = false; -->
+						<Equation>
+							<lefts>
+								<VariableRef name="CursorVisible"/>
+							</lefts>
+							<right>
+								<ConstValue value="false"/>
+							</right>
+							<pragmas>
+								<ed:Equation oid="!ed/4aee/28C9/1944/594245b76a9e"/>
+							</pragmas>
+						</Equation>
+					</data>
+					<pragmas>
+						<ed:State oid="!ed/4aed/28C9/1944/594245b74b30"/>
+					</pragmas>
+				</State>
+			</states>
+			<pragmas>
+				<ed:StateMachine oid="!ed/4ae9/28C9/1944/594245b72e9b"/>
+			</pragmas>
+		</StateMachine>
+	</data>
+	<pragmas>
+		<ed:Operator oid="!ed/4ae8/28C9/1944/594245b74ac" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+			<diagrams>
+				<NetDiagram name="diagram_EditBoxCursorVisibility_1" landscape="true" format="A4 (210 297)" oid="!ed/4af0/28C9/1944/594245b75bba">
+					<presentationElements>
+						<StateMachineGE presentable="!ed/4ae9/28C9/1944/594245b72e9b">
+							<position>
+								<Point x="450" y="529"/>
+							</position>
+							<size>
+								<Size width="13044" height="2857"/>
+							</size>
+						</StateMachineGE>
+						<StateGE display="embeddedTextual" presentable="!ed/4aea/28C9/1944/594245b7359e">
+							<position>
+								<Point x="794" y="820"/>
+							</position>
+							<size>
+								<Size width="3704" height="2249"/>
+							</size>
+						</StateGE>
+						<StateGE display="embeddedTextual" presentable="!ed/4aed/28C9/1944/594245b74b30">
+							<position>
+								<Point x="9578" y="820"/>
+							</position>
+							<size>
+								<Size width="3704" height="2249"/>
+							</size>
+						</StateGE>
+						<TransitionGE presentable="!ed/4aec/28C9/1944/594245b71e6b">
+							<positions>
+								<Point x="4498" y="1667"/>
+								<Point x="6191" y="1667"/>
+								<Point x="7885" y="1667"/>
+								<Point x="9578" y="1667"/>
+							</positions>
+							<labelSize>
+								<Size width="4683" height="1905"/>
+							</labelSize>
+							<labelPos>
+								<Point x="4762" y="978"/>
+							</labelPos>
+							<slashPos>
+								<Point x="8652" y="979"/>
+							</slashPos>
+						</TransitionGE>
+						<TransitionGE presentable="!ed/4aef/28C9/1944/594245b7350">
+							<positions>
+								<Point x="9578" y="2355"/>
+								<Point x="7885" y="2355"/>
+								<Point x="6191" y="2355"/>
+								<Point x="4498" y="2355"/>
+							</positions>
+							<labelSize>
+								<Size width="4524" height="318"/>
+							</labelSize>
+							<labelPos>
+								<Point x="4894" y="2830"/>
+							</labelPos>
+							<slashPos>
+								<Point x="8625" y="2831"/>
+							</slashPos>
+						</TransitionGE>
+					</presentationElements>
+				</NetDiagram>
+			</diagrams>
+			<references>
+				<ConstVarRef path="BLINKING_PERIOD" refOid="!ed/4a97/28C9/1944/594245b741e2"/>
+			</references>
+		</ed:Operator>
+		<kcg:Pragma>
+			expand
+		</kcg:Pragma>
+	</pragmas>
+</Operator>

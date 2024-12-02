@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Package name="Utils">
+			<declarations>
+				<Operator name="MinBounded" href="MinBounded.xscade"/>
+				<Operator name="FloorVal" href="FloorVal.xscade"/>
+				<Operator name="CeilVal" href="CeilVal.xscade"/>
+				<Operator name="Round" href="Round.xscade"/>
+				<Operator name="CeilValDef" href="CeilValDef.xscade"/>
+				<Operator name="FloorValDef" href="FloorValDef.xscade"/>
+				<Operator name="FlipFlopR" href="FlipFlopR.xscade"/>
+				<Operator name="FlipFlopS" href="FlipFlopS.xscade"/>
+				<Operator name="Toggle" href="Toggle.xscade"/>
+				<Operator name="Limiter" href="Limiter.xscade"/>
+				<Operator name="RisingEdge" href="RisingEdge.xscade"/>
+				<Operator name="Memory" href="Memory.xscade"/>
+				<Operator name="TimeOut" href="TimeOut.xscade"/>
+				<Operator name="Find" href="Find.xscade"/>
+				<Operator name="Find_Loop" href="Find_Loop.xscade"/>
+				<Operator name="Change" href="Change.xscade"/>
+			</declarations>
+			<pragmas>
+				<ed:Package oid="!ed/4cfe/28C9/1944/594245c84eee" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<diagrams>
+						<TreeDiagram landscape="true" format="A4 (210 297)" oid="!ed/4cff/28C9/1944/594245c82060" blockKind="constants"/>
+						<TreeDiagram landscape="true" format="A4 (210 297)" oid="!ed/4d00/28C9/1944/594245c87789" blockKind="types"/>
+						<TreeDiagram landscape="true" format="A4 (210 297)" oid="!ed/4d01/28C9/1944/594245c87545" blockKind="sensors"/>
+					</diagrams>
+				</ed:Package>
+			</pragmas>
+		</Package>
+	</declarations>
+</File>

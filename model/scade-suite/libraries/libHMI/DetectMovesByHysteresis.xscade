@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="node" name="DetectMovesByHysteresis">
+	<inputs>
+		<Variable name="PointerPos">
+			<type>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="2"/>
+					</size>
+				</Table>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/7072/33E8/42A0/5a2020c938b8"/>
+			</pragmas>
+		</Variable>
+		<Variable name="Pressed">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/7073/33E8/42A0/5a2020c96008"/>
+			</pragmas>
+		</Variable>
+		<Variable name="Released">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/7074/33E8/42A0/5a2020c934ee"/>
+			</pragmas>
+		</Variable>
+		<Variable name="VertHysteresis">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/706a/33E8/42A0/5a2020c92a81" hidden="true"/>
+			</pragmas>
+		</Variable>
+		<Variable name="HorizHysteresis">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/706b/33E8/42A0/5a2020c94b5b" hidden="true"/>
+			</pragmas>
+		</Variable>
+	</inputs>
+	<outputs>
+		<Variable name="Down">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<default>
+				<ConstValue value="false"/>
+			</default>
+			<pragmas>
+				<ed:Variable oid="!ed/706c/33E8/42A0/5a2020c91a70"/>
+			</pragmas>
+		</Variable>
+		<Variable name="MoveUp">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<default>
+				<ConstValue value="false"/>
+			</default>
+			<pragmas>
+				<ed:Variable oid="!ed/706d/33E8/42A0/5a2020c94a36"/>
+			</pragmas>
+		</Variable>
+		<Variable name="MoveDown">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<default>
+				<ConstValue value="false"/>
+			</default>
+			<pragmas>
+				<ed:Variable oid="!ed/706e/33E8/42A0/5a2020c9e06"/>
+			</pragmas>
+		</Variable>
+		<Variable name="MoveLeft">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<default>
+				<ConstValue value="false"/>
+			</default>
+			<pragmas>
+				<ed:Variable oid="!ed/706f/33E8/42A0/5a2020c9aa0"/>
+			</pragmas>
+		</Variable>
+		<Variable name="MoveRight">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<default>
+				<ConstValue value="false"/>
+			</default>
+			<pragmas>
+				<ed:Variable oid="!ed/7070/33E8/42A0/5a2020c93860"/>
+			</pragmas>
+		</Variable>
+		<Variable name="MoveDelta">
+			<type>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="2"/>
+					</size>
+				</Table>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/7071/33E8/42A0/5a2020c91165"/>
+			</pragmas>
+		</Variable>
+	</outputs>
+	<locals>
+		<Variable name="LPointerPosInit">
+			<type>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="2"/>
+					</size>
+				</Table>
+			</type>
+			<last>
+				<!-- [0.0, 0.0] -->
+				<DataArrayOp name="3">
+					<data>
+						<ConstValue value="0.0"/>
+						<ConstValue value="0.0"/>
+					</data>
+				</DataArrayOp>
+			</last>
+			<pragmas>
+				<ed:Variable oid="!ed/7069/33E8/42A0/5a2020c948ac"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L71">
+			<type>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="2"/>
+					</size>
+				</Table>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/7063/33E8/42A0/5a2020c965db"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L72">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/7064/33E8/42A0/5a2020c913d"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L73">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/7065/33E8/42A0/5a2020c9661"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L74">
+			<type>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="2"/>
+					</size>
+				</Table>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/7066/33E8/42A0/5a2020c94d49"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L75">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/7067/33E8/42A0/5a2020c92104"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L76">
+			<type>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="2"/>
+					</size>
+				</Table>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/7068/33E8/42A0/5a2020c96a29"/>
+			</pragmas>
+		</Variable>
+	</locals>
+	<data>
+		<StateMachine name="SM_PointerDown">
+			<states>
+				<State initial="true" name="Up">
+					<unless>
+						<Transition kind="restart">
+							<target>
+								<StateRef name="Down"/>
+							</target>
+							<condition>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="Pressed"/>
+									</path>
+								</IdExpression>
+							</condition>
+							<effect>
+								<Action>
+									<data>
+										<!-- LPointerPosInit = PointerPos; -->
+										<Equation>
+											<lefts>
+												<VariableRef name="LPointerPosInit"/>
+											</lefts>
+											<right>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="PointerPos"/>
+													</path>
+												</IdExpression>
+											</right>
+											<pragmas>
+												<ed:Equation oid="!ed/7047/33E8/42A0/5a2020c92de2"/>
+											</pragmas>
+										</Equation>
+									</data>
+									<pragmas>
+										<ed:Action oid="!ed/7046/33E8/42A0/5a2020c9420b"/>
+									</pragmas>
+								</Action>
+							</effect>
+							<pragmas>
+								<ed:Transition oid="!ed/7045/33E8/42A0/5a2020c95e01"/>
+							</pragmas>
+						</Transition>
+					</unless>
+					<pragmas>
+						<ed:State oid="!ed/7044/33E8/42A0/5a2020c96a85"/>
+					</pragmas>
+				</State>
+				<State name="Down">
+					<unless>
+						<Transition kind="restart">
+							<target>
+								<StateRef name="Up"/>
+							</target>
+							<condition>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="Released"/>
+									</path>
+								</IdExpression>
+							</condition>
+							<pragmas>
+								<ed:Transition oid="!ed/704c/33E8/42A0/5a2020c9a3f"/>
+							</pragmas>
+						</Transition>
+					</unless>
+					<locals>
+						<Variable name="_L1">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="bool"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Variable oid="!ed/704b/33E8/42A0/5a2020c95fd2"/>
+							</pragmas>
+						</Variable>
+					</locals>
+					<data>
+						<!-- Down = _L1; -->
+						<Equation>
+							<lefts>
+								<VariableRef name="Down"/>
+							</lefts>
+							<right>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L1"/>
+									</path>
+								</IdExpression>
+							</right>
+							<pragmas>
+								<ed:Equation oid="!ed/7049/33E8/42A0/5a2020c92ed0"/>
+							</pragmas>
+						</Equation>
+						<!-- _L1 = true; -->
+						<Equation>
+							<lefts>
+								<VariableRef name="_L1"/>
+							</lefts>
+							<right>
+								<ConstValue value="true"/>
+							</right>
+							<pragmas>
+								<ed:Equation oid="!ed/704a/33E8/42A0/5a2020c96d8c"/>
+							</pragmas>
+						</Equation>
+					</data>
+					<pragmas>
+						<ed:State oid="!ed/7048/33E8/42A0/5a2020c9682c"/>
+					</pragmas>
+				</State>
+			</states>
+			<pragmas>
+				<ed:StateMachine oid="!ed/7043/33E8/42A0/5a2020c913ef"/>
+			</pragmas>
+		</StateMachine>
+		<!-- _L71 = [_L72, _L73]; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L71"/>
+			</lefts>
+			<right>
+				<!-- [_L72, _L73] -->
+				<DataArrayOp name="1">
+					<data>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L72"/>
+							</path>
+						</IdExpression>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L73"/>
+							</path>
+						</IdExpression>
+					</data>
+				</DataArrayOp>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/704d/33E8/42A0/5a2020c9212d"/>
+			</pragmas>
+		</Equation>
+		<!-- MoveDelta = _L74; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="MoveDelta"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="_L74"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/704e/33E8/42A0/5a2020c9bef"/>
+			</pragmas>
+		</Equation>
+		<!-- _L72 = PointerPos[0] - LPointerPosInit[0]; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L72"/>
+			</lefts>
+			<right>
+				<!-- PointerPos[0] - LPointerPosInit[0] -->
+				<BinaryOp name="1" operator="-">
+					<operands>
+						<!-- PointerPos[0] -->
+						<PrjOp name="1">
+							<flow>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="PointerPos"/>
+									</path>
+								</IdExpression>
+							</flow>
+							<with>
+								<ConstValue value="0"/>
+							</with>
+						</PrjOp>
+						<!-- LPointerPosInit[0] -->
+						<PrjOp name="2">
+							<flow>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="LPointerPosInit"/>
+									</path>
+								</IdExpression>
+							</flow>
+							<with>
+								<ConstValue value="0"/>
+							</with>
+						</PrjOp>
+					</operands>
+				</BinaryOp>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/704f/33E8/42A0/5a2020c92676"/>
+			</pragmas>
+		</Equation>
+		<!-- _L73 = PointerPos[1] - LPointerPosInit[1]; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L73"/>
+			</lefts>
+			<right>
+				<!-- PointerPos[1] - LPointerPosInit[1] -->
+				<BinaryOp name="2" operator="-">
+					<operands>
+						<!-- PointerPos[1] -->
+						<PrjOp name="3">
+							<flow>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="PointerPos"/>
+									</path>
+								</IdExpression>
+							</flow>
+							<with>
+								<ConstValue value="1"/>
+							</with>
+						</PrjOp>
+						<!-- LPointerPosInit[1] -->
+						<PrjOp name="4">
+							<flow>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="LPointerPosInit"/>
+									</path>
+								</IdExpression>
+							</flow>
+							<with>
+								<ConstValue value="1"/>
+							</with>
+						</PrjOp>
+					</operands>
+				</BinaryOp>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/7050/33E8/42A0/5a2020c94a2a"/>
+			</pragmas>
+		</Equation>
+		<!-- _L74 = if _L75 then (_L71) else (_L76); -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L74"/>
+			</lefts>
+			<right>
+				<!-- if _L75 then (_L71) else (_L76) -->
+				<IfThenElseOp name="1">
+					<if>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L75"/>
+							</path>
+						</IdExpression>
+					</if>
+					<then>
+						<ListExpression>
+							<items>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L71"/>
+									</path>
+								</IdExpression>
+							</items>
+						</ListExpression>
+					</then>
+					<else>
+						<ListExpression>
+							<items>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L76"/>
+									</path>
+								</IdExpression>
+							</items>
+						</ListExpression>
+					</else>
+				</IfThenElseOp>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/7051/33E8/42A0/5a2020c93a25"/>
+			</pragmas>
+		</Equation>
+		<!-- _L75 = Down; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L75"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="Down"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/7052/33E8/42A0/5a2020c97a20"/>
+			</pragmas>
+		</Equation>
+		<!-- _L76 = [0.0, 0.0]; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L76"/>
+			</lefts>
+			<right>
+				<!-- [0.0, 0.0] -->
+				<DataArrayOp name="2">
+					<data>
+						<ConstValue value="0.0"/>
+						<ConstValue value="0.0"/>
+					</data>
+				</DataArrayOp>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/7053/33E8/42A0/5a2020c966d9"/>
+			</pragmas>
+		</Equation>
+		<IfBlock name="IfBlock2">
+			<block>
+				<IfNode>
+					<if>
+						<!-- MoveDelta[1] > VertHysteresis -->
+						<BinaryOp name="4" operator="&gt;">
+							<operands>
+								<!-- MoveDelta[1] -->
+								<PrjOp name="8">
+									<flow>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="MoveDelta"/>
+											</path>
+										</IdExpression>
+									</flow>
+									<with>
+										<ConstValue value="1"/>
+									</with>
+								</PrjOp>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="VertHysteresis"/>
+									</path>
+								</IdExpression>
+							</operands>
+						</BinaryOp>
+					</if>
+					<then>
+						<Action>
+							<data>
+								<!-- MoveUp = true; -->
+								<Equation>
+									<lefts>
+										<VariableRef name="MoveUp"/>
+									</lefts>
+									<right>
+										<ConstValue value="true"/>
+									</right>
+									<pragmas>
+										<ed:Equation oid="!ed/7061/33E8/42A0/5a2020c9551a"/>
+									</pragmas>
+								</Equation>
+							</data>
+							<pragmas>
+								<ed:Action oid="!ed/7060/33E8/42A0/5a2020c92451"/>
+							</pragmas>
+						</Action>
+					</then>
+					<else>
+						<IfNode>
+							<if>
+								<!-- MoveDelta[1] <  - VertHysteresis -->
+								<BinaryOp name="5" operator="&lt;">
+									<operands>
+										<!-- MoveDelta[1] -->
+										<PrjOp name="9">
+											<flow>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="MoveDelta"/>
+													</path>
+												</IdExpression>
+											</flow>
+											<with>
+												<ConstValue value="1"/>
+											</with>
+										</PrjOp>
+										<!--  - VertHysteresis -->
+										<UnaryOp name="3" operator="-">
+											<operand>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="VertHysteresis"/>
+													</path>
+												</IdExpression>
+											</operand>
+										</UnaryOp>
+									</operands>
+								</BinaryOp>
+							</if>
+							<then>
+								<Action>
+									<data>
+										<!-- MoveDown = true; -->
+										<Equation>
+											<lefts>
+												<VariableRef name="MoveDown"/>
+											</lefts>
+											<right>
+												<ConstValue value="true"/>
+											</right>
+											<pragmas>
+												<ed:Equation oid="!ed/705f/33E8/42A0/5a2020c914cf"/>
+											</pragmas>
+										</Equation>
+									</data>
+									<pragmas>
+										<ed:Action oid="!ed/705e/33E8/42A0/5a2020c979cc"/>
+									</pragmas>
+								</Action>
+							</then>
+							<else>
+								<IfNode>
+									<if>
+										<!-- MoveDelta[0] > HorizHysteresis -->
+										<BinaryOp name="6" operator="&gt;">
+											<operands>
+												<!-- MoveDelta[0] -->
+												<PrjOp name="12">
+													<flow>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="MoveDelta"/>
+															</path>
+														</IdExpression>
+													</flow>
+													<with>
+														<ConstValue value="0"/>
+													</with>
+												</PrjOp>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="HorizHysteresis"/>
+													</path>
+												</IdExpression>
+											</operands>
+										</BinaryOp>
+									</if>
+									<then>
+										<Action>
+											<data>
+												<!-- MoveRight = true; -->
+												<Equation>
+													<lefts>
+														<VariableRef name="MoveRight"/>
+													</lefts>
+													<right>
+														<ConstValue value="true"/>
+													</right>
+													<pragmas>
+														<ed:Equation oid="!ed/705d/33E8/42A0/5a2020c9311e"/>
+													</pragmas>
+												</Equation>
+											</data>
+											<pragmas>
+												<ed:Action oid="!ed/705c/33E8/42A0/5a2020c97786"/>
+											</pragmas>
+										</Action>
+									</then>
+									<else>
+										<IfNode>
+											<if>
+												<!-- MoveDelta[0] <  - HorizHysteresis -->
+												<BinaryOp name="7" operator="&lt;">
+													<operands>
+														<!-- MoveDelta[0] -->
+														<PrjOp name="13">
+															<flow>
+																<IdExpression>
+																	<path>
+																		<ConstVarRef name="MoveDelta"/>
+																	</path>
+																</IdExpression>
+															</flow>
+															<with>
+																<ConstValue value="0"/>
+															</with>
+														</PrjOp>
+														<!--  - HorizHysteresis -->
+														<UnaryOp name="5" operator="-">
+															<operand>
+																<IdExpression>
+																	<path>
+																		<ConstVarRef name="HorizHysteresis"/>
+																	</path>
+																</IdExpression>
+															</operand>
+														</UnaryOp>
+													</operands>
+												</BinaryOp>
+											</if>
+											<then>
+												<Action>
+													<data>
+														<!-- MoveLeft = true; -->
+														<Equation>
+															<lefts>
+																<VariableRef name="MoveLeft"/>
+															</lefts>
+															<right>
+																<ConstValue value="true"/>
+															</right>
+															<pragmas>
+																<ed:Equation oid="!ed/705b/33E8/42A0/5a2020c947f9"/>
+															</pragmas>
+														</Equation>
+													</data>
+													<pragmas>
+														<ed:Action oid="!ed/705a/33E8/42A0/5a2020c964d"/>
+													</pragmas>
+												</Action>
+											</then>
+											<else>
+												<Action>
+													<pragmas>
+														<ed:Action oid="!ed/7059/33E8/42A0/5a2020c952d9"/>
+													</pragmas>
+												</Action>
+											</else>
+											<pragmas>
+												<ed:IfNode oid="!ed/7058/33E8/42A0/5a2020c9334a"/>
+											</pragmas>
+										</IfNode>
+									</else>
+									<pragmas>
+										<ed:IfNode oid="!ed/7057/33E8/42A0/5a2020c94c5b"/>
+									</pragmas>
+								</IfNode>
+							</else>
+							<pragmas>
+								<ed:IfNode oid="!ed/7056/33E8/42A0/5a2020c96345"/>
+							</pragmas>
+						</IfNode>
+					</else>
+					<pragmas>
+						<ed:IfNode oid="!ed/7055/33E8/42A0/5a2020c97bb0"/>
+					</pragmas>
+				</IfNode>
+			</block>
+			<pragmas>
+				<ed:IfBlock oid="!ed/7054/33E8/42A0/5a2020c9455f"/>
+			</pragmas>
+		</IfBlock>
+	</data>
+	<pragmas>
+		<ed:Operator oid="!ed/7042/33E8/42A0/5a2020c97f62" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+			<diagrams>
+				<NetDiagram name="diagram_DetectMovesByHysteresis_1" landscape="true" format="A4 (210 297)" oid="!ed/7062/33E8/42A0/5a2020c96206">
+					<presentationElements>
+						<StateMachineGE presentable="!ed/7043/33E8/42A0/5a2020c913ef">
+							<position>
+								<Point x="1249" y="1143"/>
+							</position>
+							<size>
+								<Size width="9038" height="2392"/>
+							</size>
+						</StateMachineGE>
+						<StateGE presentable="!ed/7044/33E8/42A0/5a2020c96a85">
+							<position>
+								<Point x="1545" y="1672"/>
+							</position>
+							<size>
+								<Size width="1503" height="1418"/>
+							</size>
+						</StateGE>
+						<StateGE presentable="!ed/7048/33E8/42A0/5a2020c9682c">
+							<position>
+								<Point x="5948" y="1651"/>
+							</position>
+							<size>
+								<Size width="3980" height="1419"/>
+							</size>
+						</StateGE>
+						<EquationGE presentable="!ed/7049/33E8/42A0/5a2020c92ed0">
+							<position>
+								<Point x="8128" y="2265"/>
+							</position>
+							<size>
+								<Size width="360" height="508"/>
+							</size>
+						</EquationGE>
+						<EquationGE kind="OBJ_LIT" presentable="!ed/704a/33E8/42A0/5a2020c96d8c">
+							<position>
+								<Point x="7070" y="2371"/>
+							</position>
+							<size>
+								<Size width="169" height="296"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/704a/33E8/42A0/5a2020c96d8c" dstEquation="!ed/7049/33E8/42A0/5a2020c92ed0">
+							<positions>
+								<Point x="7239" y="2519"/>
+								<Point x="7684" y="2519"/>
+								<Point x="7684" y="2519"/>
+								<Point x="8192" y="2519"/>
+							</positions>
+						</Edge>
+						<TransitionGE presentable="!ed/7045/33E8/42A0/5a2020c95e01">
+							<positions>
+								<Point x="3048" y="2011"/>
+								<Point x="4572" y="2011"/>
+								<Point x="4403" y="2011"/>
+								<Point x="5948" y="1990"/>
+							</positions>
+							<labelSize>
+								<Size width="5906" height="296"/>
+							</labelSize>
+							<labelPos>
+								<Point x="3069" y="1291"/>
+							</labelPos>
+							<slashPos>
+								<Point x="4763" y="1291"/>
+							</slashPos>
+						</TransitionGE>
+						<TransitionGE presentable="!ed/704c/33E8/42A0/5a2020c9a3f">
+							<positions>
+								<Point x="5948" y="2688"/>
+								<Point x="4424" y="2688"/>
+								<Point x="4593" y="2688"/>
+								<Point x="3048" y="2688"/>
+							</positions>
+							<labelSize>
+								<Size width="1799" height="593"/>
+							</labelSize>
+							<labelPos>
+								<Point x="3556" y="2879"/>
+							</labelPos>
+							<slashPos>
+								<Point x="4657" y="2879"/>
+							</slashPos>
+						</TransitionGE>
+						<EquationGE presentable="!ed/704d/33E8/42A0/5a2020c9212d">
+							<position>
+								<Point x="5292" y="4233"/>
+							</position>
+							<size>
+								<Size width="990" height="1773"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/704e/33E8/42A0/5a2020c9bef">
+							<position>
+								<Point x="10562" y="5038"/>
+							</position>
+							<size>
+								<Size width="360" height="508"/>
+							</size>
+						</EquationGE>
+						<EquationGE kind="OBJ_LIT" presentable="!ed/704f/33E8/42A0/5a2020c92676">
+							<position>
+								<Point x="4509" y="4678"/>
+							</position>
+							<size>
+								<Size width="169" height="296"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/704d/33E8/42A0/5a2020c9212d" dstEquation="!ed/7051/33E8/42A0/5a2020c93a25">
+							<positions>
+								<Point x="6287" y="5122"/>
+								<Point x="6816" y="5122"/>
+								<Point x="6816" y="5122"/>
+								<Point x="8954" y="5122"/>
+							</positions>
+						</Edge>
+						<EquationGE kind="OBJ_LIT" presentable="!ed/7050/33E8/42A0/5a2020c94a2a">
+							<position>
+								<Point x="4509" y="5249"/>
+							</position>
+							<size>
+								<Size width="169" height="296"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/704f/33E8/42A0/5a2020c92676" dstEquation="!ed/704d/33E8/42A0/5a2020c9212d">
+							<positions>
+								<Point x="4678" y="4826"/>
+								<Point x="4657" y="4826"/>
+								<Point x="4657" y="4826"/>
+								<Point x="5292" y="4826"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/7050/33E8/42A0/5a2020c94a2a" dstEquation="!ed/704d/33E8/42A0/5a2020c9212d">
+							<positions>
+								<Point x="4678" y="5398"/>
+								<Point x="4657" y="5398"/>
+								<Point x="4657" y="5398"/>
+								<Point x="5292" y="5398"/>
+							</positions>
+						</Edge>
+						<EquationGE presentable="!ed/7051/33E8/42A0/5a2020c93a25">
+							<position>
+								<Point x="8954" y="4826"/>
+							</position>
+							<size>
+								<Size width="1016" height="911"/>
+							</size>
+						</EquationGE>
+						<EquationGE kind="OBJ_LIT" presentable="!ed/7052/33E8/42A0/5a2020c97a20">
+							<position>
+								<Point x="8043" y="4255"/>
+							</position>
+							<size>
+								<Size width="169" height="296"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/7052/33E8/42A0/5a2020c97a20" dstEquation="!ed/7051/33E8/42A0/5a2020c93a25">
+							<positions>
+								<Point x="8213" y="4403"/>
+								<Point x="9462" y="4403"/>
+								<Point x="9462" y="4826"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/7051/33E8/42A0/5a2020c93a25" dstEquation="!ed/704e/33E8/42A0/5a2020c9bef">
+							<positions>
+								<Point x="9970" y="5292"/>
+								<Point x="10287" y="5292"/>
+								<Point x="10287" y="5292"/>
+								<Point x="10626" y="5292"/>
+							</positions>
+						</Edge>
+						<EquationGE kind="OBJ_LIT" presentable="!ed/7053/33E8/42A0/5a2020c966d9">
+							<position>
+								<Point x="8043" y="5292"/>
+							</position>
+							<size>
+								<Size width="169" height="296"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="3" srcEquation="!ed/7053/33E8/42A0/5a2020c966d9" dstEquation="!ed/7051/33E8/42A0/5a2020c93a25">
+							<positions>
+								<Point x="8213" y="5440"/>
+								<Point x="8573" y="5440"/>
+								<Point x="8573" y="5440"/>
+								<Point x="8954" y="5440"/>
+							</positions>
+						</Edge>
+						<IfBlockGE presentable="!ed/7054/33E8/42A0/5a2020c9455f">
+							<position>
+								<Point x="13123" y="699"/>
+							</position>
+							<size>
+								<Size width="4572" height="5059"/>
+							</size>
+						</IfBlockGE>
+						<IfNodeGE labelWidth="3112" presentable="!ed/7055/33E8/42A0/5a2020c97bb0">
+							<position>
+								<Point x="13483" y="1164"/>
+							</position>
+						</IfNodeGE>
+						<ActionGE display="embeddedTextual" presentable="!ed/7060/33E8/42A0/5a2020c92451">
+							<position>
+								<Point x="14584" y="1101"/>
+							</position>
+							<size>
+								<Size width="2816" height="741"/>
+							</size>
+						</ActionGE>
+						<IfNodeGE labelWidth="3323" presentable="!ed/7056/33E8/42A0/5a2020c96345">
+							<position>
+								<Point x="13483" y="2265"/>
+							</position>
+						</IfNodeGE>
+						<ActionGE display="embeddedTextual" presentable="!ed/705e/33E8/42A0/5a2020c979cc">
+							<position>
+								<Point x="14584" y="2201"/>
+							</position>
+							<size>
+								<Size width="2837" height="740"/>
+							</size>
+						</ActionGE>
+						<IfNodeGE labelWidth="3196" presentable="!ed/7057/33E8/42A0/5a2020c94c5b">
+							<position>
+								<Point x="13483" y="3366"/>
+							</position>
+						</IfNodeGE>
+						<ActionGE display="embeddedTextual" presentable="!ed/705c/33E8/42A0/5a2020c97786">
+							<position>
+								<Point x="14584" y="3302"/>
+							</position>
+							<size>
+								<Size width="2837" height="741"/>
+							</size>
+						</ActionGE>
+						<ActionGE presentable="!ed/7059/33E8/42A0/5a2020c952d9">
+							<position>
+								<Point x="14584" y="5313"/>
+							</position>
+							<size>
+								<Size width="1058" height="338"/>
+							</size>
+						</ActionGE>
+						<IfNodeGE labelWidth="3408" presentable="!ed/7058/33E8/42A0/5a2020c9334a">
+							<position>
+								<Point x="13483" y="4509"/>
+							</position>
+						</IfNodeGE>
+						<ActionGE display="embeddedTextual" presentable="!ed/705a/33E8/42A0/5a2020c964d">
+							<position>
+								<Point x="14584" y="4445"/>
+							</position>
+							<size>
+								<Size width="2921" height="741"/>
+							</size>
+						</ActionGE>
+					</presentationElements>
+				</NetDiagram>
+			</diagrams>
+		</ed:Operator>
+	</pragmas>
+</Operator>

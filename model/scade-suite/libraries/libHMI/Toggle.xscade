@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="node" name="Toggle">
+	<inputs>
+		<Variable name="Event">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4da7/28C9/1944/594245c81c47"/>
+			</pragmas>
+		</Variable>
+		<Variable name="Init">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4da5/28C9/1944/594245c87554" hidden="true"/>
+			</pragmas>
+		</Variable>
+	</inputs>
+	<outputs>
+		<Variable name="State">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4da6/28C9/1944/594245c82a2b"/>
+			</pragmas>
+		</Variable>
+	</outputs>
+	<data>
+		<!-- State = Event xor ((Init) -> (pre State)); -->
+		<Equation>
+			<lefts>
+				<VariableRef name="State"/>
+			</lefts>
+			<right>
+				<!-- Event xor ((Init) -> (pre State)) -->
+				<NAryOp operator="xor">
+					<operands>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="Event"/>
+							</path>
+						</IdExpression>
+						<!-- ((Init) -> (pre State)) -->
+						<InitOp>
+							<value>
+								<ListExpression>
+									<items>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="Init"/>
+											</path>
+										</IdExpression>
+									</items>
+								</ListExpression>
+							</value>
+							<flow>
+								<ListExpression>
+									<items>
+										<!-- pre State -->
+										<PreOp>
+											<flow>
+												<ListExpression>
+													<items>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="State"/>
+															</path>
+														</IdExpression>
+													</items>
+												</ListExpression>
+											</flow>
+										</PreOp>
+									</items>
+								</ListExpression>
+							</flow>
+						</InitOp>
+					</operands>
+				</NAryOp>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/4da3/28C9/1944/594245c85e21"/>
+			</pragmas>
+		</Equation>
+	</data>
+	<pragmas>
+		<ed:Operator oid="!ed/4da2/28C9/1944/594245c858d6" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+			<diagrams>
+				<TextDiagram name="diagram_Toggle_1" landscape="true" format="A4 (210 297)" oid="!ed/4da4/28C9/1944/594245c841a">
+					<presentationElements>
+						<FlowTE presentable="!ed/4da3/28C9/1944/594245c85e21"/>
+					</presentationElements>
+				</TextDiagram>
+			</diagrams>
+		</ed:Operator>
+		<kcg:Pragma>
+			expand
+		</kcg:Pragma>
+	</pragmas>
+</Operator>
