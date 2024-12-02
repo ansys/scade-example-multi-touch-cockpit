@@ -59,7 +59,7 @@
     <children>
         <container oid="8d23da7e-e2b6-480d-a37a-ba79c0d9e887">
             <pathFromRoot value="0"/>
-            <properties name="AltitudeWidget">
+            <properties name="altitudeWidget">
                 <visible>
                     <init>true</init>
                 </visible>
@@ -421,7 +421,7 @@
                     <children>
                         <referenceContainer oid="4967e8a3-df17-47bc-9e59-1f3287461d0d">
                             <pathFromRoot value="0,5,0"/>
-                            <properties modular="false" name="AltitudeArrow">
+                            <properties modular="false" name="altitudeArrow">
                                 <visible>
                                     <init>true</init>
                                 </visible>
@@ -447,7 +447,7 @@
                                     </angle>
                                 </rotate>
                                 <orientation clockwise="false"/>
-                                <file name="AltitudeArrow.ogfx" path="."/>
+                                <file name="altitudeArrow.ogfx" path="."/>
                                 <crc value="3648342935"/>
                                 <inputParameters>
                                     <parameter control="false" name="color" oid="c00f8d34-6e7e-430e-8369-fb73befdb1b2" representation="color" type="int32">
@@ -547,7 +547,7 @@
                     <children>
                         <referenceContainer oid="4717b4fd-6be1-45f0-90fd-c7e9996a627d">
                             <pathFromRoot value="0,7,0"/>
-                            <properties modular="false" name="AltitudeArrow">
+                            <properties modular="false" name="altitudeArrow">
                                 <visible>
                                     <init>true</init>
                                 </visible>
@@ -573,7 +573,7 @@
                                     </angle>
                                 </rotate>
                                 <orientation clockwise="false"/>
-                                <file name="AltitudeArrow.ogfx" path="."/>
+                                <file name="altitudeArrow.ogfx" path="."/>
                                 <crc value="3648342935"/>
                                 <inputParameters>
                                     <parameter control="false" name="color" oid="c00f8d34-6e7e-430e-8369-fb73befdb1b2" representation="color" type="int32">

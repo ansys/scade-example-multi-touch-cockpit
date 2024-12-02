@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project id="1" oid_count="238">
+<Project id="1" oid_count="243">
 	<props>
 		<Prop id="1" name="@STUDIO:PRODUCT">
 			<value>DISPLAY</value>
@@ -340,17 +340,17 @@ $(CreatedDate)</value>
 						</Prop>
 					</props>
 				</FileRef>
-				<FileRef id="105" persistAs="MAP.ogfx">
+				<FileRef id="105" persistAs="map.ogfx">
 					<props>
 						<Prop id="106" name="@SDY:MODELICON">
 							<value>ico/MAP.jpg</value>
 						</Prop>
 						<Prop id="134" name="@SDY:ANIMATIONFILE">
-							<value>MAP.ogfx.asfx</value>
+							<value>map.ogfx.asfx</value>
 						</Prop>
 					</props>
 				</FileRef>
-				<FileRef id="117" persistAs="ADI.ogfx">
+				<FileRef id="117" persistAs="adi.ogfx">
 					<props>
 						<Prop id="118" name="@SDY:MODELCATEGORY">
 							<value>PFD Objects</value>
@@ -374,7 +374,6 @@ $(CreatedDate)</value>
 						</Prop>
 					</props>
 				</FileRef>
-				<FileRef id="123" persistAs="speed.ogfx.asfx"/>
 				<FileRef id="125" persistAs="vsi.ogfx">
 					<props>
 						<Prop id="127" name="@SDY:ANIMATIONFILE">
@@ -385,7 +384,6 @@ $(CreatedDate)</value>
 						</Prop>
 					</props>
 				</FileRef>
-				<FileRef id="126" persistAs="vsi.ogfx.asfx"/>
 				<FileRef id="129" persistAs="nav_btn.ogfx">
 					<props>
 						<Prop id="130" name="@SDY:MODELCATEGORY">
@@ -400,7 +398,6 @@ $(CreatedDate)</value>
 						</Prop>
 					</props>
 				</FileRef>
-				<FileRef id="133" persistAs="MAP.ogfx.asfx"/>
 				<FileRef id="147" persistAs="statusAndMenu.ogfx"/>
 				<FileRef id="149" persistAs="customToggleButton.ogfx">
 					<props>
@@ -425,39 +422,38 @@ $(CreatedDate)</value>
 						</Prop>
 					</props>
 				</FileRef>
-				<FileRef id="170" persistAs="newSlider.ogfx.asfx"/>
-				<FileRef id="196" persistAs="AltitudeArrow.ogfx">
+				<FileRef id="196" persistAs="altitudeArrow.ogfx">
 					<props>
 						<Prop id="201" name="@SDY:MODELCATEGORY">
 							<value>AutoPilot</value>
 						</Prop>
 					</props>
 				</FileRef>
-				<FileRef id="197" persistAs="AltitudeWidget.ogfx">
+				<FileRef id="197" persistAs="altitudeWidget.ogfx">
 					<props>
 						<Prop id="202" name="@SDY:MODELCATEGORY">
 							<value>AutoPilot</value>
 						</Prop>
 					</props>
 				</FileRef>
-				<FileRef id="198" persistAs="HeadingWidget.ogfx">
+				<FileRef id="198" persistAs="headingWidget.ogfx">
 					<props>
 						<Prop id="203" name="@SDY:MODELCATEGORY">
 							<value>AutoPilot</value>
 						</Prop>
 						<Prop id="209" name="@SDY:ANIMATIONFILE">
-							<value>HeadingWidget.ogfx.asfx</value>
+							<value>headingWidget.ogfx.asfx</value>
 						</Prop>
 					</props>
 				</FileRef>
-				<FileRef id="199" persistAs="SpeedArrow.ogfx">
+				<FileRef id="199" persistAs="speedArrow.ogfx">
 					<props>
 						<Prop id="204" name="@SDY:MODELCATEGORY">
 							<value>AutoPilot</value>
 						</Prop>
 					</props>
 				</FileRef>
-				<FileRef id="200" persistAs="SpeedWidget.ogfx">
+				<FileRef id="200" persistAs="speedWidget.ogfx">
 					<props>
 						<Prop id="205" name="@SDY:MODELCATEGORY">
 							<value>AutoPilot</value>
@@ -465,7 +461,6 @@ $(CreatedDate)</value>
 					</props>
 				</FileRef>
 				<FileRef id="206" persistAs="autoPilot.ogfx"/>
-				<FileRef id="208" persistAs="HeadingWidget.ogfx.asfx"/>
 			</elements>
 		</Folder>
 		<Folder id="145" extensions="etp" name="Libraries">

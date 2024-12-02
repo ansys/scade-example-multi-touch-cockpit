@@ -264,7 +264,7 @@
                             </angle>
                         </rotate>
                         <orientation clockwise="false"/>
-                        <file name="ADI.ogfx" path="."/>
+                        <file name="adi.ogfx" path="."/>
                         <crc value="3352087079"/>
                         <inputParameters>
                             <parameter control="false" name="roll" oid="7e851d20-37b7-4c56-b968-e3d7e01549c3" type="float32">

@@ -881,7 +881,7 @@
                                     </angle>
                                 </rotate>
                                 <orientation clockwise="false"/>
-                                <file name="MAP.ogfx" path="."/>
+                                <file name="map.ogfx" path="."/>
                                 <crc value="1080591336"/>
                                 <inputParameters>
                                     <parameter control="false" name="yow" oid="795d3f51-91da-4a36-bc96-62daa4ba1dc2" type="float32">

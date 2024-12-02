@@ -280,7 +280,7 @@
                                     </angle>
                                 </rotate>
                                 <orientation clockwise="false"/>
-                                <file name="SpeedArrow.ogfx" path="."/>
+                                <file name="speedArrow.ogfx" path="."/>
                                 <crc value="3194284018"/>
                                 <inputParameters>
                                     <parameter control="false" name="color" oid="d56edc29-08c0-4e6f-8333-c9be001b1b07" representation="color" type="int32">
@@ -527,7 +527,7 @@
                                     </angle>
                                 </rotate>
                                 <orientation clockwise="false"/>
-                                <file name="SpeedArrow.ogfx" path="."/>
+                                <file name="speedArrow.ogfx" path="."/>
                                 <crc value="3194284018"/>
                                 <inputParameters>
                                     <parameter control="false" name="color" oid="d56edc29-08c0-4e6f-8333-c9be001b1b07" representation="color" type="int32">

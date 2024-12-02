@@ -65,7 +65,7 @@
     <children>
         <container oid="b29712d5-b364-4729-9bdc-4902b8fa5f04">
             <pathFromRoot value="0"/>
-            <properties name="HeadingWidget">
+            <properties name="headingWidget">
                 <visible>
                     <init>true</init>
                 </visible>

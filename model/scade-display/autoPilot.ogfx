@@ -335,7 +335,7 @@
                             </angle>
                         </rotate>
                         <orientation clockwise="false"/>
-                        <file name="SpeedWidget.ogfx" path="."/>
+                        <file name="speedWidget.ogfx" path="."/>
                         <crc value="2591537875"/>
                         <constantParameters>
                             <parameter control="false" name="maxSpeed" oid="fc1ce40a-29da-44c1-baa7-49c233f53360" type="float32">
@@ -362,7 +362,7 @@
                 </referenceContainer>
                 <referenceContainer oid="6b51d86f-b9c1-4d57-85ca-237b4b3df808">
                     <pathFromRoot value="2,0"/>
-                    <properties modular="false" name="AltitudeWidget">
+                    <properties modular="false" name="altitudeWidget">
                         <visible>
                             <init>true</init>
                         </visible>
@@ -388,7 +388,7 @@
                             </angle>
                         </rotate>
                         <orientation clockwise="false"/>
-                        <file name="AltitudeWidget.ogfx" path="."/>
+                        <file name="altitudeWidget.ogfx" path="."/>
                         <crc value="197270954"/>
                         <inputParameters>
                             <parameter control="false" name="altitude" oid="2278e46f-e5cc-430b-8bb4-efdbb1a1765f" type="float32">
@@ -410,7 +410,7 @@
                 </referenceContainer>
                 <referenceContainer oid="1cb221af-d3b7-4e22-8401-ebffa7a9cc16">
                     <pathFromRoot value="3,0"/>
-                    <properties modular="false" name="HeadingWidget">
+                    <properties modular="false" name="headingWidget">
                         <visible>
                             <init>true</init>
                         </visible>
@@ -436,7 +436,7 @@
                             </angle>
                         </rotate>
                         <orientation clockwise="false"/>
-                        <file name="HeadingWidget.ogfx" path="."/>
+                        <file name="headingWidget.ogfx" path="."/>
                         <crc value="422211716"/>
                         <inputParameters>
                             <parameter control="false" name="currentHeading" oid="c720badf-28b3-48e5-903a-e611dc6e0421" type="float32">
