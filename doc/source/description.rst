@@ -1,4 +1,4 @@
-multi-touch cockpit interface
+Multi-touch cockpit interface
 ==============================
 |scade| |scade-suite| |version| |license|
 
