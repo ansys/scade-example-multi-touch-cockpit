@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Constant name="Epsilon">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="0.01"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/1f9b/7F9C/14DC/47ff6fe52949"/>
+			</pragmas>
+		</Constant>
+		<Constant name="PI">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="3.14159265"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/14ac5/654/16A8/480f3a0a223"/>
+			</pragmas>
+		</Constant>
+		<Constant name="SpecRatio">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="0.5"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/c9d/5D24/C0/485248906187"/>
+			</pragmas>
+		</Constant>
+		<Constant name="Speed">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="105.0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/161/628B/C8/48dba1b74feb"/>
+			</pragmas>
+		</Constant>
+	</declarations>
+</File>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Type name="Color_Enum">
+			<definition>
+				<Enum>
+					<values>
+						<Value name="GREY1">
+							<pragmas>
+								<ed:Value oid="!ed/2b7a/75E1/C28/47591dc856c6" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+									<comment>Enum value : 21</comment>
+								</ed:Value>
+								<kcg:Pragma>
+									C:enum_val 21
+								</kcg:Pragma>
+								<kcg:Pragma>
+									Ada:enum_val 21
+								</kcg:Pragma>
+							</pragmas>
+						</Value>
+						<Value name="YELLOW1">
+							<pragmas>
+								<ed:Value oid="!ed/2b7b/75E1/C28/47591dfa389b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+									<comment>Enum value : 46</comment>
+								</ed:Value>
+								<kcg:Pragma>
+									C:enum_val 46
+								</kcg:Pragma>
+								<kcg:Pragma>
+									Ada:enum_val 46
+								</kcg:Pragma>
+							</pragmas>
+						</Value>
+					</values>
+				</Enum>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/ea1/7A70/BF0/4759596c5a"/>
+			</pragmas>
+		</Type>
+		<Type name="Aircraft_Symbol_Enum">
+			<definition>
+				<Enum>
+					<values>
+						<Value name="Single_Cue">
+							<pragmas>
+								<ed:Value oid="!ed/2c09/75E1/C28/47592f40ce7" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+									<comment>Enum value : 1</comment>
+								</ed:Value>
+								<kcg:Pragma>
+									C:enum_val 1
+								</kcg:Pragma>
+								<kcg:Pragma>
+									Ada:enum_val 1
+								</kcg:Pragma>
+							</pragmas>
+						</Value>
+						<Value name="Double_Cue">
+							<pragmas>
+								<ed:Value oid="!ed/2c0a/75E1/C28/47592f6d4daa" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+									<comment>Enum value : 2</comment>
+								</ed:Value>
+								<kcg:Pragma>
+									C:enum_val 2
+								</kcg:Pragma>
+								<kcg:Pragma>
+									Ada:enum_val 2
+								</kcg:Pragma>
+							</pragmas>
+						</Value>
+					</values>
+				</Enum>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/e99/7A70/BF0/4759596c2feb"/>
+			</pragmas>
+		</Type>
+	</declarations>
+</File>

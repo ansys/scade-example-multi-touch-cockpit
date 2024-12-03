@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Operator kind="function" name="CounterModulo">
+			<inputs>
+				<Variable name="IN">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/106d/62F/9B4/49258f38164e"/>
+					</pragmas>
+				</Variable>
+				<Variable name="Incr">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/106c/62F/9B4/49258f201c8f" hidden="true"/>
+					</pragmas>
+				</Variable>
+				<Variable name="modulo">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/106e/62F/9B4/49258f3f79f5" hidden="true"/>
+					</pragmas>
+				</Variable>
+			</inputs>
+			<outputs>
+				<Variable name="Count">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/106b/62F/9B4/49258f201799"/>
+					</pragmas>
+				</Variable>
+			</outputs>
+			<locals>
+				<Variable name="_L7">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/1090/62F/9B4/49258f5c4bfb"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L8">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/1096/62F/9B4/49258f5f4955"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L9">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/109c/62F/9B4/49258f61343a"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L10">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/10a2/62F/9B4/49258f6b5497"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L11">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/10a8/62F/9B4/49258f7253a6"/>
+					</pragmas>
+				</Variable>
+			</locals>
+			<data>
+				<!-- _L7 = IN; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L7"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="IN"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/108f/62F/9B4/49258f5c5929"/>
+					</pragmas>
+				</Equation>
+				<!-- _L8 = _L7 + _L10; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L8"/>
+					</lefts>
+					<right>
+						<!-- _L7 + _L10 -->
+						<NAryOp name="2" operator="+">
+							<operands>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L7"/>
+									</path>
+								</IdExpression>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L10"/>
+									</path>
+								</IdExpression>
+							</operands>
+						</NAryOp>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/1095/62F/9B4/49258f5f3f37"/>
+					</pragmas>
+				</Equation>
+				<!-- _L9 = _L8 mod _L11; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L9"/>
+					</lefts>
+					<right>
+						<!-- _L8 mod _L11 -->
+						<BinaryOp name="1" operator="mod">
+							<operands>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L8"/>
+									</path>
+								</IdExpression>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L11"/>
+									</path>
+								</IdExpression>
+							</operands>
+						</BinaryOp>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/109b/62F/9B4/49258f61151"/>
+					</pragmas>
+				</Equation>
+				<!-- _L10 = Incr; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L10"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="Incr"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/10a1/62F/9B4/49258f6b2963"/>
+					</pragmas>
+				</Equation>
+				<!-- _L11 = modulo; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L11"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="modulo"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/10a7/62F/9B4/49258f7229ad"/>
+					</pragmas>
+				</Equation>
+				<!-- Count = _L9; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="Count"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L9"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/10ad/62F/9B4/49258f764401"/>
+					</pragmas>
+				</Equation>
+			</data>
+			<pragmas>
+				<ed:Operator oid="!ed/105b/62F/9B4/49258f203e2f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+					<comment>The output is incremented at each cycle with Incr.</comment>
+					<comment>At the Initialisation or if Reset equals &quot;true&quot;, the output is set to Incr.</comment>
+					<diagrams>
+						<NetDiagram name="diagram_Counter1_1" landscape="true" format="A4 (210 297)" oid="!ed/1063/62F/9B4/49258f206b12">
+							<presentationElements>
+								<EquationGE presentable="!ed/108f/62F/9B4/49258f5c5929">
+									<position>
+										<Point x="3254" y="3466"/>
+									</position>
+									<size>
+										<Size width="264" height="503"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/1095/62F/9B4/49258f5f3f37">
+									<position>
+										<Point x="5212" y="3519"/>
+									</position>
+									<size>
+										<Size width="1006" height="662"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/109b/62F/9B4/49258f61151">
+									<position>
+										<Point x="7646" y="3651"/>
+									</position>
+									<size>
+										<Size width="1005" height="662"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/108f/62F/9B4/49258f5c5929" dstEquation="!ed/1095/62F/9B4/49258f5f3f37">
+									<positions>
+										<Point x="3519" y="3731"/>
+										<Point x="4366" y="3731"/>
+										<Point x="4366" y="3731"/>
+										<Point x="5212" y="3731"/>
+									</positions>
+								</Edge>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/1095/62F/9B4/49258f5f3f37" dstEquation="!ed/109b/62F/9B4/49258f61151">
+									<positions>
+										<Point x="6218" y="3863"/>
+										<Point x="6932" y="3863"/>
+										<Point x="6932" y="3863"/>
+										<Point x="7646" y="3863"/>
+									</positions>
+								</Edge>
+								<EquationGE presentable="!ed/10a1/62F/9B4/49258f6b2963">
+									<position>
+										<Point x="3254" y="4471"/>
+									</position>
+									<size>
+										<Size width="265" height="503"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/10a1/62F/9B4/49258f6b2963" dstEquation="!ed/1095/62F/9B4/49258f5f3f37">
+									<positions>
+										<Point x="3519" y="4736"/>
+										<Point x="4366" y="4736"/>
+										<Point x="4366" y="3969"/>
+										<Point x="5212" y="3969"/>
+									</positions>
+								</Edge>
+								<EquationGE presentable="!ed/10a7/62F/9B4/49258f7229ad">
+									<position>
+										<Point x="6641" y="4683"/>
+									</position>
+									<size>
+										<Size width="265" height="503"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/10a7/62F/9B4/49258f7229ad" dstEquation="!ed/109b/62F/9B4/49258f61151">
+									<positions>
+										<Point x="6906" y="4948"/>
+										<Point x="7276" y="4948"/>
+										<Point x="7276" y="4101"/>
+										<Point x="7646" y="4101"/>
+									</positions>
+								</Edge>
+								<EquationGE presentable="!ed/10ad/62F/9B4/49258f764401">
+									<position>
+										<Point x="9684" y="3731"/>
+									</position>
+									<size>
+										<Size width="344" height="503"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/109b/62F/9B4/49258f61151" dstEquation="!ed/10ad/62F/9B4/49258f764401">
+									<positions>
+										<Point x="8652" y="3995"/>
+										<Point x="9181" y="3995"/>
+										<Point x="9181" y="3995"/>
+										<Point x="9737" y="3995"/>
+									</positions>
+								</Edge>
+							</presentationElements>
+						</NetDiagram>
+					</diagrams>
+				</ed:Operator>
+			</pragmas>
+		</Operator>
+	</declarations>
+</File>

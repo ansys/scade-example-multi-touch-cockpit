@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project id="1" oid_count="88" defaultConfiguration="18">
+<Project id="1" oid_count="103" defaultConfiguration="18">
 	<props>
 		<Prop id="10" name="@STUDIO:PRODUCT">
 			<value>SC</value>
@@ -34,10 +34,6 @@
 			<value>C QUAL60</value>
 			<configuration>18</configuration>
 		</Prop>
-		<Prop id="21" name="@GENERATOR:OPTLEVEL">
-			<value>0</value>
-			<configuration>18</configuration>
-		</Prop>
 		<Prop id="22" name="@GENERATOR:DEBUG">
 			<value>true</value>
 			<configuration>18</configuration>
@@ -51,7 +47,7 @@
 			<configuration>18</configuration>
 		</Prop>
 		<Prop id="26" name="@REPORTER:SCRIPT">
-			<value>Reporter/ScadeReport.tcl</value>
+			<value>Reporter\ScadeReport.tcl</value>
 			<configuration>25</configuration>
 		</Prop>
 		<Prop id="27" name="@REPORTER:RotateLandscape">
@@ -108,10 +104,6 @@
 			<value>true</value>
 			<configuration>35</configuration>
 		</Prop>
-		<Prop id="42" name="@SIMULATOR:COMPILER">
-			<value>GNU C</value>
-			<configuration>35</configuration>
-		</Prop>
 		<Prop id="43" name="@SIMULATOR:ADD_COMP_OPTIONS">
 			<value></value>
 			<configuration>35</configuration>
@@ -121,10 +113,10 @@
 			<configuration>35</configuration>
 		</Prop>
 		<Prop id="45" name="@SCADE:DEFAULTFILE">
-			<value>libPFDTypes.xscade</value>
+			<value>HSI.xscade</value>
 		</Prop>
 		<Prop id="46" name="@SCADE:SEMFILE">
-			<value>libPFDTypes.err</value>
+			<value>HSI.err</value>
 		</Prop>
 		<Prop id="47" name="@SCADE:NOTEFILE">
 			<value>$(SCADE)/lib/DefaultAty.aty</value>
@@ -175,18 +167,22 @@
 			<value>30</value>
 			<value>35</value>
 		</Prop>
-		<Prop id="63" name="@SCADE:CHECKED">
+		<Prop id="64" name="@SCADE:CHECKED">
 			<value>false</value>
 		</Prop>
-		<Prop id="77" name="@STUDIO:TOOLCONF">
-			<value>DiffAnalyzer</value>
-			<value>12</value>
-			<value>18</value>
-			<value>25</value>
-			<value>30</value>
-			<value>35</value>
+		<Prop id="91" name="@GENERATOR:SIGNIFICANCE_LENGTH">
+			<value>50</value>
+			<configuration>18</configuration>
 		</Prop>
-		<Prop id="78" name="@STUDIO:TOOLCONF">
+		<Prop id="92" name="@MTC_INSTRUMENTER:COVERAGE_OBJECTIVE">
+			<value>MCDC</value>
+			<configuration>35</configuration>
+		</Prop>
+		<Prop id="95" name="@GENERATOR:ROOTNODE">
+			<value>HSI_CDI_Selection</value>
+			<configuration>35</configuration>
+		</Prop>
+		<Prop id="98" name="@STUDIO:TOOLCONF">
 			<value>Code Generator</value>
 			<value>12</value>
 			<value>18</value>
@@ -194,23 +190,15 @@
 			<value>30</value>
 			<value>35</value>
 		</Prop>
-		<Prop id="79" name="@STUDIO:TOOLCONF">
-			<value>Metrics and Rules Checker</value>
+		<Prop id="99" name="@STUDIO:TOOLCONF">
+			<value>DiffAnalyzer</value>
 			<value>12</value>
 			<value>18</value>
 			<value>25</value>
 			<value>30</value>
 			<value>35</value>
 		</Prop>
-		<Prop id="80" name="@STUDIO:TOOLCONF">
-			<value>Timing and Stack Analysis Tools</value>
-			<value>12</value>
-			<value>18</value>
-			<value>25</value>
-			<value>30</value>
-			<value>35</value>
-		</Prop>
-		<Prop id="81" name="@STUDIO:TOOLCONF">
+		<Prop id="100" name="@STUDIO:TOOLCONF">
 			<value>Synchronization</value>
 			<value>12</value>
 			<value>18</value>
@@ -218,7 +206,7 @@
 			<value>30</value>
 			<value>35</value>
 		</Prop>
-		<Prop id="82" name="@STUDIO:TOOLCONF">
+		<Prop id="101" name="@STUDIO:TOOLCONF">
 			<value>Import/Export</value>
 			<value>12</value>
 			<value>18</value>
@@ -226,58 +214,66 @@
 			<value>30</value>
 			<value>35</value>
 		</Prop>
-		<Prop id="83" name="@METRICS_RULES:SELECTED_ROOTS">
-			<value>libPFDTypes</value>
-			<configuration>12</configuration>
+		<Prop id="102" name="@STUDIO:TOOLCONF">
+			<value>Timing and Stack Analysis Tools</value>
+			<value>12</value>
+			<value>18</value>
+			<value>25</value>
+			<value>30</value>
+			<value>35</value>
 		</Prop>
-		<Prop id="84" name="@METRICS_RULES:USER_DEF_FILES">
-			<value>$(SCADE)/scripts/MetricRule/DefaultMetrics.py</value>
-			<value>$(SCADE)/scripts/MetricRule/DefaultRules.py</value>
-		</Prop>
-		<Prop id="85" name="@METRICS_RULES:RULES_PARAM">
-			<value>SDR-30-1,7</value>
-			<value>SDR-38,&lt;, &gt;, &lt;=, &gt;=, =, &lt;&gt;</value>
-			<value>SDR-30-6,7</value>
-			<value>SDR-30-5,7</value>
-			<value>SDR-30-4,5</value>
-			<value>SDR-52,true,false</value>
-			<value>SDR-19,in=acc.*In, out=acc.*Out, strict=False</value>
-			<value>SDR-65,configuration=</value>
-			<value>SDR-51,index=index</value>
-			<value>SDR-22,10</value>
-			<value>SDR-64,configuration=</value>
-			<value>SDR-31,margins=0;0</value>
-			<value>SDR-32,upper_levels=1</value>
-			<value>SDR-20,continue=continue</value>
-			<value>SDR-30-3,15</value>
-			<value>SDR-30-2,7</value>
-			<configuration>12</configuration>
-		</Prop>
-		<Prop id="86" name="@METRICS_RULES:SELECTED_RULES">
-			<value>SDR-11-12-2</value>
-			<configuration>12</configuration>
+		<Prop id="103" name="@STUDIO:TOOLCONF">
+			<value>Metrics and Rules Checker</value>
+			<value>12</value>
+			<value>18</value>
+			<value>25</value>
+			<value>30</value>
+			<value>35</value>
 		</Prop>
 	</props>
 	<roots>
-		<Folder id="3" extensions="vsp;etp" name="SCADE Libraries"/>
+		<Folder id="3" extensions="vsp;etp" name="SCADE Libraries">
+			<elements>
+				<FileRef id="62" persistAs="..\PFD_Types\PFD_Types.etp"/>
+				<FileRef id="87" persistAs="..\lib_PFD\lib_PFD.etp"/>
+			</elements>
+		</Folder>
 		<Folder id="11" extensions="xscade" name="Model Files">
 			<elements>
-				<FileRef id="76" persistAs="libPFDTypes.xscade"/>
+				<FileRef id="63" persistAs="HSI.xscade"/>
+				<FileRef id="66" persistAs="HSI_Turn_Rate_Indicator_Value.xscade"/>
+				<FileRef id="67" persistAs="HSI_TO_FROM_pointer_existence.xscade"/>
+				<FileRef id="68" persistAs="HSI_TO_FROM_legend_existence.xscade"/>
+				<FileRef id="69" persistAs="HSI_TO_FROM_display.xscade"/>
+				<FileRef id="70" persistAs="HSI_Target_Heading_Pointer_Position.xscade"/>
+				<FileRef id="72" persistAs="HSI_RMIi_needle.xscade"/>
+				<FileRef id="73" persistAs="HSI_Memory_4.xscade"/>
+				<FileRef id="74" persistAs="HSI_Compute.xscade"/>
+				<FileRef id="75" persistAs="HSI_Compass_Card_Rotation.xscade"/>
+				<FileRef id="76" persistAs="HSI_CDI_To_From_Indicator_Selection.xscade"/>
+				<FileRef id="77" persistAs="HSI_CDI_Selection.xscade"/>
+				<FileRef id="78" persistAs="HSI_CDI_Resolution.xscade"/>
+				<FileRef id="79" persistAs="HSI_CDI_Offset_Selection.xscade"/>
+				<FileRef id="80" persistAs="HSI_CDI_Nav_Data_Type_Selection.xscade"/>
+				<FileRef id="81" persistAs="HSI_CDI_Nav_Data_Source_Selection.xscade"/>
+				<FileRef id="82" persistAs="HSI_CDI_legend_text_selection.xscade"/>
+				<FileRef id="83" persistAs="HSI_CDI_Indicator_position_rotation.xscade"/>
+				<FileRef id="84" persistAs="HSI_CDI_Flagged_Indicator_Selection.xscade"/>
+				<FileRef id="85" persistAs="HSI_CDI_Deviation_In_Pixels.xscade"/>
+				<FileRef id="86" persistAs="HSI_CDI_Data_Selection.xscade"/>
+				<FileRef id="89" persistAs="HSI_Aircraft_Icon_Selection.xscade"/>
+				<FileRef id="90" persistAs="HSI_CDI_VOR_Angle_Compute.xscade"/>
+				<FileRef id="97" persistAs="HSI_RMIi_needle_compute.xscade"/>
 			</elements>
 		</Folder>
 		<Folder id="58" name="Design Verifier File">
 			<elements>
-				<FileRef id="59" persistAs="libPFDTypes.l4"/>
-			</elements>
-		</Folder>
-		<Folder id="87" extensions="rcj" name="Rules Checker">
-			<elements>
-				<FileRef id="88" persistAs="libPFDTypes.rcj"/>
+				<FileRef id="59" persistAs="HSI.l4"/>
 			</elements>
 		</Folder>
 	</roots>
 	<configurations>
-		<Configuration id="12" name="KCG"/>
+		<Configuration id="12" name="KCG 6.0"/>
 		<Configuration id="18" name="Simulation"/>
 		<Configuration id="25" name="HTML"/>
 		<Configuration id="30" name="RTF"/>

@@ -1,0 +1,39 @@
+[Files]
+Names=Requirements,SCADE Design,Tests HSI,Tests Specifications,Test Report
+
+[Requirements]
+Cover1=SCADE Design
+Cover1Position=1100@1100
+Cover2=Tests Specifications
+Cover2Position=1870@1140
+GraphicPosition=1090@580
+Type=SRS_SAGEM
+Path=C:\Documents and Settings\loyer\Desktop\Sagem_URD21\PFD_SCADE\3300120202-01-04.doc
+
+[SCADE Design]
+GraphicPosition=1090@1680
+Type=Scade 6
+Path=HSI.etp
+Variable1Name=withImages
+Variable1Value=0
+
+[Tests HSI]
+Cover1=Test Report
+Cover1Position=2660@3100
+GraphicPosition=2670@2640
+Type=Test Scenario
+Path=HSI_Test
+
+[Tests Specifications]
+Cover1=Tests HSI
+Cover1Position=2660@2250
+GraphicPosition=2670@1710
+UseIntermediateFile=1
+Type=STD_SAGEM
+Path=C:\Documents and Settings\loyer\Desktop\Sagem_URD21\PFD_SCADE\STD.doc
+
+[Test Report]
+GraphicPosition=2650@3440
+Type=Test Report
+Path=HSI_Test\TestReports.xls
+

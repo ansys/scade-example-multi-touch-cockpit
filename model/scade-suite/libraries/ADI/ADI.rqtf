@@ -1,0 +1,17 @@
+[Files]
+Names=Requirements,SCADE Design
+
+[Requirements]
+Cover1=SCADE Design
+Cover1Position=2020@950
+GraphicPosition=2060@380
+Type=SRS_SAGEM
+Path=C:\Documents and Settings\loyer\Desktop\Sagem_URD21\PFD_SCADE\3300120202-01-04.doc
+
+[SCADE Design]
+GraphicPosition=2030@1400
+Type=Scade 6
+Path=ADI.etp
+Variable1Name=withImages
+Variable1Value=0
+
