@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Operator kind="function" name="Robustness_Division">
+			<inputs>
+				<Variable name="Numerator">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/1ec1/345D/2B0/47ff6800378a"/>
+					</pragmas>
+				</Variable>
+				<Variable name="Denominator">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/1ec2/345D/2B0/47ff68002aa6"/>
+					</pragmas>
+				</Variable>
+				<Variable name="Default">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/1fa5/7F9C/14DC/47ff701a44fc" hidden="true"/>
+					</pragmas>
+				</Variable>
+			</inputs>
+			<outputs>
+				<Variable name="Output">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/1ec3/345D/2B0/47ff6803330b"/>
+					</pragmas>
+				</Variable>
+			</outputs>
+			<data>
+				<IfBlock name="ProtectedDiv" exhaustiveReturn="true">
+					<block>
+						<IfNode>
+							<if>
+								<!-- Abs(Denominator) < Epsilon -->
+								<BinaryOp name="3" operator="&lt;">
+									<operands>
+										<!-- Abs(Denominator) -->
+										<CallExpression>
+											<operator>
+												<OpCall name="3">
+													<operator>
+														<OperatorRef name="Abs"/>
+													</operator>
+												</OpCall>
+											</operator>
+											<callParameters>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Denominator"/>
+													</path>
+												</IdExpression>
+											</callParameters>
+										</CallExpression>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="Epsilon"/>
+											</path>
+										</IdExpression>
+									</operands>
+								</BinaryOp>
+							</if>
+							<then>
+								<Action>
+									<data>
+										<!-- Output = Default; -->
+										<Equation>
+											<lefts>
+												<VariableRef name="Output"/>
+											</lefts>
+											<right>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Default"/>
+													</path>
+												</IdExpression>
+											</right>
+											<pragmas>
+												<ed:Equation oid="!ed/3e25/7F9C/14DC/47ff711d5790"/>
+											</pragmas>
+										</Equation>
+									</data>
+									<pragmas>
+										<ed:Action oid="!ed/3e24/7F9C/14DC/47ff711d7356"/>
+									</pragmas>
+								</Action>
+							</then>
+							<else>
+								<Action>
+									<data>
+										<!-- Output = Numerator / Denominator; -->
+										<Equation>
+											<lefts>
+												<VariableRef name="Output"/>
+											</lefts>
+											<right>
+												<!-- Numerator / Denominator -->
+												<BinaryOp name="4" operator="/">
+													<operands>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="Numerator"/>
+															</path>
+														</IdExpression>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="Denominator"/>
+															</path>
+														</IdExpression>
+													</operands>
+												</BinaryOp>
+											</right>
+											<pragmas>
+												<ed:Equation oid="!ed/3e27/7F9C/14DC/47ff711d6ea0"/>
+											</pragmas>
+										</Equation>
+									</data>
+									<pragmas>
+										<ed:Action oid="!ed/3e26/7F9C/14DC/47ff711d657b"/>
+									</pragmas>
+								</Action>
+							</else>
+							<pragmas>
+								<ed:IfNode oid="!ed/12d/628B/C8/48dba1b34657"/>
+							</pragmas>
+						</IfNode>
+					</block>
+					<returns>
+						<VariableRef name="Output"/>
+					</returns>
+					<pragmas>
+						<ed:IfBlock oid="!ed/3e28/7F9C/14DC/47ff711d5271"/>
+					</pragmas>
+				</IfBlock>
+			</data>
+			<pragmas>
+				<ed:Operator oid="!ed/1ebf/345D/2B0/47ff67ea6867" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+					<diagrams>
+						<TextDiagram name="diagram_Robustness_Division" landscape="true" format="A4 (210 297)" oid="!ed/1f9a/7F9C/14DC/47ff6fca42cf">
+							<presentationElements>
+								<FlowTE presentable="!ed/3e28/7F9C/14DC/47ff711d5271"/>
+							</presentationElements>
+						</TextDiagram>
+					</diagrams>
+				</ed:Operator>
+			</pragmas>
+		</Operator>
+	</declarations>
+</File>

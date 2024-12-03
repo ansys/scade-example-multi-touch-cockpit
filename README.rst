@@ -27,7 +27,8 @@ Multi-touch Cockpit
 
 Overview
 --------
-TODO
+This aerospace demo illustrates the coupling between SCADE Suite - for the embedded software part - and SCADE Display - for the PFD, the auto-pilot and "map" embedded HMI software parts.
+This demo also showcases the  multitouch capabilities of SCADE Display.
 
 .. image:: doc/source/_static/screenshot.png
    :target: doc/source/_static/screenshot.png

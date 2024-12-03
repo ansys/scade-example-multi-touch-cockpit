@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" xmlns:simu="http://www.esterel-technologies.com/ns/scade/pragmas/simulator/1">
+	<declarations>
+		<Package name="AutoPilot">
+			<declarations>
+				<Operator name="Goto" href="Goto.xscade"/>
+				<Operator name="VIRTUOSE_PA_Test" href="VIRTUOSE_PA_Test.xscade"/>
+			</declarations>
+			<pragmas>
+				<ed:Package oid="!ed/cac1/5F82/1828/5a25671a7905" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<diagrams>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/cac2/5F82/1828/5a25671a7003" blockKind="constants"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/cac3/5F82/1828/5a25671a3c48" blockKind="types"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/cac4/5F82/1828/5a25671a33ee" blockKind="sensors"/>
+					</diagrams>
+				</ed:Package>
+			</pragmas>
+		</Package>
+	</declarations>
+</File>

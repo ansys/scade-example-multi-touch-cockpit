@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Operator kind="function" name="ADI_FD_Pitch_Limitation">
+			<inputs>
+				<Variable name="ADI_FD_Pitch">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/10b1/7A70/BF0/4759599020b"/>
+					</pragmas>
+				</Variable>
+				<Variable name="AC_FD_Max_Pitch_Def">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/10b2/7A70/BF0/47595990163a"/>
+					</pragmas>
+				</Variable>
+			</inputs>
+			<outputs>
+				<Variable name="ADI_FD_Pitch_Limited">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/10b0/7A70/BF0/475959902a49"/>
+					</pragmas>
+				</Variable>
+			</outputs>
+			<locals>
+				<Variable name="_L1">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/10b3/7A70/BF0/47595990717e"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L2">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/10b4/7A70/BF0/4759599019ad"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L3">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/10b5/7A70/BF0/475959902ede"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L4">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/10b6/7A70/BF0/4759599052ff"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L5">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/10b7/7A70/BF0/4759599054b0"/>
+					</pragmas>
+				</Variable>
+			</locals>
+			<data>
+				<!-- _L1 = Range_Limiter_InIn(_L2, _L4, _L5); -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L1"/>
+					</lefts>
+					<right>
+						<!-- Range_Limiter_InIn(_L2, _L4, _L5) -->
+						<CallExpression>
+							<operator>
+								<OpCall name="1">
+									<operator>
+										<OperatorRef name="Range_Limiter_InIn"/>
+									</operator>
+								</OpCall>
+							</operator>
+							<callParameters>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L2"/>
+									</path>
+								</IdExpression>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L4"/>
+									</path>
+								</IdExpression>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L5"/>
+									</path>
+								</IdExpression>
+							</callParameters>
+						</CallExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/10b9/7A70/BF0/475959906e6c"/>
+					</pragmas>
+				</Equation>
+				<!-- _L2 = ADI_FD_Pitch; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L2"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="ADI_FD_Pitch"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/10ba/7A70/BF0/475959907c85"/>
+					</pragmas>
+				</Equation>
+				<!-- ADI_FD_Pitch_Limited = _L1; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="ADI_FD_Pitch_Limited"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L1"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/10bb/7A70/BF0/475959906cb"/>
+					</pragmas>
+				</Equation>
+				<!-- _L3 = AC_FD_Max_Pitch_Def; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L3"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="AC_FD_Max_Pitch_Def"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/10bc/7A70/BF0/4759599021bb"/>
+					</pragmas>
+				</Equation>
+				<!-- _L4 =  - _L5; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L4"/>
+					</lefts>
+					<right>
+						<!--  - _L5 -->
+						<UnaryOp name="1" operator="-">
+							<operand>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L5"/>
+									</path>
+								</IdExpression>
+							</operand>
+						</UnaryOp>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/10bd/7A70/BF0/475959905d54"/>
+					</pragmas>
+				</Equation>
+				<!-- _L5 = (_L3 : float32); -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L5"/>
+					</lefts>
+					<right>
+						<!-- (_L3 : float32) -->
+						<NumericCastOp name="1">
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+							<flow>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L3"/>
+									</path>
+								</IdExpression>
+							</flow>
+						</NumericCastOp>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/10be/7A70/BF0/475959901841"/>
+					</pragmas>
+				</Equation>
+			</data>
+			<pragmas>
+				<ed:Operator oid="!ed/10af/7A70/BF0/475959903ded" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+					<diagrams>
+						<NetDiagram name="diagram_ADI_FD_Pitch_Limitation_1" landscape="true" format="A4 (210 297)" oid="!ed/10b8/7A70/BF0/4759599079d4">
+							<presentationElements>
+								<EquationGE presentable="!ed/10b9/7A70/BF0/475959906e6c">
+									<position>
+										<Point x="7506" y="2506"/>
+									</position>
+									<size>
+										<Size width="2874" height="1418"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/10ba/7A70/BF0/475959907c85">
+									<position>
+										<Point x="4683" y="2937"/>
+									</position>
+									<size>
+										<Size width="265" height="503"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/10ba/7A70/BF0/475959907c85" dstEquation="!ed/10b9/7A70/BF0/475959906e6c">
+									<positions>
+										<Point x="4948" y="3201"/>
+										<Point x="6403" y="3201"/>
+										<Point x="6403" y="3201"/>
+										<Point x="7514" y="3201"/>
+									</positions>
+								</Edge>
+								<EquationGE presentable="!ed/10bb/7A70/BF0/475959906cb">
+									<position>
+										<Point x="12991" y="2937"/>
+									</position>
+									<size>
+										<Size width="344" height="503"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/10b9/7A70/BF0/475959906e6c" dstEquation="!ed/10bb/7A70/BF0/475959906cb">
+									<positions>
+										<Point x="10372" y="3201"/>
+										<Point x="11695" y="3201"/>
+										<Point x="11695" y="3201"/>
+										<Point x="13044" y="3201"/>
+									</positions>
+								</Edge>
+								<EquationGE presentable="!ed/10bc/7A70/BF0/4759599021bb">
+									<position>
+										<Point x="3757" y="5292"/>
+									</position>
+									<size>
+										<Size width="291" height="502"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/10bd/7A70/BF0/475959905d54">
+									<position>
+										<Point x="6112" y="4551"/>
+									</position>
+									<size>
+										<Size width="1005" height="661"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/10bd/7A70/BF0/475959905d54" dstEquation="!ed/10b9/7A70/BF0/475959906e6c">
+									<positions>
+										<Point x="7117" y="4895"/>
+										<Point x="8070" y="4895"/>
+										<Point x="8070" y="3916"/>
+									</positions>
+								</Edge>
+								<EquationGE presentable="!ed/10be/7A70/BF0/475959901841">
+									<position>
+										<Point x="4384" y="5204"/>
+									</position>
+									<size>
+										<Size width="1022" height="678"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/10bc/7A70/BF0/4759599021bb" dstEquation="!ed/10be/7A70/BF0/475959901841">
+									<positions>
+										<Point x="4048" y="5556"/>
+										<Point x="4207" y="5556"/>
+										<Point x="4207" y="5556"/>
+										<Point x="4392" y="5556"/>
+									</positions>
+								</Edge>
+								<Edge leftVarIndex="1" rightExprIndex="3" srcEquation="!ed/10be/7A70/BF0/475959901841" dstEquation="!ed/10b9/7A70/BF0/475959906e6c">
+									<positions>
+										<Point x="5398" y="5556"/>
+										<Point x="9657" y="5556"/>
+										<Point x="9657" y="3916"/>
+									</positions>
+								</Edge>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/10be/7A70/BF0/475959901841" dstEquation="!ed/10bd/7A70/BF0/475959905d54">
+									<positions>
+										<Point x="5398" y="5556"/>
+										<Point x="5741" y="5556"/>
+										<Point x="5741" y="4895"/>
+										<Point x="6112" y="4895"/>
+									</positions>
+								</Edge>
+							</presentationElements>
+						</NetDiagram>
+					</diagrams>
+				</ed:Operator>
+				<kcg:Pragma>
+					doc &quot;Version_1&quot; {Version = &quot;V: 1.0&quot;}
+				</kcg:Pragma>
+				<kcg:Pragma>
+					doc &quot;Title_1&quot; {Title = &quot;Title : ADI FD Pitch Limitation&quot;}
+				</kcg:Pragma>
+				<kcg:Pragma>
+					doc &quot;Author_1&quot; {Author = &quot;Created by : JL&quot;}
+				</kcg:Pragma>
+				<kcg:Pragma>
+					doc &quot;Date_1&quot; {Date = &quot;7/12/2007&quot;}
+				</kcg:Pragma>
+			</pragmas>
+		</Operator>
+	</declarations>
+</File>

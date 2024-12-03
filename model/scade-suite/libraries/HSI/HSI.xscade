@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Type name="TO_FROM_legend_text_enum">
+			<definition>
+				<Enum>
+					<values>
+						<Value name="OFF">
+							<pragmas>
+								<ed:Value oid="!ed/2a65/5B1F/A70/4756c3a06599" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<comment>Enum value : 1</comment>
+								</ed:Value>
+								<kcg:Pragma>
+									C:enum_val 1
+								</kcg:Pragma>
+								<kcg:Pragma>
+									Ada:enum_val 1
+								</kcg:Pragma>
+							</pragmas>
+						</Value>
+						<Value name="TO">
+							<pragmas>
+								<ed:Value oid="!ed/2a66/5B1F/A70/4756c3bc2e6f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<comment>Enum value : 2</comment>
+								</ed:Value>
+								<kcg:Pragma>
+									C:enum_val 2
+								</kcg:Pragma>
+								<kcg:Pragma>
+									Ada:enum_val 2
+								</kcg:Pragma>
+							</pragmas>
+						</Value>
+						<Value name="FR">
+							<pragmas>
+								<ed:Value oid="!ed/2a67/5B1F/A70/4756c3bc753b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<comment>Enum value : 3</comment>
+								</ed:Value>
+								<kcg:Pragma>
+									C:enum_val 3
+								</kcg:Pragma>
+								<kcg:Pragma>
+									Ada:enum_val 3
+								</kcg:Pragma>
+							</pragmas>
+						</Value>
+					</values>
+				</Enum>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/c5/7A70/BF0/475955396c3d"/>
+			</pragmas>
+		</Type>
+		<Type name="RMI_enum">
+			<definition>
+				<Enum>
+					<values>
+						<Value name="RMI_OFF">
+							<pragmas>
+								<ed:Value oid="!ed/2e20/5B1F/A70/4757b43d4e5d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<comment>Enum value : 0</comment>
+								</ed:Value>
+								<kcg:Pragma>
+									C:enum_val 0
+								</kcg:Pragma>
+								<kcg:Pragma>
+									Ada:enum_val 0
+								</kcg:Pragma>
+							</pragmas>
+						</Value>
+						<Value name="RMI_ADF1">
+							<pragmas>
+								<ed:Value oid="!ed/2e21/5B1F/A70/4757b4685f38" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<comment>Enum value : 3</comment>
+								</ed:Value>
+								<kcg:Pragma>
+									C:enum_val 3
+								</kcg:Pragma>
+								<kcg:Pragma>
+									Ada:enum_val 3
+								</kcg:Pragma>
+							</pragmas>
+						</Value>
+						<Value name="RMI_ADF2">
+							<pragmas>
+								<ed:Value oid="!ed/2e22/5B1F/A70/4757b46920bf" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<comment>Enum value : 4</comment>
+								</ed:Value>
+								<kcg:Pragma>
+									C:enum_val 4
+								</kcg:Pragma>
+								<kcg:Pragma>
+									Ada:enum_val 4
+								</kcg:Pragma>
+							</pragmas>
+						</Value>
+						<Value name="RMI_VOR1">
+							<pragmas>
+								<ed:Value oid="!ed/2e23/5B1F/A70/4757b46b30d3" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<comment>Enum value : 1</comment>
+								</ed:Value>
+								<kcg:Pragma>
+									C:enum_val 1
+								</kcg:Pragma>
+								<kcg:Pragma>
+									Ada:enum_val 1
+								</kcg:Pragma>
+							</pragmas>
+						</Value>
+						<Value name="RMI_VOR2">
+							<pragmas>
+								<ed:Value oid="!ed/2e24/5B1F/A70/4757b46b2fca" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<comment>Enum value : 2</comment>
+								</ed:Value>
+								<kcg:Pragma>
+									C:enum_val 2
+								</kcg:Pragma>
+								<kcg:Pragma>
+									Ada:enum_val 2
+								</kcg:Pragma>
+							</pragmas>
+						</Value>
+					</values>
+				</Enum>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/bc/7A70/BF0/475955397f20"/>
+			</pragmas>
+		</Type>
+		<Type name="HSI_To_From_Shape_enum">
+			<definition>
+				<Enum>
+					<values>
+						<Value name="TO_Shape">
+							<pragmas>
+								<ed:Value oid="!ed/2d66/118D/958/47585b984992" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<comment>Enum value : 1</comment>
+								</ed:Value>
+								<kcg:Pragma>
+									C:enum_val 1
+								</kcg:Pragma>
+								<kcg:Pragma>
+									Ada:enum_val 1
+								</kcg:Pragma>
+							</pragmas>
+						</Value>
+						<Value name="FROM_Shape">
+							<pragmas>
+								<ed:Value oid="!ed/2d67/118D/958/47585bbf254a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<comment>Enum value : 2</comment>
+								</ed:Value>
+								<kcg:Pragma>
+									C:enum_val 2
+								</kcg:Pragma>
+								<kcg:Pragma>
+									Ada:enum_val 2
+								</kcg:Pragma>
+							</pragmas>
+						</Value>
+					</values>
+				</Enum>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/b1/7A70/BF0/4759553929db"/>
+			</pragmas>
+		</Type>
+		<Type name="CDI_legend_selection_enum">
+			<definition>
+				<Enum>
+					<values>
+						<Value name="Def_CDI">
+							<pragmas>
+								<ed:Value oid="!ed/2756/5B1F/A70/4756a6fd1e37" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<comment>Enum value : 0</comment>
+								</ed:Value>
+								<kcg:Pragma>
+									C:enum_val 0
+								</kcg:Pragma>
+								<kcg:Pragma>
+									Ada:enum_val 0
+								</kcg:Pragma>
+							</pragmas>
+						</Value>
+						<Value name="GPS1">
+							<pragmas>
+								<ed:Value oid="!ed/27f7/5B1F/A70/4756a8b76521" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<comment>Enum value : 1</comment>
+								</ed:Value>
+								<kcg:Pragma>
+									C:enum_val 1
+								</kcg:Pragma>
+								<kcg:Pragma>
+									Ada:enum_val 1
+								</kcg:Pragma>
+							</pragmas>
+						</Value>
+						<Value name="GPS2">
+							<pragmas>
+								<ed:Value oid="!ed/2757/5B1F/A70/4756a7095170" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<comment>Enum value : 2</comment>
+								</ed:Value>
+								<kcg:Pragma>
+									C:enum_val 2
+								</kcg:Pragma>
+								<kcg:Pragma>
+									Ada:enum_val 2
+								</kcg:Pragma>
+							</pragmas>
+						</Value>
+						<Value name="VOR1">
+							<pragmas>
+								<ed:Value oid="!ed/2758/5B1F/A70/4756a7097dfb" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<comment>Enum value : 3</comment>
+								</ed:Value>
+								<kcg:Pragma>
+									C:enum_val 3
+								</kcg:Pragma>
+								<kcg:Pragma>
+									Ada:enum_val 3
+								</kcg:Pragma>
+							</pragmas>
+						</Value>
+						<Value name="LOC1">
+							<pragmas>
+								<ed:Value oid="!ed/2759/5B1F/A70/4756a70931e9" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<comment>Enum value : 4</comment>
+								</ed:Value>
+								<kcg:Pragma>
+									C:enum_val 4
+								</kcg:Pragma>
+								<kcg:Pragma>
+									Ada:enum_val 4
+								</kcg:Pragma>
+							</pragmas>
+						</Value>
+						<Value name="VOR2">
+							<pragmas>
+								<ed:Value oid="!ed/275a/5B1F/A70/4756a7174e0" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<comment>Enum value : 5</comment>
+								</ed:Value>
+								<kcg:Pragma>
+									C:enum_val 5
+								</kcg:Pragma>
+								<kcg:Pragma>
+									Ada:enum_val 5
+								</kcg:Pragma>
+							</pragmas>
+						</Value>
+						<Value name="LOC2">
+							<pragmas>
+								<ed:Value oid="!ed/275b/5B1F/A70/4756a7172d6b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<comment>Enum value : 6</comment>
+								</ed:Value>
+								<kcg:Pragma>
+									C:enum_val 6
+								</kcg:Pragma>
+								<kcg:Pragma>
+									Ada:enum_val 6
+								</kcg:Pragma>
+							</pragmas>
+						</Value>
+					</values>
+				</Enum>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/a9/7A70/BF0/4759553946cd"/>
+			</pragmas>
+		</Type>
+	</declarations>
+</File>
