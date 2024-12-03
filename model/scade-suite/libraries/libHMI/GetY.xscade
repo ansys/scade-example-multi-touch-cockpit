@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="function" visibility="private" name="GetY">
+	<inputs>
+		<Variable name="Pos">
+			<type>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="2"/>
+					</size>
+				</Table>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/6fa3/33E8/42A0/5a2020c96958"/>
+			</pragmas>
+		</Variable>
+	</inputs>
+	<outputs>
+		<Variable name="X">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/6fa2/33E8/42A0/5a2020c9646f"/>
+			</pragmas>
+		</Variable>
+	</outputs>
+	<locals>
+		<Variable name="_L1">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/6fa1/33E8/42A0/5a2020c9271b"/>
+			</pragmas>
+		</Variable>
+	</locals>
+	<data>
+		<!-- X = _L1; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="X"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="_L1"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/6f9e/33E8/42A0/5a2020c9d1"/>
+			</pragmas>
+		</Equation>
+		<!-- _L1 = Pos[1]; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L1"/>
+			</lefts>
+			<right>
+				<!-- Pos[1] -->
+				<PrjOp name="1">
+					<flow>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="Pos"/>
+							</path>
+						</IdExpression>
+					</flow>
+					<with>
+						<ConstValue value="1"/>
+					</with>
+				</PrjOp>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/6f9f/33E8/42A0/5a2020c921a8"/>
+			</pragmas>
+		</Equation>
+	</data>
+	<pragmas>
+		<ed:Operator oid="!ed/6f9d/33E8/42A0/5a2020c94d3b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+			<diagrams>
+				<NetDiagram name="diagram_GetY_1" landscape="true" format="A4 (210 297)" oid="!ed/6fa0/33E8/42A0/5a2020c97c0b">
+					<presentationElements>
+						<EquationGE presentable="!ed/6f9e/33E8/42A0/5a2020c9d1">
+							<position>
+								<Point x="6371" y="2815"/>
+							</position>
+							<size>
+								<Size width="339" height="508"/>
+							</size>
+						</EquationGE>
+						<EquationGE kind="OBJ_LIT" presentable="!ed/6f9f/33E8/42A0/5a2020c921a8">
+							<position>
+								<Point x="2773" y="2963"/>
+							</position>
+							<size>
+								<Size width="169" height="297"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/6f9f/33E8/42A0/5a2020c921a8" dstEquation="!ed/6f9e/33E8/42A0/5a2020c9d1">
+							<positions>
+								<Point x="2942" y="3112"/>
+								<Point x="4678" y="3112"/>
+								<Point x="4678" y="3069"/>
+								<Point x="6414" y="3069"/>
+							</positions>
+						</Edge>
+					</presentationElements>
+				</NetDiagram>
+			</diagrams>
+		</ed:Operator>
+	</pragmas>
+</Operator>

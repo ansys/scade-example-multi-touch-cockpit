@@ -1,0 +1,29 @@
+
+exclude: |
+  (?x)^(model/)
+
+repos:
+
+  - repo: https://github.com/ansys/pre-commit-hooks
+    rev: v0.4.3
+    hooks:
+      - id: add-license-headers
+        args:
+        - --start_year=2024
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+    - id: check-merge-conflict
+    - id: debug-statements
+    - id: trailing-whitespace
+    - id: check-yaml
+    - id: requirements-txt-fixer
+
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.29.1
+    hooks:
+      - id: check-github-workflows
+        name: "Check GitHub workflows"
+        files: ^\.github/workflows/
+        types: [yaml]

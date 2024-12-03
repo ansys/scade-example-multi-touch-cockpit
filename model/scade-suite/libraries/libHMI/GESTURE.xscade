@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Package name="GESTURE">
+			<declarations>
+				<Constant name="N">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="10"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/6f58/33E8/42A0/5a2020c92e5d"/>
+					</pragmas>
+				</Constant>
+				<Constant name="M">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="5"/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/6f59/33E8/42A0/5a2020c94b0a"/>
+					</pragmas>
+				</Constant>
+				<Constant name="IncrDecrVal">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+						</NamedType>
+					</type>
+					<value>
+						<ConstValue value="5."/>
+					</value>
+					<pragmas>
+						<ed:Constant oid="!ed/6f5a/33E8/42A0/5a2020c91174"/>
+					</pragmas>
+				</Constant>
+				<Operator name="Trigger" href="Trigger.xscade"/>
+				<Operator name="MoveIncrIn" href="MoveIncrIn.xscade"/>
+				<Operator name="MoveDecrIn" href="MoveDecrIn.xscade"/>
+				<Operator name="IgnorePointerPosZero" href="IgnorePointerPosZero.xscade"/>
+				<Operator name="GetY" href="GetY.xscade"/>
+				<Operator name="GetX" href="GetX.xscade"/>
+				<Operator name="DetectMovesByHysteresis" href="DetectMovesByHysteresis.xscade"/>
+				<Operator name="DetectMoves" href="DetectMoves.xscade"/>
+				<Operator name="DetectMoveIncr" href="DetectMoveIncr.xscade"/>
+				<Operator name="DetectMoveDecr" href="DetectMoveDecr.xscade"/>
+				<Operator name="DeltaMean5" href="DeltaMean5.xscade"/>
+				<Operator name="MoveDelta" href="MoveDelta1.xscade"/>
+			</declarations>
+			<pragmas>
+				<ed:Package oid="!ed/6f54/33E8/42A0/5a2020c95673" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<diagrams>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/6f55/33E8/42A0/5a2020c94c1d" blockKind="constants"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/6f56/33E8/42A0/5a2020c916fa" blockKind="types"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/6f57/33E8/42A0/5a2020c93249" blockKind="sensors"/>
+					</diagrams>
+				</ed:Package>
+			</pragmas>
+		</Package>
+	</declarations>
+</File>

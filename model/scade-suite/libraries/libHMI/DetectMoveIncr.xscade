@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="function" visibility="private" name="DetectMoveIncr">
+	<inputs>
+		<Variable name="DimArray">
+			<type>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="M"/>
+							</path>
+						</IdExpression>
+					</size>
+				</Table>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/7120/33E8/42A0/5a2020c91460"/>
+			</pragmas>
+		</Variable>
+	</inputs>
+	<outputs>
+		<Variable name="MoveIncr">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/711f/33E8/42A0/5a2020c9545e"/>
+			</pragmas>
+		</Variable>
+	</outputs>
+	<locals>
+		<Variable name="_L1">
+			<type>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<!-- M - 1 -->
+						<BinaryOp operator="-">
+							<operands>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="M"/>
+									</path>
+								</IdExpression>
+								<ConstValue value="1"/>
+							</operands>
+						</BinaryOp>
+					</size>
+				</Table>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/711a/33E8/42A0/5a2020c9cf8"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L5">
+			<type>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<!-- ((M - 1) - 1) + 1 -->
+						<NAryOp operator="+">
+							<operands>
+								<!-- ((M - 1) - 1) -->
+								<BinaryOp operator="-">
+									<operands>
+										<!-- (M - 1) -->
+										<BinaryOp operator="-">
+											<operands>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M"/>
+													</path>
+												</IdExpression>
+												<ConstValue value="1"/>
+											</operands>
+										</BinaryOp>
+										<ConstValue value="1"/>
+									</operands>
+								</BinaryOp>
+								<ConstValue value="1"/>
+							</operands>
+						</NAryOp>
+					</size>
+				</Table>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/711b/33E8/42A0/5a2020c92ae1"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L6">
+			<type>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<!-- ((M - 2) - 0) + 1 -->
+						<NAryOp operator="+">
+							<operands>
+								<!-- ((M - 2) - 0) -->
+								<BinaryOp operator="-">
+									<operands>
+										<!-- (M - 2) -->
+										<BinaryOp operator="-">
+											<operands>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="M"/>
+													</path>
+												</IdExpression>
+												<ConstValue value="2"/>
+											</operands>
+										</BinaryOp>
+										<ConstValue value="0"/>
+									</operands>
+								</BinaryOp>
+								<ConstValue value="1"/>
+							</operands>
+						</NAryOp>
+					</size>
+				</Table>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/711c/33E8/42A0/5a2020c9461b"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L7">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/711d/33E8/42A0/5a2020c94b7e"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L8">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/711e/33E8/42A0/5a2020c9544f"/>
+			</pragmas>
+		</Variable>
+	</locals>
+	<data>
+		<!-- _L1 = (map MoveIncrIn <<M - 1>>)(_L5, _L6); -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L1"/>
+			</lefts>
+			<right>
+				<!-- (map MoveIncrIn <<M - 1>>)(_L5, _L6) -->
+				<CallExpression>
+					<operator>
+						<IteratorOp iterator="map">
+							<operator>
+								<OpCall name="1">
+									<operator>
+										<OperatorRef name="MoveIncrIn"/>
+									</operator>
+								</OpCall>
+							</operator>
+							<size>
+								<!-- M - 1 -->
+								<BinaryOp operator="-">
+									<operands>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="M"/>
+											</path>
+										</IdExpression>
+										<ConstValue value="1"/>
+									</operands>
+								</BinaryOp>
+							</size>
+						</IteratorOp>
+					</operator>
+					<callParameters>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L5"/>
+							</path>
+						</IdExpression>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L6"/>
+							</path>
+						</IdExpression>
+					</callParameters>
+					<pragmas>
+						<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+							<references>
+								<OperatorRef path="MoveIncrIn" refOid="!ed/6f66/33E8/42A0/5a2020c97b28">
+									<InputRef refOid="!ed/6f74/33E8/42A0/5a2020c912ca"/>
+									<InputRef refOid="!ed/6f75/33E8/42A0/5a2020c915c4"/>
+									<OutputRef refOid="!ed/6f73/33E8/42A0/5a2020c93ec8"/>
+								</OperatorRef>
+							</references>
+						</ed:CallExpression>
+					</pragmas>
+				</CallExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/7113/33E8/42A0/5a2020c92a2c"/>
+			</pragmas>
+		</Equation>
+		<!-- MoveIncr = _L7; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="MoveIncr"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="_L7"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/7114/33E8/42A0/5a2020c93ccf"/>
+			</pragmas>
+		</Equation>
+		<!-- _L5 = DimArray[1 .. (M - 1)]; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L5"/>
+			</lefts>
+			<right>
+				<!-- DimArray[1 .. (M - 1)] -->
+				<SliceOp name="1">
+					<array>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="DimArray"/>
+							</path>
+						</IdExpression>
+					</array>
+					<fromIndex>
+						<ConstValue value="1"/>
+					</fromIndex>
+					<toIndex>
+						<!-- (M - 1) -->
+						<BinaryOp operator="-">
+							<operands>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="M"/>
+									</path>
+								</IdExpression>
+								<ConstValue value="1"/>
+							</operands>
+						</BinaryOp>
+					</toIndex>
+				</SliceOp>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/7115/33E8/42A0/5a2020c93d1c"/>
+			</pragmas>
+		</Equation>
+		<!-- _L6 = DimArray[0 .. (M - 2)]; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L6"/>
+			</lefts>
+			<right>
+				<!-- DimArray[0 .. (M - 2)] -->
+				<SliceOp name="2">
+					<array>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="DimArray"/>
+							</path>
+						</IdExpression>
+					</array>
+					<fromIndex>
+						<ConstValue value="0"/>
+					</fromIndex>
+					<toIndex>
+						<!-- (M - 2) -->
+						<BinaryOp operator="-">
+							<operands>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="M"/>
+									</path>
+								</IdExpression>
+								<ConstValue value="2"/>
+							</operands>
+						</BinaryOp>
+					</toIndex>
+				</SliceOp>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/7116/33E8/42A0/5a2020c963c3"/>
+			</pragmas>
+		</Equation>
+		<!-- _L7 = (fold $and$ <<M - 1>>)(_L8, _L1); -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L7"/>
+			</lefts>
+			<right>
+				<!-- (fold $and$ <<M - 1>>)(_L8, _L1) -->
+				<CallExpression>
+					<operator>
+						<IteratorOp iterator="fold">
+							<operator>
+								<OpCall name="1">
+									<operator>
+										<OperatorRef name="$and$"/>
+									</operator>
+								</OpCall>
+							</operator>
+							<size>
+								<!-- M - 1 -->
+								<BinaryOp operator="-">
+									<operands>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="M"/>
+											</path>
+										</IdExpression>
+										<ConstValue value="1"/>
+									</operands>
+								</BinaryOp>
+							</size>
+						</IteratorOp>
+					</operator>
+					<callParameters>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L8"/>
+							</path>
+						</IdExpression>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L1"/>
+							</path>
+						</IdExpression>
+					</callParameters>
+				</CallExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/7117/33E8/42A0/5a2020c94898"/>
+			</pragmas>
+		</Equation>
+		<!-- _L8 = true; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L8"/>
+			</lefts>
+			<right>
+				<ConstValue value="true"/>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/7118/33E8/42A0/5a2020c9616e"/>
+			</pragmas>
+		</Equation>
+	</data>
+	<pragmas>
+		<ed:Operator oid="!ed/7112/33E8/42A0/5a2020c94a32" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+			<diagrams>
+				<NetDiagram name="diagram_DetectMoveIncr_1" landscape="true" format="A4 (210 297)" oid="!ed/7119/33E8/42A0/5a2020c9bdb">
+					<presentationElements>
+						<EquationGE presentable="!ed/7113/33E8/42A0/5a2020c92a2c">
+							<position>
+								<Point x="6392" y="1249"/>
+							</position>
+							<size>
+								<Size width="2741" height="2133"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/7114/33E8/42A0/5a2020c93ccf">
+							<position>
+								<Point x="17780" y="1715"/>
+							</position>
+							<size>
+								<Size width="317" height="503"/>
+							</size>
+						</EquationGE>
+						<EquationGE kind="OBJ_LIT" presentable="!ed/7115/33E8/42A0/5a2020c93d1c">
+							<position>
+								<Point x="3323" y="1820"/>
+							</position>
+							<size>
+								<Size width="169" height="296"/>
+							</size>
+						</EquationGE>
+						<EquationGE kind="OBJ_LIT" presentable="!ed/7116/33E8/42A0/5a2020c963c3">
+							<position>
+								<Point x="3323" y="2519"/>
+							</position>
+							<size>
+								<Size width="169" height="297"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/7117/33E8/42A0/5a2020c94898">
+							<position>
+								<Point x="12637" y="889"/>
+							</position>
+							<size>
+								<Size width="2742" height="2132"/>
+							</size>
+						</EquationGE>
+						<EquationGE kind="OBJ_LIT" presentable="!ed/7118/33E8/42A0/5a2020c9616e">
+							<position>
+								<Point x="10901" y="1461"/>
+							</position>
+							<size>
+								<Size width="169" height="297"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/7118/33E8/42A0/5a2020c9616e" dstEquation="!ed/7117/33E8/42A0/5a2020c94898">
+							<positions>
+								<Point x="11070" y="1609"/>
+								<Point x="11853" y="1609"/>
+								<Point x="11853" y="1609"/>
+								<Point x="12637" y="1609"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/7117/33E8/42A0/5a2020c94898" dstEquation="!ed/7114/33E8/42A0/5a2020c93ccf">
+							<positions>
+								<Point x="15388" y="1969"/>
+								<Point x="16595" y="1969"/>
+								<Point x="16595" y="1969"/>
+								<Point x="17822" y="1969"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/7113/33E8/42A0/5a2020c92a2c" dstEquation="!ed/7117/33E8/42A0/5a2020c94898">
+							<positions>
+								<Point x="9123" y="2328"/>
+								<Point x="10880" y="2328"/>
+								<Point x="10880" y="2328"/>
+								<Point x="12637" y="2328"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/7116/33E8/42A0/5a2020c963c3" dstEquation="!ed/7113/33E8/42A0/5a2020c92a2c">
+							<positions>
+								<Point x="3493" y="2667"/>
+								<Point x="4932" y="2667"/>
+								<Point x="4932" y="2667"/>
+								<Point x="6392" y="2667"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/7115/33E8/42A0/5a2020c93d1c" dstEquation="!ed/7113/33E8/42A0/5a2020c92a2c">
+							<positions>
+								<Point x="3493" y="1969"/>
+								<Point x="4953" y="1969"/>
+								<Point x="4953" y="1969"/>
+								<Point x="6392" y="1969"/>
+							</positions>
+						</Edge>
+					</presentationElements>
+				</NetDiagram>
+			</diagrams>
+			<references>
+				<ConstVarRef path="M" refOid="!ed/6f59/33E8/42A0/5a2020c94b0a"/>
+			</references>
+		</ed:Operator>
+	</pragmas>
+</Operator>

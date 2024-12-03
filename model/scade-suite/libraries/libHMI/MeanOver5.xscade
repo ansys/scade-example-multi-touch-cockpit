@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Operator kind="node" name="meanOver5">
+			<inputs>
+				<Variable name="in">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/6197/33E8/42A0/5a2020af6b89"/>
+					</pragmas>
+				</Variable>
+			</inputs>
+			<outputs>
+				<Variable name="out">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/6196/33E8/42A0/5a2020af2c30"/>
+					</pragmas>
+				</Variable>
+			</outputs>
+			<locals>
+				<Variable name="_L10">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/6194/33E8/42A0/5a2020af3578"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L13">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/6195/33E8/42A0/5a2020af180e"/>
+					</pragmas>
+				</Variable>
+			</locals>
+			<data>
+				<!-- out = _L10; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="out"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L10"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/6190/33E8/42A0/5a2020af39d0"/>
+					</pragmas>
+				</Equation>
+				<!-- _L10 = (meanOverN<<5>>)(_L13); -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L10"/>
+					</lefts>
+					<right>
+						<!-- (meanOverN<<5>>)(_L13) -->
+						<CallExpression>
+							<operator>
+								<OpCall name="1">
+									<operator>
+										<OperatorRef name="meanOverN"/>
+									</operator>
+									<instanceParameters>
+										<ConstValue value="5"/>
+									</instanceParameters>
+								</OpCall>
+							</operator>
+							<callParameters>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L13"/>
+									</path>
+								</IdExpression>
+							</callParameters>
+							<pragmas>
+								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<references>
+										<OperatorRef path="meanOverN" refOid="!ed/61d1/33E8/42A0/5a2020af266d">
+											<InputRef refOid="!ed/61e4/33E8/42A0/5a2020af26c7"/>
+											<OutputRef refOid="!ed/61e3/33E8/42A0/5a2020af39b5"/>
+											<ParameterRef refOid="!ed/61e2/33E8/42A0/5a2020af182"/>
+										</OperatorRef>
+									</references>
+								</ed:CallExpression>
+							</pragmas>
+						</CallExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/6191/33E8/42A0/5a2020af440b"/>
+					</pragmas>
+				</Equation>
+				<!-- _L13 = in; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L13"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="in"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/6192/33E8/42A0/5a2020af75e4"/>
+					</pragmas>
+				</Equation>
+			</data>
+			<pragmas>
+				<ed:Operator oid="!ed/618f/33E8/42A0/5a2020af443" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+					<diagrams>
+						<NetDiagram name="diagram_meanOver5_1" landscape="true" format="A4 (210 297)" oid="!ed/6193/33E8/42A0/5a2020af3b30">
+							<presentationElements>
+								<EquationGE presentable="!ed/6190/33E8/42A0/5a2020af39d0">
+									<position>
+										<Point x="9758" y="1630"/>
+									</position>
+									<size>
+										<Size width="339" height="508"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/6191/33E8/42A0/5a2020af440b">
+									<position>
+										<Point x="3916" y="1164"/>
+									</position>
+									<size>
+										<Size width="4186" height="1413"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/6191/33E8/42A0/5a2020af440b" dstEquation="!ed/6190/33E8/42A0/5a2020af39d0">
+									<positions>
+										<Point x="8096" y="1879"/>
+										<Point x="8943" y="1879"/>
+										<Point x="8943" y="1879"/>
+										<Point x="9816" y="1879"/>
+									</positions>
+								</Edge>
+								<EquationGE presentable="!ed/6192/33E8/42A0/5a2020af75e4">
+									<position>
+										<Point x="2371" y="1630"/>
+									</position>
+									<size>
+										<Size width="254" height="508"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/6192/33E8/42A0/5a2020af75e4" dstEquation="!ed/6191/33E8/42A0/5a2020af440b">
+									<positions>
+										<Point x="2619" y="1905"/>
+										<Point x="3254" y="1905"/>
+										<Point x="3254" y="1905"/>
+										<Point x="3916" y="1905"/>
+									</positions>
+								</Edge>
+							</presentationElements>
+						</NetDiagram>
+					</diagrams>
+				</ed:Operator>
+			</pragmas>
+		</Operator>
+	</declarations>
+</File>

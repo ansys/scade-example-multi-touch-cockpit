@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="node" name="Memory">
+	<inputs>
+		<Variable name="clock_in">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4dd4/28C9/1944/594245c8593f"/>
+			</pragmas>
+		</Variable>
+		<Variable name="to_store">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="'T"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4dd5/28C9/1944/594245c848ed"/>
+			</pragmas>
+		</Variable>
+	</inputs>
+	<outputs>
+		<Variable name="stored">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="'T"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4dd3/28C9/1944/594245c86230"/>
+			</pragmas>
+		</Variable>
+	</outputs>
+	<data>
+		<!-- stored = (to_store) -> (pre (if clock_in then (to_store) else (stored))); -->
+		<Equation>
+			<lefts>
+				<VariableRef name="stored"/>
+			</lefts>
+			<right>
+				<!-- (to_store) -> (pre (if clock_in then (to_store) else (stored))) -->
+				<InitOp>
+					<value>
+						<ListExpression>
+							<items>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="to_store"/>
+									</path>
+								</IdExpression>
+							</items>
+						</ListExpression>
+					</value>
+					<flow>
+						<ListExpression>
+							<items>
+								<!-- pre (if clock_in then (to_store) else (stored)) -->
+								<PreOp>
+									<flow>
+										<ListExpression>
+											<items>
+												<!-- (if clock_in then (to_store) else (stored)) -->
+												<IfThenElseOp>
+													<if>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="clock_in"/>
+															</path>
+														</IdExpression>
+													</if>
+													<then>
+														<ListExpression>
+															<items>
+																<IdExpression>
+																	<path>
+																		<ConstVarRef name="to_store"/>
+																	</path>
+																</IdExpression>
+															</items>
+														</ListExpression>
+													</then>
+													<else>
+														<ListExpression>
+															<items>
+																<IdExpression>
+																	<path>
+																		<ConstVarRef name="stored"/>
+																	</path>
+																</IdExpression>
+															</items>
+														</ListExpression>
+													</else>
+												</IfThenElseOp>
+											</items>
+										</ListExpression>
+									</flow>
+								</PreOp>
+							</items>
+						</ListExpression>
+					</flow>
+				</InitOp>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/4dd1/28C9/1944/594245c84e03"/>
+			</pragmas>
+		</Equation>
+	</data>
+	<pragmas>
+		<ed:Operator oid="!ed/4dd0/28C9/1944/594245c834eb" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+			<diagrams>
+				<TextDiagram name="diagram_Memory_1" landscape="true" format="A4 (210 297)" oid="!ed/4dd2/28C9/1944/594245c86973">
+					<presentationElements>
+						<FlowTE presentable="!ed/4dd1/28C9/1944/594245c84e03"/>
+					</presentationElements>
+				</TextDiagram>
+			</diagrams>
+		</ed:Operator>
+		<kcg:Pragma>
+			expand
+		</kcg:Pragma>
+	</pragmas>
+</Operator>

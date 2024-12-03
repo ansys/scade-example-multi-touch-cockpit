@@ -1,0 +1,12 @@
+ANSYS
+Ansys
+ansys
+scade
+Scade
+SCADE
+APIs
+CLI
+objname
+pathnames
+application
+touch

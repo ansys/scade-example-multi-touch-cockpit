@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="node" visibility="private" name="Trigger">
+	<inputs>
+		<Variable name="Trigger">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/6f64/33E8/42A0/5a2020c9181e"/>
+			</pragmas>
+		</Variable>
+		<Variable name="Down">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/6f65/33E8/42A0/5a2020c9246b"/>
+			</pragmas>
+		</Variable>
+	</inputs>
+	<outputs>
+		<Variable name="Out">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</type>
+			<default>
+				<ConstValue value="false"/>
+			</default>
+			<pragmas>
+				<ed:Variable oid="!ed/6f63/33E8/42A0/5a2020c94345"/>
+			</pragmas>
+		</Variable>
+	</outputs>
+	<data>
+		<StateMachine name="SM1">
+			<states>
+				<State initial="true" name="State1">
+					<unless>
+						<Transition kind="restart">
+							<target>
+								<StateRef name="State2"/>
+							</target>
+							<condition>
+								<!-- Trigger and Down -->
+								<NAryOp name="1" operator="and">
+									<operands>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="Trigger"/>
+											</path>
+										</IdExpression>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="Down"/>
+											</path>
+										</IdExpression>
+									</operands>
+								</NAryOp>
+							</condition>
+							<pragmas>
+								<ed:Transition oid="!ed/6f5e/33E8/42A0/5a2020c95b00"/>
+							</pragmas>
+						</Transition>
+					</unless>
+					<pragmas>
+						<ed:State oid="!ed/6f5d/33E8/42A0/5a2020c958c"/>
+					</pragmas>
+				</State>
+				<State name="State2">
+					<unless>
+						<Transition kind="restart">
+							<target>
+								<StateRef name="State1"/>
+							</target>
+							<condition>
+								<!--  not Down -->
+								<UnaryOp name="1" operator="not">
+									<operand>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="Down"/>
+											</path>
+										</IdExpression>
+									</operand>
+								</UnaryOp>
+							</condition>
+							<pragmas>
+								<ed:Transition oid="!ed/6f61/33E8/42A0/5a2020c94f6a"/>
+							</pragmas>
+						</Transition>
+					</unless>
+					<data>
+						<!-- Out = true; -->
+						<Equation>
+							<lefts>
+								<VariableRef name="Out"/>
+							</lefts>
+							<right>
+								<ConstValue value="true"/>
+							</right>
+							<pragmas>
+								<ed:Equation oid="!ed/6f60/33E8/42A0/5a2020c943da"/>
+							</pragmas>
+						</Equation>
+					</data>
+					<pragmas>
+						<ed:State oid="!ed/6f5f/33E8/42A0/5a2020c945c0"/>
+					</pragmas>
+				</State>
+			</states>
+			<pragmas>
+				<ed:StateMachine oid="!ed/6f5c/33E8/42A0/5a2020c9f1b"/>
+			</pragmas>
+		</StateMachine>
+	</data>
+	<pragmas>
+		<ed:Operator oid="!ed/6f5b/33E8/42A0/5a2020c93b51" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+			<diagrams>
+				<NetDiagram name="diagram_Trigger_1" landscape="true" format="A4 (210 297)" oid="!ed/6f62/33E8/42A0/5a2020c91852">
+					<presentationElements>
+						<StateMachineGE presentable="!ed/6f5c/33E8/42A0/5a2020c9f1b">
+							<position>
+								<Point x="4191" y="2815"/>
+							</position>
+							<size>
+								<Size width="7133" height="4657"/>
+							</size>
+						</StateMachineGE>
+						<StateGE presentable="!ed/6f5d/33E8/42A0/5a2020c958c">
+							<position>
+								<Point x="4572" y="4466"/>
+							</position>
+							<size>
+								<Size width="1693" height="1418"/>
+							</size>
+						</StateGE>
+						<StateGE display="embeddedTextual" presentable="!ed/6f5f/33E8/42A0/5a2020c945c0">
+							<position>
+								<Point x="9102" y="4593"/>
+							</position>
+							<size>
+								<Size width="1799" height="1418"/>
+							</size>
+						</StateGE>
+						<TransitionGE presentable="!ed/6f5e/33E8/42A0/5a2020c95b00">
+							<positions>
+								<Point x="5567" y="4466"/>
+								<Point x="7747" y="3366"/>
+								<Point x="8149" y="3979"/>
+								<Point x="9673" y="4593"/>
+							</positions>
+							<labelSize>
+								<Size width="2074" height="1185"/>
+							</labelSize>
+							<labelPos>
+								<Point x="7049" y="2985"/>
+							</labelPos>
+							<slashPos>
+								<Point x="8424" y="2985"/>
+							</slashPos>
+						</TransitionGE>
+						<TransitionGE presentable="!ed/6f61/33E8/42A0/5a2020c94f6a">
+							<positions>
+								<Point x="9525" y="6011"/>
+								<Point x="6900" y="6562"/>
+								<Point x="6604" y="6223"/>
+								<Point x="5482" y="5884"/>
+							</positions>
+							<labelSize>
+								<Size width="1312" height="381"/>
+							</labelSize>
+							<labelPos>
+								<Point x="7218" y="6562"/>
+							</labelPos>
+							<slashPos>
+								<Point x="7832" y="6562"/>
+							</slashPos>
+						</TransitionGE>
+					</presentationElements>
+				</NetDiagram>
+			</diagrams>
+		</ed:Operator>
+	</pragmas>
+</Operator>
