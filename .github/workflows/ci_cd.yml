@@ -12,7 +12,7 @@ env:
   MAIN_PYTHON_VERSION: '3.10'
   DOCUMENTATION_CNAME: 'multi-touch-cockpit.examples.scade.docs.pyansys.com'
   LIBRARY_NAME: 'ansys-scade-examples-multi-touch-cockpit'
-  ARTIFACT_NAME: 'MultitoucCockpitStandaloneExecutable'
+  ARTIFACT_NAME: 'MultitouchCockpitStandaloneExecutable'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
