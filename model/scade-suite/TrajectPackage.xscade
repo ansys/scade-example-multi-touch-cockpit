@@ -3393,9 +3393,9 @@
 						</ed:Operator>
 					</pragmas>
 				</Operator>
-				<Operator kind="node" name="Traject_display_out">
+				<Operator kind="node" name="trajectDisplayOut">
 					<inputs>
-						<Variable name="V_aircraft">
+						<Variable name="vAircraft">
 							<type>
 								<NamedType>
 									<type>
@@ -3409,7 +3409,7 @@
 						</Variable>
 					</inputs>
 					<outputs>
-						<Variable name="Pttx1">
+						<Variable name="pttx1">
 							<type>
 								<NamedType>
 									<type>
@@ -3421,7 +3421,7 @@
 								<ed:Variable oid="!ed/6fb1/6992/10B8/484d1b521cc3"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Ptty1">
+						<Variable name="ptty1">
 							<type>
 								<NamedType>
 									<type>
@@ -3433,7 +3433,7 @@
 								<ed:Variable oid="!ed/6fb0/6992/10B8/484d1b5225fc"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Pttx2">
+						<Variable name="pttx2">
 							<type>
 								<NamedType>
 									<type>
@@ -3445,7 +3445,7 @@
 								<ed:Variable oid="!ed/6faf/6992/10B8/484d1b525ff9"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Ptty2">
+						<Variable name="ptty2">
 							<type>
 								<NamedType>
 									<type>
@@ -3457,7 +3457,7 @@
 								<ed:Variable oid="!ed/6fae/6992/10B8/484d1b52a3d"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Pttx3">
+						<Variable name="pttx3">
 							<type>
 								<NamedType>
 									<type>
@@ -3469,7 +3469,7 @@
 								<ed:Variable oid="!ed/6fad/6992/10B8/484d1b527499"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Ptty3">
+						<Variable name="ptty3">
 							<type>
 								<NamedType>
 									<type>
@@ -3481,7 +3481,7 @@
 								<ed:Variable oid="!ed/6fac/6992/10B8/484d1b523a01"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Pttx4">
+						<Variable name="pttx4">
 							<type>
 								<NamedType>
 									<type>
@@ -3493,7 +3493,7 @@
 								<ed:Variable oid="!ed/6fab/6992/10B8/484d1b52190f"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Ptty4">
+						<Variable name="ptty4">
 							<type>
 								<NamedType>
 									<type>
@@ -3505,7 +3505,7 @@
 								<ed:Variable oid="!ed/6faa/6992/10B8/484d1b52427c"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Pttx5">
+						<Variable name="pttx5">
 							<type>
 								<NamedType>
 									<type>
@@ -3517,7 +3517,7 @@
 								<ed:Variable oid="!ed/6fa9/6992/10B8/484d1b52792d"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Ptty5">
+						<Variable name="ptty5">
 							<type>
 								<NamedType>
 									<type>
@@ -3529,7 +3529,7 @@
 								<ed:Variable oid="!ed/6fa8/6992/10B8/484d1b525974"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Pttx6">
+						<Variable name="pttx6">
 							<type>
 								<NamedType>
 									<type>
@@ -3541,7 +3541,7 @@
 								<ed:Variable oid="!ed/6fa7/6992/10B8/484d1b524b56"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Ptty6">
+						<Variable name="ptty6">
 							<type>
 								<NamedType>
 									<type>
@@ -3553,7 +3553,7 @@
 								<ed:Variable oid="!ed/6fa6/6992/10B8/484d1b522200"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Pttx7">
+						<Variable name="pttx7">
 							<type>
 								<NamedType>
 									<type>
@@ -3565,7 +3565,7 @@
 								<ed:Variable oid="!ed/6fa5/6992/10B8/484d1b5274c5"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Ptty7">
+						<Variable name="ptty7">
 							<type>
 								<NamedType>
 									<type>
@@ -3577,7 +3577,7 @@
 								<ed:Variable oid="!ed/6fa4/6992/10B8/484d1b5245a2"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Pttx8">
+						<Variable name="pttx8">
 							<type>
 								<NamedType>
 									<type>
@@ -3589,7 +3589,7 @@
 								<ed:Variable oid="!ed/6fa3/6992/10B8/484d1b522dad"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Ptty8">
+						<Variable name="ptty8">
 							<type>
 								<NamedType>
 									<type>
@@ -4205,10 +4205,10 @@
 								<ed:Equation oid="!ed/6fb5/6992/10B8/484d1b527c95"/>
 							</pragmas>
 						</Equation>
-						<!-- Pttx6 = _L9; -->
+						<!-- pttx6 = _L9; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Pttx6"/>
+								<VariableRef name="pttx6"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4257,10 +4257,10 @@
 								<ed:Equation oid="!ed/6fba/6992/10B8/484d1b5255fa"/>
 							</pragmas>
 						</Equation>
-						<!-- Pttx1 = _L38; -->
+						<!-- pttx1 = _L38; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Pttx1"/>
+								<VariableRef name="pttx1"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4300,10 +4300,10 @@
 								<ed:Equation oid="!ed/6fbd/6992/10B8/484d1b522695"/>
 							</pragmas>
 						</Equation>
-						<!-- Ptty1 = _L17; -->
+						<!-- ptty1 = _L17; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Ptty1"/>
+								<VariableRef name="ptty1"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4392,10 +4392,10 @@
 								<ed:Equation oid="!ed/6fc4/6992/10B8/484d1b52ec7"/>
 							</pragmas>
 						</Equation>
-						<!-- Ptty7 = _L23; -->
+						<!-- ptty7 = _L23; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Ptty7"/>
+								<VariableRef name="ptty7"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4408,10 +4408,10 @@
 								<ed:Equation oid="!ed/6fc6/6992/10B8/484d1b5222f4"/>
 							</pragmas>
 						</Equation>
-						<!-- Pttx2 = _L12; -->
+						<!-- pttx2 = _L12; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Pttx2"/>
+								<VariableRef name="pttx2"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4424,10 +4424,10 @@
 								<ed:Equation oid="!ed/6fc7/6992/10B8/484d1b524d7b"/>
 							</pragmas>
 						</Equation>
-						<!-- Pttx7 = _L14; -->
+						<!-- pttx7 = _L14; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Pttx7"/>
+								<VariableRef name="pttx7"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4440,10 +4440,10 @@
 								<ed:Equation oid="!ed/6fc8/6992/10B8/484d1b526dfc"/>
 							</pragmas>
 						</Equation>
-						<!-- Ptty4 = _L37; -->
+						<!-- ptty4 = _L37; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Ptty4"/>
+								<VariableRef name="ptty4"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4630,10 +4630,10 @@
 								<ed:Equation oid="!ed/6fd6/6992/10B8/484d1b525560"/>
 							</pragmas>
 						</Equation>
-						<!-- Ptty6 = _L20; -->
+						<!-- ptty6 = _L20; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Ptty6"/>
+								<VariableRef name="ptty6"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4958,10 +4958,10 @@
 								<ed:Equation oid="!ed/6fed/6992/10B8/484d1b5242a4"/>
 							</pragmas>
 						</Equation>
-						<!-- Ptty2 = _L32; -->
+						<!-- ptty2 = _L32; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Ptty2"/>
+								<VariableRef name="ptty2"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -5089,10 +5089,10 @@
 								<ed:Equation oid="!ed/6ff6/6992/10B8/484d1b523c8a"/>
 							</pragmas>
 						</Equation>
-						<!-- Ptty8 = _L28; -->
+						<!-- ptty8 = _L28; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Ptty8"/>
+								<VariableRef name="ptty8"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -5105,10 +5105,10 @@
 								<ed:Equation oid="!ed/6ff8/6992/10B8/484d1b526c5b"/>
 							</pragmas>
 						</Equation>
-						<!-- Pttx8 = _L10; -->
+						<!-- pttx8 = _L10; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Pttx8"/>
+								<VariableRef name="pttx8"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -5121,10 +5121,10 @@
 								<ed:Equation oid="!ed/6ff9/6992/10B8/484d1b521e7"/>
 							</pragmas>
 						</Equation>
-						<!-- Pttx4 = _L30; -->
+						<!-- pttx4 = _L30; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Pttx4"/>
+								<VariableRef name="pttx4"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -5137,10 +5137,10 @@
 								<ed:Equation oid="!ed/6ffa/6992/10B8/484d1b5274fa"/>
 							</pragmas>
 						</Equation>
-						<!-- Pttx3 = _L7; -->
+						<!-- pttx3 = _L7; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Pttx3"/>
+								<VariableRef name="pttx3"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -5246,10 +5246,10 @@
 								<ed:Equation oid="!ed/7002/6992/10B8/484d1b52cd"/>
 							</pragmas>
 						</Equation>
-						<!-- Pttx5 = _L29; -->
+						<!-- pttx5 = _L29; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Pttx5"/>
+								<VariableRef name="pttx5"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -5262,10 +5262,10 @@
 								<ed:Equation oid="!ed/7004/6992/10B8/484d1b52b2"/>
 							</pragmas>
 						</Equation>
-						<!-- Ptty3 = _L11; -->
+						<!-- ptty3 = _L11; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Ptty3"/>
+								<VariableRef name="ptty3"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -5474,10 +5474,10 @@
 								<ed:Equation oid="!ed/7016/6992/10B8/484d1b5236fb"/>
 							</pragmas>
 						</Equation>
-						<!-- Ptty5 = _L6; -->
+						<!-- ptty5 = _L6; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Ptty5"/>
+								<VariableRef name="ptty5"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -5490,7 +5490,7 @@
 								<ed:Equation oid="!ed/7018/6992/10B8/484d1b521680"/>
 							</pragmas>
 						</Equation>
-						<!-- _L44 = V_aircraft; -->
+						<!-- _L44 = vAircraft; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L44"/>
@@ -5498,7 +5498,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="V_aircraft"/>
+										<ConstVarRef name="vAircraft"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -5510,7 +5510,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/6e2d/6992/10B8/484d1b46197e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<diagrams>
-								<NetDiagram name="Traject_display_out" landscape="true" format="A4 (210 297)" oid="!ed/6e2e/6992/10B8/484d1b467647">
+								<NetDiagram name="trajectDisplayOut" landscape="true" format="A4 (210 297)" oid="!ed/6e2e/6992/10B8/484d1b467647">
 									<presentationElements>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/6fb3/6992/10B8/484d1b524436">
 											<position>

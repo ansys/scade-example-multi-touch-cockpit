@@ -3620,12 +3620,12 @@
 								<VariableRef name="_L1038"/>
 							</lefts>
 							<right>
-								<!-- TrajectDisplay::Traject_display_out(_L1130) -->
+								<!-- TrajectDisplay::trajectDisplayOut(_L1130) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="1">
 											<operator>
-												<OperatorRef name="TrajectDisplay::Traject_display_out"/>
+												<OperatorRef name="TrajectDisplay::trajectDisplayOut"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -3639,7 +3639,7 @@
 									<pragmas>
 										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 											<references>
-												<OperatorRef path="TrajectDisplay::Traject_display_out" refOid="!ed/6e2d/6992/10B8/484d1b46197e">
+												<OperatorRef path="TrajectDisplay::trajectDisplayOut" refOid="!ed/6e2d/6992/10B8/484d1b46197e">
 													<InputRef refOid="!ed/701f/6992/10B8/484d1b626aba"/>
 													<OutputRef refOid="!ed/6fb1/6992/10B8/484d1b521cc3"/>
 													<OutputRef refOid="!ed/6fb0/6992/10B8/484d1b5225fc"/>

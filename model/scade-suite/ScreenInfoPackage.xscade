@@ -73,12 +73,12 @@
 					<definition>
 						<Enum>
 							<values>
-								<Value name="R640x480">
+								<Value name="R640_X_480">
 									<pragmas>
 										<ed:Value oid="!ed/2142/3679/DD0/4745ae682890"/>
 									</pragmas>
 								</Value>
-								<Value name="R800x600">
+								<Value name="R800_X_600">
 									<pragmas>
 										<ed:Value oid="!ed/2143/3679/DD0/4745ae921300"/>
 									</pragmas>
