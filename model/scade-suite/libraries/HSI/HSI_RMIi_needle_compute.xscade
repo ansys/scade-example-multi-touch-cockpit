@@ -7,7 +7,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="RMI_enum"/>
+								<TypeRef name="rmi"/>
 							</type>
 						</NamedType>
 					</type>
@@ -143,7 +143,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="RMI_enum"/>
+								<TypeRef name="rmi"/>
 							</type>
 						</NamedType>
 					</type>
@@ -2031,7 +2031,7 @@
 						</NetDiagram>
 					</diagrams>
 					<references>
-						<TypeRef path="RMI_enum" refOid="!ed/bc/7A70/BF0/475955397f20"/>
+						<TypeRef path="rmi" refOid="!ed/bc/7A70/BF0/475955397f20"/>
 						<TypeRef path="navDataType" refOid="!ed/22be/444A/B40/47594cd2222d"/>
 						<ConstVarRef path="RMI_OFF" refOid="!ed/2e20/5B1F/A70/4757b43d4e5d"/>
 						<ConstVarRef path="RMI_ADF1" refOid="!ed/2e21/5B1F/A70/4757b4685f38"/>

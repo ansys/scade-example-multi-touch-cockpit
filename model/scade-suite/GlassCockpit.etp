@@ -439,13 +439,13 @@
 			<elements>
 				<FileRef id="77" persistAs=".\libraries\lib_PFD\lib_PFD.etp"/>
 				<FileRef id="173" persistAs=".\libraries\PFD_Types\PFD_Types.etp"/>
-				<FileRef id="176" persistAs=".\libraries\HSI\HSI.etp"/>
 				<FileRef id="177" persistAs=".\libraries\ADI\ADI.etp"/>
 				<FileRef id="218" persistAs=".\libraries\Tunnel_Of_Flight\Tunnel_Of_Flight.etp"/>
 				<FileRef id="233" persistAs=".\libraries\Aircraft\Aircraft.etp"/>
 				<FileRef id="494" persistAs=".\libraries\ActiveAreas\activeareas.etp"/>
 				<FileRef id="495" persistAs="$(SCADE)\libraries\SC65\libdigital\libdigital.etp"/>
 				<FileRef id="496" persistAs="$(SCADE)\libraries\SC65\libpwlinear\libpwlinear.etp"/>
+				<FileRef id="176" persistAs=".\libraries\HSI\HSI.etp"/>
 			</elements>
 		</Folder>
 		<Folder id="11" extensions="xscade" name="Model Files">

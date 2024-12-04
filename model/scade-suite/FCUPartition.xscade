@@ -1285,7 +1285,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="HSI_To_From_Shape_enum"/>
+								<TypeRef name="hsiToFromShape"/>
 							</type>
 						</NamedType>
 					</type>
@@ -1309,7 +1309,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="TO_FROM_legend_text_enum"/>
+								<TypeRef name="toFromLegendText"/>
 							</type>
 						</NamedType>
 					</type>
@@ -1333,7 +1333,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="CDI_legend_selection_enum"/>
+								<TypeRef name="cdiLegendSelection"/>
 							</type>
 						</NamedType>
 					</type>
@@ -1393,7 +1393,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="RMI_enum"/>
+								<TypeRef name="rmi"/>
 							</type>
 						</NamedType>
 					</type>
@@ -1429,7 +1429,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="RMI_enum"/>
+								<TypeRef name="rmi"/>
 							</type>
 						</NamedType>
 					</type>

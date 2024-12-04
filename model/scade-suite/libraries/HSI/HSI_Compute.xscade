@@ -129,7 +129,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="RMI_enum"/>
+								<TypeRef name="rmi"/>
 							</type>
 						</NamedType>
 					</type>
@@ -165,7 +165,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="RMI_enum"/>
+								<TypeRef name="rmi"/>
 							</type>
 						</NamedType>
 					</type>
@@ -225,7 +225,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="CDI_legend_selection_enum"/>
+								<TypeRef name="cdiLegendSelection"/>
 							</type>
 						</NamedType>
 					</type>
@@ -249,7 +249,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="TO_FROM_legend_text_enum"/>
+								<TypeRef name="toFromLegendText"/>
 							</type>
 						</NamedType>
 					</type>
@@ -273,7 +273,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="HSI_To_From_Shape_enum"/>
+								<TypeRef name="hsiToFromShape"/>
 							</type>
 						</NamedType>
 					</type>
@@ -323,7 +323,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="CDI_legend_selection_enum"/>
+								<TypeRef name="cdiLegendSelection"/>
 							</type>
 						</NamedType>
 					</type>
@@ -347,7 +347,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="TO_FROM_legend_text_enum"/>
+								<TypeRef name="toFromLegendText"/>
 							</type>
 						</NamedType>
 					</type>
@@ -395,7 +395,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="RMI_enum"/>
+								<TypeRef name="rmi"/>
 							</type>
 						</NamedType>
 					</type>
@@ -431,7 +431,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="RMI_enum"/>
+								<TypeRef name="rmi"/>
 							</type>
 						</NamedType>
 					</type>
@@ -479,7 +479,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="HSI_To_From_Shape_enum"/>
+								<TypeRef name="hsiToFromShape"/>
 							</type>
 						</NamedType>
 					</type>
@@ -1675,18 +1675,18 @@
 						<ed:Equation oid="!ed/192e/3DC0/B30/475b1d6d3e93"/>
 					</pragmas>
 				</Equation>
-				<!-- _L70 = HSI_Aircraft_Icon_Selection(_L74); -->
+				<!-- _L70 = hsiAircraftIconSelection(_L74); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L70"/>
 					</lefts>
 					<right>
-						<!-- HSI_Aircraft_Icon_Selection(_L74) -->
+						<!-- hsiAircraftIconSelection(_L74) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
 									<operator>
-										<OperatorRef name="HSI_Aircraft_Icon_Selection"/>
+										<OperatorRef name="hsiAircraftIconSelection"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -1700,7 +1700,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<OperatorRef path="HSI_Aircraft_Icon_Selection" refOid="!ed/1845/757F/B08/475c212451bb">
+										<OperatorRef path="hsiAircraftIconSelection" refOid="!ed/1845/757F/B08/475c212451bb">
 											<InputRef refOid="!ed/1847/757F/B08/475c21cf44d0"/>
 											<OutputRef refOid="!ed/1863/757F/B08/475c22585557"/>
 										</OperatorRef>
@@ -2432,10 +2432,10 @@
 						<TypeRef path="systemInfoType" refOid="!ed/22f4/444A/B40/47594cd27d9d"/>
 						<TypeRef path="navDataType" refOid="!ed/22be/444A/B40/47594cd2222d"/>
 						<TypeRef path="aircraftInfoType" refOid="!ed/226b/444A/B40/47594cd2408d"/>
-						<TypeRef path="RMI_enum" refOid="!ed/bc/7A70/BF0/475955397f20"/>
-						<TypeRef path="CDI_legend_selection_enum" refOid="!ed/a9/7A70/BF0/4759553946cd"/>
-						<TypeRef path="TO_FROM_legend_text_enum" refOid="!ed/c5/7A70/BF0/475955396c3d"/>
-						<TypeRef path="HSI_To_From_Shape_enum" refOid="!ed/b1/7A70/BF0/4759553929db"/>
+						<TypeRef path="rmi" refOid="!ed/bc/7A70/BF0/475955397f20"/>
+						<TypeRef path="cdiLegendSelection" refOid="!ed/a9/7A70/BF0/4759553946cd"/>
+						<TypeRef path="toFromLegendText" refOid="!ed/c5/7A70/BF0/475955396c3d"/>
+						<TypeRef path="hsiToFromShape" refOid="!ed/b1/7A70/BF0/4759553929db"/>
 					</references>
 				</ed:Operator>
 				<kcg:Pragma>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="HSI_Aircraft_Icon_Selection">
+		<Operator kind="function" name="hsiAircraftIconSelection">
 			<inputs>
-				<Variable name="Aircraft_Info">
+				<Variable name="aircraftInfo">
 					<type>
 						<NamedType>
 							<type>
@@ -17,7 +17,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="AIRCRAFT_ICON_INDEX">
+				<Variable name="aircraftIconIndex">
 					<type>
 						<NamedType>
 							<type>
@@ -57,7 +57,7 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L1 = Aircraft_Info; -->
+				<!-- _L1 = aircraftInfo; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1"/>
@@ -65,7 +65,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Aircraft_Info"/>
+								<ConstVarRef name="aircraftInfo"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -97,10 +97,10 @@
 						<ed:Equation oid="!ed/1859/757F/B08/475c220c3ec4"/>
 					</pragmas>
 				</Equation>
-				<!-- AIRCRAFT_ICON_INDEX = _L2; -->
+				<!-- aircraftIconIndex = _L2; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="AIRCRAFT_ICON_INDEX"/>
+						<VariableRef name="aircraftIconIndex"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -117,7 +117,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/1845/757F/B08/475c212451bb" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="HSI_Aircraft_Icon_Selection" landscape="true" format="A4 (210 297)" oid="!ed/1846/757F/B08/475c21243cfa">
+						<NetDiagram name="hsiAircraftIconSelection" landscape="true" format="A4 (210 297)" oid="!ed/1846/757F/B08/475c21243cfa">
 							<presentationElements>
 								<EquationGE presentable="!ed/1851/757F/B08/475c21f28e5">
 									<position>

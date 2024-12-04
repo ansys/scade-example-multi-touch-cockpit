@@ -81,7 +81,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="TO_FROM_legend_text_enum"/>
+								<TypeRef name="toFromLegendText"/>
 							</type>
 						</NamedType>
 					</type>
@@ -105,7 +105,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="CDI_legend_selection_enum"/>
+								<TypeRef name="cdiLegendSelection"/>
 							</type>
 						</NamedType>
 					</type>
@@ -141,7 +141,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="HSI_To_From_Shape_enum"/>
+								<TypeRef name="hsiToFromShape"/>
 							</type>
 						</NamedType>
 					</type>
@@ -659,7 +659,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="TO_FROM_legend_text_enum"/>
+								<TypeRef name="toFromLegendText"/>
 							</type>
 						</NamedType>
 					</type>
@@ -719,7 +719,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="CDI_legend_selection_enum"/>
+								<TypeRef name="cdiLegendSelection"/>
 							</type>
 						</NamedType>
 					</type>
@@ -889,7 +889,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="HSI_To_From_Shape_enum"/>
+								<TypeRef name="hsiToFromShape"/>
 							</type>
 						</NamedType>
 					</type>
@@ -1472,18 +1472,18 @@
 						<ed:Equation oid="!ed/658/7A70/BF0/47595598600a"/>
 					</pragmas>
 				</Equation>
-				<!-- _L38 = HSI_CDI_Data_Selection(_L39, _L40, _L41, _L42); -->
+				<!-- _L38 = hsiCdiDataSelection(_L39, _L40, _L41, _L42); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L38"/>
 					</lefts>
 					<right>
-						<!-- HSI_CDI_Data_Selection(_L39, _L40, _L41, _L42) -->
+						<!-- hsiCdiDataSelection(_L39, _L40, _L41, _L42) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
 									<operator>
-										<OperatorRef name="HSI_CDI_Data_Selection"/>
+										<OperatorRef name="hsiCdiDataSelection"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -1512,7 +1512,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<OperatorRef path="HSI_CDI_Data_Selection" refOid="!ed/104/7A70/BF0/4759558e12f">
+										<OperatorRef path="hsiCdiDataSelection" refOid="!ed/104/7A70/BF0/4759558e12f">
 											<InputRef refOid="!ed/106/7A70/BF0/4759558e1242"/>
 											<InputRef refOid="!ed/107/7A70/BF0/4759558e25bf"/>
 											<InputRef refOid="!ed/108/7A70/BF0/4759558e6956"/>
@@ -3642,9 +3642,9 @@
 						<TypeRef path="menuInfoType" refOid="!ed/22af/444A/B40/47594cd212ac"/>
 						<TypeRef path="systemInfoType" refOid="!ed/22f4/444A/B40/47594cd27d9d"/>
 						<TypeRef path="navDataType" refOid="!ed/22be/444A/B40/47594cd2222d"/>
-						<TypeRef path="TO_FROM_legend_text_enum" refOid="!ed/c5/7A70/BF0/475955396c3d"/>
-						<TypeRef path="CDI_legend_selection_enum" refOid="!ed/a9/7A70/BF0/4759553946cd"/>
-						<TypeRef path="HSI_To_From_Shape_enum" refOid="!ed/b1/7A70/BF0/4759553929db"/>
+						<TypeRef path="toFromLegendText" refOid="!ed/c5/7A70/BF0/475955396c3d"/>
+						<TypeRef path="cdiLegendSelection" refOid="!ed/a9/7A70/BF0/4759553946cd"/>
+						<TypeRef path="hsiToFromShape" refOid="!ed/b1/7A70/BF0/4759553929db"/>
 					</references>
 				</ed:Operator>
 				<kcg:Pragma>

@@ -69,7 +69,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="RMI_enum"/>
+								<TypeRef name="rmi"/>
 							</type>
 						</NamedType>
 					</type>
@@ -179,7 +179,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="RMI_enum"/>
+								<TypeRef name="rmi"/>
 							</type>
 						</NamedType>
 					</type>
@@ -191,7 +191,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="RMI_enum"/>
+								<TypeRef name="rmi"/>
 							</type>
 						</NamedType>
 					</type>
@@ -203,7 +203,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="RMI_enum"/>
+								<TypeRef name="rmi"/>
 							</type>
 						</NamedType>
 					</type>
@@ -215,7 +215,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="RMI_enum"/>
+								<TypeRef name="rmi"/>
 							</type>
 						</NamedType>
 					</type>
@@ -227,7 +227,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="RMI_enum"/>
+								<TypeRef name="rmi"/>
 							</type>
 						</NamedType>
 					</type>
@@ -239,7 +239,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="RMI_enum"/>
+								<TypeRef name="rmi"/>
 							</type>
 						</NamedType>
 					</type>
@@ -493,7 +493,7 @@
 						<ed:Equation oid="!ed/8fb/7A70/BF0/4759559b5ee9"/>
 					</pragmas>
 				</Equation>
-				<!-- _L9 = MN_RMIiSource; -->
+				<!-- _L9 = mnRMIiSource; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L9"/>
@@ -1201,7 +1201,7 @@
 					<references>
 						<TypeRef path="systemInfoType" refOid="!ed/22f4/444A/B40/47594cd27d9d"/>
 						<TypeRef path="navDataType" refOid="!ed/22be/444A/B40/47594cd2222d"/>
-						<TypeRef path="RMI_enum" refOid="!ed/bc/7A70/BF0/475955397f20"/>
+						<TypeRef path="rmi" refOid="!ed/bc/7A70/BF0/475955397f20"/>
 						<ConstVarRef path="RMI_OFF" refOid="!ed/2e20/5B1F/A70/4757b43d4e5d"/>
 						<ConstVarRef path="RMI_ADF1" refOid="!ed/2e21/5B1F/A70/4757b4685f38"/>
 						<ConstVarRef path="RMI_ADF2" refOid="!ed/2e22/5B1F/A70/4757b46920bf"/>
