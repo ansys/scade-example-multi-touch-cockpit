@@ -7,7 +7,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Interactivity::TMouse"/>
+								<TypeRef name="Interactivity::mouse"/>
 							</type>
 						</NamedType>
 					</type>
@@ -19,7 +19,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Interactivity::TMouse"/>
+								<TypeRef name="Interactivity::mouse"/>
 							</type>
 						</NamedType>
 					</type>
@@ -1014,7 +1014,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Interactivity::TMouse"/>
+								<TypeRef name="Interactivity::mouse"/>
 							</type>
 						</NamedType>
 					</type>
@@ -1026,7 +1026,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Interactivity::TMouse"/>
+								<TypeRef name="Interactivity::mouse"/>
 							</type>
 						</NamedType>
 					</type>
@@ -2309,7 +2309,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Interactivity::TMouse"/>
+								<TypeRef name="Interactivity::mouse"/>
 							</type>
 						</NamedType>
 					</type>
@@ -2357,7 +2357,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Interactivity::TMouse"/>
+								<TypeRef name="Interactivity::mouse"/>
 							</type>
 						</NamedType>
 					</type>
@@ -4802,18 +4802,18 @@
 						<ed:Equation oid="!ed/59d2/4FCD/1EE8/50ee8b55a3a"/>
 					</pragmas>
 				</Equation>
-				<!-- p1 = Interactivity::P2P(_L1608); -->
+				<!-- p1 = Interactivity::p2p(_L1608); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="p1"/>
 					</lefts>
 					<right>
-						<!-- Interactivity::P2P(_L1608) -->
+						<!-- Interactivity::p2p(_L1608) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
 									<operator>
-										<OperatorRef name="Interactivity::P2P"/>
+										<OperatorRef name="Interactivity::p2p"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -4827,7 +4827,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<OperatorRef path="Interactivity::P2P" refOid="!ed/5ca6/322B/1C78/52fb89da23d">
+										<OperatorRef path="Interactivity::p2p" refOid="!ed/5ca6/322B/1C78/52fb89da23d">
 											<InputRef refOid="!ed/5ca8/322B/1C78/52fb89f07edd"/>
 											<OutputRef refOid="!ed/5ca9/322B/1C78/52fb89f13ec0"/>
 										</OperatorRef>
@@ -4840,18 +4840,18 @@
 						<ed:Equation oid="!ed/5dc4/322B/1C78/52fb8acf3026"/>
 					</pragmas>
 				</Equation>
-				<!-- p2 = Interactivity::P2P(_L1617); -->
+				<!-- p2 = Interactivity::p2p(_L1617); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="p2"/>
 					</lefts>
 					<right>
-						<!-- Interactivity::P2P(_L1617) -->
+						<!-- Interactivity::p2p(_L1617) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="2">
 									<operator>
-										<OperatorRef name="Interactivity::P2P"/>
+										<OperatorRef name="Interactivity::p2p"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -4865,7 +4865,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<OperatorRef path="Interactivity::P2P" refOid="!ed/5ca6/322B/1C78/52fb89da23d">
+										<OperatorRef path="Interactivity::p2p" refOid="!ed/5ca6/322B/1C78/52fb89da23d">
 											<InputRef refOid="!ed/5ca8/322B/1C78/52fb89f07edd"/>
 											<OutputRef refOid="!ed/5ca9/322B/1C78/52fb89f13ec0"/>
 										</OperatorRef>
@@ -7152,7 +7152,7 @@
 						</NetDiagram>
 					</diagrams>
 					<references>
-						<TypeRef path="Interactivity::TMouse" refOid="!ed/40ed/3422/D4C/4a818eed6001"/>
+						<TypeRef path="Interactivity::mouse" refOid="!ed/40ed/3422/D4C/4a818eed6001"/>
 						<TypeRef path="Simulation::TIBtnData" refOid="!ed/48f7/10F2/12FC/4c65819e7550"/>
 						<TypeRef path="Simulation::TInteractivityDataIn" refOid="!ed/4702/461B/1740/4f63145f8bb"/>
 						<TypeRef path="Simulation::TAdditionalData" refOid="!ed/4922/5DE3/DDC/4a8408cd3898"/>

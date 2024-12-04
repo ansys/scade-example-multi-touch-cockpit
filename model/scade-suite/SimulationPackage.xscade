@@ -616,7 +616,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Interactivity::TMouse"/>
+										<TypeRef name="Interactivity::mouse"/>
 									</type>
 								</NamedType>
 							</type>
@@ -628,7 +628,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Interactivity::TMouse"/>
+										<TypeRef name="Interactivity::mouse"/>
 									</type>
 								</NamedType>
 							</type>
@@ -6514,18 +6514,18 @@
 								<ed:Equation oid="!ed/140b7/3CE0/3C4/492c235b211d"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1456 = Interactivity::Toggle(_L1481); -->
+						<!-- _L1456 = Interactivity::toggle(_L1481); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1456"/>
 							</lefts>
 							<right>
-								<!-- Interactivity::Toggle(_L1481) -->
+								<!-- Interactivity::toggle(_L1481) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="1">
 											<operator>
-												<OperatorRef name="Interactivity::Toggle"/>
+												<OperatorRef name="Interactivity::toggle"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -6539,7 +6539,7 @@
 									<pragmas>
 										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 											<references>
-												<OperatorRef path="Interactivity::Toggle" refOid="!ed/4a7e/276/17BC/4f622ec530fe">
+												<OperatorRef path="Interactivity::toggle" refOid="!ed/4a7e/276/17BC/4f622ec530fe">
 													<InputRef refOid="!ed/4a80/276/17BC/4f622eca165e"/>
 													<OutputRef refOid="!ed/4a81/276/17BC/4f622eca4e84"/>
 												</OperatorRef>
@@ -6552,18 +6552,18 @@
 								<ed:Equation oid="!ed/4abd/276/17BC/4f62311c83"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1457 = Interactivity::Toggle(_L1482); -->
+						<!-- _L1457 = Interactivity::toggle(_L1482); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1457"/>
 							</lefts>
 							<right>
-								<!-- Interactivity::Toggle(_L1482) -->
+								<!-- Interactivity::toggle(_L1482) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="2">
 											<operator>
-												<OperatorRef name="Interactivity::Toggle"/>
+												<OperatorRef name="Interactivity::toggle"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -6577,7 +6577,7 @@
 									<pragmas>
 										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 											<references>
-												<OperatorRef path="Interactivity::Toggle" refOid="!ed/4a7e/276/17BC/4f622ec530fe">
+												<OperatorRef path="Interactivity::toggle" refOid="!ed/4a7e/276/17BC/4f622ec530fe">
 													<InputRef refOid="!ed/4a80/276/17BC/4f622eca165e"/>
 													<OutputRef refOid="!ed/4a81/276/17BC/4f622eca4e84"/>
 												</OperatorRef>
@@ -6590,18 +6590,18 @@
 								<ed:Equation oid="!ed/4ac9/276/17BC/4f623129324c"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1460 = Interactivity::Toggle(_L1483); -->
+						<!-- _L1460 = Interactivity::toggle(_L1483); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1460"/>
 							</lefts>
 							<right>
-								<!-- Interactivity::Toggle(_L1483) -->
+								<!-- Interactivity::toggle(_L1483) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="5">
 											<operator>
-												<OperatorRef name="Interactivity::Toggle"/>
+												<OperatorRef name="Interactivity::toggle"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -6615,7 +6615,7 @@
 									<pragmas>
 										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 											<references>
-												<OperatorRef path="Interactivity::Toggle" refOid="!ed/4a7e/276/17BC/4f622ec530fe">
+												<OperatorRef path="Interactivity::toggle" refOid="!ed/4a7e/276/17BC/4f622ec530fe">
 													<InputRef refOid="!ed/4a80/276/17BC/4f622eca165e"/>
 													<OutputRef refOid="!ed/4a81/276/17BC/4f622eca4e84"/>
 												</OperatorRef>
@@ -6659,19 +6659,19 @@
 								<ed:Equation oid="!ed/4adf/276/17BC/4f62314122a2"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1464, _L1520 = Interactivity::IncDecBtn(_L1467, _L1469, _L1489, 5.23, 0.25); -->
+						<!-- _L1464, _L1520 = Interactivity::incDecBtn(_L1467, _L1469, _L1489, 5.23, 0.25); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1464"/>
 								<VariableRef name="_L1520"/>
 							</lefts>
 							<right>
-								<!-- Interactivity::IncDecBtn(_L1467, _L1469, _L1489, 5.23, 0.25) -->
+								<!-- Interactivity::incDecBtn(_L1467, _L1469, _L1489, 5.23, 0.25) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="3">
 											<operator>
-												<OperatorRef name="Interactivity::IncDecBtn"/>
+												<OperatorRef name="Interactivity::incDecBtn"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -6697,7 +6697,7 @@
 									<pragmas>
 										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 											<references>
-												<OperatorRef path="Interactivity::IncDecBtn" refOid="!ed/4af5/276/17BC/4f6232785d0d">
+												<OperatorRef path="Interactivity::incDecBtn" refOid="!ed/4af5/276/17BC/4f6232785d0d">
 													<InputRef refOid="!ed/4af7/276/17BC/4f6232885270"/>
 													<InputRef refOid="!ed/4af8/276/17BC/4f62328b7b6f"/>
 													<InputRef refOid="!ed/4e93/276/17BC/4f6262611471"/>
@@ -6811,19 +6811,19 @@
 								<ed:Equation oid="!ed/4c4b/276/17BC/4f62340e3ddc"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1473, _L1519 = Interactivity::IncDecBtn(_L1471, _L1472, _L1489, 1622.0, 20.0); -->
+						<!-- _L1473, _L1519 = Interactivity::incDecBtn(_L1471, _L1472, _L1489, 1622.0, 20.0); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1473"/>
 								<VariableRef name="_L1519"/>
 							</lefts>
 							<right>
-								<!-- Interactivity::IncDecBtn(_L1471, _L1472, _L1489, 1622.0, 20.0) -->
+								<!-- Interactivity::incDecBtn(_L1471, _L1472, _L1489, 1622.0, 20.0) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="5">
 											<operator>
-												<OperatorRef name="Interactivity::IncDecBtn"/>
+												<OperatorRef name="Interactivity::incDecBtn"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -6849,7 +6849,7 @@
 									<pragmas>
 										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 											<references>
-												<OperatorRef path="Interactivity::IncDecBtn" refOid="!ed/4af5/276/17BC/4f6232785d0d">
+												<OperatorRef path="Interactivity::incDecBtn" refOid="!ed/4af5/276/17BC/4f6232785d0d">
 													<InputRef refOid="!ed/4af7/276/17BC/4f6232885270"/>
 													<InputRef refOid="!ed/4af8/276/17BC/4f62328b7b6f"/>
 													<InputRef refOid="!ed/4e93/276/17BC/4f6262611471"/>
@@ -6867,19 +6867,19 @@
 								<ed:Equation oid="!ed/4c4d/276/17BC/4f62340e44ce"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1474, _L1518 = Interactivity::IncDecBtn(_L1475, _L1476, _L1489, 0.0, 1.0); -->
+						<!-- _L1474, _L1518 = Interactivity::incDecBtn(_L1475, _L1476, _L1489, 0.0, 1.0); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1474"/>
 								<VariableRef name="_L1518"/>
 							</lefts>
 							<right>
-								<!-- Interactivity::IncDecBtn(_L1475, _L1476, _L1489, 0.0, 1.0) -->
+								<!-- Interactivity::incDecBtn(_L1475, _L1476, _L1489, 0.0, 1.0) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="6">
 											<operator>
-												<OperatorRef name="Interactivity::IncDecBtn"/>
+												<OperatorRef name="Interactivity::incDecBtn"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -6905,7 +6905,7 @@
 									<pragmas>
 										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 											<references>
-												<OperatorRef path="Interactivity::IncDecBtn" refOid="!ed/4af5/276/17BC/4f6232785d0d">
+												<OperatorRef path="Interactivity::incDecBtn" refOid="!ed/4af5/276/17BC/4f6232785d0d">
 													<InputRef refOid="!ed/4af7/276/17BC/4f6232885270"/>
 													<InputRef refOid="!ed/4af8/276/17BC/4f62328b7b6f"/>
 													<InputRef refOid="!ed/4e93/276/17BC/4f6262611471"/>
@@ -6971,19 +6971,19 @@
 								<ed:Equation oid="!ed/4cef/276/17BC/4f62346a353b"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1477, _L1517 = Interactivity::IncDecBtn(_L1479, _L1478, _L1489, 7.0, 10.0); -->
+						<!-- _L1477, _L1517 = Interactivity::incDecBtn(_L1479, _L1478, _L1489, 7.0, 10.0); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1477"/>
 								<VariableRef name="_L1517"/>
 							</lefts>
 							<right>
-								<!-- Interactivity::IncDecBtn(_L1479, _L1478, _L1489, 7.0, 10.0) -->
+								<!-- Interactivity::incDecBtn(_L1479, _L1478, _L1489, 7.0, 10.0) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="7">
 											<operator>
-												<OperatorRef name="Interactivity::IncDecBtn"/>
+												<OperatorRef name="Interactivity::incDecBtn"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -7009,7 +7009,7 @@
 									<pragmas>
 										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 											<references>
-												<OperatorRef path="Interactivity::IncDecBtn" refOid="!ed/4af5/276/17BC/4f6232785d0d">
+												<OperatorRef path="Interactivity::incDecBtn" refOid="!ed/4af5/276/17BC/4f6232785d0d">
 													<InputRef refOid="!ed/4af7/276/17BC/4f6232885270"/>
 													<InputRef refOid="!ed/4af8/276/17BC/4f62328b7b6f"/>
 													<InputRef refOid="!ed/4e93/276/17BC/4f6262611471"/>
@@ -7375,19 +7375,19 @@
 								<ed:Equation oid="!ed/46e3/461B/1740/4f6314291ac1"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1499, _L1514 = Interactivity::Move(_L1529, _L1497, _L1506, _L1516, _L1507); -->
+						<!-- _L1499, _L1514 = Interactivity::move(_L1529, _L1497, _L1506, _L1516, _L1507); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1499"/>
 								<VariableRef name="_L1514"/>
 							</lefts>
 							<right>
-								<!-- Interactivity::Move(_L1529, _L1497, _L1506, _L1516, _L1507) -->
+								<!-- Interactivity::move(_L1529, _L1497, _L1506, _L1516, _L1507) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="1">
 											<operator>
-												<OperatorRef name="Interactivity::Move"/>
+												<OperatorRef name="Interactivity::move"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -7421,7 +7421,7 @@
 									<pragmas>
 										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 											<references>
-												<OperatorRef path="Interactivity::Move" refOid="!ed/486f/461B/1740/4f63186b2632">
+												<OperatorRef path="Interactivity::move" refOid="!ed/486f/461B/1740/4f63186b2632">
 													<InputRef refOid="!ed/4871/461B/1740/4f6318744fcd"/>
 													<InputRef refOid="!ed/58a3/2F8E/68C/4fa395074a8a"/>
 													<InputRef refOid="!ed/487b/461B/1740/4f6318e73977"/>
@@ -7439,18 +7439,18 @@
 								<ed:Equation oid="!ed/4869/461B/1740/4f63181146f"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1500 = Interactivity::ZoomEffect(_L1503, 0.01, 1.0, 1.1); -->
+						<!-- _L1500 = Interactivity::zoomEffect(_L1503, 0.01, 1.0, 1.1); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1500"/>
 							</lefts>
 							<right>
-								<!-- Interactivity::ZoomEffect(_L1503, 0.01, 1.0, 1.1) -->
+								<!-- Interactivity::zoomEffect(_L1503, 0.01, 1.0, 1.1) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="3">
 											<operator>
-												<OperatorRef name="Interactivity::ZoomEffect"/>
+												<OperatorRef name="Interactivity::zoomEffect"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -7467,7 +7467,7 @@
 									<pragmas>
 										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 											<references>
-												<OperatorRef path="Interactivity::ZoomEffect" refOid="!ed/4771/461B/1740/4f6315666c7f">
+												<OperatorRef path="Interactivity::zoomEffect" refOid="!ed/4771/461B/1740/4f6315666c7f">
 													<InputRef refOid="!ed/4773/461B/1740/4f63156d7dac"/>
 													<InputRef refOid="!ed/4774/461B/1740/4f63159f4f30"/>
 													<InputRef refOid="!ed/4775/461B/1740/4f6315b561df"/>
@@ -7641,19 +7641,19 @@
 								<ed:Equation oid="!ed/45bd/341A/1B0C/4f8530bd3bcc"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1512, _L1513 = Interactivity::Move(_L1529, _L1509, _L1511, _L1516, _L1508); -->
+						<!-- _L1512, _L1513 = Interactivity::move(_L1529, _L1509, _L1511, _L1516, _L1508); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1512"/>
 								<VariableRef name="_L1513"/>
 							</lefts>
 							<right>
-								<!-- Interactivity::Move(_L1529, _L1509, _L1511, _L1516, _L1508) -->
+								<!-- Interactivity::move(_L1529, _L1509, _L1511, _L1516, _L1508) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="2">
 											<operator>
-												<OperatorRef name="Interactivity::Move"/>
+												<OperatorRef name="Interactivity::move"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -7687,7 +7687,7 @@
 									<pragmas>
 										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 											<references>
-												<OperatorRef path="Interactivity::Move" refOid="!ed/486f/461B/1740/4f63186b2632">
+												<OperatorRef path="Interactivity::move" refOid="!ed/486f/461B/1740/4f63186b2632">
 													<InputRef refOid="!ed/4871/461B/1740/4f6318744fcd"/>
 													<InputRef refOid="!ed/58a3/2F8E/68C/4fa395074a8a"/>
 													<InputRef refOid="!ed/487b/461B/1740/4f6318e73977"/>
@@ -7758,18 +7758,18 @@
 								<ed:Equation oid="!ed/592d/2F8E/68C/4fa397a24dfd"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1521 = Interactivity::Scale(_L1522, _L1523, _L1525, _L1524, _L1527, 0.5, 2.); -->
+						<!-- _L1521 = Interactivity::scale(_L1522, _L1523, _L1525, _L1524, _L1527, 0.5, 2.); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1521"/>
 							</lefts>
 							<right>
-								<!-- Interactivity::Scale(_L1522, _L1523, _L1525, _L1524, _L1527, 0.5, 2.) -->
+								<!-- Interactivity::scale(_L1522, _L1523, _L1525, _L1524, _L1527, 0.5, 2.) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="1">
 											<operator>
-												<OperatorRef name="Interactivity::Scale"/>
+												<OperatorRef name="Interactivity::scale"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -7805,7 +7805,7 @@
 									<pragmas>
 										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 											<references>
-												<OperatorRef path="Interactivity::Scale" refOid="!ed/5ab0/2F8E/68C/4fa3a09163ff">
+												<OperatorRef path="Interactivity::scale" refOid="!ed/5ab0/2F8E/68C/4fa3a09163ff">
 													<InputRef refOid="!ed/5ae2/2F8E/68C/4fa3a091314f"/>
 													<InputRef refOid="!ed/5ae3/2F8E/68C/4fa3a09152f0"/>
 													<InputRef refOid="!ed/5ae4/2F8E/68C/4fa3a0914f11"/>
@@ -8102,18 +8102,18 @@
 								<ed:Equation oid="!ed/5964/4FCD/1EE8/50ee8b0c1660"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1532 = Interactivity::ZoomEffect(_L1530, 0.01, 1.0, 1.1); -->
+						<!-- _L1532 = Interactivity::zoomEffect(_L1530, 0.01, 1.0, 1.1); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1532"/>
 							</lefts>
 							<right>
-								<!-- Interactivity::ZoomEffect(_L1530, 0.01, 1.0, 1.1) -->
+								<!-- Interactivity::zoomEffect(_L1530, 0.01, 1.0, 1.1) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="4">
 											<operator>
-												<OperatorRef name="Interactivity::ZoomEffect"/>
+												<OperatorRef name="Interactivity::zoomEffect"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -8130,7 +8130,7 @@
 									<pragmas>
 										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 											<references>
-												<OperatorRef path="Interactivity::ZoomEffect" refOid="!ed/4771/461B/1740/4f6315666c7f">
+												<OperatorRef path="Interactivity::zoomEffect" refOid="!ed/4771/461B/1740/4f6315666c7f">
 													<InputRef refOid="!ed/4773/461B/1740/4f63156d7dac"/>
 													<InputRef refOid="!ed/4774/461B/1740/4f63159f4f30"/>
 													<InputRef refOid="!ed/4775/461B/1740/4f6315b561df"/>
@@ -8220,18 +8220,18 @@
 								<ed:Equation oid="!ed/59a1/4FCD/1EE8/50ee8b137ba3"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1536 = Interactivity::ZoomEffect(_L1535, 0.01, 1.0, 1.1); -->
+						<!-- _L1536 = Interactivity::zoomEffect(_L1535, 0.01, 1.0, 1.1); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1536"/>
 							</lefts>
 							<right>
-								<!-- Interactivity::ZoomEffect(_L1535, 0.01, 1.0, 1.1) -->
+								<!-- Interactivity::zoomEffect(_L1535, 0.01, 1.0, 1.1) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="5">
 											<operator>
-												<OperatorRef name="Interactivity::ZoomEffect"/>
+												<OperatorRef name="Interactivity::zoomEffect"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -8248,7 +8248,7 @@
 									<pragmas>
 										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 											<references>
-												<OperatorRef path="Interactivity::ZoomEffect" refOid="!ed/4771/461B/1740/4f6315666c7f">
+												<OperatorRef path="Interactivity::zoomEffect" refOid="!ed/4771/461B/1740/4f6315666c7f">
 													<InputRef refOid="!ed/4773/461B/1740/4f63156d7dac"/>
 													<InputRef refOid="!ed/4774/461B/1740/4f63159f4f30"/>
 													<InputRef refOid="!ed/4775/461B/1740/4f6315b561df"/>
@@ -8288,18 +8288,18 @@
 								<ed:Equation oid="!ed/59a5/4FCD/1EE8/50ee8b13167a"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1545 = Interactivity::LoopIndex(_L1547, _L1546, 1, 4); -->
+						<!-- _L1545 = Interactivity::loopIndex(_L1547, _L1546, 1, 4); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1545"/>
 							</lefts>
 							<right>
-								<!-- Interactivity::LoopIndex(_L1547, _L1546, 1, 4) -->
+								<!-- Interactivity::loopIndex(_L1547, _L1546, 1, 4) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="1">
 											<operator>
-												<OperatorRef name="Interactivity::LoopIndex"/>
+												<OperatorRef name="Interactivity::loopIndex"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -8320,7 +8320,7 @@
 									<pragmas>
 										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 											<references>
-												<OperatorRef path="Interactivity::LoopIndex" refOid="!ed/59e0/4FCD/1EE8/50ee9ed26aa2">
+												<OperatorRef path="Interactivity::loopIndex" refOid="!ed/59e0/4FCD/1EE8/50ee9ed26aa2">
 													<InputRef refOid="!ed/59e3/4FCD/1EE8/50ee9ede7ba"/>
 													<InputRef refOid="!ed/59e2/4FCD/1EE8/50ee9edb4c0d"/>
 													<InputRef refOid="!ed/59e5/4FCD/1EE8/50ee9eea2bd2"/>
@@ -8458,18 +8458,18 @@
 								<ed:Equation oid="!ed/5c51/4FCD/1EE8/50eecb993a43"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1552 = Interactivity::ZoomEffect(_L1553, 0.01, 1.0, 1.1); -->
+						<!-- _L1552 = Interactivity::zoomEffect(_L1553, 0.01, 1.0, 1.1); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1552"/>
 							</lefts>
 							<right>
-								<!-- Interactivity::ZoomEffect(_L1553, 0.01, 1.0, 1.1) -->
+								<!-- Interactivity::zoomEffect(_L1553, 0.01, 1.0, 1.1) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="6">
 											<operator>
-												<OperatorRef name="Interactivity::ZoomEffect"/>
+												<OperatorRef name="Interactivity::zoomEffect"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -8486,7 +8486,7 @@
 									<pragmas>
 										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 											<references>
-												<OperatorRef path="Interactivity::ZoomEffect" refOid="!ed/4771/461B/1740/4f6315666c7f">
+												<OperatorRef path="Interactivity::zoomEffect" refOid="!ed/4771/461B/1740/4f6315666c7f">
 													<InputRef refOid="!ed/4773/461B/1740/4f63156d7dac"/>
 													<InputRef refOid="!ed/4774/461B/1740/4f63159f4f30"/>
 													<InputRef refOid="!ed/4775/461B/1740/4f6315b561df"/>
@@ -8552,18 +8552,18 @@
 								<ed:Equation oid="!ed/5c57/4FCD/1EE8/50eecb99224d"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1555 = Interactivity::ZoomEffect(_L1551, 0.01, 1.0, 1.1); -->
+						<!-- _L1555 = Interactivity::zoomEffect(_L1551, 0.01, 1.0, 1.1); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1555"/>
 							</lefts>
 							<right>
-								<!-- Interactivity::ZoomEffect(_L1551, 0.01, 1.0, 1.1) -->
+								<!-- Interactivity::zoomEffect(_L1551, 0.01, 1.0, 1.1) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="7">
 											<operator>
-												<OperatorRef name="Interactivity::ZoomEffect"/>
+												<OperatorRef name="Interactivity::zoomEffect"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -8580,7 +8580,7 @@
 									<pragmas>
 										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 											<references>
-												<OperatorRef path="Interactivity::ZoomEffect" refOid="!ed/4771/461B/1740/4f6315666c7f">
+												<OperatorRef path="Interactivity::zoomEffect" refOid="!ed/4771/461B/1740/4f6315666c7f">
 													<InputRef refOid="!ed/4773/461B/1740/4f63156d7dac"/>
 													<InputRef refOid="!ed/4774/461B/1740/4f63159f4f30"/>
 													<InputRef refOid="!ed/4775/461B/1740/4f6315b561df"/>
@@ -11701,10 +11701,10 @@
 										</EquationGE>
 										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/494d/5DE3/DDC/4a84090655ea" dstEquation="!ed/4948/5DE3/DDC/4a8409045aef">
 											<positions>
-												<Point x="14880" y="6414"/>
-												<Point x="15536" y="6414"/>
-												<Point x="15536" y="6414"/>
-												<Point x="16193" y="6414"/>
+												<Point x="14896" y="6429"/>
+												<Point x="15531" y="6429"/>
+												<Point x="15531" y="6429"/>
+												<Point x="16193" y="6429"/>
 											</positions>
 										</Edge>
 										<EquationGE presentable="!ed/4b7b/276/17BC/4f6233975304">
@@ -11781,10 +11781,10 @@
 										</EquationGE>
 										<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/4cef/276/17BC/4f62346a353b" dstEquation="!ed/4ceb/276/17BC/4f62346a7fc9">
 											<positions>
-												<Point x="5313" y="7557"/>
-												<Point x="6625" y="7557"/>
-												<Point x="6625" y="7557"/>
-												<Point x="7938" y="7557"/>
+												<Point x="5318" y="7541"/>
+												<Point x="6615" y="7541"/>
+												<Point x="6615" y="7541"/>
+												<Point x="7938" y="7541"/>
 											</positions>
 										</Edge>
 										<EquationGE presentable="!ed/4d65/276/17BC/4f623499551c">
@@ -11813,89 +11813,89 @@
 										</EquationGE>
 										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/4d69/276/17BC/4f623499234e" dstEquation="!ed/4d65/276/17BC/4f623499551c">
 											<positions>
-												<Point x="5313" y="9229"/>
-												<Point x="6625" y="9229"/>
-												<Point x="6625" y="9229"/>
-												<Point x="7938" y="9229"/>
+												<Point x="5318" y="9208"/>
+												<Point x="6615" y="9208"/>
+												<Point x="6615" y="9208"/>
+												<Point x="7938" y="9208"/>
 											</positions>
 										</Edge>
 										<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/4d67/276/17BC/4f6234996a6c" dstEquation="!ed/4d65/276/17BC/4f623499551c">
 											<positions>
-												<Point x="5313" y="9673"/>
-												<Point x="6625" y="9673"/>
-												<Point x="6625" y="9673"/>
-												<Point x="7938" y="9673"/>
+												<Point x="5318" y="9657"/>
+												<Point x="6615" y="9657"/>
+												<Point x="6615" y="9657"/>
+												<Point x="7938" y="9657"/>
 											</positions>
 										</Edge>
 										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/4b7b/276/17BC/4f6233975304" dstEquation="!ed/494d/5DE3/DDC/4a84090655ea">
 											<positions>
-												<Point x="11007" y="2561"/>
-												<Point x="12044" y="2561"/>
-												<Point x="12044" y="2963"/>
-												<Point x="13060" y="2963"/>
+												<Point x="11007" y="2540"/>
+												<Point x="12039" y="2540"/>
+												<Point x="12039" y="2937"/>
+												<Point x="13044" y="2937"/>
 											</positions>
 										</Edge>
 										<Edge leftVarIndex="1" rightExprIndex="3" srcEquation="!ed/4c4d/276/17BC/4f62340e44ce" dstEquation="!ed/494d/5DE3/DDC/4a84090655ea">
 											<positions>
-												<Point x="11007" y="4953"/>
-												<Point x="12065" y="4953"/>
-												<Point x="12065" y="4953"/>
-												<Point x="13060" y="4953"/>
+												<Point x="11007" y="4948"/>
+												<Point x="12065" y="4948"/>
+												<Point x="12065" y="4948"/>
+												<Point x="13044" y="4948"/>
 											</positions>
 										</Edge>
 										<Edge leftVarIndex="1" rightExprIndex="5" srcEquation="!ed/4ceb/276/17BC/4f62346a7fc9" dstEquation="!ed/494d/5DE3/DDC/4a84090655ea">
 											<positions>
-												<Point x="11007" y="7260"/>
-												<Point x="12044" y="7260"/>
-												<Point x="12044" y="6900"/>
-												<Point x="13060" y="6900"/>
+												<Point x="11007" y="7250"/>
+												<Point x="12039" y="7250"/>
+												<Point x="12039" y="6906"/>
+												<Point x="13044" y="6906"/>
 											</positions>
 										</Edge>
 										<Edge leftVarIndex="1" rightExprIndex="7" srcEquation="!ed/4d65/276/17BC/4f623499551c" dstEquation="!ed/494d/5DE3/DDC/4a84090655ea">
 											<positions>
-												<Point x="11007" y="9377"/>
-												<Point x="12044" y="9377"/>
-												<Point x="12044" y="8890"/>
-												<Point x="13060" y="8890"/>
+												<Point x="11007" y="9366"/>
+												<Point x="12039" y="9366"/>
+												<Point x="12039" y="8890"/>
+												<Point x="13044" y="8890"/>
 											</positions>
 										</Edge>
 										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/4ced/276/17BC/4f62346a42b4" dstEquation="!ed/4ceb/276/17BC/4f62346a7fc9">
 											<positions>
-												<Point x="5313" y="7112"/>
-												<Point x="6625" y="7112"/>
-												<Point x="6625" y="7112"/>
-												<Point x="7938" y="7112"/>
+												<Point x="5318" y="7091"/>
+												<Point x="6615" y="7091"/>
+												<Point x="6615" y="7091"/>
+												<Point x="7938" y="7091"/>
 											</positions>
 										</Edge>
 										<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/4c4b/276/17BC/4f62340e3ddc" dstEquation="!ed/4c4d/276/17BC/4f62340e44ce">
 											<positions>
-												<Point x="5376" y="5249"/>
-												<Point x="6668" y="5249"/>
-												<Point x="6668" y="5249"/>
-												<Point x="7938" y="5249"/>
+												<Point x="5371" y="5239"/>
+												<Point x="6668" y="5239"/>
+												<Point x="6668" y="5239"/>
+												<Point x="7938" y="5239"/>
 											</positions>
 										</Edge>
 										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/4c49/276/17BC/4f62340e1919" dstEquation="!ed/4c4d/276/17BC/4f62340e44ce">
 											<positions>
-												<Point x="5376" y="4805"/>
-												<Point x="6668" y="4805"/>
-												<Point x="6668" y="4805"/>
-												<Point x="7938" y="4805"/>
+												<Point x="5371" y="4789"/>
+												<Point x="6668" y="4789"/>
+												<Point x="6668" y="4789"/>
+												<Point x="7938" y="4789"/>
 											</positions>
 										</Edge>
 										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/4b9d/276/17BC/4f6233ce173e" dstEquation="!ed/4b7b/276/17BC/4f6233975304">
 											<positions>
-												<Point x="5376" y="2392"/>
-												<Point x="6646" y="2392"/>
-												<Point x="6646" y="2392"/>
-												<Point x="7938" y="2392"/>
+												<Point x="5371" y="2381"/>
+												<Point x="6641" y="2381"/>
+												<Point x="6641" y="2381"/>
+												<Point x="7938" y="2381"/>
 											</positions>
 										</Edge>
 										<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/4bd3/276/17BC/4f6233d95ef2" dstEquation="!ed/4b7b/276/17BC/4f6233975304">
 											<positions>
-												<Point x="5376" y="2858"/>
-												<Point x="6646" y="2858"/>
-												<Point x="6646" y="2858"/>
+												<Point x="5371" y="2858"/>
+												<Point x="6641" y="2858"/>
+												<Point x="6641" y="2858"/>
 												<Point x="7938" y="2858"/>
 											</positions>
 										</Edge>
@@ -11909,73 +11909,73 @@
 										</EquationGE>
 										<Edge leftVarIndex="1" rightExprIndex="3" srcEquation="!ed/4eb6/276/17BC/4f6263082b3a" dstEquation="!ed/4b7b/276/17BC/4f6233975304">
 											<positions>
-												<Point x="5376" y="1334"/>
-												<Point x="6646" y="1334"/>
-												<Point x="6646" y="3281"/>
+												<Point x="5371" y="1323"/>
+												<Point x="6641" y="1323"/>
+												<Point x="6641" y="3281"/>
 												<Point x="7938" y="3281"/>
 											</positions>
 										</Edge>
 										<Edge leftVarIndex="1" rightExprIndex="3" srcEquation="!ed/4eb6/276/17BC/4f6263082b3a" dstEquation="!ed/4c4d/276/17BC/4f62340e44ce">
 											<positions>
-												<Point x="5376" y="1334"/>
-												<Point x="6646" y="1334"/>
-												<Point x="6646" y="5694"/>
-												<Point x="7938" y="5694"/>
+												<Point x="5371" y="1323"/>
+												<Point x="6641" y="1323"/>
+												<Point x="6641" y="5689"/>
+												<Point x="7938" y="5689"/>
 											</positions>
 										</Edge>
 										<Edge leftVarIndex="1" rightExprIndex="3" srcEquation="!ed/4eb6/276/17BC/4f6263082b3a" dstEquation="!ed/4ceb/276/17BC/4f62346a7fc9">
 											<positions>
-												<Point x="5376" y="1334"/>
-												<Point x="6646" y="1334"/>
-												<Point x="6646" y="8001"/>
-												<Point x="7938" y="8001"/>
+												<Point x="5371" y="1323"/>
+												<Point x="6641" y="1323"/>
+												<Point x="6641" y="7990"/>
+												<Point x="7938" y="7990"/>
 											</positions>
 										</Edge>
 										<Edge leftVarIndex="1" rightExprIndex="3" srcEquation="!ed/4eb6/276/17BC/4f6263082b3a" dstEquation="!ed/4d65/276/17BC/4f623499551c">
 											<positions>
-												<Point x="5376" y="1334"/>
-												<Point x="6646" y="1334"/>
-												<Point x="6646" y="10118"/>
-												<Point x="7938" y="10118"/>
+												<Point x="5371" y="1323"/>
+												<Point x="6641" y="1323"/>
+												<Point x="6641" y="10107"/>
+												<Point x="7938" y="10107"/>
 											</positions>
 										</Edge>
 										<Edge leftVarIndex="2" rightExprIndex="2" srcEquation="!ed/4b7b/276/17BC/4f6233975304" dstEquation="!ed/494d/5DE3/DDC/4a84090655ea">
 											<positions>
-												<Point x="11007" y="3133"/>
-												<Point x="12023" y="3133"/>
-												<Point x="12023" y="3937"/>
-												<Point x="13060" y="3937"/>
+												<Point x="11007" y="3149"/>
+												<Point x="12012" y="3149"/>
+												<Point x="12012" y="3942"/>
+												<Point x="13044" y="3942"/>
 											</positions>
 										</Edge>
 										<Edge leftVarIndex="2" rightExprIndex="4" srcEquation="!ed/4c4d/276/17BC/4f62340e44ce" dstEquation="!ed/494d/5DE3/DDC/4a84090655ea">
 											<positions>
-												<Point x="11007" y="5546"/>
-												<Point x="12023" y="5546"/>
-												<Point x="12023" y="5927"/>
-												<Point x="13060" y="5927"/>
+												<Point x="11007" y="5556"/>
+												<Point x="12012" y="5556"/>
+												<Point x="12012" y="5927"/>
+												<Point x="13044" y="5927"/>
 											</positions>
 										</Edge>
 										<Edge leftVarIndex="2" rightExprIndex="6" srcEquation="!ed/4ceb/276/17BC/4f62346a7fc9" dstEquation="!ed/494d/5DE3/DDC/4a84090655ea">
 											<positions>
-												<Point x="11007" y="7853"/>
-												<Point x="12023" y="7853"/>
-												<Point x="12023" y="7895"/>
-												<Point x="13060" y="7895"/>
+												<Point x="11007" y="7858"/>
+												<Point x="12012" y="7858"/>
+												<Point x="12012" y="7911"/>
+												<Point x="13044" y="7911"/>
 											</positions>
 										</Edge>
 										<Edge leftVarIndex="2" rightExprIndex="8" srcEquation="!ed/4d65/276/17BC/4f623499551c" dstEquation="!ed/494d/5DE3/DDC/4a84090655ea">
 											<positions>
-												<Point x="11007" y="9970"/>
-												<Point x="12023" y="9970"/>
-												<Point x="12023" y="9864"/>
-												<Point x="13060" y="9864"/>
+												<Point x="11007" y="9975"/>
+												<Point x="12012" y="9975"/>
+												<Point x="12012" y="9895"/>
+												<Point x="13044" y="9895"/>
 											</positions>
 										</Edge>
 									</presentationElements>
 								</NetDiagram>
 							</diagrams>
 							<references>
-								<TypeRef path="Interactivity::TMouse" refOid="!ed/40ed/3422/D4C/4a818eed6001"/>
+								<TypeRef path="Interactivity::mouse" refOid="!ed/40ed/3422/D4C/4a818eed6001"/>
 								<TypeRef path="PFD::TSpeedAltData" refOid="!ed/51e7/7D49/B98/494240aa36b5"/>
 								<TypeRef path="PFD::TScreenInfoData" refOid="!ed/5207/7D49/B98/494240aa497f"/>
 								<TypeRef path="PFD::TTrajectoryData" refOid="!ed/5229/7D49/B98/494240aa2c37"/>
