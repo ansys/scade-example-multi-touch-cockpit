@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="node" name="Counter_mod">
+		<Operator kind="node" name="counterMod">
 			<inputs>
-				<Variable name="Activate">
+				<Variable name="enable">
 					<type>
 						<NamedType>
 							<type>
@@ -15,7 +15,7 @@
 						<ed:Variable oid="!ed/ae6/60FF/54C/483a75344f89"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Mod">
+				<Variable name="Modulo">
 					<type>
 						<NamedType>
 							<type>
@@ -29,7 +29,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="Out">
+				<Variable name="out">
 					<type>
 						<NamedType>
 							<type>
@@ -41,7 +41,7 @@
 						<ed:Variable oid="!ed/ae8/60FF/54C/483a75406cff"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Outpp1">
+				<Variable name="outPp1">
 					<type>
 						<NamedType>
 							<type>
@@ -323,7 +323,7 @@
 						<ed:Equation oid="!ed/b3a/60FF/54C/483a7568db4"/>
 					</pragmas>
 				</Equation>
-				<!-- _L8 = Mod; -->
+				<!-- _L8 = Modulo; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L8"/>
@@ -331,7 +331,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Mod"/>
+								<ConstVarRef name="Modulo"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -339,7 +339,7 @@
 						<ed:Equation oid="!ed/b3c/60FF/54C/483a756d110a"/>
 					</pragmas>
 				</Equation>
-				<!-- _L9 = Activate; -->
+				<!-- _L9 = enable; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L9"/>
@@ -347,7 +347,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Activate"/>
+								<ConstVarRef name="enable"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -355,10 +355,10 @@
 						<ed:Equation oid="!ed/b42/60FF/54C/483a75815547"/>
 					</pragmas>
 				</Equation>
-				<!-- Out = _L3; -->
+				<!-- out = _L3; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="Out"/>
+						<VariableRef name="out"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -423,7 +423,7 @@
 						<ed:Equation oid="!ed/908/115F/E7C/4847efb9442d"/>
 					</pragmas>
 				</Equation>
-				<!-- _L12 = Mod; -->
+				<!-- _L12 = Modulo; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L12"/>
@@ -431,7 +431,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Mod"/>
+								<ConstVarRef name="Modulo"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -451,10 +451,10 @@
 						<ed:Equation oid="!ed/91f/115F/E7C/4847efc419d"/>
 					</pragmas>
 				</Equation>
-				<!-- Outpp1 = _L11; -->
+				<!-- outPp1 = _L11; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="Outpp1"/>
+						<VariableRef name="outPp1"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -469,9 +469,9 @@
 				</Equation>
 			</data>
 			<pragmas>
-				<ed:Operator oid="!ed/ae4/60FF/54C/483a7523734a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Operator oid="!ed/ae4/60FF/54C/483a7523734a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_Counter_mod_1" landscape="true" format="A4 (210 297)" oid="!ed/ae5/60FF/54C/483a752320c8">
+						<NetDiagram name="counterMod" landscape="true" format="A4 (210 297)" oid="!ed/ae5/60FF/54C/483a752320c8">
 							<presentationElements>
 								<EquationGE kind="OBJ_LIT" presentable="!ed/b2e/60FF/54C/483a75688e3">
 									<position>

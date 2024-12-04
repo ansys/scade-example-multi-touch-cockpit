@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="New_coord">
+		<Operator kind="function" name="newCoord">
 			<inputs>
-				<Variable name="Pt">
+				<Variable name="pt">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Point"/>
+								<TypeRef name="point"/>
 							</type>
 						</NamedType>
 					</type>
@@ -15,7 +15,7 @@
 						<ed:Variable oid="!ed/31ee/782E/10C4/482446b463c7"/>
 					</pragmas>
 				</Variable>
-				<Variable name="X_Aircraft">
+				<Variable name="xAircraft">
 					<type>
 						<NamedType>
 							<type>
@@ -24,12 +24,12 @@
 						</NamedType>
 					</type>
 					<pragmas>
-						<ed:Variable oid="!ed/32f1/782E/10C4/482447d8f09" hidden="true" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+						<ed:Variable oid="!ed/32f1/782E/10C4/482447d8f09" hidden="true" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<comment> altitude?</comment>
 						</ed:Variable>
 					</pragmas>
 				</Variable>
-				<Variable name="Y_Aircraft">
+				<Variable name="yAircraft">
 					<type>
 						<NamedType>
 							<type>
@@ -41,7 +41,7 @@
 						<ed:Variable oid="!ed/32f2/782E/10C4/482447d82476" hidden="true"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Z_Aircraft">
+				<Variable name="zAircraft">
 					<type>
 						<NamedType>
 							<type>
@@ -53,7 +53,7 @@
 						<ed:Variable oid="!ed/32f3/782E/10C4/482447d85034" hidden="true"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Pitch_X_Aircraft">
+				<Variable name="pitchXAircraft">
 					<type>
 						<NamedType>
 							<type>
@@ -62,12 +62,12 @@
 						</NamedType>
 					</type>
 					<pragmas>
-						<ed:Variable oid="!ed/32f4/782E/10C4/482447d8261a" hidden="true" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+						<ed:Variable oid="!ed/32f4/782E/10C4/482447d8261a" hidden="true" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<comment> altitude?</comment>
 						</ed:Variable>
 					</pragmas>
 				</Variable>
-				<Variable name="Yow_Y_Aircraft">
+				<Variable name="yowYAircraft">
 					<type>
 						<NamedType>
 							<type>
@@ -79,7 +79,7 @@
 						<ed:Variable oid="!ed/32f5/782E/10C4/482447d8179" hidden="true"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Roll_Z_Aircraft">
+				<Variable name="rollZAircraft">
 					<type>
 						<NamedType>
 							<type>
@@ -91,7 +91,7 @@
 						<ed:Variable oid="!ed/32f6/782E/10C4/482447d85ed7" hidden="true"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Vitesse">
+				<Variable name="vitesse">
 					<type>
 						<NamedType>
 							<type>
@@ -105,7 +105,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="XT1">
+				<Variable name="xt1">
 					<type>
 						<NamedType>
 							<type>
@@ -117,7 +117,7 @@
 						<ed:Variable oid="!ed/334b/782E/10C4/48244883659"/>
 					</pragmas>
 				</Variable>
-				<Variable name="YT1">
+				<Variable name="yt1">
 					<type>
 						<NamedType>
 							<type>
@@ -129,7 +129,7 @@
 						<ed:Variable oid="!ed/334a/782E/10C4/4824488366a"/>
 					</pragmas>
 				</Variable>
-				<Variable name="ST1X">
+				<Variable name="st1x">
 					<type>
 						<NamedType>
 							<type>
@@ -141,7 +141,7 @@
 						<ed:Variable oid="!ed/3349/782E/10C4/48244883727b"/>
 					</pragmas>
 				</Variable>
-				<Variable name="ST1Y">
+				<Variable name="st1y">
 					<type>
 						<NamedType>
 							<type>
@@ -153,7 +153,7 @@
 						<ed:Variable oid="!ed/3348/782E/10C4/482448837d3"/>
 					</pragmas>
 				</Variable>
-				<Variable name="VT1">
+				<Variable name="vt1">
 					<type>
 						<NamedType>
 							<type>
@@ -165,7 +165,7 @@
 						<ed:Variable oid="!ed/3347/782E/10C4/482448834758"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Id_Pt1_PP">
+				<Variable name="idPt1PP">
 					<type>
 						<NamedType>
 							<type>
@@ -183,7 +183,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Point"/>
+								<TypeRef name="point"/>
 							</type>
 						</NamedType>
 					</type>
@@ -445,7 +445,7 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L2 = Pt; -->
+				<!-- _L2 = pt; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L2"/>
@@ -453,7 +453,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Pt"/>
+								<ConstVarRef name="pt"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -461,7 +461,7 @@
 						<ed:Equation oid="!ed/3218/782E/10C4/4824471332bd"/>
 					</pragmas>
 				</Equation>
-				<!-- _L3, _L4, _L5 = Change_Mark::Rotate(_L12, _L13, _L14, _L18, _L19, _L20); -->
+				<!-- _L3, _L4, _L5 = Change_Mark::rotate(_L12, _L13, _L14, _L18, _L19, _L20); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L3"/>
@@ -469,12 +469,12 @@
 						<VariableRef name="_L5"/>
 					</lefts>
 					<right>
-						<!-- Change_Mark::Rotate(_L12, _L13, _L14, _L18, _L19, _L20) -->
+						<!-- Change_Mark::rotate(_L12, _L13, _L14, _L18, _L19, _L20) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="2">
 									<operator>
-										<OperatorRef name="Change_Mark::Rotate"/>
+										<OperatorRef name="Change_Mark::rotate"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -510,13 +510,30 @@
 									</path>
 								</IdExpression>
 							</callParameters>
+							<pragmas>
+								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<references>
+										<OperatorRef path="Change_Mark::rotate" refOid="!ed/fea9/4FE6/17BC/480898fc75b9">
+											<InputRef refOid="!ed/fee3/4FE6/17BC/480898fc38e3"/>
+											<InputRef refOid="!ed/fee4/4FE6/17BC/480898fc546d"/>
+											<InputRef refOid="!ed/fee5/4FE6/17BC/480898fc305d"/>
+											<InputRef refOid="!ed/fedd/4FE6/17BC/480898fc4540"/>
+											<InputRef refOid="!ed/fede/4FE6/17BC/480898fc5a53"/>
+											<InputRef refOid="!ed/fedf/4FE6/17BC/480898fc6bd6"/>
+											<OutputRef refOid="!ed/fee0/4FE6/17BC/480898fc474b"/>
+											<OutputRef refOid="!ed/fee1/4FE6/17BC/480898fc3e5c"/>
+											<OutputRef refOid="!ed/fee2/4FE6/17BC/480898fc5086"/>
+										</OperatorRef>
+									</references>
+								</ed:CallExpression>
+							</pragmas>
 						</CallExpression>
 					</right>
 					<pragmas>
 						<ed:Equation oid="!ed/32ca/782E/10C4/482447785397"/>
 					</pragmas>
 				</Equation>
-				<!-- _L12, _L13, _L14 = Change_Mark::Translate(_L2, _L15, _L16, _L17); -->
+				<!-- _L12, _L13, _L14 = Change_Mark::translate(_L2, _L15, _L16, _L17); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L12"/>
@@ -524,12 +541,12 @@
 						<VariableRef name="_L14"/>
 					</lefts>
 					<right>
-						<!-- Change_Mark::Translate(_L2, _L15, _L16, _L17) -->
+						<!-- Change_Mark::translate(_L2, _L15, _L16, _L17) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="2">
 									<operator>
-										<OperatorRef name="Change_Mark::Translate"/>
+										<OperatorRef name="Change_Mark::translate"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -555,13 +572,28 @@
 									</path>
 								</IdExpression>
 							</callParameters>
+							<pragmas>
+								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<references>
+										<OperatorRef path="Change_Mark::translate" refOid="!ed/10123/4FE6/17BC/480898fc2c7d">
+											<InputRef refOid="!ed/3246/4131/14EC/480ca8fc3917"/>
+											<InputRef refOid="!ed/32ab/4131/14EC/480ca9f691b"/>
+											<InputRef refOid="!ed/32ac/4131/14EC/480ca9f6397a"/>
+											<InputRef refOid="!ed/32ad/4131/14EC/480ca9f6716"/>
+											<OutputRef refOid="!ed/327e/4131/14EC/480ca9b0320b"/>
+											<OutputRef refOid="!ed/3280/4131/14EC/480ca9b056f6"/>
+											<OutputRef refOid="!ed/3282/4131/14EC/480ca9b13638"/>
+										</OperatorRef>
+									</references>
+								</ed:CallExpression>
+							</pragmas>
 						</CallExpression>
 					</right>
 					<pragmas>
 						<ed:Equation oid="!ed/32d5/782E/10C4/482447783340"/>
 					</pragmas>
 				</Equation>
-				<!-- _L15 = X_Aircraft; -->
+				<!-- _L15 = xAircraft; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L15"/>
@@ -569,7 +601,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="X_Aircraft"/>
+								<ConstVarRef name="xAircraft"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -577,7 +609,7 @@
 						<ed:Equation oid="!ed/32e1/782E/10C4/482447ad661"/>
 					</pragmas>
 				</Equation>
-				<!-- _L16 = Y_Aircraft; -->
+				<!-- _L16 = yAircraft; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L16"/>
@@ -585,7 +617,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Y_Aircraft"/>
+								<ConstVarRef name="yAircraft"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -593,7 +625,7 @@
 						<ed:Equation oid="!ed/32e3/782E/10C4/482447ad183b"/>
 					</pragmas>
 				</Equation>
-				<!-- _L17 = Z_Aircraft; -->
+				<!-- _L17 = zAircraft; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L17"/>
@@ -601,7 +633,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Z_Aircraft"/>
+								<ConstVarRef name="zAircraft"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -609,7 +641,7 @@
 						<ed:Equation oid="!ed/32e5/782E/10C4/482447ad1ded"/>
 					</pragmas>
 				</Equation>
-				<!-- _L18 = Pitch_X_Aircraft; -->
+				<!-- _L18 = pitchXAircraft; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L18"/>
@@ -617,7 +649,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Pitch_X_Aircraft"/>
+								<ConstVarRef name="pitchXAircraft"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -625,7 +657,7 @@
 						<ed:Equation oid="!ed/32e7/782E/10C4/482447ad2126"/>
 					</pragmas>
 				</Equation>
-				<!-- _L19 = Yow_Y_Aircraft; -->
+				<!-- _L19 = yowYAircraft; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L19"/>
@@ -633,7 +665,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Yow_Y_Aircraft"/>
+								<ConstVarRef name="yowYAircraft"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -641,7 +673,7 @@
 						<ed:Equation oid="!ed/32e9/782E/10C4/482447ad647a"/>
 					</pragmas>
 				</Equation>
-				<!-- _L20 = Roll_Z_Aircraft; -->
+				<!-- _L20 = rollZAircraft; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L20"/>
@@ -649,7 +681,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Roll_Z_Aircraft"/>
+								<ConstVarRef name="rollZAircraft"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -657,10 +689,10 @@
 						<ed:Equation oid="!ed/32eb/782E/10C4/482447ad258b"/>
 					</pragmas>
 				</Equation>
-				<!-- ST1X = _L23; -->
+				<!-- st1x = _L23; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="ST1X"/>
+						<VariableRef name="st1x"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -673,10 +705,10 @@
 						<ed:Equation oid="!ed/334c/782E/10C4/482448836d0b"/>
 					</pragmas>
 				</Equation>
-				<!-- YT1 = _L32; -->
+				<!-- yt1 = _L32; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="YT1"/>
+						<VariableRef name="yt1"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -689,10 +721,10 @@
 						<ed:Equation oid="!ed/334d/782E/10C4/482448837865"/>
 					</pragmas>
 				</Equation>
-				<!-- ST1Y = _L24; -->
+				<!-- st1y = _L24; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="ST1Y"/>
+						<VariableRef name="st1y"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -705,10 +737,10 @@
 						<ed:Equation oid="!ed/334e/782E/10C4/482448837f38"/>
 					</pragmas>
 				</Equation>
-				<!-- XT1 = _L33; -->
+				<!-- xt1 = _L33; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="XT1"/>
+						<VariableRef name="xt1"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -721,10 +753,10 @@
 						<ed:Equation oid="!ed/3350/782E/10C4/4824488379c8"/>
 					</pragmas>
 				</Equation>
-				<!-- VT1 = _L27; -->
+				<!-- vt1 = _L27; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="VT1"/>
+						<VariableRef name="vt1"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -737,10 +769,10 @@
 						<ed:Equation oid="!ed/3351/782E/10C4/48244883652"/>
 					</pragmas>
 				</Equation>
-				<!-- Id_Pt1_PP = _L28; -->
+				<!-- idPt1PP = _L28; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="Id_Pt1_PP"/>
+						<VariableRef name="idPt1PP"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -753,19 +785,19 @@
 						<ed:Equation oid="!ed/3353/782E/10C4/482448c4202e"/>
 					</pragmas>
 				</Equation>
-				<!-- _L21, _L22 = Change_Mark::Vanishing_point(_L3, _L4, _L5); -->
+				<!-- _L21, _L22 = Change_Mark::vanishingPoint(_L3, _L4, _L5); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L21"/>
 						<VariableRef name="_L22"/>
 					</lefts>
 					<right>
-						<!-- Change_Mark::Vanishing_point(_L3, _L4, _L5) -->
+						<!-- Change_Mark::vanishingPoint(_L3, _L4, _L5) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
 									<operator>
-										<OperatorRef name="Change_Mark::Vanishing_point"/>
+										<OperatorRef name="Change_Mark::vanishingPoint"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -786,13 +818,26 @@
 									</path>
 								</IdExpression>
 							</callParameters>
+							<pragmas>
+								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<references>
+										<OperatorRef path="Change_Mark::vanishingPoint" refOid="!ed/307c/46AC/16B0/4827fbda23b3">
+											<InputRef refOid="!ed/30c8/46AC/16B0/4827fc40252b"/>
+											<InputRef refOid="!ed/30c7/46AC/16B0/4827fc4060ba"/>
+											<InputRef refOid="!ed/30e9/46AC/16B0/4827fc551dc0"/>
+											<OutputRef refOid="!ed/30ca/46AC/16B0/4827fc40af1"/>
+											<OutputRef refOid="!ed/30c9/46AC/16B0/4827fc40315b"/>
+										</OperatorRef>
+									</references>
+								</ed:CallExpression>
+							</pragmas>
 						</CallExpression>
 					</right>
 					<pragmas>
 						<ed:Equation oid="!ed/30f2/46AC/16B0/4827fd8c3ea5"/>
 					</pragmas>
 				</Equation>
-				<!-- _L23, _L24, _L27, _L28, _L33, _L32 = Manage_Tunnel(_L21, _L22, _L3, _L4, _L5, _L2... -->
+				<!-- _L23, _L24, _L27, _L28, _L33, _L32 = manageTunnel(_L21, _L22, _L3, _L4, _L5, _L29... -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L23"/>
@@ -803,12 +848,12 @@
 						<VariableRef name="_L32"/>
 					</lefts>
 					<right>
-						<!-- Manage_Tunnel(_L21, _L22, _L3, _L4, _L5, _L29) -->
+						<!-- manageTunnel(_L21, _L22, _L3, _L4, _L5, _L29) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="3">
 									<operator>
-										<OperatorRef name="Manage_Tunnel"/>
+										<OperatorRef name="manageTunnel"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -844,13 +889,33 @@
 									</path>
 								</IdExpression>
 							</callParameters>
+							<pragmas>
+								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<references>
+										<OperatorRef path="manageTunnel" refOid="!ed/17b/2846/4E0/48030fb15589">
+											<InputRef refOid="!ed/3109/46AC/16B0/4827fe575f2d"/>
+											<InputRef refOid="!ed/310f/46AC/16B0/4827fe5a3881"/>
+											<InputRef refOid="!ed/7858/6A/B20/4808651f293b"/>
+											<InputRef refOid="!ed/7859/6A/B20/4808652125c0"/>
+											<InputRef refOid="!ed/785a/6A/B20/480865213383"/>
+											<InputRef refOid="!ed/14813/B41/F48/483e9d523f78"/>
+											<OutputRef refOid="!ed/1aa/2846/4E0/48030fb12d97"/>
+											<OutputRef refOid="!ed/1ab/2846/4E0/48030fb163a9"/>
+											<OutputRef refOid="!ed/1fbe0/5258/D00/480a6a1f66d1"/>
+											<OutputRef refOid="!ed/7d71/654/16A8/480ef681b1a"/>
+											<OutputRef refOid="!ed/6ca6/5211/17FC/484d44737580"/>
+											<OutputRef refOid="!ed/6cad/5211/17FC/484d44731eb"/>
+										</OperatorRef>
+									</references>
+								</ed:CallExpression>
+							</pragmas>
 						</CallExpression>
 					</right>
 					<pragmas>
 						<ed:Equation oid="!ed/30f9/46AC/16B0/4827fdbe2c2c"/>
 					</pragmas>
 				</Equation>
-				<!-- _L29 = Vitesse; -->
+				<!-- _L29 = vitesse; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L29"/>
@@ -858,7 +923,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Vitesse"/>
+								<ConstVarRef name="vitesse"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -868,9 +933,9 @@
 				</Equation>
 			</data>
 			<pragmas>
-				<ed:Operator oid="!ed/31ec/782E/10C4/482446af3c43" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Operator oid="!ed/31ec/782E/10C4/482446af3c43" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_New_coord_1" landscape="true" format="A4 (210 297)" oid="!ed/31ed/782E/10C4/482446af7f9f">
+						<NetDiagram name="newCoord" landscape="true" format="A4 (210 297)" oid="!ed/31ed/782E/10C4/482446af7f9f">
 							<presentationElements>
 								<EquationGE presentable="!ed/3218/782E/10C4/4824471332bd">
 									<position>
@@ -1212,6 +1277,9 @@
 							</presentationElements>
 						</NetDiagram>
 					</diagrams>
+					<references>
+						<TypeRef path="point" refOid="!ed/42e3/3913/15D0/4805f1284eb4"/>
+					</references>
 				</ed:Operator>
 			</pragmas>
 		</Operator>

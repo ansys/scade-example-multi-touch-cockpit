@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="HSI_TO_FROM_legend_existence">
+		<Operator kind="function" name="hsiToFromlegendExistence">
 			<inputs>
-				<Variable name="HSI_NAV_Data_Type">
+				<Variable name="hsiNAVDataType">
 					<type>
 						<NamedType>
 							<type>
@@ -15,7 +15,7 @@
 						<ed:Variable oid="!ed/ac8/7A70/BF0/4759559d57f7"/>
 					</pragmas>
 				</Variable>
-				<Variable name="HSI_Flagged">
+				<Variable name="hsiFlagged">
 					<type>
 						<NamedType>
 							<type>
@@ -27,7 +27,7 @@
 						<ed:Variable oid="!ed/ac9/7A70/BF0/4759559d4696"/>
 					</pragmas>
 				</Variable>
-				<Variable name="HSI_ILS_Selected">
+				<Variable name="hsiilsSelected">
 					<type>
 						<NamedType>
 							<type>
@@ -41,7 +41,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="TO_FROM_legend_Display">
+				<Variable name="toFromLegendDisplay">
 					<type>
 						<NamedType>
 							<type>
@@ -129,7 +129,7 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L1 = HSI_NAV_Data_Type; -->
+				<!-- _L1 = hsiNAVDataType; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1"/>
@@ -137,7 +137,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_NAV_Data_Type"/>
+								<ConstVarRef name="hsiNAVDataType"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -145,7 +145,7 @@
 						<ed:Equation oid="!ed/ad2/7A70/BF0/4759559d2d80"/>
 					</pragmas>
 				</Equation>
-				<!-- _L2 = HSI_ILS_Selected; -->
+				<!-- _L2 = hsiilsSelected; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L2"/>
@@ -153,7 +153,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_ILS_Selected"/>
+								<ConstVarRef name="hsiilsSelected"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -161,7 +161,7 @@
 						<ed:Equation oid="!ed/ad3/7A70/BF0/4759559d69a0"/>
 					</pragmas>
 				</Equation>
-				<!-- _L3 = HSI_Flagged; -->
+				<!-- _L3 = hsiFlagged; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L3"/>
@@ -169,7 +169,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_Flagged"/>
+								<ConstVarRef name="hsiFlagged"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -250,10 +250,10 @@
 						<ed:Equation oid="!ed/ad7/7A70/BF0/4759559de1b"/>
 					</pragmas>
 				</Equation>
-				<!-- TO_FROM_legend_Display = _L6; -->
+				<!-- toFromLegendDisplay = _L6; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="TO_FROM_legend_Display"/>
+						<VariableRef name="toFromLegendDisplay"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -273,7 +273,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/ac6/7A70/BF0/4759559d2ae0" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_HSI_TO_FROM_legend_existence_1" landscape="true" format="A4 (210 297)" oid="!ed/ad1/7A70/BF0/4759559d86d">
+						<NetDiagram name="hsiToFromlegendExistence" landscape="true" format="A4 (210 297)" oid="!ed/ad1/7A70/BF0/4759559d86d">
 							<presentationElements>
 								<EquationGE presentable="!ed/ad2/7A70/BF0/4759559d2d80">
 									<position>

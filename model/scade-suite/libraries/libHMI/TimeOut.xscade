@@ -452,7 +452,7 @@
 	<pragmas>
 		<ed:Operator oid="!ed/4dd6/28C9/1944/594245c8513e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 			<diagrams>
-				<NetDiagram name="diagram_TimeOut_1" landscape="true" format="A4 (210 297)" oid="!ed/4de3/28C9/1944/594245c87950">
+				<NetDiagram name="TimeOut" landscape="true" format="A4 (210 297)" oid="!ed/4de3/28C9/1944/594245c87950">
 					<presentationElements>
 						<EquationGE presentable="!ed/4dd7/28C9/1944/594245c8706e">
 							<position>

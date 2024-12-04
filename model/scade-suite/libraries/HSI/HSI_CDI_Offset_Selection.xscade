@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="HSI_CDI_Offset_Selection">
+		<Operator kind="function" name="hsiCdiOffsetSelection">
 			<inputs>
-				<Variable name="CDI_Source_Selected">
+				<Variable name="cdiSourceSelected">
 					<type>
 						<NamedType>
 							<type>
@@ -15,7 +15,7 @@
 						<ed:Variable oid="!ed/406/7A70/BF0/47595597140f"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SY_CDI_Offset">
+				<Variable name="syCdiOffset">
 					<type>
 						<Table>
 							<type>
@@ -36,7 +36,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="HSI_CDI_Offset">
+				<Variable name="hsiCdiOffset">
 					<type>
 						<NamedType>
 							<type>
@@ -232,7 +232,7 @@
 						<ed:Equation oid="!ed/411/7A70/BF0/475955974059"/>
 					</pragmas>
 				</Equation>
-				<!-- _L6 = SY_CDI_Offset; -->
+				<!-- _L6 = syCdiOffset; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L6"/>
@@ -240,7 +240,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="SY_CDI_Offset"/>
+								<ConstVarRef name="syCdiOffset"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -344,10 +344,10 @@
 						<ed:Equation oid="!ed/416/7A70/BF0/475955973374"/>
 					</pragmas>
 				</Equation>
-				<!-- HSI_CDI_Offset = _L4; -->
+				<!-- hsiCdiOffset = _L4; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HSI_CDI_Offset"/>
+						<VariableRef name="hsiCdiOffset"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -360,7 +360,7 @@
 						<ed:Equation oid="!ed/417/7A70/BF0/4759559719ff"/>
 					</pragmas>
 				</Equation>
-				<!-- _L12 = CDI_Source_Selected; -->
+				<!-- _L12 = cdiSourceSelected; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L12"/>
@@ -368,7 +368,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="CDI_Source_Selected"/>
+								<ConstVarRef name="cdiSourceSelected"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -392,7 +392,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/404/7A70/BF0/475955976f2a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_HSI_CDI_Offset_Selection_1" landscape="true" format="A4 (210 297)" oid="!ed/410/7A70/BF0/4759559723e3">
+						<NetDiagram name="hsiCdiOffsetSelection" landscape="true" format="A4 (210 297)" oid="!ed/410/7A70/BF0/4759559723e3">
 							<presentationElements>
 								<EquationGE presentable="!ed/411/7A70/BF0/475955974059">
 									<position>

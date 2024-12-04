@@ -1083,7 +1083,7 @@
 							<pragmas>
 								<ed:State oid="!ed/4977/28C9/1944/5942449c149d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<diagrams>
-										<NetDiagram name="IDLE_1" landscape="true" format="A4 (210 297)" oid="!ed/a104/7E70/2DD4/5952498c73ad">
+										<NetDiagram name="IDLE" landscape="true" format="A4 (210 297)" oid="!ed/a104/7E70/2DD4/5952498c73ad">
 											<presentationElements>
 												<EquationGE kind="OBJ_LIT" presentable="!ed/a112/7E70/2DD4/595249ab3e9b">
 													<position>
@@ -2192,7 +2192,7 @@
 							<pragmas>
 								<ed:State oid="!ed/5231/28C9/1944/59425781ee7" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<diagrams>
-										<NetDiagram name="Selected_1" landscape="true" format="A4 (210 297)" oid="!ed/54a3/28C9/1944/5942830c1308">
+										<NetDiagram name="Selected" landscape="true" format="A4 (210 297)" oid="!ed/54a3/28C9/1944/5942830c1308">
 											<presentationElements>
 												<IfBlockGE presentable="!ed/54a7/28C9/1944/5942831c68">
 													<position>
@@ -5137,7 +5137,7 @@
 							<pragmas>
 								<ed:State oid="!ed/b587/2433/2ED8/5a15536114f9" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<diagrams>
-										<NetDiagram name="Idle_1" landscape="true" format="A4 (210 297)" oid="!ed/b594/2433/2ED8/5a15537d695">
+										<NetDiagram name="Idle" landscape="true" format="A4 (210 297)" oid="!ed/b594/2433/2ED8/5a15537d695">
 											<presentationElements>
 												<EquationGE presentable="!ed/b596/2433/2ED8/5a155380168e">
 													<position>
@@ -5830,7 +5830,7 @@
 							<pragmas>
 								<ed:State oid="!ed/b5b3/2433/2ED8/5a1553af6023" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<diagrams>
-										<NetDiagram name="MenuON_1" landscape="true" format="A4 (210 297)" oid="!ed/b5d1/2433/2ED8/5a1553ef3d22">
+										<NetDiagram name="MenuON" landscape="true" format="A4 (210 297)" oid="!ed/b5d1/2433/2ED8/5a1553ef3d22">
 											<presentationElements>
 												<EquationGE presentable="!ed/b5d3/2433/2ED8/5a1553f41802">
 													<position>

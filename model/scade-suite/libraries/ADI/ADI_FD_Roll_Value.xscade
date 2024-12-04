@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="ADI_FD_Roll_Value">
+		<Operator kind="function" name="fdRollValue">
 			<inputs>
-				<Variable name="FD_Reference">
+				<Variable name="fdReference">
 					<type>
 						<NamedType>
 							<type>
@@ -15,7 +15,7 @@
 						<ed:Variable oid="!ed/113c/7A70/BF0/475959922af3"/>
 					</pragmas>
 				</Variable>
-				<Variable name="FD_Roll">
+				<Variable name="fdRoll">
 					<type>
 						<NamedType>
 							<type>
@@ -27,7 +27,7 @@
 						<ed:Variable oid="!ed/113d/7A70/BF0/47595992163e"/>
 					</pragmas>
 				</Variable>
-				<Variable name="AC_FD_Roll_Gain">
+				<Variable name="rollGain">
 					<type>
 						<NamedType>
 							<type>
@@ -41,7 +41,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="ADI_FD_Roll">
+				<Variable name="adiFdRoll">
 					<type>
 						<NamedType>
 							<type>
@@ -129,7 +129,7 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L1 = FD_Roll; -->
+				<!-- _L1 = fdRoll; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1"/>
@@ -137,7 +137,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="FD_Roll"/>
+								<ConstVarRef name="fdRoll"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -145,7 +145,7 @@
 						<ed:Equation oid="!ed/114a/7A70/BF0/47595992116b"/>
 					</pragmas>
 				</Equation>
-				<!-- _L2 = FD_Reference; -->
+				<!-- _L2 = fdReference; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L2"/>
@@ -153,7 +153,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="FD_Reference"/>
+								<ConstVarRef name="fdReference"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -213,7 +213,7 @@
 						<ed:Equation oid="!ed/114d/7A70/BF0/4759599216a5"/>
 					</pragmas>
 				</Equation>
-				<!-- _L5 = AC_FD_Roll_Gain; -->
+				<!-- _L5 = rollGain; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L5"/>
@@ -221,7 +221,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="AC_FD_Roll_Gain"/>
+								<ConstVarRef name="rollGain"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -229,10 +229,10 @@
 						<ed:Equation oid="!ed/114e/7A70/BF0/47595992a9"/>
 					</pragmas>
 				</Equation>
-				<!-- ADI_FD_Roll = _L4; -->
+				<!-- adiFdRoll = _L4; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="ADI_FD_Roll"/>
+						<VariableRef name="adiFdRoll"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -271,9 +271,9 @@
 				</Equation>
 			</data>
 			<pragmas>
-				<ed:Operator oid="!ed/113a/7A70/BF0/47595992b37" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Operator oid="!ed/113a/7A70/BF0/47595992b37" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_ADI_FD_Roll_Value_1" landscape="true" format="A4 (210 297)" oid="!ed/1149/7A70/BF0/475959922527">
+						<NetDiagram name="fdRollValue" landscape="true" format="A4 (210 297)" oid="!ed/1149/7A70/BF0/475959922527">
 							<presentationElements>
 								<EquationGE presentable="!ed/114a/7A70/BF0/47595992116b">
 									<position>

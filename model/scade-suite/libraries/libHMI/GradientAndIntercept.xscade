@@ -441,7 +441,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/57e7/3486/23B4/5a1d32026111" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="gradientAndIntercept_1" landscape="true" format="A4 (210 297)" oid="!ed/57e8/3486/23B4/5a1d32022735">
+						<NetDiagram name="gradientAndIntercept" landscape="true" format="A4 (210 297)" oid="!ed/57e8/3486/23B4/5a1d32022735">
 							<presentationElements>
 								<EquationGE presentable="!ed/580a/3486/23B4/5a1d32264f1d">
 									<position>

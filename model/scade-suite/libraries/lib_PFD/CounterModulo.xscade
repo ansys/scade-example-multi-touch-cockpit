@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="CounterModulo">
+		<Operator kind="function" name="counterModulo">
 			<inputs>
-				<Variable name="IN">
+				<Variable name="in">
 					<type>
 						<NamedType>
 							<type>
@@ -15,7 +15,7 @@
 						<ed:Variable oid="!ed/106d/62F/9B4/49258f38164e"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Incr">
+				<Variable name="incr">
 					<type>
 						<NamedType>
 							<type>
@@ -41,7 +41,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="Count">
+				<Variable name="count">
 					<type>
 						<NamedType>
 							<type>
@@ -117,7 +117,7 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L7 = IN; -->
+				<!-- _L7 = in; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L7"/>
@@ -125,7 +125,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="IN"/>
+								<ConstVarRef name="in"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -185,7 +185,7 @@
 						<ed:Equation oid="!ed/109b/62F/9B4/49258f61151"/>
 					</pragmas>
 				</Equation>
-				<!-- _L10 = Incr; -->
+				<!-- _L10 = incr; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L10"/>
@@ -193,7 +193,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Incr"/>
+								<ConstVarRef name="incr"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -217,10 +217,10 @@
 						<ed:Equation oid="!ed/10a7/62F/9B4/49258f7229ad"/>
 					</pragmas>
 				</Equation>
-				<!-- Count = _L9; -->
+				<!-- count = _L9; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="Count"/>
+						<VariableRef name="count"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -235,11 +235,11 @@
 				</Equation>
 			</data>
 			<pragmas>
-				<ed:Operator oid="!ed/105b/62F/9B4/49258f203e2f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Operator oid="!ed/105b/62F/9B4/49258f203e2f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<comment>The output is incremented at each cycle with Incr.</comment>
 					<comment>At the Initialisation or if Reset equals &quot;true&quot;, the output is set to Incr.</comment>
 					<diagrams>
-						<NetDiagram name="diagram_Counter1_1" landscape="true" format="A4 (210 297)" oid="!ed/1063/62F/9B4/49258f206b12">
+						<NetDiagram name="counterModulo" landscape="true" format="A4 (210 297)" oid="!ed/1063/62F/9B4/49258f206b12">
 							<presentationElements>
 								<EquationGE presentable="!ed/108f/62F/9B4/49258f5c5929">
 									<position>

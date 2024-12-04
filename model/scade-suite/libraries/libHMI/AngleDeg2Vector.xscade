@@ -250,7 +250,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/5d77/33E8/42A0/5a2020ae1633" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_angleDeg2Vector_1" landscape="true" format="A4 (210 297)" oid="!ed/5d7d/33E8/42A0/5a2020ae1a6c">
+						<NetDiagram name="angleDeg2Vector" landscape="true" format="A4 (210 297)" oid="!ed/5d7d/33E8/42A0/5a2020ae1a6c">
 							<presentationElements>
 								<EquationGE kind="OBJ_LIT" presentable="!ed/5d78/33E8/42A0/5a2020ae581b">
 									<position>

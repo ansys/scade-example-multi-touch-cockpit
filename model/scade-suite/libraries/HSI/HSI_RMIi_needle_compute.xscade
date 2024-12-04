@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="HSI_RMIi_needle_compute">
+		<Operator kind="function" name="hsiRMIiNeedleCompute">
 			<inputs>
-				<Variable name="RMI_Source">
+				<Variable name="rmiSource">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="RMI_enum"/>
+								<TypeRef name="rmi"/>
 							</type>
 						</NamedType>
 					</type>
@@ -15,7 +15,7 @@
 						<ed:Variable oid="!ed/a4a/7196/B20/4761648f4ca6"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SY_Switch_NAV_Source">
+				<Variable name="sySwitchNavSource">
 					<type>
 						<NamedType>
 							<type>
@@ -27,11 +27,11 @@
 						<ed:Variable oid="!ed/a50/7196/B20/4761648f5a7b"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Primary_Nav_Data">
+				<Variable name="primaryNavData">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Nav_Data_type"/>
+								<TypeRef name="navDataType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -39,11 +39,11 @@
 						<ed:Variable oid="!ed/a57/7196/B20/4761648f6f6c"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Secondary_Nav_Data">
+				<Variable name="SecondaryNavData">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Nav_Data_type"/>
+								<TypeRef name="navDataType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -53,7 +53,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="RMI_needle_display">
+				<Variable name="RMI_needleDisplay">
 					<type>
 						<NamedType>
 							<type>
@@ -65,7 +65,7 @@
 						<ed:Variable oid="!ed/a64/7196/B20/4761648f5750"/>
 					</pragmas>
 				</Variable>
-				<Variable name="HSI_RMIi_Bearing">
+				<Variable name="hsiRMIiBearing">
 					<type>
 						<NamedType>
 							<type>
@@ -143,7 +143,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="RMI_enum"/>
+								<TypeRef name="rmi"/>
 							</type>
 						</NamedType>
 					</type>
@@ -167,7 +167,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Nav_Data_type"/>
+								<TypeRef name="navDataType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -179,7 +179,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Nav_Data_type"/>
+								<TypeRef name="navDataType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -263,7 +263,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Nav_Data_type"/>
+								<TypeRef name="navDataType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -287,7 +287,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Nav_Data_type"/>
+								<TypeRef name="navDataType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -323,7 +323,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Nav_Data_type"/>
+								<TypeRef name="navDataType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -347,7 +347,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Nav_Data_type"/>
+								<TypeRef name="navDataType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -407,7 +407,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Nav_Data_type"/>
+								<TypeRef name="navDataType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -419,7 +419,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Nav_Data_type"/>
+								<TypeRef name="navDataType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -443,7 +443,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Nav_Data_type"/>
+								<TypeRef name="navDataType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -589,7 +589,7 @@
 						<ed:Equation oid="!ed/b63/7196/B20/476166735183"/>
 					</pragmas>
 				</Equation>
-				<!-- _L9 = RMI_Source; -->
+				<!-- _L9 = rmiSource; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L9"/>
@@ -597,7 +597,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="RMI_Source"/>
+								<ConstVarRef name="rmiSource"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -605,7 +605,7 @@
 						<ed:Equation oid="!ed/b69/7196/B20/476166bc70b7"/>
 					</pragmas>
 				</Equation>
-				<!-- _L10 = SY_Switch_NAV_Source; -->
+				<!-- _L10 = sySwitchNavSource; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L10"/>
@@ -613,7 +613,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="SY_Switch_NAV_Source"/>
+								<ConstVarRef name="sySwitchNavSource"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -621,7 +621,7 @@
 						<ed:Equation oid="!ed/b6b/7196/B20/476166bc5e77"/>
 					</pragmas>
 				</Equation>
-				<!-- _L11 = Primary_Nav_Data; -->
+				<!-- _L11 = primaryNavData; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L11"/>
@@ -629,7 +629,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Primary_Nav_Data"/>
+								<ConstVarRef name="primaryNavData"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -637,7 +637,7 @@
 						<ed:Equation oid="!ed/b6d/7196/B20/476166bc5008"/>
 					</pragmas>
 				</Equation>
-				<!-- _L12 = Secondary_Nav_Data; -->
+				<!-- _L12 = SecondaryNavData; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L12"/>
@@ -645,7 +645,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Secondary_Nav_Data"/>
+								<ConstVarRef name="SecondaryNavData"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -653,13 +653,13 @@
 						<ed:Equation oid="!ed/b6f/7196/B20/476166bccf6"/>
 					</pragmas>
 				</Equation>
-				<!-- _L13 = _L11.ILS_Selected; -->
+				<!-- _L13 = _L11.ilsSelected; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L13"/>
 					</lefts>
 					<right>
-						<!-- _L11.ILS_Selected -->
+						<!-- _L11.ilsSelected -->
 						<PrjOp name="1">
 							<flow>
 								<IdExpression>
@@ -669,7 +669,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="ILS_Selected"/>
+								<Label name="ilsSelected"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -677,13 +677,13 @@
 						<ed:Equation oid="!ed/b81/7196/B20/476166f91f33"/>
 					</pragmas>
 				</Equation>
-				<!-- _L14 = _L12.ILS_Selected; -->
+				<!-- _L14 = _L12.ilsSelected; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L14"/>
 					</lefts>
 					<right>
-						<!-- _L12.ILS_Selected -->
+						<!-- _L12.ilsSelected -->
 						<PrjOp name="2">
 							<flow>
 								<IdExpression>
@@ -693,7 +693,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="ILS_Selected"/>
+								<Label name="ilsSelected"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -701,10 +701,10 @@
 						<ed:Equation oid="!ed/b98/7196/B20/4761671f4f02"/>
 					</pragmas>
 				</Equation>
-				<!-- RMI_needle_display = _L56; -->
+				<!-- RMI_needleDisplay = _L56; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="RMI_needle_display"/>
+						<VariableRef name="RMI_needleDisplay"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -892,7 +892,7 @@
 						<ed:Equation oid="!ed/c97/7196/B20/4761685359a9"/>
 					</pragmas>
 				</Equation>
-				<!-- _L36 = Primary_Nav_Data; -->
+				<!-- _L36 = primaryNavData; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L36"/>
@@ -900,7 +900,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Primary_Nav_Data"/>
+								<ConstVarRef name="primaryNavData"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -908,13 +908,13 @@
 						<ed:Equation oid="!ed/c9a/7196/B20/476168536dd5"/>
 					</pragmas>
 				</Equation>
-				<!-- _L37 = _L36.ADF_Bearing; -->
+				<!-- _L37 = _L36.adfBearing; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L37"/>
 					</lefts>
 					<right>
-						<!-- _L36.ADF_Bearing -->
+						<!-- _L36.adfBearing -->
 						<PrjOp name="6">
 							<flow>
 								<IdExpression>
@@ -924,7 +924,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="ADF_Bearing"/>
+								<Label name="adfBearing"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -932,7 +932,7 @@
 						<ed:Equation oid="!ed/c9d/7196/B20/4761685315a8"/>
 					</pragmas>
 				</Equation>
-				<!-- _L38 = Secondary_Nav_Data; -->
+				<!-- _L38 = SecondaryNavData; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L38"/>
@@ -940,7 +940,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Secondary_Nav_Data"/>
+								<ConstVarRef name="SecondaryNavData"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -948,13 +948,13 @@
 						<ed:Equation oid="!ed/ca0/7196/B20/47616853812"/>
 					</pragmas>
 				</Equation>
-				<!-- _L39 = _L38.ADF_Bearing; -->
+				<!-- _L39 = _L38.adfBearing; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L39"/>
 					</lefts>
 					<right>
-						<!-- _L38.ADF_Bearing -->
+						<!-- _L38.adfBearing -->
 						<PrjOp name="5">
 							<flow>
 								<IdExpression>
@@ -964,7 +964,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="ADF_Bearing"/>
+								<Label name="adfBearing"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -972,7 +972,7 @@
 						<ed:Equation oid="!ed/ca3/7196/B20/4761685359e8"/>
 					</pragmas>
 				</Equation>
-				<!-- _L41 = Secondary_Nav_Data; -->
+				<!-- _L41 = SecondaryNavData; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L41"/>
@@ -980,7 +980,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Secondary_Nav_Data"/>
+								<ConstVarRef name="SecondaryNavData"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -988,13 +988,13 @@
 						<ed:Equation oid="!ed/e79/299/BA4/47618c8235ff"/>
 					</pragmas>
 				</Equation>
-				<!-- _L42 = _L41.ILS_Selected; -->
+				<!-- _L42 = _L41.ilsSelected; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L42"/>
 					</lefts>
 					<right>
-						<!-- _L41.ILS_Selected -->
+						<!-- _L41.ilsSelected -->
 						<PrjOp name="7">
 							<flow>
 								<IdExpression>
@@ -1004,7 +1004,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="ILS_Selected"/>
+								<Label name="ilsSelected"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -1055,13 +1055,13 @@
 						<ed:Equation oid="!ed/e7f/299/BA4/47618c9c3cb1"/>
 					</pragmas>
 				</Equation>
-				<!-- _L44 = _L45.ADF_Bearing; -->
+				<!-- _L44 = _L45.adfBearing; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L44"/>
 					</lefts>
 					<right>
-						<!-- _L45.ADF_Bearing -->
+						<!-- _L45.adfBearing -->
 						<PrjOp name="8">
 							<flow>
 								<IdExpression>
@@ -1071,7 +1071,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="ADF_Bearing"/>
+								<Label name="adfBearing"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -1079,7 +1079,7 @@
 						<ed:Equation oid="!ed/e95/299/BA4/47618d6679b5"/>
 					</pragmas>
 				</Equation>
-				<!-- _L45 = Secondary_Nav_Data; -->
+				<!-- _L45 = SecondaryNavData; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L45"/>
@@ -1087,7 +1087,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Secondary_Nav_Data"/>
+								<ConstVarRef name="SecondaryNavData"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1107,13 +1107,13 @@
 						<ed:Equation oid="!ed/e9b/299/BA4/476191f4195d"/>
 					</pragmas>
 				</Equation>
-				<!-- _L47 = _L49.VOR_Radial; -->
+				<!-- _L47 = _L49.vorRadial; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L47"/>
 					</lefts>
 					<right>
-						<!-- _L49.VOR_Radial -->
+						<!-- _L49.vorRadial -->
 						<PrjOp name="9">
 							<flow>
 								<IdExpression>
@@ -1123,7 +1123,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="VOR_Radial"/>
+								<Label name="vorRadial"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -1131,13 +1131,13 @@
 						<ed:Equation oid="!ed/ed3/299/BA4/476192b7203a"/>
 					</pragmas>
 				</Equation>
-				<!-- _L48 = _L51.VOR_Radial; -->
+				<!-- _L48 = _L51.vorRadial; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L48"/>
 					</lefts>
 					<right>
-						<!-- _L51.VOR_Radial -->
+						<!-- _L51.vorRadial -->
 						<PrjOp name="11">
 							<flow>
 								<IdExpression>
@@ -1147,7 +1147,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="VOR_Radial"/>
+								<Label name="vorRadial"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -1155,7 +1155,7 @@
 						<ed:Equation oid="!ed/ed6/299/BA4/476192b76096"/>
 					</pragmas>
 				</Equation>
-				<!-- _L49 = Secondary_Nav_Data; -->
+				<!-- _L49 = SecondaryNavData; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L49"/>
@@ -1163,7 +1163,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Secondary_Nav_Data"/>
+								<ConstVarRef name="SecondaryNavData"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1171,13 +1171,13 @@
 						<ed:Equation oid="!ed/ed9/299/BA4/476192b71d7d"/>
 					</pragmas>
 				</Equation>
-				<!-- _L50 = _L52.VOR_Radial; -->
+				<!-- _L50 = _L52.vorRadial; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L50"/>
 					</lefts>
 					<right>
-						<!-- _L52.VOR_Radial -->
+						<!-- _L52.vorRadial -->
 						<PrjOp name="10">
 							<flow>
 								<IdExpression>
@@ -1187,7 +1187,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="VOR_Radial"/>
+								<Label name="vorRadial"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -1195,7 +1195,7 @@
 						<ed:Equation oid="!ed/edc/299/BA4/476192b73449"/>
 					</pragmas>
 				</Equation>
-				<!-- _L51 = Primary_Nav_Data; -->
+				<!-- _L51 = primaryNavData; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L51"/>
@@ -1203,7 +1203,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Primary_Nav_Data"/>
+								<ConstVarRef name="primaryNavData"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1211,7 +1211,7 @@
 						<ed:Equation oid="!ed/edf/299/BA4/476192b73a68"/>
 					</pragmas>
 				</Equation>
-				<!-- _L52 = Secondary_Nav_Data; -->
+				<!-- _L52 = SecondaryNavData; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L52"/>
@@ -1219,7 +1219,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Secondary_Nav_Data"/>
+								<ConstVarRef name="SecondaryNavData"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1313,10 +1313,10 @@
 						<ed:Equation oid="!ed/ee8/299/BA4/476192b72b32"/>
 					</pragmas>
 				</Equation>
-				<!-- HSI_RMIi_Bearing = _L30; -->
+				<!-- hsiRMIiBearing = _L30; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HSI_RMIi_Bearing"/>
+						<VariableRef name="hsiRMIiBearing"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -1401,7 +1401,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/a42/7196/B20/476164813d6" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_HSI_RMIi_needle_compute_1" landscape="true" format="A4 (210 297)" oid="!ed/a43/7196/B20/476164814ddd">
+						<NetDiagram name="hsiRMIiNeedleCompute" landscape="true" format="A4 (210 297)" oid="!ed/a43/7196/B20/476164814ddd">
 							<presentationElements>
 								<EquationGE kind="OBJ_LIT" presentable="!ed/ab1/7196/B20/476164e36ee6">
 									<position>
@@ -2031,8 +2031,8 @@
 						</NetDiagram>
 					</diagrams>
 					<references>
-						<TypeRef path="RMI_enum" refOid="!ed/bc/7A70/BF0/475955397f20"/>
-						<TypeRef path="Nav_Data_type" refOid="!ed/22be/444A/B40/47594cd2222d"/>
+						<TypeRef path="rmi" refOid="!ed/bc/7A70/BF0/475955397f20"/>
+						<TypeRef path="navDataType" refOid="!ed/22be/444A/B40/47594cd2222d"/>
 						<ConstVarRef path="RMI_OFF" refOid="!ed/2e20/5B1F/A70/4757b43d4e5d"/>
 						<ConstVarRef path="RMI_ADF1" refOid="!ed/2e21/5B1F/A70/4757b4685f38"/>
 						<ConstVarRef path="RMI_ADF2" refOid="!ed/2e22/5B1F/A70/4757b46920bf"/>

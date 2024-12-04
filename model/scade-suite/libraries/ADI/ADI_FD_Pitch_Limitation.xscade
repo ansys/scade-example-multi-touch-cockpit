@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="ADI_FD_Pitch_Limitation">
+		<Operator kind="function" name="fdPitchLimitation">
 			<inputs>
-				<Variable name="ADI_FD_Pitch">
+				<Variable name="adifdPitch">
 					<type>
 						<NamedType>
 							<type>
@@ -15,7 +15,7 @@
 						<ed:Variable oid="!ed/10b1/7A70/BF0/4759599020b"/>
 					</pragmas>
 				</Variable>
-				<Variable name="AC_FD_Max_Pitch_Def">
+				<Variable name="maxPitchDef">
 					<type>
 						<NamedType>
 							<type>
@@ -29,7 +29,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="ADI_FD_Pitch_Limited">
+				<Variable name="adiFdPitchLimited">
 					<type>
 						<NamedType>
 							<type>
@@ -105,18 +105,18 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L1 = Range_Limiter_InIn(_L2, _L4, _L5); -->
+				<!-- _L1 = rangeLimiterInIn(_L2, _L4, _L5); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1"/>
 					</lefts>
 					<right>
-						<!-- Range_Limiter_InIn(_L2, _L4, _L5) -->
+						<!-- rangeLimiterInIn(_L2, _L4, _L5) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
 									<operator>
-										<OperatorRef name="Range_Limiter_InIn"/>
+										<OperatorRef name="rangeLimiterInIn"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -137,13 +137,25 @@
 									</path>
 								</IdExpression>
 							</callParameters>
+							<pragmas>
+								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<references>
+										<OperatorRef path="rangeLimiterInIn" refOid="!ed/4216/4C50/218/474ffaa27bfa">
+											<InputRef refOid="!ed/421e/4C50/218/474ffad5607c"/>
+											<InputRef refOid="!ed/4225/4C50/218/474ffad533cd"/>
+											<InputRef refOid="!ed/422c/4C50/218/474ffad57619"/>
+											<OutputRef refOid="!ed/4232/4C50/218/474ffad53da7"/>
+										</OperatorRef>
+									</references>
+								</ed:CallExpression>
+							</pragmas>
 						</CallExpression>
 					</right>
 					<pragmas>
 						<ed:Equation oid="!ed/10b9/7A70/BF0/475959906e6c"/>
 					</pragmas>
 				</Equation>
-				<!-- _L2 = ADI_FD_Pitch; -->
+				<!-- _L2 = adifdPitch; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L2"/>
@@ -151,7 +163,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="ADI_FD_Pitch"/>
+								<ConstVarRef name="adifdPitch"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -159,10 +171,10 @@
 						<ed:Equation oid="!ed/10ba/7A70/BF0/475959907c85"/>
 					</pragmas>
 				</Equation>
-				<!-- ADI_FD_Pitch_Limited = _L1; -->
+				<!-- adiFdPitchLimited = _L1; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="ADI_FD_Pitch_Limited"/>
+						<VariableRef name="adiFdPitchLimited"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -175,7 +187,7 @@
 						<ed:Equation oid="!ed/10bb/7A70/BF0/475959906cb"/>
 					</pragmas>
 				</Equation>
-				<!-- _L3 = AC_FD_Max_Pitch_Def; -->
+				<!-- _L3 = maxPitchDef; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L3"/>
@@ -183,7 +195,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="AC_FD_Max_Pitch_Def"/>
+								<ConstVarRef name="maxPitchDef"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -238,9 +250,9 @@
 				</Equation>
 			</data>
 			<pragmas>
-				<ed:Operator oid="!ed/10af/7A70/BF0/475959903ded" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Operator oid="!ed/10af/7A70/BF0/475959903ded" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_ADI_FD_Pitch_Limitation_1" landscape="true" format="A4 (210 297)" oid="!ed/10b8/7A70/BF0/4759599079d4">
+						<NetDiagram name="fdPitchLimitation" landscape="true" format="A4 (210 297)" oid="!ed/10b8/7A70/BF0/4759599079d4">
 							<presentationElements>
 								<EquationGE presentable="!ed/10b9/7A70/BF0/475959906e6c">
 									<position>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
 		<Package name="Change_Mark">
 			<declarations>
-				<Constant name="focal_inv">
+				<Constant name="FOCAL_INV">
 					<type>
 						<NamedType>
 							<type>
@@ -18,13 +18,13 @@
 						<ed:Constant oid="!ed/307e/46AC/16B0/4827fc226697"/>
 					</pragmas>
 				</Constant>
-				<Operator kind="function" name="Translate">
+				<Operator kind="function" name="translate">
 					<inputs>
 						<Variable name="vect">
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Point"/>
+										<TypeRef name="point"/>
 									</type>
 								</NamedType>
 							</type>
@@ -32,7 +32,7 @@
 								<ed:Variable oid="!ed/3246/4131/14EC/480ca8fc3917"/>
 							</pragmas>
 						</Variable>
-						<Variable name="X">
+						<Variable name="x">
 							<type>
 								<NamedType>
 									<type>
@@ -44,7 +44,7 @@
 								<ed:Variable oid="!ed/32ab/4131/14EC/480ca9f691b" hidden="true"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Y">
+						<Variable name="y">
 							<type>
 								<NamedType>
 									<type>
@@ -56,7 +56,7 @@
 								<ed:Variable oid="!ed/32ac/4131/14EC/480ca9f6397a" hidden="true"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Z">
+						<Variable name="z">
 							<type>
 								<NamedType>
 									<type>
@@ -70,7 +70,7 @@
 						</Variable>
 					</inputs>
 					<outputs>
-						<Variable name="Xs">
+						<Variable name="xs">
 							<type>
 								<NamedType>
 									<type>
@@ -82,7 +82,7 @@
 								<ed:Variable oid="!ed/327e/4131/14EC/480ca9b0320b"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Ys">
+						<Variable name="ys">
 							<type>
 								<NamedType>
 									<type>
@@ -94,7 +94,7 @@
 								<ed:Variable oid="!ed/3280/4131/14EC/480ca9b056f6"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Zs">
+						<Variable name="zs">
 							<type>
 								<NamedType>
 									<type>
@@ -148,7 +148,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Point"/>
+										<TypeRef name="point"/>
 									</type>
 								</NamedType>
 							</type>
@@ -230,7 +230,7 @@
 						</Variable>
 					</locals>
 					<data>
-						<!-- _L27 = X; -->
+						<!-- _L27 = x; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L27"/>
@@ -238,7 +238,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="X"/>
+										<ConstVarRef name="x"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -246,7 +246,7 @@
 								<ed:Equation oid="!ed/1012a/4FE6/17BC/480898fc1a5f"/>
 							</pragmas>
 						</Equation>
-						<!-- _L28 = Y; -->
+						<!-- _L28 = y; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L28"/>
@@ -254,7 +254,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Y"/>
+										<ConstVarRef name="y"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -262,7 +262,7 @@
 								<ed:Equation oid="!ed/1012b/4FE6/17BC/480898fc299"/>
 							</pragmas>
 						</Equation>
-						<!-- _L29 = Z; -->
+						<!-- _L29 = z; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L29"/>
@@ -270,7 +270,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Z"/>
+										<ConstVarRef name="z"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -294,7 +294,7 @@
 								<ed:Equation oid="!ed/3247/4131/14EC/480ca90f39f1"/>
 							</pragmas>
 						</Equation>
-						<!-- _L43, _L44, _L45 = (flatten Point)(_L42); -->
+						<!-- _L43, _L44, _L45 = (flatten point)(_L42); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L43"/>
@@ -302,12 +302,12 @@
 								<VariableRef name="_L45"/>
 							</lefts>
 							<right>
-								<!-- (flatten Point)(_L42) -->
+								<!-- (flatten point)(_L42) -->
 								<CallExpression>
 									<operator>
 										<FlattenOp>
 											<type>
-												<TypeRef name="Point"/>
+												<TypeRef name="point"/>
 											</type>
 										</FlattenOp>
 									</operator>
@@ -402,10 +402,10 @@
 								<ed:Equation oid="!ed/327c/4131/14EC/480ca9636bf7"/>
 							</pragmas>
 						</Equation>
-						<!-- Xs = _L49; -->
+						<!-- xs = _L49; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Xs"/>
+								<VariableRef name="xs"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -418,10 +418,10 @@
 								<ed:Equation oid="!ed/3284/4131/14EC/480ca9bf7aea"/>
 							</pragmas>
 						</Equation>
-						<!-- Ys = _L50; -->
+						<!-- ys = _L50; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Ys"/>
+								<VariableRef name="ys"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -434,10 +434,10 @@
 								<ed:Equation oid="!ed/3285/4131/14EC/480ca9bf3c71"/>
 							</pragmas>
 						</Equation>
-						<!-- Zs = _L51; -->
+						<!-- zs = _L51; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Zs"/>
+								<VariableRef name="zs"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -452,9 +452,9 @@
 						</Equation>
 					</data>
 					<pragmas>
-						<ed:Operator oid="!ed/10123/4FE6/17BC/480898fc2c7d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+						<ed:Operator oid="!ed/10123/4FE6/17BC/480898fc2c7d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<diagrams>
-								<NetDiagram name="diagram_Translate_1" landscape="true" format="A4 (210 297)" oid="!ed/10132/4FE6/17BC/480898fc53ee">
+								<NetDiagram name="translate" landscape="true" format="A4 (210 297)" oid="!ed/10132/4FE6/17BC/480898fc53ee">
 									<presentationElements>
 										<EquationGE presentable="!ed/1012a/4FE6/17BC/480898fc1a5f">
 											<position>
@@ -627,12 +627,15 @@
 									</presentationElements>
 								</NetDiagram>
 							</diagrams>
+							<references>
+								<TypeRef path="point" refOid="!ed/42e3/3913/15D0/4805f1284eb4"/>
+							</references>
 						</ed:Operator>
 					</pragmas>
 				</Operator>
-				<Operator kind="function" name="Rotate_Z">
+				<Operator kind="function" name="rotateZ">
 					<inputs>
-						<Variable name="Angle">
+						<Variable name="angle">
 							<type>
 								<NamedType>
 									<type>
@@ -646,7 +649,7 @@
 						</Variable>
 					</inputs>
 					<outputs>
-						<Variable name="Rot_Z">
+						<Variable name="rotZ">
 							<type>
 								<Table>
 									<type>
@@ -843,7 +846,7 @@
 						</Variable>
 					</locals>
 					<data>
-						<!-- _L1 = Angle; -->
+						<!-- _L1 = angle; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1"/>
@@ -851,7 +854,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Angle"/>
+										<ConstVarRef name="angle"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -859,10 +862,10 @@
 								<ed:Equation oid="!ed/10092/4FE6/17BC/480898fc6d58"/>
 							</pragmas>
 						</Equation>
-						<!-- Rot_Z = _L41; -->
+						<!-- rotZ = _L41; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Rot_Z"/>
+								<VariableRef name="rotZ"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -897,6 +900,16 @@
 											</path>
 										</IdExpression>
 									</callParameters>
+									<pragmas>
+										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<references>
+												<OperatorRef path="mathext::SinR" refOid="win_181C/7F51/48C/3A82ADFE/3C2">
+													<InputRef refOid="win_1820/57D4/48C/3A82AE15/2111"/>
+													<OutputRef refOid="win_1821/6753/48C/3A82AE17/44E"/>
+												</OperatorRef>
+											</references>
+										</ed:CallExpression>
+									</pragmas>
 								</CallExpression>
 							</right>
 							<pragmas>
@@ -975,6 +988,16 @@
 											</path>
 										</IdExpression>
 									</callParameters>
+									<pragmas>
+										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<references>
+												<OperatorRef path="mathext::CosR" refOid="win_1822/1D05/48C/3A82B2C1/71C">
+													<InputRef refOid="win_1826/60B4/48C/3A82B2D7/7F03"/>
+													<OutputRef refOid="win_1827/6A84/48C/3A82B2D8/F63"/>
+												</OperatorRef>
+											</references>
+										</ed:CallExpression>
+									</pragmas>
 								</CallExpression>
 							</right>
 							<pragmas>
@@ -1119,9 +1142,9 @@
 						</Equation>
 					</data>
 					<pragmas>
-						<ed:Operator oid="!ed/10091/4FE6/17BC/480898fc26d5" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+						<ed:Operator oid="!ed/10091/4FE6/17BC/480898fc26d5" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<diagrams>
-								<NetDiagram name="diagram_Rotate_Z_1" landscape="true" format="A4 (210 297)" oid="!ed/1009f/4FE6/17BC/480898fc6b4f">
+								<NetDiagram name="rotateZ" landscape="true" format="A4 (210 297)" oid="!ed/1009f/4FE6/17BC/480898fc6b4f">
 									<presentationElements>
 										<EquationGE presentable="!ed/10092/4FE6/17BC/480898fc6d58">
 											<position>
@@ -1361,9 +1384,9 @@
 						</ed:Operator>
 					</pragmas>
 				</Operator>
-				<Operator kind="function" name="Rotate_Y">
+				<Operator kind="function" name="rotateY">
 					<inputs>
-						<Variable name="Angle">
+						<Variable name="angle">
 							<type>
 								<NamedType>
 									<type>
@@ -1377,7 +1400,7 @@
 						</Variable>
 					</inputs>
 					<outputs>
-						<Variable name="Rot_Y">
+						<Variable name="rotY">
 							<type>
 								<Table>
 									<type>
@@ -1574,7 +1597,7 @@
 						</Variable>
 					</locals>
 					<data>
-						<!-- _L1 = Angle; -->
+						<!-- _L1 = angle; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1"/>
@@ -1582,7 +1605,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Angle"/>
+										<ConstVarRef name="angle"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -1590,10 +1613,10 @@
 								<ed:Equation oid="!ed/fffa/4FE6/17BC/480898fc68b5"/>
 							</pragmas>
 						</Equation>
-						<!-- Rot_Y = _L41; -->
+						<!-- rotY = _L41; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Rot_Y"/>
+								<VariableRef name="rotY"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -1628,6 +1651,16 @@
 											</path>
 										</IdExpression>
 									</callParameters>
+									<pragmas>
+										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<references>
+												<OperatorRef path="mathext::SinR" refOid="win_181C/7F51/48C/3A82ADFE/3C2">
+													<InputRef refOid="win_1820/57D4/48C/3A82AE15/2111"/>
+													<OutputRef refOid="win_1821/6753/48C/3A82AE17/44E"/>
+												</OperatorRef>
+											</references>
+										</ed:CallExpression>
+									</pragmas>
 								</CallExpression>
 							</right>
 							<pragmas>
@@ -1804,6 +1837,16 @@
 											</path>
 										</IdExpression>
 									</callParameters>
+									<pragmas>
+										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<references>
+												<OperatorRef path="mathext::CosR" refOid="win_1822/1D05/48C/3A82B2C1/71C">
+													<InputRef refOid="win_1826/60B4/48C/3A82B2D7/7F03"/>
+													<OutputRef refOid="win_1827/6A84/48C/3A82B2D8/F63"/>
+												</OperatorRef>
+											</references>
+										</ed:CallExpression>
+									</pragmas>
 								</CallExpression>
 							</right>
 							<pragmas>
@@ -1850,9 +1893,9 @@
 						</Equation>
 					</data>
 					<pragmas>
-						<ed:Operator oid="!ed/fff9/4FE6/17BC/480898fc1e9c" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+						<ed:Operator oid="!ed/fff9/4FE6/17BC/480898fc1e9c" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<diagrams>
-								<NetDiagram name="diagram_Rotate_Y_1" landscape="true" format="A4 (210 297)" oid="!ed/10007/4FE6/17BC/480898fc24ca">
+								<NetDiagram name="rotateY" landscape="true" format="A4 (210 297)" oid="!ed/10007/4FE6/17BC/480898fc24ca">
 									<presentationElements>
 										<EquationGE presentable="!ed/fffa/4FE6/17BC/480898fc68b5">
 											<position>
@@ -2092,9 +2135,9 @@
 						</ed:Operator>
 					</pragmas>
 				</Operator>
-				<Operator kind="function" name="Rotate_X">
+				<Operator kind="function" name="rotateX">
 					<inputs>
-						<Variable name="Angle">
+						<Variable name="angle">
 							<type>
 								<NamedType>
 									<type>
@@ -2108,7 +2151,7 @@
 						</Variable>
 					</inputs>
 					<outputs>
-						<Variable name="Rot_X">
+						<Variable name="rotX">
 							<type>
 								<Table>
 									<type>
@@ -2305,7 +2348,7 @@
 						</Variable>
 					</locals>
 					<data>
-						<!-- _L1 = Angle; -->
+						<!-- _L1 = angle; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1"/>
@@ -2313,7 +2356,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Angle"/>
+										<ConstVarRef name="angle"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -2321,10 +2364,10 @@
 								<ed:Equation oid="!ed/ff62/4FE6/17BC/480898fc324f"/>
 							</pragmas>
 						</Equation>
-						<!-- Rot_X = _L43; -->
+						<!-- rotX = _L43; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Rot_X"/>
+								<VariableRef name="rotX"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -2359,6 +2402,16 @@
 											</path>
 										</IdExpression>
 									</callParameters>
+									<pragmas>
+										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<references>
+												<OperatorRef path="mathext::SinR" refOid="win_181C/7F51/48C/3A82ADFE/3C2">
+													<InputRef refOid="win_1820/57D4/48C/3A82AE15/2111"/>
+													<OutputRef refOid="win_1821/6753/48C/3A82AE17/44E"/>
+												</OperatorRef>
+											</references>
+										</ed:CallExpression>
+									</pragmas>
 								</CallExpression>
 							</right>
 							<pragmas>
@@ -2437,6 +2490,16 @@
 											</path>
 										</IdExpression>
 									</callParameters>
+									<pragmas>
+										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<references>
+												<OperatorRef path="mathext::CosR" refOid="win_1822/1D05/48C/3A82B2C1/71C">
+													<InputRef refOid="win_1826/60B4/48C/3A82B2D7/7F03"/>
+													<OutputRef refOid="win_1827/6A84/48C/3A82B2D8/F63"/>
+												</OperatorRef>
+											</references>
+										</ed:CallExpression>
+									</pragmas>
 								</CallExpression>
 							</right>
 							<pragmas>
@@ -2581,9 +2644,9 @@
 						</Equation>
 					</data>
 					<pragmas>
-						<ed:Operator oid="!ed/ff61/4FE6/17BC/480898fc708a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+						<ed:Operator oid="!ed/ff61/4FE6/17BC/480898fc708a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<diagrams>
-								<NetDiagram name="diagram_Rotate_X_1" landscape="true" format="A4 (210 297)" oid="!ed/ff6f/4FE6/17BC/480898fc2ce4">
+								<NetDiagram name="rotateX" landscape="true" format="A4 (210 297)" oid="!ed/ff6f/4FE6/17BC/480898fc2ce4">
 									<presentationElements>
 										<EquationGE presentable="!ed/ff62/4FE6/17BC/480898fc324f">
 											<position>
@@ -2823,9 +2886,9 @@
 						</ed:Operator>
 					</pragmas>
 				</Operator>
-				<Operator kind="function" name="Rotate">
+				<Operator kind="function" name="rotate">
 					<inputs>
-						<Variable name="X">
+						<Variable name="x">
 							<type>
 								<NamedType>
 									<type>
@@ -2837,7 +2900,7 @@
 								<ed:Variable oid="!ed/fee3/4FE6/17BC/480898fc38e3"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Y">
+						<Variable name="y">
 							<type>
 								<NamedType>
 									<type>
@@ -2849,7 +2912,7 @@
 								<ed:Variable oid="!ed/fee4/4FE6/17BC/480898fc546d"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Z">
+						<Variable name="z">
 							<type>
 								<NamedType>
 									<type>
@@ -2861,7 +2924,7 @@
 								<ed:Variable oid="!ed/fee5/4FE6/17BC/480898fc305d"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Angle_X">
+						<Variable name="angleX">
 							<type>
 								<NamedType>
 									<type>
@@ -2873,7 +2936,7 @@
 								<ed:Variable oid="!ed/fedd/4FE6/17BC/480898fc4540" hidden="true"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Angle_Y">
+						<Variable name="angleY">
 							<type>
 								<NamedType>
 									<type>
@@ -2885,7 +2948,7 @@
 								<ed:Variable oid="!ed/fede/4FE6/17BC/480898fc5a53" hidden="true"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Angle_Z">
+						<Variable name="angleZ">
 							<type>
 								<NamedType>
 									<type>
@@ -2899,7 +2962,7 @@
 						</Variable>
 					</inputs>
 					<outputs>
-						<Variable name="New_X">
+						<Variable name="newX">
 							<type>
 								<NamedType>
 									<type>
@@ -2911,7 +2974,7 @@
 								<ed:Variable oid="!ed/fee0/4FE6/17BC/480898fc474b"/>
 							</pragmas>
 						</Variable>
-						<Variable name="New_Y">
+						<Variable name="newY">
 							<type>
 								<NamedType>
 									<type>
@@ -2923,7 +2986,7 @@
 								<ed:Variable oid="!ed/fee1/4FE6/17BC/480898fc3e5c"/>
 							</pragmas>
 						</Variable>
-						<Variable name="New_Z">
+						<Variable name="newZ">
 							<type>
 								<NamedType>
 									<type>
@@ -3215,7 +3278,7 @@
 						</Variable>
 					</locals>
 					<data>
-						<!-- _L8 = Angle_Y; -->
+						<!-- _L8 = angleY; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L8"/>
@@ -3223,7 +3286,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Angle_Y"/>
+										<ConstVarRef name="angleY"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -3231,7 +3294,7 @@
 								<ed:Equation oid="!ed/feb1/4FE6/17BC/480898fcecd"/>
 							</pragmas>
 						</Equation>
-						<!-- _L9 = Angle_Z; -->
+						<!-- _L9 = angleZ; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L9"/>
@@ -3239,7 +3302,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Angle_Z"/>
+										<ConstVarRef name="angleZ"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -3247,7 +3310,7 @@
 								<ed:Equation oid="!ed/feb2/4FE6/17BC/480898fc333d"/>
 							</pragmas>
 						</Equation>
-						<!-- _L10 = Angle_X; -->
+						<!-- _L10 = angleX; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L10"/>
@@ -3255,7 +3318,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Angle_X"/>
+										<ConstVarRef name="angleX"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -3263,7 +3326,7 @@
 								<ed:Equation oid="!ed/feb3/4FE6/17BC/480898fc49a4"/>
 							</pragmas>
 						</Equation>
-						<!-- _L22 = Z; -->
+						<!-- _L22 = z; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L22"/>
@@ -3271,7 +3334,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Z"/>
+										<ConstVarRef name="z"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -3279,7 +3342,7 @@
 								<ed:Equation oid="!ed/feba/4FE6/17BC/480898fc4d52"/>
 							</pragmas>
 						</Equation>
-						<!-- _L23 = Y; -->
+						<!-- _L23 = y; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L23"/>
@@ -3287,7 +3350,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Y"/>
+										<ConstVarRef name="y"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -3295,7 +3358,7 @@
 								<ed:Equation oid="!ed/febb/4FE6/17BC/480898fc6f40"/>
 							</pragmas>
 						</Equation>
-						<!-- _L24 = X; -->
+						<!-- _L24 = x; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L24"/>
@@ -3303,7 +3366,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="X"/>
+										<ConstVarRef name="x"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -3311,10 +3374,10 @@
 								<ed:Equation oid="!ed/febc/4FE6/17BC/480898fc7e9b"/>
 							</pragmas>
 						</Equation>
-						<!-- New_X = _L44; -->
+						<!-- newX = _L44; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="New_X"/>
+								<VariableRef name="newX"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -3327,10 +3390,10 @@
 								<ed:Equation oid="!ed/febd/4FE6/17BC/480898fc4f8b"/>
 							</pragmas>
 						</Equation>
-						<!-- New_Y = _L45; -->
+						<!-- newY = _L45; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="New_Y"/>
+								<VariableRef name="newY"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -3343,10 +3406,10 @@
 								<ed:Equation oid="!ed/febe/4FE6/17BC/480898fc466"/>
 							</pragmas>
 						</Equation>
-						<!-- New_Z = _L48; -->
+						<!-- newZ = _L48; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="New_Z"/>
+								<VariableRef name="newZ"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -3462,18 +3525,18 @@
 								<ed:Equation oid="!ed/fec2/4FE6/17BC/480898fc70e3"/>
 							</pragmas>
 						</Equation>
-						<!-- _L50 = Rotate_Z(_L9); -->
+						<!-- _L50 = rotateZ(_L9); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L50"/>
 							</lefts>
 							<right>
-								<!-- Rotate_Z(_L9) -->
+								<!-- rotateZ(_L9) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="2">
 											<operator>
-												<OperatorRef name="Rotate_Z"/>
+												<OperatorRef name="rotateZ"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -3490,18 +3553,18 @@
 								<ed:Equation oid="!ed/15a7c/5258/D00/480a5f1e7982"/>
 							</pragmas>
 						</Equation>
-						<!-- _L51 = Rotate_Y(_L8); -->
+						<!-- _L51 = rotateY(_L8); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L51"/>
 							</lefts>
 							<right>
-								<!-- Rotate_Y(_L8) -->
+								<!-- rotateY(_L8) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="2">
 											<operator>
-												<OperatorRef name="Rotate_Y"/>
+												<OperatorRef name="rotateY"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -3518,18 +3581,18 @@
 								<ed:Equation oid="!ed/15a82/5258/D00/480a5f276757"/>
 							</pragmas>
 						</Equation>
-						<!-- _L52 = Rotate_X(_L10); -->
+						<!-- _L52 = rotateX(_L10); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L52"/>
 							</lefts>
 							<right>
-								<!-- Rotate_X(_L10) -->
+								<!-- rotateX(_L10) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="2">
 											<operator>
-												<OperatorRef name="Rotate_X"/>
+												<OperatorRef name="rotateX"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -3578,6 +3641,20 @@
 											</path>
 										</IdExpression>
 									</callParameters>
+									<pragmas>
+										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<references>
+												<OperatorRef path="vect::MatProd" refOid="win_77C8/149E/7F8/460949C6/7616">
+													<InputRef refOid="win_7806/149E/7F8/46094A94/4531"/>
+													<InputRef refOid="win_7808/149E/7F8/46094AA3/170C"/>
+													<OutputRef refOid="win_7812/149E/7F8/46094AB8/1281"/>
+													<ParameterRef refOid="!ed/94F/1E4B/FC8/466E5CB6/2825"/>
+													<ParameterRef refOid="!ed/94D/1E4B/FC8/466E5CAC/7031"/>
+													<ParameterRef refOid="!ed/951/1E4B/FC8/466E5CC6/6CEA"/>
+												</OperatorRef>
+											</references>
+										</ed:CallExpression>
+									</pragmas>
 								</CallExpression>
 							</right>
 							<pragmas>
@@ -3615,6 +3692,19 @@
 											</path>
 										</IdExpression>
 									</callParameters>
+									<pragmas>
+										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<references>
+												<OperatorRef path="vect::MatVectProd" refOid="win_77C7/149E/7F8/460949BB/68C0">
+													<InputRef refOid="win_77EE/149E/7F8/46094A4F/A50"/>
+													<InputRef refOid="win_77F0/149E/7F8/46094A6F/3772"/>
+													<OutputRef refOid="win_77FA/149E/7F8/46094A87/77C9"/>
+													<ParameterRef refOid="!ed/953/1E4B/FC8/466E5CDD/2B43"/>
+													<ParameterRef refOid="!ed/955/1E4B/FC8/466E5CEA/2DEB"/>
+												</OperatorRef>
+											</references>
+										</ed:CallExpression>
+									</pragmas>
 								</CallExpression>
 							</right>
 							<pragmas>
@@ -3653,6 +3743,20 @@
 											</path>
 										</IdExpression>
 									</callParameters>
+									<pragmas>
+										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<references>
+												<OperatorRef path="vect::MatProd" refOid="win_77C8/149E/7F8/460949C6/7616">
+													<InputRef refOid="win_7806/149E/7F8/46094A94/4531"/>
+													<InputRef refOid="win_7808/149E/7F8/46094AA3/170C"/>
+													<OutputRef refOid="win_7812/149E/7F8/46094AB8/1281"/>
+													<ParameterRef refOid="!ed/94F/1E4B/FC8/466E5CB6/2825"/>
+													<ParameterRef refOid="!ed/94D/1E4B/FC8/466E5CAC/7031"/>
+													<ParameterRef refOid="!ed/951/1E4B/FC8/466E5CC6/6CEA"/>
+												</OperatorRef>
+											</references>
+										</ed:CallExpression>
+									</pragmas>
 								</CallExpression>
 							</right>
 							<pragmas>
@@ -3661,9 +3765,9 @@
 						</Equation>
 					</data>
 					<pragmas>
-						<ed:Operator oid="!ed/fea9/4FE6/17BC/480898fc75b9" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+						<ed:Operator oid="!ed/fea9/4FE6/17BC/480898fc75b9" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<diagrams>
-								<NetDiagram name="diagram_Rotate_1" landscape="true" format="A4 (210 297)" oid="!ed/fec3/4FE6/17BC/480898fc5ea9">
+								<NetDiagram name="rotate" landscape="true" format="A4 (210 297)" oid="!ed/fec3/4FE6/17BC/480898fc5ea9">
 									<presentationElements>
 										<EquationGE presentable="!ed/feb1/4FE6/17BC/480898fcecd">
 											<position>
@@ -3967,9 +4071,9 @@
 						</ed:Operator>
 					</pragmas>
 				</Operator>
-				<Operator kind="function" name="Vanishing_point">
+				<Operator kind="function" name="vanishingPoint">
 					<inputs>
-						<Variable name="X">
+						<Variable name="x">
 							<type>
 								<NamedType>
 									<type>
@@ -3981,7 +4085,7 @@
 								<ed:Variable oid="!ed/30c8/46AC/16B0/4827fc40252b"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Y">
+						<Variable name="y">
 							<type>
 								<NamedType>
 									<type>
@@ -3993,7 +4097,7 @@
 								<ed:Variable oid="!ed/30c7/46AC/16B0/4827fc4060ba"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Z">
+						<Variable name="z">
 							<type>
 								<NamedType>
 									<type>
@@ -4007,7 +4111,7 @@
 						</Variable>
 					</inputs>
 					<outputs>
-						<Variable name="XT_Computed">
+						<Variable name="xtComputed">
 							<type>
 								<NamedType>
 									<type>
@@ -4019,7 +4123,7 @@
 								<ed:Variable oid="!ed/30ca/46AC/16B0/4827fc40af1"/>
 							</pragmas>
 						</Variable>
-						<Variable name="YT_Computed">
+						<Variable name="ytComputed">
 							<type>
 								<NamedType>
 									<type>
@@ -4145,7 +4249,7 @@
 								<ed:Equation oid="!ed/30cb/46AC/16B0/4827fc4023aa"/>
 							</pragmas>
 						</Equation>
-						<!-- _L8 = Y; -->
+						<!-- _L8 = y; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L8"/>
@@ -4153,7 +4257,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Y"/>
+										<ConstVarRef name="y"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -4161,18 +4265,18 @@
 								<ed:Equation oid="!ed/30d9/46AC/16B0/4827fc40735b"/>
 							</pragmas>
 						</Equation>
-						<!-- _L9 = Robustness_Division(_L11, _L1, _L11); -->
+						<!-- _L9 = robustnessDivision(_L11, _L1, x); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L9"/>
 							</lefts>
 							<right>
-								<!-- Robustness_Division(_L11, _L1, _L11) -->
+								<!-- robustnessDivision(_L11, _L1, x) -->
 								<CallExpression>
 									<operator>
-										<OpCall name="3">
+										<OpCall name="1">
 											<operator>
-												<OperatorRef name="Robustness_Division"/>
+												<OperatorRef name="robustnessDivision"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -4189,28 +4293,40 @@
 										</IdExpression>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="_L11"/>
+												<ConstVarRef name="x"/>
 											</path>
 										</IdExpression>
 									</callParameters>
+									<pragmas>
+										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<references>
+												<OperatorRef path="robustnessDivision" refOid="!ed/1ebf/345D/2B0/47ff67ea6867">
+													<InputRef refOid="!ed/1ec1/345D/2B0/47ff6800378a"/>
+													<InputRef refOid="!ed/1ec2/345D/2B0/47ff68002aa6"/>
+													<InputRef refOid="!ed/1fa5/7F9C/14DC/47ff701a44fc"/>
+													<OutputRef refOid="!ed/1ec3/345D/2B0/47ff6803330b"/>
+												</OperatorRef>
+											</references>
+										</ed:CallExpression>
+									</pragmas>
 								</CallExpression>
 							</right>
 							<pragmas>
 								<ed:Equation oid="!ed/30db/46AC/16B0/4827fc405e42"/>
 							</pragmas>
 						</Equation>
-						<!-- _L10 = Robustness_Division(_L8, _L1, _L8); -->
+						<!-- _L10 = robustnessDivision(_L8, _L1, y); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L10"/>
 							</lefts>
 							<right>
-								<!-- Robustness_Division(_L8, _L1, _L8) -->
+								<!-- robustnessDivision(_L8, _L1, y) -->
 								<CallExpression>
 									<operator>
-										<OpCall name="4">
+										<OpCall name="2">
 											<operator>
-												<OperatorRef name="Robustness_Division"/>
+												<OperatorRef name="robustnessDivision"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -4227,20 +4343,32 @@
 										</IdExpression>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="_L8"/>
+												<ConstVarRef name="y"/>
 											</path>
 										</IdExpression>
 									</callParameters>
+									<pragmas>
+										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+											<references>
+												<OperatorRef path="robustnessDivision" refOid="!ed/1ebf/345D/2B0/47ff67ea6867">
+													<InputRef refOid="!ed/1ec1/345D/2B0/47ff6800378a"/>
+													<InputRef refOid="!ed/1ec2/345D/2B0/47ff68002aa6"/>
+													<InputRef refOid="!ed/1fa5/7F9C/14DC/47ff701a44fc"/>
+													<OutputRef refOid="!ed/1ec3/345D/2B0/47ff6803330b"/>
+												</OperatorRef>
+											</references>
+										</ed:CallExpression>
+									</pragmas>
 								</CallExpression>
 							</right>
 							<pragmas>
 								<ed:Equation oid="!ed/30dd/46AC/16B0/4827fc40296d"/>
 							</pragmas>
 						</Equation>
-						<!-- YT_Computed = _L10; -->
+						<!-- ytComputed = _L10; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="YT_Computed"/>
+								<VariableRef name="ytComputed"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4253,10 +4381,10 @@
 								<ed:Equation oid="!ed/30df/46AC/16B0/4827fc403202"/>
 							</pragmas>
 						</Equation>
-						<!-- XT_Computed = _L9; -->
+						<!-- xtComputed = _L9; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="XT_Computed"/>
+								<VariableRef name="xtComputed"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4269,7 +4397,7 @@
 								<ed:Equation oid="!ed/30e0/46AC/16B0/4827fc406e08"/>
 							</pragmas>
 						</Equation>
-						<!-- _L11 = X; -->
+						<!-- _L11 = x; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L11"/>
@@ -4277,7 +4405,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="X"/>
+										<ConstVarRef name="x"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -4285,7 +4413,7 @@
 								<ed:Equation oid="!ed/30e1/46AC/16B0/4827fc402a28"/>
 							</pragmas>
 						</Equation>
-						<!-- _L12 = Z; -->
+						<!-- _L12 = z; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L12"/>
@@ -4293,7 +4421,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Z"/>
+										<ConstVarRef name="z"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -4301,7 +4429,7 @@
 								<ed:Equation oid="!ed/30ea/46AC/16B0/4827fc5510c4"/>
 							</pragmas>
 						</Equation>
-						<!-- _L13 = focal_inv; -->
+						<!-- _L13 = FOCAL_INV; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L13"/>
@@ -4309,7 +4437,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="focal_inv"/>
+										<ConstVarRef name="FOCAL_INV"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -4319,13 +4447,13 @@
 						</Equation>
 					</data>
 					<pragmas>
-						<ed:Operator oid="!ed/307c/46AC/16B0/4827fbda23b3" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+						<ed:Operator oid="!ed/307c/46AC/16B0/4827fbda23b3" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<diagrams>
-								<NetDiagram name="diagram_Vanishing_point_1" landscape="true" format="A4 (210 297)" oid="!ed/307d/46AC/16B0/4827fbda74e9">
+								<NetDiagram name="vanishingPoint" landscape="true" format="A4 (210 297)" oid="!ed/307d/46AC/16B0/4827fbda74e9">
 									<presentationElements>
 										<EquationGE presentable="!ed/30cb/46AC/16B0/4827fc4023aa">
 											<position>
-												<Point x="5900" y="6191"/>
+												<Point x="4577" y="4048"/>
 											</position>
 											<size>
 												<Size width="1006" height="662"/>
@@ -4349,15 +4477,15 @@
 										</EquationGE>
 										<EquationGE presentable="!ed/30dd/46AC/16B0/4827fc40296d">
 											<position>
-												<Point x="8864" y="5292"/>
+												<Point x="10575" y="5231"/>
 											</position>
 											<size>
-												<Size width="2407" height="1852"/>
+												<Size width="5308" height="1868"/>
 											</size>
 										</EquationGE>
 										<EquationGE presentable="!ed/30df/46AC/16B0/4827fc403202">
 											<position>
-												<Point x="16510" y="5953"/>
+												<Point x="18071" y="5900"/>
 											</position>
 											<size>
 												<Size width="344" height="503"/>
@@ -4365,7 +4493,7 @@
 										</EquationGE>
 										<EquationGE presentable="!ed/30e0/46AC/16B0/4827fc406e08">
 											<position>
-												<Point x="16510" y="3016"/>
+												<Point x="18124" y="3016"/>
 											</position>
 											<size>
 												<Size width="344" height="503"/>
@@ -4379,57 +4507,9 @@
 												<Size width="265" height="502"/>
 											</size>
 										</EquationGE>
-										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/30e1/46AC/16B0/4827fc402a28" dstEquation="!ed/30db/46AC/16B0/4827fc405e42">
-											<positions>
-												<Point x="2117" y="2963"/>
-												<Point x="4763" y="2963"/>
-												<Point x="4763" y="2963"/>
-												<Point x="8864" y="2963"/>
-											</positions>
-										</Edge>
-										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/30d9/46AC/16B0/4827fc40735b" dstEquation="!ed/30dd/46AC/16B0/4827fc40296d">
-											<positions>
-												<Point x="2117" y="5900"/>
-												<Point x="5477" y="5900"/>
-												<Point x="5477" y="5900"/>
-												<Point x="8864" y="5900"/>
-											</positions>
-										</Edge>
-										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/30db/46AC/16B0/4827fc405e42" dstEquation="!ed/30e0/46AC/16B0/4827fc406e08">
-											<positions>
-												<Point x="11271" y="3281"/>
-												<Point x="12488" y="3281"/>
-												<Point x="12488" y="3281"/>
-												<Point x="16563" y="3281"/>
-											</positions>
-										</Edge>
-										<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/30cb/46AC/16B0/4827fc4023aa" dstEquation="!ed/30dd/46AC/16B0/4827fc40296d">
-											<positions>
-												<Point x="6906" y="6535"/>
-												<Point x="7541" y="6535"/>
-												<Point x="7541" y="6535"/>
-												<Point x="8864" y="6535"/>
-											</positions>
-										</Edge>
-										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/30dd/46AC/16B0/4827fc40296d" dstEquation="!ed/30df/46AC/16B0/4827fc403202">
-											<positions>
-												<Point x="11271" y="6218"/>
-												<Point x="12488" y="6218"/>
-												<Point x="12488" y="6218"/>
-												<Point x="16563" y="6218"/>
-											</positions>
-										</Edge>
-										<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/30cb/46AC/16B0/4827fc4023aa" dstEquation="!ed/30db/46AC/16B0/4827fc405e42">
-											<positions>
-												<Point x="6906" y="6535"/>
-												<Point x="7541" y="6535"/>
-												<Point x="7541" y="3598"/>
-												<Point x="8864" y="3598"/>
-											</positions>
-										</Edge>
 										<EquationGE presentable="!ed/30ea/46AC/16B0/4827fc5510c4">
 											<position>
-												<Point x="1852" y="8916"/>
+												<Point x="2196" y="3995"/>
 											</position>
 											<size>
 												<Size width="265" height="503"/>
@@ -4437,44 +4517,74 @@
 										</EquationGE>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/30ec/46AC/16B0/4827fcea328d">
 											<position>
-												<Point x="4101" y="7382"/>
+												<Point x="3784" y="4339"/>
 											</position>
 											<size>
-												<Size width="979" height="317"/>
+												<Size width="212" height="317"/>
 											</size>
 										</EquationGE>
 										<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/30ec/46AC/16B0/4827fcea328d" dstEquation="!ed/30cb/46AC/16B0/4827fc4023aa">
 											<positions>
-												<Point x="5080" y="7541"/>
-												<Point x="5477" y="7541"/>
-												<Point x="5477" y="6641"/>
-												<Point x="5900" y="6641"/>
-											</positions>
-										</Edge>
-										<Edge leftVarIndex="1" rightExprIndex="3" srcEquation="!ed/30d9/46AC/16B0/4827fc40735b" dstEquation="!ed/30dd/46AC/16B0/4827fc40296d">
-											<positions>
-												<Point x="2117" y="5900"/>
-												<Point x="8334" y="5900"/>
-												<Point x="8334" y="8467"/>
-												<Point x="10081" y="8467"/>
-												<Point x="10081" y="7144"/>
-											</positions>
-										</Edge>
-										<Edge leftVarIndex="1" rightExprIndex="3" srcEquation="!ed/30e1/46AC/16B0/4827fc402a28" dstEquation="!ed/30db/46AC/16B0/4827fc405e42">
-											<positions>
-												<Point x="2117" y="2963"/>
-												<Point x="8414" y="2963"/>
-												<Point x="8414" y="4630"/>
-												<Point x="10081" y="4630"/>
-												<Point x="10081" y="4207"/>
+												<Point x="3995" y="4498"/>
+												<Point x="4286" y="4498"/>
+												<Point x="4286" y="4498"/>
+												<Point x="4577" y="4498"/>
 											</positions>
 										</Edge>
 										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/30ea/46AC/16B0/4827fc5510c4" dstEquation="!ed/30cb/46AC/16B0/4827fc4023aa">
 											<positions>
-												<Point x="2117" y="9181"/>
-												<Point x="3995" y="9181"/>
-												<Point x="3995" y="6403"/>
-												<Point x="5900" y="6403"/>
+												<Point x="2461" y="4260"/>
+												<Point x="3519" y="4260"/>
+												<Point x="3519" y="4260"/>
+												<Point x="4577" y="4260"/>
+											</positions>
+										</Edge>
+										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/30db/46AC/16B0/4827fc405e42" dstEquation="!ed/30e0/46AC/16B0/4827fc406e08">
+											<positions>
+												<Point x="11271" y="3281"/>
+												<Point x="12488" y="3281"/>
+												<Point x="12488" y="3281"/>
+												<Point x="18177" y="3281"/>
+											</positions>
+										</Edge>
+										<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/30cb/46AC/16B0/4827fc4023aa" dstEquation="!ed/30db/46AC/16B0/4827fc405e42">
+											<positions>
+												<Point x="5583" y="4392"/>
+												<Point x="7223" y="4392"/>
+												<Point x="7223" y="3598"/>
+												<Point x="8864" y="3598"/>
+											</positions>
+										</Edge>
+										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/30e1/46AC/16B0/4827fc402a28" dstEquation="!ed/30db/46AC/16B0/4827fc405e42">
+											<positions>
+												<Point x="2117" y="2963"/>
+												<Point x="5477" y="2963"/>
+												<Point x="5477" y="2963"/>
+												<Point x="8864" y="2963"/>
+											</positions>
+										</Edge>
+										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/30dd/46AC/16B0/4827fc40296d" dstEquation="!ed/30df/46AC/16B0/4827fc403202">
+											<positions>
+												<Point x="15875" y="6165"/>
+												<Point x="16986" y="6165"/>
+												<Point x="16986" y="6165"/>
+												<Point x="18124" y="6165"/>
+											</positions>
+										</Edge>
+										<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/30cb/46AC/16B0/4827fc4023aa" dstEquation="!ed/30dd/46AC/16B0/4827fc40296d">
+											<positions>
+												<Point x="5583" y="4392"/>
+												<Point x="8070" y="4392"/>
+												<Point x="8070" y="6482"/>
+												<Point x="10583" y="6482"/>
+											</positions>
+										</Edge>
+										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/30d9/46AC/16B0/4827fc40735b" dstEquation="!ed/30dd/46AC/16B0/4827fc40296d">
+											<positions>
+												<Point x="2117" y="5900"/>
+												<Point x="6350" y="5900"/>
+												<Point x="6350" y="5847"/>
+												<Point x="10583" y="5847"/>
 											</positions>
 										</Edge>
 									</presentationElements>
@@ -4485,7 +4595,7 @@
 				</Operator>
 			</declarations>
 			<pragmas>
-				<ed:Package oid="!ed/fd64/4FE6/17BC/480898fa3879" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Package oid="!ed/fd64/4FE6/17BC/480898fa3879" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
 						<TreeDiagram landscape="true" format="A4 (210 297)" oid="!ed/fd65/4FE6/17BC/480898fa262b" blockKind="constants"/>
 						<TreeDiagram landscape="true" format="A4 (210 297)" oid="!ed/fd66/4FE6/17BC/480898fa4c51" blockKind="types"/>

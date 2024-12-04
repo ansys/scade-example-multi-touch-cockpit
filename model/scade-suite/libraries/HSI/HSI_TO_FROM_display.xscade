@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="HSI_TO_FROM_display">
+		<Operator kind="function" name="hsiToFromdisplay">
 			<inputs>
-				<Variable name="HSI_Flagged">
+				<Variable name="hsiFlagged">
 					<type>
 						<NamedType>
 							<type>
@@ -15,7 +15,7 @@
 						<ed:Variable oid="!ed/a96/7A70/BF0/4759559d3d8d"/>
 					</pragmas>
 				</Variable>
-				<Variable name="HSI_To_From">
+				<Variable name="hsiToFrom">
 					<type>
 						<NamedType>
 							<type>
@@ -29,11 +29,11 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="HSI_To_From_Legend">
+				<Variable name="hsiToFromLegend">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="TO_FROM_legend_text_enum"/>
+								<TypeRef name="toFromLegendText"/>
 							</type>
 						</NamedType>
 					</type>
@@ -41,11 +41,11 @@
 						<ed:Variable oid="!ed/a94/7A70/BF0/4759559d3a95"/>
 					</pragmas>
 				</Variable>
-				<Variable name="HSI_To_From_Shape">
+				<Variable name="hsiToFromShapeOut">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="HSI_To_From_Shape_enum"/>
+								<TypeRef name="hsiToFromShape"/>
 							</type>
 						</NamedType>
 					</type>
@@ -71,7 +71,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="TO_FROM_legend_text_enum"/>
+								<TypeRef name="toFromLegendText"/>
 							</type>
 						</NamedType>
 					</type>
@@ -83,7 +83,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="TO_FROM_legend_text_enum"/>
+								<TypeRef name="toFromLegendText"/>
 							</type>
 						</NamedType>
 					</type>
@@ -95,7 +95,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="TO_FROM_legend_text_enum"/>
+								<TypeRef name="toFromLegendText"/>
 							</type>
 						</NamedType>
 					</type>
@@ -107,7 +107,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="TO_FROM_legend_text_enum"/>
+								<TypeRef name="toFromLegendText"/>
 							</type>
 						</NamedType>
 					</type>
@@ -131,7 +131,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="TO_FROM_legend_text_enum"/>
+								<TypeRef name="toFromLegendText"/>
 							</type>
 						</NamedType>
 					</type>
@@ -143,7 +143,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="HSI_To_From_Shape_enum"/>
+								<TypeRef name="hsiToFromShape"/>
 							</type>
 						</NamedType>
 					</type>
@@ -155,7 +155,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="HSI_To_From_Shape_enum"/>
+								<TypeRef name="hsiToFromShape"/>
 							</type>
 						</NamedType>
 					</type>
@@ -167,7 +167,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="HSI_To_From_Shape_enum"/>
+								<TypeRef name="hsiToFromShape"/>
 							</type>
 						</NamedType>
 					</type>
@@ -177,7 +177,7 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L1 = HSI_To_From; -->
+				<!-- _L1 = hsiToFrom; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1"/>
@@ -185,7 +185,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_To_From"/>
+								<ConstVarRef name="hsiToFrom"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -311,7 +311,7 @@
 						<ed:Equation oid="!ed/aa7/7A70/BF0/4759559d143b"/>
 					</pragmas>
 				</Equation>
-				<!-- _L6 = HSI_Flagged; -->
+				<!-- _L6 = hsiFlagged; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L6"/>
@@ -319,7 +319,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_Flagged"/>
+								<ConstVarRef name="hsiFlagged"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -343,10 +343,10 @@
 						<ed:Equation oid="!ed/aa9/7A70/BF0/4759559d1e9"/>
 					</pragmas>
 				</Equation>
-				<!-- HSI_To_From_Legend = _L5; -->
+				<!-- hsiToFromLegend = _L5; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HSI_To_From_Legend"/>
+						<VariableRef name="hsiToFromLegend"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -402,7 +402,7 @@
 						<ed:Equation oid="!ed/aab/7A70/BF0/4759559d6381"/>
 					</pragmas>
 				</Equation>
-				<!-- _L9 = TO_Shape; -->
+				<!-- _L9 = TO_SHAPE; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L9"/>
@@ -410,7 +410,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="TO_Shape"/>
+								<ConstVarRef name="TO_SHAPE"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -418,7 +418,7 @@
 						<ed:Equation oid="!ed/aac/7A70/BF0/4759559db7a"/>
 					</pragmas>
 				</Equation>
-				<!-- _L10 = FROM_Shape; -->
+				<!-- _L10 = FROM_SHAPE; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L10"/>
@@ -426,7 +426,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="FROM_Shape"/>
+								<ConstVarRef name="FROM_SHAPE"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -434,10 +434,10 @@
 						<ed:Equation oid="!ed/aad/7A70/BF0/4759559d18b2"/>
 					</pragmas>
 				</Equation>
-				<!-- HSI_To_From_Shape = _L8; -->
+				<!-- hsiToFromShapeOut = _L8; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HSI_To_From_Shape"/>
+						<VariableRef name="hsiToFromShapeOut"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -454,7 +454,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/a93/7A70/BF0/4759559d4342" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_HSI_TO_FROM_display_1" landscape="true" format="A4 (210 297)" oid="!ed/aa2/7A70/BF0/4759559d3a01">
+						<NetDiagram name="hsiToFromdisplay" landscape="true" format="A4 (210 297)" oid="!ed/aa2/7A70/BF0/4759559d3a01">
 							<presentationElements>
 								<EquationGE presentable="!ed/aa3/7A70/BF0/4759559d40f1">
 									<position>
@@ -641,13 +641,13 @@
 						</NetDiagram>
 					</diagrams>
 					<references>
-						<TypeRef path="TO_FROM_legend_text_enum" refOid="!ed/c5/7A70/BF0/475955396c3d"/>
-						<TypeRef path="HSI_To_From_Shape_enum" refOid="!ed/b1/7A70/BF0/4759553929db"/>
+						<TypeRef path="toFromLegendText" refOid="!ed/c5/7A70/BF0/475955396c3d"/>
+						<TypeRef path="hsiToFromShape" refOid="!ed/b1/7A70/BF0/4759553929db"/>
 						<ConstVarRef path="TO" refOid="!ed/2a66/5B1F/A70/4756c3bc2e6f"/>
 						<ConstVarRef path="FR" refOid="!ed/2a67/5B1F/A70/4756c3bc753b"/>
 						<ConstVarRef path="OFF" refOid="!ed/2a65/5B1F/A70/4756c3a06599"/>
-						<ConstVarRef path="TO_Shape" refOid="!ed/2d66/118D/958/47585b984992"/>
-						<ConstVarRef path="FROM_Shape" refOid="!ed/2d67/118D/958/47585bbf254a"/>
+						<ConstVarRef path="TO_SHAPE" refOid="!ed/2d66/118D/958/47585b984992"/>
+						<ConstVarRef path="FROM_SHAPE" refOid="!ed/2d67/118D/958/47585bbf254a"/>
 					</references>
 				</ed:Operator>
 				<kcg:Pragma>

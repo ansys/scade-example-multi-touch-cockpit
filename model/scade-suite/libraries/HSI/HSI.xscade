@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Type name="TO_FROM_legend_text_enum">
+		<Type name="toFromLegendText">
 			<definition>
 				<Enum>
 					<values>
@@ -51,7 +51,7 @@
 				<ed:Type oid="!ed/c5/7A70/BF0/475955396c3d"/>
 			</pragmas>
 		</Type>
-		<Type name="RMI_enum">
+		<Type name="rmi">
 			<definition>
 				<Enum>
 					<values>
@@ -127,11 +127,11 @@
 				<ed:Type oid="!ed/bc/7A70/BF0/475955397f20"/>
 			</pragmas>
 		</Type>
-		<Type name="HSI_To_From_Shape_enum">
+		<Type name="hsiToFromShape">
 			<definition>
 				<Enum>
 					<values>
-						<Value name="TO_Shape">
+						<Value name="TO_SHAPE">
 							<pragmas>
 								<ed:Value oid="!ed/2d66/118D/958/47585b984992" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Enum value : 1</comment>
@@ -144,7 +144,7 @@
 								</kcg:Pragma>
 							</pragmas>
 						</Value>
-						<Value name="FROM_Shape">
+						<Value name="FROM_SHAPE">
 							<pragmas>
 								<ed:Value oid="!ed/2d67/118D/958/47585bbf254a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Enum value : 2</comment>
@@ -164,11 +164,11 @@
 				<ed:Type oid="!ed/b1/7A70/BF0/4759553929db"/>
 			</pragmas>
 		</Type>
-		<Type name="CDI_legend_selection_enum">
+		<Type name="cdiLegendSelection">
 			<definition>
 				<Enum>
 					<values>
-						<Value name="Def_CDI">
+						<Value name="DEF_CDI">
 							<pragmas>
 								<ed:Value oid="!ed/2756/5B1F/A70/4756a6fd1e37" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Enum value : 0</comment>

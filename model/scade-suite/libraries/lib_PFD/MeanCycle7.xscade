@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="node" name="MeanCycle7">
+		<Operator kind="node" name="meanCycle7">
 			<inputs>
-				<Variable name="U">
+				<Variable name="u">
 					<type>
 						<NamedType>
 							<type>
@@ -17,7 +17,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="MeanOn4Step">
+				<Variable name="meanOn4Step">
 					<type>
 						<NamedType>
 							<type>
@@ -174,10 +174,10 @@
 						<ed:Equation oid="!ed/77a4/5178/80C/49dde83f36b4"/>
 					</pragmas>
 				</Equation>
-				<!-- MeanOn4Step = _L2; -->
+				<!-- meanOn4Step = _L2; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="MeanOn4Step"/>
+						<VariableRef name="meanOn4Step"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -238,7 +238,7 @@
 						<ed:Equation oid="!ed/77a7/5178/80C/49dde83f1f99"/>
 					</pragmas>
 				</Equation>
-				<!-- _L5 = U; -->
+				<!-- _L5 = u; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L5"/>
@@ -246,7 +246,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="U"/>
+								<ConstVarRef name="u"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -318,9 +318,9 @@
 				</Equation>
 			</data>
 			<pragmas>
-				<ed:Operator oid="!ed/77a2/5178/80C/49dde83f758" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Operator oid="!ed/77a2/5178/80C/49dde83f758" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_MeanCycle7_1" landscape="true" format="A4 (210 297)" oid="!ed/77ab/5178/80C/49dde83f340e">
+						<NetDiagram name="meanCycle7" landscape="true" format="A4 (210 297)" oid="!ed/77ab/5178/80C/49dde83f340e">
 							<presentationElements>
 								<EquationGE presentable="!ed/77a3/5178/80C/49dde83f223c">
 									<position>

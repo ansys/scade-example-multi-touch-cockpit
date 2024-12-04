@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="node" name="Angle_Roll_Yow">
+		<Operator kind="node" name="angleRollYow">
 			<inputs>
-				<Variable name="V0">
+				<Variable name="v0">
 					<type>
 						<NamedType>
 							<type>
@@ -17,7 +17,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="Roll">
+				<Variable name="roll">
 					<type>
 						<NamedType>
 							<type>
@@ -286,10 +286,10 @@
 						<ed:Equation oid="!ed/10941/6347/16C4/484e7bad1113"/>
 					</pragmas>
 				</Equation>
-				<!-- Roll = _L175; -->
+				<!-- roll = _L175; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="Roll"/>
+						<VariableRef name="roll"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -371,18 +371,18 @@
 						<ed:Equation oid="!ed/10948/6347/16C4/484e7bad1ae1"/>
 					</pragmas>
 				</Equation>
-				<!-- _L150 = Range_Limiter_InIn(_L144, _L145, _L148); -->
+				<!-- _L150 = rangeLimiterInIn(_L144, _L145, _L148); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L150"/>
 					</lefts>
 					<right>
-						<!-- Range_Limiter_InIn(_L144, _L145, _L148) -->
+						<!-- rangeLimiterInIn(_L144, _L145, _L148) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
 									<operator>
-										<OperatorRef name="Range_Limiter_InIn"/>
+										<OperatorRef name="rangeLimiterInIn"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -403,6 +403,18 @@
 									</path>
 								</IdExpression>
 							</callParameters>
+							<pragmas>
+								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<references>
+										<OperatorRef path="rangeLimiterInIn" refOid="!ed/4216/4C50/218/474ffaa27bfa">
+											<InputRef refOid="!ed/421e/4C50/218/474ffad5607c"/>
+											<InputRef refOid="!ed/4225/4C50/218/474ffad533cd"/>
+											<InputRef refOid="!ed/422c/4C50/218/474ffad57619"/>
+											<OutputRef refOid="!ed/4232/4C50/218/474ffad53da7"/>
+										</OperatorRef>
+									</references>
+								</ed:CallExpression>
+							</pragmas>
 						</CallExpression>
 					</right>
 					<pragmas>
@@ -437,7 +449,7 @@
 						<ed:Equation oid="!ed/10950/6347/16C4/484e7bad63cc"/>
 					</pragmas>
 				</Equation>
-				<!-- _L154 = V0; -->
+				<!-- _L154 = v0; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L154"/>
@@ -445,7 +457,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="V0"/>
+								<ConstVarRef name="v0"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -453,18 +465,18 @@
 						<ed:Equation oid="!ed/10952/6347/16C4/484e7bb759d4"/>
 					</pragmas>
 				</Equation>
-				<!-- _L172 = Abs(_L146); -->
+				<!-- _L172 = abs(_L146); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L172"/>
 					</lefts>
 					<right>
-						<!-- Abs(_L146) -->
+						<!-- abs(_L146) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
 									<operator>
-										<OperatorRef name="Abs"/>
+										<OperatorRef name="abs"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -475,6 +487,16 @@
 									</path>
 								</IdExpression>
 							</callParameters>
+							<pragmas>
+								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<references>
+										<OperatorRef path="abs" refOid="!ed/321b/66D8/CE0/47541a9b7391">
+											<InputRef refOid="!ed/321d/66D8/CE0/47541a9b68b5"/>
+											<OutputRef refOid="!ed/321c/66D8/CE0/47541a9b1d16"/>
+										</OperatorRef>
+									</references>
+								</ed:CallExpression>
+							</pragmas>
 						</CallExpression>
 					</right>
 					<pragmas>
@@ -599,9 +621,9 @@
 				</Equation>
 			</data>
 			<pragmas>
-				<ed:Operator oid="!ed/108f0/6347/16C4/484e7b9252f9" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Operator oid="!ed/108f0/6347/16C4/484e7b9252f9" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_Angle_Roll_Yow_1" landscape="true" format="A4 (210 297)" oid="!ed/10900/6347/16C4/484e7b926bc5">
+						<NetDiagram name="angleRollYow" landscape="true" format="A4 (210 297)" oid="!ed/10900/6347/16C4/484e7b926bc5">
 							<presentationElements>
 								<EquationGE presentable="!ed/1093d/6347/16C4/484e7bad7ec1">
 									<position>
@@ -653,10 +675,10 @@
 								</EquationGE>
 								<EquationGE kind="OBJ_LIT" presentable="!ed/10948/6347/16C4/484e7bad1ae1">
 									<position>
-										<Point x="11562" y="11748"/>
+										<Point x="12118" y="11748"/>
 									</position>
 									<size>
-										<Size width="768" height="317"/>
+										<Size width="212" height="317"/>
 									</size>
 								</EquationGE>
 								<EquationGE presentable="!ed/1094a/6347/16C4/484e7bad2813">
@@ -669,18 +691,18 @@
 								</EquationGE>
 								<EquationGE kind="OBJ_LIT" presentable="!ed/1094c/6347/16C4/484e7bad6f8a">
 									<position>
-										<Point x="12144" y="13044"/>
+										<Point x="12700" y="13044"/>
 									</position>
 									<size>
-										<Size width="768" height="317"/>
+										<Size width="212" height="317"/>
 									</size>
 								</EquationGE>
 								<EquationGE kind="OBJ_LIT" presentable="!ed/10950/6347/16C4/484e7bad63cc">
 									<position>
-										<Point x="12435" y="12250"/>
+										<Point x="12885" y="12250"/>
 									</position>
 									<size>
-										<Size width="662" height="318"/>
+										<Size width="212" height="318"/>
 									</size>
 								</EquationGE>
 								<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/10948/6347/16C4/484e7bad1ae1" dstEquation="!ed/1093d/6347/16C4/484e7bad7ec1">
@@ -812,10 +834,10 @@
 								</EquationGE>
 								<EquationGE kind="OBJ_LIT" presentable="!ed/b35e/7274/1474/49d5ff006008">
 									<position>
-										<Point x="17833" y="8017"/>
+										<Point x="18283" y="8017"/>
 									</position>
 									<size>
-										<Size width="662" height="317"/>
+										<Size width="211" height="317"/>
 									</size>
 								</EquationGE>
 								<EquationGE presentable="!ed/b360/7274/1474/49d5ff0e698a">
@@ -901,6 +923,9 @@
 							</presentationElements>
 						</NetDiagram>
 					</diagrams>
+					<references>
+						<ConstVarRef path="PI" refOid="!ed/14ac5/654/16A8/480f3a0a223"/>
+					</references>
 				</ed:Operator>
 			</pragmas>
 		</Operator>

@@ -3,7 +3,7 @@
 	<declarations>
 		<Operator kind="function" name="aircraftChoice">
 			<inputs>
-				<Variable name="Aircraft_Symbol">
+				<Variable name="aircraftSymbol">
 					<type>
 						<NamedType>
 							<type>
@@ -12,12 +12,12 @@
 						</NamedType>
 					</type>
 					<pragmas>
-						<ed:Variable oid="!ed/eb9/7A70/BF0/4759598e2961"/>
+						<ed:Variable oid="!ed/10de4/2CFF/E094/675078637f2e"/>
 					</pragmas>
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="AIRCRAFT_SYMBOL_INDEX">
+				<Variable name="aircraftSymbolIndex">
 					<type>
 						<NamedType>
 							<type>
@@ -26,7 +26,7 @@
 						</NamedType>
 					</type>
 					<pragmas>
-						<ed:Variable oid="!ed/eb8/7A70/BF0/4759598e7240"/>
+						<ed:Variable oid="!ed/10de3/2CFF/E094/675078633b6b"/>
 					</pragmas>
 				</Variable>
 			</outputs>
@@ -40,7 +40,7 @@
 						</NamedType>
 					</type>
 					<pragmas>
-						<ed:Variable oid="!ed/eba/7A70/BF0/4759598e3efe"/>
+						<ed:Variable oid="!ed/10ddf/2CFF/E094/67507863382c"/>
 					</pragmas>
 				</Variable>
 				<Variable name="_L5">
@@ -52,7 +52,7 @@
 						</NamedType>
 					</type>
 					<pragmas>
-						<ed:Variable oid="!ed/ebb/7A70/BF0/4759598e4558"/>
+						<ed:Variable oid="!ed/10de0/2CFF/E094/675078633400"/>
 					</pragmas>
 				</Variable>
 				<Variable name="_L6">
@@ -64,7 +64,7 @@
 						</NamedType>
 					</type>
 					<pragmas>
-						<ed:Variable oid="!ed/ebc/7A70/BF0/4759598e342d"/>
+						<ed:Variable oid="!ed/10de1/2CFF/E094/6750786324e"/>
 					</pragmas>
 				</Variable>
 				<Variable name="_L7">
@@ -76,7 +76,7 @@
 						</NamedType>
 					</type>
 					<pragmas>
-						<ed:Variable oid="!ed/ebd/7A70/BF0/4759598e1bb6"/>
+						<ed:Variable oid="!ed/10de2/2CFF/E094/6750786328f8"/>
 					</pragmas>
 				</Variable>
 			</locals>
@@ -121,10 +121,10 @@
 						</IfThenElseOp>
 					</right>
 					<pragmas>
-						<ed:Equation oid="!ed/ebf/7A70/BF0/4759598e3de3"/>
+						<ed:Equation oid="!ed/10dd9/2CFF/E094/67507863294"/>
 					</pragmas>
 				</Equation>
-				<!-- _L5 = Aircraft_Symbol; -->
+				<!-- _L5 = aircraftSymbol; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L5"/>
@@ -132,18 +132,18 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Aircraft_Symbol"/>
+								<ConstVarRef name="aircraftSymbol"/>
 							</path>
 						</IdExpression>
 					</right>
 					<pragmas>
-						<ed:Equation oid="!ed/ec0/7A70/BF0/4759598e5a8c"/>
+						<ed:Equation oid="!ed/10dda/2CFF/E094/67507863172a"/>
 					</pragmas>
 				</Equation>
-				<!-- AIRCRAFT_SYMBOL_INDEX = _L2; -->
+				<!-- aircraftSymbolIndex = _L2; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="AIRCRAFT_SYMBOL_INDEX"/>
+						<VariableRef name="aircraftSymbolIndex"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -153,7 +153,7 @@
 						</IdExpression>
 					</right>
 					<pragmas>
-						<ed:Equation oid="!ed/ec1/7A70/BF0/4759598e7dd6"/>
+						<ed:Equation oid="!ed/10ddb/2CFF/E094/675078633143"/>
 					</pragmas>
 				</Equation>
 				<!-- _L6 = SINGLE_CUE; -->
@@ -169,7 +169,7 @@
 						</IdExpression>
 					</right>
 					<pragmas>
-						<ed:Equation oid="!ed/ec2/7A70/BF0/4759598e2615"/>
+						<ed:Equation oid="!ed/10ddc/2CFF/E094/6750786333d6"/>
 					</pragmas>
 				</Equation>
 				<!-- _L7 = DOUBLE_CUE; -->
@@ -185,59 +185,86 @@
 						</IdExpression>
 					</right>
 					<pragmas>
-						<ed:Equation oid="!ed/ec3/7A70/BF0/4759598e3d33"/>
+						<ed:Equation oid="!ed/10ddd/2CFF/E094/675078637033"/>
 					</pragmas>
 				</Equation>
 			</data>
 			<pragmas>
-				<ed:Operator oid="!ed/eb7/7A70/BF0/4759598e16bf" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+				<ed:Operator oid="!ed/10dd8/2CFF/E094/675078635ff6" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="aircraftChoice" landscape="true" format="A4 (210 297)" oid="!ed/ebe/7A70/BF0/4759598e5bf3">
+						<NetDiagram name="aircraftChoice" landscape="true" format="A4 (210 297)" oid="!ed/10dde/2CFF/E094/67507863acb">
 							<presentationElements>
-								<EquationGE presentable="!ed/ebf/7A70/BF0/4759598e3de3">
+								<EquationGE presentable="!ed/10dd9/2CFF/E094/67507863294">
 									<position>
-										<Point x="0" y="0"/>
+										<Point x="7691" y="2691"/>
 									</position>
 									<size>
 										<Size width="1022" height="1048"/>
 									</size>
 								</EquationGE>
-								<EquationGE presentable="!ed/ec0/7A70/BF0/4759598e5a8c">
+								<EquationGE presentable="!ed/10dda/2CFF/E094/67507863172a">
 									<position>
-										<Point x="0" y="0"/>
+										<Point x="2990" y="2143"/>
 									</position>
 									<size>
 										<Size width="291" height="503"/>
 									</size>
 								</EquationGE>
-								<EquationGE presentable="!ed/ec1/7A70/BF0/4759598e7dd6">
+								<EquationGE presentable="!ed/10ddb/2CFF/E094/675078633143">
 									<position>
-										<Point x="0" y="0"/>
+										<Point x="10610" y="2963"/>
 									</position>
 									<size>
 										<Size width="370" height="503"/>
 									</size>
 								</EquationGE>
-								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/ebf/7A70/BF0/4759598e3de3" dstEquation="!ed/ec1/7A70/BF0/4759598e7dd6"/>
-								<EquationGE kind="OBJ_LIT" presentable="!ed/ec2/7A70/BF0/4759598e2615">
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/10dd9/2CFF/E094/67507863294" dstEquation="!ed/10ddb/2CFF/E094/675078633143">
+									<positions>
+										<Point x="8705" y="3228"/>
+										<Point x="9684" y="3228"/>
+										<Point x="9684" y="3228"/>
+										<Point x="10663" y="3228"/>
+									</positions>
+								</Edge>
+								<EquationGE kind="OBJ_LIT" presentable="!ed/10ddc/2CFF/E094/6750786333d6">
 									<position>
-										<Point x="0" y="0"/>
+										<Point x="6456" y="2884"/>
 									</position>
 									<size>
 										<Size width="212" height="317"/>
 									</size>
 								</EquationGE>
-								<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/ec2/7A70/BF0/4759598e2615" dstEquation="!ed/ebf/7A70/BF0/4759598e3de3"/>
-								<EquationGE kind="OBJ_LIT" presentable="!ed/ec3/7A70/BF0/4759598e3d33">
+								<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/10ddc/2CFF/E094/6750786333d6" dstEquation="!ed/10dd9/2CFF/E094/67507863294">
+									<positions>
+										<Point x="6668" y="3043"/>
+										<Point x="7170" y="3043"/>
+										<Point x="7170" y="3043"/>
+										<Point x="7699" y="3043"/>
+									</positions>
+								</Edge>
+								<EquationGE kind="OBJ_LIT" presentable="!ed/10ddd/2CFF/E094/675078637033">
 									<position>
-										<Point x="0" y="0"/>
+										<Point x="6456" y="3228"/>
 									</position>
 									<size>
 										<Size width="212" height="317"/>
 									</size>
 								</EquationGE>
-								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/ec0/7A70/BF0/4759598e5a8c" dstEquation="!ed/ebf/7A70/BF0/4759598e3de3"/>
-								<Edge leftVarIndex="1" rightExprIndex="3" srcEquation="!ed/ec3/7A70/BF0/4759598e3d33" dstEquation="!ed/ebf/7A70/BF0/4759598e3de3"/>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/10dda/2CFF/E094/67507863172a" dstEquation="!ed/10dd9/2CFF/E094/67507863294">
+									<positions>
+										<Point x="3281" y="2408"/>
+										<Point x="8202" y="2408"/>
+										<Point x="8202" y="2699"/>
+									</positions>
+								</Edge>
+								<Edge leftVarIndex="1" rightExprIndex="3" srcEquation="!ed/10ddd/2CFF/E094/675078637033" dstEquation="!ed/10dd9/2CFF/E094/67507863294">
+									<positions>
+										<Point x="6668" y="3387"/>
+										<Point x="7170" y="3387"/>
+										<Point x="7170" y="3387"/>
+										<Point x="7699" y="3387"/>
+									</positions>
+								</Edge>
 							</presentationElements>
 						</NetDiagram>
 					</diagrams>
@@ -248,9 +275,6 @@
 					</references>
 				</ed:Operator>
 				<kcg:Pragma>
-					doc &quot;Version_1&quot; {Version = &quot;V:1.0&quot;}
-				</kcg:Pragma>
-				<kcg:Pragma>
 					doc &quot;Title_1&quot; {Title = &quot;Title : ADI Aircraft Choice&quot;}
 				</kcg:Pragma>
 				<kcg:Pragma>
@@ -258,6 +282,9 @@
 				</kcg:Pragma>
 				<kcg:Pragma>
 					doc &quot;Date_1&quot; {Date = &quot;03/12/2007&quot;}
+				</kcg:Pragma>
+				<kcg:Pragma>
+					doc &quot;Version_1&quot; {Version = &quot;V:1.0&quot;}
 				</kcg:Pragma>
 			</pragmas>
 		</Operator>

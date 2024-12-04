@@ -272,7 +272,7 @@
 	<pragmas>
 		<ed:Operator oid="!ed/4df2/28C9/1944/594245c86d27" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 			<diagrams>
-				<NetDiagram name="diagram_Find_1" landscape="true" format="A4 (210 297)" oid="!ed/4df9/28C9/1944/594245c85d55">
+				<NetDiagram name="Find" landscape="true" format="A4 (210 297)" oid="!ed/4df9/28C9/1944/594245c85d55">
 					<presentationElements>
 						<EquationGE presentable="!ed/4df3/28C9/1944/594245c87dbb">
 							<position>

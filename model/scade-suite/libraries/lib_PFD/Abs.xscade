@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="Abs">
+		<Operator kind="function" name="abs">
 			<inputs>
-				<Variable name="A_Input">
+				<Variable name="in">
 					<type>
 						<NamedType>
 							<type>
@@ -17,7 +17,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="A_Output">
+				<Variable name="out">
 					<type>
 						<NamedType>
 							<type>
@@ -190,7 +190,7 @@
 						<ed:Equation oid="!ed/3226/66D8/CE0/47541a9b4004"/>
 					</pragmas>
 				</Equation>
-				<!-- _L5 = A_Input; -->
+				<!-- _L5 = in; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L5"/>
@@ -198,7 +198,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="A_Input"/>
+								<ConstVarRef name="in"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -206,10 +206,10 @@
 						<ed:Equation oid="!ed/3227/66D8/CE0/47541a9b446d"/>
 					</pragmas>
 				</Equation>
-				<!-- A_Output = _L2; -->
+				<!-- out = _L2; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="A_Output"/>
+						<VariableRef name="out"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -244,10 +244,10 @@
 				</Equation>
 			</data>
 			<pragmas>
-				<ed:Operator oid="!ed/321b/66D8/CE0/47541a9b7391" symbolFile="Abs.ssl" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Operator oid="!ed/321b/66D8/CE0/47541a9b7391" symbolFile="Abs.ssl" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<comment>Gives the real or integer absolute value.</comment>
 					<diagrams>
-						<NetDiagram name="eq_Abs" landscape="false" format="A4 (210 297)" oid="!ed/3223/66D8/CE0/47541a9b9e8">
+						<NetDiagram name="abs" landscape="false" format="A4 (210 297)" oid="!ed/3223/66D8/CE0/47541a9b9e8">
 							<presentationElements>
 								<EquationGE presentable="!ed/3224/66D8/CE0/47541a9b5af1">
 									<position>

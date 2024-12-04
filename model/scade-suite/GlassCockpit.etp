@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project id="1" oid_count="498" defaultConfiguration="18">
+<Project id="1" oid_count="507" defaultConfiguration="12">
 	<props>
 		<Prop id="10" name="@STUDIO:PRODUCT">
 			<value>SC</value>
@@ -221,11 +221,11 @@
 			<configuration>302</configuration>
 		</Prop>
 		<Prop id="308" name="@GENERATOR:GENERATOR">
-			<value>C QUAL661</value>
+			<value>C QUAL663</value>
 			<configuration>302</configuration>
 		</Prop>
 		<Prop id="309" name="@GENERATOR:TARGET_DIR">
-			<value>..\..\Executables</value>
+			<value>$(Configuration)</value>
 			<configuration>302</configuration>
 		</Prop>
 		<Prop id="310" name="@GENERATOR:EXECUTION_PERIODE">
@@ -329,10 +329,6 @@
 		<Prop id="422" name="@SCADE:DEFAULTFILE">
 			<value>GlassCockpit.xscade</value>
 		</Prop>
-		<Prop id="431" name="@GENERATOR:ROOTNODE">
-			<value>GlassCockpit</value>
-			<configuration>302</configuration>
-		</Prop>
 		<Prop id="450" name="@STUDIO:TOOLCONF">
 			<value>Synchronization</value>
 			<value>12</value>
@@ -357,10 +353,6 @@
 		<Prop id="469" name="@SCADE:ASSTRING_TRIM">
 			<value></value>
 		</Prop>
-		<Prop id="473" name="@GENERATOR:DISPLAY_ENABLED_PANELS">
-			<value>..\Display\GCS.sgfx,Code</value>
-			<configuration>12</configuration>
-		</Prop>
 		<Prop id="474" name="@STUDIO:TOOLCONF">
 			<value>Import/Export</value>
 			<value>12</value>
@@ -371,7 +363,7 @@
 			<value>302</value>
 		</Prop>
 		<Prop id="485" name="@GENERATOR:DISPLAY_DISABLED_PANELS">
-			<value>..\Display\GCS.sgfx</value>
+			<value>..\scade-display\GCS.sgfx</value>
 			<configuration>18</configuration>
 		</Prop>
 		<Prop id="486" name="@SCADE:NOTEFILE">
@@ -400,19 +392,60 @@
 			<value>..\scade-display\GCS.sgfx,Co-simulation</value>
 			<configuration>302</configuration>
 		</Prop>
+		<Prop id="500" name="@GENERATOR:DISPLAY_DISABLED_PANELS">
+			<value>..\scade-display\GCS.sgfx</value>
+			<configuration>12</configuration>
+		</Prop>
+		<Prop id="501" name="@METRICS_RULES:SELECTED_ROOTS">
+			<value>GlassCockpit</value>
+			<configuration>12</configuration>
+		</Prop>
+		<Prop id="502" name="@METRICS_RULES:USER_DEF_FILES">
+			<value>$(SCADE)/scripts/MetricRule/DefaultMetrics.py</value>
+			<value>$(SCADE)/scripts/MetricRule/DefaultRules.py</value>
+		</Prop>
+		<Prop id="503" name="@METRICS_RULES:RULES_PARAM">
+			<value>SDR-30-1,7</value>
+			<value>SDR-38,&lt;, &gt;, &lt;=, &gt;=, =, &lt;&gt;</value>
+			<value>SDR-30-6,7</value>
+			<value>SDR-30-5,7</value>
+			<value>SDR-30-4,5</value>
+			<value>SDR-52,true,false</value>
+			<value>SDR-19,in=acc.*In, out=acc.*Out, strict=False</value>
+			<value>SDR-65,configuration=</value>
+			<value>SDR-51,index=index</value>
+			<value>SDR-22,10</value>
+			<value>SDR-64,configuration=</value>
+			<value>SDR-31,margins=0;0</value>
+			<value>SDR-32,upper_levels=1</value>
+			<value>SDR-20,continue=continue</value>
+			<value>SDR-30-3,15</value>
+			<value>SDR-30-2,7</value>
+			<configuration>12</configuration>
+		</Prop>
+		<Prop id="504" name="@METRICS_RULES:SELECTED_RULES">
+			<value>SDR-18</value>
+			<value>SDR-21</value>
+			<value>SDR-11-12-2</value>
+			<configuration>12</configuration>
+		</Prop>
+		<Prop id="505" name="@GENERATOR:ROOTNODE">
+			<value>glassCockpit</value>
+			<configuration>302</configuration>
+		</Prop>
 	</props>
 	<roots>
 		<Folder id="3" extensions="vsp;etp" name="SCADE Libraries">
 			<elements>
 				<FileRef id="77" persistAs=".\libraries\lib_PFD\lib_PFD.etp"/>
 				<FileRef id="173" persistAs=".\libraries\PFD_Types\PFD_Types.etp"/>
-				<FileRef id="176" persistAs=".\libraries\HSI\HSI.etp"/>
 				<FileRef id="177" persistAs=".\libraries\ADI\ADI.etp"/>
 				<FileRef id="218" persistAs=".\libraries\Tunnel_Of_Flight\Tunnel_Of_Flight.etp"/>
 				<FileRef id="233" persistAs=".\libraries\Aircraft\Aircraft.etp"/>
 				<FileRef id="494" persistAs=".\libraries\ActiveAreas\activeareas.etp"/>
 				<FileRef id="495" persistAs="$(SCADE)\libraries\SC65\libdigital\libdigital.etp"/>
 				<FileRef id="496" persistAs="$(SCADE)\libraries\SC65\libpwlinear\libpwlinear.etp"/>
+				<FileRef id="176" persistAs=".\libraries\HSI\HSI.etp"/>
 			</elements>
 		</Folder>
 		<Folder id="11" extensions="xscade" name="Model Files">
@@ -450,6 +483,11 @@
 		<Folder id="451" extensions="sdy" name="Graphical Panels Mapping File">
 			<elements>
 				<FileRef id="452" persistAs="GlassCockpit.sdy"/>
+			</elements>
+		</Folder>
+		<Folder id="506" extensions="rcj" name="Rules Checker">
+			<elements>
+				<FileRef id="507" persistAs="GlassCockpit.rcj"/>
 			</elements>
 		</Folder>
 	</roots>

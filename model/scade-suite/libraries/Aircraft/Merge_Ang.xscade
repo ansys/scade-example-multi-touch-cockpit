@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="node" name="Merge_Ang">
+		<Operator kind="node" name="mergeAng">
 			<inputs>
-				<Variable name="Input1">
+				<Variable name="in">
 					<type>
 						<NamedType>
 							<type>
@@ -17,7 +17,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="Output1">
+				<Variable name="out">
 					<type>
 						<NamedType>
 							<type>
@@ -260,7 +260,7 @@
 						<ed:Equation oid="!ed/699/53C4/4AC/4848f6a518e2"/>
 					</pragmas>
 				</Equation>
-				<!-- _L5 = Input1; -->
+				<!-- _L5 = in; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L5"/>
@@ -268,7 +268,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Input1"/>
+								<ConstVarRef name="in"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -276,10 +276,10 @@
 						<ed:Equation oid="!ed/6ad/53C4/4AC/4848f6b4789"/>
 					</pragmas>
 				</Equation>
-				<!-- Output1 = _L3; -->
+				<!-- out = _L3; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="Output1"/>
+						<VariableRef name="out"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -292,18 +292,18 @@
 						<ed:Equation oid="!ed/6af/53C4/4AC/4848f6b46da5"/>
 					</pragmas>
 				</Equation>
-				<!-- _L34 = Verif_0_360(_L5, _L4); -->
+				<!-- _L34 = verif0To360(_L5, _L4); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L34"/>
 					</lefts>
 					<right>
-						<!-- Verif_0_360(_L5, _L4) -->
+						<!-- verif0To360(_L5, _L4) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
 									<operator>
-										<OperatorRef name="Verif_0_360"/>
+										<OperatorRef name="verif0To360"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -319,6 +319,17 @@
 									</path>
 								</IdExpression>
 							</callParameters>
+							<pragmas>
+								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<references>
+										<OperatorRef path="verif0To360" refOid="!ed/109e1/6347/16C4/484e7ce7c16">
+											<InputRef refOid="!ed/109e3/6347/16C4/484e7ceb4a54"/>
+											<InputRef refOid="!ed/109e4/6347/16C4/484e7ceb17ed"/>
+											<OutputRef refOid="!ed/109e5/6347/16C4/484e7cedd05"/>
+										</OperatorRef>
+									</references>
+								</ed:CallExpression>
+							</pragmas>
 						</CallExpression>
 					</right>
 					<pragmas>
@@ -450,9 +461,9 @@
 				</Equation>
 			</data>
 			<pragmas>
-				<ed:Operator oid="!ed/679/53C4/4AC/4848f69e7cc6" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Operator oid="!ed/679/53C4/4AC/4848f69e7cc6" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_Merge_Ang_1" landscape="true" format="A4 (210 297)" oid="!ed/67a/53C4/4AC/4848f69e345f">
+						<NetDiagram name="mergeAng" landscape="true" format="A4 (210 297)" oid="!ed/67a/53C4/4AC/4848f69e345f">
 							<presentationElements>
 								<EquationGE kind="OBJ_LIT" presentable="!ed/693/53C4/4AC/4848f6a536d3">
 									<position>
@@ -681,6 +692,9 @@
 							</presentationElements>
 						</NetDiagram>
 					</diagrams>
+					<references>
+						<ConstVarRef path="PI" refOid="!ed/14ac5/654/16A8/480f3a0a223"/>
+					</references>
 				</ed:Operator>
 			</pragmas>
 		</Operator>

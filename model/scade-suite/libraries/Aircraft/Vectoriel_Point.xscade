@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="Vectoriel_Point">
+		<Operator kind="function" name="vectorielPoint">
 			<inputs>
-				<Variable name="Pt">
+				<Variable name="pt">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Point"/>
+								<TypeRef name="point"/>
 							</type>
 						</NamedType>
 					</type>
@@ -17,7 +17,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="Vect">
+				<Variable name="vect">
 					<type>
 						<NamedType>
 							<type>
@@ -35,7 +35,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Point"/>
+								<TypeRef name="point"/>
 							</type>
 						</NamedType>
 					</type>
@@ -112,7 +112,7 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L1 = Pt; -->
+				<!-- _L1 = pt; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1"/>
@@ -120,7 +120,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Pt"/>
+								<ConstVarRef name="pt"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -128,10 +128,10 @@
 						<ed:Equation oid="!ed/4a75/740D/148C/4833ddc4982"/>
 					</pragmas>
 				</Equation>
-				<!-- Vect = _L5; -->
+				<!-- vect = _L5; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="Vect"/>
+						<VariableRef name="vect"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -263,6 +263,17 @@
 									</path>
 								</IdExpression>
 							</callParameters>
+							<pragmas>
+								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<references>
+										<OperatorRef path="mathext::PowerRR" refOid="win_1570/3419/3E8/3A810C13/4275">
+											<InputRef refOid="win_1574/62D/3E8/3A810C28/1B9F"/>
+											<InputRef refOid="win_705/676D/4E0/3AADDF12/2194"/>
+											<OutputRef refOid="win_1575/1AC3/3E8/3A810C29/24DE"/>
+										</OperatorRef>
+									</references>
+								</ed:CallExpression>
+							</pragmas>
 						</CallExpression>
 					</right>
 					<pragmas>
@@ -283,9 +294,9 @@
 				</Equation>
 			</data>
 			<pragmas>
-				<ed:Operator oid="!ed/4a56/740D/148C/4833dd665f38" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Operator oid="!ed/4a56/740D/148C/4833dd665f38" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_Vectoriel_Point_1" landscape="true" format="A4 (210 297)" oid="!ed/4a57/740D/148C/4833dd666e40">
+						<NetDiagram name="vectorielPoint" landscape="true" format="A4 (210 297)" oid="!ed/4a57/740D/148C/4833dd666e40">
 							<presentationElements>
 								<EquationGE presentable="!ed/4a75/740D/148C/4833ddc4982">
 									<position>
@@ -402,6 +413,9 @@
 							</presentationElements>
 						</NetDiagram>
 					</diagrams>
+					<references>
+						<TypeRef path="point" refOid="!ed/42e3/3913/15D0/4805f1284eb4"/>
+					</references>
 				</ed:Operator>
 			</pragmas>
 		</Operator>

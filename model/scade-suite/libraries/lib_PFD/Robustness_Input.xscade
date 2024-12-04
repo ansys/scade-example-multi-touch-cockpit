@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="Robustness_Input">
+		<Operator kind="function" name="robustnessInput">
 			<inputs>
-				<Variable name="In">
+				<Variable name="in">
 					<type>
 						<NamedType>
 							<type>
@@ -15,7 +15,7 @@
 						<ed:Variable oid="!ed/30ca/66D8/CE0/4753c9c55a45"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Low">
+				<Variable name="low">
 					<type>
 						<NamedType>
 							<type>
@@ -27,7 +27,7 @@
 						<ed:Variable oid="!ed/30c7/66D8/CE0/4753c9c55168" hidden="true"/>
 					</pragmas>
 				</Variable>
-				<Variable name="High">
+				<Variable name="high">
 					<type>
 						<NamedType>
 							<type>
@@ -41,7 +41,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="Flag_Fail">
+				<Variable name="flagFail">
 					<type>
 						<NamedType>
 							<type>
@@ -53,7 +53,7 @@
 						<ed:Variable oid="!ed/3135/66D8/CE0/4753cbbe658d"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Out">
+				<Variable name="out">
 					<type>
 						<NamedType>
 							<type>
@@ -208,7 +208,7 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L1 = In; -->
+				<!-- _L1 = in; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1"/>
@@ -216,7 +216,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="In"/>
+								<ConstVarRef name="in"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -250,7 +250,7 @@
 						<ed:Equation oid="!ed/30d7/66D8/CE0/4753c9c55d1"/>
 					</pragmas>
 				</Equation>
-				<!-- _L3 = Low; -->
+				<!-- _L3 = low; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L3"/>
@@ -258,7 +258,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Low"/>
+								<ConstVarRef name="low"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -309,7 +309,7 @@
 						<ed:Equation oid="!ed/30d9/66D8/CE0/4753c9c56e4d"/>
 					</pragmas>
 				</Equation>
-				<!-- _L6 = Low; -->
+				<!-- _L6 = low; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L6"/>
@@ -317,7 +317,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Low"/>
+								<ConstVarRef name="low"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -351,7 +351,7 @@
 						<ed:Equation oid="!ed/30dc/66D8/CE0/4753c9c5329c"/>
 					</pragmas>
 				</Equation>
-				<!-- _L8 = High; -->
+				<!-- _L8 = high; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L8"/>
@@ -359,7 +359,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="High"/>
+								<ConstVarRef name="high"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -410,7 +410,7 @@
 						<ed:Equation oid="!ed/30de/66D8/CE0/4753c9c53e9d"/>
 					</pragmas>
 				</Equation>
-				<!-- _L11 = High; -->
+				<!-- _L11 = high; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L11"/>
@@ -418,7 +418,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="High"/>
+								<ConstVarRef name="high"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -426,10 +426,10 @@
 						<ed:Equation oid="!ed/30df/66D8/CE0/4753c9c53296"/>
 					</pragmas>
 				</Equation>
-				<!-- Out = _L4; -->
+				<!-- out = _L4; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="Out"/>
+						<VariableRef name="out"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -442,7 +442,7 @@
 						<ed:Equation oid="!ed/30e0/66D8/CE0/4753c9c51aaf"/>
 					</pragmas>
 				</Equation>
-				<!-- _L13 = In; -->
+				<!-- _L13 = in; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L13"/>
@@ -450,7 +450,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="In"/>
+								<ConstVarRef name="in"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -484,10 +484,10 @@
 						<ed:Equation oid="!ed/312f/66D8/CE0/4753cb9f7076"/>
 					</pragmas>
 				</Equation>
-				<!-- Flag_Fail = _L14; -->
+				<!-- flagFail = _L14; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="Flag_Fail"/>
+						<VariableRef name="flagFail"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -502,12 +502,12 @@
 				</Equation>
 			</data>
 			<pragmas>
-				<ed:Operator oid="!ed/30c6/66D8/CE0/4753c9c544da" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Operator oid="!ed/30c6/66D8/CE0/4753c9c544da" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<comment>If In &gt;= High, Out equals to High and Flag equals to True,</comment>
 					<comment>If In &lt;= Low, Out equals to Low and Flag equals to True,</comment>
 					<comment>Otherwise, Out equals In  ang Flag equals to False.</comment>
 					<diagrams>
-						<NetDiagram name="diagram_Robustness_Input_1" landscape="true" format="A4 (210 297)" oid="!ed/30d5/66D8/CE0/4753c9c54ec7">
+						<NetDiagram name="robustnessInput" landscape="true" format="A4 (210 297)" oid="!ed/30d5/66D8/CE0/4753c9c54ec7">
 							<presentationElements>
 								<EquationGE presentable="!ed/30d6/66D8/CE0/4753c9c52bb4">
 									<position>

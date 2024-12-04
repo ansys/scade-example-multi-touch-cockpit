@@ -968,7 +968,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/6363/33E8/42A0/5a2020af164a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_speedWidget_1" landscape="true" format="A4 (210 297)" oid="!ed/638f/33E8/42A0/5a2020af7885">
+						<NetDiagram name="speedWidget" landscape="true" format="A4 (210 297)" oid="!ed/638f/33E8/42A0/5a2020af7885">
 							<presentationElements>
 								<StateMachineGE presentable="!ed/6364/33E8/42A0/5a2020af345f">
 									<position>

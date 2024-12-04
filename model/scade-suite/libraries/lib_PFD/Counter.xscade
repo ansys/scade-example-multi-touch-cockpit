@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="node" name="Counter">
+		<Operator kind="node" name="counter">
 			<inputs>
-				<Variable name="Incr">
+				<Variable name="incr">
 					<type>
 						<NamedType>
 							<type>
@@ -15,7 +15,7 @@
 						<ed:Variable oid="!ed/2145/4C50/218/474ff6f87042"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Reset">
+				<Variable name="reset">
 					<type>
 						<NamedType>
 							<type>
@@ -29,7 +29,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="Count">
+				<Variable name="count">
 					<type>
 						<NamedType>
 							<type>
@@ -155,7 +155,7 @@
 						<ed:Equation oid="!ed/2173/4C50/218/474ff7006ecb"/>
 					</pragmas>
 				</Equation>
-				<!-- _L2 = Reset; -->
+				<!-- _L2 = reset; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L2"/>
@@ -163,7 +163,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Reset"/>
+								<ConstVarRef name="reset"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -171,7 +171,7 @@
 						<ed:Equation oid="!ed/2176/4C50/218/474ff700a7c"/>
 					</pragmas>
 				</Equation>
-				<!-- _L3 = Incr; -->
+				<!-- _L3 = incr; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L3"/>
@@ -179,7 +179,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Incr"/>
+								<ConstVarRef name="incr"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -207,10 +207,10 @@
 						<ed:Equation oid="!ed/217c/4C50/218/474ff7004606"/>
 					</pragmas>
 				</Equation>
-				<!-- Count = _L6; -->
+				<!-- count = _L6; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="Count"/>
+						<VariableRef name="count"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -294,11 +294,11 @@
 				</Equation>
 			</data>
 			<pragmas>
-				<ed:Operator oid="!ed/213d/4C50/218/474ff6e86f22" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Operator oid="!ed/213d/4C50/218/474ff6e86f22" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<comment>The output is incremented at each cycle with Incr.</comment>
 					<comment>At the Initialisation or if Reset equals &quot;true&quot;, the output is set to Incr.</comment>
 					<diagrams>
-						<NetDiagram name="diagram_Counter_1" landscape="true" format="A4 (210 297)" oid="!ed/213e/4C50/218/474ff6e8478b">
+						<NetDiagram name="counter" landscape="true" format="A4 (210 297)" oid="!ed/213e/4C50/218/474ff6e8478b">
 							<presentationElements>
 								<EquationGE symetrical="true" presentable="!ed/2173/4C50/218/474ff7006ecb">
 									<position>
@@ -358,10 +358,10 @@
 								</EquationGE>
 								<Edge leftVarIndex="1" rightExprIndex="3" srcEquation="!ed/2173/4C50/218/474ff7006ecb" dstEquation="!ed/2181/4C50/218/474ff700915">
 									<positions>
-										<Point x="6456" y="5186"/>
-										<Point x="7197" y="5186"/>
-										<Point x="7197" y="5186"/>
-										<Point x="7938" y="5186"/>
+										<Point x="6456" y="5212"/>
+										<Point x="7197" y="5212"/>
+										<Point x="7197" y="5212"/>
+										<Point x="7938" y="5212"/>
 									</positions>
 								</Edge>
 								<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/2179/4C50/218/474ff7002f6b" dstEquation="!ed/2184/4C50/218/474ff7002d92">
@@ -393,8 +393,8 @@
 										<Point x="10874" y="6376"/>
 										<Point x="10874" y="7408"/>
 										<Point x="4180" y="7408"/>
-										<Point x="4180" y="5186"/>
-										<Point x="5450" y="5186"/>
+										<Point x="4180" y="5212"/>
+										<Point x="5450" y="5212"/>
 									</positions>
 								</Edge>
 								<Edge leftVarIndex="1" rightExprIndex="3" srcEquation="!ed/217c/4C50/218/474ff7004606" dstEquation="!ed/2173/4C50/218/474ff7006ecb">

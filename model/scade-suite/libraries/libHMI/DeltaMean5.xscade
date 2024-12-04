@@ -402,7 +402,7 @@
 	<pragmas>
 		<ed:Operator oid="!ed/7130/33E8/42A0/5a2020c935ec" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 			<diagrams>
-				<NetDiagram name="diagram_DeltaMean5_1" landscape="true" format="A4 (210 297)" oid="!ed/713b/33E8/42A0/5a2020c9419c">
+				<NetDiagram name="DeltaMean5" landscape="true" format="A4 (210 297)" oid="!ed/713b/33E8/42A0/5a2020c9419c">
 					<presentationElements>
 						<EquationGE presentable="!ed/7131/33E8/42A0/5a2020c94551">
 							<position>

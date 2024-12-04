@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="node" name="HSI_Turn_Rate_Indicator_Value">
+		<Operator kind="node" name="hsiTurnRateIndicatorValue">
 			<inputs>
-				<Variable name="Altitude_Info">
+				<Variable name="altitudeInfo">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Altitude_Info_type"/>
+								<TypeRef name="altitudeInfoType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -15,11 +15,11 @@
 						<ed:Variable oid="!ed/bc1/7A70/BF0/4759559f2d27"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Systeme_Info">
+				<Variable name="systemInfo">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="System_Info_type"/>
+								<TypeRef name="systemInfoType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -29,7 +29,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="HSI_Yaw_Rate">
+				<Variable name="hsiYawRate">
 					<type>
 						<NamedType>
 							<type>
@@ -167,7 +167,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Altitude_Info_type"/>
+								<TypeRef name="altitudeInfoType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -191,7 +191,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Altitude_Info_type"/>
+								<TypeRef name="altitudeInfoType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -215,7 +215,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="System_Info_type"/>
+								<TypeRef name="systemInfoType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -309,20 +309,20 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L8 = (activate HSI_Memory_4 every _L13 initial default (0.0))(_L39); -->
+				<!-- _L8 = (activate hsiMemory_4 every _L13 initial default (0.0))(_L39); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L8"/>
 					</lefts>
 					<right>
-						<!-- (activate HSI_Memory_4 every _L13 initial default (0.0))(_L39) -->
+						<!-- (activate hsiMemory_4 every _L13 initial default (0.0))(_L39) -->
 						<CallExpression>
 							<operator>
 								<ActivateOp>
 									<operator>
 										<OpCall name="1">
 											<operator>
-												<OperatorRef name="HSI_Memory_4"/>
+												<OperatorRef name="hsiMemory_4"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -352,7 +352,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<OperatorRef path="HSI_Memory_4" refOid="!ed/825/7A70/BF0/4759559b34">
+										<OperatorRef path="hsiMemory_4" refOid="!ed/825/7A70/BF0/4759559b34">
 											<InputRef refOid="!ed/827/7A70/BF0/4759559b1f23"/>
 											<OutputRef refOid="!ed/826/7A70/BF0/4759559b2e4b"/>
 										</OperatorRef>
@@ -365,10 +365,10 @@
 						<ed:Equation oid="!ed/bdf/7A70/BF0/4759559f3435"/>
 					</pragmas>
 				</Equation>
-				<!-- HSI_Yaw_Rate = _L27; -->
+				<!-- hsiYawRate = _L27; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HSI_Yaw_Rate"/>
+						<VariableRef name="hsiYawRate"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -384,18 +384,18 @@
 						</kcg:Pragma>
 					</pragmas>
 				</Equation>
-				<!-- _L12 = Counter(_L15, _L16); -->
+				<!-- _L12 = counter(_L15, _L16); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L12"/>
 					</lefts>
 					<right>
-						<!-- Counter(_L15, _L16) -->
+						<!-- counter(_L15, _L16) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
 									<operator>
-										<OperatorRef name="Counter"/>
+										<OperatorRef name="counter"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -414,7 +414,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<OperatorRef path="Counter" refOid="!ed/213d/4C50/218/474ff6e86f22">
+										<OperatorRef path="counter" refOid="!ed/213d/4C50/218/474ff6e86f22">
 											<InputRef refOid="!ed/2145/4C50/218/474ff6f87042"/>
 											<InputRef refOid="!ed/214b/4C50/218/474ff6f8593"/>
 											<OutputRef refOid="!ed/2152/4C50/218/474ff6f82c37"/>
@@ -548,18 +548,18 @@
 						<ed:Equation oid="!ed/be9/7A70/BF0/4759559f7a41"/>
 					</pragmas>
 				</Equation>
-				<!-- _L27 = Range_Limiter_InIn(_L28, (-80.0), 80.0); -->
+				<!-- _L27 = rangeLimiterInIn(_L28, (-80.0), 80.0); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L27"/>
 					</lefts>
 					<right>
-						<!-- Range_Limiter_InIn(_L28, (-80.0), 80.0) -->
+						<!-- rangeLimiterInIn(_L28, (-80.0), 80.0) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
 									<operator>
-										<OperatorRef name="Range_Limiter_InIn"/>
+										<OperatorRef name="rangeLimiterInIn"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -575,7 +575,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<OperatorRef path="Range_Limiter_InIn" refOid="!ed/4216/4C50/218/474ffaa27bfa">
+										<OperatorRef path="rangeLimiterInIn" refOid="!ed/4216/4C50/218/474ffaa27bfa">
 											<InputRef refOid="!ed/421e/4C50/218/474ffad5607c"/>
 											<InputRef refOid="!ed/4225/4C50/218/474ffad533cd"/>
 											<InputRef refOid="!ed/422c/4C50/218/474ffad57619"/>
@@ -634,7 +634,7 @@
 						<ed:Equation oid="!ed/bec/7A70/BF0/4759559f2d7e"/>
 					</pragmas>
 				</Equation>
-				<!-- _L32 = Altitude_Info; -->
+				<!-- _L32 = altitudeInfo; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L32"/>
@@ -642,7 +642,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Altitude_Info"/>
+								<ConstVarRef name="altitudeInfo"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -650,13 +650,13 @@
 						<ed:Equation oid="!ed/bef/7A70/BF0/4759559fb1f"/>
 					</pragmas>
 				</Equation>
-				<!-- _L33 = _L32.AT_Heading; -->
+				<!-- _L33 = _L32.heading; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L33"/>
 					</lefts>
 					<right>
-						<!-- _L32.AT_Heading -->
+						<!-- _L32.heading -->
 						<PrjOp name="1">
 							<flow>
 								<IdExpression>
@@ -666,7 +666,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="AT_Heading"/>
+								<Label name="heading"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -674,13 +674,13 @@
 						<ed:Equation oid="!ed/bf0/7A70/BF0/4759559f6487"/>
 					</pragmas>
 				</Equation>
-				<!-- _L34 = _L35.AT_Yaw_Rate; -->
+				<!-- _L34 = _L35.yawRate; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L34"/>
 					</lefts>
 					<right>
-						<!-- _L35.AT_Yaw_Rate -->
+						<!-- _L35.yawRate -->
 						<PrjOp name="2">
 							<flow>
 								<IdExpression>
@@ -690,7 +690,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="AT_Yaw_Rate"/>
+								<Label name="yawRate"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -698,7 +698,7 @@
 						<ed:Equation oid="!ed/bf1/7A70/BF0/4759559f3b17"/>
 					</pragmas>
 				</Equation>
-				<!-- _L35 = Altitude_Info; -->
+				<!-- _L35 = altitudeInfo; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L35"/>
@@ -706,7 +706,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Altitude_Info"/>
+								<ConstVarRef name="altitudeInfo"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -714,7 +714,7 @@
 						<ed:Equation oid="!ed/bf2/7A70/BF0/4759559f4bf8"/>
 					</pragmas>
 				</Equation>
-				<!-- _L36 = Systeme_Info; -->
+				<!-- _L36 = systemInfo; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L36"/>
@@ -722,7 +722,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Systeme_Info"/>
+								<ConstVarRef name="systemInfo"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -730,13 +730,13 @@
 						<ed:Equation oid="!ed/bf3/7A70/BF0/4759559f64d4"/>
 					</pragmas>
 				</Equation>
-				<!-- _L37 = _L36.SY_Compute_Yaw_Rate; -->
+				<!-- _L37 = _L36.syComputeYawRate; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L37"/>
 					</lefts>
 					<right>
-						<!-- _L36.SY_Compute_Yaw_Rate -->
+						<!-- _L36.syComputeYawRate -->
 						<PrjOp name="3">
 							<flow>
 								<IdExpression>
@@ -746,7 +746,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="SY_Compute_Yaw_Rate"/>
+								<Label name="syComputeYawRate"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -882,7 +882,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/bbf/7A70/BF0/4759559f7150" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_HSI_Turn_Rate_Indicator_Value_1" landscape="true" format="A4 (210 297)" oid="!ed/bde/7A70/BF0/4759559f68fd">
+						<NetDiagram name="hsiTurnRateIndicatorValue" landscape="true" format="A4 (210 297)" oid="!ed/bde/7A70/BF0/4759559f68fd">
 							<presentationElements>
 								<EquationGE presentable="!ed/bdf/7A70/BF0/4759559f3435">
 									<position>
@@ -1255,8 +1255,8 @@
 						</NetDiagram>
 					</diagrams>
 					<references>
-						<TypeRef path="Altitude_Info_type" refOid="!ed/227d/444A/B40/47594cd24039"/>
-						<TypeRef path="System_Info_type" refOid="!ed/22f4/444A/B40/47594cd27d9d"/>
+						<TypeRef path="altitudeInfoType" refOid="!ed/227d/444A/B40/47594cd24039"/>
+						<TypeRef path="systemInfoType" refOid="!ed/22f4/444A/B40/47594cd27d9d"/>
 					</references>
 				</ed:Operator>
 				<kcg:Pragma>

@@ -3,8 +3,8 @@
 	<declarations>
 		<Package name="AutoPilot">
 			<declarations>
-				<Operator name="Goto" href="Goto.xscade"/>
-				<Operator name="VIRTUOSE_PA_Test" href="VIRTUOSE_PA_Test.xscade"/>
+				<Operator name="goto" href="Goto.xscade"/>
+				<Operator name="virtuosePaTest" href="VIRTUOSE_PA_Test.xscade"/>
 			</declarations>
 			<pragmas>
 				<ed:Package oid="!ed/cac1/5F82/1828/5a25671a7905" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">

@@ -247,7 +247,7 @@
 	<pragmas>
 		<ed:Operator oid="!ed/4d2c/28C9/1944/594245c85039" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 			<diagrams>
-				<NetDiagram name="diagram_CeilVal_1" landscape="true" format="A4 (210 297)" oid="!ed/4d33/28C9/1944/594245c8c8a">
+				<NetDiagram name="CeilVal" landscape="true" format="A4 (210 297)" oid="!ed/4d33/28C9/1944/594245c8c8a">
 					<presentationElements>
 						<EquationGE presentable="!ed/4d2d/28C9/1944/594245c81088">
 							<position>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="ADI_FD_Pitch_Value">
+		<Operator kind="function" name="fdPitchValue">
 			<inputs>
-				<Variable name="FD_Reference">
+				<Variable name="fdReference">
 					<type>
 						<NamedType>
 							<type>
@@ -15,7 +15,7 @@
 						<ed:Variable oid="!ed/10df/7A70/BF0/475959914b95"/>
 					</pragmas>
 				</Variable>
-				<Variable name="FD_Pitch">
+				<Variable name="fdPitch">
 					<type>
 						<NamedType>
 							<type>
@@ -27,7 +27,7 @@
 						<ed:Variable oid="!ed/10e0/7A70/BF0/4759599135a4"/>
 					</pragmas>
 				</Variable>
-				<Variable name="AT_Pitch">
+				<Variable name="pitch">
 					<type>
 						<NamedType>
 							<type>
@@ -39,7 +39,7 @@
 						<ed:Variable oid="!ed/10e1/7A70/BF0/475959913a03"/>
 					</pragmas>
 				</Variable>
-				<Variable name="AC_FD_Pitch_Gain">
+				<Variable name="pitchGain">
 					<type>
 						<NamedType>
 							<type>
@@ -53,7 +53,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="ADI_FD_Pitch">
+				<Variable name="adiFdPitch">
 					<type>
 						<NamedType>
 							<type>
@@ -177,7 +177,7 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L1 = FD_Pitch; -->
+				<!-- _L1 = fdPitch; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1"/>
@@ -185,7 +185,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="FD_Pitch"/>
+								<ConstVarRef name="fdPitch"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -219,7 +219,7 @@
 						<ed:Equation oid="!ed/10ee/7A70/BF0/475959917794"/>
 					</pragmas>
 				</Equation>
-				<!-- _L3 = FD_Reference; -->
+				<!-- _L3 = fdReference; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L3"/>
@@ -227,7 +227,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="FD_Reference"/>
+								<ConstVarRef name="fdReference"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -261,7 +261,7 @@
 						<ed:Equation oid="!ed/10f0/7A70/BF0/475959914707"/>
 					</pragmas>
 				</Equation>
-				<!-- _L5 = AC_FD_Pitch_Gain; -->
+				<!-- _L5 = pitchGain; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L5"/>
@@ -269,7 +269,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="AC_FD_Pitch_Gain"/>
+								<ConstVarRef name="pitchGain"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -277,7 +277,7 @@
 						<ed:Equation oid="!ed/10f1/7A70/BF0/475959914d28"/>
 					</pragmas>
 				</Equation>
-				<!-- _L6 = AT_Pitch; -->
+				<!-- _L6 = pitch; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L6"/>
@@ -285,7 +285,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="AT_Pitch"/>
+								<ConstVarRef name="pitch"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -319,10 +319,10 @@
 						<ed:Equation oid="!ed/10f3/7A70/BF0/4759599129c9"/>
 					</pragmas>
 				</Equation>
-				<!-- ADI_FD_Pitch = _L7; -->
+				<!-- adiFdPitch = _L7; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="ADI_FD_Pitch"/>
+						<VariableRef name="adiFdPitch"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -385,9 +385,9 @@
 				</Equation>
 			</data>
 			<pragmas>
-				<ed:Operator oid="!ed/10dd/7A70/BF0/475959911c22" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Operator oid="!ed/10dd/7A70/BF0/475959911c22" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_ADI_FD_Pitch_Value_1" landscape="true" format="A4 (210 297)" oid="!ed/10ec/7A70/BF0/4759599163ca">
+						<NetDiagram name="fdPitchValue" landscape="true" format="A4 (210 297)" oid="!ed/10ec/7A70/BF0/4759599163ca">
 							<presentationElements>
 								<EquationGE presentable="!ed/10ed/7A70/BF0/475959915184">
 									<position>

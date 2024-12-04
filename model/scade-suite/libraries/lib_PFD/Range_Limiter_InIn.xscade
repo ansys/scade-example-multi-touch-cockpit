@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="Range_Limiter_InIn">
+		<Operator kind="function" name="rangeLimiterInIn">
 			<inputs>
-				<Variable name="In">
+				<Variable name="in">
 					<type>
 						<NamedType>
 							<type>
@@ -15,7 +15,7 @@
 						<ed:Variable oid="!ed/421e/4C50/218/474ffad5607c"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Low">
+				<Variable name="low">
 					<type>
 						<NamedType>
 							<type>
@@ -27,7 +27,7 @@
 						<ed:Variable oid="!ed/4225/4C50/218/474ffad533cd" hidden="true"/>
 					</pragmas>
 				</Variable>
-				<Variable name="High">
+				<Variable name="high">
 					<type>
 						<NamedType>
 							<type>
@@ -41,7 +41,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="Out">
+				<Variable name="out">
 					<type>
 						<NamedType>
 							<type>
@@ -184,7 +184,7 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L12 = In; -->
+				<!-- _L12 = in; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L12"/>
@@ -192,7 +192,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="In"/>
+								<ConstVarRef name="in"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -226,7 +226,7 @@
 						<ed:Equation oid="!ed/31dc/66D8/CE0/4753cd237d5"/>
 					</pragmas>
 				</Equation>
-				<!-- _L14 = In; -->
+				<!-- _L14 = in; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L14"/>
@@ -234,7 +234,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="In"/>
+								<ConstVarRef name="in"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -242,7 +242,7 @@
 						<ed:Equation oid="!ed/31df/66D8/CE0/4753cd234aa3"/>
 					</pragmas>
 				</Equation>
-				<!-- _L15 = High; -->
+				<!-- _L15 = high; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L15"/>
@@ -250,7 +250,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="High"/>
+								<ConstVarRef name="high"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -258,7 +258,7 @@
 						<ed:Equation oid="!ed/31e2/66D8/CE0/4753cd23866"/>
 					</pragmas>
 				</Equation>
-				<!-- _L16 = Low; -->
+				<!-- _L16 = low; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L16"/>
@@ -266,7 +266,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Low"/>
+								<ConstVarRef name="low"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -274,7 +274,7 @@
 						<ed:Equation oid="!ed/31e5/66D8/CE0/4753cd237a69"/>
 					</pragmas>
 				</Equation>
-				<!-- _L17 = High; -->
+				<!-- _L17 = high; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L17"/>
@@ -282,7 +282,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="High"/>
+								<ConstVarRef name="high"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -402,10 +402,10 @@
 						<ed:Equation oid="!ed/31f1/66D8/CE0/4753cd2379a0"/>
 					</pragmas>
 				</Equation>
-				<!-- Out = _L19; -->
+				<!-- out = _L19; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="Out"/>
+						<VariableRef name="out"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -418,7 +418,7 @@
 						<ed:Equation oid="!ed/31f4/66D8/CE0/4753cd23e4e"/>
 					</pragmas>
 				</Equation>
-				<!-- _L21 = Low; -->
+				<!-- _L21 = low; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L21"/>
@@ -426,7 +426,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Low"/>
+								<ConstVarRef name="low"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -436,12 +436,12 @@
 				</Equation>
 			</data>
 			<pragmas>
-				<ed:Operator oid="!ed/4216/4C50/218/474ffaa27bfa" symbolFile="Range_Limiter_InIn.ssl" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Operator oid="!ed/4216/4C50/218/474ffaa27bfa" symbolFile="Range_Limiter_InIn.ssl" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<comment>If In &gt;= High, Out equals to High,</comment>
 					<comment>If In &lt;= Low, Out equals to Low,</comment>
 					<comment>Otherwise, Out equals In.</comment>
 					<diagrams>
-						<NetDiagram name="diagram_Range_Limiter_InIn_1" landscape="true" format="A4 (210 297)" oid="!ed/4217/4C50/218/474ffaa2f40">
+						<NetDiagram name="rangeLimiterInIn" landscape="true" format="A4 (210 297)" oid="!ed/4217/4C50/218/474ffaa2f40">
 							<presentationElements>
 								<EquationGE presentable="!ed/31d9/66D8/CE0/4753cd2332e7">
 									<position>

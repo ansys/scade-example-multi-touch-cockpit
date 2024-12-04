@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="Minus_Point">
+		<Operator kind="function" name="minusPoint">
 			<inputs>
-				<Variable name="Pt1">
+				<Variable name="pt1">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Point"/>
+								<TypeRef name="point"/>
 							</type>
 						</NamedType>
 					</type>
@@ -15,11 +15,11 @@
 						<ed:Variable oid="!ed/4a10/740D/148C/4833dbe318f"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Pt2">
+				<Variable name="pt2">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Point"/>
+								<TypeRef name="point"/>
 							</type>
 						</NamedType>
 					</type>
@@ -29,11 +29,11 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="Pt">
+				<Variable name="pt">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Point"/>
+								<TypeRef name="point"/>
 							</type>
 						</NamedType>
 					</type>
@@ -47,7 +47,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Point"/>
+								<TypeRef name="point"/>
 							</type>
 						</NamedType>
 					</type>
@@ -59,7 +59,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Point"/>
+								<TypeRef name="point"/>
 							</type>
 						</NamedType>
 					</type>
@@ -88,7 +88,7 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L1 = Pt1; -->
+				<!-- _L1 = pt1; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1"/>
@@ -96,7 +96,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Pt1"/>
+								<ConstVarRef name="pt1"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -104,7 +104,7 @@
 						<ed:Equation oid="!ed/4a2e/740D/148C/4833dbfbbf9"/>
 					</pragmas>
 				</Equation>
-				<!-- _L2 = Pt2; -->
+				<!-- _L2 = pt2; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L2"/>
@@ -112,7 +112,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Pt2"/>
+								<ConstVarRef name="pt2"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -120,10 +120,10 @@
 						<ed:Equation oid="!ed/4a30/740D/148C/4833dbfb53af"/>
 					</pragmas>
 				</Equation>
-				<!-- Pt = _L3; -->
+				<!-- pt = _L3; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="Pt"/>
+						<VariableRef name="pt"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -178,9 +178,9 @@
 				</Equation>
 			</data>
 			<pragmas>
-				<ed:Operator oid="!ed/4a0e/740D/148C/4833dbd410f1" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Operator oid="!ed/4a0e/740D/148C/4833dbd410f1" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_Minus_Point_1" landscape="true" format="A4 (210 297)" oid="!ed/4a0f/740D/148C/4833dbd49b2">
+						<NetDiagram name="minusPoint" landscape="true" format="A4 (210 297)" oid="!ed/4a0f/740D/148C/4833dbd49b2">
 							<presentationElements>
 								<EquationGE presentable="!ed/4a2e/740D/148C/4833dbfbbf9">
 									<position>
@@ -241,6 +241,9 @@
 							</presentationElements>
 						</NetDiagram>
 					</diagrams>
+					<references>
+						<TypeRef path="point" refOid="!ed/42e3/3913/15D0/4805f1284eb4"/>
+					</references>
 				</ed:Operator>
 			</pragmas>
 		</Operator>

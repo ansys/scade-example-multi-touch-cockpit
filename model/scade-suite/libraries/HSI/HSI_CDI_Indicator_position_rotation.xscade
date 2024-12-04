@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="HSI_CDI_Indicator_position_rotation">
+		<Operator kind="function" name="hsiCdiIndicatorPositionRotation">
 			<inputs>
-				<Variable name="Menu_Info">
+				<Variable name="menuInfo">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Menu_Info_type"/>
+								<TypeRef name="menuInfoType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -17,7 +17,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="CDI_Indicator_position_rotation">
+				<Variable name="cdiIndicatorPositionRotation">
 					<type>
 						<NamedType>
 							<type>
@@ -35,7 +35,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Menu_Info_type"/>
+								<TypeRef name="menuInfoType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -69,7 +69,7 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L1 = Menu_Info; -->
+				<!-- _L1 = menuInfo; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1"/>
@@ -77,7 +77,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Menu_Info"/>
+								<ConstVarRef name="menuInfo"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -85,13 +85,13 @@
 						<ed:Equation oid="!ed/1e5/7A70/BF0/475955955ff7"/>
 					</pragmas>
 				</Equation>
-				<!-- _L2 = _L1.MN_Target_Course; -->
+				<!-- _L2 = _L1.mnTargetCourse; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L2"/>
 					</lefts>
 					<right>
-						<!-- _L1.MN_Target_Course -->
+						<!-- _L1.mnTargetCourse -->
 						<PrjOp name="1">
 							<flow>
 								<IdExpression>
@@ -101,7 +101,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="MN_Target_Course"/>
+								<Label name="mnTargetCourse"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -109,10 +109,10 @@
 						<ed:Equation oid="!ed/1e6/7A70/BF0/475955955836"/>
 					</pragmas>
 				</Equation>
-				<!-- CDI_Indicator_position_rotation = _L10; -->
+				<!-- cdiIndicatorPositionRotation = _L10; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="CDI_Indicator_position_rotation"/>
+						<VariableRef name="cdiIndicatorPositionRotation"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -153,7 +153,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/1d7/7A70/BF0/4759559556e5" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_HSI_CDI_Indicator_position_rotation_1" landscape="true" format="A4 (210 297)" oid="!ed/1e4/7A70/BF0/475955952e0f">
+						<NetDiagram name="hsiCdiIndicatorPositionRotation" landscape="true" format="A4 (210 297)" oid="!ed/1e4/7A70/BF0/475955952e0f">
 							<presentationElements>
 								<EquationGE presentable="!ed/1e5/7A70/BF0/475955955ff7">
 									<position>
@@ -215,7 +215,7 @@
 						</NetDiagram>
 					</diagrams>
 					<references>
-						<TypeRef path="Menu_Info_type" refOid="!ed/22af/444A/B40/47594cd212ac"/>
+						<TypeRef path="menuInfoType" refOid="!ed/22af/444A/B40/47594cd212ac"/>
 					</references>
 				</ed:Operator>
 				<kcg:Pragma>

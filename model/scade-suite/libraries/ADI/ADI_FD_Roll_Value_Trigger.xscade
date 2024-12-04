@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="ADI_FD_Roll_Value_Trigger">
+		<Operator kind="function" name="fdRollValueTrigger">
 			<inputs>
-				<Variable name="ADI_FD_Roll">
+				<Variable name="adiFdRoll">
 					<type>
 						<NamedType>
 							<type>
@@ -17,7 +17,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="ADI_FD_Roll_Triggered">
+				<Variable name="adiFdRollTriggered">
 					<type>
 						<NamedType>
 							<type>
@@ -129,7 +129,7 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L1 = ADI_FD_Roll; -->
+				<!-- _L1 = adiFdRoll; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1"/>
@@ -137,7 +137,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="ADI_FD_Roll"/>
+								<ConstVarRef name="adiFdRoll"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -145,10 +145,10 @@
 						<ed:Equation oid="!ed/1191/7A70/BF0/475959933ef8"/>
 					</pragmas>
 				</Equation>
-				<!-- ADI_FD_Roll_Triggered = _L6; -->
+				<!-- adiFdRollTriggered = _L6; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="ADI_FD_Roll_Triggered"/>
+						<VariableRef name="adiFdRollTriggered"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -320,9 +320,9 @@
 				</Equation>
 			</data>
 			<pragmas>
-				<ed:Operator oid="!ed/1185/7A70/BF0/475959936aa" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Operator oid="!ed/1185/7A70/BF0/475959936aa" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_ADI_FD_Roll_Value_Trigger_1" landscape="true" format="A4 (210 297)" oid="!ed/1190/7A70/BF0/475959934a2c">
+						<NetDiagram name="fdRollValueTrigger" landscape="true" format="A4 (210 297)" oid="!ed/1190/7A70/BF0/475959934a2c">
 							<presentationElements>
 								<EquationGE presentable="!ed/1191/7A70/BF0/475959933ef8">
 									<position>
@@ -358,10 +358,10 @@
 								</Edge>
 								<EquationGE kind="OBJ_LIT" presentable="!ed/1194/7A70/BF0/4759599334aa">
 									<position>
-										<Point x="2963" y="2487"/>
+										<Point x="3598" y="2487"/>
 									</position>
 									<size>
-										<Size width="847" height="318"/>
+										<Size width="212" height="318"/>
 									</size>
 								</EquationGE>
 								<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/1194/7A70/BF0/4759599334aa" dstEquation="!ed/1193/7A70/BF0/475959936a81">
@@ -390,10 +390,10 @@
 								</Edge>
 								<EquationGE kind="OBJ_LIT" presentable="!ed/1196/7A70/BF0/47595993c48">
 									<position>
-										<Point x="3043" y="3360"/>
+										<Point x="3598" y="3360"/>
 									</position>
 									<size>
-										<Size width="767" height="318"/>
+										<Size width="212" height="318"/>
 									</size>
 								</EquationGE>
 								<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/1196/7A70/BF0/47595993c48" dstEquation="!ed/1195/7A70/BF0/4759599341d6">
@@ -445,10 +445,10 @@
 								</Edge>
 								<EquationGE kind="OBJ_LIT" presentable="!ed/1199/7A70/BF0/4759599345f8">
 									<position>
-										<Point x="6959" y="3836"/>
+										<Point x="7514" y="3836"/>
 									</position>
 									<size>
-										<Size width="767" height="318"/>
+										<Size width="212" height="318"/>
 									</size>
 								</EquationGE>
 								<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/1199/7A70/BF0/4759599345f8" dstEquation="!ed/1197/7A70/BF0/47595993783e">

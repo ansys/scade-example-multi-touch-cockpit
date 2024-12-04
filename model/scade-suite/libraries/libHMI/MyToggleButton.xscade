@@ -710,7 +710,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/55ec/2E74/2B00/5a0c1300449" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_myToggleButton" landscape="true" format="A4 (210 297)" oid="!ed/55fe/2E74/2B00/5a0c130068aa">
+						<NetDiagram name="myToggleButton" landscape="true" format="A4 (210 297)" oid="!ed/55fe/2E74/2B00/5a0c130068aa">
 							<presentationElements>
 								<EquationGE presentable="!ed/55ed/2E74/2B00/5a0c13005357">
 									<position>

@@ -9,9 +9,12 @@
 *.mcorder
 *.skc
 *.err
-
+*.trf
+*.toremove
+*.bak
 # generation output directories
 model/scade-display/GCS_Exe/
+model/scade-suite/Standalone Executable/
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
@@ -96,5 +99,4 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
-*.trf
-*.toremove
+

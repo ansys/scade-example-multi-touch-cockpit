@@ -3,11 +3,11 @@
 	<declarations>
 		<Package name="TrajectDisplay">
 			<declarations>
-				<Constant name="Trajec">
+				<Constant name="TRAJEC">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Trajectory"/>
+								<TypeRef name="trajectory"/>
 							</type>
 						</NamedType>
 					</type>
@@ -822,13 +822,13 @@
 						<ed:Constant oid="!ed/5f52/6649/7D8/49ddea3e6b35"/>
 					</pragmas>
 				</Constant>
-				<Operator kind="node" name="Traject_display_in">
+				<Operator kind="node" name="trajectDisplayIn">
 					<inputs>
-						<Variable name="Trajec">
+						<Variable name="trajec">
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Trajectory"/>
+										<TypeRef name="trajectory"/>
 									</type>
 								</NamedType>
 							</type>
@@ -836,11 +836,11 @@
 								<ed:Variable oid="!ed/6dbd/6992/10B8/484d1ae37298"/>
 							</pragmas>
 						</Variable>
-						<Variable name="V_aircraft">
+						<Variable name="vAircraft">
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Point"/>
+										<TypeRef name="point"/>
 									</type>
 								</NamedType>
 							</type>
@@ -850,7 +850,7 @@
 						</Variable>
 					</inputs>
 					<outputs>
-						<Variable name="Px1">
+						<Variable name="px1">
 							<type>
 								<NamedType>
 									<type>
@@ -862,7 +862,7 @@
 								<ed:Variable oid="!ed/6dc3/6992/10B8/484d1ae313a"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Px2">
+						<Variable name="px2">
 							<type>
 								<NamedType>
 									<type>
@@ -874,7 +874,7 @@
 								<ed:Variable oid="!ed/6dbb/6992/10B8/484d1ae3745f"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Px3">
+						<Variable name="px3">
 							<type>
 								<NamedType>
 									<type>
@@ -886,7 +886,7 @@
 								<ed:Variable oid="!ed/6dc2/6992/10B8/484d1ae33f74"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Px4">
+						<Variable name="px4">
 							<type>
 								<NamedType>
 									<type>
@@ -898,7 +898,7 @@
 								<ed:Variable oid="!ed/6dc1/6992/10B8/484d1ae35826"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Py1">
+						<Variable name="py1">
 							<type>
 								<NamedType>
 									<type>
@@ -910,7 +910,7 @@
 								<ed:Variable oid="!ed/6dbc/6992/10B8/484d1ae34b15"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Py2">
+						<Variable name="py2">
 							<type>
 								<NamedType>
 									<type>
@@ -922,7 +922,7 @@
 								<ed:Variable oid="!ed/6dc0/6992/10B8/484d1ae32bc7"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Py3">
+						<Variable name="py3">
 							<type>
 								<NamedType>
 									<type>
@@ -934,7 +934,7 @@
 								<ed:Variable oid="!ed/6dbf/6992/10B8/484d1ae38df"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Py4">
+						<Variable name="py4">
 							<type>
 								<NamedType>
 									<type>
@@ -964,7 +964,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Trajectory"/>
+										<TypeRef name="trajectory"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1060,7 +1060,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Point"/>
+										<TypeRef name="point"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1072,7 +1072,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Point"/>
+										<TypeRef name="point"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1132,7 +1132,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Point"/>
+										<TypeRef name="point"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1252,7 +1252,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Point"/>
+										<TypeRef name="point"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1300,7 +1300,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Point"/>
+										<TypeRef name="point"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1360,7 +1360,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Point"/>
+										<TypeRef name="point"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1408,7 +1408,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Point"/>
+										<TypeRef name="point"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1468,10 +1468,10 @@
 								<ed:Equation oid="!ed/6dc7/6992/10B8/484d1ae34187"/>
 							</pragmas>
 						</Equation>
-						<!-- Py4 = _L68; -->
+						<!-- py4 = _L68; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Py4"/>
+								<VariableRef name="py4"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -1484,10 +1484,10 @@
 								<ed:Equation oid="!ed/6dc9/6992/10B8/484d1ae349b6"/>
 							</pragmas>
 						</Equation>
-						<!-- Py2 = _L56; -->
+						<!-- py2 = _L56; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Py2"/>
+								<VariableRef name="py2"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -1621,18 +1621,18 @@
 								<ed:Equation oid="!ed/6dd5/6992/10B8/484d1ae3ac4"/>
 							</pragmas>
 						</Equation>
-						<!-- _L49 = Counter(_L80, _L53); -->
+						<!-- _L49 = counter(_L80, _L53); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L49"/>
 							</lefts>
 							<right>
-								<!-- Counter(_L80, _L53) -->
+								<!-- counter(_L80, _L53) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="1">
 											<operator>
-												<OperatorRef name="Counter"/>
+												<OperatorRef name="counter"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -1651,7 +1651,7 @@
 									<pragmas>
 										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 											<references>
-												<OperatorRef path="Counter" refOid="!ed/213d/4C50/218/474ff6e86f22">
+												<OperatorRef path="counter" refOid="!ed/213d/4C50/218/474ff6e86f22">
 													<InputRef refOid="!ed/2145/4C50/218/474ff6f87042"/>
 													<InputRef refOid="!ed/214b/4C50/218/474ff6f8593"/>
 													<OutputRef refOid="!ed/2152/4C50/218/474ff6f82c37"/>
@@ -1665,18 +1665,18 @@
 								<ed:Equation oid="!ed/6dd7/6992/10B8/484d1ae31966"/>
 							</pragmas>
 						</Equation>
-						<!-- _L50 = Minus_Point(_L81, _L44); -->
+						<!-- _L50 = minusPoint(_L81, _L44); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L50"/>
 							</lefts>
 							<right>
-								<!-- Minus_Point(_L81, _L44) -->
+								<!-- minusPoint(_L81, _L44) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="1">
 											<operator>
-												<OperatorRef name="Minus_Point"/>
+												<OperatorRef name="minusPoint"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -1695,7 +1695,7 @@
 									<pragmas>
 										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 											<references>
-												<OperatorRef path="Minus_Point" refOid="!ed/4a0e/740D/148C/4833dbd410f1">
+												<OperatorRef path="minusPoint" refOid="!ed/4a0e/740D/148C/4833dbd410f1">
 													<InputRef refOid="!ed/4a10/740D/148C/4833dbe318f"/>
 													<InputRef refOid="!ed/4a11/740D/148C/4833dbe35fd0"/>
 													<OutputRef refOid="!ed/4a12/740D/148C/4833dbe480"/>
@@ -1735,10 +1735,10 @@
 								<ed:Equation oid="!ed/6ddb/6992/10B8/484d1ae3692c"/>
 							</pragmas>
 						</Equation>
-						<!-- Py1 = _L57; -->
+						<!-- py1 = _L57; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Py1"/>
+								<VariableRef name="py1"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -1839,10 +1839,10 @@
 								<ed:Equation oid="!ed/6de2/6992/10B8/484d1ae37998"/>
 							</pragmas>
 						</Equation>
-						<!-- Px2 = _L77; -->
+						<!-- px2 = _L77; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Px2"/>
+								<VariableRef name="px2"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -2032,7 +2032,7 @@
 								<ed:Equation oid="!ed/6df5/6992/10B8/484d1ae3473"/>
 							</pragmas>
 						</Equation>
-						<!-- _L64 = Nb_Pt_Trajectory; -->
+						<!-- _L64 = NB_PT_TRAJECTORY; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L64"/>
@@ -2040,7 +2040,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Nb_Pt_Trajectory"/>
+										<ConstVarRef name="NB_PT_TRAJECTORY"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -2048,10 +2048,10 @@
 								<ed:Equation oid="!ed/6df7/6992/10B8/484d1ae3459f"/>
 							</pragmas>
 						</Equation>
-						<!-- Px4 = _L76; -->
+						<!-- px4 = _L76; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Px4"/>
+								<VariableRef name="px4"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -2064,10 +2064,10 @@
 								<ed:Equation oid="!ed/6df9/6992/10B8/484d1ae3457e"/>
 							</pragmas>
 						</Equation>
-						<!-- Px3 = _L43; -->
+						<!-- px3 = _L43; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Px3"/>
+								<VariableRef name="px3"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -2115,18 +2115,18 @@
 								<ed:Equation oid="!ed/6dfb/6992/10B8/484d1ae3369c"/>
 							</pragmas>
 						</Equation>
-						<!-- _L66 = Vectoriel_Point(_L50); -->
+						<!-- _L66 = vectorielPoint(_L50); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L66"/>
 							</lefts>
 							<right>
-								<!-- Vectoriel_Point(_L50) -->
+								<!-- vectorielPoint(_L50) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="1">
 											<operator>
-												<OperatorRef name="Vectoriel_Point"/>
+												<OperatorRef name="vectorielPoint"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -2140,7 +2140,7 @@
 									<pragmas>
 										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 											<references>
-												<OperatorRef path="Vectoriel_Point" refOid="!ed/4a56/740D/148C/4833dd665f38">
+												<OperatorRef path="vectorielPoint" refOid="!ed/4a56/740D/148C/4833dd665f38">
 													<InputRef refOid="!ed/4a58/740D/148C/4833dd7c6ca"/>
 													<OutputRef refOid="!ed/4a59/740D/148C/4833dd7c1e0f"/>
 												</OperatorRef>
@@ -2165,10 +2165,10 @@
 								<ed:Equation oid="!ed/6dff/6992/10B8/484d1ae3a3d"/>
 							</pragmas>
 						</Equation>
-						<!-- Px1 = _L48; -->
+						<!-- px1 = _L48; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Px1"/>
+								<VariableRef name="px1"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -2231,7 +2231,7 @@
 								<ed:Equation oid="!ed/6e04/6992/10B8/484d1ae32b2b"/>
 							</pragmas>
 						</Equation>
-						<!-- _L70 = Pt_Default; -->
+						<!-- _L70 = PT_DEFAULT; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L70"/>
@@ -2239,7 +2239,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Pt_Default"/>
+										<ConstVarRef name="PT_DEFAULT"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -2418,7 +2418,7 @@
 								<ed:Equation oid="!ed/6e14/6992/10B8/484d1ae329a0"/>
 							</pragmas>
 						</Equation>
-						<!-- _L78 = Nb_Pt_Trajectory; -->
+						<!-- _L78 = NB_PT_TRAJECTORY; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L78"/>
@@ -2426,7 +2426,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Nb_Pt_Trajectory"/>
+										<ConstVarRef name="NB_PT_TRAJECTORY"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -2434,7 +2434,7 @@
 								<ed:Equation oid="!ed/6e16/6992/10B8/484d1ae3267d"/>
 							</pragmas>
 						</Equation>
-						<!-- _L79 = Trajec; -->
+						<!-- _L79 = trajec; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L79"/>
@@ -2442,7 +2442,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Trajec"/>
+										<ConstVarRef name="trajec"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -2450,10 +2450,10 @@
 								<ed:Equation oid="!ed/6e18/6992/10B8/484d1ae34c02"/>
 							</pragmas>
 						</Equation>
-						<!-- Py3 = _L72; -->
+						<!-- py3 = _L72; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Py3"/>
+								<VariableRef name="py3"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -2509,7 +2509,7 @@
 								<ed:Equation oid="!ed/6e1b/6992/10B8/484d1ae342f9"/>
 							</pragmas>
 						</Equation>
-						<!-- _L81 = V_aircraft; -->
+						<!-- _L81 = vAircraft; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L81"/>
@@ -2517,7 +2517,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="V_aircraft"/>
+										<ConstVarRef name="vAircraft"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -2525,7 +2525,7 @@
 								<ed:Equation oid="!ed/6e27/6992/10B8/484d1b3445c4"/>
 							</pragmas>
 						</Equation>
-						<!-- _L82 = Speed; -->
+						<!-- _L82 = SPEED; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L82"/>
@@ -2533,7 +2533,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Speed"/>
+										<ConstVarRef name="SPEED"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -2545,7 +2545,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/6bc4/6992/10B8/484d1ac12934" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<diagrams>
-								<NetDiagram name="diagram_Traject_display_in_1" landscape="true" format="A4 (210 297)" oid="!ed/6ce7/6992/10B8/484d1adc509c">
+								<NetDiagram name="trajectDisplayIn" landscape="true" format="A4 (210 297)" oid="!ed/6ce7/6992/10B8/484d1adc509c">
 									<presentationElements>
 										<EquationGE presentable="!ed/6dc5/6992/10B8/484d1ae35b5">
 											<position>
@@ -2557,10 +2557,10 @@
 										</EquationGE>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/6dc7/6992/10B8/484d1ae34187">
 											<position>
-												<Point x="17013" y="16140"/>
+												<Point x="17357" y="16140"/>
 											</position>
 											<size>
-												<Size width="555" height="317"/>
+												<Size width="211" height="317"/>
 											</size>
 										</EquationGE>
 										<EquationGE presentable="!ed/6dc9/6992/10B8/484d1ae349b6">
@@ -2597,10 +2597,10 @@
 										</EquationGE>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/6dcf/6992/10B8/484d1ae377eb">
 											<position>
-												<Point x="15637" y="16140"/>
+												<Point x="15981" y="16140"/>
 											</position>
 											<size>
-												<Size width="556" height="317"/>
+												<Size width="212" height="317"/>
 											</size>
 										</EquationGE>
 										<EquationGE rotation="90" presentable="!ed/6dd1/6992/10B8/484d1ae33332">
@@ -2709,18 +2709,18 @@
 										</EquationGE>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/6deb/6992/10B8/484d1ae35be3">
 											<position>
-												<Point x="8387" y="16589"/>
+												<Point x="8731" y="16589"/>
 											</position>
 											<size>
-												<Size width="556" height="318"/>
+												<Size width="212" height="318"/>
 											</size>
 										</EquationGE>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/6def/6992/10B8/484d1ae36641">
 											<position>
-												<Point x="20452" y="3598"/>
+												<Point x="21008" y="3598"/>
 											</position>
 											<size>
-												<Size width="768" height="318"/>
+												<Size width="212" height="318"/>
 											</size>
 										</EquationGE>
 										<EquationGE presentable="!ed/6df1/6992/10B8/484d1ae312d4">
@@ -2749,10 +2749,10 @@
 										</EquationGE>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/6df7/6992/10B8/484d1ae3459f">
 											<position>
-												<Point x="11880" y="13944"/>
+												<Point x="14023" y="13944"/>
 											</position>
 											<size>
-												<Size width="2355" height="317"/>
+												<Size width="212" height="317"/>
 											</size>
 										</EquationGE>
 										<EquationGE presentable="!ed/6df9/6992/10B8/484d1ae3457e">
@@ -2789,10 +2789,10 @@
 										</EquationGE>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/6dff/6992/10B8/484d1ae3a3d">
 											<position>
-												<Point x="18600" y="16219"/>
+												<Point x="18944" y="16219"/>
 											</position>
 											<size>
-												<Size width="556" height="317"/>
+												<Size width="212" height="317"/>
 											</size>
 										</EquationGE>
 										<EquationGE presentable="!ed/6e01/6992/10B8/484d1ae331ac">
@@ -2821,10 +2821,10 @@
 										</EquationGE>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/6e06/6992/10B8/484d1ae31756">
 											<position>
-												<Point x="11271" y="11800"/>
+												<Point x="12674" y="11800"/>
 											</position>
 											<size>
-												<Size width="1614" height="318"/>
+												<Size width="211" height="318"/>
 											</size>
 										</EquationGE>
 										<EquationGE presentable="!ed/6e08/6992/10B8/484d1ae32a31">
@@ -2853,10 +2853,10 @@
 										</EquationGE>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/6e0e/6992/10B8/484d1ae37f1b">
 											<position>
-												<Point x="8387" y="17568"/>
+												<Point x="8731" y="17568"/>
 											</position>
 											<size>
-												<Size width="556" height="318"/>
+												<Size width="212" height="318"/>
 											</size>
 										</EquationGE>
 										<EquationGE presentable="!ed/6e10/6992/10B8/484d1ae37e66">
@@ -2885,10 +2885,10 @@
 										</EquationGE>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/6e16/6992/10B8/484d1ae3267d">
 											<position>
-												<Point x="13467" y="19500"/>
+												<Point x="15610" y="19500"/>
 											</position>
 											<size>
-												<Size width="2355" height="317"/>
+												<Size width="212" height="317"/>
 											</size>
 										</EquationGE>
 										<EquationGE presentable="!ed/6e18/6992/10B8/484d1ae34c02">
@@ -3366,10 +3366,10 @@
 										</Edge>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/2ed1/6F56/464/48dba1f57c8c">
 											<position>
-												<Point x="18600" y="3201"/>
+												<Point x="19844" y="3201"/>
 											</position>
 											<size>
-												<Size width="1455" height="317"/>
+												<Size width="211" height="318"/>
 											</size>
 										</EquationGE>
 										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/2ed1/6F56/464/48dba1f57c8c" dstEquation="!ed/6dc5/6992/10B8/484d1ae35b5">
@@ -3384,22 +3384,22 @@
 								</NetDiagram>
 							</diagrams>
 							<references>
-								<TypeRef path="Trajectory" refOid="!ed/42ea/3913/15D0/4805f12858a8"/>
-								<TypeRef path="Point" refOid="!ed/42e3/3913/15D0/4805f1284eb4"/>
-								<ConstVarRef path="Nb_Pt_Trajectory" refOid="!ed/42d5/3913/15D0/4805f12857ff"/>
-								<ConstVarRef path="Pt_Default" refOid="!ed/42eb/3913/15D0/4805f12d24bc"/>
-								<ConstVarRef path="Speed" refOid="!ed/161/628B/C8/48dba1b74feb"/>
+								<TypeRef path="trajectory" refOid="!ed/42ea/3913/15D0/4805f12858a8"/>
+								<TypeRef path="point" refOid="!ed/42e3/3913/15D0/4805f1284eb4"/>
+								<ConstVarRef path="NB_PT_TRAJECTORY" refOid="!ed/42d5/3913/15D0/4805f12857ff"/>
+								<ConstVarRef path="PT_DEFAULT" refOid="!ed/42eb/3913/15D0/4805f12d24bc"/>
+								<ConstVarRef path="SPEED" refOid="!ed/161/628B/C8/48dba1b74feb"/>
 							</references>
 						</ed:Operator>
 					</pragmas>
 				</Operator>
-				<Operator kind="node" name="Traject_display_out">
+				<Operator kind="node" name="trajectDisplayOut">
 					<inputs>
-						<Variable name="V_aircraft">
+						<Variable name="vAircraft">
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Point"/>
+										<TypeRef name="point"/>
 									</type>
 								</NamedType>
 							</type>
@@ -3409,7 +3409,7 @@
 						</Variable>
 					</inputs>
 					<outputs>
-						<Variable name="Pttx1">
+						<Variable name="pttx1">
 							<type>
 								<NamedType>
 									<type>
@@ -3421,7 +3421,7 @@
 								<ed:Variable oid="!ed/6fb1/6992/10B8/484d1b521cc3"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Ptty1">
+						<Variable name="ptty1">
 							<type>
 								<NamedType>
 									<type>
@@ -3433,7 +3433,7 @@
 								<ed:Variable oid="!ed/6fb0/6992/10B8/484d1b5225fc"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Pttx2">
+						<Variable name="pttx2">
 							<type>
 								<NamedType>
 									<type>
@@ -3445,7 +3445,7 @@
 								<ed:Variable oid="!ed/6faf/6992/10B8/484d1b525ff9"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Ptty2">
+						<Variable name="ptty2">
 							<type>
 								<NamedType>
 									<type>
@@ -3457,7 +3457,7 @@
 								<ed:Variable oid="!ed/6fae/6992/10B8/484d1b52a3d"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Pttx3">
+						<Variable name="pttx3">
 							<type>
 								<NamedType>
 									<type>
@@ -3469,7 +3469,7 @@
 								<ed:Variable oid="!ed/6fad/6992/10B8/484d1b527499"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Ptty3">
+						<Variable name="ptty3">
 							<type>
 								<NamedType>
 									<type>
@@ -3481,7 +3481,7 @@
 								<ed:Variable oid="!ed/6fac/6992/10B8/484d1b523a01"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Pttx4">
+						<Variable name="pttx4">
 							<type>
 								<NamedType>
 									<type>
@@ -3493,7 +3493,7 @@
 								<ed:Variable oid="!ed/6fab/6992/10B8/484d1b52190f"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Ptty4">
+						<Variable name="ptty4">
 							<type>
 								<NamedType>
 									<type>
@@ -3505,7 +3505,7 @@
 								<ed:Variable oid="!ed/6faa/6992/10B8/484d1b52427c"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Pttx5">
+						<Variable name="pttx5">
 							<type>
 								<NamedType>
 									<type>
@@ -3517,7 +3517,7 @@
 								<ed:Variable oid="!ed/6fa9/6992/10B8/484d1b52792d"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Ptty5">
+						<Variable name="ptty5">
 							<type>
 								<NamedType>
 									<type>
@@ -3529,7 +3529,7 @@
 								<ed:Variable oid="!ed/6fa8/6992/10B8/484d1b525974"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Pttx6">
+						<Variable name="pttx6">
 							<type>
 								<NamedType>
 									<type>
@@ -3541,7 +3541,7 @@
 								<ed:Variable oid="!ed/6fa7/6992/10B8/484d1b524b56"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Ptty6">
+						<Variable name="ptty6">
 							<type>
 								<NamedType>
 									<type>
@@ -3553,7 +3553,7 @@
 								<ed:Variable oid="!ed/6fa6/6992/10B8/484d1b522200"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Pttx7">
+						<Variable name="pttx7">
 							<type>
 								<NamedType>
 									<type>
@@ -3565,7 +3565,7 @@
 								<ed:Variable oid="!ed/6fa5/6992/10B8/484d1b5274c5"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Ptty7">
+						<Variable name="ptty7">
 							<type>
 								<NamedType>
 									<type>
@@ -3577,7 +3577,7 @@
 								<ed:Variable oid="!ed/6fa4/6992/10B8/484d1b5245a2"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Pttx8">
+						<Variable name="pttx8">
 							<type>
 								<NamedType>
 									<type>
@@ -3589,7 +3589,7 @@
 								<ed:Variable oid="!ed/6fa3/6992/10B8/484d1b522dad"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Ptty8">
+						<Variable name="ptty8">
 							<type>
 								<NamedType>
 									<type>
@@ -3619,7 +3619,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Point"/>
+										<TypeRef name="point"/>
 									</type>
 								</NamedType>
 							</type>
@@ -3657,7 +3657,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="Point"/>
+												<TypeRef name="point"/>
 											</type>
 										</NamedType>
 									</type>
@@ -3698,7 +3698,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Point"/>
+										<TypeRef name="point"/>
 									</type>
 								</NamedType>
 							</type>
@@ -3724,7 +3724,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="Point"/>
+												<TypeRef name="point"/>
 											</type>
 										</NamedType>
 									</type>
@@ -3825,7 +3825,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Point"/>
+										<TypeRef name="point"/>
 									</type>
 								</NamedType>
 							</type>
@@ -3837,7 +3837,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Point"/>
+										<TypeRef name="point"/>
 									</type>
 								</NamedType>
 							</type>
@@ -3863,7 +3863,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="Point"/>
+												<TypeRef name="point"/>
 											</type>
 										</NamedType>
 									</type>
@@ -3904,7 +3904,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Point"/>
+										<TypeRef name="point"/>
 									</type>
 								</NamedType>
 							</type>
@@ -3940,7 +3940,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Point"/>
+										<TypeRef name="point"/>
 									</type>
 								</NamedType>
 							</type>
@@ -3976,7 +3976,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Point"/>
+										<TypeRef name="point"/>
 									</type>
 								</NamedType>
 							</type>
@@ -4038,7 +4038,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="Point"/>
+												<TypeRef name="point"/>
 											</type>
 										</NamedType>
 									</type>
@@ -4091,7 +4091,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Point"/>
+										<TypeRef name="point"/>
 									</type>
 								</NamedType>
 							</type>
@@ -4139,7 +4139,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Point"/>
+										<TypeRef name="point"/>
 									</type>
 								</NamedType>
 							</type>
@@ -4161,18 +4161,18 @@
 								<ed:Equation oid="!ed/6fb3/6992/10B8/484d1b524436"/>
 							</pragmas>
 						</Equation>
-						<!-- _L2 = Counter(_L27, _L5); -->
+						<!-- _L2 = counter(_L27, _L5); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L2"/>
 							</lefts>
 							<right>
-								<!-- Counter(_L27, _L5) -->
+								<!-- counter(_L27, _L5) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="1">
 											<operator>
-												<OperatorRef name="Counter"/>
+												<OperatorRef name="counter"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -4191,7 +4191,7 @@
 									<pragmas>
 										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 											<references>
-												<OperatorRef path="Counter" refOid="!ed/213d/4C50/218/474ff6e86f22">
+												<OperatorRef path="counter" refOid="!ed/213d/4C50/218/474ff6e86f22">
 													<InputRef refOid="!ed/2145/4C50/218/474ff6f87042"/>
 													<InputRef refOid="!ed/214b/4C50/218/474ff6f8593"/>
 													<OutputRef refOid="!ed/2152/4C50/218/474ff6f82c37"/>
@@ -4205,10 +4205,10 @@
 								<ed:Equation oid="!ed/6fb5/6992/10B8/484d1b527c95"/>
 							</pragmas>
 						</Equation>
-						<!-- Pttx6 = _L9; -->
+						<!-- pttx6 = _L9; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Pttx6"/>
+								<VariableRef name="pttx6"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4257,10 +4257,10 @@
 								<ed:Equation oid="!ed/6fba/6992/10B8/484d1b5255fa"/>
 							</pragmas>
 						</Equation>
-						<!-- Pttx1 = _L38; -->
+						<!-- pttx1 = _L38; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Pttx1"/>
+								<VariableRef name="pttx1"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4300,10 +4300,10 @@
 								<ed:Equation oid="!ed/6fbd/6992/10B8/484d1b522695"/>
 							</pragmas>
 						</Equation>
-						<!-- Ptty1 = _L17; -->
+						<!-- ptty1 = _L17; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Ptty1"/>
+								<VariableRef name="ptty1"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4392,10 +4392,10 @@
 								<ed:Equation oid="!ed/6fc4/6992/10B8/484d1b52ec7"/>
 							</pragmas>
 						</Equation>
-						<!-- Ptty7 = _L23; -->
+						<!-- ptty7 = _L23; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Ptty7"/>
+								<VariableRef name="ptty7"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4408,10 +4408,10 @@
 								<ed:Equation oid="!ed/6fc6/6992/10B8/484d1b5222f4"/>
 							</pragmas>
 						</Equation>
-						<!-- Pttx2 = _L12; -->
+						<!-- pttx2 = _L12; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Pttx2"/>
+								<VariableRef name="pttx2"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4424,10 +4424,10 @@
 								<ed:Equation oid="!ed/6fc7/6992/10B8/484d1b524d7b"/>
 							</pragmas>
 						</Equation>
-						<!-- Pttx7 = _L14; -->
+						<!-- pttx7 = _L14; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Pttx7"/>
+								<VariableRef name="pttx7"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4440,10 +4440,10 @@
 								<ed:Equation oid="!ed/6fc8/6992/10B8/484d1b526dfc"/>
 							</pragmas>
 						</Equation>
-						<!-- Ptty4 = _L37; -->
+						<!-- ptty4 = _L37; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Ptty4"/>
+								<VariableRef name="ptty4"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4600,25 +4600,25 @@
 								<ed:Equation oid="!ed/6fd4/6992/10B8/484d1b527f76"/>
 							</pragmas>
 						</Equation>
-						<!-- _L15 = ((15000.0 / Speed) : int32); -->
+						<!-- _L15 = ((15000.0 / SPEED) : int32); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L15"/>
 							</lefts>
 							<right>
-								<!-- ((15000.0 / Speed) : int32) -->
+								<!-- ((15000.0 / SPEED) : int32) -->
 								<NumericCastOp name="1">
 									<type>
 										<TypeRef name="int32"/>
 									</type>
 									<flow>
-										<!-- 15000.0 / Speed -->
+										<!-- 15000.0 / SPEED -->
 										<BinaryOp name="1" operator="/">
 											<operands>
 												<ConstValue value="15000.0"/>
 												<IdExpression>
 													<path>
-														<ConstVarRef name="Speed"/>
+														<ConstVarRef name="SPEED"/>
 													</path>
 												</IdExpression>
 											</operands>
@@ -4630,10 +4630,10 @@
 								<ed:Equation oid="!ed/6fd6/6992/10B8/484d1b525560"/>
 							</pragmas>
 						</Equation>
-						<!-- Ptty6 = _L20; -->
+						<!-- ptty6 = _L20; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Ptty6"/>
+								<VariableRef name="ptty6"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4914,18 +4914,18 @@
 								<ed:Equation oid="!ed/6feb/6992/10B8/484d1b5241a0"/>
 							</pragmas>
 						</Equation>
-						<!-- _L26 = Counter(_L34, _L41); -->
+						<!-- _L26 = counter(_L34, _L41); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L26"/>
 							</lefts>
 							<right>
-								<!-- Counter(_L34, _L41) -->
+								<!-- counter(_L34, _L41) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="2">
 											<operator>
-												<OperatorRef name="Counter"/>
+												<OperatorRef name="counter"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -4944,7 +4944,7 @@
 									<pragmas>
 										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 											<references>
-												<OperatorRef path="Counter" refOid="!ed/213d/4C50/218/474ff6e86f22">
+												<OperatorRef path="counter" refOid="!ed/213d/4C50/218/474ff6e86f22">
 													<InputRef refOid="!ed/2145/4C50/218/474ff6f87042"/>
 													<InputRef refOid="!ed/214b/4C50/218/474ff6f8593"/>
 													<OutputRef refOid="!ed/2152/4C50/218/474ff6f82c37"/>
@@ -4958,10 +4958,10 @@
 								<ed:Equation oid="!ed/6fed/6992/10B8/484d1b5242a4"/>
 							</pragmas>
 						</Equation>
-						<!-- Ptty2 = _L32; -->
+						<!-- ptty2 = _L32; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Ptty2"/>
+								<VariableRef name="ptty2"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -5089,10 +5089,10 @@
 								<ed:Equation oid="!ed/6ff6/6992/10B8/484d1b523c8a"/>
 							</pragmas>
 						</Equation>
-						<!-- Ptty8 = _L28; -->
+						<!-- ptty8 = _L28; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Ptty8"/>
+								<VariableRef name="ptty8"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -5105,10 +5105,10 @@
 								<ed:Equation oid="!ed/6ff8/6992/10B8/484d1b526c5b"/>
 							</pragmas>
 						</Equation>
-						<!-- Pttx8 = _L10; -->
+						<!-- pttx8 = _L10; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Pttx8"/>
+								<VariableRef name="pttx8"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -5121,10 +5121,10 @@
 								<ed:Equation oid="!ed/6ff9/6992/10B8/484d1b521e7"/>
 							</pragmas>
 						</Equation>
-						<!-- Pttx4 = _L30; -->
+						<!-- pttx4 = _L30; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Pttx4"/>
+								<VariableRef name="pttx4"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -5137,10 +5137,10 @@
 								<ed:Equation oid="!ed/6ffa/6992/10B8/484d1b5274fa"/>
 							</pragmas>
 						</Equation>
-						<!-- Pttx3 = _L7; -->
+						<!-- pttx3 = _L7; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Pttx3"/>
+								<VariableRef name="pttx3"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -5246,10 +5246,10 @@
 								<ed:Equation oid="!ed/7002/6992/10B8/484d1b52cd"/>
 							</pragmas>
 						</Equation>
-						<!-- Pttx5 = _L29; -->
+						<!-- pttx5 = _L29; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Pttx5"/>
+								<VariableRef name="pttx5"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -5262,10 +5262,10 @@
 								<ed:Equation oid="!ed/7004/6992/10B8/484d1b52b2"/>
 							</pragmas>
 						</Equation>
-						<!-- Ptty3 = _L11; -->
+						<!-- ptty3 = _L11; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Ptty3"/>
+								<VariableRef name="ptty3"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -5474,10 +5474,10 @@
 								<ed:Equation oid="!ed/7016/6992/10B8/484d1b5236fb"/>
 							</pragmas>
 						</Equation>
-						<!-- Ptty5 = _L6; -->
+						<!-- ptty5 = _L6; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Ptty5"/>
+								<VariableRef name="ptty5"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -5490,7 +5490,7 @@
 								<ed:Equation oid="!ed/7018/6992/10B8/484d1b521680"/>
 							</pragmas>
 						</Equation>
-						<!-- _L44 = V_aircraft; -->
+						<!-- _L44 = vAircraft; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L44"/>
@@ -5498,7 +5498,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="V_aircraft"/>
+										<ConstVarRef name="vAircraft"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -5510,7 +5510,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/6e2d/6992/10B8/484d1b46197e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<diagrams>
-								<NetDiagram name="diagram_Traject_display_out_1" landscape="true" format="A4 (210 297)" oid="!ed/6e2e/6992/10B8/484d1b467647">
+								<NetDiagram name="trajectDisplayOut" landscape="true" format="A4 (210 297)" oid="!ed/6e2e/6992/10B8/484d1b467647">
 									<presentationElements>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/6fb3/6992/10B8/484d1b524436">
 											<position>
@@ -6514,8 +6514,8 @@
 								</NetDiagram>
 							</diagrams>
 							<references>
-								<TypeRef path="Point" refOid="!ed/42e3/3913/15D0/4805f1284eb4"/>
-								<ConstVarRef path="Speed" refOid="!ed/161/628B/C8/48dba1b74feb"/>
+								<TypeRef path="point" refOid="!ed/42e3/3913/15D0/4805f1284eb4"/>
+								<ConstVarRef path="SPEED" refOid="!ed/161/628B/C8/48dba1b74feb"/>
 							</references>
 						</ed:Operator>
 					</pragmas>
@@ -6529,7 +6529,7 @@
 						<TreeDiagram landscape="true" format="A4 (210 297)" oid="!ed/34b7/254D/338/48db9794116d" blockKind="sensors"/>
 					</diagrams>
 					<references>
-						<TypeRef path="Trajectory" refOid="!ed/42ea/3913/15D0/4805f12858a8"/>
+						<TypeRef path="trajectory" refOid="!ed/42ea/3913/15D0/4805f12858a8"/>
 					</references>
 				</ed:Package>
 			</pragmas>

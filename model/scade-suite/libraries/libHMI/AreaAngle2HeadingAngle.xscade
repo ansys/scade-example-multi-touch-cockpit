@@ -511,7 +511,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/5db2/33E8/42A0/5a2020ae687" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_areaAngle2HeadingAngle_1" landscape="true" format="A4 (210 297)" oid="!ed/5dc0/33E8/42A0/5a2020ae7973">
+						<NetDiagram name="areaAngle2HeadingAngle" landscape="true" format="A4 (210 297)" oid="!ed/5dc0/33E8/42A0/5a2020ae7973">
 							<presentationElements>
 								<EquationGE presentable="!ed/5db3/33E8/42A0/5a2020ae39ed">
 									<position>

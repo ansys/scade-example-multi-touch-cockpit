@@ -100,7 +100,7 @@
 	<pragmas>
 		<ed:Operator oid="!ed/4da2/28C9/1944/594245c858d6" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 			<diagrams>
-				<TextDiagram name="diagram_Toggle_1" landscape="true" format="A4 (210 297)" oid="!ed/4da4/28C9/1944/594245c841a">
+				<TextDiagram name="Toggle_1" landscape="true" format="A4 (210 297)" oid="!ed/4da4/28C9/1944/594245c841a">
 					<presentationElements>
 						<FlowTE presentable="!ed/4da3/28C9/1944/594245c85e21"/>
 					</presentationElements>

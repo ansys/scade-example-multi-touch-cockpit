@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Type name="System_Info_type">
+		<Type name="systemInfoType">
 			<definition>
 				<Struct>
 					<fields>
-						<Field name="SY_CDI_Offset">
+						<Field name="syCdiOffset">
 							<type>
 								<Table>
 									<type>
@@ -21,7 +21,7 @@
 								</Table>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/48ac/31D0/4E4/4750b29c41cd" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/48ac/31D0/4E4/4750b29c41cd" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>System_Info:</comment>
 									<comment>Array of CDI offset values</comment>
 									<comment>Range: [-128; +127]</comment>
@@ -29,7 +29,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="SY_CDI_Sources">
+						<Field name="syCdiSources">
 							<type>
 								<Table>
 									<type>
@@ -45,7 +45,7 @@
 								</Table>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/48bd/31D0/4E4/4750b45b6ee2" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/48bd/31D0/4E4/4750b45b6ee2" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>System_Info:</comment>
 									<comment>Array of available CDI sources</comment>
 									<comment>Range: [0 - 4]</comment>
@@ -58,7 +58,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="SY_RMI_Sources">
+						<Field name="syRmiSources">
 							<type>
 								<Table>
 									<type>
@@ -74,7 +74,7 @@
 								</Table>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/48c6/31D0/4E4/4750b5f71fc4" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/48c6/31D0/4E4/4750b5f71fc4" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>System_Info:</comment>
 									<comment>Array of available RMI sources</comment>
 									<comment>Range: [0 - 4]</comment>
@@ -87,7 +87,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="SY_Switch_NAV_Source">
+						<Field name="sySwitchNavSource">
 							<type>
 								<NamedType>
 									<type>
@@ -96,7 +96,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/48cf/31D0/4E4/4750b6bd6902" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/48cf/31D0/4E4/4750b6bd6902" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>System_Info:</comment>
 									<comment>Switch the NAV source corresponding to the GPS, VOR and ADF labels</comment>
 									<comment>Range: TRUE | FALSE</comment>
@@ -105,7 +105,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="SY_Compute_Yaw_Rate">
+						<Field name="syComputeYawRate">
 							<type>
 								<NamedType>
 									<type>
@@ -114,7 +114,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/48d9/31D0/4E4/4750b96a11e1" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/48d9/31D0/4E4/4750b96a11e1" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>System_Info:</comment>
 									<comment>Determine if yaw rate is calculated or received</comment>
 									<comment>Range: TRUE | FALSE</comment>
@@ -127,16 +127,16 @@
 				</Struct>
 			</definition>
 			<pragmas>
-				<ed:Type oid="!ed/22f4/444A/B40/47594cd27d9d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Type oid="!ed/22f4/444A/B40/47594cd27d9d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<comment>Static data</comment>
 				</ed:Type>
 			</pragmas>
 		</Type>
-		<Type name="Screen_Info_type">
+		<Type name="screenInfoType">
 			<definition>
 				<Struct>
 					<fields>
-						<Field name="SC_Reso">
+						<Field name="scReso">
 							<type>
 								<NamedType>
 									<type>
@@ -145,7 +145,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/4859/31D0/4E4/4750a7183179" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/4859/31D0/4E4/4750a7183179" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Screen_Info:</comment>
 									<comment>Screen resolution</comment>
 									<comment>Range: 1|2</comment>
@@ -153,7 +153,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="SC_Portrait_Orient">
+						<Field name="scPortraitOrient">
 							<type>
 								<NamedType>
 									<type>
@@ -162,7 +162,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/4862/31D0/4E4/4750ab8d1283" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/4862/31D0/4E4/4750ab8d1283" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Screen_Info:</comment>
 									<comment>Screen portrait orientation</comment>
 									<comment>Range: TRUE/FALSE</comment>
@@ -174,16 +174,16 @@
 				</Struct>
 			</definition>
 			<pragmas>
-				<ed:Type oid="!ed/22d1/444A/B40/47594cd25e01" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Type oid="!ed/22d1/444A/B40/47594cd25e01" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<comment>Static data</comment>
 				</ed:Type>
 			</pragmas>
 		</Type>
-		<Type name="Nav_Data_type">
+		<Type name="navDataType">
 			<definition>
 				<Struct>
 					<fields>
-						<Field name="GPS_CDI">
+						<Field name="gpsCdi">
 							<type>
 								<NamedType>
 									<type>
@@ -192,7 +192,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/47da/31D0/4E4/4750a3b72b69" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/47da/31D0/4E4/4750a3b72b69" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Nav_Data:</comment>
 									<comment>GPS CDI</comment>
 									<comment>Range: [-128; +127]</comment>
@@ -200,7 +200,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="GPS_To_From">
+						<Field name="gpsToFrom">
 							<type>
 								<NamedType>
 									<type>
@@ -209,7 +209,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/47e3/31D0/4E4/4750a3f31968" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/47e3/31D0/4E4/4750a3f31968" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Nav_Data:</comment>
 									<comment>GPS TO/FROM indicator</comment>
 									<comment>Range: 0 | 1</comment>
@@ -217,7 +217,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="VOR_CDI">
+						<Field name="vorCdi">
 							<type>
 								<NamedType>
 									<type>
@@ -226,7 +226,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/47e4/31D0/4E4/4750a3f35272" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/47e4/31D0/4E4/4750a3f35272" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Nav_Data:</comment>
 									<comment>VOR CDI</comment>
 									<comment>Range: [-128; +127]</comment>
@@ -234,7 +234,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="VOR_Radial">
+						<Field name="vorRadial">
 							<type>
 								<NamedType>
 									<type>
@@ -243,7 +243,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/47f5/31D0/4E4/4750a48b36ce" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/47f5/31D0/4E4/4750a48b36ce" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Nav_Data:</comment>
 									<comment>VOR radial</comment>
 									<comment>Range: [0; +3599]</comment>
@@ -251,7 +251,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="ILS_Selected">
+						<Field name="ilsSelected">
 							<type>
 								<NamedType>
 									<type>
@@ -260,7 +260,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/47f6/31D0/4E4/4750a48d5cf" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/47f6/31D0/4E4/4750a48d5cf" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Nav_Data:</comment>
 									<comment>ILS is selected on VOR</comment>
 									<comment>Range: TRUE/FALSE</comment>
@@ -268,7 +268,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="ADF_Bearing">
+						<Field name="adfBearing">
 							<type>
 								<NamedType>
 									<type>
@@ -277,7 +277,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/47f7/31D0/4E4/4750a48d3a6f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/47f7/31D0/4E4/4750a48d3a6f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Nav_Data:</comment>
 									<comment>ADF RMI bearing</comment>
 									<comment>Range: [0; +3599]</comment>
@@ -285,7 +285,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="Back_Course">
+						<Field name="backCourse">
 							<type>
 								<NamedType>
 									<type>
@@ -294,7 +294,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/47f8/31D0/4E4/4750a48d73db" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/47f8/31D0/4E4/4750a48d73db" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Nav_Data:</comment>
 									<comment>On back course</comment>
 									<comment>Range: TRUE/FALSE</comment>
@@ -302,7 +302,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="GPS_Flagged">
+						<Field name="gpsFlagged">
 							<type>
 								<NamedType>
 									<type>
@@ -311,7 +311,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/47f9/31D0/4E4/4750a48e4d21" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/47f9/31D0/4E4/4750a48e4d21" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Nav_Data:</comment>
 									<comment>GPS is flagged</comment>
 									<comment>Range: TRUE/FALSE</comment>
@@ -319,7 +319,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="VOR_Flagged">
+						<Field name="vorFlagged">
 							<type>
 								<NamedType>
 									<type>
@@ -328,7 +328,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/4822/31D0/4E4/4750a5c81e2a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/4822/31D0/4E4/4750a5c81e2a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Nav_Data:</comment>
 									<comment>VOR is flagged</comment>
 									<comment>Range: TRUE/FALSE</comment>
@@ -340,16 +340,16 @@
 				</Struct>
 			</definition>
 			<pragmas>
-				<ed:Type oid="!ed/22be/444A/B40/47594cd2222d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Type oid="!ed/22be/444A/B40/47594cd2222d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<comment>Dynamic data</comment>
 				</ed:Type>
 			</pragmas>
 		</Type>
-		<Type name="Menu_Info_type">
+		<Type name="menuInfoType">
 			<definition>
 				<Struct>
 					<fields>
-						<Field name="MN_CDI_Source">
+						<Field name="mnCDISource">
 							<type>
 								<NamedType>
 									<type>
@@ -358,7 +358,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/47ac/31D0/4E4/4750a28f2b4e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/47ac/31D0/4E4/4750a28f2b4e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Menu_Info:</comment>
 									<comment>CDI source selected by menu</comment>
 									<comment>Range: [0; 3]</comment>
@@ -366,7 +366,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="MN_RMI1_Source">
+						<Field name="mnRMI1Source">
 							<type>
 								<NamedType>
 									<type>
@@ -375,7 +375,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/47b5/31D0/4E4/4750a2e358ee" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/47b5/31D0/4E4/4750a2e358ee" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Menu_Info:</comment>
 									<comment>RMI1 source selected by menu</comment>
 									<comment>Range: [0; 4]</comment>
@@ -383,7 +383,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="MN_RMI2_Source">
+						<Field name="mnRMI2Source">
 							<type>
 								<NamedType>
 									<type>
@@ -392,7 +392,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/47be/31D0/4E4/4750a31215fd" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/47be/31D0/4E4/4750a31215fd" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Menu_Info:</comment>
 									<comment>RMI2 source selected by menu</comment>
 									<comment>Range: [0; 4]</comment>
@@ -400,7 +400,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="MN_Target_Course">
+						<Field name="mnTargetCourse">
 							<type>
 								<NamedType>
 									<type>
@@ -409,7 +409,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/47c7/31D0/4E4/4750a3391f4a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/47c7/31D0/4E4/4750a3391f4a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Menu_Info:</comment>
 									<comment>Target course selected by menu</comment>
 									<comment>Range: [+1; +360]</comment>
@@ -417,7 +417,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="MN_Target_Heading">
+						<Field name="mnTargetHeading">
 							<type>
 								<NamedType>
 									<type>
@@ -426,7 +426,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/2d1d/118D/958/4758441d124d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/2d1d/118D/958/4758441d124d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Menu_Info:</comment>
 									<comment>Target heading selected by menu</comment>
 									<comment>Range: [+1; +360]</comment>
@@ -438,16 +438,16 @@
 				</Struct>
 			</definition>
 			<pragmas>
-				<ed:Type oid="!ed/22af/444A/B40/47594cd212ac" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Type oid="!ed/22af/444A/B40/47594cd212ac" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<comment>Dynamic data</comment>
 				</ed:Type>
 			</pragmas>
 		</Type>
-		<Type name="Flight_Director_Info_type">
+		<Type name="flightDirectorInfoType">
 			<definition>
 				<Struct>
 					<fields>
-						<Field name="FD_Pitch">
+						<Field name="fdPitch">
 							<type>
 								<NamedType>
 									<type>
@@ -456,7 +456,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/4787/31D0/4E4/4750a11a28c5" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/4787/31D0/4E4/4750a11a28c5" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Flight_Director_Info:</comment>
 									<comment>Flight director pitch</comment>
 									<comment>Range: [0- 1024]</comment>
@@ -464,7 +464,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="FD_Roll">
+						<Field name="fdRoll">
 							<type>
 								<NamedType>
 									<type>
@@ -473,7 +473,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/4790/31D0/4E4/4750a17e65b5" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/4790/31D0/4E4/4750a17e65b5" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Flight_Director_Info:</comment>
 									<comment>Flight director roll</comment>
 									<comment>Range: [0- 1024]</comment>
@@ -481,7 +481,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="FD_Reference">
+						<Field name="fdReference">
 							<type>
 								<NamedType>
 									<type>
@@ -490,7 +490,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/4799/31D0/4E4/4750a1c36ef4" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/4799/31D0/4E4/4750a1c36ef4" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Flight_Director_Info:</comment>
 									<comment>Flight director reference</comment>
 									<comment>Range: [0- 1024]</comment>
@@ -498,7 +498,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="FD_Is_Flagged">
+						<Field name="fdIsFlagged">
 							<type>
 								<NamedType>
 									<type>
@@ -507,7 +507,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/47a2/31D0/4E4/4750a21e20a1" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/47a2/31D0/4E4/4750a21e20a1" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Flight_Director_Info:</comment>
 									<comment>Flight director pitch</comment>
 									<comment>Range: TRUE/FALSE</comment>
@@ -519,16 +519,16 @@
 				</Struct>
 			</definition>
 			<pragmas>
-				<ed:Type oid="!ed/229c/444A/B40/47594cd21100" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Type oid="!ed/229c/444A/B40/47594cd21100" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<comment>Dynamic data</comment>
 				</ed:Type>
 			</pragmas>
 		</Type>
-		<Type name="Altitude_Info_type">
+		<Type name="altitudeInfoType">
 			<definition>
 				<Struct>
 					<fields>
-						<Field name="AT_Pitch">
+						<Field name="pitch">
 							<type>
 								<NamedType>
 									<type>
@@ -537,7 +537,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/4759/31D0/4E4/475044f61b04" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/4759/31D0/4E4/475044f61b04" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Altitude_Info:</comment>
 									<comment>Current pitch value</comment>
 									<comment>Range: [-18000, +18000]</comment>
@@ -545,7 +545,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="AT_Roll">
+						<Field name="roll">
 							<type>
 								<NamedType>
 									<type>
@@ -554,7 +554,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/476b/31D0/4E4/47509f53dee" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/476b/31D0/4E4/47509f53dee" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Altitude_Info:</comment>
 									<comment>Current roll value</comment>
 									<comment>Range: [-18000, +18000]</comment>
@@ -562,7 +562,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="AT_Heading">
+						<Field name="heading">
 							<type>
 								<NamedType>
 									<type>
@@ -571,7 +571,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/476c/31D0/4E4/47509f542144" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/476c/31D0/4E4/47509f542144" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Altitude_Info:</comment>
 									<comment>Current magnetic heading</comment>
 									<comment>Range: [0, +3599]</comment>
@@ -579,7 +579,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="AT_Yaw_Rate">
+						<Field name="yawRate">
 							<type>
 								<NamedType>
 									<type>
@@ -588,7 +588,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/476d/31D0/4E4/47509f54726d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/476d/31D0/4E4/47509f54726d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Altitude_Info:</comment>
 									<comment>Current yaw rate value</comment>
 									<comment>Range: [-32700, +32700]</comment>
@@ -600,16 +600,16 @@
 				</Struct>
 			</definition>
 			<pragmas>
-				<ed:Type oid="!ed/227d/444A/B40/47594cd24039" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Type oid="!ed/227d/444A/B40/47594cd24039" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<comment>Dynamic data</comment>
 				</ed:Type>
 			</pragmas>
 		</Type>
-		<Type name="Aircraft_Info_type">
+		<Type name="aircraftInfoType">
 			<definition>
 				<Struct>
 					<fields>
-						<Field name="AC_Single_Cue">
+						<Field name="singleCUE">
 							<type>
 								<NamedType>
 									<type>
@@ -618,7 +618,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/486c/31D0/4E4/4750ace212ba" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/486c/31D0/4E4/4750ace212ba" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Aircraft_Info:</comment>
 									<comment>Single cue flight director</comment>
 									<comment>Range: TRUE/FALSE</comment>
@@ -626,7 +626,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="AC_Flight_Director">
+						<Field name="flightDirector">
 							<type>
 								<NamedType>
 									<type>
@@ -635,7 +635,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/4875/31D0/4E4/4750adc26d32" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/4875/31D0/4E4/4750adc26d32" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Aircraft_Info:</comment>
 									<comment>Flight director display</comment>
 									<comment>Range: TRUE/FALSE</comment>
@@ -643,7 +643,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="AC_FD_Pitch_Gain">
+						<Field name="pitchGain">
 							<type>
 								<NamedType>
 									<type>
@@ -652,7 +652,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/487e/31D0/4E4/4750aebc57a5" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/487e/31D0/4E4/4750aebc57a5" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Aircraft_Info:</comment>
 									<comment>Flight director pitch gain</comment>
 									<comment>Range: [-1, 1]</comment>
@@ -660,7 +660,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="AC_FD_Roll_Gain">
+						<Field name="rollGain">
 							<type>
 								<NamedType>
 									<type>
@@ -669,7 +669,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/4887/31D0/4E4/4750aff226bb" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/4887/31D0/4E4/4750aff226bb" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Aircraft_Info:</comment>
 									<comment>Flight director roll gain</comment>
 									<comment>Range: [-1, 1]</comment>
@@ -677,7 +677,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="AC_FD_Max_Pitch_Def">
+						<Field name="maxPitchDef">
 							<type>
 								<NamedType>
 									<type>
@@ -686,7 +686,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/4888/31D0/4E4/4750aff2de1" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/4888/31D0/4E4/4750aff2de1" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Aircraft_Info:</comment>
 									<comment>Maximum flight director pitch deflection</comment>
 									<comment>Range: [0, 180]</comment>
@@ -694,7 +694,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="AC_FD_Max_Roll_Def">
+						<Field name="maxRollDef">
 							<type>
 								<NamedType>
 									<type>
@@ -703,7 +703,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/4899/31D0/4E4/4750b183691b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/4899/31D0/4E4/4750b183691b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Aircraft_Info:</comment>
 									<comment>Maximum flight director roll deflection</comment>
 									<comment>Range: [0, 180]</comment>
@@ -711,7 +711,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="AC_Icon">
+						<Field name="icon">
 							<type>
 								<NamedType>
 									<type>
@@ -720,7 +720,7 @@
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/48a2/31D0/4E4/4750b1c94995" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Field oid="!ed/48a2/31D0/4E4/4750b1c94995" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Bitmap of aircraft icon TBD</comment>
 								</ed:Field>
 							</pragmas>
@@ -729,25 +729,25 @@
 				</Struct>
 			</definition>
 			<pragmas>
-				<ed:Type oid="!ed/226b/444A/B40/47594cd2408d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Type oid="!ed/226b/444A/B40/47594cd2408d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<comment>Static data</comment>
 				</ed:Type>
 			</pragmas>
 		</Type>
-		<Type name="Trajectory">
+		<Type name="trajectory">
 			<definition>
 				<Table>
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Point"/>
+								<TypeRef name="point"/>
 							</type>
 						</NamedType>
 					</type>
 					<size>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Nb_Pt_Trajectory"/>
+								<ConstVarRef name="NB_PT_TRAJECTORY"/>
 							</path>
 						</IdExpression>
 					</size>
@@ -757,7 +757,7 @@
 				<ed:Type oid="!ed/42ea/3913/15D0/4805f12858a8"/>
 			</pragmas>
 		</Type>
-		<Type name="Point">
+		<Type name="point">
 			<definition>
 				<Table>
 					<type>
@@ -776,7 +776,7 @@
 				<ed:Type oid="!ed/42e3/3913/15D0/4805f1284eb4"/>
 			</pragmas>
 		</Type>
-		<Constant name="Nb_Pt_Trajectory">
+		<Constant name="NB_PT_TRAJECTORY">
 			<type>
 				<NamedType>
 					<type>
@@ -791,11 +791,11 @@
 				<ed:Constant oid="!ed/42d5/3913/15D0/4805f12857ff"/>
 			</pragmas>
 		</Constant>
-		<Constant name="Pt_Default">
+		<Constant name="PT_DEFAULT">
 			<type>
 				<NamedType>
 					<type>
-						<TypeRef name="Point"/>
+						<TypeRef name="point"/>
 					</type>
 				</NamedType>
 			</type>

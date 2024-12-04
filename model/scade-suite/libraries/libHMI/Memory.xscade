@@ -117,7 +117,7 @@
 	<pragmas>
 		<ed:Operator oid="!ed/4dd0/28C9/1944/594245c834eb" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 			<diagrams>
-				<TextDiagram name="diagram_Memory_1" landscape="true" format="A4 (210 297)" oid="!ed/4dd2/28C9/1944/594245c86973">
+				<TextDiagram name="Memory_1" landscape="true" format="A4 (210 297)" oid="!ed/4dd2/28C9/1944/594245c86973">
 					<presentationElements>
 						<FlowTE presentable="!ed/4dd1/28C9/1944/594245c84e03"/>
 					</presentationElements>

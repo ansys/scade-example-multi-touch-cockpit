@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="HSI_RMIi_needle">
+		<Operator kind="function" name="hsiRMIiNeedle">
 			<inputs>
-				<Variable name="MN_RMIi_Source">
+				<Variable name="mnRMIiSource">
 					<type>
 						<NamedType>
 							<type>
@@ -15,11 +15,11 @@
 						<ed:Variable oid="!ed/8d9/7A70/BF0/4759559b78c"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Systeme_Info">
+				<Variable name="systemeInfo">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="System_Info_type"/>
+								<TypeRef name="systemInfoType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -27,11 +27,11 @@
 						<ed:Variable oid="!ed/8db/7A70/BF0/4759559b1f7"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Primary_Nav_Data">
+				<Variable name="primaryNavData">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Nav_Data_type"/>
+								<TypeRef name="navDataType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -39,11 +39,11 @@
 						<ed:Variable oid="!ed/8dc/7A70/BF0/4759559b2301"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Secondary_Nav_Data">
+				<Variable name="secondaryNavData">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Nav_Data_type"/>
+								<TypeRef name="navDataType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -53,7 +53,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="RMIi_Display">
+				<Variable name="rmiiDisplay">
 					<type>
 						<NamedType>
 							<type>
@@ -65,11 +65,11 @@
 						<ed:Variable oid="!ed/8d6/7A70/BF0/4759559b64d2"/>
 					</pragmas>
 				</Variable>
-				<Variable name="RMIi_legend_text">
+				<Variable name="rmiiLegendText">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="RMI_enum"/>
+								<TypeRef name="rmi"/>
 							</type>
 						</NamedType>
 					</type>
@@ -77,7 +77,7 @@
 						<ed:Variable oid="!ed/8d7/7A70/BF0/4759559b70b7"/>
 					</pragmas>
 				</Variable>
-				<Variable name="HSI_RMIi_Rotation">
+				<Variable name="hsiRMIiRotation">
 					<type>
 						<NamedType>
 							<type>
@@ -119,7 +119,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Nav_Data_type"/>
+								<TypeRef name="navDataType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -131,7 +131,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Nav_Data_type"/>
+								<TypeRef name="navDataType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -179,7 +179,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="RMI_enum"/>
+								<TypeRef name="rmi"/>
 							</type>
 						</NamedType>
 					</type>
@@ -191,7 +191,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="RMI_enum"/>
+								<TypeRef name="rmi"/>
 							</type>
 						</NamedType>
 					</type>
@@ -203,7 +203,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="RMI_enum"/>
+								<TypeRef name="rmi"/>
 							</type>
 						</NamedType>
 					</type>
@@ -215,7 +215,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="RMI_enum"/>
+								<TypeRef name="rmi"/>
 							</type>
 						</NamedType>
 					</type>
@@ -227,7 +227,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="RMI_enum"/>
+								<TypeRef name="rmi"/>
 							</type>
 						</NamedType>
 					</type>
@@ -239,7 +239,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="RMI_enum"/>
+								<TypeRef name="rmi"/>
 							</type>
 						</NamedType>
 					</type>
@@ -275,7 +275,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="System_Info_type"/>
+								<TypeRef name="systemInfoType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -318,7 +318,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="System_Info_type"/>
+								<TypeRef name="systemInfoType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -340,19 +340,19 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L1, _L2 = HSI_RMIi_needle_compute(_L11, _L26, _L4, _L5); -->
+				<!-- _L1, _L2 = hsiRMIiNeedleCompute(_L11, _L26, _L4, _L5); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1"/>
 						<VariableRef name="_L2"/>
 					</lefts>
 					<right>
-						<!-- HSI_RMIi_needle_compute(_L11, _L26, _L4, _L5) -->
+						<!-- hsiRMIiNeedleCompute(_L11, _L26, _L4, _L5) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
 									<operator>
-										<OperatorRef name="HSI_RMIi_needle_compute"/>
+										<OperatorRef name="hsiRMIiNeedleCompute"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -381,7 +381,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<OperatorRef path="HSI_RMIi_needle_compute" refOid="!ed/a42/7196/B20/476164813d6">
+										<OperatorRef path="hsiRMIiNeedleCompute" refOid="!ed/a42/7196/B20/476164813d6">
 											<InputRef refOid="!ed/a4a/7196/B20/4761648f4ca6"/>
 											<InputRef refOid="!ed/a50/7196/B20/4761648f5a7b"/>
 											<InputRef refOid="!ed/a57/7196/B20/4761648f6f6c"/>
@@ -398,7 +398,7 @@
 						<ed:Equation oid="!ed/8f6/7A70/BF0/4759559b70ec"/>
 					</pragmas>
 				</Equation>
-				<!-- _L4 = Primary_Nav_Data; -->
+				<!-- _L4 = primaryNavData; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L4"/>
@@ -406,7 +406,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Primary_Nav_Data"/>
+								<ConstVarRef name="primaryNavData"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -414,7 +414,7 @@
 						<ed:Equation oid="!ed/8f7/7A70/BF0/4759559beea"/>
 					</pragmas>
 				</Equation>
-				<!-- _L5 = Secondary_Nav_Data; -->
+				<!-- _L5 = secondaryNavData; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L5"/>
@@ -422,7 +422,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Secondary_Nav_Data"/>
+								<ConstVarRef name="secondaryNavData"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -430,10 +430,10 @@
 						<ed:Equation oid="!ed/8f8/7A70/BF0/4759559b6d5f"/>
 					</pragmas>
 				</Equation>
-				<!-- RMIi_Display = _L1; -->
+				<!-- rmiiDisplay = _L1; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="RMIi_Display"/>
+						<VariableRef name="rmiiDisplay"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -493,7 +493,7 @@
 						<ed:Equation oid="!ed/8fb/7A70/BF0/4759559b5ee9"/>
 					</pragmas>
 				</Equation>
-				<!-- _L9 = MN_RMIi_Source; -->
+				<!-- _L9 = mnRMIiSource; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L9"/>
@@ -501,7 +501,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="MN_RMIi_Source"/>
+								<ConstVarRef name="mnRMIiSource"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -666,10 +666,10 @@
 						<ed:Equation oid="!ed/902/7A70/BF0/4759559b377a"/>
 					</pragmas>
 				</Equation>
-				<!-- RMIi_legend_text = _L11; -->
+				<!-- rmiiLegendText = _L11; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="RMIi_legend_text"/>
+						<VariableRef name="rmiiLegendText"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -720,10 +720,10 @@
 						<ed:Equation oid="!ed/908/7A70/BF0/4759559b3260"/>
 					</pragmas>
 				</Equation>
-				<!-- HSI_RMIi_Rotation = _L23; -->
+				<!-- hsiRMIiRotation = _L23; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HSI_RMIi_Rotation"/>
+						<VariableRef name="hsiRMIiRotation"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -736,7 +736,7 @@
 						<ed:Equation oid="!ed/909/7A70/BF0/4759559b601b"/>
 					</pragmas>
 				</Equation>
-				<!-- _L25 = Systeme_Info; -->
+				<!-- _L25 = systemeInfo; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L25"/>
@@ -744,7 +744,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Systeme_Info"/>
+								<ConstVarRef name="systemeInfo"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -752,13 +752,13 @@
 						<ed:Equation oid="!ed/90a/7A70/BF0/4759559b5ec4"/>
 					</pragmas>
 				</Equation>
-				<!-- _L26 = _L28.SY_Switch_NAV_Source; -->
+				<!-- _L26 = _L28.sySwitchNavSource; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L26"/>
 					</lefts>
 					<right>
-						<!-- _L28.SY_Switch_NAV_Source -->
+						<!-- _L28.sySwitchNavSource -->
 						<PrjOp name="2">
 							<flow>
 								<IdExpression>
@@ -768,7 +768,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="SY_Switch_NAV_Source"/>
+								<Label name="sySwitchNavSource"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -776,13 +776,13 @@
 						<ed:Equation oid="!ed/90b/7A70/BF0/4759559b1e68"/>
 					</pragmas>
 				</Equation>
-				<!-- _L27 = _L25.SY_RMI_Sources; -->
+				<!-- _L27 = _L25.syRmiSources; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L27"/>
 					</lefts>
 					<right>
-						<!-- _L25.SY_RMI_Sources -->
+						<!-- _L25.syRmiSources -->
 						<PrjOp name="3">
 							<flow>
 								<IdExpression>
@@ -792,7 +792,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="SY_RMI_Sources"/>
+								<Label name="syRmiSources"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -800,7 +800,7 @@
 						<ed:Equation oid="!ed/90c/7A70/BF0/4759559b7312"/>
 					</pragmas>
 				</Equation>
-				<!-- _L28 = Systeme_Info; -->
+				<!-- _L28 = systemeInfo; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L28"/>
@@ -808,7 +808,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Systeme_Info"/>
+								<ConstVarRef name="systemeInfo"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -844,7 +844,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/8d5/7A70/BF0/4759559b3557" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_HSI_RMIi_needle_1" landscape="true" format="A4 (210 297)" oid="!ed/8f5/7A70/BF0/4759559b6b08">
+						<NetDiagram name="hsiRMIiNeedle" landscape="true" format="A4 (210 297)" oid="!ed/8f5/7A70/BF0/4759559b6b08">
 							<presentationElements>
 								<EquationGE presentable="!ed/8f6/7A70/BF0/4759559b70ec">
 									<position>
@@ -1199,9 +1199,9 @@
 						</NetDiagram>
 					</diagrams>
 					<references>
-						<TypeRef path="System_Info_type" refOid="!ed/22f4/444A/B40/47594cd27d9d"/>
-						<TypeRef path="Nav_Data_type" refOid="!ed/22be/444A/B40/47594cd2222d"/>
-						<TypeRef path="RMI_enum" refOid="!ed/bc/7A70/BF0/475955397f20"/>
+						<TypeRef path="systemInfoType" refOid="!ed/22f4/444A/B40/47594cd27d9d"/>
+						<TypeRef path="navDataType" refOid="!ed/22be/444A/B40/47594cd2222d"/>
+						<TypeRef path="rmi" refOid="!ed/bc/7A70/BF0/475955397f20"/>
 						<ConstVarRef path="RMI_OFF" refOid="!ed/2e20/5B1F/A70/4757b43d4e5d"/>
 						<ConstVarRef path="RMI_ADF1" refOid="!ed/2e21/5B1F/A70/4757b4685f38"/>
 						<ConstVarRef path="RMI_ADF2" refOid="!ed/2e22/5B1F/A70/4757b46920bf"/>

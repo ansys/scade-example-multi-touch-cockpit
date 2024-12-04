@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="node" name="MeanCycle4">
+		<Operator kind="node" name="meanCycle4">
 			<inputs>
-				<Variable name="U">
+				<Variable name="u">
 					<type>
 						<NamedType>
 							<type>
@@ -17,7 +17,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="MeanOn4Step">
+				<Variable name="meanOn4Step">
 					<type>
 						<NamedType>
 							<type>
@@ -210,10 +210,10 @@
 						<ed:Equation oid="!ed/6100/63A3/56C/49dde20e56bd"/>
 					</pragmas>
 				</Equation>
-				<!-- MeanOn4Step = _L2; -->
+				<!-- meanOn4Step = _L2; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="MeanOn4Step"/>
+						<VariableRef name="meanOn4Step"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -289,7 +289,7 @@
 						<ed:Equation oid="!ed/6103/63A3/56C/49dde20e48e"/>
 					</pragmas>
 				</Equation>
-				<!-- _L5 = U; -->
+				<!-- _L5 = u; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L5"/>
@@ -297,7 +297,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="U"/>
+								<ConstVarRef name="u"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -462,9 +462,9 @@
 				</Equation>
 			</data>
 			<pragmas>
-				<ed:Operator oid="!ed/60fe/63A3/56C/49dde20e4a3" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Operator oid="!ed/60fe/63A3/56C/49dde20e4a3" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_MeanCycle4_1" landscape="true" format="A4 (210 297)" oid="!ed/6107/63A3/56C/49dde20e7b6d">
+						<NetDiagram name="meanCycle4" landscape="true" format="A4 (210 297)" oid="!ed/6107/63A3/56C/49dde20e7b6d">
 							<presentationElements>
 								<EquationGE presentable="!ed/60ff/63A3/56C/49dde20e56a5">
 									<position>
@@ -492,10 +492,10 @@
 								</EquationGE>
 								<EquationGE kind="OBJ_LIT" presentable="!ed/6102/63A3/56C/49dde20e5b78">
 									<position>
-										<Point x="15875" y="2540"/>
+										<Point x="16431" y="2540"/>
 									</position>
 									<size>
-										<Size width="768" height="317"/>
+										<Size width="211" height="318"/>
 									</size>
 								</EquationGE>
 								<EquationGE presentable="!ed/6103/63A3/56C/49dde20e48e">
@@ -542,8 +542,8 @@
 									<positions>
 										<Point x="3731" y="2117"/>
 										<Point x="5741" y="2117"/>
-										<Point x="5741" y="1429"/>
-										<Point x="13785" y="1429"/>
+										<Point x="5741" y="1455"/>
+										<Point x="13785" y="1455"/>
 									</positions>
 								</Edge>
 								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/6100/63A3/56C/49dde20e56bd" dstEquation="!ed/6101/63A3/56C/49dde20e7910">
@@ -573,7 +573,7 @@
 								</Edge>
 								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/6103/63A3/56C/49dde20e48e" dstEquation="!ed/6100/63A3/56C/49dde20e56bd">
 									<positions>
-										<Point x="15293" y="1746"/>
+										<Point x="15319" y="1746"/>
 										<Point x="16298" y="1746"/>
 										<Point x="16298" y="1746"/>
 										<Point x="17330" y="1746"/>
@@ -689,24 +689,24 @@
 									<positions>
 										<Point x="9022" y="4339"/>
 										<Point x="9499" y="4339"/>
-										<Point x="9499" y="1879"/>
-										<Point x="13785" y="1879"/>
+										<Point x="9499" y="1905"/>
+										<Point x="13785" y="1905"/>
 									</positions>
 								</Edge>
 								<Edge leftVarIndex="1" rightExprIndex="6" srcEquation="!ed/77d6/5178/80C/49dde8543748" dstEquation="!ed/6103/63A3/56C/49dde20e48e">
 									<positions>
 										<Point x="10742" y="5186"/>
 										<Point x="11245" y="5186"/>
-										<Point x="11245" y="2037"/>
-										<Point x="13785" y="2037"/>
+										<Point x="11245" y="2064"/>
+										<Point x="13785" y="2064"/>
 									</positions>
 								</Edge>
 								<Edge leftVarIndex="1" rightExprIndex="7" srcEquation="!ed/77d4/5178/80C/49dde8541588" dstEquation="!ed/6103/63A3/56C/49dde20e48e">
 									<positions>
 										<Point x="12515" y="5689"/>
 										<Point x="13150" y="5689"/>
-										<Point x="13150" y="2170"/>
-										<Point x="13785" y="2170"/>
+										<Point x="13150" y="2196"/>
+										<Point x="13785" y="2196"/>
 									</positions>
 								</Edge>
 								<Edge leftVarIndex="1" rightExprIndex="3" srcEquation="!ed/6104/63A3/56C/49dde20e530d" dstEquation="!ed/77d8/5178/80C/49dde85434e8">

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MappingFile>
 	 	<operatorMappings>
-		<OperatorMapping name="GlassCockpit" oid="!ed/48e7/7408/14F4/4bb313006b94">
+		<OperatorMapping name="glassCockpit" oid="!ed/48e7/7408/14F4/4bb313006b94">
 			<mappingItems>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_AIRSPEED" type="float32" oid="!ed/49cc/7408/14F4/4bb313005ca9" instancepath="GlassCockpit/"/>
+						<Variable name="airspeed" type="float32" oid="!ed/49cc/7408/14F4/4bb313005ca9" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="pnAirspeed" type="float32" oid="66e93003-e682-4022-bab4-5672f4339e19" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -13,7 +13,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_Px1" type="float32" oid="!ed/49ce/7408/14F4/4bb31300ea9" instancepath="GlassCockpit/"/>
+						<Variable name="px1" type="float32" oid="!ed/49ce/7408/14F4/4bb31300ea9" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="px1" type="float32" oid="148eae1d-da1e-4f34-b2e4-3e84980a504b" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -21,7 +21,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_Px2" type="float32" oid="!ed/49cf/7408/14F4/4bb313007842" instancepath="GlassCockpit/"/>
+						<Variable name="px2" type="float32" oid="!ed/49cf/7408/14F4/4bb313007842" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="px2" type="float32" oid="959e0118-f67b-4650-b152-17b8b076b97f" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -29,7 +29,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_Px3" type="float32" oid="!ed/49d0/7408/14F4/4bb313003bda" instancepath="GlassCockpit/"/>
+						<Variable name="px3" type="float32" oid="!ed/49d0/7408/14F4/4bb313003bda" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="px3" type="float32" oid="347d3cd5-8691-4321-a5fc-77d89ff6d896" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -37,7 +37,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_Px4" type="float32" oid="!ed/49d1/7408/14F4/4bb3130050d9" instancepath="GlassCockpit/"/>
+						<Variable name="px4" type="float32" oid="!ed/49d1/7408/14F4/4bb3130050d9" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="px4" type="float32" oid="68564185-8d75-447b-86e0-a38696d68b5f" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -45,7 +45,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_Py1" type="float32" oid="!ed/49d2/7408/14F4/4bb31300fb9" instancepath="GlassCockpit/"/>
+						<Variable name="py1" type="float32" oid="!ed/49d2/7408/14F4/4bb31300fb9" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="py1" type="float32" oid="7922e411-990d-4d59-871f-5f6c72767ed2" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -53,7 +53,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_Py3" type="float32" oid="!ed/49d4/7408/14F4/4bb31300658f" instancepath="GlassCockpit/"/>
+						<Variable name="py3" type="float32" oid="!ed/49d4/7408/14F4/4bb31300658f" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="py3" type="float32" oid="4be766b8-f395-433e-a465-40a29a3bfca6" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -61,7 +61,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_Py2" type="float32" oid="!ed/49d3/7408/14F4/4bb3130041ec" instancepath="GlassCockpit/"/>
+						<Variable name="py2" type="float32" oid="!ed/49d3/7408/14F4/4bb3130041ec" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="py2" type="float32" oid="2763507f-e509-4356-841e-ef509fbe6b74" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -69,7 +69,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_Py4" type="float32" oid="!ed/49d5/7408/14F4/4bb3130077e7" instancepath="GlassCockpit/"/>
+						<Variable name="py4" type="float32" oid="!ed/49d5/7408/14F4/4bb3130077e7" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="py4" type="float32" oid="0c591992-fe66-437b-b628-54ec61637613" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -77,7 +77,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="HEADING" type="float32" oid="!ed/ceb2/5F82/1828/5a256a4572a4" instancepath="GlassCockpit/"/>
+						<Variable name="heading" type="float32" oid="!ed/ceb2/5F82/1828/5a256a4572a4" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="autoPilotHeading" type="float32" oid="eed460e9-ee1b-4b37-aa52-8e3a6c73d886" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -85,7 +85,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SPEED" type="float32" oid="!ed/ceac/5F82/1828/5a256a453c0d" instancepath="GlassCockpit/"/>
+						<Variable name="speed" type="float32" oid="!ed/ceac/5F82/1828/5a256a453c0d" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="autoPilotSpeed" type="float32" oid="5a320128-c576-48a7-86c6-460e1c447ddb" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -93,7 +93,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="ALTITUDE" type="float32" oid="!ed/ceb8/5F82/1828/5a256a452b78" instancepath="GlassCockpit/"/>
+						<Variable name="altitude" type="float32" oid="!ed/ceb8/5F82/1828/5a256a452b78" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="autoPilotAlt" type="float32" oid="45f50ddf-ad42-4eec-8996-8ffe769d1262" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -104,7 +104,7 @@
 						<Plug name="autoPilotOn" type="bool" oid="10445bd2-e7a6-4414-9589-f24e012b163e" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
 					</output>
 					<inputs>
-						<Variable name="Go" type="bool" oid="!ed/ce8c/5F82/1828/5a25698b65c6" instancepath="GlassCockpit/"/>
+						<Variable name="go" type="bool" oid="!ed/ce8c/5F82/1828/5a25698b65c6" instancepath="glassCockpit/"/>
 					</inputs>
 				</MappingItem>
 				<MappingItem>
@@ -112,7 +112,7 @@
 						<Plug name="autoPilotTargetSpeed" type="float32" oid="483a8be1-ec4e-41fa-8953-42135cc2ebbb" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
 					</output>
 					<inputs>
-						<Variable name="targetSpeed" type="float32" oid="!ed/ce7d/5F82/1828/5a25696c68f5" instancepath="GlassCockpit/"/>
+						<Variable name="targetSpeed" type="float32" oid="!ed/ce7d/5F82/1828/5a25696c68f5" instancepath="glassCockpit/"/>
 					</inputs>
 				</MappingItem>
 				<MappingItem>
@@ -120,7 +120,7 @@
 						<Plug name="autoPilotTargetAlt" type="float32" oid="c2e5e379-4374-4e1d-9936-a3c253d1a75c" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
 					</output>
 					<inputs>
-						<Variable name="targetAltitude" type="float32" oid="!ed/ce9e/5F82/1828/5a2569993a68" instancepath="GlassCockpit/"/>
+						<Variable name="targetAltitude" type="float32" oid="!ed/ce9e/5F82/1828/5a2569993a68" instancepath="glassCockpit/"/>
 					</inputs>
 				</MappingItem>
 				<MappingItem>
@@ -128,12 +128,12 @@
 						<Plug name="autoPilotTargetHeading" type="float32" oid="4d824515-1c43-47bf-8d67-ed0bf4dd96a6" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
 					</output>
 					<inputs>
-						<Variable name="targetHeading" type="float32" oid="!ed/ce98/5F82/1828/5a256999690d" instancepath="GlassCockpit/"/>
+						<Variable name="targetHeading" type="float32" oid="!ed/ce98/5F82/1828/5a256999690d" instancepath="glassCockpit/"/>
 					</inputs>
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_Pttx1" type="float32" oid="!ed/49d6/7408/14F4/4bb3130054a" instancepath="GlassCockpit/"/>
+						<Variable name="pttx1" type="float32" oid="!ed/49d6/7408/14F4/4bb3130054a" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="pttx1" type="float32" oid="55377300-0704-402e-b025-3c7b17413942" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -141,7 +141,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_Ptty1" type="float32" oid="!ed/49d7/7408/14F4/4bb313001b4e" instancepath="GlassCockpit/"/>
+						<Variable name="ptty1" type="float32" oid="!ed/49d7/7408/14F4/4bb313001b4e" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="ptty1" type="float32" oid="ff3881f0-00d1-40d8-b469-df930f253610" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -149,23 +149,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_Ptty2" type="float32" oid="!ed/49d8/7408/14F4/4bb313003c6d" instancepath="GlassCockpit/"/>
-					</output>
-					<inputs>
-						<Plug name="ptty2" type="float32" oid="adfe428d-bff2-4849-b484-834a5a4b545d" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
-					</inputs>
-				</MappingItem>
-				<MappingItem>
-					<output>
-						<Variable name="SDY_Pttx2" type="float32" oid="!ed/49d9/7408/14F4/4bb313001678" instancepath="GlassCockpit/"/>
-					</output>
-					<inputs>
-						<Plug name="pttx2" type="float32" oid="de4b7d38-f5ba-495f-8afb-59507c95fae6" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
-					</inputs>
-				</MappingItem>
-				<MappingItem>
-					<output>
-						<Variable name="SDY_Pttx3" type="float32" oid="!ed/49da/7408/14F4/4bb313005b4c" instancepath="GlassCockpit/"/>
+						<Variable name="pttx3" type="float32" oid="!ed/49da/7408/14F4/4bb313005b4c" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="pttx3" type="float32" oid="1a74d1db-730a-4342-9aea-05f6fe3671e9" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -173,7 +157,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_Ptty3" type="float32" oid="!ed/49db/7408/14F4/4bb313003263" instancepath="GlassCockpit/"/>
+						<Variable name="ptty3" type="float32" oid="!ed/49db/7408/14F4/4bb313003263" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="ptty3" type="float32" oid="1a438040-65b4-4e63-9f31-1d8f5fb68e8a" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -181,7 +165,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_Pttx4" type="float32" oid="!ed/49dc/7408/14F4/4bb31300211a" instancepath="GlassCockpit/"/>
+						<Variable name="pttx4" type="float32" oid="!ed/49dc/7408/14F4/4bb31300211a" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="pttx4" type="float32" oid="1acb4c63-486b-4fc7-8c96-8bd3f5732e02" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -189,7 +173,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_Ptty4" type="float32" oid="!ed/49dd/7408/14F4/4bb31300af2" instancepath="GlassCockpit/"/>
+						<Variable name="ptty4" type="float32" oid="!ed/49dd/7408/14F4/4bb31300af2" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="ptty4" type="float32" oid="a921fd7d-aa5d-4657-9fae-abfe25cad585" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -197,7 +181,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_Pttx5" type="float32" oid="!ed/49de/7408/14F4/4bb3130035a3" instancepath="GlassCockpit/"/>
+						<Variable name="pttx5" type="float32" oid="!ed/49de/7408/14F4/4bb3130035a3" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="pttx5" type="float32" oid="08660e59-9e3e-43a6-ae0d-c9b08e668220" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -205,7 +189,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_Ptty5" type="float32" oid="!ed/49df/7408/14F4/4bb313001e53" instancepath="GlassCockpit/"/>
+						<Variable name="ptty5" type="float32" oid="!ed/49df/7408/14F4/4bb313001e53" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="ptty5" type="float32" oid="fce6d87c-9dc1-4354-9fd0-58125661972c" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -213,7 +197,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_Ptty6" type="float32" oid="!ed/49e1/7408/14F4/4bb313001861" instancepath="GlassCockpit/"/>
+						<Variable name="ptty6" type="float32" oid="!ed/49e1/7408/14F4/4bb313001861" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="ptty6" type="float32" oid="85629c52-84c1-4e95-bb39-335264fb7775" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -221,7 +205,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_Pttx6" type="float32" oid="!ed/49e0/7408/14F4/4bb313005aa" instancepath="GlassCockpit/"/>
+						<Variable name="pttx6" type="float32" oid="!ed/49e0/7408/14F4/4bb313005aa" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="pttx6" type="float32" oid="93606003-6cd8-4b3d-affe-4cf57f71ec98" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -229,7 +213,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_Pttx7" type="float32" oid="!ed/49e2/7408/14F4/4bb313003f36" instancepath="GlassCockpit/"/>
+						<Variable name="pttx7" type="float32" oid="!ed/49e2/7408/14F4/4bb313003f36" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="pttx7" type="float32" oid="3b026ae4-6ae5-44ec-90cc-ec378b80b332" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -237,7 +221,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_Ptty7" type="float32" oid="!ed/49e3/7408/14F4/4bb31300423a" instancepath="GlassCockpit/"/>
+						<Variable name="ptty7" type="float32" oid="!ed/49e3/7408/14F4/4bb31300423a" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="ptty7" type="float32" oid="81e971af-3604-41f1-b01f-457da5405d47" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -245,7 +229,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_Ptty8" type="float32" oid="!ed/49e5/7408/14F4/4bb313007f62" instancepath="GlassCockpit/"/>
+						<Variable name="ptty8" type="float32" oid="!ed/49e5/7408/14F4/4bb313007f62" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="ptty8" type="float32" oid="5101a4cf-0c82-4e97-9dc0-1c02009582a5" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -253,7 +237,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_Pttx8" type="float32" oid="!ed/49e4/7408/14F4/4bb31300555a" instancepath="GlassCockpit/"/>
+						<Variable name="pttx8" type="float32" oid="!ed/49e4/7408/14F4/4bb31300555a" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="pttx8" type="float32" oid="f15429ff-38c6-4594-988a-fa48d0e78f80" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -261,7 +245,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_RT" type="float32" oid="!ed/49fa/7408/14F4/4bb313003641" instancepath="GlassCockpit/"/>
+						<Variable name="rt" type="float32" oid="!ed/49fa/7408/14F4/4bb313003641" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="rT" type="float32" oid="93cbc03e-ca51-45a5-a0dd-4b23054130f5" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -269,7 +253,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_RT1" type="float32" oid="!ed/49fb/7408/14F4/4bb313006b2a" instancepath="GlassCockpit/"/>
+						<Variable name="rt1" type="float32" oid="!ed/49fb/7408/14F4/4bb313006b2a" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="rT1" type="float32" oid="45e84132-496e-4200-9e43-9fc76295aaed" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -277,7 +261,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_RT2" type="float32" oid="!ed/49fc/7408/14F4/4bb3130053d2" instancepath="GlassCockpit/"/>
+						<Variable name="rt2" type="float32" oid="!ed/49fc/7408/14F4/4bb3130053d2" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="rT2" type="float32" oid="4a748e29-410c-4d6a-998c-4111f4b33a89" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -285,7 +269,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_RT4" type="float32" oid="!ed/49fe/7408/14F4/4bb3130026fc" instancepath="GlassCockpit/"/>
+						<Variable name="rt4" type="float32" oid="!ed/49fe/7408/14F4/4bb3130026fc" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="rT4" type="float32" oid="0bb9aff6-e846-42f3-b11a-f03ed9ae9856" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -293,7 +277,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_RT3" type="float32" oid="!ed/49fd/7408/14F4/4bb313002da5" instancepath="GlassCockpit/"/>
+						<Variable name="rt3" type="float32" oid="!ed/49fd/7408/14F4/4bb313002da5" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="rT3" type="float32" oid="c46e608e-bd85-494b-833c-d277664f68a8" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -301,7 +285,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_XT1" type="float32" oid="!ed/49e6/7408/14F4/4bb313006f42" instancepath="GlassCockpit/"/>
+						<Variable name="xt1" type="float32" oid="!ed/49e6/7408/14F4/4bb313006f42" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="xT1" type="float32" oid="16918f0f-7e45-4010-86f3-30ea6afcd6ef" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -309,7 +293,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_XT2" type="float32" oid="!ed/49e8/7408/14F4/4bb31300481" instancepath="GlassCockpit/"/>
+						<Variable name="xt2" type="float32" oid="!ed/49e8/7408/14F4/4bb31300481" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="xT2" type="float32" oid="2b52a0ab-c8e5-4d9a-af14-950d033fd30d" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -317,7 +301,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_XT3" type="float32" oid="!ed/49ea/7408/14F4/4bb3130038f5" instancepath="GlassCockpit/"/>
+						<Variable name="xt3" type="float32" oid="!ed/49ea/7408/14F4/4bb3130038f5" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="xT3" type="float32" oid="1799ecf1-9e3d-43ac-98ef-3295c844916f" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -325,7 +309,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_XT4" type="float32" oid="!ed/49ec/7408/14F4/4bb313005cc3" instancepath="GlassCockpit/"/>
+						<Variable name="xt4" type="float32" oid="!ed/49ec/7408/14F4/4bb313005cc3" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="xT4" type="float32" oid="f47c7fc6-06e3-45f5-b421-b4ff4df1f58b" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -333,7 +317,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_YT1" type="float32" oid="!ed/49e7/7408/14F4/4bb313004d2b" instancepath="GlassCockpit/"/>
+						<Variable name="yt1" type="float32" oid="!ed/49e7/7408/14F4/4bb313004d2b" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="yT1" type="float32" oid="26086c09-d0d3-4e99-92eb-8669c3abc074" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -341,7 +325,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_YT2" type="float32" oid="!ed/49e9/7408/14F4/4bb313001e3f" instancepath="GlassCockpit/"/>
+						<Variable name="yt2" type="float32" oid="!ed/49e9/7408/14F4/4bb313001e3f" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="yT2" type="float32" oid="156ff3e9-7455-4b64-bb14-194b091e006d" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -349,7 +333,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_YT3" type="float32" oid="!ed/49eb/7408/14F4/4bb313007b75" instancepath="GlassCockpit/"/>
+						<Variable name="yt3" type="float32" oid="!ed/49eb/7408/14F4/4bb313007b75" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="yT3" type="float32" oid="788a697c-f9ba-4e5b-9977-cd42efd5a980" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -357,7 +341,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_YT4" type="float32" oid="!ed/49ed/7408/14F4/4bb313005c5b" instancepath="GlassCockpit/"/>
+						<Variable name="yt4" type="float32" oid="!ed/49ed/7408/14F4/4bb313005c5b" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="yT4" type="float32" oid="066d0f74-39c6-4d2f-b456-d93a3d77697f" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -365,7 +349,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_ST1X" type="float32" oid="!ed/49ee/7408/14F4/4bb313005938" instancepath="GlassCockpit/"/>
+						<Variable name="st1x" type="float32" oid="!ed/49ee/7408/14F4/4bb313005938" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="sT1X" type="float32" oid="553d1825-e9c1-4531-85ef-98bc7479058b" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -373,7 +357,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_ST1Y" type="float32" oid="!ed/49ef/7408/14F4/4bb313007d24" instancepath="GlassCockpit/"/>
+						<Variable name="sty1" type="float32" oid="!ed/49ef/7408/14F4/4bb313007d24" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="sT1Y" type="float32" oid="bf167f5a-0153-4794-ae83-da0fa8557e78" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -381,7 +365,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_ST2X" type="float32" oid="!ed/49f0/7408/14F4/4bb313005988" instancepath="GlassCockpit/"/>
+						<Variable name="st2x" type="float32" oid="!ed/49f0/7408/14F4/4bb313005988" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="sT2X" type="float32" oid="d4a109f4-097b-4fc4-a43a-1f34aceaf6c8" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -389,7 +373,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_ST2Y" type="float32" oid="!ed/49f1/7408/14F4/4bb3130064d1" instancepath="GlassCockpit/"/>
+						<Variable name="st2y" type="float32" oid="!ed/49f1/7408/14F4/4bb3130064d1" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="sT2Y" type="float32" oid="c6c723a2-b97b-4c6e-87bf-6012b610b7d2" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -397,7 +381,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_ST3Y" type="float32" oid="!ed/49f3/7408/14F4/4bb3130025cb" instancepath="GlassCockpit/"/>
+						<Variable name="st3y" type="float32" oid="!ed/49f3/7408/14F4/4bb3130025cb" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="sT3Y" type="float32" oid="d29f8c5f-2dc9-48bf-bd12-b26244e2aaa9" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -405,7 +389,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_ST3X" type="float32" oid="!ed/49f2/7408/14F4/4bb3130036cc" instancepath="GlassCockpit/"/>
+						<Variable name="st3x" type="float32" oid="!ed/49f2/7408/14F4/4bb3130036cc" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="sT3X" type="float32" oid="18c9ef87-0bfd-44fa-9975-16ebf74e09c5" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -413,7 +397,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_ST4X" type="float32" oid="!ed/49f4/7408/14F4/4bb3130028ac" instancepath="GlassCockpit/"/>
+						<Variable name="st4x" type="float32" oid="!ed/49f4/7408/14F4/4bb3130028ac" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="sT4X" type="float32" oid="5f2e32c3-ce4c-4fc7-9d9b-8ac2fabf7687" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -421,7 +405,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_ST4Y" type="float32" oid="!ed/49f5/7408/14F4/4bb313007458" instancepath="GlassCockpit/"/>
+						<Variable name="st4y" type="float32" oid="!ed/49f5/7408/14F4/4bb313007458" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="sT4Y" type="float32" oid="e438547e-aba1-4e6c-9eb7-93875299fe0f" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -429,7 +413,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_VT1" type="int32" oid="!ed/49f6/7408/14F4/4bb31300898" instancepath="GlassCockpit/"/>
+						<Variable name="vt1" type="int32" oid="!ed/49f6/7408/14F4/4bb31300898" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="vT1" type="int32" oid="faf644f6-a2b8-4cbd-b5e5-76d80d057c8e" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -437,7 +421,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_VT2" type="int32" oid="!ed/49f7/7408/14F4/4bb313004981" instancepath="GlassCockpit/"/>
+						<Variable name="vt2" type="int32" oid="!ed/49f7/7408/14F4/4bb313004981" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="vT2" type="int32" oid="54dbf2c4-4c70-4e30-b7a3-b9d8e90a8141" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -445,7 +429,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_VT3" type="int32" oid="!ed/49f8/7408/14F4/4bb313002379" instancepath="GlassCockpit/"/>
+						<Variable name="vt3" type="int32" oid="!ed/49f8/7408/14F4/4bb313002379" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="vT3" type="int32" oid="3d042246-2079-46f6-9b02-8f1d6a666bb5" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -453,7 +437,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_VT4" type="int32" oid="!ed/49f9/7408/14F4/4bb313003e6a" instancepath="GlassCockpit/"/>
+						<Variable name="vt4" type="int32" oid="!ed/49f9/7408/14F4/4bb313003e6a" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="vT4" type="int32" oid="bf32e40b-4ccb-4c5d-b3f2-6a470f480780" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -461,7 +445,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_V_x_aircraft" type="float32" oid="!ed/49ff/7408/14F4/4bb313001ff8" instancepath="GlassCockpit/"/>
+						<Variable name="vxAircraft" type="float32" oid="!ed/49ff/7408/14F4/4bb313001ff8" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="vxAircraft" type="float32" oid="7f33aeda-d1a6-46ce-9a14-c64b02a8289b" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -469,7 +453,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_V_z_aircraft" type="float32" oid="!ed/4a00/7408/14F4/4bb3130059b0" instancepath="GlassCockpit/"/>
+						<Variable name="vzAircraft" type="float32" oid="!ed/4a00/7408/14F4/4bb3130059b0" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="VzAircraft" type="float32" oid="aa6eb02a-d819-413d-951f-ec997271b59a" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -477,7 +461,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_Yow" type="float32" oid="!ed/4a01/7408/14F4/4bb31300371" instancepath="GlassCockpit/"/>
+						<Variable name="yow" type="float32" oid="!ed/4a01/7408/14F4/4bb31300371" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="yow" type="float32" oid="a23c0cbd-6bc0-4b82-8e75-fb2d0b1dc9b7" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -485,7 +469,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_PITCH" type="float32" oid="!ed/49c8/7408/14F4/4bb313001021" instancepath="GlassCockpit/"/>
+						<Variable name="pitch" type="float32" oid="!ed/49c8/7408/14F4/4bb313001021" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="pitch" type="float32" oid="4a87db09-18c4-4bc1-879a-bfecc537437e" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -493,7 +477,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_ROLL" type="float32" oid="!ed/49c7/7408/14F4/4bb31300649" instancepath="GlassCockpit/"/>
+						<Variable name="roll" type="float32" oid="!ed/49c7/7408/14F4/4bb31300649" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="roll" type="float32" oid="9fbf016a-49ee-421b-95c1-74bc498860d7" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
@@ -501,10 +485,26 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="SDY_CDI_COMPASS_CARD_ROTATE" type="float32" oid="!ed/49cb/7408/14F4/4bb313005004" instancepath="GlassCockpit/"/>
+						<Variable name="cdiCompassCardRotate" type="float32" oid="!ed/49cb/7408/14F4/4bb313005004" instancepath="glassCockpit/"/>
 					</output>
 					<inputs>
 						<Plug name="cdiCompassCardRotate" type="float32" oid="88a4f06a-b5a0-40be-9379-711b20b982f6" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="ptty2" type="float32" oid="!ed/49d9/7408/14F4/4bb313001678" instancepath="glassCockpit/"/>
+					</output>
+					<inputs>
+						<Plug name="ptty2" type="float32" oid="adfe428d-bff2-4849-b484-834a5a4b545d" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="pttx2" type="float32" oid="!ed/49d8/7408/14F4/4bb313003c6d" instancepath="glassCockpit/"/>
+					</output>
+					<inputs>
+						<Plug name="pttx2" type="float32" oid="de4b7d38-f5ba-495f-8afb-59507c95fae6" pathname="..\scade-display\GCS.sgfx" layer="symbology_layer" layerOid="f588182e-9f4b-4dc3-bb9e-e05fb2492d6b"/>
 					</inputs>
 				</MappingItem>
 			</mappingItems>

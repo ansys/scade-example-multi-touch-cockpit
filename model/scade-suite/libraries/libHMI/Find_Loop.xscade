@@ -196,7 +196,7 @@
 	<pragmas>
 		<ed:Operator oid="!ed/4e03/28C9/1944/594245c82a76" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 			<diagrams>
-				<NetDiagram name="diagram_Find1_1" landscape="true" format="A4 (210 297)" oid="!ed/4e0a/28C9/1944/594245c86ddc">
+				<NetDiagram name="Find1" landscape="true" format="A4 (210 297)" oid="!ed/4e0a/28C9/1944/594245c86ddc">
 					<presentationElements>
 						<EquationGE presentable="!ed/4e04/28C9/1944/594245c85bcf">
 							<position>

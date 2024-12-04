@@ -443,7 +443,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/589b/3486/23B4/5a1d330549bb" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="intersection_1" landscape="true" format="A4 (210 297)" oid="!ed/589c/3486/23B4/5a1d33052c5a">
+						<NetDiagram name="intersection" landscape="true" format="A4 (210 297)" oid="!ed/589c/3486/23B4/5a1d33052c5a">
 							<presentationElements>
 								<EquationGE presentable="!ed/58c7/3486/23B4/5a1d3360392e">
 									<position>

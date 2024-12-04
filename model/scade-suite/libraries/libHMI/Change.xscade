@@ -160,7 +160,7 @@
 	<pragmas>
 		<ed:Operator oid="!ed/4e12/28C9/1944/594245c8201c" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 			<diagrams>
-				<NetDiagram name="diagram_Change_1" landscape="true" format="A4 (210 297)" oid="!ed/4e17/28C9/1944/594245c82b76">
+				<NetDiagram name="Change" landscape="true" format="A4 (210 297)" oid="!ed/4e17/28C9/1944/594245c82b76">
 					<presentationElements>
 						<EquationGE presentable="!ed/4e13/28C9/1944/594245c86ec6">
 							<position>

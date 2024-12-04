@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Type name="Color_Enum">
+		<Type name="colorEnum">
 			<definition>
 				<Enum>
 					<values>
 						<Value name="GREY1">
 							<pragmas>
-								<ed:Value oid="!ed/2b7a/75E1/C28/47591dc856c6" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Value oid="!ed/2b7a/75E1/C28/47591dc856c6" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Enum value : 21</comment>
 								</ed:Value>
 								<kcg:Pragma>
@@ -20,7 +20,7 @@
 						</Value>
 						<Value name="YELLOW1">
 							<pragmas>
-								<ed:Value oid="!ed/2b7b/75E1/C28/47591dfa389b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Value oid="!ed/2b7b/75E1/C28/47591dfa389b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Enum value : 46</comment>
 								</ed:Value>
 								<kcg:Pragma>
@@ -38,13 +38,13 @@
 				<ed:Type oid="!ed/ea1/7A70/BF0/4759596c5a"/>
 			</pragmas>
 		</Type>
-		<Type name="Aircraft_Symbol_Enum">
+		<Type name="aircraftSymbolEnum">
 			<definition>
 				<Enum>
 					<values>
-						<Value name="Single_Cue">
+						<Value name="SINGLE_CUE">
 							<pragmas>
-								<ed:Value oid="!ed/2c09/75E1/C28/47592f40ce7" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Value oid="!ed/2c09/75E1/C28/47592f40ce7" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Enum value : 1</comment>
 								</ed:Value>
 								<kcg:Pragma>
@@ -55,9 +55,9 @@
 								</kcg:Pragma>
 							</pragmas>
 						</Value>
-						<Value name="Double_Cue">
+						<Value name="DOUBLE_CUE">
 							<pragmas>
-								<ed:Value oid="!ed/2c0a/75E1/C28/47592f6d4daa" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+								<ed:Value oid="!ed/2c0a/75E1/C28/47592f6d4daa" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<comment>Enum value : 2</comment>
 								</ed:Value>
 								<kcg:Pragma>

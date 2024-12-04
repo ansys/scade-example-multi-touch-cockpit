@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="HSI_CDI_VOR_Angle_Compute">
+		<Operator kind="function" name="hsiCdiVorAngleCompute">
 			<inputs>
-				<Variable name="Selected_Nav_Data">
+				<Variable name="selectedNavData">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Nav_Data_type"/>
+								<TypeRef name="navDataType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -15,11 +15,11 @@
 						<ed:Variable oid="!ed/3225/6344/774/475ef0975e99"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Menu_Info">
+				<Variable name="menuInfo">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Menu_Info_type"/>
+								<TypeRef name="menuInfoType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -29,7 +29,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="HSI_VOR_CDI_Angle">
+				<Variable name="hsivorCdiAngle">
 					<type>
 						<NamedType>
 							<type>
@@ -95,7 +95,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Menu_Info_type"/>
+								<TypeRef name="menuInfoType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -119,7 +119,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Nav_Data_type"/>
+								<TypeRef name="navDataType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -335,7 +335,7 @@
 						<ed:Equation oid="!ed/322c/6344/774/475ef0972512"/>
 					</pragmas>
 				</Equation>
-				<!-- _L4 = Selected_Nav_Data; -->
+				<!-- _L4 = selectedNavData; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L4"/>
@@ -343,7 +343,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Selected_Nav_Data"/>
+								<ConstVarRef name="selectedNavData"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -377,7 +377,7 @@
 						<ed:Equation oid="!ed/3234/6344/774/475ef0975b51"/>
 					</pragmas>
 				</Equation>
-				<!-- _L6 = Menu_Info; -->
+				<!-- _L6 = menuInfo; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L6"/>
@@ -385,7 +385,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Menu_Info"/>
+								<ConstVarRef name="menuInfo"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -419,13 +419,13 @@
 						<ed:Equation oid="!ed/323a/6344/774/475ef0976327"/>
 					</pragmas>
 				</Equation>
-				<!-- _L8 = _L4.VOR_Radial; -->
+				<!-- _L8 = _L4.vorRadial; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L8"/>
 					</lefts>
 					<right>
-						<!-- _L4.VOR_Radial -->
+						<!-- _L4.vorRadial -->
 						<PrjOp name="2">
 							<flow>
 								<IdExpression>
@@ -435,7 +435,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="VOR_Radial"/>
+								<Label name="vorRadial"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -443,13 +443,13 @@
 						<ed:Equation oid="!ed/323d/6344/774/475ef0975501"/>
 					</pragmas>
 				</Equation>
-				<!-- _L9 = _L6.MN_Target_Course; -->
+				<!-- _L9 = _L6.mnTargetCourse; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L9"/>
 					</lefts>
 					<right>
-						<!-- _L6.MN_Target_Course -->
+						<!-- _L6.mnTargetCourse -->
 						<PrjOp name="1">
 							<flow>
 								<IdExpression>
@@ -459,7 +459,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="MN_Target_Course"/>
+								<Label name="mnTargetCourse"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -491,10 +491,10 @@
 						<ed:Equation oid="!ed/3245/6344/774/475ef09758e9"/>
 					</pragmas>
 				</Equation>
-				<!-- HSI_VOR_CDI_Angle = _L16; -->
+				<!-- hsivorCdiAngle = _L16; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HSI_VOR_CDI_Angle"/>
+						<VariableRef name="hsivorCdiAngle"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -749,7 +749,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/31ea/6344/774/475ef07a3338" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_HSI_CDI_VOR_Angle_Compute_1" landscape="true" format="A4 (210 297)" oid="!ed/31eb/6344/774/475ef07a29d6">
+						<NetDiagram name="hsiCdiVorAngleCompute" landscape="true" format="A4 (210 297)" oid="!ed/31eb/6344/774/475ef07a29d6">
 							<presentationElements>
 								<EquationGE kind="OBJ_LIT" presentable="!ed/3226/6344/774/475ef0973804">
 									<position>
@@ -1113,8 +1113,8 @@
 						</NetDiagram>
 					</diagrams>
 					<references>
-						<TypeRef path="Nav_Data_type" refOid="!ed/22be/444A/B40/47594cd2222d"/>
-						<TypeRef path="Menu_Info_type" refOid="!ed/22af/444A/B40/47594cd212ac"/>
+						<TypeRef path="navDataType" refOid="!ed/22be/444A/B40/47594cd2222d"/>
+						<TypeRef path="menuInfoType" refOid="!ed/22af/444A/B40/47594cd212ac"/>
 					</references>
 				</ed:Operator>
 				<kcg:Pragma>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="Robustness_Division">
+		<Operator kind="function" name="robustnessDivision">
 			<inputs>
-				<Variable name="Numerator">
+				<Variable name="numerator">
 					<type>
 						<NamedType>
 							<type>
@@ -15,7 +15,7 @@
 						<ed:Variable oid="!ed/1ec1/345D/2B0/47ff6800378a"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Denominator">
+				<Variable name="denominator">
 					<type>
 						<NamedType>
 							<type>
@@ -27,7 +27,7 @@
 						<ed:Variable oid="!ed/1ec2/345D/2B0/47ff68002aa6"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Default">
+				<Variable name="defaultVal">
 					<type>
 						<NamedType>
 							<type>
@@ -41,7 +41,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="Output">
+				<Variable name="out">
 					<type>
 						<NamedType>
 							<type>
@@ -59,29 +59,39 @@
 					<block>
 						<IfNode>
 							<if>
-								<!-- Abs(Denominator) < Epsilon -->
+								<!-- abs(denominator) < EPSILON -->
 								<BinaryOp name="3" operator="&lt;">
 									<operands>
-										<!-- Abs(Denominator) -->
+										<!-- abs(denominator) -->
 										<CallExpression>
 											<operator>
 												<OpCall name="3">
 													<operator>
-														<OperatorRef name="Abs"/>
+														<OperatorRef name="abs"/>
 													</operator>
 												</OpCall>
 											</operator>
 											<callParameters>
 												<IdExpression>
 													<path>
-														<ConstVarRef name="Denominator"/>
+														<ConstVarRef name="denominator"/>
 													</path>
 												</IdExpression>
 											</callParameters>
+											<pragmas>
+												<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+													<references>
+														<OperatorRef path="abs" refOid="!ed/321b/66D8/CE0/47541a9b7391">
+															<InputRef refOid="!ed/321d/66D8/CE0/47541a9b68b5"/>
+															<OutputRef refOid="!ed/321c/66D8/CE0/47541a9b1d16"/>
+														</OperatorRef>
+													</references>
+												</ed:CallExpression>
+											</pragmas>
 										</CallExpression>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="Epsilon"/>
+												<ConstVarRef name="EPSILON"/>
 											</path>
 										</IdExpression>
 									</operands>
@@ -90,15 +100,15 @@
 							<then>
 								<Action>
 									<data>
-										<!-- Output = Default; -->
+										<!-- out = defaultVal; -->
 										<Equation>
 											<lefts>
-												<VariableRef name="Output"/>
+												<VariableRef name="out"/>
 											</lefts>
 											<right>
 												<IdExpression>
 													<path>
-														<ConstVarRef name="Default"/>
+														<ConstVarRef name="defaultVal"/>
 													</path>
 												</IdExpression>
 											</right>
@@ -115,23 +125,23 @@
 							<else>
 								<Action>
 									<data>
-										<!-- Output = Numerator / Denominator; -->
+										<!-- out = numerator / denominator; -->
 										<Equation>
 											<lefts>
-												<VariableRef name="Output"/>
+												<VariableRef name="out"/>
 											</lefts>
 											<right>
-												<!-- Numerator / Denominator -->
+												<!-- numerator / denominator -->
 												<BinaryOp name="4" operator="/">
 													<operands>
 														<IdExpression>
 															<path>
-																<ConstVarRef name="Numerator"/>
+																<ConstVarRef name="numerator"/>
 															</path>
 														</IdExpression>
 														<IdExpression>
 															<path>
-																<ConstVarRef name="Denominator"/>
+																<ConstVarRef name="denominator"/>
 															</path>
 														</IdExpression>
 													</operands>
@@ -153,7 +163,7 @@
 						</IfNode>
 					</block>
 					<returns>
-						<VariableRef name="Output"/>
+						<VariableRef name="out"/>
 					</returns>
 					<pragmas>
 						<ed:IfBlock oid="!ed/3e28/7F9C/14DC/47ff711d5271"/>
@@ -161,14 +171,17 @@
 				</IfBlock>
 			</data>
 			<pragmas>
-				<ed:Operator oid="!ed/1ebf/345D/2B0/47ff67ea6867" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Operator oid="!ed/1ebf/345D/2B0/47ff67ea6867" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<TextDiagram name="diagram_Robustness_Division" landscape="true" format="A4 (210 297)" oid="!ed/1f9a/7F9C/14DC/47ff6fca42cf">
+						<TextDiagram name="robustnessDivision" landscape="true" format="A4 (210 297)" oid="!ed/1f9a/7F9C/14DC/47ff6fca42cf">
 							<presentationElements>
 								<FlowTE presentable="!ed/3e28/7F9C/14DC/47ff711d5271"/>
 							</presentationElements>
 						</TextDiagram>
 					</diagrams>
+					<references>
+						<ConstVarRef path="EPSILON" refOid="!ed/1f9b/7F9C/14DC/47ff6fe52949"/>
+					</references>
 				</ed:Operator>
 			</pragmas>
 		</Operator>

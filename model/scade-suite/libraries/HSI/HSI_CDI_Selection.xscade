@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="HSI_CDI_Selection">
+		<Operator kind="function" name="hsiCdiSelection">
 			<inputs>
-				<Variable name="Menu_Info">
+				<Variable name="menuInfo">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Menu_Info_type"/>
+								<TypeRef name="menuInfoType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -15,11 +15,11 @@
 						<ed:Variable oid="!ed/605/7A70/BF0/47595598d4f"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Systeme_Info">
+				<Variable name="systemeInfo">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="System_Info_type"/>
+								<TypeRef name="systemInfoType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -27,11 +27,11 @@
 						<ed:Variable oid="!ed/606/7A70/BF0/4759559878c7"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Primary_Nav_Data">
+				<Variable name="primaryNavData">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Nav_Data_type"/>
+								<TypeRef name="navDataType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -39,11 +39,11 @@
 						<ed:Variable oid="!ed/607/7A70/BF0/4759559846"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Secondary_Nav_Data">
+				<Variable name="secondaryNavData">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Nav_Data_type"/>
+								<TypeRef name="navDataType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -53,7 +53,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="HSI_CDI_In_Pixels">
+				<Variable name="hsiCdiInPixels">
 					<type>
 						<NamedType>
 							<type>
@@ -65,7 +65,7 @@
 						<ed:Variable oid="!ed/5fc/7A70/BF0/475955987ae7"/>
 					</pragmas>
 				</Variable>
-				<Variable name="TO_FROM_legend_Display">
+				<Variable name="toFromLegendDisplay">
 					<type>
 						<NamedType>
 							<type>
@@ -77,11 +77,11 @@
 						<ed:Variable oid="!ed/5fd/7A70/BF0/475955986f6f"/>
 					</pragmas>
 				</Variable>
-				<Variable name="HSI_To_From_Legend">
+				<Variable name="hsiToFromLegend">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="TO_FROM_legend_text_enum"/>
+								<TypeRef name="toFromLegendText"/>
 							</type>
 						</NamedType>
 					</type>
@@ -89,7 +89,7 @@
 						<ed:Variable oid="!ed/5fe/7A70/BF0/475955983d4f"/>
 					</pragmas>
 				</Variable>
-				<Variable name="TO_FROM_pointer_Display">
+				<Variable name="toFromPointerDisplay">
 					<type>
 						<NamedType>
 							<type>
@@ -101,11 +101,11 @@
 						<ed:Variable oid="!ed/5ff/7A70/BF0/47595598778"/>
 					</pragmas>
 				</Variable>
-				<Variable name="CDI_Legend_text_selected">
+				<Variable name="cdiLegendTextSelected">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="CDI_legend_selection_enum"/>
+								<TypeRef name="cdiLegendSelection"/>
 							</type>
 						</NamedType>
 					</type>
@@ -113,7 +113,7 @@
 						<ed:Variable oid="!ed/600/7A70/BF0/475955982b12"/>
 					</pragmas>
 				</Variable>
-				<Variable name="CDI_Indicator_position_rotation_value">
+				<Variable name="cdiIndicatorPositionRotationValue">
 					<type>
 						<NamedType>
 							<type>
@@ -125,7 +125,7 @@
 						<ed:Variable oid="!ed/601/7A70/BF0/4759559821b1"/>
 					</pragmas>
 				</Variable>
-				<Variable name="HSI_Not_Flagged">
+				<Variable name="hsiNotFlagged">
 					<type>
 						<NamedType>
 							<type>
@@ -137,11 +137,11 @@
 						<ed:Variable oid="!ed/602/7A70/BF0/47595598227c"/>
 					</pragmas>
 				</Variable>
-				<Variable name="TO_FROM_Shape_selected">
+				<Variable name="toFromShapeSelected">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="HSI_To_From_Shape_enum"/>
+								<TypeRef name="hsiToFromShape"/>
 							</type>
 						</NamedType>
 					</type>
@@ -151,7 +151,7 @@
 				</Variable>
 			</outputs>
 			<locals>
-				<Variable name="HSI_CDI_Offset">
+				<Variable name="hsiCdiOffset">
 					<type>
 						<NamedType>
 							<type>
@@ -163,7 +163,7 @@
 						<ed:Variable oid="!ed/63b/7A70/BF0/4759559819eb"/>
 					</pragmas>
 				</Variable>
-				<Variable name="HSI_VOR_CDI_Defl">
+				<Variable name="hsivorCdi_Defl">
 					<type>
 						<NamedType>
 							<type>
@@ -175,7 +175,7 @@
 						<ed:Variable oid="!ed/63c/7A70/BF0/475955985c5d"/>
 					</pragmas>
 				</Variable>
-				<Variable name="HSI_VOR_To_From">
+				<Variable name="hsiVorToFrom">
 					<type>
 						<NamedType>
 							<type>
@@ -187,11 +187,11 @@
 						<ed:Variable oid="!ed/63d/7A70/BF0/475955985ea6"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Selected_Nav_Data">
+				<Variable name="selectedNavData">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Nav_Data_type"/>
+								<TypeRef name="navDataType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -199,7 +199,7 @@
 						<ed:Variable oid="!ed/63e/7A70/BF0/4759559858df"/>
 					</pragmas>
 				</Variable>
-				<Variable name="HSI_NAV_Data_Type">
+				<Variable name="hsiNavDataType">
 					<type>
 						<NamedType>
 							<type>
@@ -211,7 +211,7 @@
 						<ed:Variable oid="!ed/63f/7A70/BF0/47595598d27"/>
 					</pragmas>
 				</Variable>
-				<Variable name="HSI_Flagged">
+				<Variable name="hsiFlagged">
 					<type>
 						<NamedType>
 							<type>
@@ -223,7 +223,7 @@
 						<ed:Variable oid="!ed/640/7A70/BF0/4759559854e2"/>
 					</pragmas>
 				</Variable>
-				<Variable name="CDI_Source_Selected">
+				<Variable name="cdiSourceSelected">
 					<type>
 						<NamedType>
 							<type>
@@ -247,7 +247,7 @@
 						<ed:Variable oid="!ed/188f/6344/774/475e572f1af1"/>
 					</pragmas>
 				</Variable>
-				<Variable probe="true" name="P_HSI_CDI_Offset">
+				<Variable probe="true" name="P_hsiCdiOffset">
 					<type>
 						<NamedType>
 							<type>
@@ -259,7 +259,7 @@
 						<ed:Variable oid="!ed/1897/6344/774/475e579a3444"/>
 					</pragmas>
 				</Variable>
-				<Variable probe="true" name="P_HSI_CDI">
+				<Variable probe="true" name="hsiCdi">
 					<type>
 						<NamedType>
 							<type>
@@ -275,7 +275,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Nav_Data_type"/>
+								<TypeRef name="navDataType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -295,7 +295,7 @@
 						<ed:Variable oid="!ed/3171/6344/774/475eb4582052"/>
 					</pragmas>
 				</Variable>
-				<Variable probe="true" name="P_Back_Course">
+				<Variable probe="true" name="backCourse">
 					<type>
 						<NamedType>
 							<type>
@@ -307,7 +307,7 @@
 						<ed:Variable oid="!ed/317b/6344/774/475eb73c35cd"/>
 					</pragmas>
 				</Variable>
-				<Variable probe="true" name="P_HSI_VOR_CDI_Angle">
+				<Variable probe="true" name="P_HSI_vorCdi_Angle">
 					<type>
 						<NamedType>
 							<type>
@@ -319,7 +319,7 @@
 						<ed:Variable oid="!ed/3331/6344/774/475ef664108c"/>
 					</pragmas>
 				</Variable>
-				<Variable probe="true" name="P_HSI_VOR_CDI_Defl">
+				<Variable probe="true" name="P_HSI_vorCdi_Defl">
 					<type>
 						<NamedType>
 							<type>
@@ -383,7 +383,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Nav_Data_type"/>
+								<TypeRef name="navDataType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -407,7 +407,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Nav_Data_type"/>
+								<TypeRef name="navDataType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -419,7 +419,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Nav_Data_type"/>
+								<TypeRef name="navDataType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -455,7 +455,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Menu_Info_type"/>
+								<TypeRef name="menuInfoType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -503,7 +503,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Nav_Data_type"/>
+								<TypeRef name="navDataType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -551,7 +551,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Nav_Data_type"/>
+								<TypeRef name="navDataType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -635,7 +635,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Nav_Data_type"/>
+								<TypeRef name="navDataType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -659,7 +659,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="TO_FROM_legend_text_enum"/>
+								<TypeRef name="toFromLegendText"/>
 							</type>
 						</NamedType>
 					</type>
@@ -719,7 +719,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="CDI_legend_selection_enum"/>
+								<TypeRef name="cdiLegendSelection"/>
 							</type>
 						</NamedType>
 					</type>
@@ -755,7 +755,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Menu_Info_type"/>
+								<TypeRef name="menuInfoType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -767,7 +767,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="System_Info_type"/>
+								<TypeRef name="systemInfoType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -798,7 +798,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Menu_Info_type"/>
+								<TypeRef name="menuInfoType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -822,7 +822,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="System_Info_type"/>
+								<TypeRef name="systemInfoType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -853,7 +853,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="System_Info_type"/>
+								<TypeRef name="systemInfoType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -889,7 +889,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="HSI_To_From_Shape_enum"/>
+								<TypeRef name="hsiToFromShape"/>
 							</type>
 						</NamedType>
 					</type>
@@ -982,18 +982,18 @@
 						<ed:Equation oid="!ed/645/7A70/BF0/475955984a33"/>
 					</pragmas>
 				</Equation>
-				<!-- _L5 = HSI_CDI_Offset_Selection(_L88, _L80); -->
+				<!-- _L5 = hsiCdiOffsetSelection(_L88, _L80); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L5"/>
 					</lefts>
 					<right>
-						<!-- HSI_CDI_Offset_Selection(_L88, _L80) -->
+						<!-- hsiCdiOffsetSelection(_L88, _L80) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
 									<operator>
-										<OperatorRef name="HSI_CDI_Offset_Selection"/>
+										<OperatorRef name="hsiCdiOffsetSelection"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -1012,7 +1012,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<OperatorRef path="HSI_CDI_Offset_Selection" refOid="!ed/404/7A70/BF0/475955976f2a">
+										<OperatorRef path="hsiCdiOffsetSelection" refOid="!ed/404/7A70/BF0/475955976f2a">
 											<InputRef refOid="!ed/406/7A70/BF0/47595597140f"/>
 											<InputRef refOid="!ed/407/7A70/BF0/475955975264"/>
 											<OutputRef refOid="!ed/405/7A70/BF0/475955977caa"/>
@@ -1026,19 +1026,19 @@
 						<ed:Equation oid="!ed/646/7A70/BF0/475955983970"/>
 					</pragmas>
 				</Equation>
-				<!-- _L7, _L15 = HSI_CDI_Nav_Data_Source_Selection(_L88, _L82, _L17, _L18); -->
+				<!-- _L7, _L15 = hsiCdiNavDataSourceSelection(_L88, _L82, _L17, _L18); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L7"/>
 						<VariableRef name="_L15"/>
 					</lefts>
 					<right>
-						<!-- HSI_CDI_Nav_Data_Source_Selection(_L88, _L82, _L17, _L18) -->
+						<!-- hsiCdiNavDataSourceSelection(_L88, _L82, _L17, _L18) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
 									<operator>
-										<OperatorRef name="HSI_CDI_Nav_Data_Source_Selection"/>
+										<OperatorRef name="hsiCdiNavDataSourceSelection"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -1067,7 +1067,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<OperatorRef path="HSI_CDI_Nav_Data_Source_Selection" refOid="!ed/2e0/7A70/BF0/47595596221d">
+										<OperatorRef path="hsiCdiNavDataSourceSelection" refOid="!ed/2e0/7A70/BF0/47595596221d">
 											<InputRef refOid="!ed/2e3/7A70/BF0/475955967ae5"/>
 											<InputRef refOid="!ed/2e4/7A70/BF0/47595596232b"/>
 											<InputRef refOid="!ed/2e5/7A70/BF0/475955962587"/>
@@ -1084,18 +1084,18 @@
 						<ed:Equation oid="!ed/647/7A70/BF0/475955986c4a"/>
 					</pragmas>
 				</Equation>
-				<!-- _L12 = HSI_CDI_Nav_Data_Type_Selection(_L88); -->
+				<!-- _L12 = hsiCdiNavDataTypeSelection(_L88); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L12"/>
 					</lefts>
 					<right>
-						<!-- HSI_CDI_Nav_Data_Type_Selection(_L88) -->
+						<!-- hsiCdiNavDataTypeSelection(_L88) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
 									<operator>
-										<OperatorRef name="HSI_CDI_Nav_Data_Type_Selection"/>
+										<OperatorRef name="hsiCdiNavDataTypeSelection"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -1109,7 +1109,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<OperatorRef path="HSI_CDI_Nav_Data_Type_Selection" refOid="!ed/375/7A70/BF0/475955972eec">
+										<OperatorRef path="hsiCdiNavDataTypeSelection" refOid="!ed/375/7A70/BF0/475955972eec">
 											<InputRef refOid="!ed/377/7A70/BF0/4759559742c8"/>
 											<OutputRef refOid="!ed/376/7A70/BF0/475955974e70"/>
 										</OperatorRef>
@@ -1122,18 +1122,18 @@
 						<ed:Equation oid="!ed/648/7A70/BF0/475955987576"/>
 					</pragmas>
 				</Equation>
-				<!-- _L16 = HSI_CDI_Flagged_Indicator_Selection(_L15, _L12); -->
+				<!-- _L16 = hsiCdiFlaggedIndicatorSelection(_L15, _L12); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L16"/>
 					</lefts>
 					<right>
-						<!-- HSI_CDI_Flagged_Indicator_Selection(_L15, _L12) -->
+						<!-- hsiCdiFlaggedIndicatorSelection(_L15, _L12) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
 									<operator>
-										<OperatorRef name="HSI_CDI_Flagged_Indicator_Selection"/>
+										<OperatorRef name="hsiCdiFlaggedIndicatorSelection"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -1152,7 +1152,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<OperatorRef path="HSI_CDI_Flagged_Indicator_Selection" refOid="!ed/187/7A70/BF0/47595594262c">
+										<OperatorRef path="hsiCdiFlaggedIndicatorSelection" refOid="!ed/187/7A70/BF0/47595594262c">
 											<InputRef refOid="!ed/189/7A70/BF0/475955943811"/>
 											<InputRef refOid="!ed/18a/7A70/BF0/47595594370c"/>
 											<OutputRef refOid="!ed/188/7A70/BF0/475955943d09"/>
@@ -1166,7 +1166,7 @@
 						<ed:Equation oid="!ed/649/7A70/BF0/475955984a75"/>
 					</pragmas>
 				</Equation>
-				<!-- _L17 = Primary_Nav_Data; -->
+				<!-- _L17 = primaryNavData; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L17"/>
@@ -1174,7 +1174,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Primary_Nav_Data"/>
+								<ConstVarRef name="primaryNavData"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1182,7 +1182,7 @@
 						<ed:Equation oid="!ed/64a/7A70/BF0/4759559838df"/>
 					</pragmas>
 				</Equation>
-				<!-- _L18 = Secondary_Nav_Data; -->
+				<!-- _L18 = secondaryNavData; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L18"/>
@@ -1190,7 +1190,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Secondary_Nav_Data"/>
+								<ConstVarRef name="secondaryNavData"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1198,13 +1198,13 @@
 						<ed:Equation oid="!ed/64b/7A70/BF0/47595598289d"/>
 					</pragmas>
 				</Equation>
-				<!-- _L20 = _L15.Back_Course; -->
+				<!-- _L20 = _L15.backCourse; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L20"/>
 					</lefts>
 					<right>
-						<!-- _L15.Back_Course -->
+						<!-- _L15.backCourse -->
 						<PrjOp name="1">
 							<flow>
 								<IdExpression>
@@ -1214,7 +1214,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="Back_Course"/>
+								<Label name="backCourse"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -1222,19 +1222,19 @@
 						<ed:Equation oid="!ed/64c/7A70/BF0/475955985ee1"/>
 					</pragmas>
 				</Equation>
-				<!-- _L23, _L27 = HSI_CDI_Resolution(_L89); -->
+				<!-- _L23, _L27 = hsiCdiResolution(_L89); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L23"/>
 						<VariableRef name="_L27"/>
 					</lefts>
 					<right>
-						<!-- HSI_CDI_Resolution(_L89) -->
+						<!-- hsiCdiResolution(_L89) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
 									<operator>
-										<OperatorRef name="HSI_CDI_Resolution"/>
+										<OperatorRef name="hsiCdiResolution"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -1248,7 +1248,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<OperatorRef path="HSI_CDI_Resolution" refOid="!ed/4ba/7A70/BF0/4759559831e3">
+										<OperatorRef path="hsiCdiResolution" refOid="!ed/4ba/7A70/BF0/4759559831e3">
 											<InputRef refOid="!ed/325d/6344/774/475ef35f3a4d"/>
 											<OutputRef refOid="!ed/4bb/7A70/BF0/475955981d5f"/>
 											<OutputRef refOid="!ed/4bc/7A70/BF0/475955984833"/>
@@ -1278,10 +1278,10 @@
 						<ed:Equation oid="!ed/64e/7A70/BF0/47595598516e"/>
 					</pragmas>
 				</Equation>
-				<!-- HSI_CDI_Offset = _L5; -->
+				<!-- hsiCdiOffset = _L5; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HSI_CDI_Offset"/>
+						<VariableRef name="hsiCdiOffset"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -1294,7 +1294,7 @@
 						<ed:Equation oid="!ed/64f/7A70/BF0/47595598681d"/>
 					</pragmas>
 				</Equation>
-				<!-- _L26 = Menu_Info; -->
+				<!-- _L26 = menuInfo; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L26"/>
@@ -1302,7 +1302,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Menu_Info"/>
+								<ConstVarRef name="menuInfo"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1310,10 +1310,10 @@
 						<ed:Equation oid="!ed/650/7A70/BF0/475955984720"/>
 					</pragmas>
 				</Equation>
-				<!-- HSI_VOR_CDI_Defl = _L23; -->
+				<!-- hsivorCdi_Defl = _L23; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HSI_VOR_CDI_Defl"/>
+						<VariableRef name="hsivorCdi_Defl"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -1326,10 +1326,10 @@
 						<ed:Equation oid="!ed/651/7A70/BF0/475955985493"/>
 					</pragmas>
 				</Equation>
-				<!-- HSI_VOR_To_From = _L27; -->
+				<!-- hsiVorToFrom = _L27; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HSI_VOR_To_From"/>
+						<VariableRef name="hsiVorToFrom"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -1342,18 +1342,18 @@
 						<ed:Equation oid="!ed/652/7A70/BF0/4759559831b4"/>
 					</pragmas>
 				</Equation>
-				<!-- _L34 = HSI_CDI_To_From_Indicator_Selection(_L36, _L37, _L35); -->
+				<!-- _L34 = hsiCdiToFromIndicatorSelection(_L36, _L37, _L35); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L34"/>
 					</lefts>
 					<right>
-						<!-- HSI_CDI_To_From_Indicator_Selection(_L36, _L37, _L35) -->
+						<!-- hsiCdiToFromIndicatorSelection(_L36, _L37, _L35) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
 									<operator>
-										<OperatorRef name="HSI_CDI_To_From_Indicator_Selection"/>
+										<OperatorRef name="hsiCdiToFromIndicatorSelection"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -1377,7 +1377,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<OperatorRef path="HSI_CDI_To_From_Indicator_Selection" refOid="!ed/6af/7A70/BF0/475955997e4b">
+										<OperatorRef path="hsiCdiToFromIndicatorSelection" refOid="!ed/6af/7A70/BF0/475955997e4b">
 											<InputRef refOid="!ed/6b1/7A70/BF0/4759559936e9"/>
 											<InputRef refOid="!ed/6b2/7A70/BF0/47595599239a"/>
 											<InputRef refOid="!ed/6b3/7A70/BF0/4759559918ab"/>
@@ -1392,7 +1392,7 @@
 						<ed:Equation oid="!ed/653/7A70/BF0/475955983b11"/>
 					</pragmas>
 				</Equation>
-				<!-- _L35 = HSI_VOR_To_From; -->
+				<!-- _L35 = hsiVorToFrom; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L35"/>
@@ -1400,7 +1400,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_VOR_To_From"/>
+								<ConstVarRef name="hsiVorToFrom"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1408,10 +1408,10 @@
 						<ed:Equation oid="!ed/654/7A70/BF0/475955986929"/>
 					</pragmas>
 				</Equation>
-				<!-- Selected_Nav_Data = _L15; -->
+				<!-- selectedNavData = _L15; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="Selected_Nav_Data"/>
+						<VariableRef name="selectedNavData"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -1424,10 +1424,10 @@
 						<ed:Equation oid="!ed/655/7A70/BF0/475955983b05"/>
 					</pragmas>
 				</Equation>
-				<!-- HSI_NAV_Data_Type = _L12; -->
+				<!-- hsiNavDataType = _L12; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HSI_NAV_Data_Type"/>
+						<VariableRef name="hsiNavDataType"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -1440,7 +1440,7 @@
 						<ed:Equation oid="!ed/656/7A70/BF0/4759559840f8"/>
 					</pragmas>
 				</Equation>
-				<!-- _L36 = Selected_Nav_Data; -->
+				<!-- _L36 = selectedNavData; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L36"/>
@@ -1448,7 +1448,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Selected_Nav_Data"/>
+								<ConstVarRef name="selectedNavData"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1456,7 +1456,7 @@
 						<ed:Equation oid="!ed/657/7A70/BF0/475955984cbc"/>
 					</pragmas>
 				</Equation>
-				<!-- _L37 = HSI_NAV_Data_Type; -->
+				<!-- _L37 = hsiNavDataType; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L37"/>
@@ -1464,7 +1464,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_NAV_Data_Type"/>
+								<ConstVarRef name="hsiNavDataType"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1472,18 +1472,18 @@
 						<ed:Equation oid="!ed/658/7A70/BF0/47595598600a"/>
 					</pragmas>
 				</Equation>
-				<!-- _L38 = HSI_CDI_Data_Selection(_L39, _L40, _L41, _L42); -->
+				<!-- _L38 = hsiCdiDataSelection(_L39, _L40, _L41, _L42); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L38"/>
 					</lefts>
 					<right>
-						<!-- HSI_CDI_Data_Selection(_L39, _L40, _L41, _L42) -->
+						<!-- hsiCdiDataSelection(_L39, _L40, _L41, _L42) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
 									<operator>
-										<OperatorRef name="HSI_CDI_Data_Selection"/>
+										<OperatorRef name="hsiCdiDataSelection"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -1512,7 +1512,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<OperatorRef path="HSI_CDI_Data_Selection" refOid="!ed/104/7A70/BF0/4759558e12f">
+										<OperatorRef path="hsiCdiDataSelection" refOid="!ed/104/7A70/BF0/4759558e12f">
 											<InputRef refOid="!ed/106/7A70/BF0/4759558e1242"/>
 											<InputRef refOid="!ed/107/7A70/BF0/4759558e25bf"/>
 											<InputRef refOid="!ed/108/7A70/BF0/4759558e6956"/>
@@ -1528,7 +1528,7 @@
 						<ed:Equation oid="!ed/659/7A70/BF0/475955981406"/>
 					</pragmas>
 				</Equation>
-				<!-- _L39 = Selected_Nav_Data; -->
+				<!-- _L39 = selectedNavData; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L39"/>
@@ -1536,7 +1536,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Selected_Nav_Data"/>
+								<ConstVarRef name="selectedNavData"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1544,7 +1544,7 @@
 						<ed:Equation oid="!ed/65a/7A70/BF0/47595598394f"/>
 					</pragmas>
 				</Equation>
-				<!-- _L40 = HSI_NAV_Data_Type; -->
+				<!-- _L40 = hsiNavDataType; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L40"/>
@@ -1552,7 +1552,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_NAV_Data_Type"/>
+								<ConstVarRef name="hsiNavDataType"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1560,7 +1560,7 @@
 						<ed:Equation oid="!ed/65b/7A70/BF0/4759559824e9"/>
 					</pragmas>
 				</Equation>
-				<!-- _L41 = HSI_CDI_Offset; -->
+				<!-- _L41 = hsiCdiOffset; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L41"/>
@@ -1568,7 +1568,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_CDI_Offset"/>
+								<ConstVarRef name="hsiCdiOffset"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1576,7 +1576,7 @@
 						<ed:Equation oid="!ed/65c/7A70/BF0/47595598322a"/>
 					</pragmas>
 				</Equation>
-				<!-- _L42 = HSI_VOR_CDI_Defl; -->
+				<!-- _L42 = hsivorCdi_Defl; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L42"/>
@@ -1584,7 +1584,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_VOR_CDI_Defl"/>
+								<ConstVarRef name="hsivorCdi_Defl"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1592,10 +1592,10 @@
 						<ed:Equation oid="!ed/65d/7A70/BF0/4759559832ed"/>
 					</pragmas>
 				</Equation>
-				<!-- HSI_CDI_In_Pixels = _L90; -->
+				<!-- hsiCdiInPixels = _L90; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HSI_CDI_In_Pixels"/>
+						<VariableRef name="hsiCdiInPixels"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -1608,18 +1608,18 @@
 						<ed:Equation oid="!ed/65e/7A70/BF0/475955982d05"/>
 					</pragmas>
 				</Equation>
-				<!-- _L43 = HSI_TO_FROM_legend_existence(_L44, _L47, _L45); -->
+				<!-- _L43 = hsiToFromlegendExistence(_L44, _L47, _L45); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L43"/>
 					</lefts>
 					<right>
-						<!-- HSI_TO_FROM_legend_existence(_L44, _L47, _L45) -->
+						<!-- hsiToFromlegendExistence(_L44, _L47, _L45) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
 									<operator>
-										<OperatorRef name="HSI_TO_FROM_legend_existence"/>
+										<OperatorRef name="hsiToFromlegendExistence"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -1643,7 +1643,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<OperatorRef path="HSI_TO_FROM_legend_existence" refOid="!ed/ac6/7A70/BF0/4759559d2ae0">
+										<OperatorRef path="hsiToFromlegendExistence" refOid="!ed/ac6/7A70/BF0/4759559d2ae0">
 											<InputRef refOid="!ed/ac8/7A70/BF0/4759559d57f7"/>
 											<InputRef refOid="!ed/ac9/7A70/BF0/4759559d4696"/>
 											<InputRef refOid="!ed/aca/7A70/BF0/4759559d6197"/>
@@ -1658,7 +1658,7 @@
 						<ed:Equation oid="!ed/65f/7A70/BF0/4759559827c7"/>
 					</pragmas>
 				</Equation>
-				<!-- _L44 = HSI_NAV_Data_Type; -->
+				<!-- _L44 = hsiNavDataType; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L44"/>
@@ -1666,7 +1666,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_NAV_Data_Type"/>
+								<ConstVarRef name="hsiNavDataType"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1674,13 +1674,13 @@
 						<ed:Equation oid="!ed/660/7A70/BF0/4759559821d1"/>
 					</pragmas>
 				</Equation>
-				<!-- _L45 = _L46.ILS_Selected; -->
+				<!-- _L45 = _L46.ilsSelected; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L45"/>
 					</lefts>
 					<right>
-						<!-- _L46.ILS_Selected -->
+						<!-- _L46.ilsSelected -->
 						<PrjOp name="2">
 							<flow>
 								<IdExpression>
@@ -1690,7 +1690,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="ILS_Selected"/>
+								<Label name="ilsSelected"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -1698,7 +1698,7 @@
 						<ed:Equation oid="!ed/661/7A70/BF0/475955984473"/>
 					</pragmas>
 				</Equation>
-				<!-- _L46 = Selected_Nav_Data; -->
+				<!-- _L46 = selectedNavData; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L46"/>
@@ -1706,7 +1706,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Selected_Nav_Data"/>
+								<ConstVarRef name="selectedNavData"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1714,10 +1714,10 @@
 						<ed:Equation oid="!ed/662/7A70/BF0/475955987b3e"/>
 					</pragmas>
 				</Equation>
-				<!-- HSI_Flagged = _L16; -->
+				<!-- hsiFlagged = _L16; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HSI_Flagged"/>
+						<VariableRef name="hsiFlagged"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -1730,7 +1730,7 @@
 						<ed:Equation oid="!ed/663/7A70/BF0/4759559847f7"/>
 					</pragmas>
 				</Equation>
-				<!-- _L47 = HSI_Flagged; -->
+				<!-- _L47 = hsiFlagged; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L47"/>
@@ -1738,7 +1738,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_Flagged"/>
+								<ConstVarRef name="hsiFlagged"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1746,10 +1746,10 @@
 						<ed:Equation oid="!ed/664/7A70/BF0/4759559866ea"/>
 					</pragmas>
 				</Equation>
-				<!-- TO_FROM_legend_Display = _L43; -->
+				<!-- toFromLegendDisplay = _L43; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="TO_FROM_legend_Display"/>
+						<VariableRef name="toFromLegendDisplay"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -1762,19 +1762,19 @@
 						<ed:Equation oid="!ed/665/7A70/BF0/475955983167"/>
 					</pragmas>
 				</Equation>
-				<!-- _L52, _L85 = HSI_TO_FROM_display(_L53, _L34); -->
+				<!-- _L52, _L85 = hsiToFromdisplay(_L53, _L34); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L52"/>
 						<VariableRef name="_L85"/>
 					</lefts>
 					<right>
-						<!-- HSI_TO_FROM_display(_L53, _L34) -->
+						<!-- hsiToFromdisplay(_L53, _L34) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
 									<operator>
-										<OperatorRef name="HSI_TO_FROM_display"/>
+										<OperatorRef name="hsiToFromdisplay"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -1793,7 +1793,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<OperatorRef path="HSI_TO_FROM_display" refOid="!ed/a93/7A70/BF0/4759559d4342">
+										<OperatorRef path="hsiToFromdisplay" refOid="!ed/a93/7A70/BF0/4759559d4342">
 											<InputRef refOid="!ed/a96/7A70/BF0/4759559d3d8d"/>
 											<InputRef refOid="!ed/a97/7A70/BF0/4759559d254c"/>
 											<OutputRef refOid="!ed/a94/7A70/BF0/4759559d3a95"/>
@@ -1808,7 +1808,7 @@
 						<ed:Equation oid="!ed/666/7A70/BF0/4759559877dd"/>
 					</pragmas>
 				</Equation>
-				<!-- _L53 = HSI_Flagged; -->
+				<!-- _L53 = hsiFlagged; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L53"/>
@@ -1816,7 +1816,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_Flagged"/>
+								<ConstVarRef name="hsiFlagged"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1824,10 +1824,10 @@
 						<ed:Equation oid="!ed/667/7A70/BF0/475955981ee4"/>
 					</pragmas>
 				</Equation>
-				<!-- HSI_To_From_Legend = _L52; -->
+				<!-- hsiToFromLegend = _L52; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HSI_To_From_Legend"/>
+						<VariableRef name="hsiToFromLegend"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -1840,18 +1840,18 @@
 						<ed:Equation oid="!ed/668/7A70/BF0/475955983608"/>
 					</pragmas>
 				</Equation>
-				<!-- _L54 = HSI_TO_FROM_pointer_existence(_L45, _L57, _L58); -->
+				<!-- _L54 = hsiToFrompointerExistence(_L45, _L57, _L58); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L54"/>
 					</lefts>
 					<right>
-						<!-- HSI_TO_FROM_pointer_existence(_L45, _L57, _L58) -->
+						<!-- hsiToFrompointerExistence(_L45, _L57, _L58) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
 									<operator>
-										<OperatorRef name="HSI_TO_FROM_pointer_existence"/>
+										<OperatorRef name="hsiToFrompointerExistence"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -1875,7 +1875,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<OperatorRef path="HSI_TO_FROM_pointer_existence" refOid="!ed/aee/7A70/BF0/4759559e5b66">
+										<OperatorRef path="hsiToFrompointerExistence" refOid="!ed/aee/7A70/BF0/4759559e5b66">
 											<InputRef refOid="!ed/af0/7A70/BF0/4759559e32ca"/>
 											<InputRef refOid="!ed/af1/7A70/BF0/4759559e79ab"/>
 											<InputRef refOid="!ed/af2/7A70/BF0/4759559e428"/>
@@ -1890,7 +1890,7 @@
 						<ed:Equation oid="!ed/669/7A70/BF0/4759559819a4"/>
 					</pragmas>
 				</Equation>
-				<!-- _L57 = HSI_Flagged; -->
+				<!-- _L57 = hsiFlagged; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L57"/>
@@ -1898,7 +1898,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_Flagged"/>
+								<ConstVarRef name="hsiFlagged"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1906,7 +1906,7 @@
 						<ed:Equation oid="!ed/66a/7A70/BF0/475955984aa5"/>
 					</pragmas>
 				</Equation>
-				<!-- _L58 = HSI_NAV_Data_Type; -->
+				<!-- _L58 = hsiNavDataType; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L58"/>
@@ -1914,7 +1914,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_NAV_Data_Type"/>
+								<ConstVarRef name="hsiNavDataType"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1922,10 +1922,10 @@
 						<ed:Equation oid="!ed/66b/7A70/BF0/475955985f53"/>
 					</pragmas>
 				</Equation>
-				<!-- TO_FROM_pointer_Display = _L54; -->
+				<!-- toFromPointerDisplay = _L54; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="TO_FROM_pointer_Display"/>
+						<VariableRef name="toFromPointerDisplay"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -1938,18 +1938,18 @@
 						<ed:Equation oid="!ed/66c/7A70/BF0/4759559838a8"/>
 					</pragmas>
 				</Equation>
-				<!-- _L63 = HSI_CDI_legend_text_selection(_L45, _L70); -->
+				<!-- _L63 = hsiCdilegendTextSelection(_L45, _L70); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L63"/>
 					</lefts>
 					<right>
-						<!-- HSI_CDI_legend_text_selection(_L45, _L70) -->
+						<!-- hsiCdilegendTextSelection(_L45, _L70) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
 									<operator>
-										<OperatorRef name="HSI_CDI_legend_text_selection"/>
+										<OperatorRef name="hsiCdilegendTextSelection"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -1968,7 +1968,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<OperatorRef path="HSI_CDI_legend_text_selection" refOid="!ed/244/7A70/BF0/47595595b77">
+										<OperatorRef path="hsiCdilegendTextSelection" refOid="!ed/244/7A70/BF0/47595595b77">
 											<InputRef refOid="!ed/246/7A70/BF0/47595595301e"/>
 											<InputRef refOid="!ed/247/7A70/BF0/475955954033"/>
 											<OutputRef refOid="!ed/245/7A70/BF0/475955954e34"/>
@@ -1982,7 +1982,7 @@
 						<ed:Equation oid="!ed/66e/7A70/BF0/47595598499e"/>
 					</pragmas>
 				</Equation>
-				<!-- _L70 = CDI_Source_Selected; -->
+				<!-- _L70 = cdiSourceSelected; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L70"/>
@@ -1990,7 +1990,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="CDI_Source_Selected"/>
+								<ConstVarRef name="cdiSourceSelected"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1998,10 +1998,10 @@
 						<ed:Equation oid="!ed/66f/7A70/BF0/47595598563b"/>
 					</pragmas>
 				</Equation>
-				<!-- CDI_Source_Selected = _L88; -->
+				<!-- cdiSourceSelected = _L88; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="CDI_Source_Selected"/>
+						<VariableRef name="cdiSourceSelected"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -2014,10 +2014,10 @@
 						<ed:Equation oid="!ed/670/7A70/BF0/475955985ab6"/>
 					</pragmas>
 				</Equation>
-				<!-- CDI_Legend_text_selected = _L63; -->
+				<!-- cdiLegendTextSelected = _L63; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="CDI_Legend_text_selected"/>
+						<VariableRef name="cdiLegendTextSelected"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -2030,18 +2030,18 @@
 						<ed:Equation oid="!ed/671/7A70/BF0/475955985a07"/>
 					</pragmas>
 				</Equation>
-				<!-- _L71 = HSI_CDI_Indicator_position_rotation(_L74); -->
+				<!-- _L71 = hsiCdiIndicatorPositionRotation(_L74); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L71"/>
 					</lefts>
 					<right>
-						<!-- HSI_CDI_Indicator_position_rotation(_L74) -->
+						<!-- hsiCdiIndicatorPositionRotation(_L74) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
 									<operator>
-										<OperatorRef name="HSI_CDI_Indicator_position_rotation"/>
+										<OperatorRef name="hsiCdiIndicatorPositionRotation"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -2055,7 +2055,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<OperatorRef path="HSI_CDI_Indicator_position_rotation" refOid="!ed/1d7/7A70/BF0/4759559556e5">
+										<OperatorRef path="hsiCdiIndicatorPositionRotation" refOid="!ed/1d7/7A70/BF0/4759559556e5">
 											<InputRef refOid="!ed/1d9/7A70/BF0/47595595b39"/>
 											<OutputRef refOid="!ed/1d8/7A70/BF0/475955957642"/>
 										</OperatorRef>
@@ -2068,10 +2068,10 @@
 						<ed:Equation oid="!ed/672/7A70/BF0/4759559852bb"/>
 					</pragmas>
 				</Equation>
-				<!-- CDI_Indicator_position_rotation_value = _L71; -->
+				<!-- cdiIndicatorPositionRotationValue = _L71; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="CDI_Indicator_position_rotation_value"/>
+						<VariableRef name="cdiIndicatorPositionRotationValue"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -2084,7 +2084,7 @@
 						<ed:Equation oid="!ed/673/7A70/BF0/475955986dd6"/>
 					</pragmas>
 				</Equation>
-				<!-- _L74 = Menu_Info; -->
+				<!-- _L74 = menuInfo; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L74"/>
@@ -2092,7 +2092,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Menu_Info"/>
+								<ConstVarRef name="menuInfo"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -2100,7 +2100,7 @@
 						<ed:Equation oid="!ed/674/7A70/BF0/475955981152"/>
 					</pragmas>
 				</Equation>
-				<!-- _L76 = Systeme_Info; -->
+				<!-- _L76 = systemeInfo; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L76"/>
@@ -2108,7 +2108,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Systeme_Info"/>
+								<ConstVarRef name="systemeInfo"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -2116,13 +2116,13 @@
 						<ed:Equation oid="!ed/676/7A70/BF0/4759559868b9"/>
 					</pragmas>
 				</Equation>
-				<!-- _L77 = _L76.SY_CDI_Sources; -->
+				<!-- _L77 = _L76.syCdiSources; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L77"/>
 					</lefts>
 					<right>
-						<!-- _L76.SY_CDI_Sources -->
+						<!-- _L76.syCdiSources -->
 						<PrjOp name="3">
 							<flow>
 								<IdExpression>
@@ -2132,7 +2132,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="SY_CDI_Sources"/>
+								<Label name="syCdiSources"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -2140,7 +2140,7 @@
 						<ed:Equation oid="!ed/677/7A70/BF0/4759559866f8"/>
 					</pragmas>
 				</Equation>
-				<!-- _L78 = Menu_Info; -->
+				<!-- _L78 = menuInfo; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L78"/>
@@ -2148,7 +2148,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Menu_Info"/>
+								<ConstVarRef name="menuInfo"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -2156,13 +2156,13 @@
 						<ed:Equation oid="!ed/678/7A70/BF0/475955987ed3"/>
 					</pragmas>
 				</Equation>
-				<!-- _L79 = _L78.MN_CDI_Source; -->
+				<!-- _L79 = _L78.mnCDISource; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L79"/>
 					</lefts>
 					<right>
-						<!-- _L78.MN_CDI_Source -->
+						<!-- _L78.mnCDISource -->
 						<PrjOp name="4">
 							<flow>
 								<IdExpression>
@@ -2172,7 +2172,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="MN_CDI_Source"/>
+								<Label name="mnCDISource"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -2180,13 +2180,13 @@
 						<ed:Equation oid="!ed/679/7A70/BF0/4759559892d"/>
 					</pragmas>
 				</Equation>
-				<!-- _L80 = _L81.SY_CDI_Offset; -->
+				<!-- _L80 = _L81.syCdiOffset; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L80"/>
 					</lefts>
 					<right>
-						<!-- _L81.SY_CDI_Offset -->
+						<!-- _L81.syCdiOffset -->
 						<PrjOp name="5">
 							<flow>
 								<IdExpression>
@@ -2196,7 +2196,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="SY_CDI_Offset"/>
+								<Label name="syCdiOffset"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -2204,7 +2204,7 @@
 						<ed:Equation oid="!ed/67a/7A70/BF0/47595598174a"/>
 					</pragmas>
 				</Equation>
-				<!-- _L81 = Systeme_Info; -->
+				<!-- _L81 = systemeInfo; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L81"/>
@@ -2212,7 +2212,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Systeme_Info"/>
+								<ConstVarRef name="systemeInfo"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -2220,13 +2220,13 @@
 						<ed:Equation oid="!ed/67b/7A70/BF0/475955983ca0"/>
 					</pragmas>
 				</Equation>
-				<!-- _L82 = _L83.SY_Switch_NAV_Source; -->
+				<!-- _L82 = _L83.sySwitchNavSource; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L82"/>
 					</lefts>
 					<right>
-						<!-- _L83.SY_Switch_NAV_Source -->
+						<!-- _L83.sySwitchNavSource -->
 						<PrjOp name="6">
 							<flow>
 								<IdExpression>
@@ -2236,7 +2236,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="SY_Switch_NAV_Source"/>
+								<Label name="sySwitchNavSource"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -2244,7 +2244,7 @@
 						<ed:Equation oid="!ed/67c/7A70/BF0/47595598180c"/>
 					</pragmas>
 				</Equation>
-				<!-- _L83 = Systeme_Info; -->
+				<!-- _L83 = systemeInfo; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L83"/>
@@ -2252,7 +2252,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Systeme_Info"/>
+								<ConstVarRef name="systemeInfo"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -2260,10 +2260,10 @@
 						<ed:Equation oid="!ed/67d/7A70/BF0/475955983431"/>
 					</pragmas>
 				</Equation>
-				<!-- HSI_Not_Flagged = _L84; -->
+				<!-- hsiNotFlagged = _L84; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HSI_Not_Flagged"/>
+						<VariableRef name="hsiNotFlagged"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -2297,10 +2297,10 @@
 						<ed:Equation oid="!ed/680/7A70/BF0/475955982ecf"/>
 					</pragmas>
 				</Equation>
-				<!-- TO_FROM_Shape_selected = _L85; -->
+				<!-- toFromShapeSelected = _L85; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="TO_FROM_Shape_selected"/>
+						<VariableRef name="toFromShapeSelected"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -2329,10 +2329,10 @@
 						<ed:Equation oid="!ed/1890/6344/774/475e572f6faf"/>
 					</pragmas>
 				</Equation>
-				<!-- P_HSI_CDI_Offset = _L5; -->
+				<!-- P_hsiCdiOffset = _L5; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="P_HSI_CDI_Offset"/>
+						<VariableRef name="P_hsiCdiOffset"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -2345,10 +2345,10 @@
 						<ed:Equation oid="!ed/1898/6344/774/475e579a7f6c"/>
 					</pragmas>
 				</Equation>
-				<!-- P_HSI_CDI = _L38; -->
+				<!-- hsiCdi = _L38; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="P_HSI_CDI"/>
+						<VariableRef name="hsiCdi"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -2393,10 +2393,10 @@
 						<ed:Equation oid="!ed/3172/6344/774/475eb4582ac8"/>
 					</pragmas>
 				</Equation>
-				<!-- P_Back_Course = _L20; -->
+				<!-- backCourse = _L20; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="P_Back_Course"/>
+						<VariableRef name="backCourse"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -2409,18 +2409,18 @@
 						<ed:Equation oid="!ed/317c/6344/774/475eb73c3ec1"/>
 					</pragmas>
 				</Equation>
-				<!-- _L89 = HSI_CDI_VOR_Angle_Compute(_L15, _L26); -->
+				<!-- _L89 = hsiCdiVorAngleCompute(_L15, _L26); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L89"/>
 					</lefts>
 					<right>
-						<!-- HSI_CDI_VOR_Angle_Compute(_L15, _L26) -->
+						<!-- hsiCdiVorAngleCompute(_L15, _L26) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
 									<operator>
-										<OperatorRef name="HSI_CDI_VOR_Angle_Compute"/>
+										<OperatorRef name="hsiCdiVorAngleCompute"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -2439,7 +2439,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<OperatorRef path="HSI_CDI_VOR_Angle_Compute" refOid="!ed/31ea/6344/774/475ef07a3338">
+										<OperatorRef path="hsiCdiVorAngleCompute" refOid="!ed/31ea/6344/774/475ef07a3338">
 											<InputRef refOid="!ed/3225/6344/774/475ef0975e99"/>
 											<InputRef refOid="!ed/3224/6344/774/475ef0973f10"/>
 											<OutputRef refOid="!ed/3248/6344/774/475ef0e93da6"/>
@@ -2453,10 +2453,10 @@
 						<ed:Equation oid="!ed/3257/6344/774/475ef2ea2773"/>
 					</pragmas>
 				</Equation>
-				<!-- P_HSI_VOR_CDI_Angle = _L89; -->
+				<!-- P_HSI_vorCdi_Angle = _L89; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="P_HSI_VOR_CDI_Angle"/>
+						<VariableRef name="P_HSI_vorCdi_Angle"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -2469,10 +2469,10 @@
 						<ed:Equation oid="!ed/3332/6344/774/475ef6643c5"/>
 					</pragmas>
 				</Equation>
-				<!-- P_HSI_VOR_CDI_Defl = _L23; -->
+				<!-- P_HSI_vorCdi_Defl = _L23; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="P_HSI_VOR_CDI_Defl"/>
+						<VariableRef name="P_HSI_vorCdi_Defl"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -2501,18 +2501,18 @@
 						<ed:Equation oid="!ed/a7e/1E28/938/475fc9c37271"/>
 					</pragmas>
 				</Equation>
-				<!-- _L90 = HSI_CDI_Deviation_In_Pixels(_L38); -->
+				<!-- _L90 = hsiCdiDeviationInPixels(_L38); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L90"/>
 					</lefts>
 					<right>
-						<!-- HSI_CDI_Deviation_In_Pixels(_L38) -->
+						<!-- hsiCdiDeviationInPixels(_L38) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
 									<operator>
-										<OperatorRef name="HSI_CDI_Deviation_In_Pixels"/>
+										<OperatorRef name="hsiCdiDeviationInPixels"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -2526,7 +2526,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<OperatorRef path="HSI_CDI_Deviation_In_Pixels" refOid="!ed/150/7A70/BF0/475955935ee0">
+										<OperatorRef path="hsiCdiDeviationInPixels" refOid="!ed/150/7A70/BF0/475955935ee0">
 											<InputRef refOid="!ed/152/7A70/BF0/4759559362aa"/>
 											<OutputRef refOid="!ed/151/7A70/BF0/475955934620"/>
 										</OperatorRef>
@@ -2543,7 +2543,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/5fb/7A70/BF0/475955982179" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_HSI_CDI_Selection_1" landscape="true" format="A4 (210 297)" oid="!ed/642/7A70/BF0/475955986a54">
+						<NetDiagram name="hsiCdiSelection" landscape="true" format="A4 (210 297)" oid="!ed/642/7A70/BF0/475955986a54">
 							<presentationElements>
 								<EquationGE kind="OBJ_LIT" presentable="!ed/644/7A70/BF0/475955985fd">
 									<position>
@@ -3137,7 +3137,7 @@
 								</Edge>
 							</presentationElements>
 						</NetDiagram>
-						<NetDiagram name="diagram_HSI_CDI_Selection_2" landscape="true" format="A4 (210 297)" oid="!ed/643/7A70/BF0/4759559867f">
+						<NetDiagram name="hsiCdiSelection" landscape="true" format="A4 (210 297)" oid="!ed/643/7A70/BF0/4759559867f">
 							<presentationElements>
 								<EquationGE presentable="!ed/653/7A70/BF0/475955983b11">
 									<position>
@@ -3639,12 +3639,12 @@
 						</NetDiagram>
 					</diagrams>
 					<references>
-						<TypeRef path="Menu_Info_type" refOid="!ed/22af/444A/B40/47594cd212ac"/>
-						<TypeRef path="System_Info_type" refOid="!ed/22f4/444A/B40/47594cd27d9d"/>
-						<TypeRef path="Nav_Data_type" refOid="!ed/22be/444A/B40/47594cd2222d"/>
-						<TypeRef path="TO_FROM_legend_text_enum" refOid="!ed/c5/7A70/BF0/475955396c3d"/>
-						<TypeRef path="CDI_legend_selection_enum" refOid="!ed/a9/7A70/BF0/4759553946cd"/>
-						<TypeRef path="HSI_To_From_Shape_enum" refOid="!ed/b1/7A70/BF0/4759553929db"/>
+						<TypeRef path="menuInfoType" refOid="!ed/22af/444A/B40/47594cd212ac"/>
+						<TypeRef path="systemInfoType" refOid="!ed/22f4/444A/B40/47594cd27d9d"/>
+						<TypeRef path="navDataType" refOid="!ed/22be/444A/B40/47594cd2222d"/>
+						<TypeRef path="toFromLegendText" refOid="!ed/c5/7A70/BF0/475955396c3d"/>
+						<TypeRef path="cdiLegendSelection" refOid="!ed/a9/7A70/BF0/4759553946cd"/>
+						<TypeRef path="hsiToFromShape" refOid="!ed/b1/7A70/BF0/4759553929db"/>
 					</references>
 				</ed:Operator>
 				<kcg:Pragma>

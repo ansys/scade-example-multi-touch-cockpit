@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="ADI_translation_compute">
+		<Operator kind="function" name="translationCompute">
 			<inputs>
 				<Variable name="Altitude">
 					<type>
@@ -17,7 +17,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="HORIZON_TRANSLATE">
+				<Variable name="horizonTranslate">
 					<type>
 						<NamedType>
 							<type>
@@ -29,7 +29,7 @@
 						<ed:Variable oid="!ed/11f0/7A70/BF0/47595994759e"/>
 					</pragmas>
 				</Variable>
-				<Variable name="PITCH_LADDER_TRANSLATE">
+				<Variable name="pitchLadderTranslate">
 					<type>
 						<NamedType>
 							<type>
@@ -41,11 +41,11 @@
 						<ed:Variable oid="!ed/11f1/7A70/BF0/4759599458c8"/>
 					</pragmas>
 				</Variable>
-				<Variable name="HORIZON_COLOR">
+				<Variable name="horizonColor">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Color_Enum"/>
+								<TypeRef name="colorEnum"/>
 							</type>
 						</NamedType>
 					</type>
@@ -95,7 +95,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Color_Enum"/>
+								<TypeRef name="colorEnum"/>
 							</type>
 						</NamedType>
 					</type>
@@ -107,7 +107,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Color_Enum"/>
+								<TypeRef name="colorEnum"/>
 							</type>
 						</NamedType>
 					</type>
@@ -119,7 +119,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Color_Enum"/>
+								<TypeRef name="colorEnum"/>
 							</type>
 						</NamedType>
 					</type>
@@ -129,18 +129,18 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L4 = Range_Limiter_InIn(_L5, (-22.0), 22.0); -->
+				<!-- _L4 = rangeLimiterInIn(_L5, (-22.0), 22.0); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L4"/>
 					</lefts>
 					<right>
-						<!-- Range_Limiter_InIn(_L5, (-22.0), 22.0) -->
+						<!-- rangeLimiterInIn(_L5, (-22.0), 22.0) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
 									<operator>
-										<OperatorRef name="Range_Limiter_InIn"/>
+										<OperatorRef name="rangeLimiterInIn"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -153,6 +153,18 @@
 								<ConstValue value="-22.0"/>
 								<ConstValue value="22.0"/>
 							</callParameters>
+							<pragmas>
+								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<references>
+										<OperatorRef path="rangeLimiterInIn" refOid="!ed/4216/4C50/218/474ffaa27bfa">
+											<InputRef refOid="!ed/421e/4C50/218/474ffad5607c"/>
+											<InputRef refOid="!ed/4225/4C50/218/474ffad533cd"/>
+											<InputRef refOid="!ed/422c/4C50/218/474ffad57619"/>
+											<OutputRef refOid="!ed/4232/4C50/218/474ffad53da7"/>
+										</OperatorRef>
+									</references>
+								</ed:CallExpression>
+							</pragmas>
 						</CallExpression>
 					</right>
 					<pragmas>
@@ -175,10 +187,10 @@
 						<ed:Equation oid="!ed/11fc/7A70/BF0/475959942346"/>
 					</pragmas>
 				</Equation>
-				<!-- HORIZON_TRANSLATE = _L4; -->
+				<!-- horizonTranslate = _L4; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HORIZON_TRANSLATE"/>
+						<VariableRef name="horizonTranslate"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -191,10 +203,10 @@
 						<ed:Equation oid="!ed/11fd/7A70/BF0/47595994619f"/>
 					</pragmas>
 				</Equation>
-				<!-- PITCH_LADDER_TRANSLATE = _L5; -->
+				<!-- pitchLadderTranslate = _L5; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="PITCH_LADDER_TRANSLATE"/>
+						<VariableRef name="pitchLadderTranslate"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -276,10 +288,10 @@
 						<ed:Equation oid="!ed/1200/7A70/BF0/475959941f31"/>
 					</pragmas>
 				</Equation>
-				<!-- HORIZON_COLOR = _L7; -->
+				<!-- horizonColor = _L7; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HORIZON_COLOR"/>
+						<VariableRef name="horizonColor"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -326,9 +338,9 @@
 				</Equation>
 			</data>
 			<pragmas>
-				<ed:Operator oid="!ed/11ef/7A70/BF0/475959942611" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Operator oid="!ed/11ef/7A70/BF0/475959942611" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_ADI_translation_compute_1" landscape="true" format="A4 (210 297)" oid="!ed/11fa/7A70/BF0/47595994fdf">
+						<NetDiagram name="translationCompute" landscape="true" format="A4 (210 297)" oid="!ed/11fa/7A70/BF0/47595994fdf">
 							<presentationElements>
 								<EquationGE presentable="!ed/11fb/7A70/BF0/475959947782">
 									<position>
@@ -443,10 +455,10 @@
 								</Edge>
 								<EquationGE kind="OBJ_LIT" presentable="!ed/1202/7A70/BF0/47595994d3d">
 									<position>
-										<Point x="7144" y="3995"/>
+										<Point x="8520" y="3995"/>
 									</position>
 									<size>
-										<Size width="1587" height="318"/>
+										<Size width="211" height="318"/>
 									</size>
 								</EquationGE>
 								<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/1202/7A70/BF0/47595994d3d" dstEquation="!ed/1200/7A70/BF0/475959941f31">
@@ -459,10 +471,10 @@
 								</Edge>
 								<EquationGE kind="OBJ_LIT" presentable="!ed/1203/7A70/BF0/4759599451a9">
 									<position>
-										<Point x="7461" y="4339"/>
+										<Point x="8520" y="4339"/>
 									</position>
 									<size>
-										<Size width="1270" height="318"/>
+										<Size width="211" height="318"/>
 									</size>
 								</EquationGE>
 								<Edge leftVarIndex="1" rightExprIndex="3" srcEquation="!ed/1203/7A70/BF0/4759599451a9" dstEquation="!ed/1200/7A70/BF0/475959941f31">
@@ -476,6 +488,11 @@
 							</presentationElements>
 						</NetDiagram>
 					</diagrams>
+					<references>
+						<TypeRef path="colorEnum" refOid="!ed/ea1/7A70/BF0/4759596c5a"/>
+						<ConstVarRef path="YELLOW1" refOid="!ed/2b7b/75E1/C28/47591dfa389b"/>
+						<ConstVarRef path="GREY1" refOid="!ed/2b7a/75E1/C28/47591dc856c6"/>
+					</references>
 				</ed:Operator>
 				<kcg:Pragma>
 					doc &quot;Version_1&quot; {Version = &quot;V:1.0&quot;}
