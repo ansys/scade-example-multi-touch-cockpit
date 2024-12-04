@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Type name="System_Info_type">
+		<Type name="systemInfoType">
 			<definition>
 				<Struct>
 					<fields>
@@ -132,7 +132,7 @@
 				</ed:Type>
 			</pragmas>
 		</Type>
-		<Type name="Screen_Info_type">
+		<Type name="screenInfoType">
 			<definition>
 				<Struct>
 					<fields>
@@ -179,7 +179,7 @@
 				</ed:Type>
 			</pragmas>
 		</Type>
-		<Type name="Nav_Data_type">
+		<Type name="navDataType">
 			<definition>
 				<Struct>
 					<fields>
@@ -345,7 +345,7 @@
 				</ed:Type>
 			</pragmas>
 		</Type>
-		<Type name="Menu_Info_type">
+		<Type name="menuInfoType">
 			<definition>
 				<Struct>
 					<fields>
@@ -443,7 +443,7 @@
 				</ed:Type>
 			</pragmas>
 		</Type>
-		<Type name="Flight_Director_Info_type">
+		<Type name="flightDirectorInfoType">
 			<definition>
 				<Struct>
 					<fields>
@@ -524,7 +524,7 @@
 				</ed:Type>
 			</pragmas>
 		</Type>
-		<Type name="Altitude_Info_type">
+		<Type name="altitudeInfoType">
 			<definition>
 				<Struct>
 					<fields>
@@ -605,11 +605,11 @@
 				</ed:Type>
 			</pragmas>
 		</Type>
-		<Type name="Aircraft_Info_type">
+		<Type name="aircraftInfoType">
 			<definition>
 				<Struct>
 					<fields>
-						<Field name="AC_SINGLE_CUE">
+						<Field name="singleCUE">
 							<type>
 								<NamedType>
 									<type>
@@ -740,7 +740,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Point"/>
+								<TypeRef name="point"/>
 							</type>
 						</NamedType>
 					</type>
@@ -757,7 +757,7 @@
 				<ed:Type oid="!ed/42ea/3913/15D0/4805f12858a8"/>
 			</pragmas>
 		</Type>
-		<Type name="Point">
+		<Type name="point">
 			<definition>
 				<Table>
 					<type>
@@ -795,7 +795,7 @@
 			<type>
 				<NamedType>
 					<type>
-						<TypeRef name="Point"/>
+						<TypeRef name="point"/>
 					</type>
 				</NamedType>
 			</type>

@@ -225,7 +225,7 @@
 		</Folder>
 	</roots>
 	<configurations>
-		<Configuration id="12" name="KCG 6.0"/>
+		<Configuration id="12" name="KCG"/>
 		<Configuration id="18" name="Simulation"/>
 		<Configuration id="25" name="HTML"/>
 		<Configuration id="30" name="RTF"/>

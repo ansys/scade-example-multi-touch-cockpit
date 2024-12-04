@@ -7,7 +7,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Menu_Info_type"/>
+								<TypeRef name="menuInfoType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -35,7 +35,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Menu_Info_type"/>
+								<TypeRef name="menuInfoType"/>
 							</type>
 						</NamedType>
 					</type>
@@ -157,7 +157,7 @@
 							<presentationElements>
 								<EquationGE presentable="!ed/1e5/7A70/BF0/475955955ff7">
 									<position>
-										<Point x="1879" y="3545"/>
+										<point x="1879" y="3545"/>
 									</position>
 									<size>
 										<Size width="264" height="503"/>
@@ -165,7 +165,7 @@
 								</EquationGE>
 								<EquationGE presentable="!ed/1e6/7A70/BF0/475955955836">
 									<position>
-										<Point x="3749" y="3432"/>
+										<point x="3749" y="3432"/>
 									</position>
 									<size>
 										<Size width="2133" height="756"/>
@@ -173,15 +173,15 @@
 								</EquationGE>
 								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/1e5/7A70/BF0/475955955ff7" dstEquation="!ed/1e6/7A70/BF0/475955955836">
 									<positions>
-										<Point x="2143" y="3810"/>
-										<Point x="2937" y="3810"/>
-										<Point x="2937" y="3810"/>
-										<Point x="3757" y="3810"/>
+										<point x="2143" y="3810"/>
+										<point x="2937" y="3810"/>
+										<point x="2937" y="3810"/>
+										<point x="3757" y="3810"/>
 									</positions>
 								</Edge>
 								<EquationGE presentable="!ed/1ee/7A70/BF0/47595595ab4">
 									<position>
-										<Point x="10980" y="3545"/>
+										<point x="10980" y="3545"/>
 									</position>
 									<size>
 										<Size width="371" height="503"/>
@@ -189,7 +189,7 @@
 								</EquationGE>
 								<EquationGE presentable="!ed/c137/6FC5/88C/4760526b3adb">
 									<position>
-										<Point x="7612" y="3458"/>
+										<point x="7612" y="3458"/>
 									</position>
 									<size>
 										<Size width="1021" height="678"/>
@@ -197,25 +197,25 @@
 								</EquationGE>
 								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/1e6/7A70/BF0/475955955836" dstEquation="!ed/c137/6FC5/88C/4760526b3adb">
 									<positions>
-										<Point x="5874" y="3810"/>
-										<Point x="6747" y="3810"/>
-										<Point x="6747" y="3810"/>
-										<Point x="7620" y="3810"/>
+										<point x="5874" y="3810"/>
+										<point x="6747" y="3810"/>
+										<point x="6747" y="3810"/>
+										<point x="7620" y="3810"/>
 									</positions>
 								</Edge>
 								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/c137/6FC5/88C/4760526b3adb" dstEquation="!ed/1ee/7A70/BF0/47595595ab4">
 									<positions>
-										<Point x="8625" y="3810"/>
-										<Point x="9816" y="3810"/>
-										<Point x="9816" y="3810"/>
-										<Point x="11033" y="3810"/>
+										<point x="8625" y="3810"/>
+										<point x="9816" y="3810"/>
+										<point x="9816" y="3810"/>
+										<point x="11033" y="3810"/>
 									</positions>
 								</Edge>
 							</presentationElements>
 						</NetDiagram>
 					</diagrams>
 					<references>
-						<TypeRef path="Menu_Info_type" refOid="!ed/22af/444A/B40/47594cd212ac"/>
+						<TypeRef path="menuInfoType" refOid="!ed/22af/444A/B40/47594cd212ac"/>
 					</references>
 				</ed:Operator>
 				<kcg:Pragma>
