@@ -441,7 +441,7 @@
 					<comment>If In &lt;= Low, Out equals to Low,</comment>
 					<comment>Otherwise, Out equals In.</comment>
 					<diagrams>
-						<NetDiagram name="diagram_Range_Limiter_InIn_1" landscape="true" format="A4 (210 297)" oid="!ed/4217/4C50/218/474ffaa2f40">
+						<NetDiagram name="Range_Limiter_InIn" landscape="true" format="A4 (210 297)" oid="!ed/4217/4C50/218/474ffaa2f40">
 							<presentationElements>
 								<EquationGE presentable="!ed/31d9/66D8/CE0/4753cd2332e7">
 									<position>

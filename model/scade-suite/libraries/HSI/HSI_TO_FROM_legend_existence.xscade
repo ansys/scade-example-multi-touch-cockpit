@@ -273,7 +273,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/ac6/7A70/BF0/4759559d2ae0" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_HSI_TO_FROM_legend_existence_1" landscape="true" format="A4 (210 297)" oid="!ed/ad1/7A70/BF0/4759559d86d">
+						<NetDiagram name="HSI_TO_FROM_legend_existence" landscape="true" format="A4 (210 297)" oid="!ed/ad1/7A70/BF0/4759559d86d">
 							<presentationElements>
 								<EquationGE presentable="!ed/ad2/7A70/BF0/4759559d2d80">
 									<position>

@@ -457,7 +457,7 @@
 	<pragmas>
 		<ed:Operator oid="!ed/6f86/33E8/42A0/5a2020c95f0a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 			<diagrams>
-				<NetDiagram name="diagram_IgnorePointerPosZero_1" landscape="true" format="A4 (210 297)" oid="!ed/6f91/33E8/42A0/5a2020c97476">
+				<NetDiagram name="IgnorePointerPosZero" landscape="true" format="A4 (210 297)" oid="!ed/6f91/33E8/42A0/5a2020c97476">
 					<presentationElements>
 						<EquationGE kind="OBJ_LIT" presentable="!ed/6f87/33E8/42A0/5a2020c958ee">
 							<position>

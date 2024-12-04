@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project id="1" oid_count="505" defaultConfiguration="18">
+<Project id="1" oid_count="507" defaultConfiguration="18">
 	<props>
 		<Prop id="10" name="@STUDIO:PRODUCT">
 			<value>SC</value>
@@ -484,6 +484,11 @@
 		<Folder id="451" extensions="sdy" name="Graphical Panels Mapping File">
 			<elements>
 				<FileRef id="452" persistAs="GlassCockpit.sdy"/>
+			</elements>
+		</Folder>
+		<Folder id="506" extensions="rcj" name="Rules Checker">
+			<elements>
+				<FileRef id="507" persistAs="GlassCockpit.rcj"/>
 			</elements>
 		</Folder>
 	</roots>

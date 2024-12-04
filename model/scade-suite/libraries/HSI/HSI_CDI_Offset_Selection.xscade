@@ -392,7 +392,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/404/7A70/BF0/475955976f2a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_HSI_CDI_Offset_Selection_1" landscape="true" format="A4 (210 297)" oid="!ed/410/7A70/BF0/4759559723e3">
+						<NetDiagram name="HSI_CDI_Offset_Selection" landscape="true" format="A4 (210 297)" oid="!ed/410/7A70/BF0/4759559723e3">
 							<presentationElements>
 								<EquationGE presentable="!ed/411/7A70/BF0/475955974059">
 									<position>

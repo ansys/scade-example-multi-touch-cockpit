@@ -1202,7 +1202,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/9a35/740D/148C/4833f40e2547" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<diagrams>
-						<NetDiagram name="diagram_Angle_compute_1" landscape="true" format="A4 (210 297)" oid="!ed/9a5e/740D/148C/4833f40e6e99">
+						<NetDiagram name="Angle_compute" landscape="true" format="A4 (210 297)" oid="!ed/9a5e/740D/148C/4833f40e6e99">
 							<presentationElements>
 								<EquationGE presentable="!ed/9a36/740D/148C/4833f40e601b">
 									<position>

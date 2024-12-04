@@ -163,7 +163,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/1ebf/345D/2B0/47ff67ea6867" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<diagrams>
-						<TextDiagram name="diagram_Robustness_Division" landscape="true" format="A4 (210 297)" oid="!ed/1f9a/7F9C/14DC/47ff6fca42cf">
+						<TextDiagram name="Robustness_Division" landscape="true" format="A4 (210 297)" oid="!ed/1f9a/7F9C/14DC/47ff6fca42cf">
 							<presentationElements>
 								<FlowTE presentable="!ed/3e28/7F9C/14DC/47ff711d5271"/>
 							</presentationElements>

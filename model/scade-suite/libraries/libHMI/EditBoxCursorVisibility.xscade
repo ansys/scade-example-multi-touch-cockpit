@@ -110,7 +110,7 @@
 	<pragmas>
 		<ed:Operator oid="!ed/4ae8/28C9/1944/594245b74ac" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 			<diagrams>
-				<NetDiagram name="diagram_EditBoxCursorVisibility_1" landscape="true" format="A4 (210 297)" oid="!ed/4af0/28C9/1944/594245b75bba">
+				<NetDiagram name="EditBoxCursorVisibility" landscape="true" format="A4 (210 297)" oid="!ed/4af0/28C9/1944/594245b75bba">
 					<presentationElements>
 						<StateMachineGE presentable="!ed/4ae9/28C9/1944/594245b72e9b">
 							<position>

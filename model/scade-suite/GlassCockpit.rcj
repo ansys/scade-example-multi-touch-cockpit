@@ -1,0 +1,20 @@
+{
+    "justifications": [
+        {
+            "rule": "SDR-18",
+            "object_oid": "!ed/f87/772E/750/4766368a111",
+            "object_path": "Simulation::Simulate/Simulate_SimuData1/",
+            "violation": "Simulate_SimuData1: The name shall be a description",
+            "author": "",
+            "text": ""
+        },
+        {
+            "rule": "SDR-18",
+            "object_oid": "!ed/1cd2/D81/7A0/477234663ee4",
+            "object_path": "Simulation::Simulate/Simulate_SimuData2/",
+            "violation": "Simulate_SimuData2: The name shall be a description",
+            "author": "",
+            "text": ""
+        }
+    ]
+}

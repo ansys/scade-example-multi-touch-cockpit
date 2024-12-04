@@ -320,7 +320,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/77a2/5178/80C/49dde83f758" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<diagrams>
-						<NetDiagram name="diagram_MeanCycle7_1" landscape="true" format="A4 (210 297)" oid="!ed/77ab/5178/80C/49dde83f340e">
+						<NetDiagram name="MeanCycle7" landscape="true" format="A4 (210 297)" oid="!ed/77ab/5178/80C/49dde83f340e">
 							<presentationElements>
 								<EquationGE presentable="!ed/77a3/5178/80C/49dde83f223c">
 									<position>

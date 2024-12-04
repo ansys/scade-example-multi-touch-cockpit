@@ -882,7 +882,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/bbf/7A70/BF0/4759559f7150" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_HSI_Turn_Rate_Indicator_Value_1" landscape="true" format="A4 (210 297)" oid="!ed/bde/7A70/BF0/4759559f68fd">
+						<NetDiagram name="HSI_Turn_Rate_Indicator_Value" landscape="true" format="A4 (210 297)" oid="!ed/bde/7A70/BF0/4759559f68fd">
 							<presentationElements>
 								<EquationGE presentable="!ed/bdf/7A70/BF0/4759559f3435">
 									<position>

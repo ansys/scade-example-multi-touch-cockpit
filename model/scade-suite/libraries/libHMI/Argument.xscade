@@ -157,7 +157,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/bbcf/D36/24B4/5a1703e63fdf" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<TextDiagram name="diagram_argument_1" landscape="false" format="A4 (210 297)" oid="!ed/bbd1/D36/24B4/5a1703e67032">
+						<TextDiagram name="argument_1" landscape="false" format="A4 (210 297)" oid="!ed/bbd1/D36/24B4/5a1703e67032">
 							<presentationElements>
 								<FlowTE presentable="!ed/bb9c/3486/23B4/5a1d59ee38ee"/>
 							</presentationElements>

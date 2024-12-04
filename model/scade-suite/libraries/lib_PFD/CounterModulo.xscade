@@ -239,7 +239,7 @@
 					<comment>The output is incremented at each cycle with Incr.</comment>
 					<comment>At the Initialisation or if Reset equals &quot;true&quot;, the output is set to Incr.</comment>
 					<diagrams>
-						<NetDiagram name="diagram_Counter1_1" landscape="true" format="A4 (210 297)" oid="!ed/1063/62F/9B4/49258f206b12">
+						<NetDiagram name="Counter1" landscape="true" format="A4 (210 297)" oid="!ed/1063/62F/9B4/49258f206b12">
 							<presentationElements>
 								<EquationGE presentable="!ed/108f/62F/9B4/49258f5c5929">
 									<position>

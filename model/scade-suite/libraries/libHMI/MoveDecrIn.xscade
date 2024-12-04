@@ -228,7 +228,7 @@
 	<pragmas>
 		<ed:Operator oid="!ed/6f76/33E8/42A0/5a2020c9806" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 			<diagrams>
-				<NetDiagram name="diagram_MoveDecrIn_1" landscape="true" format="A4 (210 297)" oid="!ed/6f7d/33E8/42A0/5a2020c92033">
+				<NetDiagram name="MoveDecrIn" landscape="true" format="A4 (210 297)" oid="!ed/6f7d/33E8/42A0/5a2020c92033">
 					<presentationElements>
 						<EquationGE presentable="!ed/6f77/33E8/42A0/5a2020c91720">
 							<position>

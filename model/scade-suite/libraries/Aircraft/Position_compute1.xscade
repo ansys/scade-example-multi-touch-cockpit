@@ -1211,7 +1211,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/d5fe/115F/E7C/4848072f6284" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<diagrams>
-						<NetDiagram name="diagram_Position_compute1_1" landscape="true" format="A4 (210 297)" oid="!ed/d62d/115F/E7C/4848072f347c">
+						<NetDiagram name="Position_compute1" landscape="true" format="A4 (210 297)" oid="!ed/d62d/115F/E7C/4848072f347c">
 							<presentationElements>
 								<EquationGE presentable="!ed/d5ff/115F/E7C/4848072f3b20">
 									<position>

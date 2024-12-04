@@ -1015,7 +1015,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/109e1/6347/16C4/484e7ce7c16" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<diagrams>
-						<NetDiagram name="diagram_Verif_0_360_1" landscape="true" format="A4 (210 297)" oid="!ed/109e2/6347/16C4/484e7ce7594d">
+						<NetDiagram name="Verif_0_360" landscape="true" format="A4 (210 297)" oid="!ed/109e2/6347/16C4/484e7ce7594d">
 							<presentationElements>
 								<EquationGE presentable="!ed/10a26/6347/16C4/484e7cfc319b">
 									<position>

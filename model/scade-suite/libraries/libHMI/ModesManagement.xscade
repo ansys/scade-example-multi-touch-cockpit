@@ -472,7 +472,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/620b/33E8/42A0/5a2020af23bd" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_modesManagement_1" landscape="true" format="A4 (210 297)" oid="!ed/6225/33E8/42A0/5a2020af267e">
+						<NetDiagram name="modesManagement" landscape="true" format="A4 (210 297)" oid="!ed/6225/33E8/42A0/5a2020af267e">
 							<presentationElements>
 								<StateMachineGE presentable="!ed/620c/33E8/42A0/5a2020af52b">
 									<position>

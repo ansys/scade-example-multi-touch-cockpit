@@ -413,7 +413,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/6164/33E8/42A0/5a2020af31cc" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_meanAngleOver5_1" landscape="true" format="A4 (210 297)" oid="!ed/616e/33E8/42A0/5a2020af3b2c">
+						<NetDiagram name="meanAngleOver5" landscape="true" format="A4 (210 297)" oid="!ed/616e/33E8/42A0/5a2020af3b2c">
 							<presentationElements>
 								<EquationGE presentable="!ed/6165/33E8/42A0/5a2020af4cc8">
 									<position>

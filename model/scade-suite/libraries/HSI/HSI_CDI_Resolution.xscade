@@ -719,7 +719,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/4ba/7A70/BF0/4759559831e3" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_HSI_CDI_Resolution_1" landscape="true" format="A4 (210 297)" oid="!ed/4de/7A70/BF0/4759559898">
+						<NetDiagram name="HSI_CDI_Resolution" landscape="true" format="A4 (210 297)" oid="!ed/4de/7A70/BF0/4759559898">
 							<presentationElements>
 								<EquationGE presentable="!ed/4ea/7A70/BF0/4759559868d4">
 									<position>

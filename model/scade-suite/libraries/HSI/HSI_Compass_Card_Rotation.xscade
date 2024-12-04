@@ -215,7 +215,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/6e9/7A70/BF0/4759559970a8" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_HSI_Compass_Card_Rotation_1" landscape="true" format="A4 (210 297)" oid="!ed/6f1/7A70/BF0/475955997324">
+						<NetDiagram name="HSI_Compass_Card_Rotation" landscape="true" format="A4 (210 297)" oid="!ed/6f1/7A70/BF0/475955997324">
 							<presentationElements>
 								<EquationGE presentable="!ed/6f2/7A70/BF0/4759559976f">
 									<position>

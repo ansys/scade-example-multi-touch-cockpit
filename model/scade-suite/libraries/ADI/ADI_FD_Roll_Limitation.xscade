@@ -240,7 +240,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/110c/7A70/BF0/4759599240d3" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<diagrams>
-						<NetDiagram name="diagram_ADI_FD_Roll_Limitation_1" landscape="true" format="A4 (210 297)" oid="!ed/1115/7A70/BF0/475959921936">
+						<NetDiagram name="ADI_FD_Roll_Limitation" landscape="true" format="A4 (210 297)" oid="!ed/1115/7A70/BF0/475959921936">
 							<presentationElements>
 								<EquationGE presentable="!ed/1116/7A70/BF0/47595992691e">
 									<position>

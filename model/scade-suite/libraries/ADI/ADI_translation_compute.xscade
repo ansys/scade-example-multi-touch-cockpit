@@ -328,7 +328,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/11ef/7A70/BF0/475959942611" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<diagrams>
-						<NetDiagram name="diagram_ADI_translation_compute_1" landscape="true" format="A4 (210 297)" oid="!ed/11fa/7A70/BF0/47595994fdf">
+						<NetDiagram name="ADI_translation_compute" landscape="true" format="A4 (210 297)" oid="!ed/11fa/7A70/BF0/47595994fdf">
 							<presentationElements>
 								<EquationGE presentable="!ed/11fb/7A70/BF0/475959947782">
 									<position>

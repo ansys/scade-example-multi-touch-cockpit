@@ -1198,7 +1198,7 @@
 	<pragmas>
 		<ed:Operator oid="!ed/5046/28C9/1944/59424ce214dc" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 			<diagrams>
-				<NetDiagram name="diagram_MouseClicked_1" landscape="true" format="A4 (210 297)" oid="!ed/5077/28C9/1944/59424ce21417">
+				<NetDiagram name="MouseClicked" landscape="true" format="A4 (210 297)" oid="!ed/5077/28C9/1944/59424ce21417">
 					<presentationElements>
 						<IfBlockGE presentable="!ed/5047/28C9/1944/59424ce25066">
 							<position>

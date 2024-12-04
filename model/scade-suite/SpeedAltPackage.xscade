@@ -5821,7 +5821,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/122a/1596/B6C/476a4ef34c93" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<diagrams>
-								<NetDiagram name="diagram_SPD_ALT_Computation_1" landscape="true" format="A4 (210 297)" oid="!ed/122b/1596/B6C/476a4ef3251c">
+								<NetDiagram name="SPD_ALT_Computation" landscape="true" format="A4 (210 297)" oid="!ed/122b/1596/B6C/476a4ef3251c">
 									<presentationElements>
 										<EquationGE presentable="!ed/230c/3E2/A24/476b06d330e8">
 											<position>
@@ -6937,7 +6937,7 @@
 										</Edge>
 									</presentationElements>
 								</NetDiagram>
-								<NetDiagram name="diagram_SPD_ALT_Computation_2" landscape="true" format="A4 (210 297)" oid="!ed/1429/1596/B6C/476a671211e">
+								<NetDiagram name="SPD_ALT_Computation" landscape="true" format="A4 (210 297)" oid="!ed/1429/1596/B6C/476a671211e">
 									<presentationElements>
 										<EquationGE presentable="!ed/1f2c/1596/B6C/476a870f4af9">
 											<position>

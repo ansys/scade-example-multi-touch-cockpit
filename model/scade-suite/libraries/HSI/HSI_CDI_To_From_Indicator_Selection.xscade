@@ -314,7 +314,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/6af/7A70/BF0/475955997e4b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_HSI_CDI_To_From_Indicator_Selection_1" landscape="true" format="A4 (210 297)" oid="!ed/6bb/7A70/BF0/4759559932d6">
+						<NetDiagram name="HSI_CDI_To_From_Indicator_Selection" landscape="true" format="A4 (210 297)" oid="!ed/6bb/7A70/BF0/4759559932d6">
 							<presentationElements>
 								<EquationGE presentable="!ed/6bc/7A70/BF0/475955993235">
 									<position>

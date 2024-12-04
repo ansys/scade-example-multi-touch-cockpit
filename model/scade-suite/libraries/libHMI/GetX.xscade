@@ -94,7 +94,7 @@
 	<pragmas>
 		<ed:Operator oid="!ed/6fa4/33E8/42A0/5a2020c97a9b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 			<diagrams>
-				<NetDiagram name="diagram_GetX_1" landscape="true" format="A4 (210 297)" oid="!ed/6fa7/33E8/42A0/5a2020c955b1">
+				<NetDiagram name="GetX" landscape="true" format="A4 (210 297)" oid="!ed/6fa7/33E8/42A0/5a2020c955b1">
 					<presentationElements>
 						<EquationGE presentable="!ed/6fa5/33E8/42A0/5a2020c922c8">
 							<position>

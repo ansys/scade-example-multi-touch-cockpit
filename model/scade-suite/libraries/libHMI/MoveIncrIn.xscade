@@ -223,7 +223,7 @@
 	<pragmas>
 		<ed:Operator oid="!ed/6f66/33E8/42A0/5a2020c97b28" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 			<diagrams>
-				<NetDiagram name="diagram_MoveIncrIn_1" landscape="true" format="A4 (210 297)" oid="!ed/6f6d/33E8/42A0/5a2020c934f8">
+				<NetDiagram name="MoveIncrIn" landscape="true" format="A4 (210 297)" oid="!ed/6f6d/33E8/42A0/5a2020c934f8">
 					<presentationElements>
 						<EquationGE presentable="!ed/6f67/33E8/42A0/5a2020c96f74">
 							<position>

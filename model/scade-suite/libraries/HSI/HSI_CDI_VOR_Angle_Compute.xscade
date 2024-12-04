@@ -749,7 +749,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/31ea/6344/774/475ef07a3338" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_HSI_CDI_VOR_Angle_Compute_1" landscape="true" format="A4 (210 297)" oid="!ed/31eb/6344/774/475ef07a29d6">
+						<NetDiagram name="HSI_CDI_VOR_Angle_Compute" landscape="true" format="A4 (210 297)" oid="!ed/31eb/6344/774/475ef07a29d6">
 							<presentationElements>
 								<EquationGE kind="OBJ_LIT" presentable="!ed/3226/6344/774/475ef0973804">
 									<position>

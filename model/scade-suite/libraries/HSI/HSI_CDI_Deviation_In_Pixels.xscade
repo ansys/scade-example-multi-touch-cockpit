@@ -233,7 +233,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/150/7A70/BF0/475955935ee0" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_HSI_CDI_Deviation_In_Pixels_1" landscape="true" format="A4 (210 297)" oid="!ed/159/7A70/BF0/475955931dc4">
+						<NetDiagram name="HSI_CDI_Deviation_In_Pixels" landscape="true" format="A4 (210 297)" oid="!ed/159/7A70/BF0/475955931dc4">
 							<presentationElements>
 								<EquationGE presentable="!ed/15a/7A70/BF0/475955935f31">
 									<position>

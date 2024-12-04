@@ -3199,7 +3199,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/34cc/782E/10C4/482449732ec7" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<diagrams>
-						<NetDiagram name="diagram_Tunnel_Of_Flight1_1" landscape="true" format="A4 (210 297)" oid="!ed/351e/782E/10C4/482449736b68">
+						<NetDiagram name="Tunnel_Of_Flight1" landscape="true" format="A4 (210 297)" oid="!ed/351e/782E/10C4/482449736b68">
 							<presentationElements>
 								<EquationGE presentable="!ed/34d1/782E/10C4/4824497388b">
 									<position>
@@ -4143,7 +4143,7 @@
 								</Edge>
 							</presentationElements>
 						</NetDiagram>
-						<NetDiagram name="diagram_Tunnel_Of_Flight1_2" landscape="true" format="A4 (210 297)" oid="!ed/351f/782E/10C4/48244973aa6">
+						<NetDiagram name="Tunnel_Of_Flight1" landscape="true" format="A4 (210 297)" oid="!ed/351f/782E/10C4/48244973aa6">
 							<presentationElements>
 								<EquationGE presentable="!ed/3500/782E/10C4/4824497360d2">
 									<position>

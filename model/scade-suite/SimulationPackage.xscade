@@ -8624,7 +8624,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/212d/7379/984/47595de57880" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<diagrams>
-								<NetDiagram name="diagram_Simulate_Compute" landscape="true" format="A4 (210 297)" oid="!ed/216f/7379/984/47595de57f1a">
+								<NetDiagram name="Simulate_Compute" landscape="true" format="A4 (210 297)" oid="!ed/216f/7379/984/47595de57f1a">
 									<presentationElements>
 										<EquationGE presentable="!ed/114a/772E/750/476638e01574">
 											<position>
@@ -8940,7 +8940,7 @@
 										</Edge>
 									</presentationElements>
 								</NetDiagram>
-								<NetDiagram name="diagram_Simulate_SimuData1" landscape="true" format="A4 (210 297)" oid="!ed/f87/772E/750/4766368a111">
+								<NetDiagram name="Simulate_SimuData1" landscape="true" format="A4 (210 297)" oid="!ed/f87/772E/750/4766368a111">
 									<presentationElements>
 										<EquationGE presentable="!ed/1023/772E/750/476636e261c">
 											<position>
@@ -9896,7 +9896,7 @@
 										</Edge>
 									</presentationElements>
 								</NetDiagram>
-								<NetDiagram name="diagram_Simulate_SimuData2" landscape="true" format="A4 (210 297)" oid="!ed/1cd2/D81/7A0/477234663ee4">
+								<NetDiagram name="Simulate_SimuData2" landscape="true" format="A4 (210 297)" oid="!ed/1cd2/D81/7A0/477234663ee4">
 									<presentationElements>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/3cb8/34F2/C0C/485242254e38">
 											<position>
@@ -10476,7 +10476,7 @@
 										</Edge>
 									</presentationElements>
 								</NetDiagram>
-								<NetDiagram name="diagram_Simulate_SimuTrajec" landscape="true" format="A4 (210 297)" oid="!ed/77d7/7701/F1C/484f8933630e">
+								<NetDiagram name="Simulate_SimuTrajec" landscape="true" format="A4 (210 297)" oid="!ed/77d7/7701/F1C/484f8933630e">
 									<presentationElements>
 										<EquationGE presentable="!ed/783f/7701/F1C/484f895b348">
 											<position>
@@ -10695,7 +10695,7 @@
 										</Edge>
 									</presentationElements>
 								</NetDiagram>
-								<NetDiagram name="diagram_Simulate_Interactivity" landscape="true" format="A4 (210 297)" oid="!ed/13fd5/3CE0/3C4/492c22a13309">
+								<NetDiagram name="Simulate_Interactivity" landscape="true" format="A4 (210 297)" oid="!ed/13fd5/3CE0/3C4/492c22a13309">
 									<presentationElements>
 										<EquationGE presentable="!ed/517f/19E7/DE4/494290946398">
 											<position>
@@ -11681,7 +11681,7 @@
 										</Edge>
 									</presentationElements>
 								</NetDiagram>
-								<NetDiagram name="diagram_Simulate_AddData" landscape="true" format="A4 (210 297)" oid="!ed/477c/5DE3/DDC/4a84066e5561">
+								<NetDiagram name="Simulate_AddData" landscape="true" format="A4 (210 297)" oid="!ed/477c/5DE3/DDC/4a84066e5561">
 									<presentationElements>
 										<EquationGE presentable="!ed/4948/5DE3/DDC/4a8409045aef">
 											<position>
@@ -12190,7 +12190,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/4a8b/7408/14F4/4bb316af516d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<diagrams>
-								<NetDiagram name="diagram_AircraftSymbolEnumToInt_1" landscape="true" format="A4 (210 297)" oid="!ed/4a91/7408/14F4/4bb316af1316">
+								<NetDiagram name="AircraftSymbolEnumToInt" landscape="true" format="A4 (210 297)" oid="!ed/4a91/7408/14F4/4bb316af1316">
 									<presentationElements>
 										<EquationGE presentable="!ed/4a8c/7408/14F4/4bb316af4f56">
 											<position>

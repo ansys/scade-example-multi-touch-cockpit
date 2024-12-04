@@ -1074,7 +1074,7 @@
 				<ed:Operator oid="!ed/2168/66D8/CE0/4752a22c3d3a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<comment>Simulation Operator</comment>
 					<diagrams>
-						<NetDiagram name="diagram_Counter1_1" landscape="true" format="A4 (210 297)" oid="!ed/2172/66D8/CE0/4752a22c71f3">
+						<NetDiagram name="Counter1" landscape="true" format="A4 (210 297)" oid="!ed/2172/66D8/CE0/4752a22c71f3">
 							<presentationElements>
 								<EquationGE symetrical="true" presentable="!ed/2173/66D8/CE0/4752a22c4220">
 									<position>

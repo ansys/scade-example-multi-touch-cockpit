@@ -2545,7 +2545,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/6bc4/6992/10B8/484d1ac12934" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<diagrams>
-								<NetDiagram name="diagram_Traject_display_in_1" landscape="true" format="A4 (210 297)" oid="!ed/6ce7/6992/10B8/484d1adc509c">
+								<NetDiagram name="Traject_display_in" landscape="true" format="A4 (210 297)" oid="!ed/6ce7/6992/10B8/484d1adc509c">
 									<presentationElements>
 										<EquationGE presentable="!ed/6dc5/6992/10B8/484d1ae35b5">
 											<position>
@@ -5510,7 +5510,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/6e2d/6992/10B8/484d1b46197e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<diagrams>
-								<NetDiagram name="diagram_Traject_display_out_1" landscape="true" format="A4 (210 297)" oid="!ed/6e2e/6992/10B8/484d1b467647">
+								<NetDiagram name="Traject_display_out" landscape="true" format="A4 (210 297)" oid="!ed/6e2e/6992/10B8/484d1b467647">
 									<presentationElements>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/6fb3/6992/10B8/484d1b524436">
 											<position>

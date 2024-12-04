@@ -507,7 +507,7 @@
 					<comment>If In &lt;= Low, Out equals to Low and Flag equals to True,</comment>
 					<comment>Otherwise, Out equals In  ang Flag equals to False.</comment>
 					<diagrams>
-						<NetDiagram name="diagram_Robustness_Input_1" landscape="true" format="A4 (210 297)" oid="!ed/30d5/66D8/CE0/4753c9c54ec7">
+						<NetDiagram name="Robustness_Input" landscape="true" format="A4 (210 297)" oid="!ed/30d5/66D8/CE0/4753c9c54ec7">
 							<presentationElements>
 								<EquationGE presentable="!ed/30d6/66D8/CE0/4753c9c52bb4">
 									<position>

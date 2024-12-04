@@ -391,7 +391,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/8c0/B41/F48/483e6d9d6242" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<diagrams>
-						<NetDiagram name="diagram_Angle_Vect_Pitch_1" landscape="true" format="A4 (210 297)" oid="!ed/8c9/B41/F48/483e6d9d6fe8">
+						<NetDiagram name="Angle_Vect_Pitch" landscape="true" format="A4 (210 297)" oid="!ed/8c9/B41/F48/483e6d9d6fe8">
 							<presentationElements>
 								<EquationGE presentable="!ed/8c4/B41/F48/483e6d9d243">
 									<position>

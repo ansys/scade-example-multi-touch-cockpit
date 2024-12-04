@@ -465,7 +465,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/5e92/33E8/42A0/5a2020ae39b2" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_fadeAngleOver5_1" landscape="true" format="A4 (210 297)" oid="!ed/5e9d/33E8/42A0/5a2020ae38b7">
+						<NetDiagram name="fadeAngleOver5" landscape="true" format="A4 (210 297)" oid="!ed/5e9d/33E8/42A0/5a2020ae38b7">
 							<presentationElements>
 								<EquationGE presentable="!ed/5e93/33E8/42A0/5a2020ae4fa8">
 									<position>

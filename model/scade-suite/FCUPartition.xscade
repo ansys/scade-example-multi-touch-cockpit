@@ -4698,7 +4698,7 @@
 						<ed:Equation oid="!ed/658e/2F8E/68C/4fa3a2223994"/>
 					</pragmas>
 				</Equation>
-				<!-- _L1620, _L1621, _L1622 = HMI::PopupText(1000, 200); -->
+				<!-- _L1620, _L1621, _L1622 = HMI::popupText(1000, 200); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1620"/>
@@ -4706,12 +4706,12 @@
 						<VariableRef name="_L1622"/>
 					</lefts>
 					<right>
-						<!-- HMI::PopupText(1000, 200) -->
+						<!-- HMI::popupText(1000, 200) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
 									<operator>
-										<OperatorRef name="HMI::PopupText"/>
+										<OperatorRef name="HMI::popupText"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -4722,7 +4722,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<OperatorRef path="HMI::PopupText" refOid="!ed/59e9/45EB/26B4/509130757dd6">
+										<OperatorRef path="HMI::popupText" refOid="!ed/59e9/45EB/26B4/509130757dd6">
 											<InputRef refOid="!ed/5a05/45EB/26B4/5091307526e2"/>
 											<InputRef refOid="!ed/5a06/45EB/26B4/509130752dc4"/>
 											<OutputRef refOid="!ed/5a07/45EB/26B4/509130751c9f"/>

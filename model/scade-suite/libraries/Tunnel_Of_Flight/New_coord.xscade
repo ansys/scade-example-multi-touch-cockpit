@@ -870,7 +870,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/31ec/782E/10C4/482446af3c43" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<diagrams>
-						<NetDiagram name="diagram_New_coord_1" landscape="true" format="A4 (210 297)" oid="!ed/31ed/782E/10C4/482446af7f9f">
+						<NetDiagram name="New_coord" landscape="true" format="A4 (210 297)" oid="!ed/31ed/782E/10C4/482446af7f9f">
 							<presentationElements>
 								<EquationGE presentable="!ed/3218/782E/10C4/4824471332bd">
 									<position>

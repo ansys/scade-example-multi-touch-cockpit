@@ -295,7 +295,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/65bf/33E8/42A0/5a2020b026d9" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_vector2AngleDeg_1" landscape="true" format="A4 (210 297)" oid="!ed/65c7/33E8/42A0/5a2020b019b8">
+						<NetDiagram name="vector2AngleDeg" landscape="true" format="A4 (210 297)" oid="!ed/65c7/33E8/42A0/5a2020b019b8">
 							<presentationElements>
 								<EquationGE presentable="!ed/65c0/33E8/42A0/5a2020b03fe5">
 									<position>

@@ -247,7 +247,7 @@
 	<pragmas>
 		<ed:Operator oid="!ed/4d1c/28C9/1944/594245c83c17" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 			<diagrams>
-				<NetDiagram name="diagram_FloorVal_1" landscape="true" format="A4 (210 297)" oid="!ed/4d23/28C9/1944/594245c87fdb">
+				<NetDiagram name="FloorVal" landscape="true" format="A4 (210 297)" oid="!ed/4d23/28C9/1944/594245c87fdb">
 					<presentationElements>
 						<EquationGE presentable="!ed/4d1d/28C9/1944/594245c85d38">
 							<position>

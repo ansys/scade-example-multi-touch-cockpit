@@ -123,7 +123,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/11b8/7A70/BF0/475959935e3d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<diagrams>
-						<NetDiagram name="diagram_ADI_Pitch_Value_Limitation_1" landscape="true" format="A4 (210 297)" oid="!ed/11bd/7A70/BF0/475959932029">
+						<NetDiagram name="ADI_Pitch_Value_Limitation" landscape="true" format="A4 (210 297)" oid="!ed/11bd/7A70/BF0/475959932029">
 							<presentationElements>
 								<EquationGE presentable="!ed/11be/7A70/BF0/475959932855">
 									<position>

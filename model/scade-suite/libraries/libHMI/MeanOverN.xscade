@@ -335,7 +335,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/61d1/33E8/42A0/5a2020af266d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_MeanOverN_1" landscape="true" format="A4 (210 297)" oid="!ed/61da/33E8/42A0/5a2020af5a83">
+						<NetDiagram name="MeanOverN" landscape="true" format="A4 (210 297)" oid="!ed/61da/33E8/42A0/5a2020af5a83">
 							<presentationElements>
 								<EquationGE kind="OBJ_LIT" presentable="!ed/61d2/33E8/42A0/5a2020af13ad">
 									<position>

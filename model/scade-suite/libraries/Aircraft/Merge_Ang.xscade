@@ -452,7 +452,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/679/53C4/4AC/4848f69e7cc6" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<diagrams>
-						<NetDiagram name="diagram_Merge_Ang_1" landscape="true" format="A4 (210 297)" oid="!ed/67a/53C4/4AC/4848f69e345f">
+						<NetDiagram name="Merge_Ang" landscape="true" format="A4 (210 297)" oid="!ed/67a/53C4/4AC/4848f69e345f">
 							<presentationElements>
 								<EquationGE kind="OBJ_LIT" presentable="!ed/693/53C4/4AC/4848f6a536d3">
 									<position>

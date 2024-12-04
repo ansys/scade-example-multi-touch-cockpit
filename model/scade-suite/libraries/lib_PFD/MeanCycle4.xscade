@@ -464,7 +464,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/60fe/63A3/56C/49dde20e4a3" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<diagrams>
-						<NetDiagram name="diagram_MeanCycle4_1" landscape="true" format="A4 (210 297)" oid="!ed/6107/63A3/56C/49dde20e7b6d">
+						<NetDiagram name="MeanCycle4" landscape="true" format="A4 (210 297)" oid="!ed/6107/63A3/56C/49dde20e7b6d">
 							<presentationElements>
 								<EquationGE presentable="!ed/60ff/63A3/56C/49dde20e56a5">
 									<position>

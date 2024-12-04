@@ -540,7 +540,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/1076/7A70/BF0/47595990157" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<diagrams>
-						<NetDiagram name="diagram_ADI_FD_Existence_1" landscape="true" format="A4 (210 297)" oid="!ed/108a/7A70/BF0/475959906fbe">
+						<NetDiagram name="ADI_FD_Existence" landscape="true" format="A4 (210 297)" oid="!ed/108a/7A70/BF0/475959906fbe">
 							<presentationElements>
 								<EquationGE presentable="!ed/108b/7A70/BF0/4759599053d5">
 									<position>

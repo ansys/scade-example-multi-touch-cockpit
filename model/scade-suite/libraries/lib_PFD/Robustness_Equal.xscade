@@ -256,7 +256,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/16005/654/16A8/480f3b2663d0" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<diagrams>
-						<NetDiagram name="diagram_Robustness_Equal_1" landscape="true" format="A4 (210 297)" oid="!ed/16006/654/16A8/480f3b26dc9">
+						<NetDiagram name="Robustness_Equal" landscape="true" format="A4 (210 297)" oid="!ed/16006/654/16A8/480f3b26dc9">
 							<presentationElements>
 								<EquationGE presentable="!ed/16008/654/16A8/480f3b3b501c">
 									<position>

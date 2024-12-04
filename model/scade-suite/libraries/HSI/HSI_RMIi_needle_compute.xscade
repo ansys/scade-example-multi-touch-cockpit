@@ -1401,7 +1401,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/a42/7196/B20/476164813d6" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_HSI_RMIi_needle_compute_1" landscape="true" format="A4 (210 297)" oid="!ed/a43/7196/B20/476164814ddd">
+						<NetDiagram name="HSI_RMIi_needle_compute" landscape="true" format="A4 (210 297)" oid="!ed/a43/7196/B20/476164814ddd">
 							<presentationElements>
 								<EquationGE kind="OBJ_LIT" presentable="!ed/ab1/7196/B20/476164e36ee6">
 									<position>

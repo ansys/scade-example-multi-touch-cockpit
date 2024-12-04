@@ -1810,7 +1810,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/fc3/7A70/BF0/4759598f444c" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<diagrams>
-						<NetDiagram name="diagram_ADI_Compute_1" landscape="true" format="A4 (210 297)" oid="!ed/ffb/7A70/BF0/4759598f3cd5">
+						<NetDiagram name="ADI_Compute" landscape="true" format="A4 (210 297)" oid="!ed/ffb/7A70/BF0/4759598f3cd5">
 							<presentationElements>
 								<EquationGE presentable="!ed/ffc/7A70/BF0/4759598f3966">
 									<position>

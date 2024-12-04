@@ -357,7 +357,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/825/7A70/BF0/4759559b34" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_HSI_Memory_4_1" landscape="true" format="A4 (210 297)" oid="!ed/82a/7A70/BF0/4759559b6e3f">
+						<NetDiagram name="HSI_Memory_4" landscape="true" format="A4 (210 297)" oid="!ed/82a/7A70/BF0/4759559b6e3f">
 							<presentationElements>
 								<EquationGE presentable="!ed/82b/7A70/BF0/4759559b623c">
 									<position>

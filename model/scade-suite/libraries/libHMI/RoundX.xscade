@@ -283,7 +283,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/62be/33E8/42A0/5a2020af5653" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_roundX_1" landscape="true" format="A4 (210 297)" oid="!ed/62c6/33E8/42A0/5a2020afd2e">
+						<NetDiagram name="roundX" landscape="true" format="A4 (210 297)" oid="!ed/62c6/33E8/42A0/5a2020afd2e">
 							<presentationElements>
 								<EquationGE presentable="!ed/62bf/33E8/42A0/5a2020af744d">
 									<position>

@@ -356,7 +356,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/6f38/3004/5AC/484e43055aeb" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<diagrams>
-						<NetDiagram name="diagram_T_Angle_tria_1" landscape="true" format="A4 (210 297)" oid="!ed/6f39/3004/5AC/484e43051888">
+						<NetDiagram name="T_Angle_tria" landscape="true" format="A4 (210 297)" oid="!ed/6f39/3004/5AC/484e43051888">
 							<presentationElements>
 								<EquationGE presentable="!ed/6f5e/3004/5AC/484e434458c0">
 									<position>

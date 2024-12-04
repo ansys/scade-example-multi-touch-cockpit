@@ -322,7 +322,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/1185/7A70/BF0/475959936aa" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<diagrams>
-						<NetDiagram name="diagram_ADI_FD_Roll_Value_Trigger_1" landscape="true" format="A4 (210 297)" oid="!ed/1190/7A70/BF0/475959934a2c">
+						<NetDiagram name="ADI_FD_Roll_Value_Trigger" landscape="true" format="A4 (210 297)" oid="!ed/1190/7A70/BF0/475959934a2c">
 							<presentationElements>
 								<EquationGE presentable="!ed/1191/7A70/BF0/475959933ef8">
 									<position>

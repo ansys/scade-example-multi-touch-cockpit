@@ -626,7 +626,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/482b/740D/148C/4833d9d03e03" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<diagrams>
-						<NetDiagram name="diagram_simu_aircraft_1" landscape="true" format="A4 (210 297)" oid="!ed/4830/740D/148C/4833d9d073bb">
+						<NetDiagram name="simu_aircraft" landscape="true" format="A4 (210 297)" oid="!ed/4830/740D/148C/4833d9d073bb">
 							<presentationElements>
 								<EquationGE presentable="!ed/482c/740D/148C/4833d9d035ef">
 									<position>

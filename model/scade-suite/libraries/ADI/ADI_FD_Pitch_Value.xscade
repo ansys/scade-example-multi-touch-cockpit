@@ -387,7 +387,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/10dd/7A70/BF0/475959911c22" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<diagrams>
-						<NetDiagram name="diagram_ADI_FD_Pitch_Value_1" landscape="true" format="A4 (210 297)" oid="!ed/10ec/7A70/BF0/4759599163ca">
+						<NetDiagram name="ADI_FD_Pitch_Value" landscape="true" format="A4 (210 297)" oid="!ed/10ec/7A70/BF0/4759599163ca">
 							<presentationElements>
 								<EquationGE presentable="!ed/10ed/7A70/BF0/475959915184">
 									<position>

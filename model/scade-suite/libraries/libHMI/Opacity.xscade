@@ -282,7 +282,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/6292/33E8/42A0/5a2020af2be7" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_opacity_1" landscape="true" format="A4 (210 297)" oid="!ed/629f/33E8/42A0/5a2020af4c4f">
+						<NetDiagram name="opacity" landscape="true" format="A4 (210 297)" oid="!ed/629f/33E8/42A0/5a2020af4c4f">
 							<presentationElements>
 								<StateMachineGE presentable="!ed/6293/33E8/42A0/5a2020af43da">
 									<position>

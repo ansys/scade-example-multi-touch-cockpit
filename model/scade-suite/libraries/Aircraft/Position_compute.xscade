@@ -1384,7 +1384,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/6d3c/740D/148C/4833e482ab2" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<diagrams>
-						<NetDiagram name="diagram_Position_compute_1" landscape="true" format="A4 (210 297)" oid="!ed/6d3d/740D/148C/4833e4821191">
+						<NetDiagram name="Position_compute" landscape="true" format="A4 (210 297)" oid="!ed/6d3d/740D/148C/4833e4821191">
 							<presentationElements>
 								<EquationGE presentable="!ed/6d40/740D/148C/4833e4ac46a8">
 									<position>

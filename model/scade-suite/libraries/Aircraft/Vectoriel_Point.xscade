@@ -285,7 +285,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/4a56/740D/148C/4833dd665f38" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<diagrams>
-						<NetDiagram name="diagram_Vectoriel_Point_1" landscape="true" format="A4 (210 297)" oid="!ed/4a57/740D/148C/4833dd666e40">
+						<NetDiagram name="Vectoriel_Point" landscape="true" format="A4 (210 297)" oid="!ed/4a57/740D/148C/4833dd666e40">
 							<presentationElements>
 								<EquationGE presentable="!ed/4a75/740D/148C/4833ddc4982">
 									<position>

@@ -505,7 +505,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/7de/B41/F48/483e6cc25852" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<diagrams>
-						<NetDiagram name="diagram_Angle_Vect_Yow_1" landscape="true" format="A4 (210 297)" oid="!ed/7ff/B41/F48/483e6cc262bb">
+						<NetDiagram name="Angle_Vect_Yow" landscape="true" format="A4 (210 297)" oid="!ed/7ff/B41/F48/483e6cc262bb">
 							<presentationElements>
 								<EquationGE presentable="!ed/843/B41/F48/483e6d097f7e">
 									<position>

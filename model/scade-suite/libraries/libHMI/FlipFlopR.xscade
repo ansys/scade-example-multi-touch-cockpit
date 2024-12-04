@@ -284,7 +284,7 @@
 		<ed:Operator oid="!ed/4d7c/28C9/1944/594245c8db5" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 			<comment>FlipFlop with Reset priority</comment>
 			<diagrams>
-				<NetDiagram name="diagram_FlipFlopR_1" landscape="true" format="A4" defaultPageFormat="false" oid="!ed/4d84/28C9/1944/594245c862bc">
+				<NetDiagram name="FlipFlopR" landscape="true" format="A4" defaultPageFormat="false" oid="!ed/4d84/28C9/1944/594245c862bc">
 					<presentationElements>
 						<EquationGE presentable="!ed/4d7d/28C9/1944/594245c85e53">
 							<position>

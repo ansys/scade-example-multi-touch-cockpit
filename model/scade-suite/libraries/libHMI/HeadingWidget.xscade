@@ -1039,7 +1039,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/6059/33E8/42A0/5a2020af55" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_headingWidget_1" landscape="true" format="A4 (210 297)" oid="!ed/608b/33E8/42A0/5a2020af2b6e">
+						<NetDiagram name="headingWidget" landscape="true" format="A4 (210 297)" oid="!ed/608b/33E8/42A0/5a2020af2b6e">
 							<presentationElements>
 								<StateMachineGE presentable="!ed/605a/33E8/42A0/5a2020af399a">
 									<position>

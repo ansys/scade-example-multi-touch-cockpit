@@ -844,7 +844,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/8d5/7A70/BF0/4759559b3557" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_HSI_RMIi_needle_1" landscape="true" format="A4 (210 297)" oid="!ed/8f5/7A70/BF0/4759559b6b08">
+						<NetDiagram name="HSI_RMIi_needle" landscape="true" format="A4 (210 297)" oid="!ed/8f5/7A70/BF0/4759559b6b08">
 							<presentationElements>
 								<EquationGE presentable="!ed/8f6/7A70/BF0/4759559b70ec">
 									<position>

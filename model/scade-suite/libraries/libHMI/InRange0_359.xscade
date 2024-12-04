@@ -161,7 +161,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/bdba/D36/24B4/5a17f28397e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_inRange0_359_1" landscape="true" format="A4 (210 297)" oid="!ed/bdbf/D36/24B4/5a17f2835bd2">
+						<NetDiagram name="inRange0_359" landscape="true" format="A4 (210 297)" oid="!ed/bdbf/D36/24B4/5a17f2835bd2">
 							<presentationElements>
 								<EquationGE presentable="!ed/bdbb/D36/24B4/5a17f2837d11">
 									<position>

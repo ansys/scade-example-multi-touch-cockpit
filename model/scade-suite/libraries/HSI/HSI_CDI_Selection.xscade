@@ -2543,7 +2543,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/5fb/7A70/BF0/475955982179" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_HSI_CDI_Selection_1" landscape="true" format="A4 (210 297)" oid="!ed/642/7A70/BF0/475955986a54">
+						<NetDiagram name="HSI_CDI_Selection" landscape="true" format="A4 (210 297)" oid="!ed/642/7A70/BF0/475955986a54">
 							<presentationElements>
 								<EquationGE kind="OBJ_LIT" presentable="!ed/644/7A70/BF0/475955985fd">
 									<position>
@@ -3137,7 +3137,7 @@
 								</Edge>
 							</presentationElements>
 						</NetDiagram>
-						<NetDiagram name="diagram_HSI_CDI_Selection_2" landscape="true" format="A4 (210 297)" oid="!ed/643/7A70/BF0/4759559867f">
+						<NetDiagram name="HSI_CDI_Selection" landscape="true" format="A4 (210 297)" oid="!ed/643/7A70/BF0/4759559867f">
 							<presentationElements>
 								<EquationGE presentable="!ed/653/7A70/BF0/475955983b11">
 									<position>

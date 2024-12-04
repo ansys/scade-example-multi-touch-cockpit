@@ -436,7 +436,7 @@
 	<pragmas>
 		<ed:Operator oid="!ed/4d3c/28C9/1944/594245c842ce" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 			<diagrams>
-				<NetDiagram name="diagram_Round_1" landscape="true" format="A4 (210 297)" oid="!ed/4d48/28C9/1944/594245c8360d">
+				<NetDiagram name="Round" landscape="true" format="A4 (210 297)" oid="!ed/4d48/28C9/1944/594245c8360d">
 					<presentationElements>
 						<EquationGE kind="OBJ_LIT" presentable="!ed/4d3d/28C9/1944/594245c875cf">
 							<position>

@@ -2367,7 +2367,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/17b/2846/4E0/48030fb15589" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<diagrams>
-						<NetDiagram name="diagram_Manage_Tunnel_1" landscape="true" format="A4 (210 297)" oid="!ed/194/2846/4E0/48030fb17972">
+						<NetDiagram name="Manage_Tunnel" landscape="true" format="A4 (210 297)" oid="!ed/194/2846/4E0/48030fb17972">
 							<presentationElements>
 								<EquationGE presentable="!ed/603b/5A15/1364/480473907feb">
 									<position>

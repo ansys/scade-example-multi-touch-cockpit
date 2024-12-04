@@ -471,7 +471,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/ae4/60FF/54C/483a7523734a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<diagrams>
-						<NetDiagram name="diagram_Counter_mod_1" landscape="true" format="A4 (210 297)" oid="!ed/ae5/60FF/54C/483a752320c8">
+						<NetDiagram name="Counter_mod" landscape="true" format="A4 (210 297)" oid="!ed/ae5/60FF/54C/483a752320c8">
 							<presentationElements>
 								<EquationGE kind="OBJ_LIT" presentable="!ed/b2e/60FF/54C/483a75688e3">
 									<position>

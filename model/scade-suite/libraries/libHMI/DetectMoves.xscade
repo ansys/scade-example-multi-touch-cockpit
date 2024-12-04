@@ -3230,7 +3230,7 @@
 	<pragmas>
 		<ed:Operator oid="!ed/7075/33E8/42A0/5a2020c92dad" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 			<diagrams>
-				<NetDiagram name="diagram_DetectMoves_1" landscape="true" format="A4 (210 297)" oid="!ed/70d1/33E8/42A0/5a2020c960b9">
+				<NetDiagram name="DetectMoves" landscape="true" format="A4 (210 297)" oid="!ed/70d1/33E8/42A0/5a2020c960b9">
 					<presentationElements>
 						<EquationGE presentable="!ed/7076/33E8/42A0/5a2020c9154e">
 							<position>

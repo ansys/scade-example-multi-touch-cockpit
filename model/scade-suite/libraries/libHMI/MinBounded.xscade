@@ -383,7 +383,7 @@
 	<pragmas>
 		<ed:Operator oid="!ed/4d02/28C9/1944/594245c815c" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 			<diagrams>
-				<NetDiagram name="diagram_MinBounded_1" landscape="true" format="A4 (210 297)" oid="!ed/4d11/28C9/1944/594245c868c8">
+				<NetDiagram name="MinBounded" landscape="true" format="A4 (210 297)" oid="!ed/4d11/28C9/1944/594245c868c8">
 					<presentationElements>
 						<EquationGE presentable="!ed/4d03/28C9/1944/594245c86065">
 							<position>

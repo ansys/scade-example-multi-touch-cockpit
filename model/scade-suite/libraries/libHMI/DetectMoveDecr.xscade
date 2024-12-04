@@ -394,7 +394,7 @@
 	<pragmas>
 		<ed:Operator oid="!ed/7121/33E8/42A0/5a2020c924ba" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 			<diagrams>
-				<NetDiagram name="diagram_DetectMoveDecr_1" landscape="true" format="A4 (210 297)" oid="!ed/7128/33E8/42A0/5a2020c9103b">
+				<NetDiagram name="DetectMoveDecr" landscape="true" format="A4 (210 297)" oid="!ed/7128/33E8/42A0/5a2020c9103b">
 					<presentationElements>
 						<EquationGE presentable="!ed/7122/33E8/42A0/5a2020c9fb9">
 							<position>

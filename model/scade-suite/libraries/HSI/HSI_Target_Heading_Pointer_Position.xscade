@@ -534,7 +534,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/a51/7A70/BF0/4759559c6dd1" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_HSI_Target_Heading_Pointer_Position_1" landscape="true" format="A4 (210 297)" oid="!ed/a5e/7A70/BF0/4759559c3e63">
+						<NetDiagram name="HSI_Target_Heading_Pointer_Position" landscape="true" format="A4 (210 297)" oid="!ed/a5e/7A70/BF0/4759559c3e63">
 							<presentationElements>
 								<EquationGE presentable="!ed/a60/7A70/BF0/4759559c79c1">
 									<position>

@@ -527,7 +527,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/6559/33E8/42A0/5a2020b01068" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_toggleButton_1" landscape="true" format="A4 (210 297)" oid="!ed/6578/33E8/42A0/5a2020b074b4">
+						<NetDiagram name="toggleButton" landscape="true" format="A4 (210 297)" oid="!ed/6578/33E8/42A0/5a2020b074b4">
 							<presentationElements>
 								<IfBlockGE presentable="!ed/655a/33E8/42A0/5a2020b076b4">
 									<position>

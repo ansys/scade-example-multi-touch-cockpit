@@ -463,7 +463,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/553a/4F0F/4FC/5a0c30313064" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="norm_1" landscape="true" format="A4 (210 297)" oid="!ed/553b/4F0F/4FC/5a0c3031d19">
+						<NetDiagram name="norm" landscape="true" format="A4 (210 297)" oid="!ed/553b/4F0F/4FC/5a0c3031d19">
 							<presentationElements>
 								<EquationGE presentable="!ed/5559/4F0F/4FC/5a0c30922bce">
 									<position>

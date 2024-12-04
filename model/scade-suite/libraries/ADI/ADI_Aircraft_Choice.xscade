@@ -192,7 +192,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/eb7/7A70/BF0/4759598e16bf" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<diagrams>
-						<NetDiagram name="diagram_ADI_Aircraft_Choice_1" landscape="true" format="A4 (210 297)" oid="!ed/ebe/7A70/BF0/4759598e5bf3">
+						<NetDiagram name="ADI_Aircraft_Choice" landscape="true" format="A4 (210 297)" oid="!ed/ebe/7A70/BF0/4759598e5bf3">
 							<presentationElements>
 								<EquationGE presentable="!ed/ebf/7A70/BF0/4759598e3de3">
 									<position>

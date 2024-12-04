@@ -180,7 +180,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/4a0e/740D/148C/4833dbd410f1" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<diagrams>
-						<NetDiagram name="diagram_Minus_Point_1" landscape="true" format="A4 (210 297)" oid="!ed/4a0f/740D/148C/4833dbd49b2">
+						<NetDiagram name="Minus_Point" landscape="true" format="A4 (210 297)" oid="!ed/4a0f/740D/148C/4833dbd49b2">
 							<presentationElements>
 								<EquationGE presentable="!ed/4a2e/740D/148C/4833dbfbbf9">
 									<position>

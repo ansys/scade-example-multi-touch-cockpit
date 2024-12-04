@@ -287,7 +287,7 @@
 	<pragmas>
 		<ed:Operator oid="!ed/4d56/28C9/1944/594245c87b58" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 			<diagrams>
-				<NetDiagram name="diagram_CeilValDef_1" landscape="true" format="A4 (210 297)" oid="!ed/4d5e/28C9/1944/594245c860c3">
+				<NetDiagram name="CeilValDef" landscape="true" format="A4 (210 297)" oid="!ed/4d5e/28C9/1944/594245c860c3">
 					<presentationElements>
 						<EquationGE presentable="!ed/4d57/28C9/1944/594245c86d5e">
 							<position>

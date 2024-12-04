@@ -768,7 +768,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/416b4/7274/1474/49d6062a561a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<diagrams>
-						<NetDiagram name="diagram_Filter_Angle_1" landscape="true" format="A4 (210 297)" oid="!ed/416b5/7274/1474/49d6062a1858">
+						<NetDiagram name="Filter_Angle" landscape="true" format="A4 (210 297)" oid="!ed/416b5/7274/1474/49d6062a1858">
 							<presentationElements>
 								<EquationGE presentable="!ed/416d9/7274/1474/49d606413372">
 									<position>

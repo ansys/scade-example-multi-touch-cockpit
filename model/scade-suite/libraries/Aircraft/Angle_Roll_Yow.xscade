@@ -601,7 +601,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/108f0/6347/16C4/484e7b9252f9" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 					<diagrams>
-						<NetDiagram name="diagram_Angle_Roll_Yow_1" landscape="true" format="A4 (210 297)" oid="!ed/10900/6347/16C4/484e7b926bc5">
+						<NetDiagram name="Angle_Roll_Yow" landscape="true" format="A4 (210 297)" oid="!ed/10900/6347/16C4/484e7b926bc5">
 							<presentationElements>
 								<EquationGE presentable="!ed/1093d/6347/16C4/484e7bad7ec1">
 									<position>

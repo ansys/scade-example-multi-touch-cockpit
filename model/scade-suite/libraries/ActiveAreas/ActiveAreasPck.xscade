@@ -1058,7 +1058,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/26cf/18A1/FD4/4909f11b6842" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 							<diagrams>
-								<NetDiagram name="diagram_BTN_Behaviors_1" landscape="true" format="A4 (210 297)" oid="!ed/26d0/18A1/FD4/4909f11b4816">
+								<NetDiagram name="BTN_Behaviors" landscape="true" format="A4 (210 297)" oid="!ed/26d0/18A1/FD4/4909f11b4816">
 									<presentationElements>
 										<EquationGE presentable="!ed/26db/18A1/FD4/4909f18e1ddc">
 											<position>
@@ -1725,7 +1725,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/2754/18A1/FD4/4909ff9c70a1" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 							<diagrams>
-								<NetDiagram name="diagram_RectActiveAreaMgt_1" landscape="true" format="A4 (210 297)" oid="!ed/2785/18A1/FD4/4909ff9c4715">
+								<NetDiagram name="RectActiveAreaMgt" landscape="true" format="A4 (210 297)" oid="!ed/2785/18A1/FD4/4909ff9c4715">
 									<presentationElements>
 										<StateMachineGE presentable="!ed/2755/18A1/FD4/4909ff9c6e3c">
 											<position>
@@ -2150,7 +2150,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/285c/18A1/FD4/4909ffb56958" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 							<diagrams>
-								<NetDiagram name="diagram_ToggleGate_1" landscape="true" format="A4 (210 297)" oid="!ed/2868/18A1/FD4/4909ffb51f8d">
+								<NetDiagram name="ToggleGate" landscape="true" format="A4 (210 297)" oid="!ed/2868/18A1/FD4/4909ffb51f8d">
 									<presentationElements>
 										<StateMachineGE presentable="!ed/285d/18A1/FD4/4909ffb528b6">
 											<position>
@@ -2600,7 +2600,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/2829/18A1/FD4/4909ffb5402d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 							<diagrams>
-								<NetDiagram name="diagram_InRect_1" landscape="true" format="A4 (210 297)" oid="!ed/2830/18A1/FD4/4909ffb52a33">
+								<NetDiagram name="InRect" landscape="true" format="A4 (210 297)" oid="!ed/2830/18A1/FD4/4909ffb52a33">
 									<presentationElements>
 										<EquationGE presentable="!ed/282a/18A1/FD4/4909ffb51a58">
 											<position>
@@ -2957,7 +2957,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/27a4/18A1/FD4/4909ffb523dd" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 							<diagrams>
-								<NetDiagram name="diagram_AreaClicked_1" landscape="true" format="A4 (210 297)" oid="!ed/27ab/18A1/FD4/4909ffb520cb">
+								<NetDiagram name="AreaClicked" landscape="true" format="A4 (210 297)" oid="!ed/27ab/18A1/FD4/4909ffb520cb">
 									<presentationElements>
 										<EquationGE presentable="!ed/27a5/18A1/FD4/4909ffb53e44">
 											<position>
@@ -3461,7 +3461,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/28b9/42E0/BA4/490eb3541416" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 							<diagrams>
-								<NetDiagram name="diagram_InCircle_1" landscape="true" format="A4 (210 297)" oid="!ed/28c0/42E0/BA4/490eb3542b9">
+								<NetDiagram name="InCircle" landscape="true" format="A4 (210 297)" oid="!ed/28c0/42E0/BA4/490eb3542b9">
 									<presentationElements>
 										<EquationGE presentable="!ed/28ba/42E0/BA4/490eb3545e65">
 											<position>
@@ -4083,7 +4083,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/431/4DDF/F58/490eb75772aa" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 							<diagrams>
-								<NetDiagram name="diagram_PolarActiveAreaMgt_1" landscape="true" format="A4 (210 297)" oid="!ed/447/4DDF/F58/490eb757201">
+								<NetDiagram name="PolarActiveAreaMgt" landscape="true" format="A4 (210 297)" oid="!ed/447/4DDF/F58/490eb757201">
 									<presentationElements>
 										<StateMachineGE presentable="!ed/432/4DDF/F58/490eb7577111">
 											<position>
@@ -4889,7 +4889,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/2f76/4DDF/F58/490ed56e12bc" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 							<diagrams>
-								<NetDiagram name="diagram_ROOT_1" landscape="true" format="A4 (210 297)" oid="!ed/2f83/4DDF/F58/490ed56e4bbf">
+								<NetDiagram name="ROOT" landscape="true" format="A4 (210 297)" oid="!ed/2f83/4DDF/F58/490ed56e4bbf">
 									<presentationElements>
 										<EquationGE presentable="!ed/2f7e/4DDF/F58/490ed56e2b09">
 											<position>
@@ -5312,7 +5312,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/2f9d/4DDF/F58/490ed5eb395e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 							<diagrams>
-								<NetDiagram name="diagram_BoolToIndex_1" landscape="true" format="A4 (210 297)" oid="!ed/2f9e/4DDF/F58/490ed5eb2e61">
+								<NetDiagram name="BoolToIndex" landscape="true" format="A4 (210 297)" oid="!ed/2f9e/4DDF/F58/490ed5eb2e61">
 									<presentationElements>
 										<EquationGE presentable="!ed/2fa9/4DDF/F58/490ed6023976">
 											<position>
@@ -5638,7 +5638,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/2815/322C/730/490b7d0a7cdc" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 							<diagrams>
-								<NetDiagram name="diagram_RectToggleBtn_1" landscape="true" format="A4 (210 297)" oid="!ed/281b/322C/730/490b7d0a6f50">
+								<NetDiagram name="RectToggleBtn" landscape="true" format="A4 (210 297)" oid="!ed/281b/322C/730/490b7d0a6f50">
 									<presentationElements>
 										<EquationGE presentable="!ed/2816/322C/730/490b7d0a32ec">
 											<position>
@@ -6334,7 +6334,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/2844/322C/730/490b7d595fec" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 							<diagrams>
-								<NetDiagram name="diagram_RectDragArea_1" landscape="true" format="A4 (210 297)" oid="!ed/284a/322C/730/490b7d596ce2">
+								<NetDiagram name="RectDragArea" landscape="true" format="A4 (210 297)" oid="!ed/284a/322C/730/490b7d596ce2">
 									<presentationElements>
 										<EquationGE presentable="!ed/2845/322C/730/490b7d594da6">
 											<position>
@@ -6794,7 +6794,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/27ca/322C/730/490b7cd010cd" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 							<diagrams>
-								<NetDiagram name="diagram_RectClickBtn_1" landscape="true" format="A4 (210 297)" oid="!ed/27cb/322C/730/490b7cd04d0d">
+								<NetDiagram name="RectClickBtn" landscape="true" format="A4 (210 297)" oid="!ed/27cb/322C/730/490b7cd04d0d">
 									<presentationElements>
 										<EquationGE presentable="!ed/27db/322C/730/490b7ce428d6">
 											<position>
@@ -7118,7 +7118,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/2ded/4DDF/F58/490ecf0d3ea3" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 							<diagrams>
-								<NetDiagram name="diagram_PolarToggleBtn_1" landscape="true" format="A4 (210 297)" oid="!ed/2df4/4DDF/F58/490ecf0d2ccb">
+								<NetDiagram name="PolarToggleBtn" landscape="true" format="A4 (210 297)" oid="!ed/2df4/4DDF/F58/490ecf0d2ccb">
 									<presentationElements>
 										<EquationGE presentable="!ed/2dee/4DDF/F58/490ecf0d3d03">
 											<position>
@@ -7676,7 +7676,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/2e4d/4DDF/F58/490ecf166734" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 							<diagrams>
-								<NetDiagram name="diagram_PolarDragArea_1" landscape="true" format="A4 (210 297)" oid="!ed/2e5a/4DDF/F58/490ecf161684">
+								<NetDiagram name="PolarDragArea" landscape="true" format="A4 (210 297)" oid="!ed/2e5a/4DDF/F58/490ecf161684">
 									<presentationElements>
 										<EquationGE presentable="!ed/2e4e/4DDF/F58/490ecf164a8">
 											<position>
@@ -8082,7 +8082,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/2e83/4DDF/F58/490ecf1d1479" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 							<diagrams>
-								<NetDiagram name="diagram_PolarClickBtn_1" landscape="true" format="A4 (210 297)" oid="!ed/2e89/4DDF/F58/490ecf1d1c9e">
+								<NetDiagram name="PolarClickBtn" landscape="true" format="A4 (210 297)" oid="!ed/2e89/4DDF/F58/490ecf1d1c9e">
 									<presentationElements>
 										<EquationGE presentable="!ed/2e84/4DDF/F58/490ecf1d2f96">
 											<position>
@@ -8601,7 +8601,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/503/1C5/FF4/491358906b41" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 							<diagrams>
-								<NetDiagram name="diagram_COMPUTE_1" landscape="true" format="A4 (210 297)" oid="!ed/504/1C5/FF4/4913589013a7">
+								<NetDiagram name="COMPUTE" landscape="true" format="A4 (210 297)" oid="!ed/504/1C5/FF4/4913589013a7">
 									<presentationElements>
 										<EquationGE presentable="!ed/519/1C5/FF4/4913589f5250">
 											<position>
@@ -9236,7 +9236,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/52f/F91/174/4942941360ed" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 							<diagrams>
-								<NetDiagram name="diagram_RectToggleBtnWithHover_1" landscape="true" format="A4 (210 297)" oid="!ed/536/F91/174/4942941352c9">
+								<NetDiagram name="RectToggleBtnWithHover" landscape="true" format="A4 (210 297)" oid="!ed/536/F91/174/4942941352c9">
 									<presentationElements>
 										<EquationGE presentable="!ed/530/F91/174/4942941329d4">
 											<position>

@@ -1749,7 +1749,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/79e/7A70/BF0/4759559a4c09" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_HSI_Compute_1" landscape="false" format="A4" defaultPageFormat="false" oid="!ed/7db/7A70/BF0/4759559a53bd">
+						<NetDiagram name="HSI_Compute" landscape="false" format="A4" defaultPageFormat="false" oid="!ed/7db/7A70/BF0/4759559a53bd">
 							<presentationElements>
 								<EquationGE presentable="!ed/7dc/7A70/BF0/4759559a7e7c">
 									<position>

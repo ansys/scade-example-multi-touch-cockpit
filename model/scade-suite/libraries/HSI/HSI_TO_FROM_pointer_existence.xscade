@@ -276,7 +276,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/aee/7A70/BF0/4759559e5b66" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_HSI_TO_FROM_pointer_existence_1" landscape="true" format="A4 (210 297)" oid="!ed/af8/7A70/BF0/4759559e82e">
+						<NetDiagram name="HSI_TO_FROM_pointer_existence" landscape="true" format="A4 (210 297)" oid="!ed/af8/7A70/BF0/4759559e82e">
 							<presentationElements>
 								<EquationGE presentable="!ed/af9/7A70/BF0/4759559e543d">
 									<position>
