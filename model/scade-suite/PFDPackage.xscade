@@ -843,7 +843,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Trajectory"/>
+										<TypeRef name="trajectory"/>
 									</type>
 								</NamedType>
 							</type>
@@ -2047,7 +2047,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Trajectory"/>
+										<TypeRef name="trajectory"/>
 									</type>
 								</NamedType>
 							</type>
@@ -2443,7 +2443,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Trajectory"/>
+										<TypeRef name="trajectory"/>
 									</type>
 								</NamedType>
 							</type>
@@ -7167,7 +7167,7 @@
 								</NetDiagram>
 							</diagrams>
 							<references>
-								<TypeRef path="Trajectory" refOid="!ed/42ea/3913/15D0/4805f12858a8"/>
+								<TypeRef path="trajectory" refOid="!ed/42ea/3913/15D0/4805f12858a8"/>
 								<TypeRef path="altitudeInfoType" refOid="!ed/227d/444A/B40/47594cd24039"/>
 								<TypeRef path="menuInfoType" refOid="!ed/22af/444A/B40/47594cd212ac"/>
 								<TypeRef path="systemInfoType" refOid="!ed/22f4/444A/B40/47594cd27d9d"/>

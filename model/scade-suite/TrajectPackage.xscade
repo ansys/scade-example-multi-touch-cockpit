@@ -7,7 +7,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Trajectory"/>
+								<TypeRef name="trajectory"/>
 							</type>
 						</NamedType>
 					</type>
@@ -828,7 +828,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Trajectory"/>
+										<TypeRef name="trajectory"/>
 									</type>
 								</NamedType>
 							</type>
@@ -964,7 +964,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Trajectory"/>
+										<TypeRef name="trajectory"/>
 									</type>
 								</NamedType>
 							</type>
@@ -3384,7 +3384,7 @@
 								</NetDiagram>
 							</diagrams>
 							<references>
-								<TypeRef path="Trajectory" refOid="!ed/42ea/3913/15D0/4805f12858a8"/>
+								<TypeRef path="trajectory" refOid="!ed/42ea/3913/15D0/4805f12858a8"/>
 								<TypeRef path="point" refOid="!ed/42e3/3913/15D0/4805f1284eb4"/>
 								<ConstVarRef path="NB_PT_TRAJECTORY" refOid="!ed/42d5/3913/15D0/4805f12857ff"/>
 								<ConstVarRef path="PT_DEFAULT" refOid="!ed/42eb/3913/15D0/4805f12d24bc"/>
@@ -6529,7 +6529,7 @@
 						<TreeDiagram landscape="true" format="A4 (210 297)" oid="!ed/34b7/254D/338/48db9794116d" blockKind="sensors"/>
 					</diagrams>
 					<references>
-						<TypeRef path="Trajectory" refOid="!ed/42ea/3913/15D0/4805f12858a8"/>
+						<TypeRef path="trajectory" refOid="!ed/42ea/3913/15D0/4805f12858a8"/>
 					</references>
 				</ed:Package>
 			</pragmas>

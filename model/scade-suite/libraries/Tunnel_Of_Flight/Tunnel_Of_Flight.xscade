@@ -7,7 +7,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Trajectory"/>
+								<TypeRef name="trajectory"/>
 							</type>
 						</NamedType>
 					</type>
@@ -471,7 +471,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Trajectory"/>
+								<TypeRef name="trajectory"/>
 							</type>
 						</NamedType>
 					</type>
