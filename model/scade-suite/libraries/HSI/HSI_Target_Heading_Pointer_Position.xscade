@@ -41,7 +41,7 @@
 						<ed:Variable oid="!ed/a52/7A70/BF0/4759559c4e4b"/>
 					</pragmas>
 				</Variable>
-				<Variable name="At_Heading_Value">
+				<Variable name="heading_Value">
 					<type>
 						<NamedType>
 							<type>
@@ -229,13 +229,13 @@
 						<ed:Equation oid="!ed/a60/7A70/BF0/4759559c79c1"/>
 					</pragmas>
 				</Equation>
-				<!-- _L2 = _L4.AT_Heading; -->
+				<!-- _L2 = _L4.heading; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L2"/>
 					</lefts>
 					<right>
-						<!-- _L4.AT_Heading -->
+						<!-- _L4.heading -->
 						<PrjOp name="1">
 							<flow>
 								<IdExpression>
@@ -245,7 +245,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="AT_Heading"/>
+								<Label name="heading"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -373,10 +373,10 @@
 						<ed:Equation oid="!ed/a67/7A70/BF0/4759559c6cae"/>
 					</pragmas>
 				</Equation>
-				<!-- At_Heading_Value = _L11; -->
+				<!-- heading_Value = _L11; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="At_Heading_Value"/>
+						<VariableRef name="heading_Value"/>
 					</lefts>
 					<right>
 						<IdExpression>

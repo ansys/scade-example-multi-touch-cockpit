@@ -3,7 +3,7 @@
 	<declarations>
 		<Operator kind="function" name="pitchValueLimitation">
 			<inputs>
-				<Variable name="AT_Pitch">
+				<Variable name="pitch">
 					<type>
 						<NamedType>
 							<type>
@@ -99,7 +99,7 @@
 						<ed:Equation oid="!ed/11be/7A70/BF0/475959932855"/>
 					</pragmas>
 				</Equation>
-				<!-- _L2 = AT_Pitch; -->
+				<!-- _L2 = pitch; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L2"/>
@@ -107,7 +107,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="AT_Pitch"/>
+								<ConstVarRef name="pitch"/>
 							</path>
 						</IdExpression>
 					</right>

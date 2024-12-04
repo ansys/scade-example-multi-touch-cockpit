@@ -15,7 +15,7 @@
 						<ed:Variable oid="!ed/10b1/7A70/BF0/4759599020b"/>
 					</pragmas>
 				</Variable>
-				<Variable name="AC_FD_Max_Pitch_Def">
+				<Variable name="maxPitchDef">
 					<type>
 						<NamedType>
 							<type>
@@ -187,7 +187,7 @@
 						<ed:Equation oid="!ed/10bb/7A70/BF0/475959906cb"/>
 					</pragmas>
 				</Equation>
-				<!-- _L3 = AC_FD_Max_Pitch_Def; -->
+				<!-- _L3 = maxPitchDef; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L3"/>
@@ -195,7 +195,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="AC_FD_Max_Pitch_Def"/>
+								<ConstVarRef name="maxPitchDef"/>
 							</path>
 						</IdExpression>
 					</right>

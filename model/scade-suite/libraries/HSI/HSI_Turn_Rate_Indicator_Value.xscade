@@ -650,13 +650,13 @@
 						<ed:Equation oid="!ed/bef/7A70/BF0/4759559fb1f"/>
 					</pragmas>
 				</Equation>
-				<!-- _L33 = _L32.AT_Heading; -->
+				<!-- _L33 = _L32.heading; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L33"/>
 					</lefts>
 					<right>
-						<!-- _L32.AT_Heading -->
+						<!-- _L32.heading -->
 						<PrjOp name="1">
 							<flow>
 								<IdExpression>
@@ -666,7 +666,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="AT_Heading"/>
+								<Label name="heading"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -674,13 +674,13 @@
 						<ed:Equation oid="!ed/bf0/7A70/BF0/4759559f6487"/>
 					</pragmas>
 				</Equation>
-				<!-- _L34 = _L35.AT_Yaw_Rate; -->
+				<!-- _L34 = _L35.yawRate; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L34"/>
 					</lefts>
 					<right>
-						<!-- _L35.AT_Yaw_Rate -->
+						<!-- _L35.yawRate -->
 						<PrjOp name="2">
 							<flow>
 								<IdExpression>
@@ -690,7 +690,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="AT_Yaw_Rate"/>
+								<Label name="yawRate"/>
 							</with>
 						</PrjOp>
 					</right>

@@ -139,7 +139,7 @@
 				</Variable>
 			</outputs>
 			<locals>
-				<Variable name="AT_Pitch">
+				<Variable name="pitch">
 					<type>
 						<NamedType>
 							<type>
@@ -151,7 +151,7 @@
 						<ed:Variable oid="!ed/ff9/7A70/BF0/4759598f567c"/>
 					</pragmas>
 				</Variable>
-				<Variable name="AT_Roll">
+				<Variable name="roll">
 					<type>
 						<NamedType>
 							<type>
@@ -1135,13 +1135,13 @@
 						<ed:Equation oid="!ed/1007/7A70/BF0/4759598f2bbd"/>
 					</pragmas>
 				</Equation>
-				<!-- _L16 = _L15.AT_Pitch; -->
+				<!-- _L16 = _L15.pitch; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L16"/>
 					</lefts>
 					<right>
-						<!-- _L15.AT_Pitch -->
+						<!-- _L15.pitch -->
 						<PrjOp name="1">
 							<flow>
 								<IdExpression>
@@ -1151,7 +1151,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="AT_Pitch"/>
+								<Label name="pitch"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -1239,13 +1239,13 @@
 						<ed:Equation oid="!ed/100d/7A70/BF0/4759598f2d3"/>
 					</pragmas>
 				</Equation>
-				<!-- _L26 = _L15.AT_Roll; -->
+				<!-- _L26 = _L15.roll; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L26"/>
 					</lefts>
 					<right>
-						<!-- _L15.AT_Roll -->
+						<!-- _L15.roll -->
 						<PrjOp name="2">
 							<flow>
 								<IdExpression>
@@ -1255,7 +1255,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="AT_Roll"/>
+								<Label name="roll"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -1327,10 +1327,10 @@
 						<ed:Equation oid="!ed/1011/7A70/BF0/4759598f37d7"/>
 					</pragmas>
 				</Equation>
-				<!-- AT_Pitch = _L39; -->
+				<!-- pitch = _L39; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="AT_Pitch"/>
+						<VariableRef name="pitch"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -1343,10 +1343,10 @@
 						<ed:Equation oid="!ed/1012/7A70/BF0/4759598f1d4f"/>
 					</pragmas>
 				</Equation>
-				<!-- AT_Roll = _L40; -->
+				<!-- roll = _L40; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="AT_Roll"/>
+						<VariableRef name="roll"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -1359,7 +1359,7 @@
 						<ed:Equation oid="!ed/1013/7A70/BF0/4759598f30cd"/>
 					</pragmas>
 				</Equation>
-				<!-- _L35 = AT_Pitch; -->
+				<!-- _L35 = pitch; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L35"/>
@@ -1367,7 +1367,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="AT_Pitch"/>
+								<ConstVarRef name="pitch"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1375,7 +1375,7 @@
 						<ed:Equation oid="!ed/1014/7A70/BF0/4759598f7417"/>
 					</pragmas>
 				</Equation>
-				<!-- _L36 = AT_Roll; -->
+				<!-- _L36 = roll; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L36"/>
@@ -1383,7 +1383,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="AT_Roll"/>
+								<ConstVarRef name="roll"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1467,7 +1467,7 @@
 						<ed:Equation oid="!ed/1019/7A70/BF0/4759598f5695"/>
 					</pragmas>
 				</Equation>
-				<!-- _L44 = AT_Pitch; -->
+				<!-- _L44 = pitch; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L44"/>
@@ -1475,7 +1475,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="AT_Pitch"/>
+								<ConstVarRef name="pitch"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1539,13 +1539,13 @@
 						<ed:Equation oid="!ed/101e/7A70/BF0/4759598f13c9"/>
 					</pragmas>
 				</Equation>
-				<!-- _L55 = _L54.AC_Flight_Director; -->
+				<!-- _L55 = _L54.flightDirector; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L55"/>
 					</lefts>
 					<right>
-						<!-- _L54.AC_Flight_Director -->
+						<!-- _L54.flightDirector -->
 						<PrjOp name="4">
 							<flow>
 								<IdExpression>
@@ -1555,7 +1555,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="AC_Flight_Director"/>
+								<Label name="flightDirector"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -1619,13 +1619,13 @@
 						<ed:Equation oid="!ed/1022/7A70/BF0/4759598f22fd"/>
 					</pragmas>
 				</Equation>
-				<!-- _L79 = _L78.AC_FD_Pitch_Gain; -->
+				<!-- _L79 = _L78.pitchGain; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L79"/>
 					</lefts>
 					<right>
-						<!-- _L78.AC_FD_Pitch_Gain -->
+						<!-- _L78.pitchGain -->
 						<PrjOp name="6">
 							<flow>
 								<IdExpression>
@@ -1635,7 +1635,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="AC_FD_Pitch_Gain"/>
+								<Label name="pitchGain"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -1707,13 +1707,13 @@
 						<ed:Equation oid="!ed/1026/7A70/BF0/4759598f6d3"/>
 					</pragmas>
 				</Equation>
-				<!-- _L100 = _L78.AC_FD_Max_Pitch_Def; -->
+				<!-- _L100 = _L78.maxPitchDef; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L100"/>
 					</lefts>
 					<right>
-						<!-- _L78.AC_FD_Max_Pitch_Def -->
+						<!-- _L78.maxPitchDef -->
 						<PrjOp name="9">
 							<flow>
 								<IdExpression>
@@ -1723,7 +1723,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="AC_FD_Max_Pitch_Def"/>
+								<Label name="maxPitchDef"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -1811,13 +1811,13 @@
 						<ed:Equation oid="!ed/102b/7A70/BF0/4759598f7911"/>
 					</pragmas>
 				</Equation>
-				<!-- _L114 = _L113.AC_FD_Roll_Gain; -->
+				<!-- _L114 = _L113.rollGain; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L114"/>
 					</lefts>
 					<right>
-						<!-- _L113.AC_FD_Roll_Gain -->
+						<!-- _L113.rollGain -->
 						<PrjOp name="12">
 							<flow>
 								<IdExpression>
@@ -1827,7 +1827,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="AC_FD_Roll_Gain"/>
+								<Label name="rollGain"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -1835,13 +1835,13 @@
 						<ed:Equation oid="!ed/102c/7A70/BF0/4759598f7ca8"/>
 					</pragmas>
 				</Equation>
-				<!-- _L115 = _L113.AC_FD_Max_Roll_Def; -->
+				<!-- _L115 = _L113.maxRollDef; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L115"/>
 					</lefts>
 					<right>
-						<!-- _L113.AC_FD_Max_Roll_Def -->
+						<!-- _L113.maxRollDef -->
 						<PrjOp name="13">
 							<flow>
 								<IdExpression>
@@ -1851,7 +1851,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="AC_FD_Max_Roll_Def"/>
+								<Label name="maxRollDef"/>
 							</with>
 						</PrjOp>
 					</right>

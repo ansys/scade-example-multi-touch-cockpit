@@ -73,13 +73,13 @@
 						<ed:Equation oid="!ed/1851/757F/B08/475c21f28e5"/>
 					</pragmas>
 				</Equation>
-				<!-- _L2 = _L1.AC_Icon; -->
+				<!-- _L2 = _L1.icon; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L2"/>
 					</lefts>
 					<right>
-						<!-- _L1.AC_Icon -->
+						<!-- _L1.icon -->
 						<PrjOp name="1">
 							<flow>
 								<IdExpression>
@@ -89,7 +89,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="AC_Icon"/>
+								<Label name="icon"/>
 							</with>
 						</PrjOp>
 					</right>

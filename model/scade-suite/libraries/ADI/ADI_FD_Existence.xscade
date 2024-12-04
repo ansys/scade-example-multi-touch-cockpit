@@ -3,7 +3,7 @@
 	<declarations>
 		<Operator kind="function" name="fdExistence">
 			<inputs>
-				<Variable name="AC_Flight_Director">
+				<Variable name="flightDirector">
 					<type>
 						<NamedType>
 							<type>
@@ -27,7 +27,7 @@
 						<ed:Variable oid="!ed/1079/7A70/BF0/47595990830"/>
 					</pragmas>
 				</Variable>
-				<Variable name="AT_Pitch">
+				<Variable name="pitch">
 					<type>
 						<NamedType>
 							<type>
@@ -39,7 +39,7 @@
 						<ed:Variable oid="!ed/107a/7A70/BF0/475959906a24"/>
 					</pragmas>
 				</Variable>
-				<Variable name="AT_Roll">
+				<Variable name="roll">
 					<type>
 						<NamedType>
 							<type>
@@ -237,7 +237,7 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L1 = AC_Flight_Director; -->
+				<!-- _L1 = flightDirector; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1"/>
@@ -245,7 +245,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="AC_Flight_Director"/>
+								<ConstVarRef name="flightDirector"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -290,7 +290,7 @@
 						<ed:Equation oid="!ed/108d/7A70/BF0/475959907690"/>
 					</pragmas>
 				</Equation>
-				<!-- _L4 = AT_Pitch; -->
+				<!-- _L4 = pitch; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L4"/>
@@ -298,7 +298,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="AT_Pitch"/>
+								<ConstVarRef name="pitch"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -382,7 +382,7 @@
 						<ed:Equation oid="!ed/1092/7A70/BF0/475959901ccb"/>
 					</pragmas>
 				</Equation>
-				<!-- _L9 = AT_Roll; -->
+				<!-- _L9 = roll; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L9"/>
@@ -390,7 +390,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="AT_Roll"/>
+								<ConstVarRef name="roll"/>
 							</path>
 						</IdExpression>
 					</right>

@@ -187,13 +187,13 @@
 						<ed:Equation oid="!ed/6f6/7A70/BF0/475955997283"/>
 					</pragmas>
 				</Equation>
-				<!-- _L5 = _L1.AT_Heading; -->
+				<!-- _L5 = _L1.heading; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L5"/>
 					</lefts>
 					<right>
-						<!-- _L1.AT_Heading -->
+						<!-- _L1.heading -->
 						<PrjOp name="1">
 							<flow>
 								<IdExpression>
@@ -203,7 +203,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="AT_Heading"/>
+								<Label name="heading"/>
 							</with>
 						</PrjOp>
 					</right>

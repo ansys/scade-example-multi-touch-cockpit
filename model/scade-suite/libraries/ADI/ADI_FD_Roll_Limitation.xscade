@@ -15,7 +15,7 @@
 						<ed:Variable oid="!ed/110e/7A70/BF0/47595992280a"/>
 					</pragmas>
 				</Variable>
-				<Variable name="AC_FD_Max_Roll_Def">
+				<Variable name="maxRollDef">
 					<type>
 						<NamedType>
 							<type>
@@ -187,7 +187,7 @@
 						<ed:Equation oid="!ed/1118/7A70/BF0/475959924fb3"/>
 					</pragmas>
 				</Equation>
-				<!-- _L3 = AC_FD_Max_Roll_Def; -->
+				<!-- _L3 = maxRollDef; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L3"/>
@@ -195,7 +195,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="AC_FD_Max_Roll_Def"/>
+								<ConstVarRef name="maxRollDef"/>
 							</path>
 						</IdExpression>
 					</right>

@@ -27,7 +27,7 @@
 						<ed:Variable oid="!ed/10e0/7A70/BF0/4759599135a4"/>
 					</pragmas>
 				</Variable>
-				<Variable name="AT_Pitch">
+				<Variable name="pitch">
 					<type>
 						<NamedType>
 							<type>
@@ -39,7 +39,7 @@
 						<ed:Variable oid="!ed/10e1/7A70/BF0/475959913a03"/>
 					</pragmas>
 				</Variable>
-				<Variable name="AC_FD_Pitch_Gain">
+				<Variable name="pitchGain">
 					<type>
 						<NamedType>
 							<type>
@@ -261,7 +261,7 @@
 						<ed:Equation oid="!ed/10f0/7A70/BF0/475959914707"/>
 					</pragmas>
 				</Equation>
-				<!-- _L5 = AC_FD_Pitch_Gain; -->
+				<!-- _L5 = pitchGain; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L5"/>
@@ -269,7 +269,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="AC_FD_Pitch_Gain"/>
+								<ConstVarRef name="pitchGain"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -277,7 +277,7 @@
 						<ed:Equation oid="!ed/10f1/7A70/BF0/475959914d28"/>
 					</pragmas>
 				</Equation>
-				<!-- _L6 = AT_Pitch; -->
+				<!-- _L6 = pitch; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L6"/>
@@ -285,7 +285,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="AT_Pitch"/>
+								<ConstVarRef name="pitch"/>
 							</path>
 						</IdExpression>
 					</right>

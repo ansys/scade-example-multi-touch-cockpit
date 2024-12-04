@@ -281,7 +281,7 @@
 						<ed:Variable oid="!ed/7af/7A70/BF0/4759559a4c89"/>
 					</pragmas>
 				</Variable>
-				<Variable name="AT_HEADING_VALUE">
+				<Variable name="heading_VALUE">
 					<type>
 						<NamedType>
 							<type>
@@ -1659,10 +1659,10 @@
 						<ed:Equation oid="!ed/807/7A70/BF0/4759559a25b8"/>
 					</pragmas>
 				</Equation>
-				<!-- AT_HEADING_VALUE = _L69; -->
+				<!-- heading_VALUE = _L69; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="AT_HEADING_VALUE"/>
+						<VariableRef name="heading_VALUE"/>
 					</lefts>
 					<right>
 						<IdExpression>

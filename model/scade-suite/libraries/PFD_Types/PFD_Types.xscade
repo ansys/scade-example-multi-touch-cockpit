@@ -528,7 +528,7 @@
 			<definition>
 				<Struct>
 					<fields>
-						<Field name="AT_Pitch">
+						<Field name="pitch">
 							<type>
 								<NamedType>
 									<type>
@@ -545,7 +545,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="AT_Roll">
+						<Field name="roll">
 							<type>
 								<NamedType>
 									<type>
@@ -562,7 +562,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="AT_Heading">
+						<Field name="heading">
 							<type>
 								<NamedType>
 									<type>
@@ -579,7 +579,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="AT_Yaw_Rate">
+						<Field name="yawRate">
 							<type>
 								<NamedType>
 									<type>
@@ -626,7 +626,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="AC_Flight_Director">
+						<Field name="flightDirector">
 							<type>
 								<NamedType>
 									<type>
@@ -643,7 +643,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="AC_FD_Pitch_Gain">
+						<Field name="pitchGain">
 							<type>
 								<NamedType>
 									<type>
@@ -660,7 +660,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="AC_FD_Roll_Gain">
+						<Field name="rollGain">
 							<type>
 								<NamedType>
 									<type>
@@ -677,7 +677,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="AC_FD_Max_Pitch_Def">
+						<Field name="maxPitchDef">
 							<type>
 								<NamedType>
 									<type>
@@ -694,7 +694,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="AC_FD_Max_Roll_Def">
+						<Field name="maxRollDef">
 							<type>
 								<NamedType>
 									<type>
@@ -711,7 +711,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="AC_Icon">
+						<Field name="icon">
 							<type>
 								<NamedType>
 									<type>

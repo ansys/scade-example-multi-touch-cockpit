@@ -27,7 +27,7 @@
 						<ed:Variable oid="!ed/113d/7A70/BF0/47595992163e"/>
 					</pragmas>
 				</Variable>
-				<Variable name="AC_FD_Roll_Gain">
+				<Variable name="rollGain">
 					<type>
 						<NamedType>
 							<type>
@@ -213,7 +213,7 @@
 						<ed:Equation oid="!ed/114d/7A70/BF0/4759599216a5"/>
 					</pragmas>
 				</Equation>
-				<!-- _L5 = AC_FD_Roll_Gain; -->
+				<!-- _L5 = rollGain; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L5"/>
@@ -221,7 +221,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="AC_FD_Roll_Gain"/>
+								<ConstVarRef name="rollGain"/>
 							</path>
 						</IdExpression>
 					</right>
