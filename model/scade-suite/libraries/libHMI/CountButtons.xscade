@@ -230,7 +230,7 @@
 							<presentationElements>
 								<StateMachineGE presentable="!ed/5e01/33E8/42A0/5a2020ae15f7">
 									<position>
-										<point x="1524" y="826"/>
+										<Point x="1524" y="826"/>
 									</position>
 									<size>
 										<Size width="22352" height="2815"/>
@@ -238,7 +238,7 @@
 								</StateMachineGE>
 								<StateGE presentable="!ed/5e02/33E8/42A0/5a2020ae633c">
 									<position>
-										<point x="2540" y="1418"/>
+										<Point x="2540" y="1418"/>
 									</position>
 									<size>
 										<Size width="3852" height="1418"/>
@@ -246,7 +246,7 @@
 								</StateGE>
 								<StateGE presentable="!ed/5e04/33E8/42A0/5a2020ae26a5">
 									<position>
-										<point x="9546" y="1397"/>
+										<Point x="9546" y="1397"/>
 									</position>
 									<size>
 										<Size width="4509" height="1419"/>
@@ -254,7 +254,7 @@
 								</StateGE>
 								<EquationGE kind="OBJ_VAR_OUT" presentable="!ed/5e05/33E8/42A0/5a2020ae6d63">
 									<position>
-										<point x="11557" y="2075"/>
+										<Point x="11557" y="2075"/>
 									</position>
 									<size>
 										<Size width="360" height="508"/>
@@ -262,7 +262,7 @@
 								</EquationGE>
 								<EquationGE kind="OBJ_LIT" presentable="!ed/5e06/33E8/42A0/5a2020ae149a">
 									<position>
-										<point x="10668" y="2180"/>
+										<Point x="10668" y="2180"/>
 									</position>
 									<size>
 										<Size width="169" height="296"/>
@@ -270,7 +270,7 @@
 								</EquationGE>
 								<StateGE presentable="!ed/5e0a/33E8/42A0/5a2020ae6c51">
 									<position>
-										<point x="17420" y="1397"/>
+										<Point x="17420" y="1397"/>
 									</position>
 									<size>
 										<Size width="4509" height="1418"/>
@@ -278,7 +278,7 @@
 								</StateGE>
 								<EquationGE kind="OBJ_VAR_OUT" presentable="!ed/5e0b/33E8/42A0/5a2020ae1cd">
 									<position>
-										<point x="19431" y="2075"/>
+										<Point x="19431" y="2075"/>
 									</position>
 									<size>
 										<Size width="360" height="508"/>
@@ -286,7 +286,7 @@
 								</EquationGE>
 								<EquationGE kind="OBJ_LIT" presentable="!ed/5e0c/33E8/42A0/5a2020ae356b">
 									<position>
-										<point x="18542" y="2180"/>
+										<Point x="18542" y="2180"/>
 									</position>
 									<size>
 										<Size width="169" height="296"/>
@@ -294,86 +294,86 @@
 								</EquationGE>
 								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/5e0c/33E8/42A0/5a2020ae356b" dstEquation="!ed/5e0b/33E8/42A0/5a2020ae1cd">
 									<positions>
-										<point x="18711" y="2328"/>
-										<point x="19114" y="2328"/>
-										<point x="19114" y="2328"/>
-										<point x="19495" y="2328"/>
+										<Point x="18711" y="2328"/>
+										<Point x="19114" y="2328"/>
+										<Point x="19114" y="2328"/>
+										<Point x="19495" y="2328"/>
 									</positions>
 								</Edge>
 								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/5e06/33E8/42A0/5a2020ae149a" dstEquation="!ed/5e05/33E8/42A0/5a2020ae6d63">
 									<positions>
-										<point x="10837" y="2328"/>
-										<point x="11240" y="2328"/>
-										<point x="11240" y="2328"/>
-										<point x="11621" y="2328"/>
+										<Point x="10837" y="2328"/>
+										<Point x="11240" y="2328"/>
+										<Point x="11240" y="2328"/>
+										<Point x="11621" y="2328"/>
 									</positions>
 								</Edge>
 								<TransitionGE presentable="!ed/5e03/33E8/42A0/5a2020ae70cf">
 									<positions>
-										<point x="6392" y="1821"/>
-										<point x="7429" y="1821"/>
-										<point x="8466" y="1821"/>
-										<point x="9546" y="1821"/>
+										<Point x="6392" y="1821"/>
+										<Point x="7429" y="1821"/>
+										<Point x="8466" y="1821"/>
+										<Point x="9546" y="1821"/>
 									</positions>
 									<labelSize>
 										<Size width="2223" height="593"/>
 									</labelSize>
 									<labelPos>
-										<point x="6604" y="1228"/>
+										<Point x="6604" y="1228"/>
 									</labelPos>
 									<slashPos>
-										<point x="8128" y="1228"/>
+										<Point x="8128" y="1228"/>
 									</slashPos>
 								</TransitionGE>
 								<TransitionGE presentable="!ed/5e08/33E8/42A0/5a2020ae600f">
 									<positions>
-										<point x="14054" y="1863"/>
-										<point x="15176" y="1863"/>
-										<point x="16298" y="1863"/>
-										<point x="17420" y="1863"/>
+										<Point x="14054" y="1863"/>
+										<Point x="15176" y="1863"/>
+										<Point x="16298" y="1863"/>
+										<Point x="17420" y="1863"/>
 									</positions>
 									<labelSize>
 										<Size width="2138" height="593"/>
 									</labelSize>
 									<labelPos>
-										<point x="14541" y="1313"/>
+										<Point x="14541" y="1313"/>
 									</labelPos>
 									<slashPos>
-										<point x="15981" y="1312"/>
+										<Point x="15981" y="1312"/>
 									</slashPos>
 								</TransitionGE>
 								<TransitionGE presentable="!ed/5e09/33E8/42A0/5a2020ae27db">
 									<positions>
-										<point x="9546" y="2371"/>
-										<point x="8509" y="2371"/>
-										<point x="7471" y="2371"/>
-										<point x="6392" y="2371"/>
+										<Point x="9546" y="2371"/>
+										<Point x="8509" y="2371"/>
+										<Point x="7471" y="2371"/>
+										<Point x="6392" y="2371"/>
 									</positions>
 									<labelSize>
 										<Size width="2201" height="889"/>
 									</labelSize>
 									<labelPos>
-										<point x="6730" y="2689"/>
+										<Point x="6730" y="2689"/>
 									</labelPos>
 									<slashPos>
-										<point x="8234" y="2688"/>
+										<Point x="8234" y="2688"/>
 									</slashPos>
 								</TransitionGE>
 								<TransitionGE presentable="!ed/5e0e/33E8/42A0/5a2020ae28a7">
 									<positions>
-										<point x="17420" y="2413"/>
-										<point x="16298" y="2413"/>
-										<point x="15176" y="2413"/>
-										<point x="14054" y="2413"/>
+										<Point x="17420" y="2413"/>
+										<Point x="16298" y="2413"/>
+										<Point x="15176" y="2413"/>
+										<Point x="14054" y="2413"/>
 									</positions>
 									<labelSize>
 										<Size width="2455" height="889"/>
 									</labelSize>
 									<labelPos>
-										<point x="14372" y="2752"/>
+										<Point x="14372" y="2752"/>
 									</labelPos>
 									<slashPos>
-										<point x="16129" y="2752"/>
+										<Point x="16129" y="2752"/>
 									</slashPos>
 								</TransitionGE>
 							</presentationElements>

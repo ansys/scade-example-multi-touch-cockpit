@@ -252,7 +252,7 @@
 					<presentationElements>
 						<EquationGE presentable="!ed/7192/33E8/42A0/5a2020ca4af6">
 							<position>
-								<point x="7049" y="1651"/>
+								<Point x="7049" y="1651"/>
 							</position>
 							<size>
 								<Size width="2662" height="1413"/>
@@ -260,7 +260,7 @@
 						</EquationGE>
 						<EquationGE presentable="!ed/7193/33E8/42A0/5a2020ca673a">
 							<position>
-								<point x="2138" y="847"/>
+								<Point x="2138" y="847"/>
 							</position>
 							<size>
 								<Size width="254" height="508"/>
@@ -268,7 +268,7 @@
 						</EquationGE>
 						<EquationGE presentable="!ed/7194/33E8/42A0/5a2020ca2f98">
 							<position>
-								<point x="4339" y="1884"/>
+								<Point x="4339" y="1884"/>
 							</position>
 							<size>
 								<Size width="1016" height="911"/>
@@ -276,14 +276,14 @@
 						</EquationGE>
 						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/7193/33E8/42A0/5a2020ca673a" dstEquation="!ed/7194/33E8/42A0/5a2020ca2f98">
 							<positions>
-								<point x="2392" y="1101"/>
-								<point x="4847" y="1101"/>
-								<point x="4847" y="1884"/>
+								<Point x="2392" y="1101"/>
+								<Point x="4847" y="1101"/>
+								<Point x="4847" y="1884"/>
 							</positions>
 						</Edge>
 						<EquationGE presentable="!ed/7195/33E8/42A0/5a2020ca2eed">
 							<position>
-								<point x="2138" y="1926"/>
+								<Point x="2138" y="1926"/>
 							</position>
 							<size>
 								<Size width="254" height="508"/>
@@ -291,15 +291,15 @@
 						</EquationGE>
 						<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/7195/33E8/42A0/5a2020ca2eed" dstEquation="!ed/7194/33E8/42A0/5a2020ca2f98">
 							<positions>
-								<point x="2392" y="2180"/>
-								<point x="3366" y="2180"/>
-								<point x="3366" y="2180"/>
-								<point x="4339" y="2180"/>
+								<Point x="2392" y="2180"/>
+								<Point x="3366" y="2180"/>
+								<Point x="3366" y="2180"/>
+								<Point x="4339" y="2180"/>
 							</positions>
 						</Edge>
 						<EquationGE kind="OBJ_LIT" presentable="!ed/7196/33E8/42A0/5a2020ca57d3">
 							<position>
-								<point x="3514" y="2350"/>
+								<Point x="3514" y="2350"/>
 							</position>
 							<size>
 								<Size width="170" height="296"/>
@@ -307,7 +307,7 @@
 						</EquationGE>
 						<EquationGE presentable="!ed/7197/33E8/42A0/5a2020ca17e0">
 							<position>
-								<point x="11134" y="2096"/>
+								<Point x="11134" y="2096"/>
 							</position>
 							<size>
 								<Size width="338" height="508"/>
@@ -315,26 +315,26 @@
 						</EquationGE>
 						<Edge leftVarIndex="1" rightExprIndex="3" srcEquation="!ed/7196/33E8/42A0/5a2020ca57d3" dstEquation="!ed/7194/33E8/42A0/5a2020ca2f98">
 							<positions>
-								<point x="3683" y="2498"/>
-								<point x="4001" y="2498"/>
-								<point x="4001" y="2498"/>
-								<point x="4339" y="2498"/>
+								<Point x="3683" y="2498"/>
+								<Point x="4001" y="2498"/>
+								<Point x="4001" y="2498"/>
+								<Point x="4339" y="2498"/>
 							</positions>
 						</Edge>
 						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/7192/33E8/42A0/5a2020ca4af6" dstEquation="!ed/7197/33E8/42A0/5a2020ca17e0">
 							<positions>
-								<point x="9716" y="2371"/>
-								<point x="10435" y="2371"/>
-								<point x="10435" y="2371"/>
-								<point x="11176" y="2371"/>
+								<Point x="9716" y="2371"/>
+								<Point x="10435" y="2371"/>
+								<Point x="10435" y="2371"/>
+								<Point x="11176" y="2371"/>
 							</positions>
 						</Edge>
 						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/7194/33E8/42A0/5a2020ca2f98" dstEquation="!ed/7192/33E8/42A0/5a2020ca4af6">
 							<positions>
-								<point x="5355" y="2350"/>
-								<point x="6202" y="2350"/>
-								<point x="6202" y="2350"/>
-								<point x="7049" y="2350"/>
+								<Point x="5355" y="2350"/>
+								<Point x="6202" y="2350"/>
+								<Point x="6202" y="2350"/>
+								<Point x="7049" y="2350"/>
 							</positions>
 						</Edge>
 					</presentationElements>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project id="1" oid_count="85" defaultConfiguration="18">
+<Project id="1" oid_count="87" defaultConfiguration="18">
 	<props>
 		<Prop id="10" name="@STUDIO:PRODUCT">
 			<value>SC</value>
@@ -31,7 +31,7 @@
 			<configuration>18</configuration>
 		</Prop>
 		<Prop id="20" name="@GENERATOR:GENERATOR">
-			<value>C QUAL60</value>
+			<value>C QUAL663</value>
 			<configuration>18</configuration>
 		</Prop>
 		<Prop id="21" name="@GENERATOR:OPTLEVEL">
@@ -258,7 +258,7 @@
 				<FileRef id="73" persistAs="ADI_FD_Pitch_Limitation.xscade"/>
 				<FileRef id="74" persistAs="ADI_FD_Existence.xscade"/>
 				<FileRef id="75" persistAs="ADI_Compute.xscade"/>
-				<FileRef id="76" persistAs="ADI_Aircraft_Choice.xscade"/>
+				<FileRef id="87" persistAs="ADI_Aircraft_Choice1.xscade"/>
 			</elements>
 		</Folder>
 		<Folder id="58" name="Design Verifier File">

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Constant name="Epsilon">
+		<Constant name="EPSILON">
 			<type>
 				<NamedType>
 					<type>
@@ -31,7 +31,7 @@
 				<ed:Constant oid="!ed/14ac5/654/16A8/480f3a0a223"/>
 			</pragmas>
 		</Constant>
-		<Constant name="SpecRatio">
+		<Constant name="SPECRATIO">
 			<type>
 				<NamedType>
 					<type>
@@ -46,7 +46,7 @@
 				<ed:Constant oid="!ed/c9d/5D24/C0/485248906187"/>
 			</pragmas>
 		</Constant>
-		<Constant name="Speed">
+		<Constant name="SPEED">
 			<type>
 				<NamedType>
 					<type>

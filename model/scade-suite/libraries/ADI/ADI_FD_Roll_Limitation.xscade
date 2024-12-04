@@ -3,7 +3,7 @@
 	<declarations>
 		<Operator kind="function" name="fdRollLimitation">
 			<inputs>
-				<Variable name="ADI_FD_Roll">
+				<Variable name="adiFdRoll">
 					<type>
 						<NamedType>
 							<type>
@@ -29,7 +29,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="ADI_FD_Roll_Limited">
+				<Variable name="adiFdRollLimited">
 					<type>
 						<NamedType>
 							<type>
@@ -105,18 +105,18 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L1 = Range_Limiter_InIn(_L2, _L7, _L8); -->
+				<!-- _L1 = rangeLimiterInIn(_L2, _L7, _L8); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1"/>
 					</lefts>
 					<right>
-						<!-- Range_Limiter_InIn(_L2, _L7, _L8) -->
+						<!-- rangeLimiterInIn(_L2, _L7, _L8) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
 									<operator>
-										<OperatorRef name="Range_Limiter_InIn"/>
+										<OperatorRef name="rangeLimiterInIn"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -140,7 +140,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<OperatorRef path="Range_Limiter_InIn" refOid="!ed/4216/4C50/218/474ffaa27bfa">
+										<OperatorRef path="rangeLimiterInIn" refOid="!ed/4216/4C50/218/474ffaa27bfa">
 											<InputRef refOid="!ed/421e/4C50/218/474ffad5607c"/>
 											<InputRef refOid="!ed/4225/4C50/218/474ffad533cd"/>
 											<InputRef refOid="!ed/422c/4C50/218/474ffad57619"/>
@@ -155,10 +155,10 @@
 						<ed:Equation oid="!ed/1116/7A70/BF0/47595992691e"/>
 					</pragmas>
 				</Equation>
-				<!-- ADI_FD_Roll_Limited = _L1; -->
+				<!-- adiFdRollLimited = _L1; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="ADI_FD_Roll_Limited"/>
+						<VariableRef name="adiFdRollLimited"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -171,7 +171,7 @@
 						<ed:Equation oid="!ed/1117/7A70/BF0/4759599210dc"/>
 					</pragmas>
 				</Equation>
-				<!-- _L2 = ADI_FD_Roll; -->
+				<!-- _L2 = adiFdRoll; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L2"/>
@@ -179,7 +179,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="ADI_FD_Roll"/>
+								<ConstVarRef name="adiFdRoll"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -256,7 +256,7 @@
 							<presentationElements>
 								<EquationGE presentable="!ed/1116/7A70/BF0/47595992691e">
 									<position>
-										<point x="6633" y="1897"/>
+										<Point x="6633" y="1897"/>
 									</position>
 									<size>
 										<Size width="2874" height="1418"/>
@@ -264,7 +264,7 @@
 								</EquationGE>
 								<EquationGE presentable="!ed/1117/7A70/BF0/4759599210dc">
 									<position>
-										<point x="10689" y="2328"/>
+										<Point x="10689" y="2328"/>
 									</position>
 									<size>
 										<Size width="344" height="503"/>
@@ -272,15 +272,15 @@
 								</EquationGE>
 								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/1116/7A70/BF0/47595992691e" dstEquation="!ed/1117/7A70/BF0/4759599210dc">
 									<positions>
-										<point x="9499" y="2593"/>
-										<point x="9578" y="2593"/>
-										<point x="9578" y="2593"/>
-										<point x="10742" y="2593"/>
+										<Point x="9499" y="2593"/>
+										<Point x="9578" y="2593"/>
+										<Point x="9578" y="2593"/>
+										<Point x="10742" y="2593"/>
 									</positions>
 								</Edge>
 								<EquationGE presentable="!ed/1118/7A70/BF0/475959924fb3">
 									<position>
-										<point x="2858" y="2328"/>
+										<Point x="2858" y="2328"/>
 									</position>
 									<size>
 										<Size width="264" height="503"/>
@@ -288,15 +288,15 @@
 								</EquationGE>
 								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/1118/7A70/BF0/475959924fb3" dstEquation="!ed/1116/7A70/BF0/47595992691e">
 									<positions>
-										<point x="3122" y="2593"/>
-										<point x="4207" y="2593"/>
-										<point x="4207" y="2593"/>
-										<point x="6641" y="2593"/>
+										<Point x="3122" y="2593"/>
+										<Point x="4207" y="2593"/>
+										<Point x="4207" y="2593"/>
+										<Point x="6641" y="2593"/>
 									</positions>
 								</Edge>
 								<EquationGE presentable="!ed/1119/7A70/BF0/475959923ba6">
 									<position>
-										<point x="2831" y="4339"/>
+										<Point x="2831" y="4339"/>
 									</position>
 									<size>
 										<Size width="291" height="503"/>
@@ -304,7 +304,7 @@
 								</EquationGE>
 								<EquationGE presentable="!ed/111a/7A70/BF0/475959925e58">
 									<position>
-										<point x="5390" y="3537"/>
+										<Point x="5390" y="3537"/>
 									</position>
 									<size>
 										<Size width="1021" height="678"/>
@@ -312,14 +312,14 @@
 								</EquationGE>
 								<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/111a/7A70/BF0/475959925e58" dstEquation="!ed/1116/7A70/BF0/47595992691e">
 									<positions>
-										<point x="6403" y="3889"/>
-										<point x="7197" y="3889"/>
-										<point x="7197" y="3307"/>
+										<Point x="6403" y="3889"/>
+										<Point x="7197" y="3889"/>
+										<Point x="7197" y="3307"/>
 									</positions>
 								</Edge>
 								<EquationGE presentable="!ed/111b/7A70/BF0/4759599262d2">
 									<position>
-										<point x="3413" y="4260"/>
+										<Point x="3413" y="4260"/>
 									</position>
 									<size>
 										<Size width="1006" height="661"/>
@@ -327,25 +327,25 @@
 								</EquationGE>
 								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/1119/7A70/BF0/475959923ba6" dstEquation="!ed/111b/7A70/BF0/4759599262d2">
 									<positions>
-										<point x="3122" y="4604"/>
-										<point x="3254" y="4604"/>
-										<point x="3254" y="4604"/>
-										<point x="3413" y="4604"/>
+										<Point x="3122" y="4604"/>
+										<Point x="3254" y="4604"/>
+										<Point x="3254" y="4604"/>
+										<Point x="3413" y="4604"/>
 									</positions>
 								</Edge>
 								<Edge leftVarIndex="1" rightExprIndex="3" srcEquation="!ed/111b/7A70/BF0/4759599262d2" dstEquation="!ed/1116/7A70/BF0/47595992691e">
 									<positions>
-										<point x="4419" y="4604"/>
-										<point x="8784" y="4604"/>
-										<point x="8784" y="3307"/>
+										<Point x="4419" y="4604"/>
+										<Point x="8784" y="4604"/>
+										<Point x="8784" y="3307"/>
 									</positions>
 								</Edge>
 								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/111b/7A70/BF0/4759599262d2" dstEquation="!ed/111a/7A70/BF0/475959925e58">
 									<positions>
-										<point x="4419" y="4604"/>
-										<point x="4895" y="4604"/>
-										<point x="4895" y="3889"/>
-										<point x="5398" y="3889"/>
+										<Point x="4419" y="4604"/>
+										<Point x="4895" y="4604"/>
+										<Point x="4895" y="3889"/>
+										<Point x="5398" y="3889"/>
 									</positions>
 								</Edge>
 							</presentationElements>

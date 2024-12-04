@@ -254,7 +254,7 @@
 							<presentationElements>
 								<EquationGE kind="OBJ_LIT" presentable="!ed/5d78/33E8/42A0/5a2020ae581b">
 									<position>
-										<point x="3175" y="3493"/>
+										<Point x="3175" y="3493"/>
 									</position>
 									<size>
 										<Size width="169" height="296"/>
@@ -262,7 +262,7 @@
 								</EquationGE>
 								<EquationGE presentable="!ed/5d79/33E8/42A0/5a2020ae5f5b">
 									<position>
-										<point x="5355" y="1863"/>
+										<Point x="5355" y="1863"/>
 									</position>
 									<size>
 										<Size width="1778" height="1397"/>
@@ -270,7 +270,7 @@
 								</EquationGE>
 								<EquationGE presentable="!ed/5d7a/33E8/42A0/5a2020ae69e2">
 									<position>
-										<point x="5355" y="4001"/>
+										<Point x="5355" y="4001"/>
 									</position>
 									<size>
 										<Size width="1778" height="1397"/>
@@ -278,23 +278,23 @@
 								</EquationGE>
 								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/5d78/33E8/42A0/5a2020ae581b" dstEquation="!ed/5d79/33E8/42A0/5a2020ae5f5b">
 									<positions>
-										<point x="3344" y="3641"/>
-										<point x="4339" y="3641"/>
-										<point x="4339" y="2561"/>
-										<point x="5355" y="2561"/>
+										<Point x="3344" y="3641"/>
+										<Point x="4339" y="3641"/>
+										<Point x="4339" y="2561"/>
+										<Point x="5355" y="2561"/>
 									</positions>
 								</Edge>
 								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/5d78/33E8/42A0/5a2020ae581b" dstEquation="!ed/5d7a/33E8/42A0/5a2020ae69e2">
 									<positions>
-										<point x="3344" y="3641"/>
-										<point x="4339" y="3641"/>
-										<point x="4339" y="4699"/>
-										<point x="5355" y="4699"/>
+										<Point x="3344" y="3641"/>
+										<Point x="4339" y="3641"/>
+										<Point x="4339" y="4699"/>
+										<Point x="5355" y="4699"/>
 									</positions>
 								</Edge>
 								<EquationGE presentable="!ed/5d7b/33E8/42A0/5a2020ae13e6">
 									<position>
-										<point x="10033" y="3344"/>
+										<Point x="10033" y="3344"/>
 									</position>
 									<size>
 										<Size width="338" height="508"/>
@@ -302,7 +302,7 @@
 								</EquationGE>
 								<EquationGE presentable="!ed/5d7c/33E8/42A0/5a2020ae79c1">
 									<position>
-										<point x="7811" y="3112"/>
+										<Point x="7811" y="3112"/>
 									</position>
 									<size>
 										<Size width="974" height="974"/>
@@ -310,26 +310,26 @@
 								</EquationGE>
 								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/5d79/33E8/42A0/5a2020ae5f5b" dstEquation="!ed/5d7c/33E8/42A0/5a2020ae79c1">
 									<positions>
-										<point x="7133" y="2561"/>
-										<point x="7472" y="2561"/>
-										<point x="7472" y="3429"/>
-										<point x="7811" y="3429"/>
+										<Point x="7133" y="2561"/>
+										<Point x="7472" y="2561"/>
+										<Point x="7472" y="3429"/>
+										<Point x="7811" y="3429"/>
 									</positions>
 								</Edge>
 								<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/5d7a/33E8/42A0/5a2020ae69e2" dstEquation="!ed/5d7c/33E8/42A0/5a2020ae79c1">
 									<positions>
-										<point x="7133" y="4699"/>
-										<point x="7472" y="4699"/>
-										<point x="7472" y="3768"/>
-										<point x="7811" y="3768"/>
+										<Point x="7133" y="4699"/>
+										<Point x="7472" y="4699"/>
+										<Point x="7472" y="3768"/>
+										<Point x="7811" y="3768"/>
 									</positions>
 								</Edge>
 								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/5d7c/33E8/42A0/5a2020ae79c1" dstEquation="!ed/5d7b/33E8/42A0/5a2020ae13e6">
 									<positions>
-										<point x="8784" y="3598"/>
-										<point x="9419" y="3598"/>
-										<point x="9419" y="3598"/>
-										<point x="10075" y="3598"/>
+										<Point x="8784" y="3598"/>
+										<Point x="9419" y="3598"/>
+										<Point x="9419" y="3598"/>
+										<Point x="10075" y="3598"/>
 									</positions>
 								</Edge>
 							</presentationElements>

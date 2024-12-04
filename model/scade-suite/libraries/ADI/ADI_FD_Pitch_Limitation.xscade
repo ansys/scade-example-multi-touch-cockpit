@@ -3,7 +3,7 @@
 	<declarations>
 		<Operator kind="function" name="fdPitchLimitation">
 			<inputs>
-				<Variable name="ADI_FD_Pitch">
+				<Variable name="adifdPitch">
 					<type>
 						<NamedType>
 							<type>
@@ -29,7 +29,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="ADI_FD_Pitch_Limited">
+				<Variable name="adiFdPitchLimited">
 					<type>
 						<NamedType>
 							<type>
@@ -105,18 +105,18 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L1 = Range_Limiter_InIn(_L2, _L4, _L5); -->
+				<!-- _L1 = rangeLimiterInIn(_L2, _L4, _L5); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1"/>
 					</lefts>
 					<right>
-						<!-- Range_Limiter_InIn(_L2, _L4, _L5) -->
+						<!-- rangeLimiterInIn(_L2, _L4, _L5) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
 									<operator>
-										<OperatorRef name="Range_Limiter_InIn"/>
+										<OperatorRef name="rangeLimiterInIn"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -140,7 +140,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<OperatorRef path="Range_Limiter_InIn" refOid="!ed/4216/4C50/218/474ffaa27bfa">
+										<OperatorRef path="rangeLimiterInIn" refOid="!ed/4216/4C50/218/474ffaa27bfa">
 											<InputRef refOid="!ed/421e/4C50/218/474ffad5607c"/>
 											<InputRef refOid="!ed/4225/4C50/218/474ffad533cd"/>
 											<InputRef refOid="!ed/422c/4C50/218/474ffad57619"/>
@@ -155,7 +155,7 @@
 						<ed:Equation oid="!ed/10b9/7A70/BF0/475959906e6c"/>
 					</pragmas>
 				</Equation>
-				<!-- _L2 = ADI_FD_Pitch; -->
+				<!-- _L2 = adifdPitch; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L2"/>
@@ -163,7 +163,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="ADI_FD_Pitch"/>
+								<ConstVarRef name="adifdPitch"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -171,10 +171,10 @@
 						<ed:Equation oid="!ed/10ba/7A70/BF0/475959907c85"/>
 					</pragmas>
 				</Equation>
-				<!-- ADI_FD_Pitch_Limited = _L1; -->
+				<!-- adiFdPitchLimited = _L1; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="ADI_FD_Pitch_Limited"/>
+						<VariableRef name="adiFdPitchLimited"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -256,7 +256,7 @@
 							<presentationElements>
 								<EquationGE presentable="!ed/10b9/7A70/BF0/475959906e6c">
 									<position>
-										<point x="7506" y="2506"/>
+										<Point x="7506" y="2506"/>
 									</position>
 									<size>
 										<Size width="2874" height="1418"/>
@@ -264,7 +264,7 @@
 								</EquationGE>
 								<EquationGE presentable="!ed/10ba/7A70/BF0/475959907c85">
 									<position>
-										<point x="4683" y="2937"/>
+										<Point x="4683" y="2937"/>
 									</position>
 									<size>
 										<Size width="265" height="503"/>
@@ -272,15 +272,15 @@
 								</EquationGE>
 								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/10ba/7A70/BF0/475959907c85" dstEquation="!ed/10b9/7A70/BF0/475959906e6c">
 									<positions>
-										<point x="4948" y="3201"/>
-										<point x="6403" y="3201"/>
-										<point x="6403" y="3201"/>
-										<point x="7514" y="3201"/>
+										<Point x="4948" y="3201"/>
+										<Point x="6403" y="3201"/>
+										<Point x="6403" y="3201"/>
+										<Point x="7514" y="3201"/>
 									</positions>
 								</Edge>
 								<EquationGE presentable="!ed/10bb/7A70/BF0/475959906cb">
 									<position>
-										<point x="12991" y="2937"/>
+										<Point x="12991" y="2937"/>
 									</position>
 									<size>
 										<Size width="344" height="503"/>
@@ -288,15 +288,15 @@
 								</EquationGE>
 								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/10b9/7A70/BF0/475959906e6c" dstEquation="!ed/10bb/7A70/BF0/475959906cb">
 									<positions>
-										<point x="10372" y="3201"/>
-										<point x="11695" y="3201"/>
-										<point x="11695" y="3201"/>
-										<point x="13044" y="3201"/>
+										<Point x="10372" y="3201"/>
+										<Point x="11695" y="3201"/>
+										<Point x="11695" y="3201"/>
+										<Point x="13044" y="3201"/>
 									</positions>
 								</Edge>
 								<EquationGE presentable="!ed/10bc/7A70/BF0/4759599021bb">
 									<position>
-										<point x="3757" y="5292"/>
+										<Point x="3757" y="5292"/>
 									</position>
 									<size>
 										<Size width="291" height="502"/>
@@ -304,7 +304,7 @@
 								</EquationGE>
 								<EquationGE presentable="!ed/10bd/7A70/BF0/475959905d54">
 									<position>
-										<point x="6112" y="4551"/>
+										<Point x="6112" y="4551"/>
 									</position>
 									<size>
 										<Size width="1005" height="661"/>
@@ -312,14 +312,14 @@
 								</EquationGE>
 								<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/10bd/7A70/BF0/475959905d54" dstEquation="!ed/10b9/7A70/BF0/475959906e6c">
 									<positions>
-										<point x="7117" y="4895"/>
-										<point x="8070" y="4895"/>
-										<point x="8070" y="3916"/>
+										<Point x="7117" y="4895"/>
+										<Point x="8070" y="4895"/>
+										<Point x="8070" y="3916"/>
 									</positions>
 								</Edge>
 								<EquationGE presentable="!ed/10be/7A70/BF0/475959901841">
 									<position>
-										<point x="4384" y="5204"/>
+										<Point x="4384" y="5204"/>
 									</position>
 									<size>
 										<Size width="1022" height="678"/>
@@ -327,25 +327,25 @@
 								</EquationGE>
 								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/10bc/7A70/BF0/4759599021bb" dstEquation="!ed/10be/7A70/BF0/475959901841">
 									<positions>
-										<point x="4048" y="5556"/>
-										<point x="4207" y="5556"/>
-										<point x="4207" y="5556"/>
-										<point x="4392" y="5556"/>
+										<Point x="4048" y="5556"/>
+										<Point x="4207" y="5556"/>
+										<Point x="4207" y="5556"/>
+										<Point x="4392" y="5556"/>
 									</positions>
 								</Edge>
 								<Edge leftVarIndex="1" rightExprIndex="3" srcEquation="!ed/10be/7A70/BF0/475959901841" dstEquation="!ed/10b9/7A70/BF0/475959906e6c">
 									<positions>
-										<point x="5398" y="5556"/>
-										<point x="9657" y="5556"/>
-										<point x="9657" y="3916"/>
+										<Point x="5398" y="5556"/>
+										<Point x="9657" y="5556"/>
+										<Point x="9657" y="3916"/>
 									</positions>
 								</Edge>
 								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/10be/7A70/BF0/475959901841" dstEquation="!ed/10bd/7A70/BF0/475959905d54">
 									<positions>
-										<point x="5398" y="5556"/>
-										<point x="5741" y="5556"/>
-										<point x="5741" y="4895"/>
-										<point x="6112" y="4895"/>
+										<Point x="5398" y="5556"/>
+										<Point x="5741" y="5556"/>
+										<Point x="5741" y="4895"/>
+										<Point x="6112" y="4895"/>
 									</positions>
 								</Edge>
 							</presentationElements>
