@@ -15,7 +15,7 @@
 						<ed:Variable oid="!ed/2e3/7A70/BF0/475955967ae5"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SY_Switch_NAV_Source">
+				<Variable name="sySwitchNavSource">
 					<type>
 						<NamedType>
 							<type>
@@ -330,7 +330,7 @@
 						<ed:Equation oid="!ed/2f6/7A70/BF0/475955965221"/>
 					</pragmas>
 				</Equation>
-				<!-- _L3 = SY_Switch_NAV_Source; -->
+				<!-- _L3 = sySwitchNavSource; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L3"/>
@@ -338,7 +338,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="SY_Switch_NAV_Source"/>
+								<ConstVarRef name="sySwitchNavSource"/>
 							</path>
 						</IdExpression>
 					</right>

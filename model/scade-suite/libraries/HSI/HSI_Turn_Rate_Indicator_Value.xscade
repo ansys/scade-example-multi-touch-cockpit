@@ -730,13 +730,13 @@
 						<ed:Equation oid="!ed/bf3/7A70/BF0/4759559f64d4"/>
 					</pragmas>
 				</Equation>
-				<!-- _L37 = _L36.SY_Compute_Yaw_Rate; -->
+				<!-- _L37 = _L36.syComputeYawRate; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L37"/>
 					</lefts>
 					<right>
-						<!-- _L36.SY_Compute_Yaw_Rate -->
+						<!-- _L36.syComputeYawRate -->
 						<PrjOp name="3">
 							<flow>
 								<IdExpression>
@@ -746,7 +746,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="SY_Compute_Yaw_Rate"/>
+								<Label name="syComputeYawRate"/>
 							</with>
 						</PrjOp>
 					</right>

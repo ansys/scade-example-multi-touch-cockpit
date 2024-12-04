@@ -752,13 +752,13 @@
 						<ed:Equation oid="!ed/90a/7A70/BF0/4759559b5ec4"/>
 					</pragmas>
 				</Equation>
-				<!-- _L26 = _L28.SY_Switch_NAV_Source; -->
+				<!-- _L26 = _L28.sySwitchNavSource; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L26"/>
 					</lefts>
 					<right>
-						<!-- _L28.SY_Switch_NAV_Source -->
+						<!-- _L28.sySwitchNavSource -->
 						<PrjOp name="2">
 							<flow>
 								<IdExpression>
@@ -768,7 +768,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="SY_Switch_NAV_Source"/>
+								<Label name="sySwitchNavSource"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -776,13 +776,13 @@
 						<ed:Equation oid="!ed/90b/7A70/BF0/4759559b1e68"/>
 					</pragmas>
 				</Equation>
-				<!-- _L27 = _L25.SY_RMI_Sources; -->
+				<!-- _L27 = _L25.syRmiSources; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L27"/>
 					</lefts>
 					<right>
-						<!-- _L25.SY_RMI_Sources -->
+						<!-- _L25.syRmiSources -->
 						<PrjOp name="3">
 							<flow>
 								<IdExpression>
@@ -792,7 +792,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="SY_RMI_Sources"/>
+								<Label name="syRmiSources"/>
 							</with>
 						</PrjOp>
 					</right>

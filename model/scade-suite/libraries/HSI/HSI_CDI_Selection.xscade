@@ -2116,13 +2116,13 @@
 						<ed:Equation oid="!ed/676/7A70/BF0/4759559868b9"/>
 					</pragmas>
 				</Equation>
-				<!-- _L77 = _L76.SY_CDI_Sources; -->
+				<!-- _L77 = _L76.syCdiSources; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L77"/>
 					</lefts>
 					<right>
-						<!-- _L76.SY_CDI_Sources -->
+						<!-- _L76.syCdiSources -->
 						<PrjOp name="3">
 							<flow>
 								<IdExpression>
@@ -2132,7 +2132,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="SY_CDI_Sources"/>
+								<Label name="syCdiSources"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -2180,13 +2180,13 @@
 						<ed:Equation oid="!ed/679/7A70/BF0/4759559892d"/>
 					</pragmas>
 				</Equation>
-				<!-- _L80 = _L81.SY_CDI_Offset; -->
+				<!-- _L80 = _L81.syCdiOffset; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L80"/>
 					</lefts>
 					<right>
-						<!-- _L81.SY_CDI_Offset -->
+						<!-- _L81.syCdiOffset -->
 						<PrjOp name="5">
 							<flow>
 								<IdExpression>
@@ -2196,7 +2196,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="SY_CDI_Offset"/>
+								<Label name="syCdiOffset"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -2220,13 +2220,13 @@
 						<ed:Equation oid="!ed/67b/7A70/BF0/475955983ca0"/>
 					</pragmas>
 				</Equation>
-				<!-- _L82 = _L83.SY_Switch_NAV_Source; -->
+				<!-- _L82 = _L83.sySwitchNavSource; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L82"/>
 					</lefts>
 					<right>
-						<!-- _L83.SY_Switch_NAV_Source -->
+						<!-- _L83.sySwitchNavSource -->
 						<PrjOp name="6">
 							<flow>
 								<IdExpression>
@@ -2236,7 +2236,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="SY_Switch_NAV_Source"/>
+								<Label name="sySwitchNavSource"/>
 							</with>
 						</PrjOp>
 					</right>

@@ -15,7 +15,7 @@
 						<ed:Variable oid="!ed/406/7A70/BF0/47595597140f"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SY_CDI_Offset">
+				<Variable name="syCdiOffset">
 					<type>
 						<Table>
 							<type>
@@ -232,7 +232,7 @@
 						<ed:Equation oid="!ed/411/7A70/BF0/475955974059"/>
 					</pragmas>
 				</Equation>
-				<!-- _L6 = SY_CDI_Offset; -->
+				<!-- _L6 = syCdiOffset; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L6"/>
@@ -240,7 +240,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="SY_CDI_Offset"/>
+								<ConstVarRef name="syCdiOffset"/>
 							</path>
 						</IdExpression>
 					</right>

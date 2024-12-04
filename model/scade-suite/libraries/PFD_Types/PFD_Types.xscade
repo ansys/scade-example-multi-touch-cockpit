@@ -5,7 +5,7 @@
 			<definition>
 				<Struct>
 					<fields>
-						<Field name="SY_CDI_Offset">
+						<Field name="syCdiOffset">
 							<type>
 								<Table>
 									<type>
@@ -29,7 +29,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="SY_CDI_Sources">
+						<Field name="syCdiSources">
 							<type>
 								<Table>
 									<type>
@@ -58,7 +58,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="SY_RMI_Sources">
+						<Field name="syRmiSources">
 							<type>
 								<Table>
 									<type>
@@ -87,7 +87,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="SY_Switch_NAV_Source">
+						<Field name="sySwitchNavSource">
 							<type>
 								<NamedType>
 									<type>
@@ -105,7 +105,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="SY_Compute_Yaw_Rate">
+						<Field name="syComputeYawRate">
 							<type>
 								<NamedType>
 									<type>
