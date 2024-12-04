@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="HSI_Target_Heading_Pointer_Position">
+		<Operator kind="function" name="hsiTarget_Heading_Pointer_Position">
 			<inputs>
-				<Variable name="Altitude_Info">
+				<Variable name="altitudeInfo">
 					<type>
 						<NamedType>
 							<type>
@@ -15,7 +15,7 @@
 						<ed:Variable oid="!ed/a53/7A70/BF0/4759559c6c5e"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Menu_Info">
+				<Variable name="menuInfo">
 					<type>
 						<NamedType>
 							<type>
@@ -29,7 +29,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="Target_heading_pointer_rotation">
+				<Variable name="targetHeadingPointerRotation">
 					<type>
 						<NamedType>
 							<type>
@@ -41,7 +41,7 @@
 						<ed:Variable oid="!ed/a52/7A70/BF0/4759559c4e4b"/>
 					</pragmas>
 				</Variable>
-				<Variable name="heading_Value">
+				<Variable name="headingValue">
 					<type>
 						<NamedType>
 							<type>
@@ -213,10 +213,10 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- Target_heading_pointer_rotation = _L14; -->
+				<!-- targetHeadingPointerRotation = _L14; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="Target_heading_pointer_rotation"/>
+						<VariableRef name="targetHeadingPointerRotation"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -279,7 +279,7 @@
 						<ed:Equation oid="!ed/a62/7A70/BF0/4759559c2b52"/>
 					</pragmas>
 				</Equation>
-				<!-- _L4 = Altitude_Info; -->
+				<!-- _L4 = altitudeInfo; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L4"/>
@@ -287,7 +287,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Altitude_Info"/>
+								<ConstVarRef name="altitudeInfo"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -307,7 +307,7 @@
 						<ed:Equation oid="!ed/a64/7A70/BF0/4759559c753a"/>
 					</pragmas>
 				</Equation>
-				<!-- _L6 = Menu_Info; -->
+				<!-- _L6 = menuInfo; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L6"/>
@@ -315,7 +315,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Menu_Info"/>
+								<ConstVarRef name="menuInfo"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -373,10 +373,10 @@
 						<ed:Equation oid="!ed/a67/7A70/BF0/4759559c6cae"/>
 					</pragmas>
 				</Equation>
-				<!-- heading_Value = _L11; -->
+				<!-- headingValue = _L11; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="heading_Value"/>
+						<VariableRef name="headingValue"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -534,7 +534,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/a51/7A70/BF0/4759559c6dd1" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="HSI_Target_Heading_Pointer_Position" landscape="true" format="A4 (210 297)" oid="!ed/a5e/7A70/BF0/4759559c3e63">
+						<NetDiagram name="hsiTarget_Heading_Pointer_Position" landscape="true" format="A4 (210 297)" oid="!ed/a5e/7A70/BF0/4759559c3e63">
 							<presentationElements>
 								<EquationGE presentable="!ed/a60/7A70/BF0/4759559c79c1">
 									<position>

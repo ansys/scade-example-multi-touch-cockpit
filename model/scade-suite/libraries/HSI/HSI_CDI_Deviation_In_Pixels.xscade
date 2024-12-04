@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="HSI_CDI_Deviation_In_Pixels">
+		<Operator kind="function" name="hsiCdiDeviationInPixels">
 			<inputs>
-				<Variable name="HSI_CDI">
+				<Variable name="hsiCdi">
 					<type>
 						<NamedType>
 							<type>
@@ -17,7 +17,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="HSI_CDI_In_Pixels">
+				<Variable name="hsiCdiInPixels">
 					<type>
 						<NamedType>
 							<type>
@@ -93,7 +93,7 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L1 = HSI_CDI; -->
+				<!-- _L1 = hsiCdi; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1"/>
@@ -101,7 +101,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_CDI"/>
+								<ConstVarRef name="hsiCdi"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -213,10 +213,10 @@
 						<ed:Equation oid="!ed/15f/7A70/BF0/47595593409f"/>
 					</pragmas>
 				</Equation>
-				<!-- HSI_CDI_In_Pixels = _L6; -->
+				<!-- hsiCdiInPixels = _L6; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HSI_CDI_In_Pixels"/>
+						<VariableRef name="hsiCdiInPixels"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -233,7 +233,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/150/7A70/BF0/475955935ee0" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="HSI_CDI_Deviation_In_Pixels" landscape="true" format="A4 (210 297)" oid="!ed/159/7A70/BF0/475955931dc4">
+						<NetDiagram name="hsiCdiDeviationInPixels" landscape="true" format="A4 (210 297)" oid="!ed/159/7A70/BF0/475955931dc4">
 							<presentationElements>
 								<EquationGE presentable="!ed/15a/7A70/BF0/475955935f31">
 									<position>

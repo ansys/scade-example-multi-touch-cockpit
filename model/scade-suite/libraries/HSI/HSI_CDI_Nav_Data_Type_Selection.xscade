@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="HSI_CDI_Nav_Data_Type_Selection">
+		<Operator kind="function" name="hsiCdiNavDataTypeSelection">
 			<inputs>
-				<Variable name="CDI_Source_Selected">
+				<Variable name="cdiSourceSelected">
 					<type>
 						<NamedType>
 							<type>
@@ -17,7 +17,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="HSI_NAV_Data_Type">
+				<Variable name="hsiNavDataType">
 					<type>
 						<NamedType>
 							<type>
@@ -165,7 +165,7 @@
 						<ed:Equation oid="!ed/383/7A70/BF0/47595597140f"/>
 					</pragmas>
 				</Equation>
-				<!-- _L4 = CDI_Source_Selected; -->
+				<!-- _L4 = cdiSourceSelected; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L4"/>
@@ -173,7 +173,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="CDI_Source_Selected"/>
+								<ConstVarRef name="cdiSourceSelected"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -270,10 +270,10 @@
 						<ed:Equation oid="!ed/386/7A70/BF0/475955977252"/>
 					</pragmas>
 				</Equation>
-				<!-- HSI_NAV_Data_Type = _L5; -->
+				<!-- hsiNavDataType = _L5; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HSI_NAV_Data_Type"/>
+						<VariableRef name="hsiNavDataType"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -314,7 +314,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/375/7A70/BF0/475955972eec" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="HSI_CDI_Nav_Data_Type_Selection" landscape="true" format="A4 (210 297)" oid="!ed/380/7A70/BF0/47595597483d">
+						<NetDiagram name="hsiCdiNavDataTypeSelection" landscape="true" format="A4 (210 297)" oid="!ed/380/7A70/BF0/47595597483d">
 							<presentationElements>
 								<EquationGE kind="OBJ_LIT" presentable="!ed/381/7A70/BF0/475955973b16">
 									<position>

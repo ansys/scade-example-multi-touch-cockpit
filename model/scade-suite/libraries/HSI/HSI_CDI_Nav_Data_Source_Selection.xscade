@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="HSI_CDI_Nav_Data_Source_Selection">
+		<Operator kind="function" name="hsiCdiNavDataSourceSelection">
 			<inputs>
-				<Variable name="CDI_Source_Selected">
+				<Variable name="cdiSourceSelected">
 					<type>
 						<NamedType>
 							<type>
@@ -27,7 +27,7 @@
 						<ed:Variable oid="!ed/2e4/7A70/BF0/47595596232b"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Primary_Nav_Data">
+				<Variable name="primaryNavData">
 					<type>
 						<NamedType>
 							<type>
@@ -39,7 +39,7 @@
 						<ed:Variable oid="!ed/2e5/7A70/BF0/475955962587"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Secondary_Nav_Data">
+				<Variable name="secondaryNavData">
 					<type>
 						<NamedType>
 							<type>
@@ -53,7 +53,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="HSI_NAV_Data_Source">
+				<Variable name="hsiNavDataSource">
 					<type>
 						<NamedType>
 							<type>
@@ -65,7 +65,7 @@
 						<ed:Variable oid="!ed/2e1/7A70/BF0/4759559677d0"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Selected_Nav_Data">
+				<Variable name="selectedNavData">
 					<type>
 						<NamedType>
 							<type>
@@ -237,7 +237,7 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L1 = CDI_Source_Selected; -->
+				<!-- _L1 = cdiSourceSelected; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1"/>
@@ -245,7 +245,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="CDI_Source_Selected"/>
+								<ConstVarRef name="cdiSourceSelected"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -458,10 +458,10 @@
 						<ed:Equation oid="!ed/2fd/7A70/BF0/475955964789"/>
 					</pragmas>
 				</Equation>
-				<!-- HSI_NAV_Data_Source = _L4; -->
+				<!-- hsiNavDataSource = _L4; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HSI_NAV_Data_Source"/>
+						<VariableRef name="hsiNavDataSource"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -517,7 +517,7 @@
 						<ed:Equation oid="!ed/2ff/7A70/BF0/47595596734b"/>
 					</pragmas>
 				</Equation>
-				<!-- _L20 = Primary_Nav_Data; -->
+				<!-- _L20 = primaryNavData; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L20"/>
@@ -525,7 +525,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Primary_Nav_Data"/>
+								<ConstVarRef name="primaryNavData"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -533,7 +533,7 @@
 						<ed:Equation oid="!ed/300/7A70/BF0/47595596233e"/>
 					</pragmas>
 				</Equation>
-				<!-- _L21 = Secondary_Nav_Data; -->
+				<!-- _L21 = secondaryNavData; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L21"/>
@@ -541,7 +541,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Secondary_Nav_Data"/>
+								<ConstVarRef name="secondaryNavData"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -549,10 +549,10 @@
 						<ed:Equation oid="!ed/301/7A70/BF0/475955961641"/>
 					</pragmas>
 				</Equation>
-				<!-- Selected_Nav_Data = _L19; -->
+				<!-- selectedNavData = _L19; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="Selected_Nav_Data"/>
+						<VariableRef name="selectedNavData"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -581,7 +581,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/2e0/7A70/BF0/47595596221d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="HSI_CDI_Nav_Data_Source_Selection" landscape="true" format="A4 (210 297)" oid="!ed/2f4/7A70/BF0/475955962d82">
+						<NetDiagram name="hsiCdiNavDataSourceSelection" landscape="true" format="A4 (210 297)" oid="!ed/2f4/7A70/BF0/475955962d82">
 							<presentationElements>
 								<EquationGE presentable="!ed/2f5/7A70/BF0/4759559655f9">
 									<position>

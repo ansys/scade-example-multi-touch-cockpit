@@ -2968,12 +2968,12 @@
 								<VariableRef name="_L133"/>
 							</lefts>
 							<right>
-								<!-- HSI_Compute(_L1127, _L1120, _L1121, _L1122, _L1123, _L1125) -->
+								<!-- hsiCompute(_L1127, _L1120, _L1121, _L1122, _L1123, _L1125) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="1">
 											<operator>
-												<OperatorRef name="HSI_Compute"/>
+												<OperatorRef name="hsiCompute"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -3012,7 +3012,7 @@
 									<pragmas>
 										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 											<references>
-												<OperatorRef path="HSI_Compute" refOid="!ed/79e/7A70/BF0/4759559a4c09">
+												<OperatorRef path="hsiCompute" refOid="!ed/79e/7A70/BF0/4759559a4c09">
 													<InputRef refOid="!ed/7b0/7A70/BF0/4759559a6db"/>
 													<InputRef refOid="!ed/7b1/7A70/BF0/4759559a2c64"/>
 													<InputRef refOid="!ed/7b2/7A70/BF0/4759559a4b3d"/>
@@ -3377,12 +3377,12 @@
 								<VariableRef name="_L837"/>
 							</lefts>
 							<right>
-								<!-- Tunnel_Of_Flight(_L594, _L845, _L844, _L843, _L1103, _L1104, _L1105, _L1135) -->
+								<!-- tunnelOfFlight(_L594, _L845, _L844, _L843, _L1103, _L1104, _L1105, _L1135) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="1">
 											<operator>
-												<OperatorRef name="Tunnel_Of_Flight"/>
+												<OperatorRef name="tunnelOfFlight"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -3431,7 +3431,7 @@
 									<pragmas>
 										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 											<references>
-												<OperatorRef path="Tunnel_Of_Flight" refOid="!ed/34cc/782E/10C4/482449732ec7">
+												<OperatorRef path="tunnelOfFlight" refOid="!ed/34cc/782E/10C4/482449732ec7">
 													<InputRef refOid="!ed/3595/782E/10C4/482449737416"/>
 													<InputRef refOid="!ed/3596/782E/10C4/4824497356c5"/>
 													<InputRef refOid="!ed/3597/782E/10C4/482449731ea1"/>

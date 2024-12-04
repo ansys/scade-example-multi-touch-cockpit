@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="node" name="HSI_Memory_4">
+		<Operator kind="node" name="hsiMemory_4">
 			<inputs>
-				<Variable name="Input1">
+				<Variable name="in">
 					<type>
 						<NamedType>
 							<type>
@@ -17,7 +17,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="Output1">
+				<Variable name="out">
 					<type>
 						<NamedType>
 							<type>
@@ -141,7 +141,7 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L1 = Input1; -->
+				<!-- _L1 = in; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1"/>
@@ -149,7 +149,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Input1"/>
+								<ConstVarRef name="in"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -157,10 +157,10 @@
 						<ed:Equation oid="!ed/82b/7A70/BF0/4759559b623c"/>
 					</pragmas>
 				</Equation>
-				<!-- Output1 = _L8; -->
+				<!-- out = _L8; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="Output1"/>
+						<VariableRef name="out"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -357,7 +357,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/825/7A70/BF0/4759559b34" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="HSI_Memory_4" landscape="true" format="A4 (210 297)" oid="!ed/82a/7A70/BF0/4759559b6e3f">
+						<NetDiagram name="hsiMemory_4" landscape="true" format="A4 (210 297)" oid="!ed/82a/7A70/BF0/4759559b6e3f">
 							<presentationElements>
 								<EquationGE presentable="!ed/82b/7A70/BF0/4759559b623c">
 									<position>

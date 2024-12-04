@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="Manage_Tunnel">
+		<Operator kind="function" name="manageTunnel">
 			<inputs>
-				<Variable name="XT_Computed">
+				<Variable name="xtComputed">
 					<type>
 						<NamedType>
 							<type>
@@ -15,7 +15,7 @@
 						<ed:Variable oid="!ed/3109/46AC/16B0/4827fe575f2d"/>
 					</pragmas>
 				</Variable>
-				<Variable name="YT_Computed">
+				<Variable name="ytComputed">
 					<type>
 						<NamedType>
 							<type>
@@ -27,7 +27,7 @@
 						<ed:Variable oid="!ed/310f/46AC/16B0/4827fe5a3881"/>
 					</pragmas>
 				</Variable>
-				<Variable name="X">
+				<Variable name="x">
 					<type>
 						<NamedType>
 							<type>
@@ -39,7 +39,7 @@
 						<ed:Variable oid="!ed/7858/6A/B20/4808651f293b"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Y">
+				<Variable name="y">
 					<type>
 						<NamedType>
 							<type>
@@ -51,7 +51,7 @@
 						<ed:Variable oid="!ed/7859/6A/B20/4808652125c0"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Z">
+				<Variable name="z">
 					<type>
 						<NamedType>
 							<type>
@@ -63,7 +63,7 @@
 						<ed:Variable oid="!ed/785a/6A/B20/480865213383"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Vitesse">
+				<Variable name="vitesse">
 					<type>
 						<NamedType>
 							<type>
@@ -77,7 +77,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="STX">
+				<Variable name="stx">
 					<type>
 						<NamedType>
 							<type>
@@ -89,7 +89,7 @@
 						<ed:Variable oid="!ed/1aa/2846/4E0/48030fb12d97"/>
 					</pragmas>
 				</Variable>
-				<Variable name="STY">
+				<Variable name="sty">
 					<type>
 						<NamedType>
 							<type>
@@ -101,7 +101,7 @@
 						<ed:Variable oid="!ed/1ab/2846/4E0/48030fb163a9"/>
 					</pragmas>
 				</Variable>
-				<Variable name="VT">
+				<Variable name="vt">
 					<type>
 						<NamedType>
 							<type>
@@ -113,7 +113,7 @@
 						<ed:Variable oid="!ed/1fbe0/5258/D00/480a6a1f66d1"/>
 					</pragmas>
 				</Variable>
-				<Variable name="ID_pp">
+				<Variable name="idPp">
 					<type>
 						<NamedType>
 							<type>
@@ -125,7 +125,7 @@
 						<ed:Variable oid="!ed/7d71/654/16A8/480ef681b1a"/>
 					</pragmas>
 				</Variable>
-				<Variable name="XT1">
+				<Variable name="xt1">
 					<type>
 						<NamedType>
 							<type>
@@ -137,7 +137,7 @@
 						<ed:Variable oid="!ed/6ca6/5211/17FC/484d44737580"/>
 					</pragmas>
 				</Variable>
-				<Variable name="YT1">
+				<Variable name="yt1">
 					<type>
 						<NamedType>
 							<type>
@@ -873,10 +873,10 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- STY = _L152; -->
+				<!-- sty = _L152; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="STY"/>
+						<VariableRef name="sty"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -889,10 +889,10 @@
 						<ed:Equation oid="!ed/603b/5A15/1364/480473907feb"/>
 					</pragmas>
 				</Equation>
-				<!-- STX = _L152; -->
+				<!-- stx = _L152; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="STX"/>
+						<VariableRef name="stx"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -905,7 +905,7 @@
 						<ed:Equation oid="!ed/603c/5A15/1364/480473903ddc"/>
 					</pragmas>
 				</Equation>
-				<!-- _L53 = X; -->
+				<!-- _L53 = x; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L53"/>
@@ -913,7 +913,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="X"/>
+								<ConstVarRef name="x"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -921,7 +921,7 @@
 						<ed:Equation oid="!ed/788f/6A/B20/4808653f38ff"/>
 					</pragmas>
 				</Equation>
-				<!-- _L54 = Y; -->
+				<!-- _L54 = y; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L54"/>
@@ -929,7 +929,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Y"/>
+								<ConstVarRef name="y"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -937,7 +937,7 @@
 						<ed:Equation oid="!ed/7891/6A/B20/4808653f2952"/>
 					</pragmas>
 				</Equation>
-				<!-- _L55 = Z; -->
+				<!-- _L55 = z; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L55"/>
@@ -945,7 +945,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Z"/>
+								<ConstVarRef name="z"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1527,10 +1527,10 @@
 						<ed:Equation oid="!ed/15a55/4F2B/70/480db7a152f9"/>
 					</pragmas>
 				</Equation>
-				<!-- ID_pp = _L135; -->
+				<!-- idPp = _L135; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="ID_pp"/>
+						<VariableRef name="idPp"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -1543,7 +1543,7 @@
 						<ed:Equation oid="!ed/7d77/654/16A8/480ef695731d"/>
 					</pragmas>
 				</Equation>
-				<!-- _L129 = XT_Computed; -->
+				<!-- _L129 = xtComputed; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L129"/>
@@ -1551,7 +1551,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="XT_Computed"/>
+								<ConstVarRef name="xtComputed"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1559,7 +1559,7 @@
 						<ed:Equation oid="!ed/3110/46AC/16B0/4827fe747457"/>
 					</pragmas>
 				</Equation>
-				<!-- _L130 = YT_Computed; -->
+				<!-- _L130 = ytComputed; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L130"/>
@@ -1567,7 +1567,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="YT_Computed"/>
+								<ConstVarRef name="ytComputed"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1575,7 +1575,7 @@
 						<ed:Equation oid="!ed/3112/46AC/16B0/4827fe742622"/>
 					</pragmas>
 				</Equation>
-				<!-- _L131 = Vitesse; -->
+				<!-- _L131 = vitesse; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L131"/>
@@ -1583,7 +1583,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Vitesse"/>
+								<ConstVarRef name="vitesse"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1728,10 +1728,10 @@
 						<ed:Equation oid="!ed/6e5f/4D8B/105C/48492fe85c86"/>
 					</pragmas>
 				</Equation>
-				<!-- XT1 = _L170; -->
+				<!-- xt1 = _L170; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="XT1"/>
+						<VariableRef name="xt1"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -1744,10 +1744,10 @@
 						<ed:Equation oid="!ed/6caf/5211/17FC/484d44746830"/>
 					</pragmas>
 				</Equation>
-				<!-- YT1 = _L171; -->
+				<!-- yt1 = _L171; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="YT1"/>
+						<VariableRef name="yt1"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -2053,10 +2053,10 @@
 						<ed:Equation oid="!ed/37a3/3001/C80/484e38f0117"/>
 					</pragmas>
 				</Equation>
-				<!-- VT = _L147; -->
+				<!-- vt = _L147; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="VT"/>
+						<VariableRef name="vt"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -2448,7 +2448,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/17b/2846/4E0/48030fb15589" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="Manage_Tunnel" landscape="true" format="A4 (210 297)" oid="!ed/194/2846/4E0/48030fb17972">
+						<NetDiagram name="manageTunnel" landscape="true" format="A4 (210 297)" oid="!ed/194/2846/4E0/48030fb17972">
 							<presentationElements>
 								<EquationGE presentable="!ed/603b/5A15/1364/480473907feb">
 									<position>

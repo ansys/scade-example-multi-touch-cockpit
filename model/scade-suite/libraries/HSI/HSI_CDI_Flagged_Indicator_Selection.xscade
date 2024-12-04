@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="HSI_CDI_Flagged_Indicator_Selection">
+		<Operator kind="function" name="hsiCdiFlaggedIndicatorSelection">
 			<inputs>
-				<Variable name="NAV_Data_Selected">
+				<Variable name="navDataSelected">
 					<type>
 						<NamedType>
 							<type>
@@ -15,7 +15,7 @@
 						<ed:Variable oid="!ed/189/7A70/BF0/475955943811"/>
 					</pragmas>
 				</Variable>
-				<Variable name="HSI_NAV_Data_Type">
+				<Variable name="hsiNavDataType">
 					<type>
 						<NamedType>
 							<type>
@@ -29,7 +29,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="HSI_Flagged">
+				<Variable name="hsiFlagged">
 					<type>
 						<NamedType>
 							<type>
@@ -105,7 +105,7 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L1 = HSI_NAV_Data_Type; -->
+				<!-- _L1 = hsiNavDataType; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1"/>
@@ -113,7 +113,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_NAV_Data_Type"/>
+								<ConstVarRef name="hsiNavDataType"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -164,7 +164,7 @@
 						<ed:Equation oid="!ed/192/7A70/BF0/475955945594"/>
 					</pragmas>
 				</Equation>
-				<!-- _L4 = NAV_Data_Selected; -->
+				<!-- _L4 = navDataSelected; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L4"/>
@@ -172,7 +172,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="NAV_Data_Selected"/>
+								<ConstVarRef name="navDataSelected"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -180,10 +180,10 @@
 						<ed:Equation oid="!ed/193/7A70/BF0/47595594718f"/>
 					</pragmas>
 				</Equation>
-				<!-- HSI_Flagged = _L2; -->
+				<!-- hsiFlagged = _L2; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HSI_Flagged"/>
+						<VariableRef name="hsiFlagged"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -248,7 +248,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/187/7A70/BF0/47595594262c" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="HSI_CDI_Flagged_Indicator_Selection" landscape="true" format="A4 (210 297)" oid="!ed/190/7A70/BF0/475955944615">
+						<NetDiagram name="hsiCdiFlaggedIndicatorSelection" landscape="true" format="A4 (210 297)" oid="!ed/190/7A70/BF0/475955944615">
 							<presentationElements>
 								<EquationGE presentable="!ed/191/7A70/BF0/475955943e29">
 									<position>

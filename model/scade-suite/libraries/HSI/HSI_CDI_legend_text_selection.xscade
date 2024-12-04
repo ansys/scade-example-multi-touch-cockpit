@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="HSI_CDI_legend_text_selection">
+		<Operator kind="function" name="hsiCdilegendTextSelection">
 			<inputs>
-				<Variable name="HSI_ilsSelected">
+				<Variable name="hsiIlsSelected">
 					<type>
 						<NamedType>
 							<type>
@@ -15,7 +15,7 @@
 						<ed:Variable oid="!ed/246/7A70/BF0/47595595301e"/>
 					</pragmas>
 				</Variable>
-				<Variable name="CDI_Source_Selected">
+				<Variable name="cdiSourceSelected">
 					<type>
 						<NamedType>
 							<type>
@@ -29,7 +29,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="CDI_Legend_text_selected">
+				<Variable name="cdiLegendTextSelected">
 					<type>
 						<NamedType>
 							<type>
@@ -205,10 +205,10 @@
 						<ed:Equation oid="!ed/255/7A70/BF0/475955954c75"/>
 					</pragmas>
 				</Equation>
-				<!-- CDI_Legend_text_selected = _L7; -->
+				<!-- cdiLegendTextSelected = _L7; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="CDI_Legend_text_selected"/>
+						<VariableRef name="cdiLegendTextSelected"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -298,7 +298,7 @@
 						<ed:Equation oid="!ed/257/7A70/BF0/47595595318b"/>
 					</pragmas>
 				</Equation>
-				<!-- _L8 = CDI_Source_Selected; -->
+				<!-- _L8 = cdiSourceSelected; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L8"/>
@@ -306,7 +306,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="CDI_Source_Selected"/>
+								<ConstVarRef name="cdiSourceSelected"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -378,7 +378,7 @@
 						<ed:Equation oid="!ed/25c/7A70/BF0/475955955154"/>
 					</pragmas>
 				</Equation>
-				<!-- _L13 = HSI_ilsSelected; -->
+				<!-- _L13 = hsiIlsSelected; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L13"/>
@@ -386,7 +386,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_ilsSelected"/>
+								<ConstVarRef name="hsiIlsSelected"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -516,7 +516,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/244/7A70/BF0/47595595b77" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="HSI_CDI_legend_text_selection" landscape="true" format="A4 (210 297)" oid="!ed/254/7A70/BF0/47595595237e">
+						<NetDiagram name="hsiCdilegendTextSelection" landscape="true" format="A4 (210 297)" oid="!ed/254/7A70/BF0/47595595237e">
 							<presentationElements>
 								<EquationGE kind="OBJ_LIT" presentable="!ed/255/7A70/BF0/475955954c75">
 									<position>

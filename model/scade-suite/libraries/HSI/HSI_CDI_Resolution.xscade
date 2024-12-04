@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="HSI_CDI_Resolution">
+		<Operator kind="function" name="hsiCdiResolution">
 			<inputs>
-				<Variable name="HSI_vorCdi_Angle">
+				<Variable name="hsivorCdiAngle">
 					<type>
 						<NamedType>
 							<type>
@@ -17,7 +17,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="HSI_vorCdi_Defl">
+				<Variable name="hsivorCdiDefl">
 					<type>
 						<NamedType>
 							<type>
@@ -29,7 +29,7 @@
 						<ed:Variable oid="!ed/4bb/7A70/BF0/475955981d5f"/>
 					</pragmas>
 				</Variable>
-				<Variable name="HSI_VOR_To_From">
+				<Variable name="hsiVorToFrom">
 					<type>
 						<NamedType>
 							<type>
@@ -43,7 +43,7 @@
 				</Variable>
 			</outputs>
 			<locals>
-				<Variable name="HSI_vorCdi_Angle_Abs">
+				<Variable name="hsivorCdiAngleAbs">
 					<type>
 						<NamedType>
 							<type>
@@ -456,10 +456,10 @@
 						<ed:Equation oid="!ed/4f5/7A70/BF0/4759559851ee"/>
 					</pragmas>
 				</Equation>
-				<!-- HSI_vorCdi_Angle_Abs = _L13; -->
+				<!-- hsivorCdiAngleAbs = _L13; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HSI_vorCdi_Angle_Abs"/>
+						<VariableRef name="hsivorCdiAngleAbs"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -472,7 +472,7 @@
 						<ed:Equation oid="!ed/4f6/7A70/BF0/4759559812ea"/>
 					</pragmas>
 				</Equation>
-				<!-- _L29 = HSI_vorCdi_Angle_Abs; -->
+				<!-- _L29 = hsivorCdiAngleAbs; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L29"/>
@@ -480,7 +480,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_vorCdi_Angle_Abs"/>
+								<ConstVarRef name="hsivorCdiAngleAbs"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -632,10 +632,10 @@
 						<ed:Equation oid="!ed/4fd/7A70/BF0/4759559870de"/>
 					</pragmas>
 				</Equation>
-				<!-- HSI_vorCdi_Defl = _L59; -->
+				<!-- hsivorCdiDefl = _L59; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HSI_vorCdi_Defl"/>
+						<VariableRef name="hsivorCdiDefl"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -648,10 +648,10 @@
 						<ed:Equation oid="!ed/4fe/7A70/BF0/475955985e2d"/>
 					</pragmas>
 				</Equation>
-				<!-- HSI_VOR_To_From = _L14; -->
+				<!-- hsiVorToFrom = _L14; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HSI_VOR_To_From"/>
+						<VariableRef name="hsiVorToFrom"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -667,7 +667,7 @@
 						</kcg:Pragma>
 					</pragmas>
 				</Equation>
-				<!-- _L61 = HSI_vorCdi_Angle; -->
+				<!-- _L61 = hsivorCdiAngle; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L61"/>
@@ -675,7 +675,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_vorCdi_Angle"/>
+								<ConstVarRef name="hsivorCdiAngle"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -683,7 +683,7 @@
 						<ed:Equation oid="!ed/3266/6344/774/475ef37d7814"/>
 					</pragmas>
 				</Equation>
-				<!-- _L63 = HSI_vorCdi_Angle; -->
+				<!-- _L63 = hsivorCdiAngle; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L63"/>
@@ -691,7 +691,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_vorCdi_Angle"/>
+								<ConstVarRef name="hsivorCdiAngle"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -699,7 +699,7 @@
 						<ed:Equation oid="!ed/3281/6344/774/475ef3bc39f"/>
 					</pragmas>
 				</Equation>
-				<!-- _L64 = HSI_vorCdi_Angle; -->
+				<!-- _L64 = hsivorCdiAngle; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L64"/>
@@ -707,7 +707,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_vorCdi_Angle"/>
+								<ConstVarRef name="hsivorCdiAngle"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -719,7 +719,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/4ba/7A70/BF0/4759559831e3" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="HSI_CDI_Resolution" landscape="true" format="A4 (210 297)" oid="!ed/4de/7A70/BF0/4759559898">
+						<NetDiagram name="hsiCdiResolution" landscape="true" format="A4 (210 297)" oid="!ed/4de/7A70/BF0/4759559898">
 							<presentationElements>
 								<EquationGE presentable="!ed/4ea/7A70/BF0/4759559868d4">
 									<position>

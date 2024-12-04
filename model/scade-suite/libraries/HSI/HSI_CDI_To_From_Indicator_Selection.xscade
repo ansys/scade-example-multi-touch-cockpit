@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="HSI_CDI_To_From_Indicator_Selection">
+		<Operator kind="function" name="hsiCdiToFromIndicatorSelection">
 			<inputs>
-				<Variable name="NAV_Data_Selected">
+				<Variable name="navDataSelected">
 					<type>
 						<NamedType>
 							<type>
@@ -15,7 +15,7 @@
 						<ed:Variable oid="!ed/6b1/7A70/BF0/4759559936e9"/>
 					</pragmas>
 				</Variable>
-				<Variable name="HSI_NAV_Data_Type">
+				<Variable name="hsiNavDataType">
 					<type>
 						<NamedType>
 							<type>
@@ -27,7 +27,7 @@
 						<ed:Variable oid="!ed/6b2/7A70/BF0/47595599239a"/>
 					</pragmas>
 				</Variable>
-				<Variable name="HSI_VOR_To_From">
+				<Variable name="hsiVorToFrom">
 					<type>
 						<NamedType>
 							<type>
@@ -41,7 +41,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="HSI_To_From">
+				<Variable name="hsiToFrom">
 					<type>
 						<NamedType>
 							<type>
@@ -141,7 +141,7 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L1 = HSI_NAV_Data_Type; -->
+				<!-- _L1 = hsiNavDataType; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1"/>
@@ -149,7 +149,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_NAV_Data_Type"/>
+								<ConstVarRef name="hsiNavDataType"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -200,7 +200,7 @@
 						<ed:Equation oid="!ed/6bd/7A70/BF0/475955996350"/>
 					</pragmas>
 				</Equation>
-				<!-- _L3 = HSI_VOR_To_From; -->
+				<!-- _L3 = hsiVorToFrom; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L3"/>
@@ -208,7 +208,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_VOR_To_From"/>
+								<ConstVarRef name="hsiVorToFrom"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -278,10 +278,10 @@
 						<ed:Equation oid="!ed/6c1/7A70/BF0/475955998d7"/>
 					</pragmas>
 				</Equation>
-				<!-- HSI_To_From = _L2; -->
+				<!-- hsiToFrom = _L2; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HSI_To_From"/>
+						<VariableRef name="hsiToFrom"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -294,7 +294,7 @@
 						<ed:Equation oid="!ed/6c2/7A70/BF0/475955994d59"/>
 					</pragmas>
 				</Equation>
-				<!-- _L8 = NAV_Data_Selected; -->
+				<!-- _L8 = navDataSelected; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L8"/>
@@ -302,7 +302,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="NAV_Data_Selected"/>
+								<ConstVarRef name="navDataSelected"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -314,7 +314,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/6af/7A70/BF0/475955997e4b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="HSI_CDI_To_From_Indicator_Selection" landscape="true" format="A4 (210 297)" oid="!ed/6bb/7A70/BF0/4759559932d6">
+						<NetDiagram name="hsiCdiToFromIndicatorSelection" landscape="true" format="A4 (210 297)" oid="!ed/6bb/7A70/BF0/4759559932d6">
 							<presentationElements>
 								<EquationGE presentable="!ed/6bc/7A70/BF0/475955993235">
 									<position>
