@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="ADI_FD_Existence">
+		<Operator kind="function" name="fdExistence">
 			<inputs>
 				<Variable name="AC_Flight_Director">
 					<type>
@@ -538,9 +538,9 @@
 				</Equation>
 			</data>
 			<pragmas>
-				<ed:Operator oid="!ed/1076/7A70/BF0/47595990157" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Operator oid="!ed/1076/7A70/BF0/47595990157" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="ADI_FD_Existence" landscape="true" format="A4 (210 297)" oid="!ed/108a/7A70/BF0/475959906fbe">
+						<NetDiagram name="fdExistence" landscape="true" format="A4 (210 297)" oid="!ed/108a/7A70/BF0/475959906fbe">
 							<presentationElements>
 								<EquationGE presentable="!ed/108b/7A70/BF0/4759599053d5">
 									<position>

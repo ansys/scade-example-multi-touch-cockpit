@@ -12015,7 +12015,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Aircraft_Symbol_Enum"/>
+										<TypeRef name="aircraftSymbolEnum"/>
 									</type>
 								</NamedType>
 							</type>
@@ -12043,7 +12043,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="Aircraft_Symbol_Enum"/>
+										<TypeRef name="aircraftSymbolEnum"/>
 									</type>
 								</NamedType>
 							</type>
@@ -12105,13 +12105,13 @@
 								<ed:Equation oid="!ed/4a8c/7408/14F4/4bb316af4f56"/>
 							</pragmas>
 						</Equation>
-						<!-- _L3 = ( case _L1 of  | Single_Cue :   _L4 | _ :   _L5); -->
+						<!-- _L3 = ( case _L1 of  | SINGLE_CUE :   _L4 | _ :   _L5); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L3"/>
 							</lefts>
 							<right>
-								<!-- ( case _L1 of  | Single_Cue :   _L4 | _ :   _L5) -->
+								<!-- ( case _L1 of  | SINGLE_CUE :   _L4 | _ :   _L5) -->
 								<CaseOp name="1">
 									<switch>
 										<IdExpression>
@@ -12121,7 +12121,7 @@
 										</IdExpression>
 									</switch>
 									<cases>
-										<Case pattern="Single_Cue">
+										<Case pattern="SINGLE_CUE">
 											<flow>
 												<IdExpression>
 													<path>
@@ -12267,8 +12267,8 @@
 								</NetDiagram>
 							</diagrams>
 							<references>
-								<TypeRef path="Aircraft_Symbol_Enum" refOid="!ed/e99/7A70/BF0/4759596c2feb"/>
-								<ConstVarRef path="Single_Cue" refOid="!ed/2c09/75E1/C28/47592f40ce7"/>
+								<TypeRef path="aircraftSymbolEnum" refOid="!ed/e99/7A70/BF0/4759596c2feb"/>
+								<ConstVarRef path="SINGLE_CUE" refOid="!ed/2c09/75E1/C28/47592f40ce7"/>
 							</references>
 						</ed:Operator>
 					</pragmas>

@@ -609,7 +609,7 @@
 			<definition>
 				<Struct>
 					<fields>
-						<Field name="AC_Single_Cue">
+						<Field name="AC_SINGLE_CUE">
 							<type>
 								<NamedType>
 									<type>

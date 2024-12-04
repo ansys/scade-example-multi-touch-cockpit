@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project id="1" oid_count="84" defaultConfiguration="18">
+<Project id="1" oid_count="85" defaultConfiguration="18">
 	<props>
 		<Prop id="10" name="@STUDIO:PRODUCT">
 			<value>SC</value>
@@ -9,7 +9,7 @@
 			<configuration>12</configuration>
 		</Prop>
 		<Prop id="14" name="@GENERATOR:GENERATOR">
-			<value>C QUAL60</value>
+			<value>C QUAL663</value>
 			<configuration>12</configuration>
 		</Prop>
 		<Prop id="15" name="@GENERATOR:OPTLEVEL">
@@ -234,6 +234,10 @@
 			<value>30</value>
 			<value>35</value>
 		</Prop>
+		<Prop id="85" name="@GENERATOR:TARGET_ADAPTOR">
+			<value></value>
+			<configuration>12</configuration>
+		</Prop>
 	</props>
 	<roots>
 		<Folder id="3" extensions="vsp;etp" name="SCADE Libraries">
@@ -264,7 +268,7 @@
 		</Folder>
 	</roots>
 	<configurations>
-		<Configuration id="12" name="KCG 6.0"/>
+		<Configuration id="12" name="KCG"/>
 		<Configuration id="18" name="Simulation"/>
 		<Configuration id="25" name="HTML"/>
 		<Configuration id="30" name="RTF"/>

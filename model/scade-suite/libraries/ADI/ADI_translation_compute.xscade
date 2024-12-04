@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="ADI_translation_compute">
+		<Operator kind="function" name="translationCompute">
 			<inputs>
 				<Variable name="Altitude">
 					<type>
@@ -45,7 +45,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Color_Enum"/>
+								<TypeRef name="colorEnum"/>
 							</type>
 						</NamedType>
 					</type>
@@ -95,7 +95,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Color_Enum"/>
+								<TypeRef name="colorEnum"/>
 							</type>
 						</NamedType>
 					</type>
@@ -107,7 +107,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Color_Enum"/>
+								<TypeRef name="colorEnum"/>
 							</type>
 						</NamedType>
 					</type>
@@ -119,7 +119,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Color_Enum"/>
+								<TypeRef name="colorEnum"/>
 							</type>
 						</NamedType>
 					</type>
@@ -153,6 +153,18 @@
 								<ConstValue value="-22.0"/>
 								<ConstValue value="22.0"/>
 							</callParameters>
+							<pragmas>
+								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<references>
+										<OperatorRef path="Range_Limiter_InIn" refOid="!ed/4216/4C50/218/474ffaa27bfa">
+											<InputRef refOid="!ed/421e/4C50/218/474ffad5607c"/>
+											<InputRef refOid="!ed/4225/4C50/218/474ffad533cd"/>
+											<InputRef refOid="!ed/422c/4C50/218/474ffad57619"/>
+											<OutputRef refOid="!ed/4232/4C50/218/474ffad53da7"/>
+										</OperatorRef>
+									</references>
+								</ed:CallExpression>
+							</pragmas>
 						</CallExpression>
 					</right>
 					<pragmas>
@@ -326,9 +338,9 @@
 				</Equation>
 			</data>
 			<pragmas>
-				<ed:Operator oid="!ed/11ef/7A70/BF0/475959942611" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Operator oid="!ed/11ef/7A70/BF0/475959942611" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="ADI_translation_compute" landscape="true" format="A4 (210 297)" oid="!ed/11fa/7A70/BF0/47595994fdf">
+						<NetDiagram name="translationCompute" landscape="true" format="A4 (210 297)" oid="!ed/11fa/7A70/BF0/47595994fdf">
 							<presentationElements>
 								<EquationGE presentable="!ed/11fb/7A70/BF0/475959947782">
 									<position>
@@ -476,6 +488,11 @@
 							</presentationElements>
 						</NetDiagram>
 					</diagrams>
+					<references>
+						<TypeRef path="colorEnum" refOid="!ed/ea1/7A70/BF0/4759596c5a"/>
+						<ConstVarRef path="YELLOW1" refOid="!ed/2b7b/75E1/C28/47591dfa389b"/>
+						<ConstVarRef path="GREY1" refOid="!ed/2b7a/75E1/C28/47591dc856c6"/>
+					</references>
 				</ed:Operator>
 				<kcg:Pragma>
 					doc &quot;Version_1&quot; {Version = &quot;V:1.0&quot;}

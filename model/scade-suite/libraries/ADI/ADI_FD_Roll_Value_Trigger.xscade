@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="ADI_FD_Roll_Value_Trigger">
+		<Operator kind="function" name="fdRollValueTrigger">
 			<inputs>
 				<Variable name="ADI_FD_Roll">
 					<type>
@@ -320,9 +320,9 @@
 				</Equation>
 			</data>
 			<pragmas>
-				<ed:Operator oid="!ed/1185/7A70/BF0/475959936aa" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Operator oid="!ed/1185/7A70/BF0/475959936aa" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="ADI_FD_Roll_Value_Trigger" landscape="true" format="A4 (210 297)" oid="!ed/1190/7A70/BF0/475959934a2c">
+						<NetDiagram name="fdRollValueTrigger" landscape="true" format="A4 (210 297)" oid="!ed/1190/7A70/BF0/475959934a2c">
 							<presentationElements>
 								<EquationGE presentable="!ed/1191/7A70/BF0/475959933ef8">
 									<position>

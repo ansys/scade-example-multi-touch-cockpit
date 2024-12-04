@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="ADI_FD_Pitch_Value">
+		<Operator kind="function" name="fdPitchValue">
 			<inputs>
 				<Variable name="FD_Reference">
 					<type>
@@ -385,9 +385,9 @@
 				</Equation>
 			</data>
 			<pragmas>
-				<ed:Operator oid="!ed/10dd/7A70/BF0/475959911c22" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Operator oid="!ed/10dd/7A70/BF0/475959911c22" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="ADI_FD_Pitch_Value" landscape="true" format="A4 (210 297)" oid="!ed/10ec/7A70/BF0/4759599163ca">
+						<NetDiagram name="fdPitchValue" landscape="true" format="A4 (210 297)" oid="!ed/10ec/7A70/BF0/4759599163ca">
 							<presentationElements>
 								<EquationGE presentable="!ed/10ed/7A70/BF0/475959915184">
 									<position>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="ADI_Pitch_Value_Limitation">
+		<Operator kind="function" name="pitchValueLimitation">
 			<inputs>
 				<Variable name="AT_Pitch">
 					<type>
@@ -81,6 +81,18 @@
 								<ConstValue value="-90.0"/>
 								<ConstValue value="90.0"/>
 							</callParameters>
+							<pragmas>
+								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
+									<references>
+										<OperatorRef path="Range_Limiter_InIn" refOid="!ed/4216/4C50/218/474ffaa27bfa">
+											<InputRef refOid="!ed/421e/4C50/218/474ffad5607c"/>
+											<InputRef refOid="!ed/4225/4C50/218/474ffad533cd"/>
+											<InputRef refOid="!ed/422c/4C50/218/474ffad57619"/>
+											<OutputRef refOid="!ed/4232/4C50/218/474ffad53da7"/>
+										</OperatorRef>
+									</references>
+								</ed:CallExpression>
+							</pragmas>
 						</CallExpression>
 					</right>
 					<pragmas>
@@ -121,9 +133,9 @@
 				</Equation>
 			</data>
 			<pragmas>
-				<ed:Operator oid="!ed/11b8/7A70/BF0/475959935e3d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Operator oid="!ed/11b8/7A70/BF0/475959935e3d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="ADI_Pitch_Value_Limitation" landscape="true" format="A4 (210 297)" oid="!ed/11bd/7A70/BF0/475959932029">
+						<NetDiagram name="pitchValueLimitation" landscape="true" format="A4 (210 297)" oid="!ed/11bd/7A70/BF0/475959932029">
 							<presentationElements>
 								<EquationGE presentable="!ed/11be/7A70/BF0/475959932855">
 									<position>

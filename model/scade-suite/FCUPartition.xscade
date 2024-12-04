@@ -1213,7 +1213,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Aircraft_Symbol_Enum"/>
+								<TypeRef name="aircraftSymbolEnum"/>
 							</type>
 						</NamedType>
 					</type>
@@ -1237,7 +1237,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Color_Enum"/>
+								<TypeRef name="colorEnum"/>
 							</type>
 						</NamedType>
 					</type>

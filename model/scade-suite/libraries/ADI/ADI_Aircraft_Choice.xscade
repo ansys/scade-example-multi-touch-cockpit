@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
 	<declarations>
-		<Operator kind="function" name="ADI_Aircraft_Choice">
+		<Operator kind="function" name="aircraftChoice">
 			<inputs>
 				<Variable name="Aircraft_Symbol">
 					<type>
@@ -21,7 +21,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Aircraft_Symbol_Enum"/>
+								<TypeRef name="aircraftSymbolEnum"/>
 							</type>
 						</NamedType>
 					</type>
@@ -35,7 +35,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Aircraft_Symbol_Enum"/>
+								<TypeRef name="aircraftSymbolEnum"/>
 							</type>
 						</NamedType>
 					</type>
@@ -59,7 +59,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Aircraft_Symbol_Enum"/>
+								<TypeRef name="aircraftSymbolEnum"/>
 							</type>
 						</NamedType>
 					</type>
@@ -71,7 +71,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Aircraft_Symbol_Enum"/>
+								<TypeRef name="aircraftSymbolEnum"/>
 							</type>
 						</NamedType>
 					</type>
@@ -156,7 +156,7 @@
 						<ed:Equation oid="!ed/ec1/7A70/BF0/4759598e7dd6"/>
 					</pragmas>
 				</Equation>
-				<!-- _L6 = Single_Cue; -->
+				<!-- _L6 = SINGLE_CUE; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L6"/>
@@ -164,7 +164,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Single_Cue"/>
+								<ConstVarRef name="SINGLE_CUE"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -172,7 +172,7 @@
 						<ed:Equation oid="!ed/ec2/7A70/BF0/4759598e2615"/>
 					</pragmas>
 				</Equation>
-				<!-- _L7 = Double_Cue; -->
+				<!-- _L7 = DOUBLE_CUE; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L7"/>
@@ -180,7 +180,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Double_Cue"/>
+								<ConstVarRef name="DOUBLE_CUE"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -190,9 +190,9 @@
 				</Equation>
 			</data>
 			<pragmas>
-				<ed:Operator oid="!ed/eb7/7A70/BF0/4759598e16bf" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+				<ed:Operator oid="!ed/eb7/7A70/BF0/4759598e16bf" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="ADI_Aircraft_Choice" landscape="true" format="A4 (210 297)" oid="!ed/ebe/7A70/BF0/4759598e5bf3">
+						<NetDiagram name="aircraftChoice" landscape="true" format="A4 (210 297)" oid="!ed/ebe/7A70/BF0/4759598e5bf3">
 							<presentationElements>
 								<EquationGE presentable="!ed/ebf/7A70/BF0/4759598e3de3">
 									<position>
@@ -228,10 +228,10 @@
 								</Edge>
 								<EquationGE kind="OBJ_LIT" presentable="!ed/ec2/7A70/BF0/4759598e2615">
 									<position>
-										<Point x="5001" y="2884"/>
+										<Point x="6456" y="2884"/>
 									</position>
 									<size>
-										<Size width="1667" height="317"/>
+										<Size width="212" height="317"/>
 									</size>
 								</EquationGE>
 								<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/ec2/7A70/BF0/4759598e2615" dstEquation="!ed/ebf/7A70/BF0/4759598e3de3">
@@ -244,10 +244,10 @@
 								</Edge>
 								<EquationGE kind="OBJ_LIT" presentable="!ed/ec3/7A70/BF0/4759598e3d33">
 									<position>
-										<Point x="4895" y="3228"/>
+										<Point x="6456" y="3228"/>
 									</position>
 									<size>
-										<Size width="1773" height="317"/>
+										<Size width="212" height="317"/>
 									</size>
 								</EquationGE>
 								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/ec0/7A70/BF0/4759598e5a8c" dstEquation="!ed/ebf/7A70/BF0/4759598e3de3">
@@ -268,6 +268,11 @@
 							</presentationElements>
 						</NetDiagram>
 					</diagrams>
+					<references>
+						<TypeRef path="aircraftSymbolEnum" refOid="!ed/e99/7A70/BF0/4759596c2feb"/>
+						<ConstVarRef path="SINGLE_CUE" refOid="!ed/2c09/75E1/C28/47592f40ce7"/>
+						<ConstVarRef path="DOUBLE_CUE" refOid="!ed/2c0a/75E1/C28/47592f6d4daa"/>
+					</references>
 				</ed:Operator>
 				<kcg:Pragma>
 					doc &quot;Version_1&quot; {Version = &quot;V:1.0&quot;}
