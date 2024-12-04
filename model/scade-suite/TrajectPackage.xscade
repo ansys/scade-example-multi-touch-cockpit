@@ -2032,7 +2032,7 @@
 								<ed:Equation oid="!ed/6df5/6992/10B8/484d1ae3473"/>
 							</pragmas>
 						</Equation>
-						<!-- _L64 = Nb_Pt_Trajectory; -->
+						<!-- _L64 = NB_PT_TRAJECTORY; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L64"/>
@@ -2040,7 +2040,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Nb_Pt_Trajectory"/>
+										<ConstVarRef name="NB_PT_TRAJECTORY"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -2231,7 +2231,7 @@
 								<ed:Equation oid="!ed/6e04/6992/10B8/484d1ae32b2b"/>
 							</pragmas>
 						</Equation>
-						<!-- _L70 = Pt_Default; -->
+						<!-- _L70 = PT_DEFAULT; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L70"/>
@@ -2239,7 +2239,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Pt_Default"/>
+										<ConstVarRef name="PT_DEFAULT"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -2418,7 +2418,7 @@
 								<ed:Equation oid="!ed/6e14/6992/10B8/484d1ae329a0"/>
 							</pragmas>
 						</Equation>
-						<!-- _L78 = Nb_Pt_Trajectory; -->
+						<!-- _L78 = NB_PT_TRAJECTORY; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L78"/>
@@ -2426,7 +2426,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Nb_Pt_Trajectory"/>
+										<ConstVarRef name="NB_PT_TRAJECTORY"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -3386,8 +3386,8 @@
 							<references>
 								<TypeRef path="Trajectory" refOid="!ed/42ea/3913/15D0/4805f12858a8"/>
 								<TypeRef path="Point" refOid="!ed/42e3/3913/15D0/4805f1284eb4"/>
-								<ConstVarRef path="Nb_Pt_Trajectory" refOid="!ed/42d5/3913/15D0/4805f12857ff"/>
-								<ConstVarRef path="Pt_Default" refOid="!ed/42eb/3913/15D0/4805f12d24bc"/>
+								<ConstVarRef path="NB_PT_TRAJECTORY" refOid="!ed/42d5/3913/15D0/4805f12857ff"/>
+								<ConstVarRef path="PT_DEFAULT" refOid="!ed/42eb/3913/15D0/4805f12d24bc"/>
 								<ConstVarRef path="Speed" refOid="!ed/161/628B/C8/48dba1b74feb"/>
 							</references>
 						</ed:Operator>

@@ -1769,7 +1769,7 @@
 						<ed:Equation oid="!ed/34e5/782E/10C4/4824497357c9"/>
 					</pragmas>
 				</Equation>
-				<!-- _L143 = Pt_Default; -->
+				<!-- _L143 = PT_DEFAULT; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L143"/>
@@ -1777,7 +1777,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Pt_Default"/>
+								<ConstVarRef name="PT_DEFAULT"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1785,7 +1785,7 @@
 						<ed:Equation oid="!ed/34e6/782E/10C4/482449734411"/>
 					</pragmas>
 				</Equation>
-				<!-- _L144 = Pt_Default; -->
+				<!-- _L144 = PT_DEFAULT; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L144"/>
@@ -1793,7 +1793,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Pt_Default"/>
+								<ConstVarRef name="PT_DEFAULT"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1801,7 +1801,7 @@
 						<ed:Equation oid="!ed/34e7/782E/10C4/482449732a92"/>
 					</pragmas>
 				</Equation>
-				<!-- _L145 = Pt_Default; -->
+				<!-- _L145 = PT_DEFAULT; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L145"/>
@@ -1809,7 +1809,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Pt_Default"/>
+								<ConstVarRef name="PT_DEFAULT"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1817,7 +1817,7 @@
 						<ed:Equation oid="!ed/34e8/782E/10C4/48244973772f"/>
 					</pragmas>
 				</Equation>
-				<!-- _L146 = Pt_Default; -->
+				<!-- _L146 = PT_DEFAULT; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L146"/>
@@ -1825,7 +1825,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Pt_Default"/>
+								<ConstVarRef name="PT_DEFAULT"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -2593,7 +2593,7 @@
 						<ed:Equation oid="!ed/351a/782E/10C4/482449737ee8"/>
 					</pragmas>
 				</Equation>
-				<!-- _L366 = Nb_Pt_Trajectory; -->
+				<!-- _L366 = NB_PT_TRAJECTORY; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L366"/>
@@ -2601,7 +2601,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Nb_Pt_Trajectory"/>
+								<ConstVarRef name="NB_PT_TRAJECTORY"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -2965,7 +2965,7 @@
 						<ed:Equation oid="!ed/17e71/B41/F48/483e9fe56f92"/>
 					</pragmas>
 				</Equation>
-				<!-- _L402 = Nb_Pt_Trajectory; -->
+				<!-- _L402 = NB_PT_TRAJECTORY; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L402"/>
@@ -2973,7 +2973,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Nb_Pt_Trajectory"/>
+								<ConstVarRef name="NB_PT_TRAJECTORY"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -2993,7 +2993,7 @@
 						<ed:Equation oid="!ed/17e75/B41/F48/483e9fe52900"/>
 					</pragmas>
 				</Equation>
-				<!-- _L404 = Nb_Pt_Trajectory; -->
+				<!-- _L404 = NB_PT_TRAJECTORY; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L404"/>
@@ -3001,7 +3001,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Nb_Pt_Trajectory"/>
+								<ConstVarRef name="NB_PT_TRAJECTORY"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -3125,7 +3125,7 @@
 						<ed:Equation oid="!ed/17ea1/B41/F48/483ea015a7a"/>
 					</pragmas>
 				</Equation>
-				<!-- _L410 = Nb_Pt_Trajectory; -->
+				<!-- _L410 = NB_PT_TRAJECTORY; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L410"/>
@@ -3133,7 +3133,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Nb_Pt_Trajectory"/>
+								<ConstVarRef name="NB_PT_TRAJECTORY"/>
 							</path>
 						</IdExpression>
 					</right>
