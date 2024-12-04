@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" xmlns:simu="http://www.esterel-technologies.com/ns/scade/pragmas/simulator/1">
 	<declarations>
-		<Operator kind="node" name="GlassCockpit">
+		<Operator kind="node" name="glassCockpit">
 			<inputs>
-				<Variable name="I_Pointer1_Data">
+				<Variable name="pointer1Data">
 					<type>
 						<NamedType>
 							<type>
@@ -15,7 +15,7 @@
 						<ed:Variable oid="!ed/48ec/10F2/12FC/4c65815c7d81"/>
 					</pragmas>
 				</Variable>
-				<Variable name="I_Pointer2_Data">
+				<Variable name="pointer2Data">
 					<type>
 						<NamedType>
 							<type>
@@ -27,7 +27,7 @@
 						<ed:Variable oid="!ed/6586/2F8E/68C/4fa3a1fd422"/>
 					</pragmas>
 				</Variable>
-				<Variable name="I_Btn_Data">
+				<Variable name="btnDataIn">
 					<type>
 						<NamedType>
 							<type>
@@ -39,7 +39,7 @@
 						<ed:Variable oid="!ed/48ee/10F2/12FC/4c6581686f0a"/>
 					</pragmas>
 				</Variable>
-				<Variable name="I_Interactivity_Data">
+				<Variable name="interactivityDataIn">
 					<type>
 						<NamedType>
 							<type>
@@ -87,7 +87,7 @@
 						<ed:Variable oid="!ed/ce9e/5F82/1828/5a2569993a68"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Go">
+				<Variable name="go">
 					<type>
 						<NamedType>
 							<type>
@@ -101,7 +101,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="SDY_ROLL">
+				<Variable name="roll">
 					<type>
 						<NamedType>
 							<type>
@@ -113,7 +113,7 @@
 						<ed:Variable oid="!ed/49c7/7408/14F4/4bb31300649"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_PITCH">
+				<Variable name="pitch">
 					<type>
 						<NamedType>
 							<type>
@@ -125,7 +125,7 @@
 						<ed:Variable oid="!ed/49c8/7408/14F4/4bb313001021"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_AIRCRAFT_SYMBOL_INDEX">
+				<Variable name="aircraftSymbolIndex">
 					<type>
 						<NamedType>
 							<type>
@@ -137,7 +137,7 @@
 						<ed:Variable oid="!ed/49c9/7408/14F4/4bb31300246d"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_AT_HEADING_VALUE">
+				<Variable name="atHeadingValue">
 					<type>
 						<NamedType>
 							<type>
@@ -149,7 +149,7 @@
 						<ed:Variable oid="!ed/49ca/7408/14F4/4bb313004143"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_CDI_COMPASS_CARD_ROTATE">
+				<Variable name="cdiCompassCardRotate">
 					<type>
 						<NamedType>
 							<type>
@@ -161,7 +161,7 @@
 						<ed:Variable oid="!ed/49cb/7408/14F4/4bb313005004"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_AIRSPEED">
+				<Variable name="airspeed">
 					<type>
 						<NamedType>
 							<type>
@@ -173,7 +173,7 @@
 						<ed:Variable oid="!ed/49cc/7408/14F4/4bb313005ca9"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_ALT_VALUE">
+				<Variable name="altValue">
 					<type>
 						<NamedType>
 							<type>
@@ -185,7 +185,7 @@
 						<ed:Variable oid="!ed/49cd/7408/14F4/4bb3130011f0"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_Px1">
+				<Variable name="px1">
 					<type>
 						<NamedType>
 							<type>
@@ -197,7 +197,7 @@
 						<ed:Variable oid="!ed/49ce/7408/14F4/4bb31300ea9"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_Px2">
+				<Variable name="px2">
 					<type>
 						<NamedType>
 							<type>
@@ -209,7 +209,7 @@
 						<ed:Variable oid="!ed/49cf/7408/14F4/4bb313007842"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_Px3">
+				<Variable name="px3">
 					<type>
 						<NamedType>
 							<type>
@@ -221,7 +221,7 @@
 						<ed:Variable oid="!ed/49d0/7408/14F4/4bb313003bda"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_Px4">
+				<Variable name="px4">
 					<type>
 						<NamedType>
 							<type>
@@ -233,7 +233,7 @@
 						<ed:Variable oid="!ed/49d1/7408/14F4/4bb3130050d9"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_Py1">
+				<Variable name="py1">
 					<type>
 						<NamedType>
 							<type>
@@ -245,7 +245,7 @@
 						<ed:Variable oid="!ed/49d2/7408/14F4/4bb31300fb9"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_Py2">
+				<Variable name="py2">
 					<type>
 						<NamedType>
 							<type>
@@ -257,7 +257,7 @@
 						<ed:Variable oid="!ed/49d3/7408/14F4/4bb3130041ec"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_Py3">
+				<Variable name="py3">
 					<type>
 						<NamedType>
 							<type>
@@ -269,7 +269,7 @@
 						<ed:Variable oid="!ed/49d4/7408/14F4/4bb31300658f"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_Py4">
+				<Variable name="py4">
 					<type>
 						<NamedType>
 							<type>
@@ -281,7 +281,7 @@
 						<ed:Variable oid="!ed/49d5/7408/14F4/4bb3130077e7"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_Pttx1">
+				<Variable name="pttx1">
 					<type>
 						<NamedType>
 							<type>
@@ -293,7 +293,7 @@
 						<ed:Variable oid="!ed/49d6/7408/14F4/4bb3130054a"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_Ptty1">
+				<Variable name="ptty1">
 					<type>
 						<NamedType>
 							<type>
@@ -305,7 +305,7 @@
 						<ed:Variable oid="!ed/49d7/7408/14F4/4bb313001b4e"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_Ptty2">
+				<Variable name="pttx2">
 					<type>
 						<NamedType>
 							<type>
@@ -317,7 +317,7 @@
 						<ed:Variable oid="!ed/49d8/7408/14F4/4bb313003c6d"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_Pttx2">
+				<Variable name="ptty2">
 					<type>
 						<NamedType>
 							<type>
@@ -329,7 +329,7 @@
 						<ed:Variable oid="!ed/49d9/7408/14F4/4bb313001678"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_Pttx3">
+				<Variable name="pttx3">
 					<type>
 						<NamedType>
 							<type>
@@ -341,7 +341,7 @@
 						<ed:Variable oid="!ed/49da/7408/14F4/4bb313005b4c"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_Ptty3">
+				<Variable name="ptty3">
 					<type>
 						<NamedType>
 							<type>
@@ -353,7 +353,7 @@
 						<ed:Variable oid="!ed/49db/7408/14F4/4bb313003263"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_Pttx4">
+				<Variable name="pttx4">
 					<type>
 						<NamedType>
 							<type>
@@ -365,7 +365,7 @@
 						<ed:Variable oid="!ed/49dc/7408/14F4/4bb31300211a"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_Ptty4">
+				<Variable name="ptty4">
 					<type>
 						<NamedType>
 							<type>
@@ -377,7 +377,7 @@
 						<ed:Variable oid="!ed/49dd/7408/14F4/4bb31300af2"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_Pttx5">
+				<Variable name="pttx5">
 					<type>
 						<NamedType>
 							<type>
@@ -389,7 +389,7 @@
 						<ed:Variable oid="!ed/49de/7408/14F4/4bb3130035a3"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_Ptty5">
+				<Variable name="ptty5">
 					<type>
 						<NamedType>
 							<type>
@@ -401,7 +401,7 @@
 						<ed:Variable oid="!ed/49df/7408/14F4/4bb313001e53"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_Pttx6">
+				<Variable name="pttx6">
 					<type>
 						<NamedType>
 							<type>
@@ -413,7 +413,7 @@
 						<ed:Variable oid="!ed/49e0/7408/14F4/4bb313005aa"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_Ptty6">
+				<Variable name="ptty6">
 					<type>
 						<NamedType>
 							<type>
@@ -425,7 +425,7 @@
 						<ed:Variable oid="!ed/49e1/7408/14F4/4bb313001861"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_Pttx7">
+				<Variable name="pttx7">
 					<type>
 						<NamedType>
 							<type>
@@ -437,7 +437,7 @@
 						<ed:Variable oid="!ed/49e2/7408/14F4/4bb313003f36"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_Ptty7">
+				<Variable name="ptty7">
 					<type>
 						<NamedType>
 							<type>
@@ -449,7 +449,7 @@
 						<ed:Variable oid="!ed/49e3/7408/14F4/4bb31300423a"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_Pttx8">
+				<Variable name="pttx8">
 					<type>
 						<NamedType>
 							<type>
@@ -461,7 +461,7 @@
 						<ed:Variable oid="!ed/49e4/7408/14F4/4bb31300555a"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_Ptty8">
+				<Variable name="ptty8">
 					<type>
 						<NamedType>
 							<type>
@@ -473,7 +473,7 @@
 						<ed:Variable oid="!ed/49e5/7408/14F4/4bb313007f62"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_XT1">
+				<Variable name="xt1">
 					<type>
 						<NamedType>
 							<type>
@@ -485,7 +485,7 @@
 						<ed:Variable oid="!ed/49e6/7408/14F4/4bb313006f42"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_YT1">
+				<Variable name="yt1">
 					<type>
 						<NamedType>
 							<type>
@@ -497,7 +497,7 @@
 						<ed:Variable oid="!ed/49e7/7408/14F4/4bb313004d2b"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_XT2">
+				<Variable name="xt2">
 					<type>
 						<NamedType>
 							<type>
@@ -509,7 +509,7 @@
 						<ed:Variable oid="!ed/49e8/7408/14F4/4bb31300481"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_YT2">
+				<Variable name="yt2">
 					<type>
 						<NamedType>
 							<type>
@@ -521,7 +521,7 @@
 						<ed:Variable oid="!ed/49e9/7408/14F4/4bb313001e3f"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_XT3">
+				<Variable name="xt3">
 					<type>
 						<NamedType>
 							<type>
@@ -533,7 +533,7 @@
 						<ed:Variable oid="!ed/49ea/7408/14F4/4bb3130038f5"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_YT3">
+				<Variable name="yt3">
 					<type>
 						<NamedType>
 							<type>
@@ -545,7 +545,7 @@
 						<ed:Variable oid="!ed/49eb/7408/14F4/4bb313007b75"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_XT4">
+				<Variable name="xt4">
 					<type>
 						<NamedType>
 							<type>
@@ -557,7 +557,7 @@
 						<ed:Variable oid="!ed/49ec/7408/14F4/4bb313005cc3"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_YT4">
+				<Variable name="yt4">
 					<type>
 						<NamedType>
 							<type>
@@ -569,7 +569,7 @@
 						<ed:Variable oid="!ed/49ed/7408/14F4/4bb313005c5b"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_ST1X">
+				<Variable name="st1x">
 					<type>
 						<NamedType>
 							<type>
@@ -581,7 +581,7 @@
 						<ed:Variable oid="!ed/49ee/7408/14F4/4bb313005938"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_ST1Y">
+				<Variable name="sty1">
 					<type>
 						<NamedType>
 							<type>
@@ -593,7 +593,7 @@
 						<ed:Variable oid="!ed/49ef/7408/14F4/4bb313007d24"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_ST2X">
+				<Variable name="st2x">
 					<type>
 						<NamedType>
 							<type>
@@ -605,7 +605,7 @@
 						<ed:Variable oid="!ed/49f0/7408/14F4/4bb313005988"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_ST2Y">
+				<Variable name="st2y">
 					<type>
 						<NamedType>
 							<type>
@@ -617,7 +617,7 @@
 						<ed:Variable oid="!ed/49f1/7408/14F4/4bb3130064d1"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_ST3X">
+				<Variable name="st3x">
 					<type>
 						<NamedType>
 							<type>
@@ -629,7 +629,7 @@
 						<ed:Variable oid="!ed/49f2/7408/14F4/4bb3130036cc"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_ST3Y">
+				<Variable name="st3y">
 					<type>
 						<NamedType>
 							<type>
@@ -641,7 +641,7 @@
 						<ed:Variable oid="!ed/49f3/7408/14F4/4bb3130025cb"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_ST4X">
+				<Variable name="st4x">
 					<type>
 						<NamedType>
 							<type>
@@ -653,7 +653,7 @@
 						<ed:Variable oid="!ed/49f4/7408/14F4/4bb3130028ac"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_ST4Y">
+				<Variable name="st4y">
 					<type>
 						<NamedType>
 							<type>
@@ -665,7 +665,7 @@
 						<ed:Variable oid="!ed/49f5/7408/14F4/4bb313007458"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_VT1">
+				<Variable name="vt1">
 					<type>
 						<NamedType>
 							<type>
@@ -677,7 +677,7 @@
 						<ed:Variable oid="!ed/49f6/7408/14F4/4bb31300898"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_VT2">
+				<Variable name="vt2">
 					<type>
 						<NamedType>
 							<type>
@@ -689,7 +689,7 @@
 						<ed:Variable oid="!ed/49f7/7408/14F4/4bb313004981"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_VT3">
+				<Variable name="vt3">
 					<type>
 						<NamedType>
 							<type>
@@ -701,7 +701,7 @@
 						<ed:Variable oid="!ed/49f8/7408/14F4/4bb313002379"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_VT4">
+				<Variable name="vt4">
 					<type>
 						<NamedType>
 							<type>
@@ -713,7 +713,7 @@
 						<ed:Variable oid="!ed/49f9/7408/14F4/4bb313003e6a"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_RT">
+				<Variable name="rt">
 					<type>
 						<NamedType>
 							<type>
@@ -725,7 +725,7 @@
 						<ed:Variable oid="!ed/49fa/7408/14F4/4bb313003641"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_RT1">
+				<Variable name="rt1">
 					<type>
 						<NamedType>
 							<type>
@@ -737,7 +737,7 @@
 						<ed:Variable oid="!ed/49fb/7408/14F4/4bb313006b2a"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_RT2">
+				<Variable name="rt2">
 					<type>
 						<NamedType>
 							<type>
@@ -749,7 +749,7 @@
 						<ed:Variable oid="!ed/49fc/7408/14F4/4bb3130053d2"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_RT3">
+				<Variable name="rt3">
 					<type>
 						<NamedType>
 							<type>
@@ -761,7 +761,7 @@
 						<ed:Variable oid="!ed/49fd/7408/14F4/4bb313002da5"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_RT4">
+				<Variable name="rt4">
 					<type>
 						<NamedType>
 							<type>
@@ -773,7 +773,7 @@
 						<ed:Variable oid="!ed/49fe/7408/14F4/4bb3130026fc"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_V_x_aircraft">
+				<Variable name="vxAircraft">
 					<type>
 						<NamedType>
 							<type>
@@ -785,7 +785,7 @@
 						<ed:Variable oid="!ed/49ff/7408/14F4/4bb313001ff8"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_V_z_aircraft">
+				<Variable name="vzAircraft">
 					<type>
 						<NamedType>
 							<type>
@@ -797,7 +797,7 @@
 						<ed:Variable oid="!ed/4a00/7408/14F4/4bb3130059b0"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SDY_Yow">
+				<Variable name="yow">
 					<type>
 						<NamedType>
 							<type>
@@ -809,7 +809,7 @@
 						<ed:Variable oid="!ed/4a01/7408/14F4/4bb31300371"/>
 					</pragmas>
 				</Variable>
-				<Variable name="O_Btn_Data">
+				<Variable name="btnDataOut">
 					<type>
 						<Table>
 							<type>
@@ -828,7 +828,7 @@
 						<ed:Variable oid="!ed/4a42/7408/14F4/4bb313731a40"/>
 					</pragmas>
 				</Variable>
-				<Variable name="O_Additional_Data">
+				<Variable name="additionalData">
 					<type>
 						<NamedType>
 							<type>
@@ -840,7 +840,7 @@
 						<ed:Variable oid="!ed/4a4e/7408/14F4/4bb31531258"/>
 					</pragmas>
 				</Variable>
-				<Variable name="M0Present">
+				<Variable name="m0Present">
 					<type>
 						<NamedType>
 							<type>
@@ -852,7 +852,7 @@
 						<ed:Variable oid="!ed/498a/276/17BC/4f621f497cf2"/>
 					</pragmas>
 				</Variable>
-				<Variable name="M1Present">
+				<Variable name="m1Present">
 					<type>
 						<NamedType>
 							<type>
@@ -864,7 +864,7 @@
 						<ed:Variable oid="!ed/5e8a/322B/1C78/52fb8e65197b"/>
 					</pragmas>
 				</Variable>
-				<Variable name="showtext">
+				<Variable name="showText">
 					<type>
 						<NamedType>
 							<type>
@@ -876,7 +876,7 @@
 						<ed:Variable oid="!ed/5a29/45EB/26B4/509130fc3ee0"/>
 					</pragmas>
 				</Variable>
-				<Variable name="frontopacity">
+				<Variable name="frontOpacity">
 					<type>
 						<NamedType>
 							<type>
@@ -888,7 +888,7 @@
 						<ed:Variable oid="!ed/5a28/45EB/26B4/509130fcced"/>
 					</pragmas>
 				</Variable>
-				<Variable name="backopacity">
+				<Variable name="backOpacity">
 					<type>
 						<NamedType>
 							<type>
@@ -900,7 +900,7 @@
 						<ed:Variable oid="!ed/5a27/45EB/26B4/509130fc3db8"/>
 					</pragmas>
 				</Variable>
-				<Variable name="O_Interactivity_Data">
+				<Variable name="interactivityDataOut">
 					<type>
 						<NamedType>
 							<type>
@@ -912,7 +912,7 @@
 						<ed:Variable oid="!ed/59cd/4FCD/1EE8/50ee8b45142a"/>
 					</pragmas>
 				</Variable>
-				<Variable name="SPEED">
+				<Variable name="speed">
 					<type>
 						<NamedType>
 							<type>
@@ -924,7 +924,7 @@
 						<ed:Variable oid="!ed/ceac/5F82/1828/5a256a453c0d"/>
 					</pragmas>
 				</Variable>
-				<Variable name="HEADING">
+				<Variable name="heading">
 					<type>
 						<NamedType>
 							<type>
@@ -936,7 +936,7 @@
 						<ed:Variable oid="!ed/ceb2/5F82/1828/5a256a4572a4"/>
 					</pragmas>
 				</Variable>
-				<Variable name="ALTITUDE">
+				<Variable name="altitude">
 					<type>
 						<NamedType>
 							<type>
@@ -2746,10 +2746,10 @@
 						<ed:Equation oid="!ed/48f3/7408/14F4/4bb313007df8"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_ROLL = _L1412; -->
+				<!-- roll = _L1412; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_ROLL"/>
+						<VariableRef name="roll"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -2762,10 +2762,10 @@
 						<ed:Equation oid="!ed/48f4/7408/14F4/4bb313003d43"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_AIRCRAFT_SYMBOL_INDEX = _L1607; -->
+				<!-- aircraftSymbolIndex = _L1607; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_AIRCRAFT_SYMBOL_INDEX"/>
+						<VariableRef name="aircraftSymbolIndex"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -2778,10 +2778,10 @@
 						<ed:Equation oid="!ed/48f5/7408/14F4/4bb313004f41"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_PITCH = _L1417; -->
+				<!-- pitch = _L1417; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_PITCH"/>
+						<VariableRef name="pitch"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -2883,10 +2883,10 @@
 						<ed:Equation oid="!ed/48f8/7408/14F4/4bb313005e71"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_AT_HEADING_VALUE = _L1456; -->
+				<!-- atHeadingValue = _L1456; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_AT_HEADING_VALUE"/>
+						<VariableRef name="atHeadingValue"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -2899,10 +2899,10 @@
 						<ed:Equation oid="!ed/48f9/7408/14F4/4bb313001bec"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_CDI_COMPASS_CARD_ROTATE = _L1447; -->
+				<!-- cdiCompassCardRotate = _L1447; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_CDI_COMPASS_CARD_ROTATE"/>
+						<VariableRef name="cdiCompassCardRotate"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -2978,10 +2978,10 @@
 						<ed:Equation oid="!ed/48fc/7408/14F4/4bb313006f0"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_AIRSPEED = _L1471; -->
+				<!-- airspeed = _L1471; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_AIRSPEED"/>
+						<VariableRef name="airspeed"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -2994,10 +2994,10 @@
 						<ed:Equation oid="!ed/48fd/7408/14F4/4bb313006476"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_ALT_VALUE = _L1472; -->
+				<!-- altValue = _L1472; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_ALT_VALUE"/>
+						<VariableRef name="altValue"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3077,10 +3077,10 @@
 						<ed:Equation oid="!ed/4900/7408/14F4/4bb3130053a7"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_Px1 = _L1502; -->
+				<!-- px1 = _L1502; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_Px1"/>
+						<VariableRef name="px1"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3093,10 +3093,10 @@
 						<ed:Equation oid="!ed/4901/7408/14F4/4bb313003379"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_Px2 = _L1503; -->
+				<!-- px2 = _L1503; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_Px2"/>
+						<VariableRef name="px2"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3109,10 +3109,10 @@
 						<ed:Equation oid="!ed/4902/7408/14F4/4bb3130038c3"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_Px3 = _L1504; -->
+				<!-- px3 = _L1504; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_Px3"/>
+						<VariableRef name="px3"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3125,10 +3125,10 @@
 						<ed:Equation oid="!ed/4903/7408/14F4/4bb313006714"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_Px4 = _L1505; -->
+				<!-- px4 = _L1505; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_Px4"/>
+						<VariableRef name="px4"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3141,10 +3141,10 @@
 						<ed:Equation oid="!ed/4904/7408/14F4/4bb313005c45"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_Py1 = _L1506; -->
+				<!-- py1 = _L1506; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_Py1"/>
+						<VariableRef name="py1"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3157,10 +3157,10 @@
 						<ed:Equation oid="!ed/4905/7408/14F4/4bb31300c39"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_Py2 = _L1507; -->
+				<!-- py2 = _L1507; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_Py2"/>
+						<VariableRef name="py2"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3173,10 +3173,10 @@
 						<ed:Equation oid="!ed/4906/7408/14F4/4bb313005df9"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_Py3 = _L1508; -->
+				<!-- py3 = _L1508; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_Py3"/>
+						<VariableRef name="py3"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3189,10 +3189,10 @@
 						<ed:Equation oid="!ed/4907/7408/14F4/4bb313005350"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_Py4 = _L1509; -->
+				<!-- py4 = _L1509; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_Py4"/>
+						<VariableRef name="py4"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3205,10 +3205,10 @@
 						<ed:Equation oid="!ed/4908/7408/14F4/4bb313004532"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_Pttx1 = _L1510; -->
+				<!-- pttx1 = _L1510; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_Pttx1"/>
+						<VariableRef name="pttx1"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3221,10 +3221,10 @@
 						<ed:Equation oid="!ed/4909/7408/14F4/4bb313004cc"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_Ptty1 = _L1511; -->
+				<!-- ptty1 = _L1511; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_Ptty1"/>
+						<VariableRef name="ptty1"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3237,10 +3237,10 @@
 						<ed:Equation oid="!ed/490a/7408/14F4/4bb313002573"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_Ptty2 = _L1513; -->
+				<!-- pttx2 = _L1513; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_Ptty2"/>
+						<VariableRef name="pttx2"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3253,10 +3253,10 @@
 						<ed:Equation oid="!ed/490b/7408/14F4/4bb3130078c"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_Pttx2 = _L1512; -->
+				<!-- ptty2 = _L1512; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_Pttx2"/>
+						<VariableRef name="ptty2"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3269,10 +3269,10 @@
 						<ed:Equation oid="!ed/490c/7408/14F4/4bb313002dc5"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_Pttx3 = _L1514; -->
+				<!-- pttx3 = _L1514; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_Pttx3"/>
+						<VariableRef name="pttx3"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3285,10 +3285,10 @@
 						<ed:Equation oid="!ed/490d/7408/14F4/4bb313004b7e"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_Ptty3 = _L1515; -->
+				<!-- ptty3 = _L1515; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_Ptty3"/>
+						<VariableRef name="ptty3"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3301,10 +3301,10 @@
 						<ed:Equation oid="!ed/490e/7408/14F4/4bb313001f5d"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_Pttx4 = _L1516; -->
+				<!-- pttx4 = _L1516; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_Pttx4"/>
+						<VariableRef name="pttx4"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3317,10 +3317,10 @@
 						<ed:Equation oid="!ed/490f/7408/14F4/4bb313004210"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_Ptty4 = _L1517; -->
+				<!-- ptty4 = _L1517; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_Ptty4"/>
+						<VariableRef name="ptty4"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3333,10 +3333,10 @@
 						<ed:Equation oid="!ed/4910/7408/14F4/4bb313004eb7"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_Pttx5 = _L1518; -->
+				<!-- pttx5 = _L1518; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_Pttx5"/>
+						<VariableRef name="pttx5"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3349,10 +3349,10 @@
 						<ed:Equation oid="!ed/4911/7408/14F4/4bb313001b73"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_Ptty5 = _L1519; -->
+				<!-- ptty5 = _L1519; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_Ptty5"/>
+						<VariableRef name="ptty5"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3365,10 +3365,10 @@
 						<ed:Equation oid="!ed/4912/7408/14F4/4bb313002a59"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_Pttx6 = _L1520; -->
+				<!-- pttx6 = _L1520; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_Pttx6"/>
+						<VariableRef name="pttx6"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3381,10 +3381,10 @@
 						<ed:Equation oid="!ed/4913/7408/14F4/4bb3130076c5"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_Ptty6 = _L1521; -->
+				<!-- ptty6 = _L1521; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_Ptty6"/>
+						<VariableRef name="ptty6"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3397,10 +3397,10 @@
 						<ed:Equation oid="!ed/4914/7408/14F4/4bb313005cd7"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_Pttx7 = _L1522; -->
+				<!-- pttx7 = _L1522; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_Pttx7"/>
+						<VariableRef name="pttx7"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3413,10 +3413,10 @@
 						<ed:Equation oid="!ed/4915/7408/14F4/4bb31300648e"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_Ptty7 = _L1523; -->
+				<!-- ptty7 = _L1523; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_Ptty7"/>
+						<VariableRef name="ptty7"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3429,10 +3429,10 @@
 						<ed:Equation oid="!ed/4916/7408/14F4/4bb31300bd2"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_Pttx8 = _L1524; -->
+				<!-- pttx8 = _L1524; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_Pttx8"/>
+						<VariableRef name="pttx8"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3445,10 +3445,10 @@
 						<ed:Equation oid="!ed/4917/7408/14F4/4bb31300563f"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_Ptty8 = _L1525; -->
+				<!-- ptty8 = _L1525; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_Ptty8"/>
+						<VariableRef name="ptty8"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3629,10 +3629,10 @@
 						<ed:Equation oid="!ed/491d/7408/14F4/4bb313005f87"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_V_x_aircraft = _L1540; -->
+				<!-- vxAircraft = _L1540; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_V_x_aircraft"/>
+						<VariableRef name="vxAircraft"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3645,10 +3645,10 @@
 						<ed:Equation oid="!ed/491e/7408/14F4/4bb313002780"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_V_z_aircraft = _L1541; -->
+				<!-- vzAircraft = _L1541; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_V_z_aircraft"/>
+						<VariableRef name="vzAircraft"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3661,10 +3661,10 @@
 						<ed:Equation oid="!ed/491f/7408/14F4/4bb313002de4"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_Yow = _L1542; -->
+				<!-- yow = _L1542; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_Yow"/>
+						<VariableRef name="yow"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3677,10 +3677,10 @@
 						<ed:Equation oid="!ed/4920/7408/14F4/4bb31300b7b"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_RT = _L1538; -->
+				<!-- rt = _L1538; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_RT"/>
+						<VariableRef name="rt"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3724,10 +3724,10 @@
 						<ed:Equation oid="!ed/4922/7408/14F4/4bb3130030e8"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_RT1 = _L1603; -->
+				<!-- rt1 = _L1603; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_RT1"/>
+						<VariableRef name="rt1"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3740,10 +3740,10 @@
 						<ed:Equation oid="!ed/4923/7408/14F4/4bb313003f1c"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_RT2 = _L1604; -->
+				<!-- rt2 = _L1604; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_RT2"/>
+						<VariableRef name="rt2"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3756,10 +3756,10 @@
 						<ed:Equation oid="!ed/4924/7408/14F4/4bb31300cc8"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_RT3 = _L1605; -->
+				<!-- rt3 = _L1605; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_RT3"/>
+						<VariableRef name="rt3"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3772,10 +3772,10 @@
 						<ed:Equation oid="!ed/4925/7408/14F4/4bb3130062da"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_RT4 = _L1606; -->
+				<!-- rt4 = _L1606; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_RT4"/>
+						<VariableRef name="rt4"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3788,10 +3788,10 @@
 						<ed:Equation oid="!ed/4926/7408/14F4/4bb313006b96"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_VT1 = _L1579; -->
+				<!-- vt1 = _L1579; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_VT1"/>
+						<VariableRef name="vt1"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3804,10 +3804,10 @@
 						<ed:Equation oid="!ed/4927/7408/14F4/4bb3130017fa"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_VT2 = _L1580; -->
+				<!-- vt2 = _L1580; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_VT2"/>
+						<VariableRef name="vt2"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3820,10 +3820,10 @@
 						<ed:Equation oid="!ed/4928/7408/14F4/4bb3130048b9"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_VT3 = _L1581; -->
+				<!-- vt3 = _L1581; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_VT3"/>
+						<VariableRef name="vt3"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3836,10 +3836,10 @@
 						<ed:Equation oid="!ed/4929/7408/14F4/4bb3130037a7"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_VT4 = _L1582; -->
+				<!-- vt4 = _L1582; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_VT4"/>
+						<VariableRef name="vt4"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3852,10 +3852,10 @@
 						<ed:Equation oid="!ed/492a/7408/14F4/4bb313003e89"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_XT1 = _L1559; -->
+				<!-- xt1 = _L1559; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_XT1"/>
+						<VariableRef name="xt1"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3868,10 +3868,10 @@
 						<ed:Equation oid="!ed/492b/7408/14F4/4bb31300694f"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_YT1 = _L1560; -->
+				<!-- yt1 = _L1560; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_YT1"/>
+						<VariableRef name="yt1"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3884,10 +3884,10 @@
 						<ed:Equation oid="!ed/492c/7408/14F4/4bb313003b69"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_XT2 = _L1561; -->
+				<!-- xt2 = _L1561; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_XT2"/>
+						<VariableRef name="xt2"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3900,10 +3900,10 @@
 						<ed:Equation oid="!ed/492d/7408/14F4/4bb313005bcc"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_YT2 = _L1562; -->
+				<!-- yt2 = _L1562; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_YT2"/>
+						<VariableRef name="yt2"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3916,10 +3916,10 @@
 						<ed:Equation oid="!ed/492e/7408/14F4/4bb313004cc2"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_XT3 = _L1563; -->
+				<!-- xt3 = _L1563; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_XT3"/>
+						<VariableRef name="xt3"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3932,10 +3932,10 @@
 						<ed:Equation oid="!ed/492f/7408/14F4/4bb31300ee"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_YT3 = _L1564; -->
+				<!-- yt3 = _L1564; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_YT3"/>
+						<VariableRef name="yt3"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3948,10 +3948,10 @@
 						<ed:Equation oid="!ed/4930/7408/14F4/4bb3130016f1"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_XT4 = _L1565; -->
+				<!-- xt4 = _L1565; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_XT4"/>
+						<VariableRef name="xt4"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3964,10 +3964,10 @@
 						<ed:Equation oid="!ed/4931/7408/14F4/4bb313002648"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_YT4 = _L1566; -->
+				<!-- yt4 = _L1566; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_YT4"/>
+						<VariableRef name="yt4"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3980,10 +3980,10 @@
 						<ed:Equation oid="!ed/4932/7408/14F4/4bb31300954"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_ST1X = _L1567; -->
+				<!-- st1x = _L1567; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_ST1X"/>
+						<VariableRef name="st1x"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -3996,10 +3996,10 @@
 						<ed:Equation oid="!ed/4933/7408/14F4/4bb313005d6b"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_ST1Y = _L1568; -->
+				<!-- sty1 = _L1568; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_ST1Y"/>
+						<VariableRef name="sty1"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -4012,10 +4012,10 @@
 						<ed:Equation oid="!ed/4934/7408/14F4/4bb313001823"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_ST2X = _L1569; -->
+				<!-- st2x = _L1569; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_ST2X"/>
+						<VariableRef name="st2x"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -4028,10 +4028,10 @@
 						<ed:Equation oid="!ed/4935/7408/14F4/4bb3130076f6"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_ST2Y = _L1570; -->
+				<!-- st2y = _L1570; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_ST2Y"/>
+						<VariableRef name="st2y"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -4044,10 +4044,10 @@
 						<ed:Equation oid="!ed/4936/7408/14F4/4bb3130051bb"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_ST3X = _L1571; -->
+				<!-- st3x = _L1571; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_ST3X"/>
+						<VariableRef name="st3x"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -4060,10 +4060,10 @@
 						<ed:Equation oid="!ed/4937/7408/14F4/4bb313002f22"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_ST3Y = _L1572; -->
+				<!-- st3y = _L1572; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_ST3Y"/>
+						<VariableRef name="st3y"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -4076,10 +4076,10 @@
 						<ed:Equation oid="!ed/4938/7408/14F4/4bb31300137b"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_ST4X = _L1573; -->
+				<!-- st4x = _L1573; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_ST4X"/>
+						<VariableRef name="st4x"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -4092,10 +4092,10 @@
 						<ed:Equation oid="!ed/4939/7408/14F4/4bb313005fb4"/>
 					</pragmas>
 				</Equation>
-				<!-- SDY_ST4Y = _L1574; -->
+				<!-- st4y = _L1574; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SDY_ST4Y"/>
+						<VariableRef name="st4y"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -4562,10 +4562,10 @@
 						<ed:Equation oid="!ed/4955/7408/14F4/4bb313007a41"/>
 					</pragmas>
 				</Equation>
-				<!-- O_Btn_Data = _L1384; -->
+				<!-- btnDataOut = _L1384; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="O_Btn_Data"/>
+						<VariableRef name="btnDataOut"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -4578,10 +4578,10 @@
 						<ed:Equation oid="!ed/4a43/7408/14F4/4bb3137b6708"/>
 					</pragmas>
 				</Equation>
-				<!-- O_Additional_Data = _L1385; -->
+				<!-- additionalData = _L1385; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="O_Additional_Data"/>
+						<VariableRef name="additionalData"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -4594,7 +4594,7 @@
 						<ed:Equation oid="!ed/4a4f/7408/14F4/4bb3153918f4"/>
 					</pragmas>
 				</Equation>
-				<!-- _L1608 = I_Pointer1_Data; -->
+				<!-- _L1608 = pointer1Data; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1608"/>
@@ -4602,7 +4602,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="I_Pointer1_Data"/>
+								<ConstVarRef name="pointer1Data"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -4610,7 +4610,7 @@
 						<ed:Equation oid="!ed/4a95/10F2/12FC/4c65834f7429"/>
 					</pragmas>
 				</Equation>
-				<!-- _L1610 = I_Btn_Data; -->
+				<!-- _L1610 = btnDataIn; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1610"/>
@@ -4618,7 +4618,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="I_Btn_Data"/>
+								<ConstVarRef name="btnDataIn"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -4626,10 +4626,10 @@
 						<ed:Equation oid="!ed/4a99/10F2/12FC/4c65834f719b"/>
 					</pragmas>
 				</Equation>
-				<!-- M0Present = _L1615; -->
+				<!-- m0Present = _L1615; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="M0Present"/>
+						<VariableRef name="m0Present"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -4642,7 +4642,7 @@
 						<ed:Equation oid="!ed/498b/276/17BC/4f621f5e1a87"/>
 					</pragmas>
 				</Equation>
-				<!-- _L1612 = I_Interactivity_Data; -->
+				<!-- _L1612 = interactivityDataIn; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1612"/>
@@ -4650,7 +4650,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="I_Interactivity_Data"/>
+								<ConstVarRef name="interactivityDataIn"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -4682,7 +4682,7 @@
 						<ed:Equation oid="!ed/9040/45F7/11A8/4f7d66ba2b5"/>
 					</pragmas>
 				</Equation>
-				<!-- _L1617 = I_Pointer2_Data; -->
+				<!-- _L1617 = pointer2Data; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1617"/>
@@ -4690,7 +4690,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="I_Pointer2_Data"/>
+								<ConstVarRef name="pointer2Data"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -4738,10 +4738,10 @@
 						<ed:Equation oid="!ed/5a2a/45EB/26B4/509130fc5102"/>
 					</pragmas>
 				</Equation>
-				<!-- frontopacity = _L1621; -->
+				<!-- frontOpacity = _L1621; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="frontopacity"/>
+						<VariableRef name="frontOpacity"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -4754,10 +4754,10 @@
 						<ed:Equation oid="!ed/5a2e/45EB/26B4/509130fc2912"/>
 					</pragmas>
 				</Equation>
-				<!-- showtext = _L1622; -->
+				<!-- showText = _L1622; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="showtext"/>
+						<VariableRef name="showText"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -4770,10 +4770,10 @@
 						<ed:Equation oid="!ed/5a2f/45EB/26B4/509130fc3e9c"/>
 					</pragmas>
 				</Equation>
-				<!-- backopacity = _L1620; -->
+				<!-- backOpacity = _L1620; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="backopacity"/>
+						<VariableRef name="backOpacity"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -4786,10 +4786,10 @@
 						<ed:Equation oid="!ed/5a30/45EB/26B4/509130fc58b2"/>
 					</pragmas>
 				</Equation>
-				<!-- O_Interactivity_Data = _L1623; -->
+				<!-- interactivityDataOut = _L1623; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="O_Interactivity_Data"/>
+						<VariableRef name="interactivityDataOut"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -4878,10 +4878,10 @@
 						<ed:Equation oid="!ed/5dd0/322B/1C78/52fb8ad817d8"/>
 					</pragmas>
 				</Equation>
-				<!-- M1Present = _L1626; -->
+				<!-- m1Present = _L1626; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="M1Present"/>
+						<VariableRef name="m1Present"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -4994,7 +4994,7 @@
 						<ed:Equation oid="!ed/ce86/5F82/1828/5a25698372d0"/>
 					</pragmas>
 				</Equation>
-				<!-- _L1631 = Go; -->
+				<!-- _L1631 = go; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1631"/>
@@ -5002,7 +5002,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Go"/>
+								<ConstVarRef name="go"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -5042,10 +5042,10 @@
 						<ed:Equation oid="!ed/cea1/5F82/1828/5a256a202170"/>
 					</pragmas>
 				</Equation>
-				<!-- SPEED = _L1627; -->
+				<!-- speed = _L1627; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="SPEED"/>
+						<VariableRef name="speed"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -5058,10 +5058,10 @@
 						<ed:Equation oid="!ed/ceb9/5F82/1828/5a256a477d1"/>
 					</pragmas>
 				</Equation>
-				<!-- HEADING = _L1628; -->
+				<!-- heading = _L1628; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HEADING"/>
+						<VariableRef name="heading"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -5074,10 +5074,10 @@
 						<ed:Equation oid="!ed/ceba/5F82/1828/5a256a471dd9"/>
 					</pragmas>
 				</Equation>
-				<!-- ALTITUDE = _L1629; -->
+				<!-- altitude = _L1629; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="ALTITUDE"/>
+						<VariableRef name="altitude"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -5094,7 +5094,7 @@
 			<pragmas>
 				<ed:Operator oid="!ed/48e7/7408/14F4/4bb313006b94" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 					<diagrams>
-						<NetDiagram name="diagram_GlassCockpit_1" landscape="true" format="A4 (210 297)" oid="!ed/4956/7408/14F4/4bb31300743b">
+						<NetDiagram name="glasCockpit" landscape="true" format="A4 (210 297)" oid="!ed/4956/7408/14F4/4bb31300743b">
 							<presentationElements>
 								<EquationGE presentable="!ed/48e8/7408/14F4/4bb313002422">
 									<position>
@@ -5394,7 +5394,7 @@
 								</Edge>
 							</presentationElements>
 						</NetDiagram>
-						<NetDiagram name="diagram_GlassCockpit_All_Data" landscape="true" format="A4 (210 297)" oid="!ed/4957/7408/14F4/4bb31300647f">
+						<NetDiagram name="glasCockpitAllData" landscape="true" format="A4 (210 297)" oid="!ed/4957/7408/14F4/4bb31300647f">
 							<presentationElements>
 								<EquationGE presentable="!ed/48f2/7408/14F4/4bb313001b81">
 									<position>
@@ -6014,7 +6014,7 @@
 								</Edge>
 							</presentationElements>
 						</NetDiagram>
-						<NetDiagram name="diagram_GlassCockpit_Traj_Data" landscape="true" format="A4 (210 297)" oid="!ed/4958/7408/14F4/4bb3130036c9">
+						<NetDiagram name="glasCockpitTrajData" landscape="true" format="A4 (210 297)" oid="!ed/4958/7408/14F4/4bb3130036c9">
 							<presentationElements>
 								<EquationGE presentable="!ed/48ff/7408/14F4/4bb313006f">
 									<position>
@@ -6426,7 +6426,7 @@
 								</Edge>
 							</presentationElements>
 						</NetDiagram>
-						<NetDiagram name="diagram_GlassCockpit_Tunnel_Data" landscape="true" format="A4 (210 297)" oid="!ed/4959/7408/14F4/4bb313005d9a">
+						<NetDiagram name="glasCockpitTunnelData" landscape="true" format="A4 (210 297)" oid="!ed/4959/7408/14F4/4bb313005d9a">
 							<presentationElements>
 								<EquationGE presentable="!ed/4919/7408/14F4/4bb313002a92">
 									<position>
@@ -6966,7 +6966,7 @@
 								</Edge>
 							</presentationElements>
 						</NetDiagram>
-						<NetDiagram name="diagram_GlassCockpit_PopupText" landscape="true" format="A4 (210 297)" oid="!ed/5a0a/45EB/26B4/509130fa1125">
+						<NetDiagram name="glasCockpitPopUpText" landscape="true" format="A4 (210 297)" oid="!ed/5a0a/45EB/26B4/509130fa1125">
 							<presentationElements>
 								<EquationGE kind="OBJ_NODE" presentable="!ed/5a2a/45EB/26B4/509130fc5102">
 									<position>
@@ -7026,7 +7026,7 @@
 								</Edge>
 							</presentationElements>
 						</NetDiagram>
-						<NetDiagram name="diagram_GlassCockpit_autoPilot" landscape="true" format="A4 (210 297)" oid="!ed/ce5b/5F82/1828/5a2568bb5cbe">
+						<NetDiagram name="glasCockpitAutoPilot" landscape="true" format="A4 (210 297)" oid="!ed/ce5b/5F82/1828/5a2568bb5cbe">
 							<presentationElements>
 								<EquationGE presentable="!ed/ce5c/5F82/1828/5a2568d51bfd">
 									<position>

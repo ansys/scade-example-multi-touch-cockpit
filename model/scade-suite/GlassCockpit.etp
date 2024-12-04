@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project id="1" oid_count="498" defaultConfiguration="18">
+<Project id="1" oid_count="505" defaultConfiguration="18">
 	<props>
 		<Prop id="10" name="@STUDIO:PRODUCT">
 			<value>SC</value>
@@ -221,11 +221,11 @@
 			<configuration>302</configuration>
 		</Prop>
 		<Prop id="308" name="@GENERATOR:GENERATOR">
-			<value>C QUAL661</value>
+			<value>C QUAL663</value>
 			<configuration>302</configuration>
 		</Prop>
 		<Prop id="309" name="@GENERATOR:TARGET_DIR">
-			<value>..\..\Executables</value>
+			<value>$(Configuration)</value>
 			<configuration>302</configuration>
 		</Prop>
 		<Prop id="310" name="@GENERATOR:EXECUTION_PERIODE">
@@ -329,10 +329,6 @@
 		<Prop id="422" name="@SCADE:DEFAULTFILE">
 			<value>GlassCockpit.xscade</value>
 		</Prop>
-		<Prop id="431" name="@GENERATOR:ROOTNODE">
-			<value>GlassCockpit</value>
-			<configuration>302</configuration>
-		</Prop>
 		<Prop id="450" name="@STUDIO:TOOLCONF">
 			<value>Synchronization</value>
 			<value>12</value>
@@ -357,10 +353,6 @@
 		<Prop id="469" name="@SCADE:ASSTRING_TRIM">
 			<value></value>
 		</Prop>
-		<Prop id="473" name="@GENERATOR:DISPLAY_ENABLED_PANELS">
-			<value>..\Display\GCS.sgfx,Code</value>
-			<configuration>12</configuration>
-		</Prop>
 		<Prop id="474" name="@STUDIO:TOOLCONF">
 			<value>Import/Export</value>
 			<value>12</value>
@@ -371,7 +363,7 @@
 			<value>302</value>
 		</Prop>
 		<Prop id="485" name="@GENERATOR:DISPLAY_DISABLED_PANELS">
-			<value>..\Display\GCS.sgfx</value>
+			<value>..\scade-display\GCS.sgfx</value>
 			<configuration>18</configuration>
 		</Prop>
 		<Prop id="486" name="@SCADE:NOTEFILE">
@@ -398,6 +390,48 @@
 		</Prop>
 		<Prop id="498" name="@GENERATOR:DISPLAY_ENABLED_PANELS">
 			<value>..\scade-display\GCS.sgfx,Co-simulation</value>
+			<configuration>302</configuration>
+		</Prop>
+		<Prop id="500" name="@GENERATOR:DISPLAY_DISABLED_PANELS">
+			<value>..\scade-display\GCS.sgfx</value>
+			<configuration>12</configuration>
+		</Prop>
+		<Prop id="501" name="@METRICS_RULES:SELECTED_ROOTS">
+			<value>GlassCockpit</value>
+			<configuration>12</configuration>
+		</Prop>
+		<Prop id="502" name="@METRICS_RULES:USER_DEF_FILES">
+			<value>$(SCADE)/scripts/MetricRule/DefaultMetrics.py</value>
+			<value>$(SCADE)/scripts/MetricRule/DefaultRules.py</value>
+		</Prop>
+		<Prop id="503" name="@METRICS_RULES:RULES_PARAM">
+			<value>SDR-30-1,7</value>
+			<value>SDR-38,&lt;, &gt;, &lt;=, &gt;=, =, &lt;&gt;</value>
+			<value>SDR-30-6,7</value>
+			<value>SDR-30-5,7</value>
+			<value>SDR-30-4,5</value>
+			<value>SDR-52,true,false</value>
+			<value>SDR-19,in=acc.*In, out=acc.*Out, strict=False</value>
+			<value>SDR-65,configuration=</value>
+			<value>SDR-51,index=index</value>
+			<value>SDR-22,10</value>
+			<value>SDR-64,configuration=</value>
+			<value>SDR-31,margins=0;0</value>
+			<value>SDR-32,upper_levels=1</value>
+			<value>SDR-20,continue=continue</value>
+			<value>SDR-30-3,15</value>
+			<value>SDR-30-2,7</value>
+			<configuration>12</configuration>
+		</Prop>
+		<Prop id="504" name="@METRICS_RULES:SELECTED_RULES">
+			<value>SDR-38</value>
+			<value>SDR-18</value>
+			<value>SDR-21</value>
+			<value>SDR-11-12-2</value>
+			<configuration>12</configuration>
+		</Prop>
+		<Prop id="505" name="@GENERATOR:ROOTNODE">
+			<value>glassCockpit</value>
 			<configuration>302</configuration>
 		</Prop>
 	</props>
