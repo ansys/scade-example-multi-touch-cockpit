@@ -3,7 +3,7 @@
 	<declarations>
 		<Package name="PFD">
 			<declarations>
-				<Type name="TTrajectoryData">
+				<Type name="trajectoryData">
 					<definition>
 						<Table>
 							<type>
@@ -22,7 +22,7 @@
 						<ed:Type oid="!ed/5229/7D49/B98/494240aa2c37"/>
 					</pragmas>
 				</Type>
-				<Type name="TScreenInfoData">
+				<Type name="screenInfoData">
 					<definition>
 						<Struct>
 							<fields>
@@ -273,7 +273,7 @@
 						<ed:Type oid="!ed/5207/7D49/B98/494240aa497f"/>
 					</pragmas>
 				</Type>
-				<Type name="TSpeedAltData">
+				<Type name="speedAltData">
 					<definition>
 						<Struct>
 							<fields>
@@ -329,7 +329,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="SpeedAlt::Ttape"/>
+												<TypeRef name="SpeedAlt::tape"/>
 											</type>
 										</NamedType>
 									</type>
@@ -341,7 +341,7 @@
 									<type>
 										<NamedType>
 											<type>
-												<TypeRef name="SpeedAlt::Ttape"/>
+												<TypeRef name="SpeedAlt::tape"/>
 											</type>
 										</NamedType>
 									</type>
@@ -356,7 +356,7 @@
 						<ed:Type oid="!ed/51e7/7D49/B98/494240aa36b5"/>
 					</pragmas>
 				</Type>
-				<Type name="TTunnelData">
+				<Type name="tunnelData">
 					<definition>
 						<Struct>
 							<fields>
@@ -491,7 +491,7 @@
 						<ed:Type oid="!ed/527a/7D49/B98/494242a17283"/>
 					</pragmas>
 				</Type>
-				<Type name="TAdiData">
+				<Type name="adiData">
 					<definition>
 						<Struct>
 							<fields>
@@ -598,7 +598,7 @@
 						<ed:Type oid="!ed/5336/7D49/B98/4942675251d0"/>
 					</pragmas>
 				</Type>
-				<Type name="THsiData">
+				<Type name="hsiData">
 					<definition>
 						<Struct>
 							<fields>
@@ -837,9 +837,9 @@
 						<ed:Type oid="!ed/539c/7D49/B98/4942688b5c48"/>
 					</pragmas>
 				</Type>
-				<Operator kind="node" name="PFD_Compute">
+				<Operator kind="node" name="pfdCompute">
 					<inputs>
-						<Variable name="Trajec">
+						<Variable name="trajec">
 							<type>
 								<NamedType>
 									<type>
@@ -851,7 +851,7 @@
 								<ed:Variable oid="!ed/388a/34F2/C0C/485239f8fee"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Altitude_Info">
+						<Variable name="altitudeInfo">
 							<type>
 								<NamedType>
 									<type>
@@ -863,7 +863,7 @@
 								<ed:Variable oid="!ed/38f7/34F2/C0C/48523efe2bc9"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Menu_Info">
+						<Variable name="menuInfo">
 							<type>
 								<NamedType>
 									<type>
@@ -875,7 +875,7 @@
 								<ed:Variable oid="!ed/388b/34F2/C0C/485239f878d8"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Systeme_Info">
+						<Variable name="systemInfo">
 							<type>
 								<NamedType>
 									<type>
@@ -887,7 +887,7 @@
 								<ed:Variable oid="!ed/388c/34F2/C0C/485239f8352a"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Primary_Nav_Data">
+						<Variable name="primaryNavData">
 							<type>
 								<NamedType>
 									<type>
@@ -899,7 +899,7 @@
 								<ed:Variable oid="!ed/388d/34F2/C0C/485239f85af5"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Secondary_Nav_Data">
+						<Variable name="secondaryNavData">
 							<type>
 								<NamedType>
 									<type>
@@ -911,7 +911,7 @@
 								<ed:Variable oid="!ed/388e/34F2/C0C/485239f8597d"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Flight_Director_Info">
+						<Variable name="flightDirectorInfo">
 							<type>
 								<NamedType>
 									<type>
@@ -923,7 +923,7 @@
 								<ed:Variable oid="!ed/388f/34F2/C0C/485239f84d9c"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Screen_Info">
+						<Variable name="screenInfo">
 							<type>
 								<NamedType>
 									<type>
@@ -935,7 +935,7 @@
 								<ed:Variable oid="!ed/3890/34F2/C0C/485239f823d0"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Aircraft_Info">
+						<Variable name="aircraftInfo">
 							<type>
 								<NamedType>
 									<type>
@@ -947,7 +947,7 @@
 								<ed:Variable oid="!ed/38e1/34F2/C0C/48523e956219"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Aircraft_Position">
+						<Variable name="aircraftPosition">
 							<type>
 								<NamedType>
 									<type>
@@ -959,7 +959,7 @@
 								<ed:Variable oid="!ed/3917/34F2/C0C/485240336483"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Aircraft_Pitch">
+						<Variable name="aircraftPitch">
 							<type>
 								<NamedType>
 									<type>
@@ -971,7 +971,7 @@
 								<ed:Variable oid="!ed/3918/34F2/C0C/485240416147"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Aircraft_Yaw">
+						<Variable name="aircraftYaw">
 							<type>
 								<NamedType>
 									<type>
@@ -983,7 +983,7 @@
 								<ed:Variable oid="!ed/3919/34F2/C0C/4852404718d3"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Aircraft_Roll">
+						<Variable name="aircraftRoll">
 							<type>
 								<NamedType>
 									<type>
@@ -997,11 +997,11 @@
 						</Variable>
 					</inputs>
 					<outputs>
-						<Variable name="O_SpeedAlt_Data">
+						<Variable name="speedAltData">
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="TSpeedAltData"/>
+										<TypeRef name="PFD::speedAltData"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1009,11 +1009,11 @@
 								<ed:Variable oid="!ed/51d3/7D49/B98/4942406e2037"/>
 							</pragmas>
 						</Variable>
-						<Variable name="O_ScreenInfo_Data">
+						<Variable name="screenInfoData">
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="TScreenInfoData"/>
+										<TypeRef name="PFD::screenInfoData"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1021,11 +1021,11 @@
 								<ed:Variable oid="!ed/5233/7D49/B98/49424142282c"/>
 							</pragmas>
 						</Variable>
-						<Variable name="O_Trajectory_Data">
+						<Variable name="trajectory_Data">
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="TTrajectoryData"/>
+										<TypeRef name="trajectoryData"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1033,11 +1033,11 @@
 								<ed:Variable oid="!ed/523b/7D49/B98/494241425f2c"/>
 							</pragmas>
 						</Variable>
-						<Variable name="O_Tunnel_Data">
+						<Variable name="tunnel_Data">
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="TTunnelData"/>
+										<TypeRef name="tunnelData"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1045,11 +1045,11 @@
 								<ed:Variable oid="!ed/52c6/7D49/B98/494264745419"/>
 							</pragmas>
 						</Variable>
-						<Variable name="O_Adi_Data">
+						<Variable name="adiData">
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="TAdiData"/>
+										<TypeRef name="PFD::adiData"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1057,11 +1057,11 @@
 								<ed:Variable oid="!ed/5334/7D49/B98/494267446bcb"/>
 							</pragmas>
 						</Variable>
-						<Variable name="O_Hsi_Data">
+						<Variable name="hsiData">
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="THsiData"/>
+										<TypeRef name="PFD::hsiData"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1723,7 +1723,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="SpeedAlt::Ttape"/>
+										<TypeRef name="SpeedAlt::tape"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1735,7 +1735,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="SpeedAlt::Ttape"/>
+										<TypeRef name="SpeedAlt::tape"/>
 									</type>
 								</NamedType>
 							</type>
@@ -2755,7 +2755,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="TSpeedAltData"/>
+										<TypeRef name="PFD::speedAltData"/>
 									</type>
 								</NamedType>
 							</type>
@@ -2767,7 +2767,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="TScreenInfoData"/>
+										<TypeRef name="PFD::screenInfoData"/>
 									</type>
 								</NamedType>
 							</type>
@@ -2798,7 +2798,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="TTunnelData"/>
+										<TypeRef name="tunnelData"/>
 									</type>
 								</NamedType>
 							</type>
@@ -2886,7 +2886,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="TAdiData"/>
+										<TypeRef name="PFD::adiData"/>
 									</type>
 								</NamedType>
 							</type>
@@ -2898,7 +2898,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="THsiData"/>
+										<TypeRef name="PFD::hsiData"/>
 									</type>
 								</NamedType>
 							</type>
@@ -3137,12 +3137,12 @@
 								<VariableRef name="_L244"/>
 							</lefts>
 							<right>
-								<!-- ScreenInfo::Init_Conf(_L130, _L131) -->
+								<!-- ScreenInfo::initConf(_L130, _L131) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="1">
 											<operator>
-												<OperatorRef name="ScreenInfo::Init_Conf"/>
+												<OperatorRef name="ScreenInfo::initConf"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -3161,7 +3161,7 @@
 									<pragmas>
 										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 											<references>
-												<OperatorRef path="ScreenInfo::Init_Conf" refOid="!ed/1010/1E36/EE4/475ae17569bb">
+												<OperatorRef path="ScreenInfo::initConf" refOid="!ed/1010/1E36/EE4/475ae17569bb">
 													<InputRef refOid="!ed/1023/1E36/EE4/475ae175508"/>
 													<InputRef refOid="!ed/1024/1E36/EE4/475ae17532ba"/>
 													<OutputRef refOid="!ed/1015/1E36/EE4/475ae17578b2"/>
@@ -3194,7 +3194,7 @@
 								<ed:Equation oid="!ed/35fd/34F2/C0C/485239f842e"/>
 							</pragmas>
 						</Equation>
-						<!-- _L127 = Screen_Info; -->
+						<!-- _L127 = screenInfo; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L127"/>
@@ -3202,7 +3202,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Screen_Info"/>
+										<ConstVarRef name="screenInfo"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -3307,7 +3307,7 @@
 								<ed:Equation oid="!ed/3637/34F2/C0C/485239f81c2a"/>
 							</pragmas>
 						</Equation>
-						<!-- _L254, _L255, _L257, _L258 = SpeedAlt::SPD_ALT_Computation(_L864); -->
+						<!-- _L254, _L255, _L257, _L258 = SpeedAlt::spdAltComputation(_L864); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L254"/>
@@ -3316,12 +3316,12 @@
 								<VariableRef name="_L258"/>
 							</lefts>
 							<right>
-								<!-- SpeedAlt::SPD_ALT_Computation(_L864) -->
+								<!-- SpeedAlt::spdAltComputation(_L864) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="1">
 											<operator>
-												<OperatorRef name="SpeedAlt::SPD_ALT_Computation"/>
+												<OperatorRef name="SpeedAlt::spdAltComputation"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -3335,7 +3335,7 @@
 									<pragmas>
 										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 											<references>
-												<OperatorRef path="SpeedAlt::SPD_ALT_Computation" refOid="!ed/122a/1596/B6C/476a4ef34c93">
+												<OperatorRef path="SpeedAlt::spdAltComputation" refOid="!ed/122a/1596/B6C/476a4ef34c93">
 													<InputRef refOid="!ed/122c/1596/B6C/476a4f2d5ec"/>
 													<OutputRef refOid="!ed/1253/1596/B6C/476a4f7a7a5a"/>
 													<OutputRef refOid="!ed/1254/1596/B6C/476a4f925750"/>
@@ -3525,7 +3525,7 @@
 								<ed:Equation oid="!ed/36b4/34F2/C0C/485239f857c4"/>
 							</pragmas>
 						</Equation>
-						<!-- _L991 = Trajec; -->
+						<!-- _L991 = trajec; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L991"/>
@@ -3533,7 +3533,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Trajec"/>
+										<ConstVarRef name="trajec"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -3554,12 +3554,12 @@
 								<VariableRef name="_L1020"/>
 							</lefts>
 							<right>
-								<!-- TrajectDisplay::Traject_display_in(_L991, _L1130) -->
+								<!-- TrajectDisplay::trajectDisplayIn(_L991, _L1130) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="1">
 											<operator>
-												<OperatorRef name="TrajectDisplay::Traject_display_in"/>
+												<OperatorRef name="TrajectDisplay::trajectDisplayIn"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -3578,7 +3578,7 @@
 									<pragmas>
 										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 											<references>
-												<OperatorRef path="TrajectDisplay::Traject_display_in" refOid="!ed/6bc4/6992/10B8/484d1ac12934">
+												<OperatorRef path="TrajectDisplay::trajectDisplayIn" refOid="!ed/6bc4/6992/10B8/484d1ac12934">
 													<InputRef refOid="!ed/6dbd/6992/10B8/484d1ae37298"/>
 													<InputRef refOid="!ed/6e1d/6992/10B8/484d1b144ef2"/>
 													<OutputRef refOid="!ed/6dc3/6992/10B8/484d1ae313a"/>
@@ -3923,7 +3923,7 @@
 								<ed:Equation oid="!ed/36dc/34F2/C0C/485239f878b5"/>
 							</pragmas>
 						</Equation>
-						<!-- _L594 = Trajec; -->
+						<!-- _L594 = trajec; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L594"/>
@@ -3931,7 +3931,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Trajec"/>
+										<ConstVarRef name="trajec"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -4092,7 +4092,7 @@
 								<ed:Equation oid="!ed/36fc/34F2/C0C/485239f81fb"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1120 = Menu_Info; -->
+						<!-- _L1120 = menuInfo; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1120"/>
@@ -4100,7 +4100,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Menu_Info"/>
+										<ConstVarRef name="menuInfo"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -4108,7 +4108,7 @@
 								<ed:Equation oid="!ed/38c3/34F2/C0C/48523dcf92f"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1121 = Systeme_Info; -->
+						<!-- _L1121 = systemInfo; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1121"/>
@@ -4116,7 +4116,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Systeme_Info"/>
+										<ConstVarRef name="systemInfo"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -4124,7 +4124,7 @@
 								<ed:Equation oid="!ed/38c9/34F2/C0C/48523dd41e5c"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1122 = Primary_Nav_Data; -->
+						<!-- _L1122 = primaryNavData; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1122"/>
@@ -4132,7 +4132,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Primary_Nav_Data"/>
+										<ConstVarRef name="primaryNavData"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -4140,7 +4140,7 @@
 								<ed:Equation oid="!ed/38cf/34F2/C0C/48523dd97eb6"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1123 = Secondary_Nav_Data; -->
+						<!-- _L1123 = secondaryNavData; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1123"/>
@@ -4148,7 +4148,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Secondary_Nav_Data"/>
+										<ConstVarRef name="secondaryNavData"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -4156,7 +4156,7 @@
 								<ed:Equation oid="!ed/38d5/34F2/C0C/48523ddf4725"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1124 = Flight_Director_Info; -->
+						<!-- _L1124 = flightDirectorInfo; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1124"/>
@@ -4164,7 +4164,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Flight_Director_Info"/>
+										<ConstVarRef name="flightDirectorInfo"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -4172,7 +4172,7 @@
 								<ed:Equation oid="!ed/38db/34F2/C0C/48523dfedff"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1125 = Aircraft_Info; -->
+						<!-- _L1125 = aircraftInfo; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1125"/>
@@ -4180,7 +4180,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Aircraft_Info"/>
+										<ConstVarRef name="aircraftInfo"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -4188,7 +4188,7 @@
 								<ed:Equation oid="!ed/38eb/34F2/C0C/48523ec3304f"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1126 = Aircraft_Info; -->
+						<!-- _L1126 = aircraftInfo; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1126"/>
@@ -4196,7 +4196,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Aircraft_Info"/>
+										<ConstVarRef name="aircraftInfo"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -4204,7 +4204,7 @@
 								<ed:Equation oid="!ed/38f1/34F2/C0C/48523ec63c82"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1127 = Altitude_Info; -->
+						<!-- _L1127 = altitudeInfo; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1127"/>
@@ -4212,7 +4212,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Altitude_Info"/>
+										<ConstVarRef name="altitudeInfo"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -4220,7 +4220,7 @@
 								<ed:Equation oid="!ed/3901/34F2/C0C/48523f0c224f"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1128 = Altitude_Info; -->
+						<!-- _L1128 = altitudeInfo; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1128"/>
@@ -4228,7 +4228,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Altitude_Info"/>
+										<ConstVarRef name="altitudeInfo"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -4236,7 +4236,7 @@
 								<ed:Equation oid="!ed/3907/34F2/C0C/48523f0f6672"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1129 = Aircraft_Position; -->
+						<!-- _L1129 = aircraftPosition; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1129"/>
@@ -4244,7 +4244,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Aircraft_Position"/>
+										<ConstVarRef name="aircraftPosition"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -4252,7 +4252,7 @@
 								<ed:Equation oid="!ed/393c/34F2/C0C/485240742aac"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1130 = Aircraft_Position; -->
+						<!-- _L1130 = aircraftPosition; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1130"/>
@@ -4260,7 +4260,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Aircraft_Position"/>
+										<ConstVarRef name="aircraftPosition"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -4268,7 +4268,7 @@
 								<ed:Equation oid="!ed/3942/34F2/C0C/485240806fe4"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1131 = Aircraft_Position; -->
+						<!-- _L1131 = aircraftPosition; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1131"/>
@@ -4276,7 +4276,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Aircraft_Position"/>
+										<ConstVarRef name="aircraftPosition"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -4284,7 +4284,7 @@
 								<ed:Equation oid="!ed/3948/34F2/C0C/4852409450cb"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1132 = Aircraft_Pitch; -->
+						<!-- _L1132 = aircraftPitch; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1132"/>
@@ -4292,7 +4292,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Aircraft_Pitch"/>
+										<ConstVarRef name="aircraftPitch"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -4300,7 +4300,7 @@
 								<ed:Equation oid="!ed/394e/34F2/C0C/485240c6880"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1133 = Aircraft_Yaw; -->
+						<!-- _L1133 = aircraftYaw; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1133"/>
@@ -4308,7 +4308,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Aircraft_Yaw"/>
+										<ConstVarRef name="aircraftYaw"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -4316,7 +4316,7 @@
 								<ed:Equation oid="!ed/3954/34F2/C0C/485240cc5a0c"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1134 = Aircraft_Roll; -->
+						<!-- _L1134 = aircraftRoll; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1134"/>
@@ -4324,7 +4324,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Aircraft_Roll"/>
+										<ConstVarRef name="aircraftRoll"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -4386,10 +4386,10 @@
 								<ed:Equation oid="!ed/4afe/2CC7/AA4/492c1d96729f"/>
 							</pragmas>
 						</Equation>
-						<!-- O_SpeedAlt_Data = _L1138; -->
+						<!-- speedAltData = _L1138; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="O_SpeedAlt_Data"/>
+								<VariableRef name="speedAltData"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4402,18 +4402,18 @@
 								<ed:Equation oid="!ed/51d5/7D49/B98/494240703ee7"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1138 = (make TSpeedAltData)(_L250, _L1136, _L254, _L255, _L257, _L258); -->
+						<!-- _L1138 = (make PFD::speedAltData)(_L250, _L1136, _L254, _L255, _L257, _L258); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1138"/>
 							</lefts>
 							<right>
-								<!-- (make TSpeedAltData)(_L250, _L1136, _L254, _L255, _L257, _L258) -->
+								<!-- (make PFD::speedAltData)(_L250, _L1136, _L254, _L255, _L257, _L258) -->
 								<CallExpression>
 									<operator>
 										<MakeOp>
 											<type>
-												<TypeRef name="TSpeedAltData"/>
+												<TypeRef name="PFD::speedAltData"/>
 											</type>
 										</MakeOp>
 									</operator>
@@ -4455,10 +4455,10 @@
 								<ed:Equation oid="!ed/522a/7D49/B98/494240be7b96"/>
 							</pragmas>
 						</Equation>
-						<!-- O_ScreenInfo_Data = _L1139; -->
+						<!-- screenInfoData = _L1139; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="O_ScreenInfo_Data"/>
+								<VariableRef name="screenInfoData"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4471,18 +4471,18 @@
 								<ed:Equation oid="!ed/526a/7D49/B98/494241713a17"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1139 = (make TScreenInfoData)(_L113, _L114, _L115, _L116, _L117, _L118, _L119, ... -->
+						<!-- _L1139 = (make PFD::screenInfoData)(_L113, _L114, _L115, _L116, _L117, _L118, _L1... -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1139"/>
 							</lefts>
 							<right>
-								<!-- (make TScreenInfoData)(_L113, _L114, _L115, _L116, _L117, _L118, _L119, _L120, _L... -->
+								<!-- (make PFD::screenInfoData)(_L113, _L114, _L115, _L116, _L117, _L118, _L119, _L120... -->
 								<CallExpression>
 									<operator>
 										<MakeOp>
 											<type>
-												<TypeRef name="TScreenInfoData"/>
+												<TypeRef name="PFD::screenInfoData"/>
 											</type>
 										</MakeOp>
 									</operator>
@@ -4594,10 +4594,10 @@
 								<ed:Equation oid="!ed/526f/7D49/B98/494241763bc0"/>
 							</pragmas>
 						</Equation>
-						<!-- O_Trajectory_Data = _L1140; -->
+						<!-- trajectory_Data = _L1140; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="O_Trajectory_Data"/>
+								<VariableRef name="trajectory_Data"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4746,10 +4746,10 @@
 								<ed:Equation oid="!ed/5277/7D49/B98/494241d21f11"/>
 							</pragmas>
 						</Equation>
-						<!-- O_Tunnel_Data = _L1141; -->
+						<!-- tunnel_Data = _L1141; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="O_Tunnel_Data"/>
+								<VariableRef name="tunnel_Data"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4762,18 +4762,18 @@
 								<ed:Equation oid="!ed/52d1/7D49/B98/49426568610b"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1141 = (make TTunnelData)(_L1148, _L1149, _L1150, _L1039, _L1151, _L1156, _L115... -->
+						<!-- _L1141 = (make tunnelData)(_L1148, _L1149, _L1150, _L1039, _L1151, _L1156, _L1157... -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1141"/>
 							</lefts>
 							<right>
-								<!-- (make TTunnelData)(_L1148, _L1149, _L1150, _L1039, _L1151, _L1156, _L1157, _L1154... -->
+								<!-- (make tunnelData)(_L1148, _L1149, _L1150, _L1039, _L1151, _L1156, _L1157, _L1154) -->
 								<CallExpression>
 									<operator>
 										<MakeOp>
 											<type>
-												<TypeRef name="TTunnelData"/>
+												<TypeRef name="tunnelData"/>
 											</type>
 										</MakeOp>
 									</operator>
@@ -5009,10 +5009,10 @@
 								<ed:Equation oid="!ed/5320/7D49/B98/494265f754"/>
 							</pragmas>
 						</Equation>
-						<!-- O_Adi_Data = _L1152; -->
+						<!-- adiData = _L1152; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="O_Adi_Data"/>
+								<VariableRef name="adiData"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -5025,18 +5025,18 @@
 								<ed:Equation oid="!ed/5388/7D49/B98/4942681a12dc"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1152 = (make TAdiData)(_L50, _L51, _L52, _L53, _L54, _L55, _L56, _L57); -->
+						<!-- _L1152 = (make PFD::adiData)(_L50, _L51, _L52, _L53, _L54, _L55, _L56, _L57); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1152"/>
 							</lefts>
 							<right>
-								<!-- (make TAdiData)(_L50, _L51, _L52, _L53, _L54, _L55, _L56, _L57) -->
+								<!-- (make PFD::adiData)(_L50, _L51, _L52, _L53, _L54, _L55, _L56, _L57) -->
 								<CallExpression>
 									<operator>
 										<MakeOp>
 											<type>
-												<TypeRef name="TAdiData"/>
+												<TypeRef name="PFD::adiData"/>
 											</type>
 										</MakeOp>
 									</operator>
@@ -5088,10 +5088,10 @@
 								<ed:Equation oid="!ed/538d/7D49/B98/4942681c2c00"/>
 							</pragmas>
 						</Equation>
-						<!-- O_Hsi_Data = _L1153; -->
+						<!-- hsiData = _L1153; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="O_Hsi_Data"/>
+								<VariableRef name="hsiData"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -5104,18 +5104,18 @@
 								<ed:Equation oid="!ed/5471/7D49/B98/494269cc18cd"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1153 = (make THsiData)(_L36, _L37, _L31, _L38, _L43, _L32, _L39, _L44, _L33, _L... -->
+						<!-- _L1153 = (make PFD::hsiData)(_L36, _L37, _L31, _L38, _L43, _L32, _L39, _L44, _L33... -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1153"/>
 							</lefts>
 							<right>
-								<!-- (make THsiData)(_L36, _L37, _L31, _L38, _L43, _L32, _L39, _L44, _L33, _L28, _L35,... -->
+								<!-- (make PFD::hsiData)(_L36, _L37, _L31, _L38, _L43, _L32, _L39, _L44, _L33, _L28, _... -->
 								<CallExpression>
 									<operator>
 										<MakeOp>
 											<type>
-												<TypeRef name="THsiData"/>
+												<TypeRef name="PFD::hsiData"/>
 											</type>
 										</MakeOp>
 									</operator>
@@ -5222,7 +5222,7 @@
 								<ed:Equation oid="!ed/5476/7D49/B98/494269dc2648"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1154 = Aircraft_Yaw; -->
+						<!-- _L1154 = aircraftYaw; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1154"/>
@@ -5230,7 +5230,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Aircraft_Yaw"/>
+										<ConstVarRef name="aircraftYaw"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -5238,18 +5238,18 @@
 								<ed:Equation oid="!ed/4f2e/19E7/DE4/494270581e06"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1156 = Aircraft_Position[0]; -->
+						<!-- _L1156 = aircraftPosition[0]; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1156"/>
 							</lefts>
 							<right>
-								<!-- Aircraft_Position[0] -->
+								<!-- aircraftPosition[0] -->
 								<PrjOp name="8">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="Aircraft_Position"/>
+												<ConstVarRef name="aircraftPosition"/>
 											</path>
 										</IdExpression>
 									</flow>
@@ -5262,18 +5262,18 @@
 								<ed:Equation oid="!ed/4f46/19E7/DE4/494270813ad9"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1157 = Aircraft_Position[2]; -->
+						<!-- _L1157 = aircraftPosition[2]; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1157"/>
 							</lefts>
 							<right>
-								<!-- Aircraft_Position[2] -->
+								<!-- aircraftPosition[2] -->
 								<PrjOp name="7">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="Aircraft_Position"/>
+												<ConstVarRef name="aircraftPosition"/>
 											</path>
 										</IdExpression>
 									</flow>
@@ -5290,7 +5290,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/35e3/34F2/C0C/485239f86e1d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<diagrams>
-								<NetDiagram name="PFD_Compute_ADI_HSI" landscape="true" format="A4 (210 297)" oid="!ed/3701/34F2/C0C/485239f85362">
+								<NetDiagram name="pfdCompute_ADI_HSI" landscape="true" format="A4 (210 297)" oid="!ed/3701/34F2/C0C/485239f85362">
 									<presentationElements>
 										<EquationGE presentable="!ed/35e4/34F2/C0C/485239f8461d">
 											<position>
@@ -5718,7 +5718,7 @@
 										</Edge>
 									</presentationElements>
 								</NetDiagram>
-								<NetDiagram name="PFD_Compute_ScreenInfo" landscape="true" format="A4 (210 297)" oid="!ed/3702/34F2/C0C/485239f86b77">
+								<NetDiagram name="pfdCompute_ScreenInfo" landscape="true" format="A4 (210 297)" oid="!ed/3702/34F2/C0C/485239f86b77">
 									<presentationElements>
 										<EquationGE presentable="!ed/35fd/34F2/C0C/485239f842e">
 											<position>
@@ -5954,7 +5954,7 @@
 										</Edge>
 									</presentationElements>
 								</NetDiagram>
-								<NetDiagram name="PFD_Compute_Altitude" landscape="true" format="A4 (210 297)" oid="!ed/3704/34F2/C0C/485239f840e2">
+								<NetDiagram name="pfdCompute_Altitude" landscape="true" format="A4 (210 297)" oid="!ed/3704/34F2/C0C/485239f840e2">
 									<presentationElements>
 										<EquationGE presentable="!ed/3636/34F2/C0C/485239f87f9f">
 											<position>
@@ -6126,7 +6126,7 @@
 										</Edge>
 									</presentationElements>
 								</NetDiagram>
-								<NetDiagram name="PFD_Compute_Tunnel" landscape="true" format="A4 (210 297)" oid="!ed/3708/34F2/C0C/485239f864d8">
+								<NetDiagram name="pfdCompute_Tunnel" landscape="true" format="A4 (210 297)" oid="!ed/3708/34F2/C0C/485239f864d8">
 									<presentationElements>
 										<EquationGE presentable="!ed/36a1/34F2/C0C/485239f82027">
 											<position>
@@ -6178,10 +6178,10 @@
 										</EquationGE>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/36d2/34F2/C0C/485239f877e7">
 											<position>
-												<Point x="14420" y="14340"/>
+												<Point x="14870" y="14340"/>
 											</position>
 											<size>
-												<Size width="661" height="318"/>
+												<Size width="211" height="318"/>
 											</size>
 										</EquationGE>
 										<EquationGE presentable="!ed/36d3/34F2/C0C/485239f827a">
@@ -6194,10 +6194,10 @@
 										</EquationGE>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/36d4/34F2/C0C/485239f8e1d">
 											<position>
-												<Point x="14049" y="13811"/>
+												<Point x="14870" y="13811"/>
 											</position>
 											<size>
-												<Size width="1031" height="318"/>
+												<Size width="211" height="318"/>
 											</size>
 										</EquationGE>
 										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/36d4/34F2/C0C/485239f8e1d" dstEquation="!ed/36d3/34F2/C0C/485239f827a">
@@ -6346,10 +6346,10 @@
 										</EquationGE>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/36ee/34F2/C0C/485239f84279">
 											<position>
-												<Point x="2963" y="13838"/>
+												<Point x="3784" y="13838"/>
 											</position>
 											<size>
-												<Size width="1032" height="317"/>
+												<Size width="211" height="317"/>
 											</size>
 										</EquationGE>
 										<EquationGE presentable="!ed/36ef/34F2/C0C/485239f8979">
@@ -6362,10 +6362,10 @@
 										</EquationGE>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/36f0/34F2/C0C/485239f839bd">
 											<position>
-												<Point x="3281" y="13361"/>
+												<Point x="3731" y="13361"/>
 											</position>
 											<size>
-												<Size width="661" height="318"/>
+												<Size width="211" height="318"/>
 											</size>
 										</EquationGE>
 										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/36f0/34F2/C0C/485239f839bd" dstEquation="!ed/36ef/34F2/C0C/485239f8979">
@@ -6538,10 +6538,10 @@
 										</Edge>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/2ed7/6F56/464/48dba20b2e99">
 											<position>
-												<Point x="8916" y="14552"/>
+												<Point x="10160" y="14552"/>
 											</position>
 											<size>
-												<Size width="1456" height="317"/>
+												<Size width="212" height="318"/>
 											</size>
 										</EquationGE>
 										<Edge leftVarIndex="1" rightExprIndex="8" srcEquation="!ed/2ed7/6F56/464/48dba20b2e99" dstEquation="!ed/36a1/34F2/C0C/485239f82027">
@@ -6849,18 +6849,18 @@
 										</EquationGE>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/4f46/19E7/DE4/494270813ad9">
 											<position>
-												<Point x="20902" y="10001"/>
+												<Point x="23230" y="10001"/>
 											</position>
 											<size>
-												<Size width="2540" height="317"/>
+												<Size width="212" height="318"/>
 											</size>
 										</EquationGE>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/4f6b/19E7/DE4/4942708921f1">
 											<position>
-												<Point x="20902" y="10425"/>
+												<Point x="23230" y="10425"/>
 											</position>
 											<size>
-												<Size width="2540" height="317"/>
+												<Size width="212" height="317"/>
 											</size>
 										</EquationGE>
 										<Edge leftVarIndex="1" rightExprIndex="6" srcEquation="!ed/4f46/19E7/DE4/494270813ad9" dstEquation="!ed/52d6/7D49/B98/4942656f1cb6">
@@ -6889,7 +6889,7 @@
 										</Edge>
 									</presentationElements>
 								</NetDiagram>
-								<NetDiagram name="PFD_Compute_Trajectory" landscape="true" format="A4 (210 297)" oid="!ed/3709/34F2/C0C/485239f86124">
+								<NetDiagram name="pfdCompute_Trajectory" landscape="true" format="A4 (210 297)" oid="!ed/3709/34F2/C0C/485239f86124">
 									<presentationElements>
 										<EquationGE presentable="!ed/36bc/34F2/C0C/485239f833c6">
 											<position>
@@ -7191,7 +7191,7 @@
 						<TreeDiagram landscape="true" format="A4 (210 297)" oid="!ed/2ec3/7BA9/92C/48dba1544a5b" blockKind="sensors"/>
 					</diagrams>
 					<references>
-						<TypeRef path="SpeedAlt::Ttape" refOid="!ed/16de/3E2/A24/476afa7b5dc"/>
+						<TypeRef path="SpeedAlt::tape" refOid="!ed/16de/3E2/A24/476afa7b5dc"/>
 						<TypeRef path="Color_Enum" refOid="!ed/ea1/7A70/BF0/4759596c5a"/>
 						<TypeRef path="Aircraft_Symbol_Enum" refOid="!ed/e99/7A70/BF0/4759596c2feb"/>
 						<TypeRef path="RMI_enum" refOid="!ed/bc/7A70/BF0/475955397f20"/>

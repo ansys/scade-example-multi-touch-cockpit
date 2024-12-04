@@ -15,11 +15,11 @@
 						<ed:Sensor oid="!ed/13fdc/3CE0/3C4/492c22c46e7d"/>
 					</pragmas>
 				</Sensor>
-				<Type name="TAdditionalData">
+				<Type name="additionalData">
 					<definition>
 						<Struct>
 							<fields>
-								<Field name="BarSet">
+								<Field name="barSet">
 									<type>
 										<NamedType>
 											<type>
@@ -31,7 +31,7 @@
 										<ed:Field oid="!ed/4923/5DE3/DDC/4a8408d77a69"/>
 									</pragmas>
 								</Field>
-								<Field name="BarSetChanging">
+								<Field name="barSetChanging">
 									<type>
 										<NamedType>
 											<type>
@@ -43,7 +43,7 @@
 										<ed:Field oid="!ed/5947/2F8E/68C/4fa39af1794"/>
 									</pragmas>
 								</Field>
-								<Field name="AltBug">
+								<Field name="altBug">
 									<type>
 										<NamedType>
 											<type>
@@ -55,7 +55,7 @@
 										<ed:Field oid="!ed/4931/5DE3/DDC/4a8408df5334"/>
 									</pragmas>
 								</Field>
-								<Field name="AltBugChanging">
+								<Field name="altBugChanging">
 									<type>
 										<NamedType>
 											<type>
@@ -67,7 +67,7 @@
 										<ed:Field oid="!ed/5950/2F8E/68C/4fa39b0e16b4"/>
 									</pragmas>
 								</Field>
-								<Field name="HdgBug">
+								<Field name="hdgBug">
 									<type>
 										<NamedType>
 											<type>
@@ -79,7 +79,7 @@
 										<ed:Field oid="!ed/4937/5DE3/DDC/4a8408e1c68"/>
 									</pragmas>
 								</Field>
-								<Field name="HdgBugChanging">
+								<Field name="hdgBugChanging">
 									<type>
 										<NamedType>
 											<type>
@@ -91,7 +91,7 @@
 										<ed:Field oid="!ed/5959/2F8E/68C/4fa39b1a5a5d"/>
 									</pragmas>
 								</Field>
-								<Field name="VsiBug">
+								<Field name="vsiBug">
 									<type>
 										<NamedType>
 											<type>
@@ -103,7 +103,7 @@
 										<ed:Field oid="!ed/493d/5DE3/DDC/4a8408e2215c"/>
 									</pragmas>
 								</Field>
-								<Field name="VsiBugChanging">
+								<Field name="vsiBugChanging">
 									<type>
 										<NamedType>
 											<type>
@@ -122,7 +122,7 @@
 						<ed:Type oid="!ed/4922/5DE3/DDC/4a8408cd3898"/>
 					</pragmas>
 				</Type>
-				<Type name="TRealArray8">
+				<Type name="realArray8">
 					<definition>
 						<Table>
 							<type>
@@ -141,7 +141,7 @@
 						<ed:Type oid="!ed/4a2b/7408/14F4/4bb3130e1249"/>
 					</pragmas>
 				</Type>
-				<Type name="TRealArray4">
+				<Type name="realArray4">
 					<definition>
 						<Table>
 							<type>
@@ -160,7 +160,7 @@
 						<ed:Type oid="!ed/4a1d/7408/14F4/4bb3130e2ffc"/>
 					</pragmas>
 				</Type>
-				<Type name="TIntArray4">
+				<Type name="intArray4">
 					<definition>
 						<Table>
 							<type>
@@ -179,11 +179,11 @@
 						<ed:Type oid="!ed/4a0f/7408/14F4/4bb3130e394e"/>
 					</pragmas>
 				</Type>
-				<Type name="TIBtnData">
+				<Type name="btnData">
 					<definition>
 						<Struct>
 							<fields>
-								<Field name="NavBtnInLeft">
+								<Field name="navBtnInLeft">
 									<type>
 										<NamedType>
 											<type>
@@ -195,7 +195,7 @@
 										<ed:Field oid="!ed/48f8/10F2/12FC/4c6581a85bdf"/>
 									</pragmas>
 								</Field>
-								<Field name="NavBtnInRight">
+								<Field name="navBtnInRight">
 									<type>
 										<NamedType>
 											<type>
@@ -207,7 +207,7 @@
 										<ed:Field oid="!ed/4606/461B/1740/4f630bad47a"/>
 									</pragmas>
 								</Field>
-								<Field name="BrgBtnInLeft">
+								<Field name="brgBtnInLeft">
 									<type>
 										<NamedType>
 											<type>
@@ -219,7 +219,7 @@
 										<ed:Field oid="!ed/4ac8/10F2/12FC/4c6587eb3e9d"/>
 									</pragmas>
 								</Field>
-								<Field name="BrgBtnInRight">
+								<Field name="brgBtnInRight">
 									<type>
 										<NamedType>
 											<type>
@@ -231,7 +231,7 @@
 										<ed:Field oid="!ed/4607/461B/1740/4f630bb65a7e"/>
 									</pragmas>
 								</Field>
-								<Field name="AuxBtnInLeft">
+								<Field name="auxBtnInLeft">
 									<type>
 										<NamedType>
 											<type>
@@ -243,7 +243,7 @@
 										<ed:Field oid="!ed/4ace/10F2/12FC/4c6587ec7afd"/>
 									</pragmas>
 								</Field>
-								<Field name="AuxBtnInRight">
+								<Field name="auxBtnInRight">
 									<type>
 										<NamedType>
 											<type>
@@ -255,7 +255,7 @@
 										<ed:Field oid="!ed/4608/461B/1740/4f630bc47a67"/>
 									</pragmas>
 								</Field>
-								<Field name="VsiBtnInLeft">
+								<Field name="vsiBtnInLeft">
 									<type>
 										<NamedType>
 											<type>
@@ -267,7 +267,7 @@
 										<ed:Field oid="!ed/4ad4/10F2/12FC/4c6587ed53e6"/>
 									</pragmas>
 								</Field>
-								<Field name="VsiBtnInRight">
+								<Field name="vsiBtnInRight">
 									<type>
 										<NamedType>
 											<type>
@@ -279,7 +279,7 @@
 										<ed:Field oid="!ed/495d/276/17BC/4f621db55f4c"/>
 									</pragmas>
 								</Field>
-								<Field name="HdgBtnInLeft">
+								<Field name="hdgBtnInLeft">
 									<type>
 										<NamedType>
 											<type>
@@ -291,7 +291,7 @@
 										<ed:Field oid="!ed/4ada/10F2/12FC/4c6587ed5509"/>
 									</pragmas>
 								</Field>
-								<Field name="HdgBtnInRight">
+								<Field name="hdgBtnInRight">
 									<type>
 										<NamedType>
 											<type>
@@ -303,7 +303,7 @@
 										<ed:Field oid="!ed/496f/276/17BC/4f621dce1def"/>
 									</pragmas>
 								</Field>
-								<Field name="BarBtnInLeft">
+								<Field name="barBtnInLeft">
 									<type>
 										<NamedType>
 											<type>
@@ -315,7 +315,7 @@
 										<ed:Field oid="!ed/4ae0/10F2/12FC/4c6587ee6987"/>
 									</pragmas>
 								</Field>
-								<Field name="BarBtnInRight">
+								<Field name="barBtnInRight">
 									<type>
 										<NamedType>
 											<type>
@@ -327,7 +327,7 @@
 										<ed:Field oid="!ed/4978/276/17BC/4f621dda58f1"/>
 									</pragmas>
 								</Field>
-								<Field name="AltBtnInLeft">
+								<Field name="altBtnInLeft">
 									<type>
 										<NamedType>
 											<type>
@@ -339,7 +339,7 @@
 										<ed:Field oid="!ed/4ae6/10F2/12FC/4c6587ee504f"/>
 									</pragmas>
 								</Field>
-								<Field name="AltBtnInRight">
+								<Field name="altBtnInRight">
 									<type>
 										<NamedType>
 											<type>
@@ -358,11 +358,11 @@
 						<ed:Type oid="!ed/48f7/10F2/12FC/4c65819e7550"/>
 					</pragmas>
 				</Type>
-				<Type name="TInteractivityDataIn">
+				<Type name="interactivityDataIn">
 					<definition>
 						<Struct>
 							<fields>
-								<Field name="SuiteIn">
+								<Field name="suiteIn">
 									<type>
 										<NamedType>
 											<type>
@@ -374,7 +374,7 @@
 										<ed:Field oid="!ed/470c/461B/1740/4f6314784e5c"/>
 									</pragmas>
 								</Field>
-								<Field name="ETIn">
+								<Field name="etIn">
 									<type>
 										<NamedType>
 											<type>
@@ -386,7 +386,7 @@
 										<ed:Field oid="!ed/4715/461B/1740/4f6314914ab5"/>
 									</pragmas>
 								</Field>
-								<Field name="DisplayIn">
+								<Field name="displayIn">
 									<type>
 										<NamedType>
 											<type>
@@ -398,7 +398,7 @@
 										<ed:Field oid="!ed/4574/341A/1B0C/4f8530473e2"/>
 									</pragmas>
 								</Field>
-								<Field name="MapIn">
+								<Field name="mapIn">
 									<type>
 										<NamedType>
 											<type>
@@ -410,7 +410,7 @@
 										<ed:Field oid="!ed/588a/4FCD/1EE8/50ee88866ea2"/>
 									</pragmas>
 								</Field>
-								<Field name="ADIIn">
+								<Field name="adiIn">
 									<type>
 										<NamedType>
 											<type>
@@ -422,7 +422,7 @@
 										<ed:Field oid="!ed/58b5/4FCD/1EE8/50ee895c1964"/>
 									</pragmas>
 								</Field>
-								<Field name="HSIIn">
+								<Field name="hsiIn">
 									<type>
 										<NamedType>
 											<type>
@@ -434,7 +434,7 @@
 										<ed:Field oid="!ed/58b6/4FCD/1EE8/50ee895f3442"/>
 									</pragmas>
 								</Field>
-								<Field name="LanguageIn">
+								<Field name="languageIn">
 									<type>
 										<NamedType>
 											<type>
@@ -446,7 +446,7 @@
 										<ed:Field oid="!ed/5aca/4FCD/1EE8/50eea1937e0f"/>
 									</pragmas>
 								</Field>
-								<Field name="SPEEDIn">
+								<Field name="speedIn">
 									<type>
 										<NamedType>
 											<type>
@@ -458,7 +458,7 @@
 										<ed:Field oid="!ed/5c5d/4FCD/1EE8/50eecbac722a"/>
 									</pragmas>
 								</Field>
-								<Field name="ALTIn">
+								<Field name="altIn">
 									<type>
 										<NamedType>
 											<type>
@@ -477,11 +477,11 @@
 						<ed:Type oid="!ed/4702/461B/1740/4f63145f8bb"/>
 					</pragmas>
 				</Type>
-				<Type name="TInteractivityDataOut">
+				<Type name="interactivityDataOut">
 					<definition>
 						<Struct>
 							<fields>
-								<Field name="SuiteLogoPos">
+								<Field name="suiteLogoPos">
 									<type>
 										<Table>
 											<type>
@@ -500,7 +500,7 @@
 										<ed:Field oid="!ed/58d3/4FCD/1EE8/50ee89c6984"/>
 									</pragmas>
 								</Field>
-								<Field name="DisplayLogoPos">
+								<Field name="displayLogoPos">
 									<type>
 										<Table>
 											<type>
@@ -519,7 +519,7 @@
 										<ed:Field oid="!ed/58d4/4FCD/1EE8/50ee89c644f0"/>
 									</pragmas>
 								</Field>
-								<Field name="ETLogoScale">
+								<Field name="etLogoScale">
 									<type>
 										<NamedType>
 											<type>
@@ -531,7 +531,7 @@
 										<ed:Field oid="!ed/58d5/4FCD/1EE8/50ee89c661ff"/>
 									</pragmas>
 								</Field>
-								<Field name="MapScale">
+								<Field name="mapScale">
 									<type>
 										<NamedType>
 											<type>
@@ -543,7 +543,7 @@
 										<ed:Field oid="!ed/58d6/4FCD/1EE8/50ee89c62e0a"/>
 									</pragmas>
 								</Field>
-								<Field name="ADIScale">
+								<Field name="adiScale">
 									<type>
 										<NamedType>
 											<type>
@@ -555,7 +555,7 @@
 										<ed:Field oid="!ed/58d7/4FCD/1EE8/50ee89c66cb2"/>
 									</pragmas>
 								</Field>
-								<Field name="HSIScale">
+								<Field name="hsiScale">
 									<type>
 										<NamedType>
 											<type>
@@ -567,7 +567,7 @@
 										<ed:Field oid="!ed/58d8/4FCD/1EE8/50ee89c66315"/>
 									</pragmas>
 								</Field>
-								<Field name="Language">
+								<Field name="language">
 									<type>
 										<NamedType>
 											<type>
@@ -579,7 +579,7 @@
 										<ed:Field oid="!ed/5ad3/4FCD/1EE8/50eea19c69e2"/>
 									</pragmas>
 								</Field>
-								<Field name="SPEEDScale">
+								<Field name="speedScale">
 									<type>
 										<NamedType>
 											<type>
@@ -591,7 +591,7 @@
 										<ed:Field oid="!ed/5c6f/4FCD/1EE8/50eecbc44b4e"/>
 									</pragmas>
 								</Field>
-								<Field name="ALTScale">
+								<Field name="altScale">
 									<type>
 										<NamedType>
 											<type>
@@ -610,9 +610,9 @@
 						<ed:Type oid="!ed/58d2/4FCD/1EE8/50ee89c67041"/>
 					</pragmas>
 				</Type>
-				<Operator kind="node" name="Simulate">
+				<Operator kind="node" name="simulate">
 					<inputs>
-						<Variable name="I_Pointer1_Data">
+						<Variable name="pointer1Data">
 							<type>
 								<NamedType>
 									<type>
@@ -624,7 +624,7 @@
 								<ed:Variable oid="!ed/4e3e/276/17BC/4f625edd4f5d"/>
 							</pragmas>
 						</Variable>
-						<Variable name="I_Pointer2_Data">
+						<Variable name="pointer2Data">
 							<type>
 								<NamedType>
 									<type>
@@ -636,11 +636,11 @@
 								<ed:Variable oid="!ed/658d/2F8E/68C/4fa3a2152549"/>
 							</pragmas>
 						</Variable>
-						<Variable name="I_Btn_Data">
+						<Variable name="btnDataIn">
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="TIBtnData"/>
+										<TypeRef name="btnData"/>
 									</type>
 								</NamedType>
 							</type>
@@ -648,11 +648,11 @@
 								<ed:Variable oid="!ed/491c/10F2/12FC/4c6581d03eb3"/>
 							</pragmas>
 						</Variable>
-						<Variable name="I_Interactivity_Data">
+						<Variable name="interactivityDataIn">
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="TInteractivityDataIn"/>
+										<TypeRef name="Simulation::interactivityDataIn"/>
 									</type>
 								</NamedType>
 							</type>
@@ -662,11 +662,11 @@
 						</Variable>
 					</inputs>
 					<outputs>
-						<Variable name="O_SpeedAlt_Data">
+						<Variable name="speedAltData">
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="PFD::TSpeedAltData"/>
+										<TypeRef name="PFD::speedAltData"/>
 									</type>
 								</NamedType>
 							</type>
@@ -674,11 +674,11 @@
 								<ed:Variable oid="!ed/50a3/7D49/B98/49423c12553a"/>
 							</pragmas>
 						</Variable>
-						<Variable name="O_ScreenInfo_Data">
+						<Variable name="screenInfoData">
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="PFD::TScreenInfoData"/>
+										<TypeRef name="PFD::screenInfoData"/>
 									</type>
 								</NamedType>
 							</type>
@@ -686,11 +686,11 @@
 								<ed:Variable oid="!ed/5194/7D49/B98/49423f7e7549"/>
 							</pragmas>
 						</Variable>
-						<Variable name="O_Trajectory_Data">
+						<Variable name="trajectoryData">
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="PFD::TTrajectoryData"/>
+										<TypeRef name="PFD::trajectoryData"/>
 									</type>
 								</NamedType>
 							</type>
@@ -698,11 +698,11 @@
 								<ed:Variable oid="!ed/51b7/7D49/B98/494240131539"/>
 							</pragmas>
 						</Variable>
-						<Variable name="O_Tunnel_Data">
+						<Variable name="tunnelData">
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="PFD::TTunnelData"/>
+										<TypeRef name="PFD::tunnelData"/>
 									</type>
 								</NamedType>
 							</type>
@@ -710,11 +710,11 @@
 								<ed:Variable oid="!ed/5328/7D49/B98/494266fb1896"/>
 							</pragmas>
 						</Variable>
-						<Variable name="O_Adi_Data">
+						<Variable name="adiData">
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="PFD::TAdiData"/>
+										<TypeRef name="PFD::adiData"/>
 									</type>
 								</NamedType>
 							</type>
@@ -722,11 +722,11 @@
 								<ed:Variable oid="!ed/5396/7D49/B98/494268735cbc"/>
 							</pragmas>
 						</Variable>
-						<Variable name="O_Hsi_Data">
+						<Variable name="hsiData">
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="PFD::THsiData"/>
+										<TypeRef name="PFD::hsiData"/>
 									</type>
 								</NamedType>
 							</type>
@@ -734,7 +734,7 @@
 								<ed:Variable oid="!ed/547f/7D49/B98/49426a202034"/>
 							</pragmas>
 						</Variable>
-						<Variable name="O_Btn_Data">
+						<Variable name="btnDataOut">
 							<type>
 								<Table>
 									<type>
@@ -753,11 +753,11 @@
 								<ed:Variable oid="!ed/517e/19E7/DE4/494290876c0e"/>
 							</pragmas>
 						</Variable>
-						<Variable name="O_Additional_Data">
+						<Variable name="additionalData">
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="TAdditionalData"/>
+										<TypeRef name="Simulation::additionalData"/>
 									</type>
 								</NamedType>
 							</type>
@@ -765,11 +765,11 @@
 								<ed:Variable oid="!ed/493e/5DE3/DDC/4a8408f83c2d"/>
 							</pragmas>
 						</Variable>
-						<Variable name="O_Interactivity_Data">
+						<Variable name="interactivityDataOut">
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="TInteractivityDataOut"/>
+										<TypeRef name="Simulation::interactivityDataOut"/>
 									</type>
 								</NamedType>
 							</type>
@@ -779,7 +779,7 @@
 						</Variable>
 					</outputs>
 					<locals>
-						<Variable name="l_Altitude_Info">
+						<Variable name="altitudeInfo">
 							<type>
 								<NamedType>
 									<type>
@@ -791,7 +791,7 @@
 								<ed:Variable oid="!ed/102d/772E/750/47663700d01"/>
 							</pragmas>
 						</Variable>
-						<Variable name="l_Systeme_Info">
+						<Variable name="systemInfo">
 							<type>
 								<NamedType>
 									<type>
@@ -803,7 +803,7 @@
 								<ed:Variable oid="!ed/12fd/772E/750/476643aa1bc4"/>
 							</pragmas>
 						</Variable>
-						<Variable name="l_Aircraft_Info">
+						<Variable name="aircraftInfo">
 							<type>
 								<NamedType>
 									<type>
@@ -815,7 +815,7 @@
 								<ed:Variable oid="!ed/1b43/D81/7A0/4772313b2137"/>
 							</pragmas>
 						</Variable>
-						<Variable name="l_Primary_Nav_Data">
+						<Variable name="primaryNavData">
 							<type>
 								<NamedType>
 									<type>
@@ -827,7 +827,7 @@
 								<ed:Variable oid="!ed/1cc3/D81/7A0/4772342b3a96"/>
 							</pragmas>
 						</Variable>
-						<Variable name="l_Secondary_Nav_Data">
+						<Variable name="secondaryNavData">
 							<type>
 								<NamedType>
 									<type>
@@ -839,7 +839,7 @@
 								<ed:Variable oid="!ed/1dae/D81/7A0/477234d2820"/>
 							</pragmas>
 						</Variable>
-						<Variable name="l_Flight_Director_Info">
+						<Variable name="flightDirectorInfo">
 							<type>
 								<NamedType>
 									<type>
@@ -851,7 +851,7 @@
 								<ed:Variable oid="!ed/1e6b/D81/7A0/477235fe64f6"/>
 							</pragmas>
 						</Variable>
-						<Variable name="l_Menu_Info">
+						<Variable name="menuInfo">
 							<type>
 								<NamedType>
 									<type>
@@ -863,7 +863,7 @@
 								<ed:Variable oid="!ed/2003/D81/7A0/477239402deb"/>
 							</pragmas>
 						</Variable>
-						<Variable name="l_Pitch">
+						<Variable name="pitch">
 							<type>
 								<NamedType>
 									<type>
@@ -875,7 +875,7 @@
 								<ed:Variable oid="!ed/3005/208B/14C8/48353e5d5ffa"/>
 							</pragmas>
 						</Variable>
-						<Variable name="l_Roll">
+						<Variable name="roll">
 							<type>
 								<NamedType>
 									<type>
@@ -887,7 +887,7 @@
 								<ed:Variable oid="!ed/3006/208B/14C8/48353e5e5c7d"/>
 							</pragmas>
 						</Variable>
-						<Variable name="V_aircraft">
+						<Variable name="vAircraft">
 							<type>
 								<NamedType>
 									<type>
@@ -899,7 +899,7 @@
 								<ed:Variable oid="!ed/5f2c/5927/1724/483542472aad"/>
 							</pragmas>
 						</Variable>
-						<Variable name="l_Yaw">
+						<Variable name="yaw">
 							<type>
 								<NamedType>
 									<type>
@@ -911,7 +911,7 @@
 								<ed:Variable oid="!ed/77bd/7701/F1C/484f889b3d36"/>
 							</pragmas>
 						</Variable>
-						<Variable name="I_Screen_Info">
+						<Variable name="screenInfo">
 							<type>
 								<NamedType>
 									<type>
@@ -2280,7 +2280,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="PFD::TSpeedAltData"/>
+										<TypeRef name="PFD::speedAltData"/>
 									</type>
 								</NamedType>
 							</type>
@@ -2292,7 +2292,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="PFD::TTrajectoryData"/>
+										<TypeRef name="PFD::trajectoryData"/>
 									</type>
 								</NamedType>
 							</type>
@@ -2304,7 +2304,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="PFD::TScreenInfoData"/>
+										<TypeRef name="PFD::screenInfoData"/>
 									</type>
 								</NamedType>
 							</type>
@@ -2316,7 +2316,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="PFD::TTunnelData"/>
+										<TypeRef name="PFD::tunnelData"/>
 									</type>
 								</NamedType>
 							</type>
@@ -2328,7 +2328,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="PFD::TAdiData"/>
+										<TypeRef name="PFD::adiData"/>
 									</type>
 								</NamedType>
 							</type>
@@ -2340,7 +2340,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="PFD::THsiData"/>
+										<TypeRef name="PFD::hsiData"/>
 									</type>
 								</NamedType>
 							</type>
@@ -2376,7 +2376,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="TAdditionalData"/>
+										<TypeRef name="Simulation::additionalData"/>
 									</type>
 								</NamedType>
 							</type>
@@ -3087,7 +3087,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="TInteractivityDataOut"/>
+										<TypeRef name="Simulation::interactivityDataOut"/>
 									</type>
 								</NamedType>
 							</type>
@@ -3392,10 +3392,10 @@
 								<ed:Equation oid="!ed/1023/772E/750/476636e261c"/>
 							</pragmas>
 						</Equation>
-						<!-- l_Altitude_Info = _L179; -->
+						<!-- altitudeInfo = _L179; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="l_Altitude_Info"/>
+								<VariableRef name="altitudeInfo"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -3466,7 +3466,7 @@
 								<ed:Equation oid="!ed/111f/772E/750/476637fd4fde"/>
 							</pragmas>
 						</Equation>
-						<!-- _L204 = l_Altitude_Info; -->
+						<!-- _L204 = altitudeInfo; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L204"/>
@@ -3474,7 +3474,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="l_Altitude_Info"/>
+										<ConstVarRef name="altitudeInfo"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -3812,10 +3812,10 @@
 								<ed:Equation oid="!ed/12c4/772E/750/4766430460b"/>
 							</pragmas>
 						</Equation>
-						<!-- l_Systeme_Info = _L210; -->
+						<!-- systemInfo = _L210; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="l_Systeme_Info"/>
+								<VariableRef name="systemInfo"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -3828,7 +3828,7 @@
 								<ed:Equation oid="!ed/12fe/772E/750/476643aa66dd"/>
 							</pragmas>
 						</Equation>
-						<!-- _L237 = l_Systeme_Info; -->
+						<!-- _L237 = systemInfo; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L237"/>
@@ -3836,7 +3836,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="l_Systeme_Info"/>
+										<ConstVarRef name="systemInfo"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -3856,7 +3856,7 @@
 								<ed:Equation oid="!ed/1a8f/D81/7A0/47722e7d4d73"/>
 							</pragmas>
 						</Equation>
-						<!-- _L347 = l_Aircraft_Info; -->
+						<!-- _L347 = aircraftInfo; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L347"/>
@@ -3864,7 +3864,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="l_Aircraft_Info"/>
+										<ConstVarRef name="aircraftInfo"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -3872,7 +3872,7 @@
 								<ed:Equation oid="!ed/1b52/D81/7A0/47723162300c"/>
 							</pragmas>
 						</Equation>
-						<!-- _L411 = l_Flight_Director_Info; -->
+						<!-- _L411 = flightDirectorInfo; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L411"/>
@@ -3880,7 +3880,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="l_Flight_Director_Info"/>
+										<ConstVarRef name="flightDirectorInfo"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -3888,7 +3888,7 @@
 								<ed:Equation oid="!ed/1e7a/D81/7A0/4772367b1eb5"/>
 							</pragmas>
 						</Equation>
-						<!-- _L412 = l_Primary_Nav_Data; -->
+						<!-- _L412 = primaryNavData; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L412"/>
@@ -3896,7 +3896,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="l_Primary_Nav_Data"/>
+										<ConstVarRef name="primaryNavData"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -3904,7 +3904,7 @@
 								<ed:Equation oid="!ed/1e80/D81/7A0/47723692653a"/>
 							</pragmas>
 						</Equation>
-						<!-- _L413 = l_Secondary_Nav_Data; -->
+						<!-- _L413 = secondaryNavData; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L413"/>
@@ -3912,7 +3912,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="l_Secondary_Nav_Data"/>
+										<ConstVarRef name="secondaryNavData"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -3920,7 +3920,7 @@
 								<ed:Equation oid="!ed/1e86/D81/7A0/4772369f570e"/>
 							</pragmas>
 						</Equation>
-						<!-- _L433 = l_Menu_Info; -->
+						<!-- _L433 = menuInfo; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L433"/>
@@ -3928,7 +3928,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="l_Menu_Info"/>
+										<ConstVarRef name="menuInfo"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -4048,7 +4048,7 @@
 								<ed:Equation oid="!ed/2628/366E/15C/48119f4e3220"/>
 							</pragmas>
 						</Equation>
-						<!-- _L846 = l_Pitch; -->
+						<!-- _L846 = pitch; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L846"/>
@@ -4056,7 +4056,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="l_Pitch"/>
+										<ConstVarRef name="pitch"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -4064,7 +4064,7 @@
 								<ed:Equation oid="!ed/3017/208B/14C8/48353e836346"/>
 							</pragmas>
 						</Equation>
-						<!-- _L847 = l_Roll; -->
+						<!-- _L847 = roll; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L847"/>
@@ -4072,7 +4072,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="l_Roll"/>
+										<ConstVarRef name="roll"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -4080,10 +4080,10 @@
 								<ed:Equation oid="!ed/3019/208B/14C8/48353e8362e4"/>
 							</pragmas>
 						</Equation>
-						<!-- l_Pitch = _L1079; -->
+						<!-- pitch = _L1079; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="l_Pitch"/>
+								<VariableRef name="pitch"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4096,10 +4096,10 @@
 								<ed:Equation oid="!ed/783f/7701/F1C/484f895b348"/>
 							</pragmas>
 						</Equation>
-						<!-- V_aircraft = _L1069; -->
+						<!-- vAircraft = _L1069; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="V_aircraft"/>
+								<VariableRef name="vAircraft"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4112,10 +4112,10 @@
 								<ed:Equation oid="!ed/7840/7701/F1C/484f895b214c"/>
 							</pragmas>
 						</Equation>
-						<!-- l_Roll = _L1081; -->
+						<!-- roll = _L1081; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="l_Roll"/>
+								<VariableRef name="roll"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4178,10 +4178,10 @@
 								<ed:Equation oid="!ed/7842/7701/F1C/484f895b174c"/>
 							</pragmas>
 						</Equation>
-						<!-- l_Yaw = _L1080; -->
+						<!-- yaw = _L1080; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="l_Yaw"/>
+								<VariableRef name="yaw"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4350,7 +4350,7 @@
 								<ed:Equation oid="!ed/7936/7701/F1C/484f8a262405"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1084 = l_Yaw; -->
+						<!-- _L1084 = yaw; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1084"/>
@@ -4358,7 +4358,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="l_Yaw"/>
+										<ConstVarRef name="yaw"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -4463,7 +4463,7 @@
 								<ed:Equation oid="!ed/ec6d/7701/F1C/484f93268ae"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1121 = I_Screen_Info; -->
+						<!-- _L1121 = screenInfo; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1121"/>
@@ -4471,7 +4471,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="I_Screen_Info"/>
+										<ConstVarRef name="screenInfo"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -4491,10 +4491,10 @@
 								<ed:Equation oid="!ed/397b/34F2/C0C/485241d41ddb"/>
 							</pragmas>
 						</Equation>
-						<!-- I_Screen_Info = _L1123; -->
+						<!-- screenInfo = _L1123; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="I_Screen_Info"/>
+								<VariableRef name="screenInfo"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4777,10 +4777,10 @@
 								<ed:Equation oid="!ed/3a60/34F2/C0C/485241f66667"/>
 							</pragmas>
 						</Equation>
-						<!-- l_Aircraft_Info = _L1136; -->
+						<!-- aircraftInfo = _L1136; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="l_Aircraft_Info"/>
+								<VariableRef name="aircraftInfo"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4994,10 +4994,10 @@
 								<ed:Equation oid="!ed/3a6d/34F2/C0C/485241f62cd3"/>
 							</pragmas>
 						</Equation>
-						<!-- l_Primary_Nav_Data = _L1131; -->
+						<!-- primaryNavData = _L1131; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="l_Primary_Nav_Data"/>
+								<VariableRef name="primaryNavData"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -5220,10 +5220,10 @@
 								<ed:Equation oid="!ed/3cc0/34F2/C0C/485242251eef"/>
 							</pragmas>
 						</Equation>
-						<!-- l_Secondary_Nav_Data = _L1160; -->
+						<!-- secondaryNavData = _L1160; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="l_Secondary_Nav_Data"/>
+								<VariableRef name="secondaryNavData"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -5516,10 +5516,10 @@
 								<ed:Equation oid="!ed/3cd9/34F2/C0C/485242255b99"/>
 							</pragmas>
 						</Equation>
-						<!-- l_Flight_Director_Info = _L1161; -->
+						<!-- flightDirectorInfo = _L1161; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="l_Flight_Director_Info"/>
+								<VariableRef name="flightDirectorInfo"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -5732,10 +5732,10 @@
 								<ed:Equation oid="!ed/3fdb/34F2/C0C/485242733e5c"/>
 							</pragmas>
 						</Equation>
-						<!-- l_Menu_Info = _L1216; -->
+						<!-- menuInfo = _L1216; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="l_Menu_Info"/>
+								<VariableRef name="menuInfo"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -6019,7 +6019,7 @@
 								<ed:Equation oid="!ed/3fec/34F2/C0C/4852427350b6"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1358, _L1360, _L1359, _L1361, _L1362, _L1363 = PFD::PFD_Compute(_L1344, _L204, ... -->
+						<!-- _L1358, _L1360, _L1359, _L1361, _L1362, _L1363 = PFD::pfdCompute(_L1344, _L204, _... -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1358"/>
@@ -6030,12 +6030,12 @@
 								<VariableRef name="_L1363"/>
 							</lefts>
 							<right>
-								<!-- PFD::PFD_Compute(_L1344, _L204, _L433, _L237, _L412, _L413, _L411, _L1121, _L347,... -->
+								<!-- PFD::pfdCompute(_L1344, _L204, _L433, _L237, _L412, _L413, _L411, _L1121, _L347, ... -->
 								<CallExpression>
 									<operator>
 										<OpCall name="2">
 											<operator>
-												<OperatorRef name="PFD::PFD_Compute"/>
+												<OperatorRef name="PFD::pfdCompute"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -6109,7 +6109,7 @@
 									<pragmas>
 										<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 											<references>
-												<OperatorRef path="PFD::PFD_Compute" refOid="!ed/35e3/34F2/C0C/485239f86e1d">
+												<OperatorRef path="PFD::pfdCompute" refOid="!ed/35e3/34F2/C0C/485239f86e1d">
 													<InputRef refOid="!ed/388a/34F2/C0C/485239f8fee"/>
 													<InputRef refOid="!ed/38f7/34F2/C0C/48523efe2bc9"/>
 													<InputRef refOid="!ed/388b/34F2/C0C/485239f878d8"/>
@@ -6139,7 +6139,7 @@
 								<ed:Equation oid="!ed/3fee/34F2/C0C/4852433833c4"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1338 = V_aircraft; -->
+						<!-- _L1338 = vAircraft; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1338"/>
@@ -6147,7 +6147,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="V_aircraft"/>
+										<ConstVarRef name="vAircraft"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -6155,7 +6155,7 @@
 								<ed:Equation oid="!ed/406c/34F2/C0C/485243da70dd"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1339 = l_Pitch; -->
+						<!-- _L1339 = pitch; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1339"/>
@@ -6163,7 +6163,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="l_Pitch"/>
+										<ConstVarRef name="pitch"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -6171,7 +6171,7 @@
 								<ed:Equation oid="!ed/4072/34F2/C0C/485243de46b"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1340 = l_Roll; -->
+						<!-- _L1340 = roll; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1340"/>
@@ -6179,7 +6179,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="l_Roll"/>
+										<ConstVarRef name="roll"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -6187,7 +6187,7 @@
 								<ed:Equation oid="!ed/4078/34F2/C0C/485243df37a9"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1341 = l_Yaw; -->
+						<!-- _L1341 = yaw; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1341"/>
@@ -6195,7 +6195,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="l_Yaw"/>
+										<ConstVarRef name="yaw"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -6219,7 +6219,7 @@
 								<ed:Equation oid="!ed/2edd/6F56/464/48dba213478f"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1343 = TrajectDisplay::Trajec; -->
+						<!-- _L1343 = TrajectDisplay::TRAJEC; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1343"/>
@@ -6227,7 +6227,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="TrajectDisplay::Trajec"/>
+										<ConstVarRef name="TrajectDisplay::TRAJEC"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -6235,7 +6235,7 @@
 								<ed:Equation oid="!ed/a8da/7C3A/83C/48ff3835630c"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1344 = TrajectDisplay::Trajec; -->
+						<!-- _L1344 = TrajectDisplay::TRAJEC; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1344"/>
@@ -6243,7 +6243,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="TrajectDisplay::Trajec"/>
+										<ConstVarRef name="TrajectDisplay::TRAJEC"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -6251,10 +6251,10 @@
 								<ed:Equation oid="!ed/a8e0/7C3A/83C/48ff38494daf"/>
 							</pragmas>
 						</Equation>
-						<!-- O_SpeedAlt_Data = _L1358; -->
+						<!-- speedAltData = _L1358; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="O_SpeedAlt_Data"/>
+								<VariableRef name="speedAltData"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -6267,10 +6267,10 @@
 								<ed:Equation oid="!ed/5110/7D49/B98/49423d89a05"/>
 							</pragmas>
 						</Equation>
-						<!-- O_ScreenInfo_Data = _L1360; -->
+						<!-- screenInfoData = _L1360; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="O_ScreenInfo_Data"/>
+								<VariableRef name="screenInfoData"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -6283,10 +6283,10 @@
 								<ed:Equation oid="!ed/519e/7D49/B98/49423fb01433"/>
 							</pragmas>
 						</Equation>
-						<!-- O_Trajectory_Data = _L1359; -->
+						<!-- trajectoryData = _L1359; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="O_Trajectory_Data"/>
+								<VariableRef name="trajectoryData"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -6299,10 +6299,10 @@
 								<ed:Equation oid="!ed/51c1/7D49/B98/4942402ad77"/>
 							</pragmas>
 						</Equation>
-						<!-- O_Tunnel_Data = _L1361; -->
+						<!-- tunnelData = _L1361; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="O_Tunnel_Data"/>
+								<VariableRef name="tunnelData"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -6315,10 +6315,10 @@
 								<ed:Equation oid="!ed/5329/7D49/B98/494266fc3eb0"/>
 							</pragmas>
 						</Equation>
-						<!-- O_Adi_Data = _L1362; -->
+						<!-- adiData = _L1362; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="O_Adi_Data"/>
+								<VariableRef name="adiData"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -6331,10 +6331,10 @@
 								<ed:Equation oid="!ed/5397/7D49/B98/4942687d21a7"/>
 							</pragmas>
 						</Equation>
-						<!-- O_Hsi_Data = _L1363; -->
+						<!-- hsiData = _L1363; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="O_Hsi_Data"/>
+								<VariableRef name="hsiData"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -6347,10 +6347,10 @@
 								<ed:Equation oid="!ed/5480/7D49/B98/49426a2857f9"/>
 							</pragmas>
 						</Equation>
-						<!-- O_Btn_Data = _L1461; -->
+						<!-- btnDataOut = _L1461; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="O_Btn_Data"/>
+								<VariableRef name="btnDataOut"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -6363,23 +6363,23 @@
 								<ed:Equation oid="!ed/517f/19E7/DE4/494290946398"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1369 = I_Btn_Data.BrgBtnInLeft; -->
+						<!-- _L1369 = btnDataIn.brgBtnInLeft; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1369"/>
 							</lefts>
 							<right>
-								<!-- I_Btn_Data.BrgBtnInLeft -->
+								<!-- btnDataIn.brgBtnInLeft -->
 								<PrjOp name="79">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Btn_Data"/>
+												<ConstVarRef name="btnDataIn"/>
 											</path>
 										</IdExpression>
 									</flow>
 									<with>
-										<Label name="BrgBtnInLeft"/>
+										<Label name="brgBtnInLeft"/>
 									</with>
 								</PrjOp>
 							</right>
@@ -6387,23 +6387,23 @@
 								<ed:Equation oid="!ed/a091/18F8/2D8/49429f7c16f2"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1372 = I_Btn_Data.AuxBtnInLeft; -->
+						<!-- _L1372 = btnDataIn.auxBtnInLeft; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1372"/>
 							</lefts>
 							<right>
-								<!-- I_Btn_Data.AuxBtnInLeft -->
+								<!-- btnDataIn.auxBtnInLeft -->
 								<PrjOp name="82">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Btn_Data"/>
+												<ConstVarRef name="btnDataIn"/>
 											</path>
 										</IdExpression>
 									</flow>
 									<with>
-										<Label name="AuxBtnInLeft"/>
+										<Label name="auxBtnInLeft"/>
 									</with>
 								</PrjOp>
 							</right>
@@ -6411,10 +6411,10 @@
 								<ed:Equation oid="!ed/a09e/18F8/2D8/49429f7e6780"/>
 							</pragmas>
 						</Equation>
-						<!-- O_Additional_Data = _L1421; -->
+						<!-- additionalData = _L1421; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="O_Additional_Data"/>
+								<VariableRef name="additionalData"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -6427,18 +6427,18 @@
 								<ed:Equation oid="!ed/4948/5DE3/DDC/4a8409045aef"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1421 = (make TAdditionalData)(_L1464, _L1520, _L1473, _L1519, _L1474, _L1518, _... -->
+						<!-- _L1421 = (make Simulation::additionalData)(_L1464, _L1520, _L1473, _L1519, _L1474... -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1421"/>
 							</lefts>
 							<right>
-								<!-- (make TAdditionalData)(_L1464, _L1520, _L1473, _L1519, _L1474, _L1518, _L1477, _L... -->
+								<!-- (make Simulation::additionalData)(_L1464, _L1520, _L1473, _L1519, _L1474, _L1518,... -->
 								<CallExpression>
 									<operator>
 										<MakeOp>
 											<type>
-												<TypeRef name="TAdditionalData"/>
+												<TypeRef name="Simulation::additionalData"/>
 											</type>
 										</MakeOp>
 									</operator>
@@ -6490,23 +6490,23 @@
 								<ed:Equation oid="!ed/494d/5DE3/DDC/4a84090655ea"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1349 = I_Btn_Data.NavBtnInLeft; -->
+						<!-- _L1349 = btnDataIn.navBtnInLeft; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1349"/>
 							</lefts>
 							<right>
-								<!-- I_Btn_Data.NavBtnInLeft -->
+								<!-- btnDataIn.navBtnInLeft -->
 								<PrjOp name="75">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Btn_Data"/>
+												<ConstVarRef name="btnDataIn"/>
 											</path>
 										</IdExpression>
 									</flow>
 									<with>
-										<Label name="NavBtnInLeft"/>
+										<Label name="navBtnInLeft"/>
 									</with>
 								</PrjOp>
 							</right>
@@ -6715,23 +6715,23 @@
 								<ed:Equation oid="!ed/4b7b/276/17BC/4f6233975304"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1467 = I_Btn_Data.BarBtnInRight; -->
+						<!-- _L1467 = btnDataIn.barBtnInRight; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1467"/>
 							</lefts>
 							<right>
-								<!-- I_Btn_Data.BarBtnInRight -->
+								<!-- btnDataIn.barBtnInRight -->
 								<PrjOp name="65">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Btn_Data"/>
+												<ConstVarRef name="btnDataIn"/>
 											</path>
 										</IdExpression>
 									</flow>
 									<with>
-										<Label name="BarBtnInRight"/>
+										<Label name="barBtnInRight"/>
 									</with>
 								</PrjOp>
 							</right>
@@ -6739,23 +6739,23 @@
 								<ed:Equation oid="!ed/4b9d/276/17BC/4f6233ce173e"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1469 = I_Btn_Data.BarBtnInLeft; -->
+						<!-- _L1469 = btnDataIn.barBtnInLeft; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1469"/>
 							</lefts>
 							<right>
-								<!-- I_Btn_Data.BarBtnInLeft -->
+								<!-- btnDataIn.barBtnInLeft -->
 								<PrjOp name="66">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Btn_Data"/>
+												<ConstVarRef name="btnDataIn"/>
 											</path>
 										</IdExpression>
 									</flow>
 									<with>
-										<Label name="BarBtnInLeft"/>
+										<Label name="barBtnInLeft"/>
 									</with>
 								</PrjOp>
 							</right>
@@ -6763,23 +6763,23 @@
 								<ed:Equation oid="!ed/4bd3/276/17BC/4f6233d95ef2"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1471 = I_Btn_Data.AltBtnInRight; -->
+						<!-- _L1471 = btnDataIn.altBtnInRight; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1471"/>
 							</lefts>
 							<right>
-								<!-- I_Btn_Data.AltBtnInRight -->
+								<!-- btnDataIn.altBtnInRight -->
 								<PrjOp name="67">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Btn_Data"/>
+												<ConstVarRef name="btnDataIn"/>
 											</path>
 										</IdExpression>
 									</flow>
 									<with>
-										<Label name="AltBtnInRight"/>
+										<Label name="altBtnInRight"/>
 									</with>
 								</PrjOp>
 							</right>
@@ -6787,23 +6787,23 @@
 								<ed:Equation oid="!ed/4c49/276/17BC/4f62340e1919"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1472 = I_Btn_Data.AltBtnInLeft; -->
+						<!-- _L1472 = btnDataIn.altBtnInLeft; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1472"/>
 							</lefts>
 							<right>
-								<!-- I_Btn_Data.AltBtnInLeft -->
+								<!-- btnDataIn.altBtnInLeft -->
 								<PrjOp name="68">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Btn_Data"/>
+												<ConstVarRef name="btnDataIn"/>
 											</path>
 										</IdExpression>
 									</flow>
 									<with>
-										<Label name="AltBtnInLeft"/>
+										<Label name="altBtnInLeft"/>
 									</with>
 								</PrjOp>
 							</right>
@@ -6923,23 +6923,23 @@
 								<ed:Equation oid="!ed/4ceb/276/17BC/4f62346a7fc9"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1475 = I_Btn_Data.HdgBtnInRight; -->
+						<!-- _L1475 = btnDataIn.hdgBtnInRight; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1475"/>
 							</lefts>
 							<right>
-								<!-- I_Btn_Data.HdgBtnInRight -->
+								<!-- btnDataIn.hdgBtnInRight -->
 								<PrjOp name="69">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Btn_Data"/>
+												<ConstVarRef name="btnDataIn"/>
 											</path>
 										</IdExpression>
 									</flow>
 									<with>
-										<Label name="HdgBtnInRight"/>
+										<Label name="hdgBtnInRight"/>
 									</with>
 								</PrjOp>
 							</right>
@@ -6947,23 +6947,23 @@
 								<ed:Equation oid="!ed/4ced/276/17BC/4f62346a42b4"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1476 = I_Btn_Data.HdgBtnInLeft; -->
+						<!-- _L1476 = btnDataIn.hdgBtnInLeft; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1476"/>
 							</lefts>
 							<right>
-								<!-- I_Btn_Data.HdgBtnInLeft -->
+								<!-- btnDataIn.hdgBtnInLeft -->
 								<PrjOp name="70">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Btn_Data"/>
+												<ConstVarRef name="btnDataIn"/>
 											</path>
 										</IdExpression>
 									</flow>
 									<with>
-										<Label name="HdgBtnInLeft"/>
+										<Label name="hdgBtnInLeft"/>
 									</with>
 								</PrjOp>
 							</right>
@@ -7027,23 +7027,23 @@
 								<ed:Equation oid="!ed/4d65/276/17BC/4f623499551c"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1478 = I_Btn_Data.VsiBtnInLeft; -->
+						<!-- _L1478 = btnDataIn.vsiBtnInLeft; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1478"/>
 							</lefts>
 							<right>
-								<!-- I_Btn_Data.VsiBtnInLeft -->
+								<!-- btnDataIn.vsiBtnInLeft -->
 								<PrjOp name="72">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Btn_Data"/>
+												<ConstVarRef name="btnDataIn"/>
 											</path>
 										</IdExpression>
 									</flow>
 									<with>
-										<Label name="VsiBtnInLeft"/>
+										<Label name="vsiBtnInLeft"/>
 									</with>
 								</PrjOp>
 							</right>
@@ -7051,23 +7051,23 @@
 								<ed:Equation oid="!ed/4d67/276/17BC/4f6234996a6c"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1479 = I_Btn_Data.VsiBtnInRight; -->
+						<!-- _L1479 = btnDataIn.vsiBtnInRight; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1479"/>
 							</lefts>
 							<right>
-								<!-- I_Btn_Data.VsiBtnInRight -->
+								<!-- btnDataIn.vsiBtnInRight -->
 								<PrjOp name="71">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Btn_Data"/>
+												<ConstVarRef name="btnDataIn"/>
 											</path>
 										</IdExpression>
 									</flow>
 									<with>
-										<Label name="VsiBtnInRight"/>
+										<Label name="vsiBtnInRight"/>
 									</with>
 								</PrjOp>
 							</right>
@@ -7075,18 +7075,18 @@
 								<ed:Equation oid="!ed/4d69/276/17BC/4f623499234e"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1480 = I_Pointer1_Data.down; -->
+						<!-- _L1480 = pointer1Data.down; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1480"/>
 							</lefts>
 							<right>
-								<!-- I_Pointer1_Data.down -->
+								<!-- pointer1Data.down -->
 								<PrjOp name="137">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Pointer1_Data"/>
+												<ConstVarRef name="pointer1Data"/>
 											</path>
 										</IdExpression>
 									</flow>
@@ -7177,18 +7177,18 @@
 								<ed:Equation oid="!ed/4e61/276/17BC/4f625f3f33a9"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1489 = I_Pointer1_Data.down; -->
+						<!-- _L1489 = pointer1Data.down; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1489"/>
 							</lefts>
 							<right>
-								<!-- I_Pointer1_Data.down -->
+								<!-- pointer1Data.down -->
 								<PrjOp name="147">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Pointer1_Data"/>
+												<ConstVarRef name="pointer1Data"/>
 											</path>
 										</IdExpression>
 									</flow>
@@ -7201,23 +7201,23 @@
 								<ed:Equation oid="!ed/4eb6/276/17BC/4f6263082b3a"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1490 = I_Btn_Data.BrgBtnInRight; -->
+						<!-- _L1490 = btnDataIn.brgBtnInRight; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1490"/>
 							</lefts>
 							<right>
-								<!-- I_Btn_Data.BrgBtnInRight -->
+								<!-- btnDataIn.brgBtnInRight -->
 								<PrjOp name="81">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Btn_Data"/>
+												<ConstVarRef name="btnDataIn"/>
 											</path>
 										</IdExpression>
 									</flow>
 									<with>
-										<Label name="BrgBtnInRight"/>
+										<Label name="brgBtnInRight"/>
 									</with>
 								</PrjOp>
 							</right>
@@ -7225,23 +7225,23 @@
 								<ed:Equation oid="!ed/4656/461B/1740/4f630d3c57dc"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1491 = I_Btn_Data.AuxBtnInRight; -->
+						<!-- _L1491 = btnDataIn.auxBtnInRight; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1491"/>
 							</lefts>
 							<right>
-								<!-- I_Btn_Data.AuxBtnInRight -->
+								<!-- btnDataIn.auxBtnInRight -->
 								<PrjOp name="83">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Btn_Data"/>
+												<ConstVarRef name="btnDataIn"/>
 											</path>
 										</IdExpression>
 									</flow>
 									<with>
-										<Label name="AuxBtnInRight"/>
+										<Label name="auxBtnInRight"/>
 									</with>
 								</PrjOp>
 							</right>
@@ -7249,23 +7249,23 @@
 								<ed:Equation oid="!ed/4658/461B/1740/4f630d3c5233"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1492 = I_Btn_Data.NavBtnInRight; -->
+						<!-- _L1492 = btnDataIn.navBtnInRight; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1492"/>
 							</lefts>
 							<right>
-								<!-- I_Btn_Data.NavBtnInRight -->
+								<!-- btnDataIn.navBtnInRight -->
 								<PrjOp name="80">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Btn_Data"/>
+												<ConstVarRef name="btnDataIn"/>
 											</path>
 										</IdExpression>
 									</flow>
 									<with>
-										<Label name="NavBtnInRight"/>
+										<Label name="navBtnInRight"/>
 									</with>
 								</PrjOp>
 							</right>
@@ -7351,23 +7351,23 @@
 								<ed:Equation oid="!ed/4668/461B/1740/4f630d4872fe"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1497 = I_Interactivity_Data.SuiteIn; -->
+						<!-- _L1497 = interactivityDataIn.suiteIn; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1497"/>
 							</lefts>
 							<right>
-								<!-- I_Interactivity_Data.SuiteIn -->
+								<!-- interactivityDataIn.suiteIn -->
 								<PrjOp name="85">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Interactivity_Data"/>
+												<ConstVarRef name="interactivityDataIn"/>
 											</path>
 										</IdExpression>
 									</flow>
 									<with>
-										<Label name="SuiteIn"/>
+										<Label name="suiteIn"/>
 									</with>
 								</PrjOp>
 							</right>
@@ -7509,23 +7509,23 @@
 								<ed:Equation oid="!ed/48f2/461B/1740/4f631b124386"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1504 = I_Interactivity_Data.ETIn; -->
+						<!-- _L1504 = interactivityDataIn.etIn; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1504"/>
 							</lefts>
 							<right>
-								<!-- I_Interactivity_Data.ETIn -->
+								<!-- interactivityDataIn.etIn -->
 								<PrjOp name="87">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Interactivity_Data"/>
+												<ConstVarRef name="interactivityDataIn"/>
 											</path>
 										</IdExpression>
 									</flow>
 									<with>
-										<Label name="ETIn"/>
+										<Label name="etIn"/>
 									</with>
 								</PrjOp>
 							</right>
@@ -7533,18 +7533,18 @@
 								<ed:Equation oid="!ed/4907/461B/1740/4f631b1e4397"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1506 = I_Pointer1_Data.position; -->
+						<!-- _L1506 = pointer1Data.position; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1506"/>
 							</lefts>
 							<right>
-								<!-- I_Pointer1_Data.position -->
+								<!-- pointer1Data.position -->
 								<PrjOp name="92">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Pointer1_Data"/>
+												<ConstVarRef name="pointer1Data"/>
 											</path>
 										</IdExpression>
 									</flow>
@@ -7593,23 +7593,23 @@
 								<ed:Equation oid="!ed/45b7/341A/1B0C/4f8530bd496"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1509 = I_Interactivity_Data.DisplayIn; -->
+						<!-- _L1509 = interactivityDataIn.displayIn; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1509"/>
 							</lefts>
 							<right>
-								<!-- I_Interactivity_Data.DisplayIn -->
+								<!-- interactivityDataIn.displayIn -->
 								<PrjOp name="95">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Interactivity_Data"/>
+												<ConstVarRef name="interactivityDataIn"/>
 											</path>
 										</IdExpression>
 									</flow>
 									<with>
-										<Label name="DisplayIn"/>
+										<Label name="displayIn"/>
 									</with>
 								</PrjOp>
 							</right>
@@ -7617,18 +7617,18 @@
 								<ed:Equation oid="!ed/45b9/341A/1B0C/4f8530bd128a"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1511 = I_Pointer1_Data.position; -->
+						<!-- _L1511 = pointer1Data.position; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1511"/>
 							</lefts>
 							<right>
-								<!-- I_Pointer1_Data.position -->
+								<!-- pointer1Data.position -->
 								<PrjOp name="94">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Pointer1_Data"/>
+												<ConstVarRef name="pointer1Data"/>
 											</path>
 										</IdExpression>
 									</flow>
@@ -7824,18 +7824,18 @@
 								<ed:Equation oid="!ed/659b/2F8E/68C/4fa3a249468e"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1522 = I_Pointer1_Data.down; -->
+						<!-- _L1522 = pointer1Data.down; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1522"/>
 							</lefts>
 							<right>
-								<!-- I_Pointer1_Data.down -->
+								<!-- pointer1Data.down -->
 								<PrjOp name="139">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Pointer1_Data"/>
+												<ConstVarRef name="pointer1Data"/>
 											</path>
 										</IdExpression>
 									</flow>
@@ -7848,18 +7848,18 @@
 								<ed:Equation oid="!ed/65b0/2F8E/68C/4fa3a2676ea9"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1523 = I_Pointer2_Data.down; -->
+						<!-- _L1523 = pointer2Data.down; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1523"/>
 							</lefts>
 							<right>
-								<!-- I_Pointer2_Data.down -->
+								<!-- pointer2Data.down -->
 								<PrjOp name="140">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Pointer2_Data"/>
+												<ConstVarRef name="pointer2Data"/>
 											</path>
 										</IdExpression>
 									</flow>
@@ -7872,18 +7872,18 @@
 								<ed:Equation oid="!ed/65c1/2F8E/68C/4fa3a277622e"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1524 = I_Pointer2_Data.position; -->
+						<!-- _L1524 = pointer2Data.position; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1524"/>
 							</lefts>
 							<right>
-								<!-- I_Pointer2_Data.position -->
+								<!-- pointer2Data.position -->
 								<PrjOp name="101">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Pointer2_Data"/>
+												<ConstVarRef name="pointer2Data"/>
 											</path>
 										</IdExpression>
 									</flow>
@@ -7896,18 +7896,18 @@
 								<ed:Equation oid="!ed/65da/2F8E/68C/4fa3a27e75ad"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1525 = I_Pointer1_Data.position; -->
+						<!-- _L1525 = pointer1Data.position; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1525"/>
 							</lefts>
 							<right>
-								<!-- I_Pointer1_Data.position -->
+								<!-- pointer1Data.position -->
 								<PrjOp name="103">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Pointer1_Data"/>
+												<ConstVarRef name="pointer1Data"/>
 											</path>
 										</IdExpression>
 									</flow>
@@ -7920,23 +7920,23 @@
 								<ed:Equation oid="!ed/660b/2F8E/68C/4fa3a29b2968"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1527 = I_Interactivity_Data.MapIn; -->
+						<!-- _L1527 = interactivityDataIn.mapIn; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1527"/>
 							</lefts>
 							<right>
-								<!-- I_Interactivity_Data.MapIn -->
+								<!-- interactivityDataIn.mapIn -->
 								<PrjOp name="105">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Interactivity_Data"/>
+												<ConstVarRef name="interactivityDataIn"/>
 											</path>
 										</IdExpression>
 									</flow>
 									<with>
-										<Label name="MapIn"/>
+										<Label name="mapIn"/>
 									</with>
 								</PrjOp>
 							</right>
@@ -7944,10 +7944,10 @@
 								<ed:Equation oid="!ed/58a2/4FCD/1EE8/50ee889c4607"/>
 							</pragmas>
 						</Equation>
-						<!-- O_Interactivity_Data = _L1528; -->
+						<!-- interactivityDataOut = _L1528; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="O_Interactivity_Data"/>
+								<VariableRef name="interactivityDataOut"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -7960,18 +7960,18 @@
 								<ed:Equation oid="!ed/5914/4FCD/1EE8/50ee8a2f449b"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1528 = (make TInteractivityDataOut)(_L1499, _L1512, _L1500, _L1521, _L1532, _L1... -->
+						<!-- _L1528 = (make Simulation::interactivityDataOut)(_L1499, _L1512, _L1500, _L1521, ... -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1528"/>
 							</lefts>
 							<right>
-								<!-- (make TInteractivityDataOut)(_L1499, _L1512, _L1500, _L1521, _L1532, _L1536, _L15... -->
+								<!-- (make Simulation::interactivityDataOut)(_L1499, _L1512, _L1500, _L1521, _L1532, _... -->
 								<CallExpression>
 									<operator>
 										<MakeOp>
 											<type>
-												<TypeRef name="TInteractivityDataOut"/>
+												<TypeRef name="Simulation::interactivityDataOut"/>
 											</type>
 										</MakeOp>
 									</operator>
@@ -8028,18 +8028,18 @@
 								<ed:Equation oid="!ed/5919/4FCD/1EE8/50ee8a355f45"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1529 = I_Pointer1_Data.down; -->
+						<!-- _L1529 = pointer1Data.down; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1529"/>
 							</lefts>
 							<right>
-								<!-- I_Pointer1_Data.down -->
+								<!-- pointer1Data.down -->
 								<PrjOp name="138">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Pointer1_Data"/>
+												<ConstVarRef name="pointer1Data"/>
 											</path>
 										</IdExpression>
 									</flow>
@@ -8078,23 +8078,23 @@
 								<ed:Equation oid="!ed/5962/4FCD/1EE8/50ee8b0c7a5a"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1531 = I_Interactivity_Data.ADIIn; -->
+						<!-- _L1531 = interactivityDataIn.adiIn; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1531"/>
 							</lefts>
 							<right>
-								<!-- I_Interactivity_Data.ADIIn -->
+								<!-- interactivityDataIn.adiIn -->
 								<PrjOp name="111">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Interactivity_Data"/>
+												<ConstVarRef name="interactivityDataIn"/>
 											</path>
 										</IdExpression>
 									</flow>
 									<with>
-										<Label name="ADIIn"/>
+										<Label name="adiIn"/>
 									</with>
 								</PrjOp>
 							</right>
@@ -8146,18 +8146,18 @@
 								<ed:Equation oid="!ed/5966/4FCD/1EE8/50ee8b0c5a51"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1533 = I_Pointer1_Data.down; -->
+						<!-- _L1533 = pointer1Data.down; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1533"/>
 							</lefts>
 							<right>
-								<!-- I_Pointer1_Data.down -->
+								<!-- pointer1Data.down -->
 								<PrjOp name="141">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Pointer1_Data"/>
+												<ConstVarRef name="pointer1Data"/>
 											</path>
 										</IdExpression>
 									</flow>
@@ -8170,18 +8170,18 @@
 								<ed:Equation oid="!ed/5968/4FCD/1EE8/50ee8b0c1e0"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1534 = I_Pointer1_Data.down; -->
+						<!-- _L1534 = pointer1Data.down; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1534"/>
 							</lefts>
 							<right>
-								<!-- I_Pointer1_Data.down -->
+								<!-- pointer1Data.down -->
 								<PrjOp name="142">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Pointer1_Data"/>
+												<ConstVarRef name="pointer1Data"/>
 											</path>
 										</IdExpression>
 									</flow>
@@ -8264,23 +8264,23 @@
 								<ed:Equation oid="!ed/59a3/4FCD/1EE8/50ee8b132697"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1537 = I_Interactivity_Data.HSIIn; -->
+						<!-- _L1537 = interactivityDataIn.hsiIn; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1537"/>
 							</lefts>
 							<right>
-								<!-- I_Interactivity_Data.HSIIn -->
+								<!-- interactivityDataIn.hsiIn -->
 								<PrjOp name="112">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Interactivity_Data"/>
+												<ConstVarRef name="interactivityDataIn"/>
 											</path>
 										</IdExpression>
 									</flow>
 									<with>
-										<Label name="HSIIn"/>
+										<Label name="hsiIn"/>
 									</with>
 								</PrjOp>
 							</right>
@@ -8336,23 +8336,23 @@
 								<ed:Equation oid="!ed/5aeb/4FCD/1EE8/50eea1b369c2"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1546 = I_Interactivity_Data.LanguageIn; -->
+						<!-- _L1546 = interactivityDataIn.languageIn; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1546"/>
 							</lefts>
 							<right>
-								<!-- I_Interactivity_Data.LanguageIn -->
+								<!-- interactivityDataIn.languageIn -->
 								<PrjOp name="115">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Interactivity_Data"/>
+												<ConstVarRef name="interactivityDataIn"/>
 											</path>
 										</IdExpression>
 									</flow>
 									<with>
-										<Label name="LanguageIn"/>
+										<Label name="languageIn"/>
 									</with>
 								</PrjOp>
 							</right>
@@ -8360,18 +8360,18 @@
 								<ed:Equation oid="!ed/5b0b/4FCD/1EE8/50eea1bb3ea8"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1547 = I_Pointer1_Data.released; -->
+						<!-- _L1547 = pointer1Data.released; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1547"/>
 							</lefts>
 							<right>
-								<!-- I_Pointer1_Data.released -->
+								<!-- pointer1Data.released -->
 								<PrjOp name="146">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Pointer1_Data"/>
+												<ConstVarRef name="pointer1Data"/>
 											</path>
 										</IdExpression>
 									</flow>
@@ -8384,18 +8384,18 @@
 								<ed:Equation oid="!ed/5b0d/4FCD/1EE8/50eea1bbf2"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1549 = I_Pointer1_Data.down; -->
+						<!-- _L1549 = pointer1Data.down; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1549"/>
 							</lefts>
 							<right>
-								<!-- I_Pointer1_Data.down -->
+								<!-- pointer1Data.down -->
 								<PrjOp name="145">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Pointer1_Data"/>
+												<ConstVarRef name="pointer1Data"/>
 											</path>
 										</IdExpression>
 									</flow>
@@ -8408,23 +8408,23 @@
 								<ed:Equation oid="!ed/5c4d/4FCD/1EE8/50eecb992b7b"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1550 = I_Interactivity_Data.ALTIn; -->
+						<!-- _L1550 = interactivityDataIn.altIn; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1550"/>
 							</lefts>
 							<right>
-								<!-- I_Interactivity_Data.ALTIn -->
+								<!-- interactivityDataIn.altIn -->
 								<PrjOp name="136">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Interactivity_Data"/>
+												<ConstVarRef name="interactivityDataIn"/>
 											</path>
 										</IdExpression>
 									</flow>
 									<with>
-										<Label name="ALTIn"/>
+										<Label name="altIn"/>
 									</with>
 								</PrjOp>
 							</right>
@@ -8528,18 +8528,18 @@
 								<ed:Equation oid="!ed/5c55/4FCD/1EE8/50eecb995bee"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1554 = I_Pointer1_Data.down; -->
+						<!-- _L1554 = pointer1Data.down; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1554"/>
 							</lefts>
 							<right>
-								<!-- I_Pointer1_Data.down -->
+								<!-- pointer1Data.down -->
 								<PrjOp name="144">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Pointer1_Data"/>
+												<ConstVarRef name="pointer1Data"/>
 											</path>
 										</IdExpression>
 									</flow>
@@ -8596,23 +8596,23 @@
 								<ed:Equation oid="!ed/5c59/4FCD/1EE8/50eecb9979c7"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1556 = I_Interactivity_Data.SPEEDIn; -->
+						<!-- _L1556 = interactivityDataIn.speedIn; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1556"/>
 							</lefts>
 							<right>
-								<!-- I_Interactivity_Data.SPEEDIn -->
+								<!-- interactivityDataIn.speedIn -->
 								<PrjOp name="135">
 									<flow>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="I_Interactivity_Data"/>
+												<ConstVarRef name="interactivityDataIn"/>
 											</path>
 										</IdExpression>
 									</flow>
 									<with>
-										<Label name="SPEEDIn"/>
+										<Label name="speedIn"/>
 									</with>
 								</PrjOp>
 							</right>
@@ -8624,7 +8624,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/212d/7379/984/47595de57880" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<diagrams>
-								<NetDiagram name="Simulate_Compute" landscape="true" format="A4 (210 297)" oid="!ed/216f/7379/984/47595de57f1a">
+								<NetDiagram name="simulate_Compute" landscape="true" format="A4 (210 297)" oid="!ed/216f/7379/984/47595de57f1a">
 									<presentationElements>
 										<EquationGE presentable="!ed/114a/772E/750/476638e01574">
 											<position>
@@ -8940,7 +8940,7 @@
 										</Edge>
 									</presentationElements>
 								</NetDiagram>
-								<NetDiagram name="Simulate_SimuData1" landscape="true" format="A4 (210 297)" oid="!ed/f87/772E/750/4766368a111">
+								<NetDiagram name="simulate_SimuData1" landscape="true" format="A4 (210 297)" oid="!ed/f87/772E/750/4766368a111">
 									<presentationElements>
 										<EquationGE presentable="!ed/1023/772E/750/476636e261c">
 											<position>
@@ -9896,7 +9896,7 @@
 										</Edge>
 									</presentationElements>
 								</NetDiagram>
-								<NetDiagram name="Simulate_SimuData2" landscape="true" format="A4 (210 297)" oid="!ed/1cd2/D81/7A0/477234663ee4">
+								<NetDiagram name="simulate_SimuData2" landscape="true" format="A4 (210 297)" oid="!ed/1cd2/D81/7A0/477234663ee4">
 									<presentationElements>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/3cb8/34F2/C0C/485242254e38">
 											<position>
@@ -10476,7 +10476,7 @@
 										</Edge>
 									</presentationElements>
 								</NetDiagram>
-								<NetDiagram name="Simulate_SimuTrajec" landscape="true" format="A4 (210 297)" oid="!ed/77d7/7701/F1C/484f8933630e">
+								<NetDiagram name="simulate_SimuTrajec" landscape="true" format="A4 (210 297)" oid="!ed/77d7/7701/F1C/484f8933630e">
 									<presentationElements>
 										<EquationGE presentable="!ed/783f/7701/F1C/484f895b348">
 											<position>
@@ -10695,7 +10695,7 @@
 										</Edge>
 									</presentationElements>
 								</NetDiagram>
-								<NetDiagram name="Simulate_Interactivity" landscape="true" format="A4 (210 297)" oid="!ed/13fd5/3CE0/3C4/492c22a13309">
+								<NetDiagram name="simulate_Interactivity" landscape="true" format="A4 (210 297)" oid="!ed/13fd5/3CE0/3C4/492c22a13309">
 									<presentationElements>
 										<EquationGE presentable="!ed/517f/19E7/DE4/494290946398">
 											<position>
@@ -11681,7 +11681,7 @@
 										</Edge>
 									</presentationElements>
 								</NetDiagram>
-								<NetDiagram name="Simulate_AddData" landscape="true" format="A4 (210 297)" oid="!ed/477c/5DE3/DDC/4a84066e5561">
+								<NetDiagram name="simulate_AddData" landscape="true" format="A4 (210 297)" oid="!ed/477c/5DE3/DDC/4a84066e5561">
 									<presentationElements>
 										<EquationGE presentable="!ed/4948/5DE3/DDC/4a8409045aef">
 											<position>
@@ -11976,12 +11976,12 @@
 							</diagrams>
 							<references>
 								<TypeRef path="Interactivity::mouse" refOid="!ed/40ed/3422/D4C/4a818eed6001"/>
-								<TypeRef path="PFD::TSpeedAltData" refOid="!ed/51e7/7D49/B98/494240aa36b5"/>
-								<TypeRef path="PFD::TScreenInfoData" refOid="!ed/5207/7D49/B98/494240aa497f"/>
-								<TypeRef path="PFD::TTrajectoryData" refOid="!ed/5229/7D49/B98/494240aa2c37"/>
-								<TypeRef path="PFD::TTunnelData" refOid="!ed/527a/7D49/B98/494242a17283"/>
-								<TypeRef path="PFD::TAdiData" refOid="!ed/5336/7D49/B98/4942675251d0"/>
-								<TypeRef path="PFD::THsiData" refOid="!ed/539c/7D49/B98/4942688b5c48"/>
+								<TypeRef path="PFD::speedAltData" refOid="!ed/51e7/7D49/B98/494240aa36b5"/>
+								<TypeRef path="PFD::screenInfoData" refOid="!ed/5207/7D49/B98/494240aa497f"/>
+								<TypeRef path="PFD::trajectoryData" refOid="!ed/5229/7D49/B98/494240aa2c37"/>
+								<TypeRef path="PFD::tunnelData" refOid="!ed/527a/7D49/B98/494242a17283"/>
+								<TypeRef path="PFD::adiData" refOid="!ed/5336/7D49/B98/4942675251d0"/>
+								<TypeRef path="PFD::hsiData" refOid="!ed/539c/7D49/B98/4942688b5c48"/>
 								<TypeRef path="Altitude_Info_type" refOid="!ed/227d/444A/B40/47594cd24039"/>
 								<TypeRef path="System_Info_type" refOid="!ed/22f4/444A/B40/47594cd27d9d"/>
 								<TypeRef path="Aircraft_Info_type" refOid="!ed/226b/444A/B40/47594cd2408d"/>
@@ -11992,7 +11992,7 @@
 								<TypeRef path="Screen_Info_type" refOid="!ed/22d1/444A/B40/47594cd25e01"/>
 								<ConstVarRef path="PI" refOid="!ed/14ac5/654/16A8/480f3a0a223"/>
 								<ConstVarRef path="Speed" refOid="!ed/161/628B/C8/48dba1b74feb"/>
-								<ConstVarRef path="TrajectDisplay::Trajec" refOid="!ed/5f52/6649/7D8/49ddea3e6b35"/>
+								<ConstVarRef path="TrajectDisplay::TRAJEC" refOid="!ed/5f52/6649/7D8/49ddea3e6b35"/>
 							</references>
 						</ed:Operator>
 						<kcg:Pragma>
@@ -12009,9 +12009,9 @@
 						</kcg:Pragma>
 					</pragmas>
 				</Operator>
-				<Operator kind="function" name="AircraftSymbolEnumToInt">
+				<Operator kind="function" name="aircraftSymbolEnumToInt">
 					<inputs>
-						<Variable name="Input1">
+						<Variable name="in">
 							<type>
 								<NamedType>
 									<type>
@@ -12025,7 +12025,7 @@
 						</Variable>
 					</inputs>
 					<outputs>
-						<Variable name="Output1">
+						<Variable name="out">
 							<type>
 								<NamedType>
 									<type>
@@ -12089,7 +12089,7 @@
 						</Variable>
 					</locals>
 					<data>
-						<!-- _L1 = Input1; -->
+						<!-- _L1 = in; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1"/>
@@ -12097,7 +12097,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Input1"/>
+										<ConstVarRef name="in"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -12146,10 +12146,10 @@
 								<ed:Equation oid="!ed/4a8d/7408/14F4/4bb316af4e1b"/>
 							</pragmas>
 						</Equation>
-						<!-- Output1 = _L3; -->
+						<!-- out = _L3; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Output1"/>
+								<VariableRef name="out"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -12190,7 +12190,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/4a8b/7408/14F4/4bb316af516d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<diagrams>
-								<NetDiagram name="AircraftSymbolEnumToInt" landscape="true" format="A4 (210 297)" oid="!ed/4a91/7408/14F4/4bb316af1316">
+								<NetDiagram name="aircraftSymbolEnumToInt" landscape="true" format="A4 (210 297)" oid="!ed/4a91/7408/14F4/4bb316af1316">
 									<presentationElements>
 										<EquationGE presentable="!ed/4a8c/7408/14F4/4bb316af4f56">
 											<position>

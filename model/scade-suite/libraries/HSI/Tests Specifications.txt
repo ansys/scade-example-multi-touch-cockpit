@@ -1,0 +1,1777 @@
+
+Heading 2	1.1 SET OF SHEETS VT_2200 : CDI selection
+p1	The goal of this set of sheets is to verify the capability of the HSI module to select the CDI information according to the CDI source selected by menu.
+Heading 3	1.1.1 SHEET VT_2201 : CDI offset selection
+Heading 4	1.1.1.1 Goal
+p1	The goal of this sheet is to verify the capability of the HSI module to select the adequate CDI offset value.
+Heading 4	1.1.1.2 Requirement traceability
+|1 Tableau	Requirement  identifier|2 Tableau	Verification
+|1 Tableau	|2 Tableau	Mean|3 Tableau	Level
+|1 Tableau	PFD_SRS_048|2 Tableau	T|3 Tableau	CSC
+p1	
+Heading 4	1.1.1.3 Test environment
+p1	SY_CDI_Offset = {-128, -1, 0, 127}
+p1	SY_CDI_Sources = {VOR1, VOR2, GPS1, GPS2}
+p1	
+Heading 4	1.1.1.4 Test case 1
+p1	
+Heading 5	1.1.1.4.1 Objective
+p1	Check the selected CDI offset information in case of GPS1 menu selection.
+Heading 5	1.1.1.4.2 Test inputs
+p1	MN_CDI_Source = 2
+p1	
+Heading 5	1.1.1.4.3 Test outputs
+p1	HSI_CDI_Offset	Expected value = -128
+Heading 4	1.1.1.5 Test case 2
+p1	
+Heading 5	1.1.1.5.1 Objective
+p1	Check the selected CDI offset information in case of VOR1 menu selection.
+Heading 5	1.1.1.5.2 Test inputs
+p1	MN_CDI_Source = 0
+p1	
+Heading 5	1.1.1.5.3 Test outputs
+p1	HSI_CDI_Offset	Expected value = -1
+Heading 4	1.1.1.6 Test case 3
+p1	
+Heading 5	1.1.1.6.1 Objective
+p1	Check the selected CDI offset information in case of GPS2 menu selection.
+Heading 5	1.1.1.6.2 Test inputs
+p1	MN_CDI_Source = 3
+p1	
+Heading 5	1.1.1.6.3 Test outputs
+p1	HSI_CDI_Offset	Expected value = 0
+Heading 4	1.1.1.7 Test case 4
+p1	
+Heading 5	1.1.1.7.1 Objective
+p1	Check the selected CDI offset information in case of VOR2 menu selection.
+Heading 5	1.1.1.7.2 Test inputs
+p1	MN_CDI_Source = 1
+p1	
+Heading 5	1.1.1.7.3 Test outputs
+p1	HSI_CDI_Offset	Expected value = 127
+p1	
+Heading 3	1.1.2 SHEET VT_2202 : Navigation data source selection
+Heading 4	1.1.2.1 Goal
+p1	The goal of this sheet is to verify the capability of the HSI module to select the adequate navigation data source.
+Heading 4	1.1.2.2 Requirement traceability
+|1 Tableau	Requirement  identifier|2 Tableau	Verification
+|1 Tableau	|2 Tableau	Mean|3 Tableau	Level
+|1 Tableau	PFD_SRS_049|2 Tableau	T|3 Tableau	CSC
+p1	
+Heading 4	1.1.2.3 Test environment
+p1	SY_CDI_Sources = {GPS1, VOR1, VOR2, GPS2}
+p1	
+Heading 4	1.1.2.4 Test case 1
+p1	
+Heading 5	1.1.2.4.1 Objective
+p1	No navigation source switching activated.
+p1	Check the navigation data source selection in case of GPS1 menu selection.
+Heading 5	1.1.2.4.2 Test inputs
+p1	SY_Switch_NAV_Source = FALSE
+p1	MN_CDI_Source = 0
+p1	
+Heading 5	1.1.2.4.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	
+Heading 4	1.1.2.5 Test case 2
+p1	
+Heading 5	1.1.2.5.1 Objective
+p1	No navigation source switching activated.
+p1	Check the navigation data source selection in case of GPS2 menu selection.
+Heading 5	1.1.2.5.2 Test inputs
+p1	SY_Switch_NAV_Source = FALSE
+p1	MN_CDI_Source = 3
+p1	
+Heading 5	1.1.2.5.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = SECONDARY
+p1	
+Heading 4	1.1.2.6 Test case 3
+p1	
+Heading 5	1.1.2.6.1 Objective
+p1	No navigation source switching activated.
+p1	Check the navigation data source selection in case of VOR1 menu selection.
+Heading 5	1.1.2.6.2 Test inputs
+p1	SY_Switch_NAV_Source = FALSE
+p1	MN_CDI_Source = 1
+p1	
+Heading 5	1.1.2.6.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	
+Heading 4	1.1.2.7 Test case 4
+p1	
+Heading 5	1.1.2.7.1 Objective
+p1	No navigation source switching activated.
+p1	Check the navigation data source selection in case of VOR2 menu selection.
+Heading 5	1.1.2.7.2 Test inputs
+p1	SY_Switch_NAV_Source = FALSE
+p1	MN_CDI_Source = 2
+p1	
+Heading 5	1.1.2.7.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = SECONDARY
+p1	
+Heading 4	1.1.2.8 Test case 5
+p1	
+Heading 5	1.1.2.8.1 Objective
+p1	Navigation source switching activated.
+p1	Check the navigation data source selection in case of GPS1 menu selection.
+Heading 5	1.1.2.8.2 Test inputs
+p1	SY_Switch_NAV_Source = TRUE
+p1	MN_CDI_Source = 0
+p1	
+Heading 5	1.1.2.8.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = SECONDARY
+p1	
+Heading 4	1.1.2.9 Test case 6
+p1	
+Heading 5	1.1.2.9.1 Objective
+p1	Navigation source switching activated.
+p1	Check the navigation data source selection in case of GPS2 menu selection.
+Heading 5	1.1.2.9.2 Test inputs
+p1	SY_Switch_NAV_Source = TRUE
+p1	MN_CDI_Source = 3
+p1	
+Heading 5	1.1.2.9.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	
+Heading 4	1.1.2.10 Test case 7
+p1	
+Heading 5	1.1.2.10.1 Objective
+p1	Navigation source switching activated.
+p1	Check the navigation data source selection in case of VOR1 menu selection.
+Heading 5	1.1.2.10.2 Test inputs
+p1	SY_Switch_NAV_Source = TRUE
+p1	MN_CDI_Source = 1
+p1	
+Heading 5	1.1.2.10.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = SECONDARY
+p1	
+Heading 4	1.1.2.11 Test case 8
+p1	
+Heading 5	1.1.2.11.1 Objective
+p1	Navigation source switching activated.
+p1	Check the navigation data source selection in case of VOR2 menu selection.
+Heading 5	1.1.2.11.2 Test inputs
+p1	SY_Switch_NAV_Source = TRUE
+p1	MN_CDI_Source = 2
+p1	
+Heading 5	1.1.2.11.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	
+Heading 3	1.1.3 SHEET VT_2203 : Navigation data type selection
+Heading 4	1.1.3.1 Goal
+p1	The goal of this sheet is to verify the capability of the HSI module to select the adequate navigation data type.
+Heading 4	1.1.3.2 Requirement traceability
+|1 Tableau	Requirement  identifier|2 Tableau	Verification
+|1 Tableau	|2 Tableau	Mean|3 Tableau	Level
+|1 Tableau	PFD_SRS_050|2 Tableau	T|3 Tableau	CSC
+p1	
+Heading 4	1.1.3.3 Test environment
+p1	SY_CDI_Sources = {GPS1, VOR2, GPS2, VOR1}
+p1	
+Heading 4	1.1.3.4 Test case 1
+p1	
+Heading 5	1.1.3.4.1 Objective
+p1	Check the navigation data type selection in case of GPS1 menu selection.
+Heading 5	1.1.3.4.2 Test inputs
+p1	MN_CDI_Source = 0
+p1	
+Heading 5	1.1.3.4.3 Test outputs
+p1	HSI_NAV_Data_Type	Expected value = GPS
+p1	
+Heading 4	1.1.3.5 Test case 2
+p1	
+Heading 5	1.1.3.5.1 Objective
+p1	Check the navigation data type selection in case of GPS2 menu selection.
+Heading 5	1.1.3.5.2 Test inputs
+p1	MN_CDI_Source = 2
+p1	
+Heading 5	1.1.3.5.3 Test outputs
+p1	HSI_NAV_Data_Type	Expected value = GPS
+p1	
+Heading 4	1.1.3.6 Test case 3
+p1	
+Heading 5	1.1.3.6.1 Objective
+p1	Check the navigation data type selection in case of VOR1 menu selection.
+Heading 5	1.1.3.6.2 Test inputs
+p1	MN_CDI_Source = 3
+p1	
+Heading 5	1.1.3.6.3 Test outputs
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	
+Heading 4	1.1.3.7 Test case 4
+p1	
+Heading 5	1.1.3.7.1 Objective
+p1	Check the navigation data type selection in case of VOR2 menu selection.
+Heading 5	1.1.3.7.2 Test inputs
+p1	MN_CDI_Source = 1
+p1	
+Heading 5	1.1.3.7.3 Test outputs
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	
+Heading 3	1.1.4 SHEET VT_2204 : Navigation data selection
+Heading 4	1.1.4.1 Goal
+p1	The goal of this sheet is to verify the capability of the HSI module to select the adequate ILS_Selected and Back_Course information.
+Heading 4	1.1.4.2 Requirement traceability
+|1 Tableau	Requirement  identifier|2 Tableau	Verification
+|1 Tableau	|2 Tableau	Mean|3 Tableau	Level
+|1 Tableau	PFD_SRS_051|2 Tableau	T|3 Tableau	CSC
+p1	
+Heading 4	1.1.4.3 Test environment
+p1	SY_CDI_Sources = {GPS1, VOR2, GPS2, VOR1}
+p1	SY_Switch_NAV_Source = FALSE
+p1	
+Heading 4	1.1.4.4 Test case 1
+p1	
+Heading 5	1.1.4.4.1 Objective
+p1	Check the ILS_Selected and Back_Course information are initialized from the primary source of navigation data in case the primary source of navigation data is selected.
+Heading 5	1.1.4.4.2 Test inputs
+p1	PN_ILS_Selected = TRUE
+p1	PN_Back_Course = TRUE
+p1	SN_ILS_Selected = FALSE
+p1	SN_Back_Course = FALSE
+p1	
+p1	MN_CDI_Source = 0
+p1	
+Heading 5	1.1.4.4.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_ILS_Selected	Expected value = TRUE
+p1	HSI_Back_Course	Expected value = TRUE
+Normal	
+Heading 4	1.1.4.5 Test case 2
+p1	
+Heading 5	1.1.4.5.1 Objective
+p1	Check the ILS_Selected and Back_Course information are initialized from the corresponding information of the primary source of navigation data in case the primary source of navigation data is selected.
+Heading 5	1.1.4.5.2 Test inputs
+p1	PN_ILS_Selected = TRUE
+p1	PN_Back_Course = FALSE
+p1	SN_ILS_Selected = FALSE
+p1	SN_Back_Course = FALSE
+p1	
+p1	MN_CDI_Source = 0
+p1	
+Heading 5	1.1.4.5.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_ILS_Selected	Expected value = TRUE
+p1	HSI_Back_Course	Expected value = FALSE
+Heading 4	1.1.4.6 Test case 3
+p1	
+Heading 5	1.1.4.6.1 Objective
+p1	Check the ILS_Selected and Back_Course information are initialized from the secondary source of navigation data in case the secondary source of navigation data is selected.
+Heading 5	1.1.4.6.2 Test inputs
+p1	PN_ILS_Selected = TRUE
+p1	PN_Back_Course = TRUE
+p1	SN_ILS_Selected = FALSE
+p1	SN_Back_Course = FALSE
+p1	
+p1	MN_CDI_Source = 1
+p1	
+Heading 5	1.1.4.6.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = SECONDARY
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Back_Course	Expected value = FALSE
+Normal	
+Heading 4	1.1.4.7 Test case 4
+p1	
+Heading 5	1.1.4.7.1 Objective
+p1	Check the ILS_Selected and Back_Course information are initialized from the corresponding information of the secondary source of navigation data in case the secondary source of navigation data is selected.
+Heading 5	1.1.4.7.2 Test inputs
+p1	PN_ILS_Selected = TRUE
+p1	PN_Back_Course = TRUE
+p1	SN_ILS_Selected = FALSE
+p1	SN_Back_Course = TRUE
+p1	
+p1	MN_CDI_Source = 1
+p1	
+Heading 5	1.1.4.7.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = SECONDARY
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Back_Course	Expected value = TRUE
+Normal	
+Heading 3	1.1.5 SHEET VT_2205 : Flagged indicator selection
+Heading 4	1.1.5.1 Goal
+p1	The goal of this sheet is to verify the capability of the HSI module to select the adequate flag information.
+Heading 4	1.1.5.2 Requirement traceability
+|1 Tableau	Requirement  identifier|2 Tableau	Verification
+|1 Tableau	|2 Tableau	Mean|3 Tableau	Level
+|1 Tableau	PFD_SRS_052|2 Tableau	T|3 Tableau	CSC
+p1	
+Heading 4	1.1.5.3 Test environment
+p1	SY_CDI_Sources = {GPS1, VOR2, GPS2, VOR1}
+p1	SY_Switch_NAV_Source = FALSE
+p1	
+Heading 4	1.1.5.4 Test case 1
+p1	
+Heading 5	1.1.5.4.1 Objective
+p1	Check the flag information selection in case of primary GPS navigation data source selection.
+Heading 5	1.1.5.4.2 Test inputs
+p1	PN_GPS_Flagged = TRUE
+p1	PN_VOR_Flagged = FALSE
+p1	SN_GPS_Flagged = FALSE
+p1	SN_VOR_Flagged = FALSE
+p1	
+p1	MN_CDI_Source = 0
+p1	
+Heading 5	1.1.5.4.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = GPS
+p1	HSI_Flagged	Expected value = TRUE
+Normal	
+Heading 4	1.1.5.5 Test case 2
+p1	
+Heading 5	1.1.5.5.1 Objective
+p1	Check the flag information selection in case of secondary GPS navigation data source selection.
+Heading 5	1.1.5.5.2 Test inputs
+p1	PN_GPS_Flagged = TRUE
+p1	PN_VOR_Flagged = TRUE
+p1	SN_GPS_Flagged = FALSE
+p1	SN_VOR_Flagged = TRUE
+p1	
+p1	MN_CDI_Source = 2
+p1	
+Heading 5	1.1.5.5.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = SECONDARY
+p1	HSI_NAV_Data_Type	Expected value = GPS
+p1	HSI_Flagged	Expected value = FALSE
+Normal	
+Heading 4	1.1.5.6 Test case 3
+p1	
+Heading 5	1.1.5.6.1 Objective
+p1	Check the flag information selection in case of primary VOR navigation data source selection.
+Heading 5	1.1.5.6.2 Test inputs
+p1	PN_GPS_Flagged = TRUE
+p1	PN_VOR_Flagged = FALSE
+p1	SN_GPS_Flagged = TRUE
+p1	SN_VOR_Flagged = TRUE
+p1	
+p1	MN_CDI_Source = 3
+p1	
+Heading 5	1.1.5.6.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_Flagged	Expected value = FALSE
+Normal	
+Heading 4	1.1.5.7 Test case 4
+p1	
+Heading 5	1.1.5.7.1 Objective
+p1	Check the flag information selection in case of secondary VOR navigation data source selection.
+Heading 5	1.1.5.7.2 Test inputs
+p1	PN_GPS_Flagged = FALSE
+p1	PN_VOR_Flagged = FALSE
+p1	SN_GPS_Flagged = FALSE
+p1	SN_VOR_Flagged = TRUE
+p1	
+p1	MN_CDI_Source = 1
+p1	
+Heading 5	1.1.5.7.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = SECONDARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_Flagged	Expected value = TRUE
+Normal	
+Heading 3	1.1.6 SHEET VT_2206 : Flagged indicator selection
+Heading 4	1.1.6.1 Goal
+p1	The goal of this sheet is to verify the capability of the HSI module to select the adequate VOR radial information in case of resolution of the VOR TO/FROM indicator and VOR CDI deflection.
+Heading 4	1.1.6.2 Requirement traceability
+|1 Tableau	Requirement  identifier|2 Tableau	Verification
+|1 Tableau	|2 Tableau	Mean|3 Tableau	Level
+|1 Tableau	PFD_SRS_053|2 Tableau	T|3 Tableau	CSC
+|1 Tableau	PFD_SRS_054|2 Tableau	T|3 Tableau	CSC
+p1	
+Heading 4	1.1.6.3 Test environment
+p1	SY_CDI_Sources = {GPS1, VOR2, GPS2, VOR1}
+p1	SY_Switch_NAV_Source = FALSE
+p1	PN_ILS_Selected = FALSE
+p1	SN_ILS_Selected = FALSE
+p1	
+Heading 4	1.1.6.4 Test case 1
+p1	
+Heading 5	1.1.6.4.1 Objective
+p1	Check the VOR radial selection in case of primary navigation data source selection.
+Heading 5	1.1.6.4.2 Test inputs
+p1	PN_VOR_Radial = 0.0 degrees
+p1	SN_VOR_Radial = 359.9 degrees
+p1	
+p1	MN_CDI_Source = 3
+p1	
+Heading 5	1.1.6.4.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_Radial	Expected value = 0.0 degrees ± [TBD]
+Normal	
+Heading 4	1.1.6.5 Test case 2
+p1	
+Heading 5	1.1.6.5.1 Objective
+p1	Check the VOR radial selection in case of secondary navigation data source selection.
+Heading 5	1.1.6.5.2 Test inputs
+p1	PN_VOR_Radial = 0.0 degrees
+p1	SN_VOR_Radial = 359.9 degrees
+p1	
+p1	MN_CDI_Source = 1
+p1	
+Heading 5	1.1.6.5.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = SECONDARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_Radial	Expected value = 359.9 degrees ± [TBD]
+Normal	
+Heading 3	1.1.7 SHEET VT_2207 : VOR To/From indicator resolution
+Heading 4	1.1.7.1 Goal
+p1	The goal of this sheet is to verify the capability of the HSI module to calculate the HSI_VOR_CDI_angle information in case of resolution of the VOR TO/FROM indicator and VOR CDI deflection.
+Heading 4	1.1.7.2 Requirement traceability
+|1 Tableau	Requirement  identifier|2 Tableau	Verification
+|1 Tableau	|2 Tableau	Mean|3 Tableau	Level
+|1 Tableau	PFD_SRS_053|2 Tableau	T|3 Tableau	CSC
+|1 Tableau	PFD_SRS_055|2 Tableau	T|3 Tableau	CSC
+p1	
+Heading 4	1.1.7.3 Test environment
+p1	SY_CDI_Sources = {GPS1, VOR2, GPS2, VOR1}
+p1	SY_Switch_NAV_Source = FALSE
+p1	MN_CDI_Source = 3
+p1	PN_ILS_Selected = FALSE
+p1	SN_ILS_Selected = FALSE
+p1	SN_VOR_Radial = 0.0 degrees
+p1	
+Heading 4	1.1.7.4 Test case 1
+p1	
+Heading 5	1.1.7.4.1 Objective
+p1	Check the HSI_VOR_CDI_angle calcultation in case of equality between HSI_VOR_Radial and MN_Target_Course.
+Heading 5	1.1.7.4.2 Test inputs
+p1	MN_Target_Course = 15 degrees
+p1	PN_VOR_Radial = 15.0 degrees
+p1	
+Heading 5	1.1.7.4.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_Radial	Expected value = 15.0 degrees ± [TBD]
+p1	HSI_VOR_CDI_Angle	Expected value = 0.0 degrees ± [TBD]
+Normal	
+Heading 4	1.1.7.5 Test case 2
+p1	
+Heading 5	1.1.7.5.1 Objective
+p1	Check the HSI_VOR_CDI_angle calcultation in case of a positive oriented angle created by HSI_VOR_Radial and MN_Target_Course.
+Heading 5	1.1.7.5.2 Test inputs
+p1	MN_Target_Course = 40 degrees
+p1	PN_VOR_Radial = 120.1 degrees
+p1	
+Heading 5	1.1.7.5.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_Radial	Expected value = 120.1 degrees ± [TBD]
+p1	HSI_VOR_CDI_Angle	Expected value = +80.1 degrees ± [TBD]
+Normal	
+Heading 4	1.1.7.6 Test case 3
+p1	
+Heading 5	1.1.7.6.1 Objective
+p1	Check the HSI_VOR_CDI_angle calcultation in case of an oriented angle created by HSI_VOR_Radial and MN_Target_Course equals to (180°-ε).
+Heading 5	1.1.7.6.2 Test inputs
+p1	MN_Target_Course = 280 degrees
+p1	PN_VOR_Radial = 99.9 degrees
+p1	
+Heading 5	1.1.7.6.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_Radial	Expected value = 99.9 degrees ± [TBD]
+p1	HSI_VOR_CDI_Angle	Expected value = +179.9 degrees ± [TBD]
+Normal	
+Heading 4	1.1.7.7 Test case 4
+p1	
+Heading 5	1.1.7.7.1 Objective
+p1	Check the HSI_VOR_CDI_angle calcultation in case of an oriented angle created by HSI_VOR_Radial and MN_Target_Course equals to 180°.
+Heading 5	1.1.7.7.2 Test inputs
+p1	MN_Target_Course = 215 degrees
+p1	PN_VOR_Radial = 35.0 degrees
+p1	
+Heading 5	1.1.7.7.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_Radial	Expected value = 35.0 degrees ± [TBD]
+p1	HSI_VOR_CDI_Angle	Expected value = ±180.0 degrees ± [TBD]
+Normal	
+Heading 4	1.1.7.8 Test case 5
+p1	
+Heading 5	1.1.7.8.1 Objective
+p1	Check the HSI_VOR_CDI_angle calcultation in case of an oriented angle created by HSI_VOR_Radial and MN_Target_Course equals to (-180°+ε).
+Heading 5	1.1.7.8.2 Test inputs
+p1	MN_Target_Course = 162 degrees
+p1	PN_VOR_Radial = 342.1 degrees
+p1	
+Heading 5	1.1.7.8.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_Radial	Expected value = 342.1 degrees ± [TBD]
+p1	HSI_VOR_CDI_Angle	Expected value = -179.9 degrees ± [TBD]
+Normal	
+Heading 4	1.1.7.9 Test case 6
+p1	
+Heading 5	1.1.7.9.1 Objective
+p1	Check the HSI_VOR_CDI_angle calcultation in case of a negative oriented angle created by HSI_VOR_Radial and MN_Target_Course.
+Heading 5	1.1.7.9.2 Test inputs
+p1	MN_Target_Course = 90 degrees
+p1	PN_VOR_Radial = 53.7 degrees
+p1	
+Heading 5	1.1.7.9.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_Radial	Expected value = 53.7 degrees ± [TBD]
+p1	HSI_VOR_CDI_Angle	Expected value = -36.3 degrees ± [TBD]
+Normal	
+Heading 3	1.1.8 SHEET VT_2208 : VOR To/From indicator calculation
+Heading 4	1.1.8.1 Goal
+p1	The goal of this sheet is to verify the capability of the HSI module to calculate the To/From indicator in case of resolution of the VOR TO/FROM indicator and VOR CDI deflection.
+Heading 4	1.1.8.2 Requirement traceability
+|1 Tableau	Requirement  identifier|2 Tableau	Verification
+|1 Tableau	|2 Tableau	Mean|3 Tableau	Level
+|1 Tableau	PFD_SRS_053|2 Tableau	T|3 Tableau	CSC
+|1 Tableau	PFD_SRS_056|2 Tableau	T|3 Tableau	CSC
+p1	
+Heading 4	1.1.8.3 Test environment
+p1	SY_CDI_Sources = {GPS1, VOR2, GPS2, VOR1}
+p1	SY_Switch_NAV_Source = FALSE
+p1	MN_CDI_Source = 3
+p1	PN_ILS_Selected = FALSE
+p1	SN_ILS_Selected = FALSE
+p1	SN_VOR_Radial = 0.0 degrees
+p1	
+Heading 4	1.1.8.4 Test case 1
+p1	
+Heading 5	1.1.8.4.1 Objective
+p1	Check the To/From indicator calculation in case of an HSI_VOR_CDI_angle inferior to -90°.
+Heading 5	1.1.8.4.2 Test inputs
+p1	MN_Target_Course = 95 degrees
+p1	PN_VOR_Radial = 287.6 degrees
+p1	
+Heading 5	1.1.8.4.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = -167.4 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = FROM
+Normal	
+Heading 4	1.1.8.5 Test case 2
+p1	
+Heading 5	1.1.8.5.1 Objective
+p1	Check the To/From indicator calculation in case of an HSI_VOR_CDI_angle equal to (-90°-ε).
+Heading 5	1.1.8.5.2 Test inputs
+p1	MN_Target_Course = 142 degrees
+p1	PN_VOR_Radial = 51.9 degrees
+p1	
+Heading 5	1.1.8.5.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = -90.1 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = FROM
+Normal	
+Heading 4	1.1.8.6 Test case 3
+p1	
+Heading 5	1.1.8.6.1 Objective
+p1	Check the To/From indicator calculation in case of an HSI_VOR_CDI_angle equal to -90°.
+Heading 5	1.1.8.6.2 Test inputs
+p1	MN_Target_Course = 208 degrees
+p1	PN_VOR_Radial = 118.0 degrees
+p1	
+Heading 5	1.1.8.6.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = -90.0 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = TO
+Normal	
+Heading 4	1.1.8.7 Test case 4
+p1	
+Heading 5	1.1.8.7.1 Objective
+p1	Check the To/From indicator calculation in case of an HSI_VOR_CDI_angle equal to (-90°+ε).
+Heading 5	1.1.8.7.2 Test inputs
+p1	MN_Target_Course = 294 degrees
+p1	PN_VOR_Radial = 204.1 degrees
+p1	
+Heading 5	1.1.8.7.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = -89.9 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = TO
+Normal	
+Heading 4	1.1.8.8 Test case 5
+p1	
+Heading 5	1.1.8.8.1 Objective
+p1	Check the To/From indicator calculation in case of an HSI_VOR_CDI_angle equal to 0°.
+Heading 5	1.1.8.8.2 Test inputs
+p1	MN_Target_Course = 12 degrees
+p1	PN_VOR_Radial = 12.0 degrees
+p1	
+Heading 5	1.1.8.8.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = 0.0 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = TO
+Heading 4	1.1.8.9 Test case 6
+p1	
+Heading 5	1.1.8.9.1 Objective
+p1	Check the To/From indicator calculation in case of an HSI_VOR_CDI_angle comprised between -90° and +90°.
+Heading 5	1.1.8.9.2 Test inputs
+p1	MN_Target_Course = 77 degrees
+p1	PN_VOR_Radial = 128.6 degrees
+p1	
+Heading 5	1.1.8.9.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = +51.6 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = TO
+Normal	
+Heading 4	1.1.8.10 Test case 7
+p1	
+Heading 5	1.1.8.10.1 Objective
+p1	Check the To/From indicator calculation in case of an HSI_VOR_CDI_angle equal to (+90°-ε).
+Heading 5	1.1.8.10.2 Test inputs
+p1	MN_Target_Course = 102 degrees
+p1	PN_VOR_Radial = 191.9 degrees
+p1	
+Heading 5	1.1.8.10.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = +89.9 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = TO
+Normal	
+Heading 4	1.1.8.11 Test case 8
+p1	
+Heading 5	1.1.8.11.1 Objective
+p1	Check the To/From indicator calculation in case of an HSI_VOR_CDI_angle equal to +90°.
+Heading 5	1.1.8.11.2 Test inputs
+p1	MN_Target_Course = 253 degrees
+p1	PN_VOR_Radial = 343.0 degrees
+p1	
+Heading 5	1.1.8.11.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = +90.0 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = TO
+Normal	
+Heading 4	1.1.8.12 Test case 9
+p1	
+Heading 5	1.1.8.12.1 Objective
+p1	Check the To/From indicator calculation in case of an HSI_VOR_CDI_angle equal to (+90°+ε).
+Heading 5	1.1.8.12.2 Test inputs
+p1	MN_Target_Course = 270 degrees
+p1	PN_VOR_Radial = 0.1 degrees
+p1	
+Heading 5	1.1.8.12.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = +90.1 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = FROM
+Normal	
+Heading 4	1.1.8.13 Test case 10
+p1	
+Heading 5	1.1.8.13.1 Objective
+p1	Check the To/From indicator calculation in case of an HSI_VOR_CDI_angle superior to +90°.
+Heading 5	1.1.8.13.2 Test inputs
+p1	MN_Target_Course = 327 degrees
+p1	PN_VOR_Radial = 86.3 degrees
+p1	
+Heading 5	1.1.8.13.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = +119.3 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = FROM
+Normal	
+Heading 3	1.1.9 SHEET VT_2209 : VOR CDI deflection resolution in TO condition
+Heading 4	1.1.9.1 Goal
+p1	The goal of this sheet is to verify the capability of the HSI module to calculate the CDI deflection in case of resolution of the VOR TO/FROM indicator and VOR CDI deflection in TO condition.
+Heading 4	1.1.9.2 Requirement traceability
+|1 Tableau	Requirement  identifier|2 Tableau	Verification
+|1 Tableau	|2 Tableau	Mean|3 Tableau	Level
+|1 Tableau	PFD_SRS_053|2 Tableau	T|3 Tableau	CSC
+|1 Tableau	PFD_SRS_057|2 Tableau	T|3 Tableau	CSC
+|1 Tableau	PFD_SRS_059|2 Tableau	T|3 Tableau	CSC
+p1	
+Heading 4	1.1.9.3 Test environment
+p1	SY_CDI_Sources = {GPS1, VOR2, GPS2, VOR1}
+p1	SY_Switch_NAV_Source = FALSE
+p1	MN_CDI_Source = 3
+p1	PN_ILS_Selected = FALSE
+p1	SN_ILS_Selected = FALSE
+p1	SN_VOR_Radial = 0.0 degrees
+p1	
+Heading 4	1.1.9.4 Test case 1
+p1	
+Heading 5	1.1.9.4.1 Objective
+p1	Check the CDI deflection calculation in case of an HSI_VOR_CDI_angle equal to 90°.
+Heading 5	1.1.9.4.2 Test inputs
+p1	MN_Target_Course = 270 degrees
+p1	PN_VOR_Radial = 0.0 degrees
+p1	
+Heading 5	1.1.9.4.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = +90.0 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = TO
+p1	HSI_VOR_CDI_Defl	Expected value = +127.0
+Heading 4	1.1.9.5 Test case 2
+p1	
+Heading 5	1.1.9.5.1 Objective
+p1	Check the CDI deflection calculation in case of an HSI_VOR_CDI_angle superior to 10° and inferior to 90°.
+Heading 5	1.1.9.5.2 Test inputs
+p1	MN_Target_Course = 16 degrees
+p1	PN_VOR_Radial = 88.4 degrees
+p1	
+Heading 5	1.1.9.5.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = +72.4 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = TO
+p1	HSI_VOR_CDI_Defl	Expected value = +127.0
+Normal	
+Heading 4	1.1.9.6 Test case 3
+p1	
+Heading 5	1.1.9.6.1 Objective
+p1	Check the CDI deflection calculation in case of an HSI_VOR_CDI_angle equal to (+10° + ε).
+Heading 5	1.1.9.6.2 Test inputs
+p1	MN_Target_Course = 153 degrees
+p1	PN_VOR_Radial = 163.1 degrees
+p1	
+Heading 5	1.1.9.6.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = +10.1 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = TO
+p1	HSI_VOR_CDI_Defl	Expected value = +127.0
+Normal	
+Heading 4	1.1.9.7 Test case 4
+p1	
+Heading 5	1.1.9.7.1 Objective
+p1	Check the CDI deflection calculation in case of an HSI_VOR_CDI_angle equal to +10°.
+Heading 5	1.1.9.7.2 Test inputs
+p1	MN_Target_Course = 192 degrees
+p1	PN_VOR_Radial = 202.0 degrees
+p1	
+Heading 5	1.1.9.7.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = +10.0 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = TO
+p1	HSI_VOR_CDI_Defl	Expected value = +127.0
+Normal	
+Heading 4	1.1.9.8 Test case 5
+p1	
+Heading 5	1.1.9.8.1 Objective
+p1	Check the CDI deflection calculation in case of an HSI_VOR_CDI_angle equal to (+10° - ε).
+Heading 5	1.1.9.8.2 Test inputs
+p1	MN_Target_Course = 360 degrees
+p1	PN_VOR_Radial = 9.9 degrees
+p1	
+Heading 5	1.1.9.8.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = +9.9 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = TO
+p1	HSI_VOR_CDI_Defl	Expected value = +125.73 ± [TBD]
+Normal	
+Heading 4	1.1.9.9 Test case 6
+p1	
+Heading 5	1.1.9.9.1 Objective
+p1	Check the CDI deflection calculation in case of an HSI_VOR_CDI_angle superior to 0° and inferior to 10°.
+Heading 5	1.1.9.9.2 Test inputs
+p1	MN_Target_Course = 7 degrees
+p1	PN_VOR_Radial = 11.8 degrees
+p1	
+Heading 5	1.1.9.9.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = +4.8 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = TO
+p1	HSI_VOR_CDI_Defl	Expected value = +60.96 ± [TBD]
+Normal	
+Heading 4	1.1.9.10 Test case 7
+p1	
+Heading 5	1.1.9.10.1 Objective
+p1	Check the CDI deflection calculation in case of an HSI_VOR_CDI_angle equal to 0°.
+Heading 5	1.1.9.10.2 Test inputs
+p1	MN_Target_Course = 360 degrees
+p1	PN_VOR_Radial = 0.0 degrees
+p1	
+Heading 5	1.1.9.10.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = +0.0 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = TO
+p1	HSI_VOR_CDI_Defl	Expected value = +0.0 ± [TBD]
+Normal	
+Heading 4	1.1.9.11 Test case 8
+p1	
+Heading 5	1.1.9.11.1 Objective
+p1	Check the CDI deflection calculation in case of an HSI_VOR_CDI_angle inferior to 0° and superior to -10°.
+Heading 5	1.1.9.11.2 Test inputs
+p1	MN_Target_Course = 7 degrees
+p1	PN_VOR_Radial = 358.6 degrees
+p1	
+Heading 5	1.1.9.11.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = +8.4 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = TO
+p1	HSI_VOR_CDI_Defl	Expected value = -106.68 ± [TBD]
+Normal	
+Heading 4	1.1.9.12 Test case 9
+p1	
+Heading 5	1.1.9.12.1 Objective
+p1	Check the CDI deflection calculation in case of an HSI_VOR_CDI_angle equal to (-10° + ε).
+Heading 5	1.1.9.12.2 Test inputs
+p1	MN_Target_Course = 138 degrees
+p1	PN_VOR_Radial = 128.1 degrees
+p1	
+Heading 5	1.1.9.12.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = -9.9 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = TO
+p1	HSI_VOR_CDI_Defl	Expected value = -125.73 ± [TBD]
+Normal	
+Heading 4	1.1.9.13 Test case 10
+p1	
+Heading 5	1.1.9.13.1 Objective
+p1	Check the CDI deflection calculation in case of an HSI_VOR_CDI_angle equal to -10°.
+Heading 5	1.1.9.13.2 Test inputs
+p1	MN_Target_Course = 253 degrees
+p1	PN_VOR_Radial = 243.0 degrees
+p1	
+Heading 5	1.1.9.13.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = -10.0 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = TO
+p1	HSI_VOR_CDI_Defl	Expected value = -127.0
+Normal	
+Heading 4	1.1.9.14 Test case 11
+p1	
+Heading 5	1.1.9.14.1 Objective
+p1	Check the CDI deflection calculation in case of an HSI_VOR_CDI_angle equal to (-10° - ε).
+Heading 5	1.1.9.14.2 Test inputs
+p1	MN_Target_Course = 10 degrees
+p1	PN_VOR_Radial = 359.9 degrees
+p1	
+Heading 5	1.1.9.14.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = -10.1 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = TO
+p1	HSI_VOR_CDI_Defl	Expected value = -128.0
+p1	
+Heading 4	1.1.9.15 Test case 12
+p1	
+Heading 5	1.1.9.15.1 Objective
+p1	Check the CDI deflection calculation in case of an HSI_VOR_CDI_angle inferior to -10° and superior to -90°.
+Heading 5	1.1.9.15.2 Test inputs
+p1	MN_Target_Course = 253 degrees
+p1	PN_VOR_Radial = 217.4 degrees
+p1	
+Heading 5	1.1.9.15.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = -35.6 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = TO
+p1	HSI_VOR_CDI_Defl	Expected value = -128.0
+Normal	
+Heading 4	1.1.9.16 Test case 13
+p1	
+Heading 5	1.1.9.16.1 Objective
+p1	Check the CDI deflection calculation in case of an HSI_VOR_CDI_angle equal to -90°.
+Heading 5	1.1.9.16.2 Test inputs
+p1	MN_Target_Course = 270 degrees
+p1	PN_VOR_Radial = 180.0 degrees
+p1	
+Heading 5	1.1.9.16.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = -90.0 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = TO
+p1	HSI_VOR_CDI_Defl	Expected value = -128.0
+Normal	
+Heading 3	1.1.10 SHEET VT_2210 : VOR CDI deflection resolution in FROM condition
+Heading 4	1.1.10.1 Goal
+p1	The goal of this sheet is to verify the capability of the HSI module to calculate the CDI deflection in case of resolution of the VOR TO/FROM indicator and VOR CDI deflection in FROM condition.
+Heading 4	1.1.10.2 Requirement traceability
+|1 Tableau	Requirement  identifier|2 Tableau	Verification
+|1 Tableau	|2 Tableau	Mean|3 Tableau	Level
+|1 Tableau	PFD_SRS_053|2 Tableau	T|3 Tableau	CSC
+|1 Tableau	PFD_SRS_058|2 Tableau	T|3 Tableau	CSC
+|1 Tableau	PFD_SRS_059|2 Tableau	T|3 Tableau	CSC
+p1	
+Heading 4	1.1.10.3 Test environment
+p1	SY_CDI_Sources = {GPS1, VOR2, GPS2, VOR1}
+p1	SY_Switch_NAV_Source = FALSE
+p1	MN_CDI_Source = 3
+p1	PN_ILS_Selected = FALSE
+p1	SN_ILS_Selected = FALSE
+p1	SN_VOR_Radial = 0.0 degrees
+p1	
+Heading 4	1.1.10.4 Test case 1
+p1	
+Heading 5	1.1.10.4.1 Objective
+p1	Check the CDI deflection calculation in case of an HSI_VOR_CDI_angle equal to ± 180°.
+Heading 5	1.1.10.4.2 Test inputs
+p1	MN_Target_Course = 360 degrees
+p1	PN_VOR_Radial = 180.0 degrees
+p1	
+Heading 5	1.1.10.4.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = ±180.0 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = FROM
+p1	HSI_VOR_CDI_Defl	Expected value = 0.0
+Heading 4	1.1.10.5 Test case 2
+p1	
+Heading 5	1.1.10.5.1 Objective
+p1	Check the CDI deflection calculation in case of an HSI_VOR_CDI_angle superior to 170° and inferior to 180°.
+Heading 5	1.1.10.5.2 Test inputs
+p1	MN_Target_Course = 356 degrees
+p1	PN_VOR_Radial = 172.7 degrees
+p1	
+Heading 5	1.1.10.5.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = +176.7 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = FROM
+p1	HSI_VOR_CDI_Defl	Expected value = +41.91
+Normal	
+Heading 4	1.1.10.6 Test case 3
+p1	
+Heading 5	1.1.10.6.1 Objective
+p1	Check the CDI deflection calculation in case of an HSI_VOR_CDI_angle equal to (+170° + ε).
+Heading 5	1.1.10.6.2 Test inputs
+p1	MN_Target_Course = 113 degrees
+p1	PN_VOR_Radial = 283.1 degrees
+p1	
+Heading 5	1.1.10.6.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = +170.1 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = FROM
+p1	HSI_VOR_CDI_Defl	Expected value = +125.73
+Normal	
+Heading 4	1.1.10.7 Test case 4
+p1	
+Heading 5	1.1.10.7.1 Objective
+p1	Check the CDI deflection calculation in case of an HSI_VOR_CDI_angle equal to +170°.
+Heading 5	1.1.10.7.2 Test inputs
+p1	MN_Target_Course = 192 degrees
+p1	PN_VOR_Radial = 2.0 degrees
+p1	
+Heading 5	1.1.10.7.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = +170.0 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = FROM
+p1	HSI_VOR_CDI_Defl	Expected value = +127.0
+Normal	
+Heading 4	1.1.10.8 Test case 5
+p1	
+Heading 5	1.1.10.8.1 Objective
+p1	Check the CDI deflection calculation in case of an HSI_VOR_CDI_angle equal to (+170° - ε).
+Heading 5	1.1.10.8.2 Test inputs
+p1	MN_Target_Course = 276 degrees
+p1	PN_VOR_Radial = 85.9 degrees
+p1	
+Heading 5	1.1.10.8.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = +169.9 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = FROM
+p1	HSI_VOR_CDI_Defl	Expected value = +127.0 ± [TBD]
+Normal	
+Heading 4	1.1.10.9 Test case 6
+p1	
+Heading 5	1.1.10.9.1 Objective
+p1	Check the CDI deflection calculation in case of an HSI_VOR_CDI_angle superior to 90° and inferior to 170°.
+Heading 5	1.1.10.9.2 Test inputs
+p1	MN_Target_Course = 5 degrees
+p1	PN_VOR_Radial = 117.7 degrees
+p1	
+Heading 5	1.1.10.9.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = +112.7 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = FROM
+p1	HSI_VOR_CDI_Defl	Expected value = +127.0 ± [TBD]
+Normal	
+Heading 4	1.1.10.10 Test case 7
+p1	
+Heading 5	1.1.10.10.1 Objective
+p1	Check the CDI deflection calculation in case of an HSI_VOR_CDI_angle equal to (+90°+ε).
+Heading 5	1.1.10.10.2 Test inputs
+p1	MN_Target_Course = 143 degrees
+p1	PN_VOR_Radial = 233.1 degrees
+p1	
+Heading 5	1.1.10.10.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = +90.1 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = FROM
+p1	HSI_VOR_CDI_Defl	Expected value = +127.0 ± [TBD]
+Normal	
+Heading 4	1.1.10.11 Test case 8
+p1	
+Heading 5	1.1.10.11.1 Objective
+p1	Check the CDI deflection calculation in case of an HSI_VOR_CDI_angle equal to (-90°-ε).
+Heading 5	1.1.10.11.2 Test inputs
+p1	MN_Target_Course = 90 degrees
+p1	PN_VOR_Radial = 359.9 degrees
+p1	
+Heading 5	1.1.10.11.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = -90.1 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = FROM
+p1	HSI_VOR_CDI_Defl	Expected value = -128.0 ± [TBD]
+Normal	
+Heading 4	1.1.10.12 Test case 9
+p1	
+Heading 5	1.1.10.12.1 Objective
+p1	Check the CDI deflection calculation in case of an HSI_VOR_CDI_angle inferior to -90° and superior to -170°.
+Heading 5	1.1.10.12.2 Test inputs
+p1	MN_Target_Course = 187 degrees
+p1	PN_VOR_Radial = 27.8 degrees
+p1	
+Heading 5	1.1.10.12.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = -159.2 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = FROM
+p1	HSI_VOR_CDI_Defl	Expected value = -128.0 ± [TBD]
+Normal	
+Heading 4	1.1.10.13 Test case 10
+p1	
+Heading 5	1.1.10.13.1 Objective
+p1	Check the CDI deflection calculation in case of an HSI_VOR_CDI_angle equal to (-170° + ε).
+Heading 5	1.1.10.13.2 Test inputs
+p1	MN_Target_Course = 302 degrees
+p1	PN_VOR_Radial = 132.1 degrees
+p1	
+Heading 5	1.1.10.13.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = -169.9 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = FROM
+p1	HSI_VOR_CDI_Defl	Expected value = -128.0 ± [TBD]
+Normal	
+Heading 4	1.1.10.14 Test case 11
+p1	
+Heading 5	1.1.10.14.1 Objective
+p1	Check the CDI deflection calculation in case of an HSI_VOR_CDI_angle equal to -170°.
+Heading 5	1.1.10.14.2 Test inputs
+p1	MN_Target_Course = 95 degrees
+p1	PN_VOR_Radial = 285.0 degrees
+p1	
+Heading 5	1.1.10.14.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = -170.0 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = FROM
+p1	HSI_VOR_CDI_Defl	Expected value = -127.0
+Normal	
+Heading 4	1.1.10.15 Test case 12
+p1	
+Heading 5	1.1.10.15.1 Objective
+p1	Check the CDI deflection calculation in case of an HSI_VOR_CDI_angle equal to (-170° - ε).
+Heading 5	1.1.10.15.2 Test inputs
+p1	MN_Target_Course = 170 degrees
+p1	PN_VOR_Radial = 359.9 degrees
+p1	
+Heading 5	1.1.10.15.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = -170.1 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = FROM
+p1	HSI_VOR_CDI_Defl	Expected value = -125.73 ± [TBD]
+p1	
+Heading 4	1.1.10.16 Test case 13
+p1	
+Heading 5	1.1.10.16.1 Objective
+p1	Check the CDI deflection calculation in case of an HSI_VOR_CDI_angle inferior to -170° and superior to -180°.
+Heading 5	1.1.10.16.2 Test inputs
+p1	MN_Target_Course = 173 degrees
+p1	PN_VOR_Radial = 0.1 degrees
+p1	
+Heading 5	1.1.10.16.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_CDI_Angle	Expected value = -172.9 degrees ± [TBD]
+p1	HSI_VOR_To_From	Expected value = FROM
+p1	HSI_VOR_CDI_Defl	Expected value = -90.17 ± [TBD]
+Normal	
+Heading 3	1.1.11 SHEET VT_2211 : To/From indicator selection
+Heading 4	1.1.11.1 Goal
+p1	The goal of this sheet is to verify the capability of the HSI module to select the adequate To/From indicator.
+Heading 4	1.1.11.2 Requirement traceability
+|1 Tableau	Requirement  identifier|2 Tableau	Verification
+|1 Tableau	|2 Tableau	Mean|3 Tableau	Level
+|1 Tableau	PFD_SRS_053|2 Tableau	T|3 Tableau	CSC
+|1 Tableau	PFD_SRS_060|2 Tableau	T|3 Tableau	CSC
+p1	
+Heading 4	1.1.11.3 Test environment
+p1	SY_CDI_Sources = {GPS1, VOR2, GPS2, VOR1}
+p1	SY_Switch_NAV_Source = FALSE
+p1	PN_ILS_Selected = FALSE
+p1	SN_ILS_Selected = FALSE
+p1	PN_VOR_Flagged = FALSE
+p1	SN_VOR_Flagged = FALSE
+p1	
+Heading 4	1.1.11.4 Test case 1
+p1	
+Heading 5	1.1.11.4.1 Objective
+p1	Check the To/From indicator selection in case of primary GPS data source selection and a TO condition.
+Heading 5	1.1.11.4.2 Test inputs
+p1	PN_GPS_To_From = 0 (TO)
+p1	SN_GPS_To_From = 1 (FROM)
+p1	
+p1	MN_Target_Course = 77 degrees
+p1	PN_VOR_Radial = 128.6 degrees
+p1	
+p1	MN_CDI_Source = 0
+p1	
+Heading 5	1.1.11.4.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = GPS
+p1	HSI_To_From	Expected value = TO
+Normal	
+Heading 4	1.1.11.5 Test case 2
+p1	
+Heading 5	1.1.11.5.1 Objective
+p1	Check the To/From indicator selection in case of primary GPS data source selection and a FROM condition.
+Heading 5	1.1.11.5.2 Test inputs
+p1	PN_GPS_To_From = 1 (FROM)
+p1	SN_GPS_To_From = 1 (FROM)
+p1	
+p1	MN_Target_Course = 77 degrees
+p1	PN_VOR_Radial = 128.6 degrees
+p1	
+p1	MN_CDI_Source = 0
+p1	
+Heading 5	1.1.11.5.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = GPS
+p1	HSI_To_From	Expected value = FROM
+Normal	
+Heading 4	1.1.11.6 Test case 3
+p1	
+Heading 5	1.1.11.6.1 Objective
+p1	Check the To/From indicator selection in case of secondary GPS data source selection and a TO condition.
+Heading 5	1.1.11.6.2 Test inputs
+p1	PN_GPS_To_From = 1 (FROM)
+p1	SN_GPS_To_From = 0 (TO)
+p1	
+p1	MN_Target_Course = 77 degrees
+p1	PN_VOR_Radial = 128.6 degrees
+p1	
+p1	MN_CDI_Source = 2
+p1	
+Heading 5	1.1.11.6.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = SECONDARY
+p1	HSI_NAV_Data_Type	Expected value = GPS
+p1	HSI_To_From	Expected value = TO
+Normal	
+Heading 4	1.1.11.7 Test case 4
+p1	
+Heading 5	1.1.11.7.1 Objective
+p1	Check the To/From indicator selection in case of secondary GPS data source selection and a FROM condition.
+Heading 5	1.1.11.7.2 Test inputs
+p1	PN_GPS_To_From = 1 (FROM)
+p1	SN_GPS_To_From = 1 (FROM)
+p1	
+p1	MN_Target_Course = 77 degrees
+p1	PN_VOR_Radial = 128.6 degrees
+p1	
+p1	MN_CDI_Source = 2
+p1	
+Heading 5	1.1.11.7.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = SECONDARY
+p1	HSI_NAV_Data_Type	Expected value = GPS
+p1	HSI_To_From	Expected value = FROM
+Normal	
+Heading 4	1.1.11.8 Test case 5
+p1	
+Heading 5	1.1.11.8.1 Objective
+p1	Check the To/From indicator selection in case of VOR data source selection and a TO condition.
+Heading 5	1.1.11.8.2 Test inputs
+p1	PN_GPS_To_From = 1 (FROM)
+p1	SN_GPS_To_From = 1 (FROM)
+p1	
+p1	MN_Target_Course = 77 degrees
+p1	PN_VOR_Radial = 128.6 degrees
+p1	
+p1	MN_CDI_Source = 3
+p1	
+Heading 5	1.1.11.8.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_To_From	Expected value = TO
+p1	HSI_To_From	Expected value = TO
+Normal	
+Heading 4	1.1.11.9 Test case 6
+p1	
+Heading 5	1.1.11.9.1 Objective
+p1	Check the To/From indicator selection in case of VOR data source selection and a FROM condition.
+Heading 5	1.1.11.9.2 Test inputs
+p1	PN_GPS_To_From = 1 (TO)
+p1	SN_GPS_To_From = 1 (TO)
+p1	
+p1	MN_Target_Course = 327 degrees
+p1	PN_VOR_Radial = 86.3 degrees
+p1	
+p1	MN_CDI_Source = 3
+p1	
+Heading 5	1.1.11.9.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_Flagged	Expected value = FALSE
+p1	HSI_VOR_To_From	Expected value = FROM
+p1	HSI_To_From	Expected value = FROM
+Normal	
+Heading 3	1.1.12 SHEET VT_2212 : CDI data selection for GPS
+Heading 4	1.1.12.1 Goal
+p1	The goal of this sheet is to verify the capability of the HSI module to select the adequate CDI information in case a GPS source of navigation data is selected and compute the CDI deflection.
+Heading 4	1.1.12.2 Requirement traceability
+|1 Tableau	Requirement  identifier|2 Tableau	Verification
+|1 Tableau	|2 Tableau	Mean|3 Tableau	Level
+|1 Tableau	PFD_SRS_061|2 Tableau	T|3 Tableau	CSC
+p1	
+Heading 4	1.1.12.3 Test environment
+p1	SY_CDI_Sources = {GPS1, VOR2, GPS2, VOR1}
+p1	
+Heading 4	1.1.12.4 Test case 1
+p1	
+Heading 5	1.1.12.4.1 Objective
+p1	Check the CDI deflection calculation in case of primary GPS1 data source selection.
+p1	Check the limit case of minimum values.
+Heading 5	1.1.12.4.2 Test inputs
+p1	SY_CDI_Offset = {-128, 0, +127, 0}
+p1	PN_GPS_CDI = -128
+p1	SN_GPS_CDI = -59
+p1	
+p1	MN_CDI_Source = 0
+p1	SY_Switch_NAV_Source = FALSE
+Heading 5	1.1.12.4.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = GPS
+p1	HSI_CDI_Offset	Expected value = -128
+p1	HSI_CDI	Expected value = -256
+Normal	
+Heading 4	1.1.12.5 Test case 2
+p1	
+Heading 5	1.1.12.5.1 Objective
+p1	Check the CDI deflection calculation in case of primary GPS1 data source selection.
+p1	HSI_CDI_Offset is set to the minimum value, PN_GPS_CDI is set to an intermediate value.
+Heading 5	1.1.12.5.2 Test inputs
+p1	SY_CDI_Offset = {-128, 0, +127, 0}
+p1	PN_GPS_CDI = +10
+p1	SN_GPS_CDI = -59
+p1	
+p1	MN_CDI_Source = 0
+p1	SY_Switch_NAV_Source = FALSE
+Heading 5	1.1.12.5.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = GPS
+p1	HSI_CDI_Offset	Expected value = -128
+p1	HSI_CDI	Expected value = -118
+Normal	
+Heading 4	1.1.12.6 Test case 3
+p1	
+Heading 5	1.1.12.6.1 Objective
+p1	Check the CDI deflection calculation in case of primary GPS1 data source selection.
+p1	HSI_CDI_Offset is set to the minimum value, PN_GPS_CDI is set to the maximum value.
+Heading 5	1.1.12.6.2 Test inputs
+p1	SY_CDI_Offset = {-128, 0, +127, 0}
+p1	PN_GPS_CDI = +127
+p1	SN_GPS_CDI = -59
+p1	
+p1	MN_CDI_Source = 0
+p1	SY_Switch_NAV_Source = FALSE
+Heading 5	1.1.12.6.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = GPS
+p1	HSI_CDI_Offset	Expected value = -128
+p1	HSI_CDI	Expected value = -1
+Normal	
+Heading 4	1.1.12.7 Test case 4
+p1	
+Heading 5	1.1.12.7.1 Objective
+p1	Check the CDI deflection calculation in case of primary GPS1 data source selection.
+p1	HSI_CDI_Offset is set to an intermediate value, PN_GPS_CDI is set to the maximum value.
+Heading 5	1.1.12.7.2 Test inputs
+p1	SY_CDI_Offset = {-27, 0, +127, 0}
+p1	PN_GPS_CDI = +127
+p1	SN_GPS_CDI = -59
+p1	
+p1	MN_CDI_Source = 0
+p1	SY_Switch_NAV_Source = FALSE
+Heading 5	1.1.12.7.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = GPS
+p1	HSI_CDI_Offset	Expected value = -27
+p1	HSI_CDI	Expected value = 100
+Normal	
+Heading 4	1.1.12.8 Test case 5
+p1	
+Heading 5	1.1.12.8.1 Objective
+p1	Check the CDI deflection calculation in case of primary GPS1 data source selection.
+p1	Check the limit case of maximum values.
+Heading 5	1.1.12.8.2 Test inputs
+p1	SY_CDI_Offset = {+127, 0, +127, 0}
+p1	PN_GPS_CDI = +127
+p1	SN_GPS_CDI = -59
+p1	
+p1	MN_CDI_Source = 0
+p1	SY_Switch_NAV_Source = FALSE
+Heading 5	1.1.12.8.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = GPS
+p1	HSI_CDI_Offset	Expected value = +127
+p1	HSI_CDI	Expected value = +254
+Normal	
+Heading 4	1.1.12.9 Test case 6
+p1	
+Heading 5	1.1.12.9.1 Objective
+p1	Check the CDI deflection calculation in case of secondary GPS1 data source selection.
+p1	HSI_CDI_Offset is set to he maximum value, SN_GPS_CDI is set to an intermediate value.
+Heading 5	1.1.12.9.2 Test inputs
+p1	SY_CDI_Offset = {+127, 0, +127, 0}
+p1	PN_GPS_CDI = +127
+p1	SN_GPS_CDI = -59
+p1	
+p1	MN_CDI_Source = 0
+p1	SY_Switch_NAV_Source = TRUE
+Heading 5	1.1.12.9.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = SECONDARY
+p1	HSI_NAV_Data_Type	Expected value = GPS
+p1	HSI_CDI_Offset	Expected value = +127
+p1	HSI_CDI	Expected value = +68
+Normal	
+Heading 4	1.1.12.10 Test case 7
+p1	
+Heading 5	1.1.12.10.1 Objective
+p1	Check the CDI deflection calculation in case of secondary GPS1 data source selection.
+p1	HSI_CDI_Offset is set to the maximum value, SN_GPS_CDI is set to the minimum value.
+Heading 5	1.1.12.10.2 Test inputs
+p1	SY_CDI_Offset = {+127, 0, -128, 0}
+p1	PN_GPS_CDI = +30
+p1	SN_GPS_CDI = -128
+p1	
+p1	MN_CDI_Source = 0
+p1	SY_Switch_NAV_Source = TRUE
+Heading 5	1.1.12.10.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = SECONDARY
+p1	HSI_NAV_Data_Type	Expected value = GPS
+p1	HSI_CDI_Offset	Expected value = +127
+p1	HSI_CDI	Expected value = -1
+Normal	
+Heading 4	1.1.12.11 Test case 8
+p1	
+Heading 5	1.1.12.11.1 Objective
+p1	Check the CDI deflection calculation in case of secondary GPS2 data source selection.
+p1	Check the limit case of minimum values.
+Heading 5	1.1.12.11.2 Test inputs
+p1	SY_CDI_Offset = {+127, 0, -128, 0}
+p1	PN_GPS_CDI = +30
+p1	SN_GPS_CDI = -128
+p1	
+p1	MN_CDI_Source = 2
+p1	SY_Switch_NAV_Source = FALSE
+Heading 5	1.1.12.11.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = SECONDARY
+p1	HSI_NAV_Data_Type	Expected value = GPS
+p1	HSI_CDI_Offset	Expected value = -128
+p1	HSI_CDI	Expected value = -256
+Normal	
+Heading 3	1.1.13 SHEET VT_2213 : CDI data selection for LOC
+Heading 4	1.1.13.1 Goal
+p1	The goal of this sheet is to verify the capability of the HSI module to select the adequate CDI information in case a LOC source of navigation data is selected and compute the CDI deflection.
+Heading 4	1.1.13.2 Requirement traceability
+|1 Tableau	Requirement  identifier|2 Tableau	Verification
+|1 Tableau	|2 Tableau	Mean|3 Tableau	Level
+|1 Tableau	PFD_SRS_062|2 Tableau	T|3 Tableau	CSC
+p1	
+Heading 4	1.1.13.3 Test environment
+p1	SY_CDI_Sources = {GPS1, VOR2, GPS2, VOR1}
+p1	PN_ILS_Selected = TRUE
+p1	SN_ILS_Selected = TRUE
+p1	
+Heading 4	1.1.13.4 Test case 1
+p1	
+Heading 5	1.1.13.4.1 Objective
+p1	Check the CDI deflection calculation in case of primary LOC1 data source selection.
+p1	Check the limit case of minimum values.
+Heading 5	1.1.13.4.2 Test inputs
+p1	SY_CDI_Offset = {0, -128, 0, +127}
+p1	PN_VOR_CDI = -128
+p1	SN_VOR_CDI = -59
+p1	
+p1	MN_CDI_Source = 3
+p1	SY_Switch_NAV_Source = FALSE
+Heading 5	1.1.13.4.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = TRUE
+p1	HSI_CDI_Offset	Expected value = -128
+p1	HSI_CDI	Expected value = -256
+Normal	
+Heading 4	1.1.13.5 Test case 2
+p1	
+Heading 5	1.1.13.5.1 Objective
+p1	Check the CDI deflection calculation in case of primary LOC1 data source selection.
+p1	HSI_CDI_Offset is set to the minimum value, PN_VOR_CDI is set to an intermediate value.
+Heading 5	1.1.13.5.2 Test inputs
+p1	SY_CDI_Offset = {0, -128, 0, +127}
+p1	PN_VOR_CDI = +10
+p1	SN_VOR_CDI = -59
+p1	
+p1	MN_CDI_Source = 3
+p1	SY_Switch_NAV_Source = FALSE
+Heading 5	1.1.13.5.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = TRUE
+p1	HSI_CDI_Offset	Expected value = -128
+p1	HSI_CDI	Expected value = -118
+Normal	
+Heading 4	1.1.13.6 Test case 3
+p1	
+Heading 5	1.1.13.6.1 Objective
+p1	Check the CDI deflection calculation in case of primary LOC1 data source selection.
+p1	HSI_CDI_Offset is set to the minimum value, PN_VOR_CDI is set to the maximum value.
+Heading 5	1.1.13.6.2 Test inputs
+p1	SY_CDI_Offset = {0, -128, 0, +127}
+p1	PN_VOR_CDI = +127
+p1	SN_VOR_CDI = -59
+p1	
+p1	MN_CDI_Source = 3
+p1	SY_Switch_NAV_Source = FALSE
+Heading 5	1.1.13.6.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = TRUE
+p1	HSI_CDI_Offset	Expected value = -128
+p1	HSI_CDI	Expected value = -1
+Normal	
+Heading 4	1.1.13.7 Test case 4
+p1	
+Heading 5	1.1.13.7.1 Objective
+p1	Check the CDI deflection calculation in case of primary LOC1 data source selection.
+p1	HSI_CDI_Offset is set to an intermediate value, PN_VOR_CDI is set to the maximum value.
+Heading 5	1.1.13.7.2 Test inputs
+p1	SY_CDI_Offset = {0, -27, 0, +127}
+p1	PN_VOR_CDI = +127
+p1	SN_VOR_CDI = -59
+p1	
+p1	MN_CDI_Source = 3
+p1	SY_Switch_NAV_Source = FALSE
+Heading 5	1.1.13.7.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = TRUE
+p1	HSI_CDI_Offset	Expected value = -27
+p1	HSI_CDI	Expected value = 100
+Normal	
+Heading 4	1.1.13.8 Test case 5
+p1	
+Heading 5	1.1.13.8.1 Objective
+p1	Check the CDI deflection calculation in case of primary LOC1 data source selection.
+p1	Check the limit case of maximum values.
+Heading 5	1.1.13.8.2 Test inputs
+p1	SY_CDI_Offset = {0, +127, 0, +127}
+p1	PN_VOR_CDI = +127
+p1	SN_VOR_CDI = -59
+p1	
+p1	MN_CDI_Source = 3
+p1	SY_Switch_NAV_Source = FALSE
+Heading 5	1.1.13.8.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = PRIMARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = TRUE
+p1	HSI_CDI_Offset	Expected value = +127
+p1	HSI_CDI	Expected value = +254
+Normal	
+Heading 4	1.1.13.9 Test case 6
+p1	
+Heading 5	1.1.13.9.1 Objective
+p1	Check the CDI deflection calculation in case of secondary LOC1 data source selection.
+p1	HSI_CDI_Offset is set to he maximum value, SN_VOR_CDI is set to an intermediate value.
+Heading 5	1.1.13.9.2 Test inputs
+p1	SY_CDI_Offset = {0, +127, 0, +127}
+p1	PN_VOR_CDI = +127
+p1	SN_VOR_CDI = -59
+p1	
+p1	MN_CDI_Source = 3
+p1	SY_Switch_NAV_Source = TRUE
+Heading 5	1.1.13.9.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = SECONDARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = TRUE
+p1	HSI_CDI_Offset	Expected value = +127
+p1	HSI_CDI	Expected value = +68
+Normal	
+Heading 4	1.1.13.10 Test case 7
+p1	
+Heading 5	1.1.13.10.1 Objective
+p1	Check the CDI deflection calculation in case of secondary LOC1 data source selection.
+p1	HSI_CDI_Offset is set to the maximum value, SN_VOR_CDI is set to the minimum value.
+Heading 5	1.1.13.10.2 Test inputs
+p1	SY_CDI_Offset = {0, +127, 0, -128}
+p1	PN_VOR_CDI = +30
+p1	SN_VOR_CDI = -128
+p1	
+p1	MN_CDI_Source = 3
+p1	SY_Switch_NAV_Source = TRUE
+Heading 5	1.1.13.10.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = SECONDARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = TRUE
+p1	HSI_CDI_Offset	Expected value = +127
+p1	HSI_CDI	Expected value = -1
+Normal	
+Heading 4	1.1.13.11 Test case 8
+p1	
+Heading 5	1.1.13.11.1 Objective
+p1	Check the CDI deflection calculation in case of secondary LOC2 data source selection.
+p1	Check the limit case of minimum values.
+Heading 5	1.1.13.11.2 Test inputs
+p1	SY_CDI_Offset = {0,+127, 0, -128}
+p1	PN_VOR_CDI = +30
+p1	SN_VOR_CDI = -128
+p1	
+p1	MN_CDI_Source = 1
+p1	SY_Switch_NAV_Source = FALSE
+Heading 5	1.1.13.11.3 Test outputs
+p1	HSI_NAV_Data_Source	Expected value = SECONDARY
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = TRUE
+p1	HSI_CDI_Offset	Expected value = -128
+p1	HSI_CDI	Expected value = -256
+Normal	
+Heading 3	1.1.14 SHEET VT_2214 : CDI data selection for VOR
+Heading 4	1.1.14.1 Goal
+p1	The goal of this sheet is to verify the capability of the HSI module to select the adequate CDI information in case a VOR source of navigation data is selected.
+Heading 4	1.1.14.2 Requirement traceability
+|1 Tableau	Requirement  identifier|2 Tableau	Verification
+|1 Tableau	|2 Tableau	Mean|3 Tableau	Level
+|1 Tableau	PFD_SRS_063|2 Tableau	T|3 Tableau	CSC
+Item	VT_2214
+Heading 4	1.1.14.3 Test environment
+p1	SY_CDI_Sources = {GPS1, VOR2, GPS2, VOR1}
+p1	PN_ILS_Selected = FALSE
+p1	SN_ILS_Selected = TRUE
+p1	
+p1	SY_CDI_Offset = {-20, -10, +10, +20}
+p1	PN_GPS_CDI = -128
+p1	SN_GPS_CDI = -59
+p1	PN_VOR_CDI = -128
+p1	SN_VOR_CDI = -59
+p1	
+p1	SY_Switch_NAV_Source = FALSE
+p1	
+Heading 4	1.1.14.4 Test case 1
+p1	
+Heading 5	1.1.14.4.1 Objective
+p1	Check the CDI deflection selection in case of VOR data source selection.
+Heading 5	1.1.14.4.2 Test inputs
+p1	MN_Target_Course = 7 degrees
+p1	PN_VOR_Radial = 11.8 degrees
+p1	
+p1	MN_CDI_Source = 3
+p1	SY_Switch_NAV_Source = FALSE
+Heading 5	1.1.14.4.3 Test outputs
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_CDI_Offset	Expected value = -10
+p1	HSI_VOR_CDI_Defl	Expected value = +60.96 ± [TBD]
+p1	HSI_CDI	Expected value = +60.96 ± [TBD]
+Normal	
+Heading 4	1.1.14.5 Test case 2
+p1	
+Heading 5	1.1.14.5.1 Objective
+p1	Check the CDI deflection selection in case of VOR data source selection for the maximum value.
+Heading 5	1.1.14.5.2 Test inputs
+p1	MN_Target_Course = 16 degrees
+p1	PN_VOR_Radial = 88.4 degrees
+p1	
+p1	MN_CDI_Source = 3
+p1	SY_Switch_NAV_Source = FALSE
+Heading 5	1.1.14.5.3 Test outputs
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_CDI_Offset	Expected value = -10
+p1	HSI_VOR_CDI_Defl	Expected value = +127.0
+p1	HSI_CDI	Expected value = +127.0
+Normal	
+Heading 4	1.1.14.6 Test case 3
+p1	
+Heading 5	1.1.14.6.1 Objective
+p1	Check the CDI deflection selection in case of VOR data source selection for the minimum value.
+Heading 5	1.1.14.6.2 Test inputs
+p1	MN_Target_Course = 253 degrees
+p1	SN_VOR_Radial = 217.4 degrees
+p1	
+p1	MN_CDI_Source = 1
+p1	SY_Switch_NAV_Source = FALSE
+Heading 5	1.1.14.6.3 Test outputs
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_CDI_Offset	Expected value = +20
+p1	HSI_VOR_CDI_Defl	Expected value = -128.0
+p1	HSI_CDI	Expected value = -128.0
+Heading 3	1.1.15 SHEET VT_2215 : CDI data selection for VOR
+Heading 4	1.1.15.1 Goal
+p1	The goal of this sheet is to verify the capability of the HSI module to calculate the deviation in pixels.
+Heading 4	1.1.15.2 Requirement traceability
+|1 Tableau	Requirement  identifier|2 Tableau	Verification
+|1 Tableau	|2 Tableau	Mean|3 Tableau	Level
+|1 Tableau	PFD_SRS_064|2 Tableau	T|3 Tableau	CSC
+p1	
+Heading 4	1.1.15.3 Test environment
+p1	SY_CDI_Sources = {GPS1, VOR2, GPS2, VOR1}
+p1	PN_ILS_Selected = FALSE
+p1	SN_ILS_Selected = TRUE
+p1	
+p1	SY_CDI_Offset = {-20, -10, +10, +20}
+p1	PN_GPS_CDI = -128
+p1	SN_GPS_CDI = -59
+p1	PN_VOR_CDI = -128
+p1	SN_VOR_CDI = -59
+p1	
+p1	SY_Switch_NAV_Source = FALSE
+p1	
+Heading 4	1.1.15.4 Test case 1
+p1	
+Heading 5	1.1.15.4.1 Objective
+p1	Check the CDI deflection selection in case of VOR data source selection.
+Heading 5	1.1.15.4.2 Test inputs
+p1	MN_Target_Course = 7 degrees
+p1	PN_VOR_Radial = 11.8 degrees
+p1	
+p1	MN_CDI_Source = 3
+p1	SY_Switch_NAV_Source = FALSE
+Heading 5	1.1.15.4.3 Test outputs
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_CDI_Offset	Expected value = -10
+p1	HSI_VOR_CDI_Defl	Expected value = +60.96 ± [TBD]
+p1	HSI_CDI	Expected value = +60.96 ± [TBD]
+Normal	
+Heading 4	1.1.15.5 Test case 2
+p1	
+Heading 5	1.1.15.5.1 Objective
+p1	Check the CDI deflection selection in case of VOR data source selection for the maximum value.
+Heading 5	1.1.15.5.2 Test inputs
+p1	MN_Target_Course = 16 degrees
+p1	PN_VOR_Radial = 88.4 degrees
+p1	
+p1	MN_CDI_Source = 3
+p1	SY_Switch_NAV_Source = FALSE
+Heading 5	1.1.15.5.3 Test outputs
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_CDI_Offset	Expected value = -10
+p1	HSI_VOR_CDI_Defl	Expected value = +127.0
+p1	HSI_CDI	Expected value = +127.0
+Normal	
+Heading 4	1.1.15.6 Test case 3
+p1	
+Heading 5	1.1.15.6.1 Objective
+p1	Check the CDI deflection selection in case of VOR data source selection for the minimum value.
+Heading 5	1.1.15.6.2 Test inputs
+p1	MN_Target_Course = 253 degrees
+p1	SN_VOR_Radial = 217.4 degrees
+p1	
+p1	MN_CDI_Source = 1
+p1	SY_Switch_NAV_Source = FALSE
+Heading 5	1.1.15.6.3 Test outputs
+p1	HSI_NAV_Data_Type	Expected value = VOR
+p1	HSI_ILS_Selected	Expected value = FALSE
+p1	HSI_CDI_Offset	Expected value = +20
+p1	HSI_VOR_CDI_Defl	Expected value = -128.0
+p1	HSI_CDI	Expected value = -128.0
+Normal	

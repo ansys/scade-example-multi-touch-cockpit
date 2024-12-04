@@ -3,11 +3,11 @@
 	<declarations>
 		<Package name="ScreenInfo">
 			<declarations>
-				<Constant name="Cadre_640x480">
+				<Constant name="CADRE_640_X_480">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="TCadre"/>
+								<TypeRef name="cadre"/>
 							</type>
 						</NamedType>
 					</type>
@@ -36,11 +36,11 @@
 						<ed:Constant oid="!ed/c5f/1E36/EE4/475ae0e9667d"/>
 					</pragmas>
 				</Constant>
-				<Constant name="Cadre_800x600">
+				<Constant name="CADRE_800_X_600">
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="TCadre"/>
+								<TypeRef name="cadre"/>
 							</type>
 						</NamedType>
 					</type>
@@ -69,7 +69,7 @@
 						<ed:Constant oid="!ed/c86/1E36/EE4/475ae0e97c81"/>
 					</pragmas>
 				</Constant>
-				<Type name="TResolution">
+				<Type name="resolution">
 					<definition>
 						<Enum>
 							<values>
@@ -90,7 +90,7 @@
 						<ed:Type oid="!ed/c37/1E36/EE4/475ae0cc1a8e"/>
 					</pragmas>
 				</Type>
-				<Type name="TConfiguration">
+				<Type name="configuration">
 					<definition>
 						<Enum>
 							<values>
@@ -121,7 +121,7 @@
 						<ed:Type oid="!ed/c2f/1E36/EE4/475ae0cc702"/>
 					</pragmas>
 				</Type>
-				<Type name="TCadre">
+				<Type name="cadre">
 					<definition>
 						<Table>
 							<type>
@@ -147,9 +147,9 @@
 						<ed:Type oid="!ed/c25/1E36/EE4/475ae0cc4c5a"/>
 					</pragmas>
 				</Type>
-				<Operator kind="function" name="ADI_Coordinates">
+				<Operator kind="function" name="adiCoordinates">
 					<inputs>
-						<Variable name="SC_Portrait_Orient">
+						<Variable name="scPortraitOrient">
 							<type>
 								<NamedType>
 									<type>
@@ -161,7 +161,7 @@
 								<ed:Variable oid="!ed/d59/1E36/EE4/475ae1705ee9"/>
 							</pragmas>
 						</Variable>
-						<Variable name="ADI_X_Min">
+						<Variable name="adiXMin">
 							<type>
 								<NamedType>
 									<type>
@@ -173,7 +173,7 @@
 								<ed:Variable oid="!ed/d5a/1E36/EE4/475ae170340d"/>
 							</pragmas>
 						</Variable>
-						<Variable name="ADI_X_Max">
+						<Variable name="adiXMax">
 							<type>
 								<NamedType>
 									<type>
@@ -185,7 +185,7 @@
 								<ed:Variable oid="!ed/d5b/1E36/EE4/475ae1706482"/>
 							</pragmas>
 						</Variable>
-						<Variable name="ADI_Y_Min">
+						<Variable name="adiYMin">
 							<type>
 								<NamedType>
 									<type>
@@ -197,7 +197,7 @@
 								<ed:Variable oid="!ed/d5c/1E36/EE4/475ae1705db2"/>
 							</pragmas>
 						</Variable>
-						<Variable name="ADI_Y_Max">
+						<Variable name="adiYMax">
 							<type>
 								<NamedType>
 									<type>
@@ -211,7 +211,7 @@
 						</Variable>
 					</inputs>
 					<outputs>
-						<Variable name="ADI_X_Origin">
+						<Variable name="adiXOrigin">
 							<type>
 								<NamedType>
 									<type>
@@ -223,7 +223,7 @@
 								<ed:Variable oid="!ed/d52/1E36/EE4/475ae1701b59"/>
 							</pragmas>
 						</Variable>
-						<Variable name="ADI_Y_Origin">
+						<Variable name="adiYOrigin">
 							<type>
 								<NamedType>
 									<type>
@@ -235,7 +235,7 @@
 								<ed:Variable oid="!ed/d53/1E36/EE4/475ae1701f12"/>
 							</pragmas>
 						</Variable>
-						<Variable name="ADI_Angle">
+						<Variable name="adiAngle">
 							<type>
 								<NamedType>
 									<type>
@@ -247,7 +247,7 @@
 								<ed:Variable oid="!ed/d54/1E36/EE4/475ae1702227"/>
 							</pragmas>
 						</Variable>
-						<Variable name="XMIN_ADI">
+						<Variable name="xMinAdi">
 							<type>
 								<NamedType>
 									<type>
@@ -259,7 +259,7 @@
 								<ed:Variable oid="!ed/d55/1E36/EE4/475ae1704997"/>
 							</pragmas>
 						</Variable>
-						<Variable name="YMIN_ADI">
+						<Variable name="yMinAdi">
 							<type>
 								<NamedType>
 									<type>
@@ -271,7 +271,7 @@
 								<ed:Variable oid="!ed/d56/1E36/EE4/475ae1706ee8"/>
 							</pragmas>
 						</Variable>
-						<Variable name="XMAX_ADI">
+						<Variable name="xMaxAdi">
 							<type>
 								<NamedType>
 									<type>
@@ -283,7 +283,7 @@
 								<ed:Variable oid="!ed/d57/1E36/EE4/475ae1706303"/>
 							</pragmas>
 						</Variable>
-						<Variable name="YMAX_ADI">
+						<Variable name="yMaxAdi">
 							<type>
 								<NamedType>
 									<type>
@@ -803,7 +803,7 @@
 						</Variable>
 					</locals>
 					<data>
-						<!-- _L1 = ADI_X_Max; -->
+						<!-- _L1 = adiXMax; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1"/>
@@ -811,7 +811,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="ADI_X_Max"/>
+										<ConstVarRef name="adiXMax"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -819,7 +819,7 @@
 								<ed:Equation oid="!ed/d81/1E36/EE4/475ae1704e74"/>
 							</pragmas>
 						</Equation>
-						<!-- _L2 = ADI_X_Min; -->
+						<!-- _L2 = adiXMin; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L2"/>
@@ -827,7 +827,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="ADI_X_Min"/>
+										<ConstVarRef name="adiXMin"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -835,10 +835,10 @@
 								<ed:Equation oid="!ed/d82/1E36/EE4/475ae1701f70"/>
 							</pragmas>
 						</Equation>
-						<!-- ADI_X_Origin = _L51; -->
+						<!-- adiXOrigin = _L51; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="ADI_X_Origin"/>
+								<VariableRef name="adiXOrigin"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -851,7 +851,7 @@
 								<ed:Equation oid="!ed/d83/1E36/EE4/475ae17042d5"/>
 							</pragmas>
 						</Equation>
-						<!-- _L6 = SC_Portrait_Orient; -->
+						<!-- _L6 = scPortraitOrient; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L6"/>
@@ -859,7 +859,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="SC_Portrait_Orient"/>
+										<ConstVarRef name="scPortraitOrient"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -912,10 +912,10 @@
 								<ed:Equation oid="!ed/d87/1E36/EE4/475ae1702b90"/>
 							</pragmas>
 						</Equation>
-						<!-- ADI_Angle = _L21; -->
+						<!-- adiAngle = _L21; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="ADI_Angle"/>
+								<VariableRef name="adiAngle"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -928,10 +928,10 @@
 								<ed:Equation oid="!ed/d88/1E36/EE4/475ae1707fb8"/>
 							</pragmas>
 						</Equation>
-						<!-- ADI_Y_Origin = _L52; -->
+						<!-- adiYOrigin = _L52; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="ADI_Y_Origin"/>
+								<VariableRef name="adiYOrigin"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -1063,7 +1063,7 @@
 								<ed:Equation oid="!ed/d8e/1E36/EE4/475ae1702df7"/>
 							</pragmas>
 						</Equation>
-						<!-- _L27 = ADI_Y_Min; -->
+						<!-- _L27 = adiYMin; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L27"/>
@@ -1071,7 +1071,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="ADI_Y_Min"/>
+										<ConstVarRef name="adiYMin"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -1079,7 +1079,7 @@
 								<ed:Equation oid="!ed/d8f/1E36/EE4/475ae1706fe0"/>
 							</pragmas>
 						</Equation>
-						<!-- _L28 = ADI_Y_Max; -->
+						<!-- _L28 = adiYMax; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L28"/>
@@ -1087,7 +1087,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="ADI_Y_Max"/>
+										<ConstVarRef name="adiYMax"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -1244,10 +1244,10 @@
 								<ed:Equation oid="!ed/d97/1E36/EE4/475ae1704642"/>
 							</pragmas>
 						</Equation>
-						<!-- YMAX_ADI = _L58; -->
+						<!-- yMaxAdi = _L58; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="YMAX_ADI"/>
+								<VariableRef name="yMaxAdi"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -1260,10 +1260,10 @@
 								<ed:Equation oid="!ed/d98/1E36/EE4/475ae17037d0"/>
 							</pragmas>
 						</Equation>
-						<!-- XMIN_ADI = _L55; -->
+						<!-- xMinAdi = _L55; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="XMIN_ADI"/>
+								<VariableRef name="xMinAdi"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -1324,10 +1324,10 @@
 								<ed:Equation oid="!ed/d9d/1E36/EE4/475ae170514a"/>
 							</pragmas>
 						</Equation>
-						<!-- XMAX_ADI = _L57; -->
+						<!-- xMaxAdi = _L57; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="XMAX_ADI"/>
+								<VariableRef name="xMaxAdi"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -1340,10 +1340,10 @@
 								<ed:Equation oid="!ed/d9e/1E36/EE4/475ae1701da6"/>
 							</pragmas>
 						</Equation>
-						<!-- YMIN_ADI = _L56; -->
+						<!-- yMinAdi = _L56; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="YMIN_ADI"/>
+								<VariableRef name="yMinAdi"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -1453,7 +1453,7 @@
 								<ed:Equation oid="!ed/da1/1E36/EE4/475ae17043ca"/>
 							</pragmas>
 						</Equation>
-						<!-- _L45 = SC_Portrait_Orient; -->
+						<!-- _L45 = scPortraitOrient; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L45"/>
@@ -1461,7 +1461,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="SC_Portrait_Orient"/>
+										<ConstVarRef name="scPortraitOrient"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -1709,7 +1709,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/d51/1E36/EE4/475ae1704060" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<diagrams>
-								<NetDiagram name="ADI_Coordinates" landscape="true" format="A4 (210 297)" oid="!ed/d80/1E36/EE4/475ae1704bf0">
+								<NetDiagram name="adiCoordinates" landscape="true" format="A4 (210 297)" oid="!ed/d80/1E36/EE4/475ae1704bf0">
 									<presentationElements>
 										<EquationGE presentable="!ed/d81/1E36/EE4/475ae1704e74">
 											<position>
@@ -2466,9 +2466,9 @@
 						</kcg:Pragma>
 					</pragmas>
 				</Operator>
-				<Operator kind="function" name="ADI_Window_Def">
+				<Operator kind="function" name="adiWindowDef">
 					<inputs>
-						<Variable name="SC_Portrait_Orient">
+						<Variable name="scPortrai_Orient">
 							<type>
 								<NamedType>
 									<type>
@@ -2482,7 +2482,7 @@
 						</Variable>
 					</inputs>
 					<outputs>
-						<Variable name="ADI_X_Min">
+						<Variable name="adiXMin">
 							<type>
 								<NamedType>
 									<type>
@@ -2494,7 +2494,7 @@
 								<ed:Variable oid="!ed/e10/1E36/EE4/475ae173133e"/>
 							</pragmas>
 						</Variable>
-						<Variable name="ADI_X_Max">
+						<Variable name="adiXMax">
 							<type>
 								<NamedType>
 									<type>
@@ -2506,7 +2506,7 @@
 								<ed:Variable oid="!ed/e11/1E36/EE4/475ae1737196"/>
 							</pragmas>
 						</Variable>
-						<Variable name="ADI_Y_Min">
+						<Variable name="adiYMin">
 							<type>
 								<NamedType>
 									<type>
@@ -2518,7 +2518,7 @@
 								<ed:Variable oid="!ed/e12/1E36/EE4/475ae173fe2"/>
 							</pragmas>
 						</Variable>
-						<Variable name="ADI_Y_Max">
+						<Variable name="adiYMax">
 							<type>
 								<NamedType>
 									<type>
@@ -2702,10 +2702,10 @@
 						</Variable>
 					</locals>
 					<data>
-						<!-- ADI_X_Min = _L3; -->
+						<!-- adiXMin = _L3; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="ADI_X_Min"/>
+								<VariableRef name="adiXMin"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -2718,10 +2718,10 @@
 								<ed:Equation oid="!ed/e24/1E36/EE4/475ae1733dd7"/>
 							</pragmas>
 						</Equation>
-						<!-- ADI_X_Max = _L4; -->
+						<!-- adiXMax = _L4; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="ADI_X_Max"/>
+								<VariableRef name="adiXMax"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -2734,10 +2734,10 @@
 								<ed:Equation oid="!ed/e25/1E36/EE4/475ae1731a48"/>
 							</pragmas>
 						</Equation>
-						<!-- ADI_Y_Min = _L5; -->
+						<!-- adiYMin = _L5; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="ADI_Y_Min"/>
+								<VariableRef name="adiYMin"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -2750,10 +2750,10 @@
 								<ed:Equation oid="!ed/e26/1E36/EE4/475ae1735a9d"/>
 							</pragmas>
 						</Equation>
-						<!-- ADI_Y_Max = _L6; -->
+						<!-- adiYMax = _L6; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="ADI_Y_Max"/>
+								<VariableRef name="adiYMax"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -2842,7 +2842,7 @@
 								<ed:Equation oid="!ed/e28/1E36/EE4/475ae1739f3"/>
 							</pragmas>
 						</Equation>
-						<!-- _L7 = SC_Portrait_Orient; -->
+						<!-- _L7 = scPortrai_Orient; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L7"/>
@@ -2850,7 +2850,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="SC_Portrait_Orient"/>
+										<ConstVarRef name="scPortrai_Orient"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -2979,7 +2979,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/e0f/1E36/EE4/475ae1734a18" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<diagrams>
-								<NetDiagram name="ADI_Window_Def" landscape="true" format="A4 (210 297)" oid="!ed/e23/1E36/EE4/475ae1734351">
+								<NetDiagram name="adiWindowDef" landscape="true" format="A4 (210 297)" oid="!ed/e23/1E36/EE4/475ae1734351">
 									<presentationElements>
 										<EquationGE presentable="!ed/e24/1E36/EE4/475ae1733dd7">
 											<position>
@@ -3230,9 +3230,9 @@
 						</kcg:Pragma>
 					</pragmas>
 				</Operator>
-				<Operator kind="function" name="HSI_Coordinates">
+				<Operator kind="function" name="hsiCoordinates">
 					<inputs>
-						<Variable name="SC_Portrait_Orient">
+						<Variable name="scPortraitOrient">
 							<type>
 								<NamedType>
 									<type>
@@ -3246,7 +3246,7 @@
 						</Variable>
 					</inputs>
 					<outputs>
-						<Variable name="HSI_X_Origin">
+						<Variable name="hsiXOrigin">
 							<type>
 								<NamedType>
 									<type>
@@ -3258,7 +3258,7 @@
 								<ed:Variable oid="!ed/f49/1E36/EE4/475ae174754b"/>
 							</pragmas>
 						</Variable>
-						<Variable name="HSI_Y_Origin">
+						<Variable name="hsiYOrigin">
 							<type>
 								<NamedType>
 									<type>
@@ -3270,7 +3270,7 @@
 								<ed:Variable oid="!ed/f4a/1E36/EE4/475ae1746762"/>
 							</pragmas>
 						</Variable>
-						<Variable name="HSI_Angle">
+						<Variable name="hsiAngle">
 							<type>
 								<NamedType>
 									<type>
@@ -3282,7 +3282,7 @@
 								<ed:Variable oid="!ed/f4b/1E36/EE4/475ae1747e18"/>
 							</pragmas>
 						</Variable>
-						<Variable name="HSI_Scale">
+						<Variable name="hsiScale">
 							<type>
 								<NamedType>
 									<type>
@@ -3646,7 +3646,7 @@
 						</Variable>
 					</locals>
 					<data>
-						<!-- _L6 = SC_Portrait_Orient; -->
+						<!-- _L6 = scPortraitOrient; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L6"/>
@@ -3654,7 +3654,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="SC_Portrait_Orient"/>
+										<ConstVarRef name="scPortraitOrient"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -3707,10 +3707,10 @@
 								<ed:Equation oid="!ed/f6c/1E36/EE4/475ae174b8"/>
 							</pragmas>
 						</Equation>
-						<!-- HSI_Angle = _L21; -->
+						<!-- hsiAngle = _L21; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="HSI_Angle"/>
+								<VariableRef name="hsiAngle"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -3787,7 +3787,7 @@
 								<ed:Equation oid="!ed/f6f/1E36/EE4/475ae1741b89"/>
 							</pragmas>
 						</Equation>
-						<!-- _L45 = SC_Portrait_Orient; -->
+						<!-- _L45 = scPortraitOrient; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L45"/>
@@ -3795,7 +3795,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="SC_Portrait_Orient"/>
+										<ConstVarRef name="scPortraitOrient"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -3803,10 +3803,10 @@
 								<ed:Equation oid="!ed/f70/1E36/EE4/475ae174495a"/>
 							</pragmas>
 						</Equation>
-						<!-- HSI_X_Origin = _L72; -->
+						<!-- hsiXOrigin = _L72; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="HSI_X_Origin"/>
+								<VariableRef name="hsiXOrigin"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -3819,10 +3819,10 @@
 								<ed:Equation oid="!ed/f71/1E36/EE4/475ae17465fb"/>
 							</pragmas>
 						</Equation>
-						<!-- HSI_Y_Origin = _L73; -->
+						<!-- hsiYOrigin = _L73; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="HSI_Y_Origin"/>
+								<VariableRef name="hsiYOrigin"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -3835,10 +3835,10 @@
 								<ed:Equation oid="!ed/f72/1E36/EE4/475ae1742c8b"/>
 							</pragmas>
 						</Equation>
-						<!-- HSI_Scale = _L54; -->
+						<!-- hsiScale = _L54; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="HSI_Scale"/>
+								<VariableRef name="hsiScale"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4254,7 +4254,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/f48/1E36/EE4/475ae17464fe" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<diagrams>
-								<NetDiagram name="HSI_Coordinates" landscape="true" format="A4 (210 297)" oid="!ed/f68/1E36/EE4/475ae17438ec">
+								<NetDiagram name="hsiCoordinates" landscape="true" format="A4 (210 297)" oid="!ed/f68/1E36/EE4/475ae17438ec">
 									<presentationElements>
 										<EquationGE presentable="!ed/f69/1E36/EE4/475ae1741388">
 											<position>
@@ -4763,9 +4763,9 @@
 						</kcg:Pragma>
 					</pragmas>
 				</Operator>
-				<Operator kind="function" name="IAS_Coordinates">
+				<Operator kind="function" name="iasCoordinates">
 					<inputs>
-						<Variable name="SC_Portrait_Orient">
+						<Variable name="scPortraitOrient">
 							<type>
 								<NamedType>
 									<type>
@@ -4779,7 +4779,7 @@
 						</Variable>
 					</inputs>
 					<outputs>
-						<Variable name="X_IAS">
+						<Variable name="xIas">
 							<type>
 								<NamedType>
 									<type>
@@ -4791,7 +4791,7 @@
 								<ed:Variable oid="!ed/1138/7370/12E0/4769b779730b"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Y_IAS">
+						<Variable name="yIas">
 							<type>
 								<NamedType>
 									<type>
@@ -4803,7 +4803,7 @@
 								<ed:Variable oid="!ed/113e/7370/12E0/4769b779257e"/>
 							</pragmas>
 						</Variable>
-						<Variable name="ANGLE_IAS">
+						<Variable name="angleIas">
 							<type>
 								<NamedType>
 									<type>
@@ -4975,7 +4975,7 @@
 						</Variable>
 					</locals>
 					<data>
-						<!-- _L1 = SC_Portrait_Orient; -->
+						<!-- _L1 = scPortraitOrient; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1"/>
@@ -4983,7 +4983,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="SC_Portrait_Orient"/>
+										<ConstVarRef name="scPortraitOrient"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -5056,10 +5056,10 @@
 								<ed:Equation oid="!ed/114f/7370/12E0/4769b79a6007"/>
 							</pragmas>
 						</Equation>
-						<!-- X_IAS = _L12; -->
+						<!-- xIas = _L12; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="X_IAS"/>
+								<VariableRef name="xIas"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -5072,10 +5072,10 @@
 								<ed:Equation oid="!ed/1157/7370/12E0/4769b7b66cba"/>
 							</pragmas>
 						</Equation>
-						<!-- Y_IAS = _L13; -->
+						<!-- yIas = _L13; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Y_IAS"/>
+								<VariableRef name="yIas"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -5088,10 +5088,10 @@
 								<ed:Equation oid="!ed/1158/7370/12E0/4769b7b6410b"/>
 							</pragmas>
 						</Equation>
-						<!-- ANGLE_IAS = _L4; -->
+						<!-- angleIas = _L4; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="ANGLE_IAS"/>
+								<VariableRef name="angleIas"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -5248,7 +5248,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/112b/7370/12E0/4769b728e9" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<diagrams>
-								<NetDiagram name="IAS_Coordinates" landscape="true" format="A4 (210 297)" oid="!ed/112c/7370/12E0/4769b7287601">
+								<NetDiagram name="iasCoordinates" landscape="true" format="A4 (210 297)" oid="!ed/112c/7370/12E0/4769b7287601">
 									<presentationElements>
 										<EquationGE presentable="!ed/1145/7370/12E0/4769b78f6544">
 											<position>
@@ -5494,9 +5494,9 @@
 						</kcg:Pragma>
 					</pragmas>
 				</Operator>
-				<Operator kind="function" name="ALT_Coordinates">
+				<Operator kind="function" name="altCoordinates">
 					<inputs>
-						<Variable name="SC_Portrait_Orient">
+						<Variable name="scPortraitOrient">
 							<type>
 								<NamedType>
 									<type>
@@ -5510,7 +5510,7 @@
 						</Variable>
 					</inputs>
 					<outputs>
-						<Variable name="X_ALT">
+						<Variable name="xAlt">
 							<type>
 								<NamedType>
 									<type>
@@ -5522,7 +5522,7 @@
 								<ed:Variable oid="!ed/1227/7370/12E0/4769b8aa7094"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Y_ALT">
+						<Variable name="yAlt">
 							<type>
 								<NamedType>
 									<type>
@@ -5534,7 +5534,7 @@
 								<ed:Variable oid="!ed/122d/7370/12E0/4769b8aa2c84"/>
 							</pragmas>
 						</Variable>
-						<Variable name="ANGLE_ALT">
+						<Variable name="angleAlt">
 							<type>
 								<NamedType>
 									<type>
@@ -5706,7 +5706,7 @@
 						</Variable>
 					</locals>
 					<data>
-						<!-- _L4 = SC_Portrait_Orient; -->
+						<!-- _L4 = scPortraitOrient; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L4"/>
@@ -5714,7 +5714,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="SC_Portrait_Orient"/>
+										<ConstVarRef name="scPortraitOrient"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -5859,10 +5859,10 @@
 								<ed:Equation oid="!ed/1289/7370/12E0/4769b8c0577"/>
 							</pragmas>
 						</Equation>
-						<!-- X_ALT = _L14; -->
+						<!-- xAlt = _L14; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="X_ALT"/>
+								<VariableRef name="xAlt"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -5875,10 +5875,10 @@
 								<ed:Equation oid="!ed/129c/7370/12E0/4769b8ef3f83"/>
 							</pragmas>
 						</Equation>
-						<!-- Y_ALT = _L15; -->
+						<!-- yAlt = _L15; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Y_ALT"/>
+								<VariableRef name="yAlt"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -5891,10 +5891,10 @@
 								<ed:Equation oid="!ed/129d/7370/12E0/4769b8ef6648"/>
 							</pragmas>
 						</Equation>
-						<!-- ANGLE_ALT = _L9; -->
+						<!-- angleAlt = _L9; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="ANGLE_ALT"/>
+								<VariableRef name="angleAlt"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -5979,7 +5979,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/1208/7370/12E0/4769b8837ab3" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<diagrams>
-								<NetDiagram name="ALT_Coordinates" landscape="true" format="A4 (210 297)" oid="!ed/1209/7370/12E0/4769b8836da9">
+								<NetDiagram name="altCoordinates" landscape="true" format="A4 (210 297)" oid="!ed/1209/7370/12E0/4769b8836da9">
 									<presentationElements>
 										<EquationGE presentable="!ed/1234/7370/12E0/4769b8ae256d">
 											<position>
@@ -6225,7 +6225,7 @@
 						</kcg:Pragma>
 					</pragmas>
 				</Operator>
-				<Operator kind="function" name="PFD_Size">
+				<Operator kind="function" name="pfdSize">
 					<inputs>
 						<Variable name="BResol640x480">
 							<type>
@@ -6241,7 +6241,7 @@
 						</Variable>
 					</inputs>
 					<outputs>
-						<Variable name="SCALEX">
+						<Variable name="scaleX">
 							<type>
 								<NamedType>
 									<type>
@@ -6253,7 +6253,7 @@
 								<ed:Variable oid="!ed/10ab/1E36/EE4/475ae17546a1"/>
 							</pragmas>
 						</Variable>
-						<Variable name="SCALEY">
+						<Variable name="scaleY">
 							<type>
 								<NamedType>
 									<type>
@@ -6317,10 +6317,10 @@
 						</Variable>
 					</locals>
 					<data>
-						<!-- SCALEX = _L4; -->
+						<!-- scaleX = _L4; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="SCALEX"/>
+								<VariableRef name="scaleX"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -6357,10 +6357,10 @@
 								<ed:Equation oid="!ed/10b4/1E36/EE4/475ae1754ae8"/>
 							</pragmas>
 						</Equation>
-						<!-- SCALEY = _L4; -->
+						<!-- scaleY = _L4; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="SCALEY"/>
+								<VariableRef name="scaleY"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -6436,7 +6436,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/10a9/1E36/EE4/475ae17519f6" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<diagrams>
-								<NetDiagram name="PFD_Size" landscape="true" format="A4 (210 297)" oid="!ed/10b1/1E36/EE4/475ae1752884">
+								<NetDiagram name="pfdSize" landscape="true" format="A4 (210 297)" oid="!ed/10b1/1E36/EE4/475ae1752884">
 									<presentationElements>
 										<EquationGE presentable="!ed/10b2/1E36/EE4/475ae175780f">
 											<position>
@@ -6543,9 +6543,9 @@
 						</kcg:Pragma>
 					</pragmas>
 				</Operator>
-				<Operator kind="function" name="Init_Conf">
+				<Operator kind="function" name="initConf">
 					<inputs>
-						<Variable name="Resolution">
+						<Variable name="resolution">
 							<type>
 								<NamedType>
 									<type>
@@ -6557,7 +6557,7 @@
 								<ed:Variable oid="!ed/1023/1E36/EE4/475ae175508"/>
 							</pragmas>
 						</Variable>
-						<Variable name="SC_Portrait_Orient">
+						<Variable name="scPortraitOrient">
 							<type>
 								<NamedType>
 									<type>
@@ -6571,7 +6571,7 @@
 						</Variable>
 					</inputs>
 					<outputs>
-						<Variable name="SCALE_X">
+						<Variable name="scaleX">
 							<type>
 								<NamedType>
 									<type>
@@ -6583,7 +6583,7 @@
 								<ed:Variable oid="!ed/1015/1E36/EE4/475ae17578b2"/>
 							</pragmas>
 						</Variable>
-						<Variable name="SCALE_Y">
+						<Variable name="scaleY">
 							<type>
 								<NamedType>
 									<type>
@@ -6595,7 +6595,7 @@
 								<ed:Variable oid="!ed/1016/1E36/EE4/475ae175277d"/>
 							</pragmas>
 						</Variable>
-						<Variable name="X_ADI">
+						<Variable name="xAdi">
 							<type>
 								<NamedType>
 									<type>
@@ -6607,7 +6607,7 @@
 								<ed:Variable oid="!ed/1017/1E36/EE4/475ae175339c"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Y_ADI">
+						<Variable name="yAdi">
 							<type>
 								<NamedType>
 									<type>
@@ -6619,7 +6619,7 @@
 								<ed:Variable oid="!ed/1018/1E36/EE4/475ae17530eb"/>
 							</pragmas>
 						</Variable>
-						<Variable name="ANGLE_ADI">
+						<Variable name="angleAdi">
 							<type>
 								<NamedType>
 									<type>
@@ -6631,7 +6631,7 @@
 								<ed:Variable oid="!ed/1019/1E36/EE4/475ae1755268"/>
 							</pragmas>
 						</Variable>
-						<Variable name="X_MIN_ADI">
+						<Variable name="xMinAdi">
 							<type>
 								<NamedType>
 									<type>
@@ -6643,7 +6643,7 @@
 								<ed:Variable oid="!ed/101a/1E36/EE4/475ae1756663"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Y_MIN_ADI">
+						<Variable name="yMinAdi">
 							<type>
 								<NamedType>
 									<type>
@@ -6655,7 +6655,7 @@
 								<ed:Variable oid="!ed/101b/1E36/EE4/475ae1753308"/>
 							</pragmas>
 						</Variable>
-						<Variable name="X_MAX_ADI">
+						<Variable name="xMaxAdi">
 							<type>
 								<NamedType>
 									<type>
@@ -6667,7 +6667,7 @@
 								<ed:Variable oid="!ed/101c/1E36/EE4/475ae1751d8b"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Y_MAX_ADI">
+						<Variable name="yMaxAdi">
 							<type>
 								<NamedType>
 									<type>
@@ -6679,7 +6679,7 @@
 								<ed:Variable oid="!ed/101d/1E36/EE4/475ae1756e1d"/>
 							</pragmas>
 						</Variable>
-						<Variable name="X_HSI">
+						<Variable name="xHsi">
 							<type>
 								<NamedType>
 									<type>
@@ -6691,7 +6691,7 @@
 								<ed:Variable oid="!ed/101e/1E36/EE4/475ae1757c6"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Y_HSI">
+						<Variable name="yHsi">
 							<type>
 								<NamedType>
 									<type>
@@ -6703,7 +6703,7 @@
 								<ed:Variable oid="!ed/101f/1E36/EE4/475ae17525a0"/>
 							</pragmas>
 						</Variable>
-						<Variable name="ANGLE_HSI">
+						<Variable name="angleHsi">
 							<type>
 								<NamedType>
 									<type>
@@ -6715,7 +6715,7 @@
 								<ed:Variable oid="!ed/1020/1E36/EE4/475ae17524c3"/>
 							</pragmas>
 						</Variable>
-						<Variable name="SCALE_X_HSI">
+						<Variable name="scaleXHsi">
 							<type>
 								<NamedType>
 									<type>
@@ -6727,7 +6727,7 @@
 								<ed:Variable oid="!ed/1021/1E36/EE4/475ae17511b3"/>
 							</pragmas>
 						</Variable>
-						<Variable name="SCALE_Y_HSI">
+						<Variable name="scaleYHsi">
 							<type>
 								<NamedType>
 									<type>
@@ -6739,7 +6739,7 @@
 								<ed:Variable oid="!ed/1022/1E36/EE4/475ae1756e89"/>
 							</pragmas>
 						</Variable>
-						<Variable name="X_IAS">
+						<Variable name="xIas">
 							<type>
 								<NamedType>
 									<type>
@@ -6751,7 +6751,7 @@
 								<ed:Variable oid="!ed/12b8/7370/12E0/4769b97b73ef"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Y_IAS">
+						<Variable name="yIas">
 							<type>
 								<NamedType>
 									<type>
@@ -6763,7 +6763,7 @@
 								<ed:Variable oid="!ed/12bf/7370/12E0/4769b97b3886"/>
 							</pragmas>
 						</Variable>
-						<Variable name="ANGLE_IAS">
+						<Variable name="angleIas">
 							<type>
 								<NamedType>
 									<type>
@@ -6775,7 +6775,7 @@
 								<ed:Variable oid="!ed/12c6/7370/12E0/4769b97b4b0a"/>
 							</pragmas>
 						</Variable>
-						<Variable name="X_ALT">
+						<Variable name="xAlt">
 							<type>
 								<NamedType>
 									<type>
@@ -6787,7 +6787,7 @@
 								<ed:Variable oid="!ed/12cd/7370/12E0/4769b97b4c15"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Y_ALT">
+						<Variable name="yAlt">
 							<type>
 								<NamedType>
 									<type>
@@ -6799,7 +6799,7 @@
 								<ed:Variable oid="!ed/12d4/7370/12E0/4769b97b6cdc"/>
 							</pragmas>
 						</Variable>
-						<Variable name="ANGLE_ALT">
+						<Variable name="angleAlt">
 							<type>
 								<NamedType>
 									<type>
@@ -7151,7 +7151,7 @@
 						</Variable>
 					</locals>
 					<data>
-						<!-- _L2 = Resolution; -->
+						<!-- _L2 = resolution; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L2"/>
@@ -7159,7 +7159,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Resolution"/>
+										<ConstVarRef name="resolution"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -7205,10 +7205,10 @@
 								<ed:Equation oid="!ed/1057/1E36/EE4/475ae1757e23"/>
 							</pragmas>
 						</Equation>
-						<!-- SCALE_X = _L199; -->
+						<!-- scaleX = _L199; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="SCALE_X"/>
+								<VariableRef name="scaleX"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -7221,10 +7221,10 @@
 								<ed:Equation oid="!ed/106c/1E36/EE4/475ae1757646"/>
 							</pragmas>
 						</Equation>
-						<!-- SCALE_Y = _L200; -->
+						<!-- scaleY = _L200; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="SCALE_Y"/>
+								<VariableRef name="scaleY"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -7237,10 +7237,10 @@
 								<ed:Equation oid="!ed/106d/1E36/EE4/475ae1753dd8"/>
 							</pragmas>
 						</Equation>
-						<!-- Y_MIN_ADI = _L179; -->
+						<!-- yMinAdi = _L179; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Y_MIN_ADI"/>
+								<VariableRef name="yMinAdi"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -7253,10 +7253,10 @@
 								<ed:Equation oid="!ed/106e/1E36/EE4/475ae175bd0"/>
 							</pragmas>
 						</Equation>
-						<!-- X_MAX_ADI = _L180; -->
+						<!-- xMaxAdi = _L180; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="X_MAX_ADI"/>
+								<VariableRef name="xMaxAdi"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -7269,10 +7269,10 @@
 								<ed:Equation oid="!ed/106f/1E36/EE4/475ae1753cd0"/>
 							</pragmas>
 						</Equation>
-						<!-- Y_ADI = _L176; -->
+						<!-- yAdi = _L176; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Y_ADI"/>
+								<VariableRef name="yAdi"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -7285,10 +7285,10 @@
 								<ed:Equation oid="!ed/1070/1E36/EE4/475ae1757e48"/>
 							</pragmas>
 						</Equation>
-						<!-- X_ADI = _L175; -->
+						<!-- xAdi = _L175; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="X_ADI"/>
+								<VariableRef name="xAdi"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -7301,7 +7301,7 @@
 								<ed:Equation oid="!ed/1071/1E36/EE4/475ae175ce6"/>
 							</pragmas>
 						</Equation>
-						<!-- _L175, _L176, _L177, _L178, _L179, _L180, _L181 = ADI_Coordinates(_L186, _L210, _... -->
+						<!-- _L175, _L176, _L177, _L178, _L179, _L180, _L181 = adiCoordinates(_L186, _L210, _L... -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L175"/>
@@ -7313,12 +7313,12 @@
 								<VariableRef name="_L181"/>
 							</lefts>
 							<right>
-								<!-- ADI_Coordinates(_L186, _L210, _L211, _L212, _L213) -->
+								<!-- adiCoordinates(_L186, _L210, _L211, _L212, _L213) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="1">
 											<operator>
-												<OperatorRef name="ADI_Coordinates"/>
+												<OperatorRef name="adiCoordinates"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -7355,10 +7355,10 @@
 								<ed:Equation oid="!ed/1072/1E36/EE4/475ae17536af"/>
 							</pragmas>
 						</Equation>
-						<!-- X_MIN_ADI = _L178; -->
+						<!-- xMinAdi = _L178; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="X_MIN_ADI"/>
+								<VariableRef name="xMinAdi"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -7371,10 +7371,10 @@
 								<ed:Equation oid="!ed/1073/1E36/EE4/475ae175c56"/>
 							</pragmas>
 						</Equation>
-						<!-- Y_MAX_ADI = _L181; -->
+						<!-- yMaxAdi = _L181; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Y_MAX_ADI"/>
+								<VariableRef name="yMaxAdi"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -7387,7 +7387,7 @@
 								<ed:Equation oid="!ed/1075/1E36/EE4/475ae1759f2"/>
 							</pragmas>
 						</Equation>
-						<!-- _L186 = SC_Portrait_Orient; -->
+						<!-- _L186 = scPortraitOrient; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L186"/>
@@ -7395,7 +7395,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="SC_Portrait_Orient"/>
+										<ConstVarRef name="scPortraitOrient"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -7403,10 +7403,10 @@
 								<ed:Equation oid="!ed/1076/1E36/EE4/475ae1751f6a"/>
 							</pragmas>
 						</Equation>
-						<!-- ANGLE_ADI = _L177; -->
+						<!-- angleAdi = _L177; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="ANGLE_ADI"/>
+								<VariableRef name="angleAdi"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -7419,19 +7419,19 @@
 								<ed:Equation oid="!ed/1077/1E36/EE4/475ae1755ecc"/>
 							</pragmas>
 						</Equation>
-						<!-- _L199, _L200 = PFD_Size(_L15); -->
+						<!-- _L199, _L200 = pfdSize(_L15); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L199"/>
 								<VariableRef name="_L200"/>
 							</lefts>
 							<right>
-								<!-- PFD_Size(_L15) -->
+								<!-- pfdSize(_L15) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="1">
 											<operator>
-												<OperatorRef name="PFD_Size"/>
+												<OperatorRef name="pfdSize"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -7448,7 +7448,7 @@
 								<ed:Equation oid="!ed/107d/1E36/EE4/475ae1751710"/>
 							</pragmas>
 						</Equation>
-						<!-- _L205, _L206, _L207, _L208 = HSI_Coordinates(_L209); -->
+						<!-- _L205, _L206, _L207, _L208 = hsiCoordinates(_L209); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L205"/>
@@ -7457,12 +7457,12 @@
 								<VariableRef name="_L208"/>
 							</lefts>
 							<right>
-								<!-- HSI_Coordinates(_L209) -->
+								<!-- hsiCoordinates(_L209) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="1">
 											<operator>
-												<OperatorRef name="HSI_Coordinates"/>
+												<OperatorRef name="hsiCoordinates"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -7479,10 +7479,10 @@
 								<ed:Equation oid="!ed/107f/1E36/EE4/475ae1755278"/>
 							</pragmas>
 						</Equation>
-						<!-- ANGLE_HSI = _L207; -->
+						<!-- angleHsi = _L207; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="ANGLE_HSI"/>
+								<VariableRef name="angleHsi"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -7495,10 +7495,10 @@
 								<ed:Equation oid="!ed/1082/1E36/EE4/475ae175223f"/>
 							</pragmas>
 						</Equation>
-						<!-- SCALE_X_HSI = _L208; -->
+						<!-- scaleXHsi = _L208; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="SCALE_X_HSI"/>
+								<VariableRef name="scaleXHsi"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -7511,7 +7511,7 @@
 								<ed:Equation oid="!ed/1083/1E36/EE4/475ae1756764"/>
 							</pragmas>
 						</Equation>
-						<!-- _L209 = SC_Portrait_Orient; -->
+						<!-- _L209 = scPortraitOrient; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L209"/>
@@ -7519,7 +7519,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="SC_Portrait_Orient"/>
+										<ConstVarRef name="scPortraitOrient"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -7527,10 +7527,10 @@
 								<ed:Equation oid="!ed/1084/1E36/EE4/475ae1757126"/>
 							</pragmas>
 						</Equation>
-						<!-- SCALE_Y_HSI = _L208; -->
+						<!-- scaleYHsi = _L208; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="SCALE_Y_HSI"/>
+								<VariableRef name="scaleYHsi"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -7543,10 +7543,10 @@
 								<ed:Equation oid="!ed/1085/1E36/EE4/475ae17527bd"/>
 							</pragmas>
 						</Equation>
-						<!-- X_HSI = _L205; -->
+						<!-- xHsi = _L205; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="X_HSI"/>
+								<VariableRef name="xHsi"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -7559,10 +7559,10 @@
 								<ed:Equation oid="!ed/10d4/1E36/EE4/475ae72e75a7"/>
 							</pragmas>
 						</Equation>
-						<!-- Y_HSI = _L206; -->
+						<!-- yHsi = _L206; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Y_HSI"/>
+								<VariableRef name="yHsi"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -7575,7 +7575,7 @@
 								<ed:Equation oid="!ed/10d9/1E36/EE4/475ae73d6403"/>
 							</pragmas>
 						</Equation>
-						<!-- _L210, _L211, _L212, _L213 = ADI_Window_Def(_L186); -->
+						<!-- _L210, _L211, _L212, _L213 = adiWindowDef(_L186); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L210"/>
@@ -7584,12 +7584,12 @@
 								<VariableRef name="_L213"/>
 							</lefts>
 							<right>
-								<!-- ADI_Window_Def(_L186) -->
+								<!-- adiWindowDef(_L186) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="1">
 											<operator>
-												<OperatorRef name="ADI_Window_Def"/>
+												<OperatorRef name="adiWindowDef"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -7606,7 +7606,7 @@
 								<ed:Equation oid="!ed/10ee/1E36/EE4/475ae8ab3f"/>
 							</pragmas>
 						</Equation>
-						<!-- _L214, _L215, _L216 = IAS_Coordinates(_L209); -->
+						<!-- _L214, _L215, _L216 = iasCoordinates(_L209); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L214"/>
@@ -7614,12 +7614,12 @@
 								<VariableRef name="_L216"/>
 							</lefts>
 							<right>
-								<!-- IAS_Coordinates(_L209) -->
+								<!-- iasCoordinates(_L209) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="1">
 											<operator>
-												<OperatorRef name="IAS_Coordinates"/>
+												<OperatorRef name="iasCoordinates"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -7636,7 +7636,7 @@
 								<ed:Equation oid="!ed/12a3/7370/12E0/4769b95d24c8"/>
 							</pragmas>
 						</Equation>
-						<!-- _L217, _L218, _L219 = ALT_Coordinates(_L209); -->
+						<!-- _L217, _L218, _L219 = altCoordinates(_L209); -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L217"/>
@@ -7644,12 +7644,12 @@
 								<VariableRef name="_L219"/>
 							</lefts>
 							<right>
-								<!-- ALT_Coordinates(_L209) -->
+								<!-- altCoordinates(_L209) -->
 								<CallExpression>
 									<operator>
 										<OpCall name="1">
 											<operator>
-												<OperatorRef name="ALT_Coordinates"/>
+												<OperatorRef name="altCoordinates"/>
 											</operator>
 										</OpCall>
 									</operator>
@@ -7666,10 +7666,10 @@
 								<ed:Equation oid="!ed/12ab/7370/12E0/4769b9634977"/>
 							</pragmas>
 						</Equation>
-						<!-- X_IAS = _L214; -->
+						<!-- xIas = _L214; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="X_IAS"/>
+								<VariableRef name="xIas"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -7682,10 +7682,10 @@
 								<ed:Equation oid="!ed/12dd/7370/12E0/4769b97c5f0b"/>
 							</pragmas>
 						</Equation>
-						<!-- Y_IAS = _L215; -->
+						<!-- yIas = _L215; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Y_IAS"/>
+								<VariableRef name="yIas"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -7698,10 +7698,10 @@
 								<ed:Equation oid="!ed/12de/7370/12E0/4769b97c5298"/>
 							</pragmas>
 						</Equation>
-						<!-- ANGLE_IAS = _L216; -->
+						<!-- angleIas = _L216; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="ANGLE_IAS"/>
+								<VariableRef name="angleIas"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -7714,10 +7714,10 @@
 								<ed:Equation oid="!ed/12df/7370/12E0/4769b97c51e4"/>
 							</pragmas>
 						</Equation>
-						<!-- X_ALT = _L217; -->
+						<!-- xAlt = _L217; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="X_ALT"/>
+								<VariableRef name="xAlt"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -7730,10 +7730,10 @@
 								<ed:Equation oid="!ed/12e0/7370/12E0/4769b97c916"/>
 							</pragmas>
 						</Equation>
-						<!-- Y_ALT = _L218; -->
+						<!-- yAlt = _L218; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Y_ALT"/>
+								<VariableRef name="yAlt"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -7746,10 +7746,10 @@
 								<ed:Equation oid="!ed/12e1/7370/12E0/4769b97c3b73"/>
 							</pragmas>
 						</Equation>
-						<!-- ANGLE_ALT = _L219; -->
+						<!-- angleAlt = _L219; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="ANGLE_ALT"/>
+								<VariableRef name="angleAlt"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -7766,7 +7766,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/1010/1E36/EE4/475ae17569bb" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<diagrams>
-								<NetDiagram name="Init_Conf" landscape="true" format="A4 (210 297)" oid="!ed/1054/1E36/EE4/475ae1751c1f">
+								<NetDiagram name="initConf" landscape="true" format="A4 (210 297)" oid="!ed/1054/1E36/EE4/475ae1751c1f">
 									<presentationElements>
 										<EquationGE presentable="!ed/1055/1E36/EE4/475ae1755f8e">
 											<position>

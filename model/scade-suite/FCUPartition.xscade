@@ -31,7 +31,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Simulation::TIBtnData"/>
+								<TypeRef name="Simulation::btnData"/>
 							</type>
 						</NamedType>
 					</type>
@@ -43,7 +43,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Simulation::TInteractivityDataIn"/>
+								<TypeRef name="Simulation::interactivityDataIn"/>
 							</type>
 						</NamedType>
 					</type>
@@ -832,7 +832,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Simulation::TAdditionalData"/>
+								<TypeRef name="Simulation::additionalData"/>
 							</type>
 						</NamedType>
 					</type>
@@ -904,7 +904,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Simulation::TInteractivityDataOut"/>
+								<TypeRef name="Simulation::interactivityDataOut"/>
 							</type>
 						</NamedType>
 					</type>
@@ -954,7 +954,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="PFD::TSpeedAltData"/>
+								<TypeRef name="PFD::speedAltData"/>
 							</type>
 						</NamedType>
 					</type>
@@ -966,7 +966,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="PFD::TAdiData"/>
+								<TypeRef name="PFD::adiData"/>
 							</type>
 						</NamedType>
 					</type>
@@ -978,7 +978,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="PFD::THsiData"/>
+								<TypeRef name="PFD::hsiData"/>
 							</type>
 						</NamedType>
 					</type>
@@ -990,7 +990,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="PFD::TTunnelData"/>
+								<TypeRef name="PFD::tunnelData"/>
 							</type>
 						</NamedType>
 					</type>
@@ -1002,7 +1002,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="PFD::TTrajectoryData"/>
+								<TypeRef name="PFD::trajectoryData"/>
 							</type>
 						</NamedType>
 					</type>
@@ -1038,7 +1038,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Simulation::TAdditionalData"/>
+								<TypeRef name="Simulation::additionalData"/>
 							</type>
 						</NamedType>
 					</type>
@@ -1069,7 +1069,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="PFD::THsiData"/>
+								<TypeRef name="PFD::hsiData"/>
 							</type>
 						</NamedType>
 					</type>
@@ -1081,7 +1081,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="PFD::TAdiData"/>
+								<TypeRef name="PFD::adiData"/>
 							</type>
 						</NamedType>
 					</type>
@@ -1093,7 +1093,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="PFD::TTunnelData"/>
+								<TypeRef name="PFD::tunnelData"/>
 							</type>
 						</NamedType>
 					</type>
@@ -1105,7 +1105,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="PFD::TTrajectoryData"/>
+								<TypeRef name="PFD::trajectoryData"/>
 							</type>
 						</NamedType>
 					</type>
@@ -1117,7 +1117,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="PFD::TScreenInfoData"/>
+								<TypeRef name="PFD::screenInfoData"/>
 							</type>
 						</NamedType>
 					</type>
@@ -1129,7 +1129,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="PFD::TSpeedAltData"/>
+								<TypeRef name="PFD::speedAltData"/>
 							</type>
 						</NamedType>
 					</type>
@@ -1141,7 +1141,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="PFD::TAdiData"/>
+								<TypeRef name="PFD::adiData"/>
 							</type>
 						</NamedType>
 					</type>
@@ -1249,7 +1249,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="PFD::THsiData"/>
+								<TypeRef name="PFD::hsiData"/>
 							</type>
 						</NamedType>
 					</type>
@@ -1489,7 +1489,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="PFD::TSpeedAltData"/>
+								<TypeRef name="PFD::speedAltData"/>
 							</type>
 						</NamedType>
 					</type>
@@ -1501,7 +1501,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="SpeedAlt::Ttape"/>
+								<TypeRef name="SpeedAlt::tape"/>
 							</type>
 						</NamedType>
 					</type>
@@ -1513,7 +1513,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="SpeedAlt::Ttape"/>
+								<TypeRef name="SpeedAlt::tape"/>
 							</type>
 						</NamedType>
 					</type>
@@ -1573,7 +1573,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="PFD::TTrajectoryData"/>
+								<TypeRef name="PFD::trajectoryData"/>
 							</type>
 						</NamedType>
 					</type>
@@ -1873,7 +1873,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="PFD::TTunnelData"/>
+								<TypeRef name="PFD::tunnelData"/>
 							</type>
 						</NamedType>
 					</type>
@@ -2321,7 +2321,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Simulation::TIBtnData"/>
+								<TypeRef name="Simulation::btnData"/>
 							</type>
 						</NamedType>
 					</type>
@@ -2333,7 +2333,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Simulation::TInteractivityDataIn"/>
+								<TypeRef name="Simulation::interactivityDataIn"/>
 							</type>
 						</NamedType>
 					</type>
@@ -2405,7 +2405,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="Simulation::TInteractivityDataOut"/>
+								<TypeRef name="Simulation::interactivityDataOut"/>
 							</type>
 						</NamedType>
 					</type>
@@ -2525,12 +2525,12 @@
 						<VariableRef name="_L1623"/>
 					</lefts>
 					<right>
-						<!-- Simulation::Simulate(p1, p2, _L1610, _L1612) -->
+						<!-- Simulation::simulate(p1, p2, _L1610, _L1612) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="2">
 									<operator>
-										<OperatorRef name="Simulation::Simulate"/>
+										<OperatorRef name="Simulation::simulate"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -2559,7 +2559,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<OperatorRef path="Simulation::Simulate" refOid="!ed/212d/7379/984/47595de57880">
+										<OperatorRef path="Simulation::simulate" refOid="!ed/212d/7379/984/47595de57880">
 											<InputRef refOid="!ed/4e3e/276/17BC/4f625edd4f5d"/>
 											<InputRef refOid="!ed/658d/2F8E/68C/4fa3a2152549"/>
 											<InputRef refOid="!ed/491c/10F2/12FC/4c6581d03eb3"/>
@@ -2695,7 +2695,7 @@
 						<ed:Equation oid="!ed/48f2/7408/14F4/4bb313001b81"/>
 					</pragmas>
 				</Equation>
-				<!-- _L1411, _L1412, _L1413, _L1414, _L1415, _L1416, _L1417, _L1418 = (flatten PFD::TA... -->
+				<!-- _L1411, _L1412, _L1413, _L1414, _L1415, _L1416, _L1417, _L1418 = (flatten PFD::ad... -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1411"/>
@@ -2708,12 +2708,12 @@
 						<VariableRef name="_L1418"/>
 					</lefts>
 					<right>
-						<!-- (flatten PFD::TAdiData)(_L1402) -->
+						<!-- (flatten PFD::adiData)(_L1402) -->
 						<CallExpression>
 							<operator>
 								<FlattenOp name="1">
 									<type>
-										<TypeRef name="PFD::TAdiData"/>
+										<TypeRef name="PFD::adiData"/>
 									</type>
 								</FlattenOp>
 							</operator>
@@ -2727,7 +2727,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<TypeRef path="PFD::TAdiData" refOid="!ed/5336/7D49/B98/4942675251d0">
+										<TypeRef path="PFD::adiData" refOid="!ed/5336/7D49/B98/4942675251d0">
 											<LabelRef refOid="!ed/5337/7D49/B98/494267785b0a"/>
 											<LabelRef refOid="!ed/5341/7D49/B98/494267986bde"/>
 											<LabelRef refOid="!ed/534b/7D49/B98/494267bc49f1"/>
@@ -2834,12 +2834,12 @@
 						<VariableRef name="_L1457"/>
 					</lefts>
 					<right>
-						<!-- (flatten PFD::THsiData)(_L1419) -->
+						<!-- (flatten PFD::hsiData)(_L1419) -->
 						<CallExpression>
 							<operator>
 								<FlattenOp name="2">
 									<type>
-										<TypeRef name="PFD::THsiData"/>
+										<TypeRef name="PFD::hsiData"/>
 									</type>
 								</FlattenOp>
 							</operator>
@@ -2853,7 +2853,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<TypeRef path="PFD::THsiData" refOid="!ed/539c/7D49/B98/4942688b5c48">
+										<TypeRef path="PFD::hsiData" refOid="!ed/539c/7D49/B98/4942688b5c48">
 											<LabelRef refOid="!ed/539d/7D49/B98/49426892366c"/>
 											<LabelRef refOid="!ed/53ab/7D49/B98/494268cc1c06"/>
 											<LabelRef refOid="!ed/53ac/7D49/B98/494268da5974"/>
@@ -2931,7 +2931,7 @@
 						<ed:Equation oid="!ed/48fb/7408/14F4/4bb31300854"/>
 					</pragmas>
 				</Equation>
-				<!-- _L1471, _L1472, _L1473, _L1474, _L1475, _L1476 = (flatten PFD::TSpeedAltData)(_L1... -->
+				<!-- _L1471, _L1472, _L1473, _L1474, _L1475, _L1476 = (flatten PFD::speedAltData)(_L14... -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1471"/>
@@ -2942,12 +2942,12 @@
 						<VariableRef name="_L1476"/>
 					</lefts>
 					<right>
-						<!-- (flatten PFD::TSpeedAltData)(_L1458) -->
+						<!-- (flatten PFD::speedAltData)(_L1458) -->
 						<CallExpression>
 							<operator>
 								<FlattenOp name="3">
 									<type>
-										<TypeRef name="PFD::TSpeedAltData"/>
+										<TypeRef name="PFD::speedAltData"/>
 									</type>
 								</FlattenOp>
 							</operator>
@@ -2961,7 +2961,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<TypeRef path="PFD::TSpeedAltData" refOid="!ed/51e7/7D49/B98/494240aa36b5">
+										<TypeRef path="PFD::speedAltData" refOid="!ed/51e7/7D49/B98/494240aa36b5">
 											<LabelRef refOid="!ed/51e8/7D49/B98/494240aa613d"/>
 											<LabelRef refOid="!ed/51e9/7D49/B98/494240aa23ef"/>
 											<LabelRef refOid="!ed/51ea/7D49/B98/494240aa5c69"/>
@@ -3055,12 +3055,12 @@
 						<VariableRef name="_L1525"/>
 					</lefts>
 					<right>
-						<!-- (flatten PFD::TTrajectoryData)(_L1477) -->
+						<!-- (flatten PFD::trajectoryData)(_L1477) -->
 						<CallExpression>
 							<operator>
 								<FlattenOp name="4">
 									<type>
-										<TypeRef name="PFD::TTrajectoryData"/>
+										<TypeRef name="PFD::trajectoryData"/>
 									</type>
 								</FlattenOp>
 							</operator>
@@ -3477,7 +3477,7 @@
 						<ed:Equation oid="!ed/4919/7408/14F4/4bb313002a92"/>
 					</pragmas>
 				</Equation>
-				<!-- _L1535, _L1536, _L1537, _L1538, _L1539, _L1540, _L1541, _L1542 = (flatten PFD::TT... -->
+				<!-- _L1535, _L1536, _L1537, _L1538, _L1539, _L1540, _L1541, _L1542 = (flatten PFD::tu... -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1535"/>
@@ -3490,12 +3490,12 @@
 						<VariableRef name="_L1542"/>
 					</lefts>
 					<right>
-						<!-- (flatten PFD::TTunnelData)(_L1526) -->
+						<!-- (flatten PFD::tunnelData)(_L1526) -->
 						<CallExpression>
 							<operator>
 								<FlattenOp name="5">
 									<type>
-										<TypeRef name="PFD::TTunnelData"/>
+										<TypeRef name="PFD::tunnelData"/>
 									</type>
 								</FlattenOp>
 							</operator>
@@ -3509,7 +3509,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<TypeRef path="PFD::TTunnelData" refOid="!ed/527a/7D49/B98/494242a17283">
+										<TypeRef path="PFD::tunnelData" refOid="!ed/527a/7D49/B98/494242a17283">
 											<LabelRef refOid="!ed/52ae/7D49/B98/494243967aa9"/>
 											<LabelRef refOid="!ed/52b7/7D49/B98/494243ab1664"/>
 											<LabelRef refOid="!ed/52a5/7D49/B98/494243813462"/>
@@ -3541,12 +3541,12 @@
 						<VariableRef name="_L1566"/>
 					</lefts>
 					<right>
-						<!-- (flatten Simulation::TRealArray8)(_L1535) -->
+						<!-- (flatten Simulation::realArray8)(_L1535) -->
 						<CallExpression>
 							<operator>
 								<FlattenOp name="6">
 									<type>
-										<TypeRef name="Simulation::TRealArray8"/>
+										<TypeRef name="Simulation::realArray8"/>
 									</type>
 								</FlattenOp>
 							</operator>
@@ -3576,12 +3576,12 @@
 						<VariableRef name="_L1574"/>
 					</lefts>
 					<right>
-						<!-- (flatten Simulation::TRealArray8)(_L1536) -->
+						<!-- (flatten Simulation::realArray8)(_L1536) -->
 						<CallExpression>
 							<operator>
 								<FlattenOp name="7">
 									<type>
-										<TypeRef name="Simulation::TRealArray8"/>
+										<TypeRef name="Simulation::realArray8"/>
 									</type>
 								</FlattenOp>
 							</operator>
@@ -3598,7 +3598,7 @@
 						<ed:Equation oid="!ed/491c/7408/14F4/4bb31300e48"/>
 					</pragmas>
 				</Equation>
-				<!-- _L1579, _L1580, _L1581, _L1582 = (flatten Simulation::TIntArray4)(_L1537); -->
+				<!-- _L1579, _L1580, _L1581, _L1582 = (flatten Simulation::intArray4)(_L1537); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1579"/>
@@ -3607,12 +3607,12 @@
 						<VariableRef name="_L1582"/>
 					</lefts>
 					<right>
-						<!-- (flatten Simulation::TIntArray4)(_L1537) -->
+						<!-- (flatten Simulation::intArray4)(_L1537) -->
 						<CallExpression>
 							<operator>
 								<FlattenOp name="8">
 									<type>
-										<TypeRef name="Simulation::TIntArray4"/>
+										<TypeRef name="Simulation::intArray4"/>
 									</type>
 								</FlattenOp>
 							</operator>
@@ -3693,7 +3693,7 @@
 						<ed:Equation oid="!ed/4921/7408/14F4/4bb313003d60"/>
 					</pragmas>
 				</Equation>
-				<!-- _L1603, _L1604, _L1605, _L1606 = (flatten Simulation::TRealArray4)(_L1539); -->
+				<!-- _L1603, _L1604, _L1605, _L1606 = (flatten Simulation::realArray4)(_L1539); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1603"/>
@@ -3702,12 +3702,12 @@
 						<VariableRef name="_L1606"/>
 					</lefts>
 					<right>
-						<!-- (flatten Simulation::TRealArray4)(_L1539) -->
+						<!-- (flatten Simulation::realArray4)(_L1539) -->
 						<CallExpression>
 							<operator>
 								<FlattenOp name="9">
 									<type>
-										<TypeRef name="Simulation::TRealArray4"/>
+										<TypeRef name="Simulation::realArray4"/>
 									</type>
 								</FlattenOp>
 							</operator>
@@ -4108,18 +4108,18 @@
 						<ed:Equation oid="!ed/493a/7408/14F4/4bb3130026e"/>
 					</pragmas>
 				</Equation>
-				<!-- _L1607 = Simulation::AircraftSymbolEnumToInt(_L1413); -->
+				<!-- _L1607 = Simulation::aircraftSymbolEnumToInt(_L1413); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1607"/>
 					</lefts>
 					<right>
-						<!-- Simulation::AircraftSymbolEnumToInt(_L1413) -->
+						<!-- Simulation::aircraftSymbolEnumToInt(_L1413) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="2">
 									<operator>
-										<OperatorRef name="Simulation::AircraftSymbolEnumToInt"/>
+										<OperatorRef name="Simulation::aircraftSymbolEnumToInt"/>
 									</operator>
 								</OpCall>
 							</operator>
@@ -4133,7 +4133,7 @@
 							<pragmas>
 								<ed:CallExpression xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 									<references>
-										<OperatorRef path="Simulation::AircraftSymbolEnumToInt" refOid="!ed/4a8b/7408/14F4/4bb316af516d">
+										<OperatorRef path="Simulation::aircraftSymbolEnumToInt" refOid="!ed/4a8b/7408/14F4/4bb316af516d">
 											<InputRef refOid="!ed/4a97/7408/14F4/4bb316af6e28"/>
 											<OutputRef refOid="!ed/4a96/7408/14F4/4bb316af4111"/>
 										</OperatorRef>
@@ -7153,18 +7153,18 @@
 					</diagrams>
 					<references>
 						<TypeRef path="Interactivity::mouse" refOid="!ed/40ed/3422/D4C/4a818eed6001"/>
-						<TypeRef path="Simulation::TIBtnData" refOid="!ed/48f7/10F2/12FC/4c65819e7550"/>
-						<TypeRef path="Simulation::TInteractivityDataIn" refOid="!ed/4702/461B/1740/4f63145f8bb"/>
-						<TypeRef path="Simulation::TAdditionalData" refOid="!ed/4922/5DE3/DDC/4a8408cd3898"/>
-						<TypeRef path="Simulation::TInteractivityDataOut" refOid="!ed/58d2/4FCD/1EE8/50ee89c67041"/>
-						<TypeRef path="PFD::TSpeedAltData" refOid="!ed/51e7/7D49/B98/494240aa36b5"/>
-						<TypeRef path="PFD::TAdiData" refOid="!ed/5336/7D49/B98/4942675251d0"/>
-						<TypeRef path="PFD::THsiData" refOid="!ed/539c/7D49/B98/4942688b5c48"/>
-						<TypeRef path="PFD::TTunnelData" refOid="!ed/527a/7D49/B98/494242a17283"/>
-						<TypeRef path="PFD::TTrajectoryData" refOid="!ed/5229/7D49/B98/494240aa2c37"/>
-						<TypeRef path="Simulation::TRealArray8" refOid="!ed/4a2b/7408/14F4/4bb3130e1249"/>
-						<TypeRef path="Simulation::TIntArray4" refOid="!ed/4a0f/7408/14F4/4bb3130e394e"/>
-						<TypeRef path="Simulation::TRealArray4" refOid="!ed/4a1d/7408/14F4/4bb3130e2ffc"/>
+						<TypeRef path="Simulation::btnData" refOid="!ed/48f7/10F2/12FC/4c65819e7550"/>
+						<TypeRef path="Simulation::interactivityDataIn" refOid="!ed/4702/461B/1740/4f63145f8bb"/>
+						<TypeRef path="Simulation::additionalData" refOid="!ed/4922/5DE3/DDC/4a8408cd3898"/>
+						<TypeRef path="Simulation::interactivityDataOut" refOid="!ed/58d2/4FCD/1EE8/50ee89c67041"/>
+						<TypeRef path="PFD::speedAltData" refOid="!ed/51e7/7D49/B98/494240aa36b5"/>
+						<TypeRef path="PFD::adiData" refOid="!ed/5336/7D49/B98/4942675251d0"/>
+						<TypeRef path="PFD::hsiData" refOid="!ed/539c/7D49/B98/4942688b5c48"/>
+						<TypeRef path="PFD::tunnelData" refOid="!ed/527a/7D49/B98/494242a17283"/>
+						<TypeRef path="PFD::trajectoryData" refOid="!ed/5229/7D49/B98/494240aa2c37"/>
+						<TypeRef path="Simulation::realArray8" refOid="!ed/4a2b/7408/14F4/4bb3130e1249"/>
+						<TypeRef path="Simulation::intArray4" refOid="!ed/4a0f/7408/14F4/4bb3130e394e"/>
+						<TypeRef path="Simulation::realArray4" refOid="!ed/4a1d/7408/14F4/4bb3130e2ffc"/>
 					</references>
 				</ed:Operator>
 				<simu:SampleTime period="1" unit="µs"/>

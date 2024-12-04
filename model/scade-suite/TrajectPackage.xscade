@@ -3,7 +3,7 @@
 	<declarations>
 		<Package name="TrajectDisplay">
 			<declarations>
-				<Constant name="Trajec">
+				<Constant name="TRAJEC">
 					<type>
 						<NamedType>
 							<type>
@@ -822,9 +822,9 @@
 						<ed:Constant oid="!ed/5f52/6649/7D8/49ddea3e6b35"/>
 					</pragmas>
 				</Constant>
-				<Operator kind="node" name="Traject_display_in">
+				<Operator kind="node" name="trajectDisplayIn">
 					<inputs>
-						<Variable name="Trajec">
+						<Variable name="trajec">
 							<type>
 								<NamedType>
 									<type>
@@ -836,7 +836,7 @@
 								<ed:Variable oid="!ed/6dbd/6992/10B8/484d1ae37298"/>
 							</pragmas>
 						</Variable>
-						<Variable name="V_aircraft">
+						<Variable name="vAircraft">
 							<type>
 								<NamedType>
 									<type>
@@ -850,7 +850,7 @@
 						</Variable>
 					</inputs>
 					<outputs>
-						<Variable name="Px1">
+						<Variable name="px1">
 							<type>
 								<NamedType>
 									<type>
@@ -862,7 +862,7 @@
 								<ed:Variable oid="!ed/6dc3/6992/10B8/484d1ae313a"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Px2">
+						<Variable name="px2">
 							<type>
 								<NamedType>
 									<type>
@@ -874,7 +874,7 @@
 								<ed:Variable oid="!ed/6dbb/6992/10B8/484d1ae3745f"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Px3">
+						<Variable name="px3">
 							<type>
 								<NamedType>
 									<type>
@@ -886,7 +886,7 @@
 								<ed:Variable oid="!ed/6dc2/6992/10B8/484d1ae33f74"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Px4">
+						<Variable name="px4">
 							<type>
 								<NamedType>
 									<type>
@@ -898,7 +898,7 @@
 								<ed:Variable oid="!ed/6dc1/6992/10B8/484d1ae35826"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Py1">
+						<Variable name="py1">
 							<type>
 								<NamedType>
 									<type>
@@ -910,7 +910,7 @@
 								<ed:Variable oid="!ed/6dbc/6992/10B8/484d1ae34b15"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Py2">
+						<Variable name="py2">
 							<type>
 								<NamedType>
 									<type>
@@ -922,7 +922,7 @@
 								<ed:Variable oid="!ed/6dc0/6992/10B8/484d1ae32bc7"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Py3">
+						<Variable name="py3">
 							<type>
 								<NamedType>
 									<type>
@@ -934,7 +934,7 @@
 								<ed:Variable oid="!ed/6dbf/6992/10B8/484d1ae38df"/>
 							</pragmas>
 						</Variable>
-						<Variable name="Py4">
+						<Variable name="py4">
 							<type>
 								<NamedType>
 									<type>
@@ -1468,10 +1468,10 @@
 								<ed:Equation oid="!ed/6dc7/6992/10B8/484d1ae34187"/>
 							</pragmas>
 						</Equation>
-						<!-- Py4 = _L68; -->
+						<!-- py4 = _L68; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Py4"/>
+								<VariableRef name="py4"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -1484,10 +1484,10 @@
 								<ed:Equation oid="!ed/6dc9/6992/10B8/484d1ae349b6"/>
 							</pragmas>
 						</Equation>
-						<!-- Py2 = _L56; -->
+						<!-- py2 = _L56; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Py2"/>
+								<VariableRef name="py2"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -1735,10 +1735,10 @@
 								<ed:Equation oid="!ed/6ddb/6992/10B8/484d1ae3692c"/>
 							</pragmas>
 						</Equation>
-						<!-- Py1 = _L57; -->
+						<!-- py1 = _L57; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Py1"/>
+								<VariableRef name="py1"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -1839,10 +1839,10 @@
 								<ed:Equation oid="!ed/6de2/6992/10B8/484d1ae37998"/>
 							</pragmas>
 						</Equation>
-						<!-- Px2 = _L77; -->
+						<!-- px2 = _L77; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Px2"/>
+								<VariableRef name="px2"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -2048,10 +2048,10 @@
 								<ed:Equation oid="!ed/6df7/6992/10B8/484d1ae3459f"/>
 							</pragmas>
 						</Equation>
-						<!-- Px4 = _L76; -->
+						<!-- px4 = _L76; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Px4"/>
+								<VariableRef name="px4"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -2064,10 +2064,10 @@
 								<ed:Equation oid="!ed/6df9/6992/10B8/484d1ae3457e"/>
 							</pragmas>
 						</Equation>
-						<!-- Px3 = _L43; -->
+						<!-- px3 = _L43; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Px3"/>
+								<VariableRef name="px3"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -2165,10 +2165,10 @@
 								<ed:Equation oid="!ed/6dff/6992/10B8/484d1ae3a3d"/>
 							</pragmas>
 						</Equation>
-						<!-- Px1 = _L48; -->
+						<!-- px1 = _L48; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Px1"/>
+								<VariableRef name="px1"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -2434,7 +2434,7 @@
 								<ed:Equation oid="!ed/6e16/6992/10B8/484d1ae3267d"/>
 							</pragmas>
 						</Equation>
-						<!-- _L79 = Trajec; -->
+						<!-- _L79 = trajec; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L79"/>
@@ -2442,7 +2442,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="Trajec"/>
+										<ConstVarRef name="trajec"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -2450,10 +2450,10 @@
 								<ed:Equation oid="!ed/6e18/6992/10B8/484d1ae34c02"/>
 							</pragmas>
 						</Equation>
-						<!-- Py3 = _L72; -->
+						<!-- py3 = _L72; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="Py3"/>
+								<VariableRef name="py3"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -2509,7 +2509,7 @@
 								<ed:Equation oid="!ed/6e1b/6992/10B8/484d1ae342f9"/>
 							</pragmas>
 						</Equation>
-						<!-- _L81 = V_aircraft; -->
+						<!-- _L81 = vAircraft; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L81"/>
@@ -2517,7 +2517,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="V_aircraft"/>
+										<ConstVarRef name="vAircraft"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -2545,7 +2545,7 @@
 					<pragmas>
 						<ed:Operator oid="!ed/6bc4/6992/10B8/484d1ac12934" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 							<diagrams>
-								<NetDiagram name="Traject_display_in" landscape="true" format="A4 (210 297)" oid="!ed/6ce7/6992/10B8/484d1adc509c">
+								<NetDiagram name="trajectDisplayIn" landscape="true" format="A4 (210 297)" oid="!ed/6ce7/6992/10B8/484d1adc509c">
 									<presentationElements>
 										<EquationGE presentable="!ed/6dc5/6992/10B8/484d1ae35b5">
 											<position>
@@ -2557,10 +2557,10 @@
 										</EquationGE>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/6dc7/6992/10B8/484d1ae34187">
 											<position>
-												<Point x="17013" y="16140"/>
+												<Point x="17357" y="16140"/>
 											</position>
 											<size>
-												<Size width="555" height="317"/>
+												<Size width="211" height="317"/>
 											</size>
 										</EquationGE>
 										<EquationGE presentable="!ed/6dc9/6992/10B8/484d1ae349b6">
@@ -2597,10 +2597,10 @@
 										</EquationGE>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/6dcf/6992/10B8/484d1ae377eb">
 											<position>
-												<Point x="15637" y="16140"/>
+												<Point x="15981" y="16140"/>
 											</position>
 											<size>
-												<Size width="556" height="317"/>
+												<Size width="212" height="317"/>
 											</size>
 										</EquationGE>
 										<EquationGE rotation="90" presentable="!ed/6dd1/6992/10B8/484d1ae33332">
@@ -2709,18 +2709,18 @@
 										</EquationGE>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/6deb/6992/10B8/484d1ae35be3">
 											<position>
-												<Point x="8387" y="16589"/>
+												<Point x="8731" y="16589"/>
 											</position>
 											<size>
-												<Size width="556" height="318"/>
+												<Size width="212" height="318"/>
 											</size>
 										</EquationGE>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/6def/6992/10B8/484d1ae36641">
 											<position>
-												<Point x="20452" y="3598"/>
+												<Point x="21008" y="3598"/>
 											</position>
 											<size>
-												<Size width="768" height="318"/>
+												<Size width="212" height="318"/>
 											</size>
 										</EquationGE>
 										<EquationGE presentable="!ed/6df1/6992/10B8/484d1ae312d4">
@@ -2749,10 +2749,10 @@
 										</EquationGE>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/6df7/6992/10B8/484d1ae3459f">
 											<position>
-												<Point x="11880" y="13944"/>
+												<Point x="14023" y="13944"/>
 											</position>
 											<size>
-												<Size width="2355" height="317"/>
+												<Size width="212" height="317"/>
 											</size>
 										</EquationGE>
 										<EquationGE presentable="!ed/6df9/6992/10B8/484d1ae3457e">
@@ -2789,10 +2789,10 @@
 										</EquationGE>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/6dff/6992/10B8/484d1ae3a3d">
 											<position>
-												<Point x="18600" y="16219"/>
+												<Point x="18944" y="16219"/>
 											</position>
 											<size>
-												<Size width="556" height="317"/>
+												<Size width="212" height="317"/>
 											</size>
 										</EquationGE>
 										<EquationGE presentable="!ed/6e01/6992/10B8/484d1ae331ac">
@@ -2821,10 +2821,10 @@
 										</EquationGE>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/6e06/6992/10B8/484d1ae31756">
 											<position>
-												<Point x="11271" y="11800"/>
+												<Point x="12674" y="11800"/>
 											</position>
 											<size>
-												<Size width="1614" height="318"/>
+												<Size width="211" height="318"/>
 											</size>
 										</EquationGE>
 										<EquationGE presentable="!ed/6e08/6992/10B8/484d1ae32a31">
@@ -2853,10 +2853,10 @@
 										</EquationGE>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/6e0e/6992/10B8/484d1ae37f1b">
 											<position>
-												<Point x="8387" y="17568"/>
+												<Point x="8731" y="17568"/>
 											</position>
 											<size>
-												<Size width="556" height="318"/>
+												<Size width="212" height="318"/>
 											</size>
 										</EquationGE>
 										<EquationGE presentable="!ed/6e10/6992/10B8/484d1ae37e66">
@@ -2885,10 +2885,10 @@
 										</EquationGE>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/6e16/6992/10B8/484d1ae3267d">
 											<position>
-												<Point x="13467" y="19500"/>
+												<Point x="15610" y="19500"/>
 											</position>
 											<size>
-												<Size width="2355" height="317"/>
+												<Size width="212" height="317"/>
 											</size>
 										</EquationGE>
 										<EquationGE presentable="!ed/6e18/6992/10B8/484d1ae34c02">
@@ -3366,10 +3366,10 @@
 										</Edge>
 										<EquationGE kind="OBJ_LIT" presentable="!ed/2ed1/6F56/464/48dba1f57c8c">
 											<position>
-												<Point x="18600" y="3201"/>
+												<Point x="19844" y="3201"/>
 											</position>
 											<size>
-												<Size width="1455" height="317"/>
+												<Size width="211" height="318"/>
 											</size>
 										</EquationGE>
 										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/2ed1/6F56/464/48dba1f57c8c" dstEquation="!ed/6dc5/6992/10B8/484d1ae35b5">

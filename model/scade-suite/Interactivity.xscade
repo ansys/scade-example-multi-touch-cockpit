@@ -585,7 +585,7 @@
 						</Variable>
 					</inputs>
 					<outputs>
-						<Variable name="in_r">
+						<Variable name="inR">
 							<type>
 								<NamedType>
 									<type>
@@ -661,10 +661,10 @@
 						</Variable>
 					</locals>
 					<data>
-						<!-- in_r = _L8; -->
+						<!-- inR = _L8; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="in_r"/>
+								<VariableRef name="inR"/>
 							</lefts>
 							<right>
 								<IdExpression>
