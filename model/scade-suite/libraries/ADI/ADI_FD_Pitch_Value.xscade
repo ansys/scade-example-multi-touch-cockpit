@@ -3,7 +3,7 @@
 	<declarations>
 		<Operator kind="function" name="fdPitchValue">
 			<inputs>
-				<Variable name="FD_Reference">
+				<Variable name="fdReference">
 					<type>
 						<NamedType>
 							<type>
@@ -15,7 +15,7 @@
 						<ed:Variable oid="!ed/10df/7A70/BF0/475959914b95"/>
 					</pragmas>
 				</Variable>
-				<Variable name="FD_Pitch">
+				<Variable name="fdPitch">
 					<type>
 						<NamedType>
 							<type>
@@ -185,7 +185,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="FD_Pitch"/>
+								<ConstVarRef name="fdPitch"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -227,7 +227,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="FD_Reference"/>
+								<ConstVarRef name="fdReference"/>
 							</path>
 						</IdExpression>
 					</right>

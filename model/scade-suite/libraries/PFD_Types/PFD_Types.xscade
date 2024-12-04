@@ -136,7 +136,7 @@
 			<definition>
 				<Struct>
 					<fields>
-						<Field name="SC_Reso">
+						<Field name="scReso">
 							<type>
 								<NamedType>
 									<type>
@@ -153,7 +153,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="SC_Portrait_Orient">
+						<Field name="scPortraitOrient">
 							<type>
 								<NamedType>
 									<type>
@@ -183,7 +183,7 @@
 			<definition>
 				<Struct>
 					<fields>
-						<Field name="GPS_CDI">
+						<Field name="gpsCdi">
 							<type>
 								<NamedType>
 									<type>
@@ -200,7 +200,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="GPS_To_From">
+						<Field name="gpsToFrom">
 							<type>
 								<NamedType>
 									<type>
@@ -217,7 +217,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="VOR_CDI">
+						<Field name="vorCdi">
 							<type>
 								<NamedType>
 									<type>
@@ -234,7 +234,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="VOR_Radial">
+						<Field name="vorRadial">
 							<type>
 								<NamedType>
 									<type>
@@ -251,7 +251,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="ILS_Selected">
+						<Field name="ilsSelected">
 							<type>
 								<NamedType>
 									<type>
@@ -268,7 +268,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="ADF_Bearing">
+						<Field name="adfBearing">
 							<type>
 								<NamedType>
 									<type>
@@ -285,7 +285,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="Back_Course">
+						<Field name="backCourse">
 							<type>
 								<NamedType>
 									<type>
@@ -302,7 +302,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="GPS_Flagged">
+						<Field name="gpsFlagged">
 							<type>
 								<NamedType>
 									<type>
@@ -319,7 +319,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="VOR_Flagged">
+						<Field name="vorFlagged">
 							<type>
 								<NamedType>
 									<type>
@@ -349,7 +349,7 @@
 			<definition>
 				<Struct>
 					<fields>
-						<Field name="MN_CDI_Source">
+						<Field name="mnCDISource">
 							<type>
 								<NamedType>
 									<type>
@@ -366,7 +366,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="MN_RMI1_Source">
+						<Field name="mnRMI1Source">
 							<type>
 								<NamedType>
 									<type>
@@ -383,7 +383,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="MN_RMI2_Source">
+						<Field name="mnRMI2Source">
 							<type>
 								<NamedType>
 									<type>
@@ -400,7 +400,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="MN_Target_Course">
+						<Field name="mnTargetCourse">
 							<type>
 								<NamedType>
 									<type>
@@ -417,7 +417,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="MN_Target_Heading">
+						<Field name="mnTargetHeading">
 							<type>
 								<NamedType>
 									<type>
@@ -447,7 +447,7 @@
 			<definition>
 				<Struct>
 					<fields>
-						<Field name="FD_Pitch">
+						<Field name="fdPitch">
 							<type>
 								<NamedType>
 									<type>
@@ -464,7 +464,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="FD_Roll">
+						<Field name="fdRoll">
 							<type>
 								<NamedType>
 									<type>
@@ -481,7 +481,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="FD_Reference">
+						<Field name="fdReference">
 							<type>
 								<NamedType>
 									<type>
@@ -498,7 +498,7 @@
 								</ed:Field>
 							</pragmas>
 						</Field>
-						<Field name="FD_Is_Flagged">
+						<Field name="fdIsFlagged">
 							<type>
 								<NamedType>
 									<type>

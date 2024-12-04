@@ -349,13 +349,13 @@
 						<ed:Equation oid="!ed/a66/7A70/BF0/4759559c434a"/>
 					</pragmas>
 				</Equation>
-				<!-- _L8 = _L6.MN_Target_Heading; -->
+				<!-- _L8 = _L6.mnTargetHeading; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L8"/>
 					</lefts>
 					<right>
-						<!-- _L6.MN_Target_Heading -->
+						<!-- _L6.mnTargetHeading -->
 						<PrjOp name="2">
 							<flow>
 								<IdExpression>
@@ -365,7 +365,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="MN_Target_Heading"/>
+								<Label name="mnTargetHeading"/>
 							</with>
 						</PrjOp>
 					</right>

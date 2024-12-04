@@ -216,13 +216,13 @@
 						<ed:Equation oid="!ed/6be/7A70/BF0/475955994a"/>
 					</pragmas>
 				</Equation>
-				<!-- _L5 = _L8.GPS_To_From; -->
+				<!-- _L5 = _L8.gpsToFrom; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L5"/>
 					</lefts>
 					<right>
-						<!-- _L8.GPS_To_From -->
+						<!-- _L8.gpsToFrom -->
 						<PrjOp name="1">
 							<flow>
 								<IdExpression>
@@ -232,7 +232,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="GPS_To_From"/>
+								<Label name="gpsToFrom"/>
 							</with>
 						</PrjOp>
 					</right>

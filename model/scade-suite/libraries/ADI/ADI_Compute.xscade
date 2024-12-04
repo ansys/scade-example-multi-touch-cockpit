@@ -1579,13 +1579,13 @@
 						<ed:Equation oid="!ed/1020/7A70/BF0/4759598f69a5"/>
 					</pragmas>
 				</Equation>
-				<!-- _L57 = _L56.FD_Is_Flagged; -->
+				<!-- _L57 = _L56.fdIsFlagged; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L57"/>
 					</lefts>
 					<right>
-						<!-- _L56.FD_Is_Flagged -->
+						<!-- _L56.fdIsFlagged -->
 						<PrjOp name="5">
 							<flow>
 								<IdExpression>
@@ -1595,7 +1595,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="FD_Is_Flagged"/>
+								<Label name="fdIsFlagged"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -1643,13 +1643,13 @@
 						<ed:Equation oid="!ed/1023/7A70/BF0/4759598f7bf1"/>
 					</pragmas>
 				</Equation>
-				<!-- _L80 = _L81.FD_Reference; -->
+				<!-- _L80 = _L81.fdReference; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L80"/>
 					</lefts>
 					<right>
-						<!-- _L81.FD_Reference -->
+						<!-- _L81.fdReference -->
 						<PrjOp name="7">
 							<flow>
 								<IdExpression>
@@ -1659,7 +1659,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="FD_Reference"/>
+								<Label name="fdReference"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -1683,13 +1683,13 @@
 						<ed:Equation oid="!ed/1025/7A70/BF0/4759598f1b41"/>
 					</pragmas>
 				</Equation>
-				<!-- _L84 = _L81.FD_Pitch; -->
+				<!-- _L84 = _L81.fdPitch; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L84"/>
 					</lefts>
 					<right>
-						<!-- _L81.FD_Pitch -->
+						<!-- _L81.fdPitch -->
 						<PrjOp name="8">
 							<flow>
 								<IdExpression>
@@ -1699,7 +1699,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="FD_Pitch"/>
+								<Label name="fdPitch"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -1731,13 +1731,13 @@
 						<ed:Equation oid="!ed/1027/7A70/BF0/4759598f313b"/>
 					</pragmas>
 				</Equation>
-				<!-- _L105 = _L107.FD_Reference; -->
+				<!-- _L105 = _L107.fdReference; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L105"/>
 					</lefts>
 					<right>
-						<!-- _L107.FD_Reference -->
+						<!-- _L107.fdReference -->
 						<PrjOp name="10">
 							<flow>
 								<IdExpression>
@@ -1747,7 +1747,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="FD_Reference"/>
+								<Label name="fdReference"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -1755,13 +1755,13 @@
 						<ed:Equation oid="!ed/1028/7A70/BF0/4759598f5317"/>
 					</pragmas>
 				</Equation>
-				<!-- _L106 = _L107.FD_Roll; -->
+				<!-- _L106 = _L107.fdRoll; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L106"/>
 					</lefts>
 					<right>
-						<!-- _L107.FD_Roll -->
+						<!-- _L107.fdRoll -->
 						<PrjOp name="11">
 							<flow>
 								<IdExpression>
@@ -1771,7 +1771,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="FD_Roll"/>
+								<Label name="fdRoll"/>
 							</with>
 						</PrjOp>
 					</right>

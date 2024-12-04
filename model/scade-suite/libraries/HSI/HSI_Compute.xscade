@@ -1467,13 +1467,13 @@
 						<ed:Equation oid="!ed/7fa/7A70/BF0/4759559a4334"/>
 					</pragmas>
 				</Equation>
-				<!-- _L44 = _L43.MN_RMI1_Source; -->
+				<!-- _L44 = _L43.mnRMI1Source; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L44"/>
 					</lefts>
 					<right>
-						<!-- _L43.MN_RMI1_Source -->
+						<!-- _L43.mnRMI1Source -->
 						<PrjOp name="1">
 							<flow>
 								<IdExpression>
@@ -1483,7 +1483,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="MN_RMI1_Source"/>
+								<Label name="mnRMI1Source"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -1491,13 +1491,13 @@
 						<ed:Equation oid="!ed/7fb/7A70/BF0/4759559aa4a"/>
 					</pragmas>
 				</Equation>
-				<!-- _L45 = _L46.MN_RMI2_Source; -->
+				<!-- _L45 = _L46.mnRMI2Source; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L45"/>
 					</lefts>
 					<right>
-						<!-- _L46.MN_RMI2_Source -->
+						<!-- _L46.mnRMI2Source -->
 						<PrjOp name="2">
 							<flow>
 								<IdExpression>
@@ -1507,7 +1507,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="MN_RMI2_Source"/>
+								<Label name="mnRMI2Source"/>
 							</with>
 						</PrjOp>
 					</right>

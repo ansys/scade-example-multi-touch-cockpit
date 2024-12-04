@@ -29,7 +29,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="HSI_VOR_CDI_Angle">
+				<Variable name="HSI_vorCdi_Angle">
 					<type>
 						<NamedType>
 							<type>
@@ -419,13 +419,13 @@
 						<ed:Equation oid="!ed/323a/6344/774/475ef0976327"/>
 					</pragmas>
 				</Equation>
-				<!-- _L8 = _L4.VOR_Radial; -->
+				<!-- _L8 = _L4.vorRadial; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L8"/>
 					</lefts>
 					<right>
-						<!-- _L4.VOR_Radial -->
+						<!-- _L4.vorRadial -->
 						<PrjOp name="2">
 							<flow>
 								<IdExpression>
@@ -435,7 +435,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="VOR_Radial"/>
+								<Label name="vorRadial"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -443,13 +443,13 @@
 						<ed:Equation oid="!ed/323d/6344/774/475ef0975501"/>
 					</pragmas>
 				</Equation>
-				<!-- _L9 = _L6.MN_Target_Course; -->
+				<!-- _L9 = _L6.mnTargetCourse; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L9"/>
 					</lefts>
 					<right>
-						<!-- _L6.MN_Target_Course -->
+						<!-- _L6.mnTargetCourse -->
 						<PrjOp name="1">
 							<flow>
 								<IdExpression>
@@ -459,7 +459,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="MN_Target_Course"/>
+								<Label name="mnTargetCourse"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -491,10 +491,10 @@
 						<ed:Equation oid="!ed/3245/6344/774/475ef09758e9"/>
 					</pragmas>
 				</Equation>
-				<!-- HSI_VOR_CDI_Angle = _L16; -->
+				<!-- HSI_vorCdi_Angle = _L16; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HSI_VOR_CDI_Angle"/>
+						<VariableRef name="HSI_vorCdi_Angle"/>
 					</lefts>
 					<right>
 						<IdExpression>

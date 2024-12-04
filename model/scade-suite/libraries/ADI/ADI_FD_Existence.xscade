@@ -15,7 +15,7 @@
 						<ed:Variable oid="!ed/1078/7A70/BF0/475959901f96"/>
 					</pragmas>
 				</Variable>
-				<Variable name="FD_Is_Flagged">
+				<Variable name="fdIsFlagged">
 					<type>
 						<NamedType>
 							<type>
@@ -261,7 +261,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="FD_Is_Flagged"/>
+								<ConstVarRef name="fdIsFlagged"/>
 							</path>
 						</IdExpression>
 					</right>

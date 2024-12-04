@@ -3,7 +3,7 @@
 	<declarations>
 		<Operator kind="function" name="HSI_RMIi_needle">
 			<inputs>
-				<Variable name="MN_RMIi_Source">
+				<Variable name="mnRMIiSource">
 					<type>
 						<NamedType>
 							<type>
@@ -493,7 +493,7 @@
 						<ed:Equation oid="!ed/8fb/7A70/BF0/4759559b5ee9"/>
 					</pragmas>
 				</Equation>
-				<!-- _L9 = MN_RMIi_Source; -->
+				<!-- _L9 = MN_RMIiSource; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L9"/>
@@ -501,7 +501,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="MN_RMIi_Source"/>
+								<ConstVarRef name="mnRMIiSource"/>
 							</path>
 						</IdExpression>
 					</right>

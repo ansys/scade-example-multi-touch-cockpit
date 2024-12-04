@@ -3,7 +3,7 @@
 	<declarations>
 		<Operator kind="function" name="HSI_TO_FROM_pointer_existence">
 			<inputs>
-				<Variable name="HSI_ILS_Selected">
+				<Variable name="HSI_ilsSelected">
 					<type>
 						<NamedType>
 							<type>
@@ -164,7 +164,7 @@
 						</kcg:Pragma>
 					</pragmas>
 				</Equation>
-				<!-- _L3 = HSI_ILS_Selected; -->
+				<!-- _L3 = HSI_ilsSelected; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L3"/>
@@ -172,7 +172,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_ILS_Selected"/>
+								<ConstVarRef name="HSI_ilsSelected"/>
 							</path>
 						</IdExpression>
 					</right>

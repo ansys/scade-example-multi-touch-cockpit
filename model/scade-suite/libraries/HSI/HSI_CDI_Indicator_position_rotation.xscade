@@ -85,13 +85,13 @@
 						<ed:Equation oid="!ed/1e5/7A70/BF0/475955955ff7"/>
 					</pragmas>
 				</Equation>
-				<!-- _L2 = _L1.MN_Target_Course; -->
+				<!-- _L2 = _L1.mnTargetCourse; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L2"/>
 					</lefts>
 					<right>
-						<!-- _L1.MN_Target_Course -->
+						<!-- _L1.mnTargetCourse -->
 						<PrjOp name="1">
 							<flow>
 								<IdExpression>
@@ -101,7 +101,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="MN_Target_Course"/>
+								<Label name="mnTargetCourse"/>
 							</with>
 						</PrjOp>
 					</right>

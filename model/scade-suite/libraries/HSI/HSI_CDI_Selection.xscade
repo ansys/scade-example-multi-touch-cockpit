@@ -163,7 +163,7 @@
 						<ed:Variable oid="!ed/63b/7A70/BF0/4759559819eb"/>
 					</pragmas>
 				</Variable>
-				<Variable name="HSI_VOR_CDI_Defl">
+				<Variable name="HSI_vorCdi_Defl">
 					<type>
 						<NamedType>
 							<type>
@@ -295,7 +295,7 @@
 						<ed:Variable oid="!ed/3171/6344/774/475eb4582052"/>
 					</pragmas>
 				</Variable>
-				<Variable probe="true" name="P_Back_Course">
+				<Variable probe="true" name="P_backCourse">
 					<type>
 						<NamedType>
 							<type>
@@ -307,7 +307,7 @@
 						<ed:Variable oid="!ed/317b/6344/774/475eb73c35cd"/>
 					</pragmas>
 				</Variable>
-				<Variable probe="true" name="P_HSI_VOR_CDI_Angle">
+				<Variable probe="true" name="P_HSI_vorCdi_Angle">
 					<type>
 						<NamedType>
 							<type>
@@ -319,7 +319,7 @@
 						<ed:Variable oid="!ed/3331/6344/774/475ef664108c"/>
 					</pragmas>
 				</Variable>
-				<Variable probe="true" name="P_HSI_VOR_CDI_Defl">
+				<Variable probe="true" name="P_HSI_vorCdi_Defl">
 					<type>
 						<NamedType>
 							<type>
@@ -1198,13 +1198,13 @@
 						<ed:Equation oid="!ed/64b/7A70/BF0/47595598289d"/>
 					</pragmas>
 				</Equation>
-				<!-- _L20 = _L15.Back_Course; -->
+				<!-- _L20 = _L15.backCourse; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L20"/>
 					</lefts>
 					<right>
-						<!-- _L15.Back_Course -->
+						<!-- _L15.backCourse -->
 						<PrjOp name="1">
 							<flow>
 								<IdExpression>
@@ -1214,7 +1214,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="Back_Course"/>
+								<Label name="backCourse"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -1310,10 +1310,10 @@
 						<ed:Equation oid="!ed/650/7A70/BF0/475955984720"/>
 					</pragmas>
 				</Equation>
-				<!-- HSI_VOR_CDI_Defl = _L23; -->
+				<!-- HSI_vorCdi_Defl = _L23; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HSI_VOR_CDI_Defl"/>
+						<VariableRef name="HSI_vorCdi_Defl"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -1576,7 +1576,7 @@
 						<ed:Equation oid="!ed/65c/7A70/BF0/47595598322a"/>
 					</pragmas>
 				</Equation>
-				<!-- _L42 = HSI_VOR_CDI_Defl; -->
+				<!-- _L42 = HSI_vorCdi_Defl; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L42"/>
@@ -1584,7 +1584,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_VOR_CDI_Defl"/>
+								<ConstVarRef name="HSI_vorCdi_Defl"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1674,13 +1674,13 @@
 						<ed:Equation oid="!ed/660/7A70/BF0/4759559821d1"/>
 					</pragmas>
 				</Equation>
-				<!-- _L45 = _L46.ILS_Selected; -->
+				<!-- _L45 = _L46.ilsSelected; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L45"/>
 					</lefts>
 					<right>
-						<!-- _L46.ILS_Selected -->
+						<!-- _L46.ilsSelected -->
 						<PrjOp name="2">
 							<flow>
 								<IdExpression>
@@ -1690,7 +1690,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="ILS_Selected"/>
+								<Label name="ilsSelected"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -2156,13 +2156,13 @@
 						<ed:Equation oid="!ed/678/7A70/BF0/475955987ed3"/>
 					</pragmas>
 				</Equation>
-				<!-- _L79 = _L78.MN_CDI_Source; -->
+				<!-- _L79 = _L78.mnCDISource; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L79"/>
 					</lefts>
 					<right>
-						<!-- _L78.MN_CDI_Source -->
+						<!-- _L78.mnCDISource -->
 						<PrjOp name="4">
 							<flow>
 								<IdExpression>
@@ -2172,7 +2172,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="MN_CDI_Source"/>
+								<Label name="mnCDISource"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -2393,10 +2393,10 @@
 						<ed:Equation oid="!ed/3172/6344/774/475eb4582ac8"/>
 					</pragmas>
 				</Equation>
-				<!-- P_Back_Course = _L20; -->
+				<!-- P_backCourse = _L20; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="P_Back_Course"/>
+						<VariableRef name="P_backCourse"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -2453,10 +2453,10 @@
 						<ed:Equation oid="!ed/3257/6344/774/475ef2ea2773"/>
 					</pragmas>
 				</Equation>
-				<!-- P_HSI_VOR_CDI_Angle = _L89; -->
+				<!-- P_HSI_vorCdi_Angle = _L89; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="P_HSI_VOR_CDI_Angle"/>
+						<VariableRef name="P_HSI_vorCdi_Angle"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -2469,10 +2469,10 @@
 						<ed:Equation oid="!ed/3332/6344/774/475ef6643c5"/>
 					</pragmas>
 				</Equation>
-				<!-- P_HSI_VOR_CDI_Defl = _L23; -->
+				<!-- P_HSI_vorCdi_Defl = _L23; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="P_HSI_VOR_CDI_Defl"/>
+						<VariableRef name="P_HSI_vorCdi_Defl"/>
 					</lefts>
 					<right>
 						<IdExpression>

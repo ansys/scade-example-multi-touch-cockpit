@@ -653,13 +653,13 @@
 						<ed:Equation oid="!ed/b6f/7196/B20/476166bccf6"/>
 					</pragmas>
 				</Equation>
-				<!-- _L13 = _L11.ILS_Selected; -->
+				<!-- _L13 = _L11.ilsSelected; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L13"/>
 					</lefts>
 					<right>
-						<!-- _L11.ILS_Selected -->
+						<!-- _L11.ilsSelected -->
 						<PrjOp name="1">
 							<flow>
 								<IdExpression>
@@ -669,7 +669,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="ILS_Selected"/>
+								<Label name="ilsSelected"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -677,13 +677,13 @@
 						<ed:Equation oid="!ed/b81/7196/B20/476166f91f33"/>
 					</pragmas>
 				</Equation>
-				<!-- _L14 = _L12.ILS_Selected; -->
+				<!-- _L14 = _L12.ilsSelected; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L14"/>
 					</lefts>
 					<right>
-						<!-- _L12.ILS_Selected -->
+						<!-- _L12.ilsSelected -->
 						<PrjOp name="2">
 							<flow>
 								<IdExpression>
@@ -693,7 +693,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="ILS_Selected"/>
+								<Label name="ilsSelected"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -908,13 +908,13 @@
 						<ed:Equation oid="!ed/c9a/7196/B20/476168536dd5"/>
 					</pragmas>
 				</Equation>
-				<!-- _L37 = _L36.ADF_Bearing; -->
+				<!-- _L37 = _L36.adfBearing; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L37"/>
 					</lefts>
 					<right>
-						<!-- _L36.ADF_Bearing -->
+						<!-- _L36.adfBearing -->
 						<PrjOp name="6">
 							<flow>
 								<IdExpression>
@@ -924,7 +924,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="ADF_Bearing"/>
+								<Label name="adfBearing"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -948,13 +948,13 @@
 						<ed:Equation oid="!ed/ca0/7196/B20/47616853812"/>
 					</pragmas>
 				</Equation>
-				<!-- _L39 = _L38.ADF_Bearing; -->
+				<!-- _L39 = _L38.adfBearing; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L39"/>
 					</lefts>
 					<right>
-						<!-- _L38.ADF_Bearing -->
+						<!-- _L38.adfBearing -->
 						<PrjOp name="5">
 							<flow>
 								<IdExpression>
@@ -964,7 +964,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="ADF_Bearing"/>
+								<Label name="adfBearing"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -988,13 +988,13 @@
 						<ed:Equation oid="!ed/e79/299/BA4/47618c8235ff"/>
 					</pragmas>
 				</Equation>
-				<!-- _L42 = _L41.ILS_Selected; -->
+				<!-- _L42 = _L41.ilsSelected; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L42"/>
 					</lefts>
 					<right>
-						<!-- _L41.ILS_Selected -->
+						<!-- _L41.ilsSelected -->
 						<PrjOp name="7">
 							<flow>
 								<IdExpression>
@@ -1004,7 +1004,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="ILS_Selected"/>
+								<Label name="ilsSelected"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -1055,13 +1055,13 @@
 						<ed:Equation oid="!ed/e7f/299/BA4/47618c9c3cb1"/>
 					</pragmas>
 				</Equation>
-				<!-- _L44 = _L45.ADF_Bearing; -->
+				<!-- _L44 = _L45.adfBearing; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L44"/>
 					</lefts>
 					<right>
-						<!-- _L45.ADF_Bearing -->
+						<!-- _L45.adfBearing -->
 						<PrjOp name="8">
 							<flow>
 								<IdExpression>
@@ -1071,7 +1071,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="ADF_Bearing"/>
+								<Label name="adfBearing"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -1107,13 +1107,13 @@
 						<ed:Equation oid="!ed/e9b/299/BA4/476191f4195d"/>
 					</pragmas>
 				</Equation>
-				<!-- _L47 = _L49.VOR_Radial; -->
+				<!-- _L47 = _L49.vorRadial; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L47"/>
 					</lefts>
 					<right>
-						<!-- _L49.VOR_Radial -->
+						<!-- _L49.vorRadial -->
 						<PrjOp name="9">
 							<flow>
 								<IdExpression>
@@ -1123,7 +1123,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="VOR_Radial"/>
+								<Label name="vorRadial"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -1131,13 +1131,13 @@
 						<ed:Equation oid="!ed/ed3/299/BA4/476192b7203a"/>
 					</pragmas>
 				</Equation>
-				<!-- _L48 = _L51.VOR_Radial; -->
+				<!-- _L48 = _L51.vorRadial; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L48"/>
 					</lefts>
 					<right>
-						<!-- _L51.VOR_Radial -->
+						<!-- _L51.vorRadial -->
 						<PrjOp name="11">
 							<flow>
 								<IdExpression>
@@ -1147,7 +1147,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="VOR_Radial"/>
+								<Label name="vorRadial"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -1171,13 +1171,13 @@
 						<ed:Equation oid="!ed/ed9/299/BA4/476192b71d7d"/>
 					</pragmas>
 				</Equation>
-				<!-- _L50 = _L52.VOR_Radial; -->
+				<!-- _L50 = _L52.vorRadial; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L50"/>
 					</lefts>
 					<right>
-						<!-- _L52.VOR_Radial -->
+						<!-- _L52.vorRadial -->
 						<PrjOp name="10">
 							<flow>
 								<IdExpression>
@@ -1187,7 +1187,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="VOR_Radial"/>
+								<Label name="vorRadial"/>
 							</with>
 						</PrjOp>
 					</right>

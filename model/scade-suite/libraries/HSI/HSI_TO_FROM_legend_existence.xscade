@@ -27,7 +27,7 @@
 						<ed:Variable oid="!ed/ac9/7A70/BF0/4759559d4696"/>
 					</pragmas>
 				</Variable>
-				<Variable name="HSI_ILS_Selected">
+				<Variable name="HSI_ilsSelected">
 					<type>
 						<NamedType>
 							<type>
@@ -145,7 +145,7 @@
 						<ed:Equation oid="!ed/ad2/7A70/BF0/4759559d2d80"/>
 					</pragmas>
 				</Equation>
-				<!-- _L2 = HSI_ILS_Selected; -->
+				<!-- _L2 = HSI_ilsSelected; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L2"/>
@@ -153,7 +153,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_ILS_Selected"/>
+								<ConstVarRef name="HSI_ilsSelected"/>
 							</path>
 						</IdExpression>
 					</right>

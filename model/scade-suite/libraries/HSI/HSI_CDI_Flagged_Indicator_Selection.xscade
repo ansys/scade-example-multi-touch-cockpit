@@ -196,13 +196,13 @@
 						<ed:Equation oid="!ed/194/7A70/BF0/47595594135a"/>
 					</pragmas>
 				</Equation>
-				<!-- _L5 = _L4.GPS_Flagged; -->
+				<!-- _L5 = _L4.gpsFlagged; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L5"/>
 					</lefts>
 					<right>
-						<!-- _L4.GPS_Flagged -->
+						<!-- _L4.gpsFlagged -->
 						<PrjOp name="1">
 							<flow>
 								<IdExpression>
@@ -212,7 +212,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="GPS_Flagged"/>
+								<Label name="gpsFlagged"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -220,13 +220,13 @@
 						<ed:Equation oid="!ed/195/7A70/BF0/475955943777"/>
 					</pragmas>
 				</Equation>
-				<!-- _L6 = _L4.VOR_Flagged; -->
+				<!-- _L6 = _L4.vorFlagged; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L6"/>
 					</lefts>
 					<right>
-						<!-- _L4.VOR_Flagged -->
+						<!-- _L4.vorFlagged -->
 						<PrjOp name="2">
 							<flow>
 								<IdExpression>
@@ -236,7 +236,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="VOR_Flagged"/>
+								<Label name="vorFlagged"/>
 							</with>
 						</PrjOp>
 					</right>

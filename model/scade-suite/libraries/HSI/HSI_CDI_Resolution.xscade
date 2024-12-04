@@ -3,7 +3,7 @@
 	<declarations>
 		<Operator kind="function" name="HSI_CDI_Resolution">
 			<inputs>
-				<Variable name="HSI_VOR_CDI_Angle">
+				<Variable name="HSI_vorCdi_Angle">
 					<type>
 						<NamedType>
 							<type>
@@ -17,7 +17,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="HSI_VOR_CDI_Defl">
+				<Variable name="HSI_vorCdi_Defl">
 					<type>
 						<NamedType>
 							<type>
@@ -43,7 +43,7 @@
 				</Variable>
 			</outputs>
 			<locals>
-				<Variable name="HSI_VOR_CDI_Angle_Abs">
+				<Variable name="HSI_vorCdi_Angle_Abs">
 					<type>
 						<NamedType>
 							<type>
@@ -456,10 +456,10 @@
 						<ed:Equation oid="!ed/4f5/7A70/BF0/4759559851ee"/>
 					</pragmas>
 				</Equation>
-				<!-- HSI_VOR_CDI_Angle_Abs = _L13; -->
+				<!-- HSI_vorCdi_Angle_Abs = _L13; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HSI_VOR_CDI_Angle_Abs"/>
+						<VariableRef name="HSI_vorCdi_Angle_Abs"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -472,7 +472,7 @@
 						<ed:Equation oid="!ed/4f6/7A70/BF0/4759559812ea"/>
 					</pragmas>
 				</Equation>
-				<!-- _L29 = HSI_VOR_CDI_Angle_Abs; -->
+				<!-- _L29 = HSI_vorCdi_Angle_Abs; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L29"/>
@@ -480,7 +480,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_VOR_CDI_Angle_Abs"/>
+								<ConstVarRef name="HSI_vorCdi_Angle_Abs"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -632,10 +632,10 @@
 						<ed:Equation oid="!ed/4fd/7A70/BF0/4759559870de"/>
 					</pragmas>
 				</Equation>
-				<!-- HSI_VOR_CDI_Defl = _L59; -->
+				<!-- HSI_vorCdi_Defl = _L59; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="HSI_VOR_CDI_Defl"/>
+						<VariableRef name="HSI_vorCdi_Defl"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -667,7 +667,7 @@
 						</kcg:Pragma>
 					</pragmas>
 				</Equation>
-				<!-- _L61 = HSI_VOR_CDI_Angle; -->
+				<!-- _L61 = HSI_vorCdi_Angle; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L61"/>
@@ -675,7 +675,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_VOR_CDI_Angle"/>
+								<ConstVarRef name="HSI_vorCdi_Angle"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -683,7 +683,7 @@
 						<ed:Equation oid="!ed/3266/6344/774/475ef37d7814"/>
 					</pragmas>
 				</Equation>
-				<!-- _L63 = HSI_VOR_CDI_Angle; -->
+				<!-- _L63 = HSI_vorCdi_Angle; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L63"/>
@@ -691,7 +691,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_VOR_CDI_Angle"/>
+								<ConstVarRef name="HSI_vorCdi_Angle"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -699,7 +699,7 @@
 						<ed:Equation oid="!ed/3281/6344/774/475ef3bc39f"/>
 					</pragmas>
 				</Equation>
-				<!-- _L64 = HSI_VOR_CDI_Angle; -->
+				<!-- _L64 = HSI_vorCdi_Angle; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L64"/>
@@ -707,7 +707,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_VOR_CDI_Angle"/>
+								<ConstVarRef name="HSI_vorCdi_Angle"/>
 							</path>
 						</IdExpression>
 					</right>

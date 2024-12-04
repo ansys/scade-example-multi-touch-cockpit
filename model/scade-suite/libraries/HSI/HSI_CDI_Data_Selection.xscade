@@ -39,7 +39,7 @@
 						<ed:Variable oid="!ed/108/7A70/BF0/4759558e6956"/>
 					</pragmas>
 				</Variable>
-				<Variable name="HSI_VOR_CDI_Defl">
+				<Variable name="HSI_vorCdi_Defl">
 					<type>
 						<NamedType>
 							<type>
@@ -225,13 +225,13 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L1 = _L2.ILS_Selected; -->
+				<!-- _L1 = _L2.ilsSelected; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1"/>
 					</lefts>
 					<right>
-						<!-- _L2.ILS_Selected -->
+						<!-- _L2.ilsSelected -->
 						<PrjOp name="1">
 							<flow>
 								<IdExpression>
@@ -241,7 +241,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="ILS_Selected"/>
+								<Label name="ilsSelected"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -265,13 +265,13 @@
 						<ed:Equation oid="!ed/117/7A70/BF0/4759558e6048"/>
 					</pragmas>
 				</Equation>
-				<!-- _L3 = _L2.GPS_CDI; -->
+				<!-- _L3 = _L2.gpsCdi; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L3"/>
 					</lefts>
 					<right>
-						<!-- _L2.GPS_CDI -->
+						<!-- _L2.gpsCdi -->
 						<PrjOp name="2">
 							<flow>
 								<IdExpression>
@@ -281,7 +281,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="GPS_CDI"/>
+								<Label name="gpsCdi"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -289,13 +289,13 @@
 						<ed:Equation oid="!ed/118/7A70/BF0/4759558e7e64"/>
 					</pragmas>
 				</Equation>
-				<!-- _L4 = _L2.VOR_CDI; -->
+				<!-- _L4 = _L2.vorCdi; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L4"/>
 					</lefts>
 					<right>
-						<!-- _L2.VOR_CDI -->
+						<!-- _L2.vorCdi -->
 						<PrjOp name="3">
 							<flow>
 								<IdExpression>
@@ -305,7 +305,7 @@
 								</IdExpression>
 							</flow>
 							<with>
-								<Label name="VOR_CDI"/>
+								<Label name="vorCdi"/>
 							</with>
 						</PrjOp>
 					</right>
@@ -457,7 +457,7 @@
 						<ed:Equation oid="!ed/11e/7A70/BF0/4759558e2d58"/>
 					</pragmas>
 				</Equation>
-				<!-- _L10 = HSI_VOR_CDI_Defl; -->
+				<!-- _L10 = HSI_vorCdi_Defl; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L10"/>
@@ -465,7 +465,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_VOR_CDI_Defl"/>
+								<ConstVarRef name="HSI_vorCdi_Defl"/>
 							</path>
 						</IdExpression>
 					</right>

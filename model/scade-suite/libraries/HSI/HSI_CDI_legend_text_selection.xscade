@@ -3,7 +3,7 @@
 	<declarations>
 		<Operator kind="function" name="HSI_CDI_legend_text_selection">
 			<inputs>
-				<Variable name="HSI_ILS_Selected">
+				<Variable name="HSI_ilsSelected">
 					<type>
 						<NamedType>
 							<type>
@@ -378,7 +378,7 @@
 						<ed:Equation oid="!ed/25c/7A70/BF0/475955955154"/>
 					</pragmas>
 				</Equation>
-				<!-- _L13 = HSI_ILS_Selected; -->
+				<!-- _L13 = HSI_ilsSelected; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L13"/>
@@ -386,7 +386,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="HSI_ILS_Selected"/>
+								<ConstVarRef name="HSI_ilsSelected"/>
 							</path>
 						</IdExpression>
 					</right>
