@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="node" name="Goto">
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="node" name="goto">
 	<inputs>
-		<Variable name="Target">
+		<Variable name="target">
 			<type>
 				<NamedType>
 					<type>
@@ -13,7 +13,7 @@
 				<ed:Variable oid="!ed/caf9/5F82/1828/5a256728448b"/>
 			</pragmas>
 		</Variable>
-		<Variable name="Incr">
+		<Variable name="incr">
 			<type>
 				<NamedType>
 					<type>
@@ -27,7 +27,7 @@
 		</Variable>
 	</inputs>
 	<outputs>
-		<Variable name="Current">
+		<Variable name="current">
 			<type>
 				<NamedType>
 					<type>
@@ -166,7 +166,7 @@
 		</Variable>
 	</locals>
 	<data>
-		<!-- _L1 = Target; -->
+		<!-- _L1 = target; -->
 		<Equation>
 			<lefts>
 				<VariableRef name="_L1"/>
@@ -174,7 +174,7 @@
 			<right>
 				<IdExpression>
 					<path>
-						<ConstVarRef name="Target"/>
+						<ConstVarRef name="target"/>
 					</path>
 				</IdExpression>
 			</right>
@@ -208,7 +208,7 @@
 				<ed:Equation oid="!ed/cae9/5F82/1828/5a25672818cc"/>
 			</pragmas>
 		</Equation>
-		<!-- _L3 =  last 'Current; -->
+		<!-- _L3 =  last 'current; -->
 		<Equation>
 			<lefts>
 				<VariableRef name="_L3"/>
@@ -216,7 +216,7 @@
 			<right>
 				<Last>
 					<variable>
-						<ConstVarRef name="Current"/>
+						<ConstVarRef name="current"/>
 					</variable>
 				</Last>
 			</right>
@@ -288,7 +288,7 @@
 				<ed:Equation oid="!ed/caec/5F82/1828/5a2567281bf"/>
 			</pragmas>
 		</Equation>
-		<!-- _L8 = Incr; -->
+		<!-- _L8 = incr; -->
 		<Equation>
 			<lefts>
 				<VariableRef name="_L8"/>
@@ -296,7 +296,7 @@
 			<right>
 				<IdExpression>
 					<path>
-						<ConstVarRef name="Incr"/>
+						<ConstVarRef name="incr"/>
 					</path>
 				</IdExpression>
 			</right>
@@ -330,10 +330,10 @@
 				<ed:Equation oid="!ed/caee/5F82/1828/5a25672846b5"/>
 			</pragmas>
 		</Equation>
-		<!-- Current = _L12; -->
+		<!-- current = _L12; -->
 		<Equation>
 			<lefts>
-				<VariableRef name="Current"/>
+				<VariableRef name="current"/>
 			</lefts>
 			<right>
 				<IdExpression>
@@ -415,7 +415,7 @@
 				<ed:Equation oid="!ed/6043/4AEA/1E40/5a2585d4ec5"/>
 			</pragmas>
 		</Equation>
-		<!-- _L13 = Target; -->
+		<!-- _L13 = target; -->
 		<Equation>
 			<lefts>
 				<VariableRef name="_L13"/>
@@ -423,7 +423,7 @@
 			<right>
 				<IdExpression>
 					<path>
-						<ConstVarRef name="Target"/>
+						<ConstVarRef name="target"/>
 					</path>
 				</IdExpression>
 			</right>
@@ -435,7 +435,7 @@
 	<pragmas>
 		<ed:Operator oid="!ed/cae6/5F82/1828/5a2567284e3b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/8">
 			<diagrams>
-				<NetDiagram name="diagram_Goto_1" landscape="true" format="A4 (210 297)" oid="!ed/caef/5F82/1828/5a25672846a6">
+				<NetDiagram name="goto" landscape="true" format="A4 (210 297)" oid="!ed/caef/5F82/1828/5a25672846a6">
 					<presentationElements>
 						<EquationGE presentable="!ed/cae7/5F82/1828/5a2567281a8c">
 							<position>
