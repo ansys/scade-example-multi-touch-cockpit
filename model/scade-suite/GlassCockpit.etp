@@ -596,7 +596,7 @@
 		<Configuration id="25" name="HTML"/>
 		<Configuration id="30" name="RTF"/>
 		<Configuration id="258" name="Display Simulation"/>
-		<Configuration id="302" name="Standalone Executable"/>
-		<Configuration id="508" name="Rules Checker"/>
+		<Configuration id="302" name="Standalone"/>
+		<Configuration id="508" name="RulesChecker"/>
 	</configurations>
 </Project>
