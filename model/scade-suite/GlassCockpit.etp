@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project id="1" oid_count="507" defaultConfiguration="12">
+<Project id="1" oid_count="524" defaultConfiguration="12">
 	<props>
 		<Prop id="10" name="@STUDIO:PRODUCT">
 			<value>SC</value>
@@ -22,6 +22,7 @@
 			<value>18</value>
 			<value>258</value>
 			<value>302</value>
+			<value>508</value>
 		</Prop>
 		<Prop id="19" name="@GENERATOR:TARGET_DIR">
 			<value>$(Configuration)</value>
@@ -84,6 +85,7 @@
 			<value>30</value>
 			<value>258</value>
 			<value>302</value>
+			<value>508</value>
 		</Prop>
 		<Prop id="46" name="@SCADE:SEMFILE">
 			<value>GlassCockpit.err</value>
@@ -126,6 +128,7 @@
 			<value>30</value>
 			<value>258</value>
 			<value>302</value>
+			<value>508</value>
 		</Prop>
 		<Prop id="61" name="@STUDIO:TOOLCONF">
 			<value>Checker</value>
@@ -135,6 +138,7 @@
 			<value>30</value>
 			<value>258</value>
 			<value>302</value>
+			<value>508</value>
 		</Prop>
 		<Prop id="63" name="@SCADE:CHECKED">
 			<value>false</value>
@@ -155,6 +159,7 @@
 			<value>30</value>
 			<value>258</value>
 			<value>302</value>
+			<value>508</value>
 		</Prop>
 		<Prop id="219" name="@GENERATOR:OPTLEVEL">
 			<value>3</value>
@@ -175,6 +180,7 @@
 			<value>30</value>
 			<value>258</value>
 			<value>302</value>
+			<value>508</value>
 		</Prop>
 		<Prop id="256" name="@GENERATOR:EXECUTION_PERIODE">
 			<value>0.100000</value>
@@ -292,6 +298,7 @@
 			<value>30</value>
 			<value>258</value>
 			<value>302</value>
+			<value>508</value>
 		</Prop>
 		<Prop id="376" name="@GENERATOR:DISPLAY_SYNC_PANELS">
 			<value>..\model\GlassCockpitPFD.sgfx</value>
@@ -325,6 +332,7 @@
 			<value>30</value>
 			<value>258</value>
 			<value>302</value>
+			<value>508</value>
 		</Prop>
 		<Prop id="422" name="@SCADE:DEFAULTFILE">
 			<value>GlassCockpit.xscade</value>
@@ -337,14 +345,11 @@
 			<value>30</value>
 			<value>258</value>
 			<value>302</value>
+			<value>508</value>
 		</Prop>
 		<Prop id="459" name="@GENERATOR:ROOTNODE">
 			<value>GlassCockpit</value>
 			<configuration>258</configuration>
-		</Prop>
-		<Prop id="461" name="@GENERATOR:ROOTNODE">
-			<value>GlassCockpit</value>
-			<configuration>12</configuration>
 		</Prop>
 		<Prop id="463" name="@GENERATOR:PERIODICITY_MODE">
 			<value>USER</value>
@@ -361,6 +366,7 @@
 			<value>30</value>
 			<value>258</value>
 			<value>302</value>
+			<value>508</value>
 		</Prop>
 		<Prop id="485" name="@GENERATOR:DISPLAY_DISABLED_PANELS">
 			<value>..\scade-display\GCS.sgfx</value>
@@ -375,6 +381,7 @@
 			<value>18</value>
 			<value>258</value>
 			<value>302</value>
+			<value>508</value>
 		</Prop>
 		<Prop id="489" name="@GENERATOR:DISPLAY_ENABLED_PANELS">
 			<value>..\Display\GCS.sgfx,Co-simulation</value>
@@ -432,6 +439,98 @@
 		<Prop id="505" name="@GENERATOR:ROOTNODE">
 			<value>glassCockpit</value>
 			<configuration>302</configuration>
+		</Prop>
+		<Prop id="509" name="@METRICS_RULES:SELECTED_RULES">
+			<value>SDR-30-1</value>
+			<value>SDR-30-6</value>
+			<value>SDR-30-5</value>
+			<value>SDR-30-4</value>
+			<value>SDR-18</value>
+			<value>SDR-22</value>
+			<value>SDR-21</value>
+			<value>SDR-11-12-2</value>
+			<value>SDR-30-3</value>
+			<value>SDR-30-2</value>
+			<configuration>508</configuration>
+		</Prop>
+		<Prop id="510" name="@METRICS_RULES:RULES_PARAM">
+			<value>SDR-30-1,7</value>
+			<value>SDR-38,&lt;, &gt;, &lt;=, &gt;=, =, &lt;&gt;</value>
+			<value>SDR-30-6,7</value>
+			<value>SDR-30-5,7</value>
+			<value>SDR-30-4,5</value>
+			<value>SDR-52,true,false</value>
+			<value>SDR-19,in=acc.*In, out=acc.*Out, strict=False</value>
+			<value>SDR-65,configuration=</value>
+			<value>SDR-51,index=index</value>
+			<value>SDR-22,20</value>
+			<value>SDR-64,configuration=</value>
+			<value>SDR-31,margins=0;0</value>
+			<value>SDR-32,upper_levels=1</value>
+			<value>SDR-20,continue=continue</value>
+			<value>SDR-30-3,50</value>
+			<value>SDR-30-2,20</value>
+			<configuration>508</configuration>
+		</Prop>
+		<Prop id="511" name="@METRICS_RULES:SELECTED_ROOTS">
+			<value>GlassCockpit</value>
+			<configuration>508</configuration>
+		</Prop>
+		<Prop id="512" name="@GENERATOR:DISPLAY_DISABLED_PANELS">
+			<value>..\scade-display\GCS.sgfx</value>
+			<configuration>508</configuration>
+		</Prop>
+		<Prop id="513" name="@GENERATOR:PERIODICITY_MODE">
+			<value>USER</value>
+			<configuration>508</configuration>
+		</Prop>
+		<Prop id="514" name="@GENERATOR:ROOTNODE">
+			<value>GlassCockpit</value>
+			<configuration>508</configuration>
+		</Prop>
+		<Prop id="515" name="@GENERATOR:PROBES">
+			<value>true</value>
+			<configuration>508</configuration>
+		</Prop>
+		<Prop id="516" name="@GENERATOR:DISPLAY_SYNC_PANELS">
+			<value>..\model\GlassCockpitPFD.sgfx</value>
+			<configuration>508</configuration>
+		</Prop>
+		<Prop id="517" name="@GENERATOR:SIGNIFICANCE_LENGTH">
+			<value>127</value>
+			<configuration>508</configuration>
+		</Prop>
+		<Prop id="518" name="@GENERATOR:OBSERVE_MODE">
+			<value>4</value>
+			<configuration>508</configuration>
+		</Prop>
+		<Prop id="519" name="@GENERATOR:TARGET_ADAPTOR">
+			<value>SCADE Display Co-generation 62</value>
+			<configuration>508</configuration>
+		</Prop>
+		<Prop id="520" name="@GENERATOR:EXPAND_MODE">
+			<value>2</value>
+			<configuration>508</configuration>
+		</Prop>
+		<Prop id="521" name="@GENERATOR:OPTLEVEL">
+			<value>3</value>
+			<configuration>508</configuration>
+		</Prop>
+		<Prop id="522" name="@GENERATOR:USER_CONFIG">
+			<value>..\include\myusermacro.h</value>
+			<configuration>508</configuration>
+		</Prop>
+		<Prop id="523" name="@GENERATOR:GENERATOR">
+			<value>C QUAL661</value>
+			<configuration>508</configuration>
+		</Prop>
+		<Prop id="524" name="@GENERATOR:TARGET_DIR">
+			<value>..\kcgsuite</value>
+			<configuration>508</configuration>
+		</Prop>
+		<Prop id="461" name="@GENERATOR:ROOTNODE">
+			<value>GlassCockpit</value>
+			<configuration>12</configuration>
 		</Prop>
 	</props>
 	<roots>
@@ -498,5 +597,6 @@
 		<Configuration id="30" name="RTF"/>
 		<Configuration id="258" name="Display Simulation"/>
 		<Configuration id="302" name="Standalone Executable"/>
+		<Configuration id="508" name="Rules Checker"/>
 	</configurations>
 </Project>

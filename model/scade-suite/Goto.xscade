@@ -551,7 +551,7 @@
 						</Edge>
 						<EquationGE presentable="!ed/cae8/5F82/1828/5a256728639e">
 							<position>
-								<Point x="19050" y="5318"/>
+								<Point x="23257" y="11324"/>
 							</position>
 							<size>
 								<Size width="339" height="508"/>
@@ -623,9 +623,9 @@
 						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/6043/4AEA/1E40/5a2585d4ec5" dstEquation="!ed/cae8/5F82/1828/5a256728639e">
 							<positions>
 								<Point x="18547" y="11589"/>
-								<Point x="18812" y="11589"/>
-								<Point x="18812" y="5583"/>
-								<Point x="19103" y="5583"/>
+								<Point x="20929" y="11589"/>
+								<Point x="20929" y="11589"/>
+								<Point x="23310" y="11589"/>
 							</positions>
 						</Edge>
 					</presentationElements>

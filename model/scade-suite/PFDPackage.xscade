@@ -26,7 +26,7 @@
 					<definition>
 						<Struct>
 							<fields>
-								<Field name="Scale_X">
+								<Field name="scaleX">
 									<type>
 										<NamedType>
 											<type>
@@ -38,7 +38,7 @@
 										<ed:Field oid="!ed/5208/7D49/B98/494240aa7249"/>
 									</pragmas>
 								</Field>
-								<Field name="Scale_Y">
+								<Field name="scaleY">
 									<type>
 										<NamedType>
 											<type>
@@ -50,7 +50,7 @@
 										<ed:Field oid="!ed/5209/7D49/B98/494240aa5e8d"/>
 									</pragmas>
 								</Field>
-								<Field name="X_Adi">
+								<Field name="xAdi">
 									<type>
 										<NamedType>
 											<type>
@@ -62,7 +62,7 @@
 										<ed:Field oid="!ed/520a/7D49/B98/494240aa54d"/>
 									</pragmas>
 								</Field>
-								<Field name="Y_Adi">
+								<Field name="yAdi">
 									<type>
 										<NamedType>
 											<type>
@@ -74,7 +74,7 @@
 										<ed:Field oid="!ed/520b/7D49/B98/494240aa3017"/>
 									</pragmas>
 								</Field>
-								<Field name="Angle_Adi">
+								<Field name="angleAdi">
 									<type>
 										<NamedType>
 											<type>
@@ -86,7 +86,7 @@
 										<ed:Field oid="!ed/520c/7D49/B98/494240aa6d8a"/>
 									</pragmas>
 								</Field>
-								<Field name="X_Min_Adi">
+								<Field name="xMinAdi">
 									<type>
 										<NamedType>
 											<type>
@@ -98,7 +98,7 @@
 										<ed:Field oid="!ed/520d/7D49/B98/494240aa6aeb"/>
 									</pragmas>
 								</Field>
-								<Field name="Y_Min_Adi">
+								<Field name="yMinAdi">
 									<type>
 										<NamedType>
 											<type>
@@ -110,7 +110,7 @@
 										<ed:Field oid="!ed/520e/7D49/B98/494240aa440b"/>
 									</pragmas>
 								</Field>
-								<Field name="X_Max_Adi">
+								<Field name="xMaxAdi">
 									<type>
 										<NamedType>
 											<type>
@@ -122,7 +122,7 @@
 										<ed:Field oid="!ed/520f/7D49/B98/494240aa2d93"/>
 									</pragmas>
 								</Field>
-								<Field name="Y_Max_Adi">
+								<Field name="yMaxAdi">
 									<type>
 										<NamedType>
 											<type>
@@ -134,7 +134,7 @@
 										<ed:Field oid="!ed/5210/7D49/B98/494240aa1831"/>
 									</pragmas>
 								</Field>
-								<Field name="X_Hsi">
+								<Field name="xHsi">
 									<type>
 										<NamedType>
 											<type>
@@ -146,7 +146,7 @@
 										<ed:Field oid="!ed/5211/7D49/B98/494240aa10e5"/>
 									</pragmas>
 								</Field>
-								<Field name="Y_Hsi">
+								<Field name="yHsi">
 									<type>
 										<NamedType>
 											<type>
@@ -158,7 +158,7 @@
 										<ed:Field oid="!ed/5212/7D49/B98/494240aa328e"/>
 									</pragmas>
 								</Field>
-								<Field name="Angle_Hsi">
+								<Field name="angleHsi">
 									<type>
 										<NamedType>
 											<type>
@@ -170,7 +170,7 @@
 										<ed:Field oid="!ed/5213/7D49/B98/494240aa49f8"/>
 									</pragmas>
 								</Field>
-								<Field name="Scale_X_Hsi">
+								<Field name="scaleXHsi">
 									<type>
 										<NamedType>
 											<type>
@@ -182,7 +182,7 @@
 										<ed:Field oid="!ed/5214/7D49/B98/494240aa6f7f"/>
 									</pragmas>
 								</Field>
-								<Field name="Scale_Y_Hsi">
+								<Field name="scaleYHsi">
 									<type>
 										<NamedType>
 											<type>
@@ -194,7 +194,7 @@
 										<ed:Field oid="!ed/5215/7D49/B98/494240aa58c9"/>
 									</pragmas>
 								</Field>
-								<Field name="X_Ias">
+								<Field name="xIas">
 									<type>
 										<NamedType>
 											<type>
@@ -206,7 +206,7 @@
 										<ed:Field oid="!ed/5216/7D49/B98/494240aa77bb"/>
 									</pragmas>
 								</Field>
-								<Field name="Y_Ias">
+								<Field name="yIas">
 									<type>
 										<NamedType>
 											<type>
@@ -218,7 +218,7 @@
 										<ed:Field oid="!ed/5217/7D49/B98/494240aa1121"/>
 									</pragmas>
 								</Field>
-								<Field name="Angle_Ias">
+								<Field name="angleIas">
 									<type>
 										<NamedType>
 											<type>
@@ -230,7 +230,7 @@
 										<ed:Field oid="!ed/5218/7D49/B98/494240aae30"/>
 									</pragmas>
 								</Field>
-								<Field name="X_Alt">
+								<Field name="xAlt">
 									<type>
 										<NamedType>
 											<type>
@@ -242,7 +242,7 @@
 										<ed:Field oid="!ed/5219/7D49/B98/494240aa776e"/>
 									</pragmas>
 								</Field>
-								<Field name="Y_Alt">
+								<Field name="yAlt">
 									<type>
 										<NamedType>
 											<type>
@@ -254,7 +254,7 @@
 										<ed:Field oid="!ed/521a/7D49/B98/494240aa25e1"/>
 									</pragmas>
 								</Field>
-								<Field name="Angle_Alt">
+								<Field name="angleAlt">
 									<type>
 										<NamedType>
 											<type>
@@ -277,7 +277,7 @@
 					<definition>
 						<Struct>
 							<fields>
-								<Field name="IAS_Translate">
+								<Field name="iasTranslate">
 									<type>
 										<NamedType>
 											<type>
@@ -289,7 +289,7 @@
 										<ed:Field oid="!ed/51e8/7D49/B98/494240aa613d"/>
 									</pragmas>
 								</Field>
-								<Field name="Translate_I">
+								<Field name="translateI">
 									<type>
 										<NamedType>
 											<type>
@@ -301,7 +301,7 @@
 										<ed:Field oid="!ed/51e9/7D49/B98/494240aa23ef"/>
 									</pragmas>
 								</Field>
-								<Field name="Translate_U">
+								<Field name="translateU">
 									<type>
 										<NamedType>
 											<type>
@@ -313,7 +313,7 @@
 										<ed:Field oid="!ed/51ea/7D49/B98/494240aa5c69"/>
 									</pragmas>
 								</Field>
-								<Field name="Translate_D">
+								<Field name="translateD">
 									<type>
 										<NamedType>
 											<type>
@@ -325,7 +325,7 @@
 										<ed:Field oid="!ed/51eb/7D49/B98/494240aa1aff"/>
 									</pragmas>
 								</Field>
-								<Field name="T_U">
+								<Field name="tu">
 									<type>
 										<NamedType>
 											<type>
@@ -337,7 +337,7 @@
 										<ed:Field oid="!ed/51ec/7D49/B98/494240aa2a20"/>
 									</pragmas>
 								</Field>
-								<Field name="T_D">
+								<Field name="td">
 									<type>
 										<NamedType>
 											<type>
@@ -360,7 +360,7 @@
 					<definition>
 						<Struct>
 							<fields>
-								<Field name="XyArray">
+								<Field name="xyArray">
 									<type>
 										<Table>
 											<type>
@@ -379,7 +379,7 @@
 										<ed:Field oid="!ed/52ae/7D49/B98/494243967aa9"/>
 									</pragmas>
 								</Field>
-								<Field name="StArray">
+								<Field name="stArray">
 									<type>
 										<Table>
 											<type>
@@ -398,7 +398,7 @@
 										<ed:Field oid="!ed/52b7/7D49/B98/494243ab1664"/>
 									</pragmas>
 								</Field>
-								<Field name="VtArray">
+								<Field name="vtArray">
 									<type>
 										<Table>
 											<type>
@@ -417,7 +417,7 @@
 										<ed:Field oid="!ed/52a5/7D49/B98/494243813462"/>
 									</pragmas>
 								</Field>
-								<Field name="Rt">
+								<Field name="rt">
 									<type>
 										<NamedType>
 											<type>
@@ -429,7 +429,7 @@
 										<ed:Field oid="!ed/527b/7D49/B98/494242e830e3"/>
 									</pragmas>
 								</Field>
-								<Field name="RtArray">
+								<Field name="rtArray">
 									<type>
 										<Table>
 											<type>
@@ -448,7 +448,7 @@
 										<ed:Field oid="!ed/5284/7D49/B98/494242f610a8"/>
 									</pragmas>
 								</Field>
-								<Field name="Vx">
+								<Field name="vx">
 									<type>
 										<NamedType>
 											<type>
@@ -460,7 +460,7 @@
 										<ed:Field oid="!ed/4ee9/19E7/DE4/49426fb83996"/>
 									</pragmas>
 								</Field>
-								<Field name="Vz">
+								<Field name="vz">
 									<type>
 										<NamedType>
 											<type>
@@ -472,7 +472,7 @@
 										<ed:Field oid="!ed/4eea/19E7/DE4/49426fbb5e8b"/>
 									</pragmas>
 								</Field>
-								<Field name="Yaw">
+								<Field name="yaw">
 									<type>
 										<NamedType>
 											<type>
@@ -495,7 +495,7 @@
 					<definition>
 						<Struct>
 							<fields>
-								<Field name="AdiHorizonColor">
+								<Field name="adiHorizonColor">
 									<type>
 										<NamedType>
 											<type>
@@ -507,7 +507,7 @@
 										<ed:Field oid="!ed/5337/7D49/B98/494267785b0a"/>
 									</pragmas>
 								</Field>
-								<Field name="AdiRotate">
+								<Field name="adiRotate">
 									<type>
 										<NamedType>
 											<type>
@@ -519,7 +519,7 @@
 										<ed:Field oid="!ed/5341/7D49/B98/494267986bde"/>
 									</pragmas>
 								</Field>
-								<Field name="AircraftSymbolEnum">
+								<Field name="aircraftSymbolEnum">
 									<type>
 										<NamedType>
 											<type>
@@ -531,7 +531,7 @@
 										<ed:Field oid="!ed/534b/7D49/B98/494267bc49f1"/>
 									</pragmas>
 								</Field>
-								<Field name="FdSymbolRotate">
+								<Field name="fdSymbolRotate">
 									<type>
 										<NamedType>
 											<type>
@@ -543,7 +543,7 @@
 										<ed:Field oid="!ed/5355/7D49/B98/494267da6991"/>
 									</pragmas>
 								</Field>
-								<Field name="FdSymbolTranslate">
+								<Field name="fdSymbolTranslate">
 									<type>
 										<NamedType>
 											<type>
@@ -555,7 +555,7 @@
 										<ed:Field oid="!ed/5363/7D49/B98/494267e355f8"/>
 									</pragmas>
 								</Field>
-								<Field name="FdSymbolVisibility">
+								<Field name="fdSymbolVisibility">
 									<type>
 										<NamedType>
 											<type>
@@ -567,7 +567,7 @@
 										<ed:Field oid="!ed/5364/7D49/B98/494267ed272b"/>
 									</pragmas>
 								</Field>
-								<Field name="HorizonTranslate">
+								<Field name="horizonTranslate">
 									<type>
 										<NamedType>
 											<type>
@@ -579,7 +579,7 @@
 										<ed:Field oid="!ed/536d/7D49/B98/494267fa7575"/>
 									</pragmas>
 								</Field>
-								<Field name="PitchLadderTranslate">
+								<Field name="pitchLadderTranslate">
 									<type>
 										<NamedType>
 											<type>
@@ -602,7 +602,7 @@
 					<definition>
 						<Struct>
 							<fields>
-								<Field name="HsiTargetHeadingPointerRotate">
+								<Field name="hsiTargetHeadingPointerRotate">
 									<type>
 										<NamedType>
 											<type>
@@ -614,7 +614,7 @@
 										<ed:Field oid="!ed/539d/7D49/B98/49426892366c"/>
 									</pragmas>
 								</Field>
-								<Field name="HsiYawRatePixels">
+								<Field name="hsiYawRatePixels">
 									<type>
 										<NamedType>
 											<type>
@@ -626,7 +626,7 @@
 										<ed:Field oid="!ed/53ab/7D49/B98/494268cc1c06"/>
 									</pragmas>
 								</Field>
-								<Field name="Rmi1Visibility">
+								<Field name="rmi1Visibility">
 									<type>
 										<NamedType>
 											<type>
@@ -638,7 +638,7 @@
 										<ed:Field oid="!ed/53ac/7D49/B98/494268da5974"/>
 									</pragmas>
 								</Field>
-								<Field name="Rmi1NeedleRotate">
+								<Field name="rmi1NeedleRotate">
 									<type>
 										<NamedType>
 											<type>
@@ -650,7 +650,7 @@
 										<ed:Field oid="!ed/53bb/7D49/B98/494268ee5f4f"/>
 									</pragmas>
 								</Field>
-								<Field name="Rmi1LegendTextIndex">
+								<Field name="rmi1LegendTextIndex">
 									<type>
 										<NamedType>
 											<type>
@@ -662,7 +662,7 @@
 										<ed:Field oid="!ed/53bc/7D49/B98/494268f911a9"/>
 									</pragmas>
 								</Field>
-								<Field name="Rmi2Visibility">
+								<Field name="rmi2Visibility">
 									<type>
 										<NamedType>
 											<type>
@@ -674,7 +674,7 @@
 										<ed:Field oid="!ed/53ba/7D49/B98/494268e48af"/>
 									</pragmas>
 								</Field>
-								<Field name="Rmi2NeedleRotate">
+								<Field name="rmi2NeedleRotate">
 									<type>
 										<NamedType>
 											<type>
@@ -686,7 +686,7 @@
 										<ed:Field oid="!ed/53dd/7D49/B98/4942691110d7"/>
 									</pragmas>
 								</Field>
-								<Field name="Rmi2LegendTextIndex">
+								<Field name="rmi2LegendTextIndex">
 									<type>
 										<NamedType>
 											<type>
@@ -698,7 +698,7 @@
 										<ed:Field oid="!ed/53e4/7D49/B98/494269152ef6"/>
 									</pragmas>
 								</Field>
-								<Field name="CdiCompassCardRotate">
+								<Field name="cdiCompassCardRotate">
 									<type>
 										<NamedType>
 											<type>
@@ -710,7 +710,7 @@
 										<ed:Field oid="!ed/53e5/7D49/B98/494269225e0"/>
 									</pragmas>
 								</Field>
-								<Field name="CdiIndicatorVisibility">
+								<Field name="cdiIndicatorVisibility">
 									<type>
 										<NamedType>
 											<type>
@@ -722,7 +722,7 @@
 										<ed:Field oid="!ed/53ee/7D49/B98/4942692c4534"/>
 									</pragmas>
 								</Field>
-								<Field name="CdiTranslate">
+								<Field name="cdiTranslate">
 									<type>
 										<NamedType>
 											<type>
@@ -734,7 +734,7 @@
 										<ed:Field oid="!ed/53f7/7D49/B98/4942693336db"/>
 									</pragmas>
 								</Field>
-								<Field name="CdiCourseRotate">
+								<Field name="cdiCourseRotate">
 									<type>
 										<NamedType>
 											<type>
@@ -746,7 +746,7 @@
 										<ed:Field oid="!ed/5400/7D49/B98/4942693d443e"/>
 									</pragmas>
 								</Field>
-								<Field name="CdiLegendTextIndex">
+								<Field name="cdiLegendTextIndex">
 									<type>
 										<NamedType>
 											<type>
@@ -758,7 +758,7 @@
 										<ed:Field oid="!ed/540f/7D49/B98/4942694934"/>
 									</pragmas>
 								</Field>
-								<Field name="CdiToFromLegendTextVisibility">
+								<Field name="cdiToFromLegendTextVisibility">
 									<type>
 										<NamedType>
 											<type>
@@ -770,7 +770,7 @@
 										<ed:Field oid="!ed/5419/7D49/B98/4942695e8d3"/>
 									</pragmas>
 								</Field>
-								<Field name="CdiToFromLegendTextIndex">
+								<Field name="cdiToFromLegendTextIndex">
 									<type>
 										<NamedType>
 											<type>
@@ -782,7 +782,7 @@
 										<ed:Field oid="!ed/541f/7D49/B98/4942696c3e9b"/>
 									</pragmas>
 								</Field>
-								<Field name="CdiToFromPointerVisibility">
+								<Field name="cdiToFromPointerVisibility">
 									<type>
 										<NamedType>
 											<type>
@@ -794,7 +794,7 @@
 										<ed:Field oid="!ed/5425/7D49/B98/494269722d5f"/>
 									</pragmas>
 								</Field>
-								<Field name="CdiToFromPointerIndex">
+								<Field name="cdiToFromPointerIndex">
 									<type>
 										<NamedType>
 											<type>
@@ -806,7 +806,7 @@
 										<ed:Field oid="!ed/542b/7D49/B98/4942697b38f3"/>
 									</pragmas>
 								</Field>
-								<Field name="AtHeadingValue">
+								<Field name="atHeadingValue">
 									<type>
 										<NamedType>
 											<type>
@@ -818,7 +818,7 @@
 										<ed:Field oid="!ed/544e/7D49/B98/4942699d7042"/>
 									</pragmas>
 								</Field>
-								<Field name="AircraftSymbolIndex">
+								<Field name="aircraftSymbolIndex">
 									<type>
 										<NamedType>
 											<type>
@@ -1021,11 +1021,11 @@
 								<ed:Variable oid="!ed/5233/7D49/B98/49424142282c"/>
 							</pragmas>
 						</Variable>
-						<Variable name="trajectory_Data">
+						<Variable name="trajectoryData">
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="trajectoryData"/>
+										<TypeRef name="PFD::trajectoryData"/>
 									</type>
 								</NamedType>
 							</type>
@@ -1033,11 +1033,11 @@
 								<ed:Variable oid="!ed/523b/7D49/B98/494241425f2c"/>
 							</pragmas>
 						</Variable>
-						<Variable name="tunnel_Data">
+						<Variable name="tunnelData">
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="tunnelData"/>
+										<TypeRef name="PFD::tunnelData"/>
 									</type>
 								</NamedType>
 							</type>
@@ -2798,7 +2798,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="tunnelData"/>
+										<TypeRef name="PFD::tunnelData"/>
 									</type>
 								</NamedType>
 							</type>
@@ -4594,10 +4594,10 @@
 								<ed:Equation oid="!ed/526f/7D49/B98/494241763bc0"/>
 							</pragmas>
 						</Equation>
-						<!-- trajectory_Data = _L1140; -->
+						<!-- trajectoryData = _L1140; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="trajectory_Data"/>
+								<VariableRef name="trajectoryData"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4746,10 +4746,10 @@
 								<ed:Equation oid="!ed/5277/7D49/B98/494241d21f11"/>
 							</pragmas>
 						</Equation>
-						<!-- tunnel_Data = _L1141; -->
+						<!-- tunnelData = _L1141; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="tunnel_Data"/>
+								<VariableRef name="tunnelData"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -4762,18 +4762,18 @@
 								<ed:Equation oid="!ed/52d1/7D49/B98/49426568610b"/>
 							</pragmas>
 						</Equation>
-						<!-- _L1141 = (make tunnelData)(_L1148, _L1149, _L1150, _L1039, _L1151, _L1156, _L1157... -->
+						<!-- _L1141 = (make PFD::tunnelData)(_L1148, _L1149, _L1150, _L1039, _L1151, _L1156, _... -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L1141"/>
 							</lefts>
 							<right>
-								<!-- (make tunnelData)(_L1148, _L1149, _L1150, _L1039, _L1151, _L1156, _L1157, _L1154) -->
+								<!-- (make PFD::tunnelData)(_L1148, _L1149, _L1150, _L1039, _L1151, _L1156, _L1157, _L... -->
 								<CallExpression>
 									<operator>
 										<MakeOp>
 											<type>
-												<TypeRef name="tunnelData"/>
+												<TypeRef name="PFD::tunnelData"/>
 											</type>
 										</MakeOp>
 									</operator>

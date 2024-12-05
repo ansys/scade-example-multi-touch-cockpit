@@ -3014,7 +3014,7 @@
 								</NamedType>
 							</type>
 							<last>
-								<ConstValue value="1."/>
+								<ConstValue value="1.0"/>
 							</last>
 							<pragmas>
 								<ed:Variable oid="!ed/5ae1/2F8E/68C/4fa3a0913d63"/>

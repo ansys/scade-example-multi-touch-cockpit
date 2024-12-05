@@ -2468,7 +2468,7 @@
 				</Operator>
 				<Operator kind="function" name="adiWindowDef">
 					<inputs>
-						<Variable name="scPortrai_Orient">
+						<Variable name="scPortraitOrient">
 							<type>
 								<NamedType>
 									<type>
@@ -2842,7 +2842,7 @@
 								<ed:Equation oid="!ed/e28/1E36/EE4/475ae1739f3"/>
 							</pragmas>
 						</Equation>
-						<!-- _L7 = scPortrai_Orient; -->
+						<!-- _L7 = scPortraitOrient; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L7"/>
@@ -2850,7 +2850,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="scPortrai_Orient"/>
+										<ConstVarRef name="scPortraitOrient"/>
 									</path>
 								</IdExpression>
 							</right>
@@ -6227,7 +6227,7 @@
 				</Operator>
 				<Operator kind="function" name="pfdSize">
 					<inputs>
-						<Variable name="BResol640x480">
+						<Variable name="bResol640x480">
 							<type>
 								<NamedType>
 									<type>
@@ -6416,7 +6416,7 @@
 								<ed:Equation oid="!ed/10b6/1E36/EE4/475ae1756edf"/>
 							</pragmas>
 						</Equation>
-						<!-- _L5 = BResol640x480; -->
+						<!-- _L5 = bResol640x480; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L5"/>
@@ -6424,7 +6424,7 @@
 							<right>
 								<IdExpression>
 									<path>
-										<ConstVarRef name="BResol640x480"/>
+										<ConstVarRef name="bResol640x480"/>
 									</path>
 								</IdExpression>
 							</right>
