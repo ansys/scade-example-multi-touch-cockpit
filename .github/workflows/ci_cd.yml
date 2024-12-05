@@ -73,7 +73,7 @@ jobs:
       - name: "Check Rules"
         uses: ansys/scade-actions/suite-rules@v2.1
         with:
-          scade_dir: ${{ steps.get-scade-dir.outputs.scade-directory }}
+          scade-dir: ${{ steps.get-scade-dir.outputs.scade-directory }}
           project: 'model/scade-suite/GlassCockpit.etp'
           configuration: 'RulesChecker'
 
