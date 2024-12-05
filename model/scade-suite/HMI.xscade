@@ -1537,7 +1537,7 @@
 				</Operator>
 				<Operator kind="function" name="DetectMoveIncr">
 					<inputs>
-						<Variable name="DimArray">
+						<Variable name="dimArray">
 							<type>
 								<Table>
 									<type>
@@ -1562,7 +1562,7 @@
 						</Variable>
 					</inputs>
 					<outputs>
-						<Variable name="MoveUp">
+						<Variable name="moveUp">
 							<type>
 								<NamedType>
 									<type>
@@ -1763,10 +1763,10 @@
 								<ed:Equation oid="!ed/58b8/45EB/26B4/50913075357f"/>
 							</pragmas>
 						</Equation>
-						<!-- MoveUp = _L7; -->
+						<!-- moveUp = _L7; -->
 						<Equation>
 							<lefts>
-								<VariableRef name="MoveUp"/>
+								<VariableRef name="moveUp"/>
 							</lefts>
 							<right>
 								<IdExpression>
@@ -1779,18 +1779,18 @@
 								<ed:Equation oid="!ed/58b9/45EB/26B4/509130753de8"/>
 							</pragmas>
 						</Equation>
-						<!-- _L5 = DimArray[1 .. (M - 1)]; -->
+						<!-- _L5 = dimArray[1 .. (M - 1)]; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L5"/>
 							</lefts>
 							<right>
-								<!-- DimArray[1 .. (M - 1)] -->
+								<!-- dimArray[1 .. (M - 1)] -->
 								<SliceOp name="1">
 									<array>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="DimArray"/>
+												<ConstVarRef name="dimArray"/>
 											</path>
 										</IdExpression>
 									</array>
@@ -1816,18 +1816,18 @@
 								<ed:Equation oid="!ed/58ba/45EB/26B4/509130751b13"/>
 							</pragmas>
 						</Equation>
-						<!-- _L6 = DimArray[0 .. (M - 2)]; -->
+						<!-- _L6 = dimArray[0 .. (M - 2)]; -->
 						<Equation>
 							<lefts>
 								<VariableRef name="_L6"/>
 							</lefts>
 							<right>
-								<!-- DimArray[0 .. (M - 2)] -->
+								<!-- dimArray[0 .. (M - 2)] -->
 								<SliceOp name="2">
 									<array>
 										<IdExpression>
 											<path>
-												<ConstVarRef name="DimArray"/>
+												<ConstVarRef name="dimArray"/>
 											</path>
 										</IdExpression>
 									</array>
