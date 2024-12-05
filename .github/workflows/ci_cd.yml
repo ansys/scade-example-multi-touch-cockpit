@@ -51,8 +51,8 @@ jobs:
           dependencies: "texlive-fonts-extra qpdf"
           check-links: false
 
-  standalone-executable:
-    name: "Rules Checker - Standalone Executable "
+  rules-checker:
+    name: "Rules Checker "
     runs-on: [self-hosted, 'SCADE']
     strategy:
       matrix:
@@ -77,12 +77,32 @@ jobs:
           project: 'model/scade-suite/GlassCockpit.etp'
           configuration: 'RulesChecker'
 
+  standalone-executable:
+    name: "Rules Checker - Standalone Executable "
+    runs-on: [self-hosted, 'SCADE']
+    strategy:
+      matrix:
+        os: [windows-latest]
+        scade-version: ['24.2']
+      fail-fast: false
+    needs: [rules-checker]
+    steps:
+      - name: "Install Git and clone project"
+        uses: actions/checkout@v4
+
+      - name: "Get SCADE installation directory"
+        uses: ansys/scade-actions/get-scade-dir@v2
+        id: get-scade-dir
+        with:
+          scade-version: "24.2"
+
       - name: "Generate Standalone"
         uses: ansys/scade-actions/suite-code@v2.1
         with:
           scade-dir: ${{ steps.get-scade-dir.outputs.scade-directory }}
           project: 'model/scade-suite/GlassCockpit.etp'
           configuration: 'Standalone'
+          build: true
 
       - name: "Upload folder to  artifacts"
         uses: actions/upload-artifact@v4
@@ -91,7 +111,6 @@ jobs:
           path: ./model/scade-suite/Standalone/standalone
           retention-days: 7
           if-no-files-found: error
-
 
 
   release:
