@@ -78,7 +78,7 @@ jobs:
           configuration: 'RulesChecker'
 
   standalone-executable:
-    name: "Rules Checker - Standalone Executable "
+    name: "Standalone Executable "
     runs-on: [self-hosted, 'SCADE']
     strategy:
       matrix:
