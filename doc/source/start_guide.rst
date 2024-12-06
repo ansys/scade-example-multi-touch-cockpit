@@ -18,24 +18,24 @@ to your local machine
 Generate, build, and execute standalone interface
 -------------------------------------------------
 
-#. Launch SCADE Display.
+#. Launch SCADE Suite.
 
-#. Select **File > Open** and then the ``model/scade-display/DisplayPanel.etp``
+#. Select **File > Open** and then the ``model/scade-suite/GlassCockpit.etp``
    project.
 
    .. raw:: html
 
       <p align="center">
-        <img src="_static/fileOpenP.png" alt="file open"/>
+        <img src="_static/scade-suite-file-open.png" alt="file open"/>
       </p>
 
-#. Select the ``Windows`` configuration to enable the generation of a standalone application
+#. Select the ``Standalone`` configuration to enable the generation of a standalone application
    running on Windows.
 
    .. raw:: html
 
       <p align="center">
-        <img src="_static/selectConf.png" alt="select conf"/>
+        <img src="_static/scade-suite-select-conf.png" alt="select conf"/>
       </p>
 
 #. Click **Execute**.
@@ -43,28 +43,6 @@ Generate, build, and execute standalone interface
    .. raw:: html
 
       <p align="center">
-        <img src="_static/execute.png" alt="execute"/>
+        <img src="_static/scade-suite-run.png" alt="run"/>
       </p>
 
-
-Test execution on host
-----------------------
-
-#. Launch SCADE Test.
-
-#. Select **File > Open** and then the ``model/scade-test/SmartBoilerControl_Test.etp``
-   SCADE test projet.
-
-   .. raw:: html
-
-      <p align="center">
-        <img src="_static/fileOpenSCADE.png" alt="file open scade"/>
-      </p>
-
-#. Select **Project > Test tool > Execute tests**.
-
-   .. raw:: html
-
-      <p align="center">
-        <img src="_static/executeTests.png" alt="execute tests"/>
-      </p>
