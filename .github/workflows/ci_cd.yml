@@ -51,8 +51,8 @@ jobs:
           dependencies: "texlive-fonts-extra qpdf"
           check-links: false
 
-  standalone-display:
-    name: "Standalone Display"
+  rules-checker:
+    name: "Rules Checker "
     runs-on: [self-hosted, 'SCADE']
     strategy:
       matrix:
@@ -70,27 +70,53 @@ jobs:
         with:
           scade-version: "24.2"
 
-      - name: "Generate Standalone"
-        uses: ansys/scade-actions/display-generate@v2
+      - name: "Check Rules"
+        uses: ansys/scade-actions/suite-rules@v2.1
         with:
           scade-dir: ${{ steps.get-scade-dir.outputs.scade-directory }}
-          project: 'model/scade-display/GCS.etp'
-          configuration: 'Windows'
+          project: 'model/scade-suite/GlassCockpit.etp'
+          configuration: 'RulesChecker'
+
+  standalone-executable:
+    name: "Standalone Executable "
+    runs-on: [self-hosted, 'SCADE']
+    strategy:
+      matrix:
+        os: [windows-latest]
+        scade-version: ['24.2']
+      fail-fast: false
+    needs: [rules-checker]
+    steps:
+      - name: "Install Git and clone project"
+        uses: actions/checkout@v4
+
+      - name: "Get SCADE installation directory"
+        uses: ansys/scade-actions/get-scade-dir@v2
+        id: get-scade-dir
+        with:
+          scade-version: "24.2"
+
+      - name: "Generate Standalone"
+        uses: ansys/scade-actions/suite-code@main
+        with:
+          scade-dir: ${{ steps.get-scade-dir.outputs.scade-directory }}
+          project: 'model/scade-suite/GlassCockpit.etp'
+          configuration: 'Standalone'
+          build: true
 
       - name: "Upload folder to  artifacts"
         uses: actions/upload-artifact@v4
         with:
           name:  ${{ env.ARTIFACT_NAME }}
-          path: ./model/scade-display/GCS_Exe
+          path: ./model/scade-suite/Standalone/standalone
           retention-days: 7
           if-no-files-found: error
-
 
 
   release:
     name: "Release project"
     runs-on: ubuntu-latest
-    needs: [standalone-display, doc-build]
+    needs: [standalone-executable, doc-build]
     if: github.event_name == 'push' && contains(github.ref, 'refs/tags')
     steps:
 
@@ -147,7 +173,7 @@ jobs:
     name: "Deploy development documentation"
     # Deploy development only when merging or pushing to the 'main' branch
     runs-on: ubuntu-latest
-    needs: [standalone-display, doc-build]
+    needs: [standalone-executable, doc-build]
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     steps:
       - uses: ansys/actions/doc-deploy-dev@v8
