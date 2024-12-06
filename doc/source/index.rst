@@ -11,11 +11,12 @@ for a modern Multi-touch cockpit panel.
    description
    brief
    start_guide
+   feature
    contributing
 .. grid:: 2
    :gutter: 3 3 4 4
 
-   .. grid-item-card:: Multi-touch cockpit interface :fas:`fa fa-tint`
+   .. grid-item-card:: Multi-touch cockpit interface :fas:`fa fa-fingerprint`
       :link: description
       :link-type: doc
 
@@ -33,6 +34,11 @@ for a modern Multi-touch cockpit panel.
 
       Get started with the Multi-touch cockpit interface.
 
+   .. grid-item-card:: Features overview :fas:`fa 	fa-rectangle-list`
+      :link: feature
+      :link-type: doc
+
+      Get started with the Multi-touch cockpit interface.
    .. grid-item-card:: Contribute :fas:`fa fa-people-group`
       :link: contributing
       :link-type: doc

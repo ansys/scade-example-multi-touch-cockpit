@@ -14,7 +14,7 @@
 *.bak
 # generation output directories
 model/scade-display/GCS_Exe/
-model/scade-suite/Standalone Executable/
+model/scade-suite/Standalone/
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
@@ -99,4 +99,5 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
 
