@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Procedure xmlns:test="http://www.esterel-technologies.com/ns/testenv/2" oid="996E754D-D533-433E-B331-D5C8C11501F0" name="Procedure1" operator="GCS.sgfx">
+	<testElements>
+		<Record oid="A04684EC-90D4-46A0-8233-7BBBB0EC2126" name="Record1" description="Record1">
+			<scenarios>
+				<Scenario oid="069723EF-203D-4435-B34F-1389E64B1A0C" persistAs="scenarios\scenario-2017-06.sss"/>
+			</scenarios>
+		</Record>
+	</testElements>
+</Procedure>

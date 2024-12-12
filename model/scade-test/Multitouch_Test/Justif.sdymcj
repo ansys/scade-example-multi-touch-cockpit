@@ -1,0 +1,11 @@
+# Example of justification file for Model Coverage for Display
+
+# Labels
+$AUTHOR = John Smith
+$MSG_NEG_COLOR = Negative color index not used
+
+# Justifications
+symbology_layer:/symbology_layer/finger2@output/pressed{decision#0:pressed2} ; T ; $MSG_NEG_COLOR; $AUTHOR
+AltitudeArrow:{init} ; B ; $MSG_NEG_COLOR; $AUTHOR
+ADI:/group/FixedRollMarks/rectangle ; B ; $MSG_NEG_COLOR; $AUTHOR
+ADI:/group/FixedAircraftSymbol/shape_4 ; B ; $MSG_NEG_COLOR; $AUTHOR

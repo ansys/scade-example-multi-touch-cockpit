@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project id="1" oid_count="299" defaultConfiguration="187">
+	<props>
+		<Prop id="3" name="@STUDIO:PRODUCT">
+			<value>QTE</value>
+		</Prop>
+		<Prop id="6" name="@STUDIO:TITLE">
+			<value>&lt;title&gt;</value>
+		</Prop>
+		<Prop id="7" name="@STUDIO:SUBTITLE">
+			<value>&lt;subtitle&gt;</value>
+		</Prop>
+		<Prop id="8" name="@STUDIO:DESCRIPTION">
+			<value>&lt;description&gt;</value>
+		</Prop>
+		<Prop id="9" name="@STUDIO:AUTHORS">
+			<value>&lt;authors&gt;</value>
+		</Prop>
+		<Prop id="10" name="@STUDIO:COMPAGNY">
+			<value>&lt;company&gt;</value>
+		</Prop>
+		<Prop id="11" name="@STUDIO:DATE">
+			<value>&lt;date&gt;</value>
+		</Prop>
+		<Prop id="12" name="@STUDIO:INDEX">
+			<value>&lt;index&gt;</value>
+		</Prop>
+		<Prop id="13" name="@STUDIO:REFERENCE">
+			<value>&lt;reference&gt;</value>
+		</Prop>
+		<Prop id="15" name="@STUDIO:TOOLCONF">
+			<value>Test Tool</value>
+			<value>187</value>
+			<value>208</value>
+			<value>224</value>
+		</Prop>
+		<Prop id="16" name="@STUDIO:TOOLCONF">
+			<value>Reporter</value>
+			<value>187</value>
+			<value>208</value>
+			<value>224</value>
+		</Prop>
+		<Prop id="19" name="@QTE:SOURCE_MODEL">
+			<value>../../scade-display/GCS.etp</value>
+		</Prop>
+		<Prop id="20" name="@QTE:COVERAGE_TOOL_VERSION">
+			<value>2</value>
+		</Prop>
+		<Prop id="51" name="@STUDIO:TOOLCONF">
+			<value>Timing and Stack Analysis Tools</value>
+			<value>187</value>
+			<value>208</value>
+			<value>224</value>
+		</Prop>
+		<Prop id="52" name="@STUDIO:TOOLCONF">
+			<value>DiffAnalyzer</value>
+			<value>187</value>
+			<value>208</value>
+			<value>224</value>
+		</Prop>
+		<Prop id="53" name="@STUDIO:TOOLCONF">
+			<value>Code Generator</value>
+			<value>187</value>
+			<value>208</value>
+			<value>224</value>
+		</Prop>
+		<Prop id="54" name="@STUDIO:TOOLCONF">
+			<value>Synchronization</value>
+			<value>187</value>
+			<value>208</value>
+			<value>224</value>
+		</Prop>
+		<Prop id="55" name="@STUDIO:TOOLCONF">
+			<value>Import/Export</value>
+			<value>187</value>
+			<value>208</value>
+			<value>224</value>
+		</Prop>
+		<Prop id="56" name="@STUDIO:TOOLCONF">
+			<value>Metrics and Rules Checker</value>
+			<value>187</value>
+			<value>208</value>
+			<value>224</value>
+		</Prop>
+		<Prop id="65" name="@STUDIO:TOOLCONF">
+			<value>Design Verifier</value>
+			<value>187</value>
+			<value>208</value>
+			<value>224</value>
+		</Prop>
+		<Prop id="188" name="@QTE:MC_INSTRUMENTED_NODES">
+			<value>symbology_layer</value>
+			<value>ADI</value>
+			<value>AltitudeArrow</value>
+			<value>AltitudeWidget</value>
+			<value>Animation</value>
+			<value>AnimationZoom</value>
+			<value>autoPilot</value>
+			<value>customToggleButton</value>
+			<value>DateAndTime</value>
+			<value>GetCycleDuration</value>
+			<value>HeadingWidget</value>
+			<value>Init</value>
+			<value>MAP</value>
+			<value>nav_btn</value>
+			<value>nav_info</value>
+			<value>newSlider</value>
+			<value>PFD</value>
+			<value>speed</value>
+			<value>SpeedArrow</value>
+			<value>SpeedWidget</value>
+			<value>statusAndMenu</value>
+			<value>vsi</value>
+			<value>warning_banner</value>
+			<value>color_table</value>
+			<value>line_width_table</value>
+			<value>line_stipple_table</value>
+			<value>font_table</value>
+			<value>texture_table</value>
+			<configuration>187</configuration>
+		</Prop>
+		<Prop id="189" name="@QTE:MC_INSTRUMENTATION_MODE">
+			<value>1</value>
+			<configuration>187</configuration>
+		</Prop>
+		<Prop id="190" name="@QTE:MC_NOT_INSTRUMENTED_NODES">
+			<value>ADI</value>
+			<configuration>187</configuration>
+		</Prop>
+		<Prop id="191" name="@QTE:SELECTED_PROCEDURES">
+			<value>ADI_Test_Proc</value>
+			<value>Procedure1</value>
+			<configuration>187</configuration>
+		</Prop>
+		<Prop id="192" name="@QTE:MC_TARGET_DIR">
+			<value>Test_MC</value>
+			<configuration>187</configuration>
+		</Prop>
+		<Prop id="193" name="@QTE:MC_HIDE_DISPLAY">
+			<value>true</value>
+			<configuration>187</configuration>
+		</Prop>
+		<Prop id="194" name="@QTE:TARGET_RTRT">
+			<value>-c89</value>
+			<configuration>187</configuration>
+		</Prop>
+		<Prop id="195" name="@RTRT:C89">
+			<value>true</value>
+			<configuration>187</configuration>
+		</Prop>
+		<Prop id="196" name="@QTE:MC_COVERAGE_CRITERION">
+			<value>MCDC</value>
+			<configuration>187</configuration>
+		</Prop>
+		<Prop id="197" name="@QTE:THG_CONF">
+			<value>Code</value>
+			<configuration>187</configuration>
+		</Prop>
+		<Prop id="198" name="@QTE:MC_CONF">
+			<value>Code</value>
+			<configuration>187</configuration>
+		</Prop>
+		<Prop id="199" name="@QTE:TARGET">
+			<value>RTRT</value>
+			<configuration>187</configuration>
+		</Prop>
+		<Prop id="200" name="@QTE:TEE_CONF">
+			<value>Code</value>
+			<configuration>187</configuration>
+		</Prop>
+		<Prop id="201" name="@QTE:USE_PROCEDURES_LIST">
+			<value>true</value>
+			<configuration>187</configuration>
+		</Prop>
+		<Prop id="202" name="@REPORTER:SCRIPT">
+			<value>Reporter/QteReport.tcl</value>
+			<configuration>187</configuration>
+		</Prop>
+		<Prop id="209" name="@REPORTER:SCRIPT">
+			<value>Reporter/QteReport.tcl</value>
+			<configuration>208</configuration>
+		</Prop>
+		<Prop id="210" name="@QTE:USE_PROCEDURES_LIST">
+			<value>true</value>
+			<configuration>208</configuration>
+		</Prop>
+		<Prop id="211" name="@QTE:TEE_CONF">
+			<value>Simulation</value>
+			<configuration>208</configuration>
+		</Prop>
+		<Prop id="212" name="@QTE:TARGET">
+			<value>RTRT</value>
+			<configuration>208</configuration>
+		</Prop>
+		<Prop id="213" name="@QTE:MC_CONF">
+			<value>Simulation</value>
+			<configuration>208</configuration>
+		</Prop>
+		<Prop id="214" name="@QTE:THG_CONF">
+			<value>Code</value>
+			<configuration>208</configuration>
+		</Prop>
+		<Prop id="215" name="@QTE:MC_COVERAGE_CRITERION">
+			<value>MCDC</value>
+			<configuration>208</configuration>
+		</Prop>
+		<Prop id="216" name="@RTRT:C89">
+			<value>true</value>
+			<configuration>208</configuration>
+		</Prop>
+		<Prop id="217" name="@QTE:TARGET_RTRT">
+			<value>-c89</value>
+			<configuration>208</configuration>
+		</Prop>
+		<Prop id="218" name="@QTE:MC_HIDE_DISPLAY">
+			<value>true</value>
+			<configuration>208</configuration>
+		</Prop>
+		<Prop id="219" name="@QTE:MC_TARGET_DIR">
+			<value>Test_MC</value>
+			<configuration>208</configuration>
+		</Prop>
+		<Prop id="220" name="@QTE:SELECTED_PROCEDURES">
+			<value>ADI_Test_Proc</value>
+			<configuration>208</configuration>
+		</Prop>
+		<Prop id="221" name="@QTE:MC_NOT_INSTRUMENTED_NODES">
+			<value>ADI</value>
+			<configuration>208</configuration>
+		</Prop>
+		<Prop id="222" name="@QTE:MC_INSTRUMENTATION_MODE">
+			<value>1</value>
+			<configuration>208</configuration>
+		</Prop>
+		<Prop id="223" name="@QTE:MC_INSTRUMENTED_NODES">
+			<value>ADI</value>
+			<configuration>208</configuration>
+		</Prop>
+		<Prop id="225" name="@REPORTER:SCRIPT">
+			<value>Reporter/QteReport.tcl</value>
+			<configuration>224</configuration>
+		</Prop>
+		<Prop id="226" name="@QTE:USE_PROCEDURES_LIST">
+			<value>true</value>
+			<configuration>224</configuration>
+		</Prop>
+		<Prop id="227" name="@QTE:TEE_CONF">
+			<value>Simulation</value>
+			<configuration>224</configuration>
+		</Prop>
+		<Prop id="228" name="@QTE:TARGET">
+			<value>RTRT</value>
+			<configuration>224</configuration>
+		</Prop>
+		<Prop id="229" name="@QTE:MC_CONF">
+			<value>Simulation</value>
+			<configuration>224</configuration>
+		</Prop>
+		<Prop id="230" name="@QTE:THG_CONF">
+			<value>Code</value>
+			<configuration>224</configuration>
+		</Prop>
+		<Prop id="231" name="@QTE:MC_COVERAGE_CRITERION">
+			<value>MCDC</value>
+			<configuration>224</configuration>
+		</Prop>
+		<Prop id="232" name="@RTRT:C89">
+			<value>true</value>
+			<configuration>224</configuration>
+		</Prop>
+		<Prop id="233" name="@QTE:TARGET_RTRT">
+			<value>-c89</value>
+			<configuration>224</configuration>
+		</Prop>
+		<Prop id="234" name="@QTE:MC_HIDE_DISPLAY">
+			<value>true</value>
+			<configuration>224</configuration>
+		</Prop>
+		<Prop id="235" name="@QTE:MC_TARGET_DIR">
+			<value>Test_MC</value>
+			<configuration>224</configuration>
+		</Prop>
+		<Prop id="236" name="@QTE:SELECTED_PROCEDURES">
+			<value>Procedure4</value>
+			<value>Procedure2</value>
+			<value>Procedure3</value>
+			<value>Procedure1</value>
+			<configuration>224</configuration>
+		</Prop>
+		<Prop id="237" name="@QTE:MC_NOT_INSTRUMENTED_NODES">
+			<value>ADI</value>
+			<configuration>224</configuration>
+		</Prop>
+		<Prop id="238" name="@QTE:MC_INSTRUMENTATION_MODE">
+			<value>1</value>
+			<configuration>224</configuration>
+		</Prop>
+		<Prop id="239" name="@QTE:MC_INSTRUMENTED_NODES">
+			<value>symbology_layer</value>
+			<value>AltitudeArrow</value>
+			<value>AltitudeWidget</value>
+			<value>Animation</value>
+			<value>AnimationZoom</value>
+			<value>autoPilot</value>
+			<value>customToggleButton</value>
+			<value>DateAndTime</value>
+			<value>GetCycleDuration</value>
+			<value>HeadingWidget</value>
+			<value>Init</value>
+			<value>MAP</value>
+			<value>nav_btn</value>
+			<value>nav_info</value>
+			<value>newSlider</value>
+			<value>PFD</value>
+			<value>speed</value>
+			<value>SpeedArrow</value>
+			<value>SpeedWidget</value>
+			<value>statusAndMenu</value>
+			<value>vsi</value>
+			<value>warning_banner</value>
+			<value>color_table</value>
+			<value>line_width_table</value>
+			<value>line_stipple_table</value>
+			<value>font_table</value>
+			<value>texture_table</value>
+			<configuration>224</configuration>
+		</Prop>
+		<Prop id="297" name="@QTE:PROCEDURES_LIST_SELECTION_MODE">
+			<value>0</value>
+			<configuration>187</configuration>
+		</Prop>
+	</props>
+	<roots>
+		<Folder id="4" extensions="etp;vsp" name="Model">
+			<elements>
+				<FileRef id="298" persistAs="..\..\scade-display\GCS.etp"/>
+			</elements>
+		</Folder>
+		<Folder id="5" extensions="stp" name="Tests">
+			<elements>
+				<FileRef id="21" persistAs="Procedure1.stp"/>
+				<FileRef id="36" persistAs="Procedure2.stp"/>
+				<FileRef id="40" persistAs="Procedure3.stp"/>
+				<FileRef id="121" persistAs="Procedure42.stp"/>
+				<FileRef id="184" persistAs="ADI_Test_Proc4.stp"/>
+			</elements>
+		</Folder>
+		<Folder id="22" extensions="sss;csv;sns" name="Scenarios">
+			<elements>
+				<FileRef id="290" persistAs="scenarios\Scenario14.sss"/>
+				<FileRef id="291" persistAs="scenarios\scenario-2017-06.sss"/>
+				<FileRef id="293" persistAs="scenarios\Test_Case4.sss"/>
+				<FileRef id="294" persistAs="scenarios\Test_Case6.sss"/>
+				<FileRef id="295" persistAs="scenarios\Scenario11.sss"/>
+			</elements>
+		</Folder>
+		<Folder id="27" extensions="trf" name="Results"/>
+		<Folder id="108" extensions="mcr" name="Model Coverage Results"/>
+		<Folder id="115" name="Justif">
+			<elements>
+				<FileRef id="116" persistAs="Justif.sdymcj">
+					<props>
+						<Prop id="299" name="@ARCHIVE:FILE_SELECTION">
+							<value>INCLUDE</value>
+						</Prop>
+					</props>
+				</FileRef>
+			</elements>
+		</Folder>
+	</roots>
+	<configurations>
+		<Configuration id="187" name="Test"/>
+		<Configuration id="208" name="Test_ADI"/>
+		<Configuration id="224" name="Test_ALL"/>
+	</configurations>
+</Project>

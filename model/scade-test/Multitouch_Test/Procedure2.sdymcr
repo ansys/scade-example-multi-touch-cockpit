@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelCoverageResult generationDate="2023-07-24 10:14:59" criterion="MCDC">
+	<traceabilityFile>
+		<TraceabilityFile pathname="Test_MC\Procedure2\aol_ADI.xcov,Test_MC\Procedure2\aol_AltitudeArrow.xcov,Test_MC\Procedure2\aol_AltitudeWidget.xcov,Test_MC\Procedure2\aol_Animation.xcov,Test_MC\Procedure2\aol_AnimationZoom.xcov,Test_MC\Procedure2\aol_autoPilot.xcov,Test_MC\Procedure2\aol_color_table.xcov,Test_MC\Procedure2\aol_customToggleButton_1.xcov,Test_MC\Procedure2\aol_customToggleButton_2.xcov,Test_MC\Procedure2\aol_customToggleButton_3.xcov,Test_MC\Procedure2\aol_customToggleButton_4.xcov,Test_MC\Procedure2\aol_DateAndTime.xcov,Test_MC\Procedure2\aol_font_table.xcov,Test_MC\Procedure2\aol_font_table1.xcov,Test_MC\Procedure2\aol_GetCycleDuration.xcov,Test_MC\Procedure2\aol_HeadingWidget.xcov,Test_MC\Procedure2\aol_Init.xcov,Test_MC\Procedure2\aol_line_stipple_table.xcov,Test_MC\Procedure2\aol_line_width_table.xcov,Test_MC\Procedure2\aol_MAP.xcov,Test_MC\Procedure2\aol_nav_btn.xcov,Test_MC\Procedure2\aol_nav_info.xcov,Test_MC\Procedure2\aol_newSlider.xcov,Test_MC\Procedure2\aol_PFD.xcov,Test_MC\Procedure2\aol_speed.xcov,Test_MC\Procedure2\aol_SpeedArrow.xcov,Test_MC\Procedure2\aol_SpeedWidget_1.xcov,Test_MC\Procedure2\aol_statusAndMenu_1.xcov,Test_MC\Procedure2\aol_symbology_layer.xcov,Test_MC\Procedure2\aol_texture_table.xcov,Test_MC\Procedure2\aol_vsi.xcov"/>
+	</traceabilityFile>
+	<infoFile>
+		<InfoFile pathname="Test_MC\Procedure2\Procedure2_coverage.sdyinfo"/>
+	</infoFile>
+</ModelCoverageResult>
