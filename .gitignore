@@ -15,6 +15,7 @@
 # generation output directories
 model/scade-display/GCS_Exe/
 model/scade-suite/Standalone/
+model/kcgdisplay/
 
 ### Python ###
 # Byte-compiled / optimized / DLL files

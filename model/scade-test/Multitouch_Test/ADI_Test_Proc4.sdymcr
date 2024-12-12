@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelCoverageResult generationDate="2023-07-24 10:14:44" criterion="MCDC">
+	<traceabilityFile>
+		<TraceabilityFile pathname="Test_MC\ADI_Test_Proc4\aol_ADI.xcov,Test_MC\ADI_Test_Proc4\aol_AltitudeArrow.xcov,Test_MC\ADI_Test_Proc4\aol_AltitudeWidget.xcov,Test_MC\ADI_Test_Proc4\aol_Animation.xcov,Test_MC\ADI_Test_Proc4\aol_AnimationZoom.xcov,Test_MC\ADI_Test_Proc4\aol_autoPilot.xcov,Test_MC\ADI_Test_Proc4\aol_color_table.xcov,Test_MC\ADI_Test_Proc4\aol_customToggleButton_1.xcov,Test_MC\ADI_Test_Proc4\aol_customToggleButton_2.xcov,Test_MC\ADI_Test_Proc4\aol_customToggleButton_3.xcov,Test_MC\ADI_Test_Proc4\aol_customToggleButton_4.xcov,Test_MC\ADI_Test_Proc4\aol_DateAndTime.xcov,Test_MC\ADI_Test_Proc4\aol_font_table.xcov,Test_MC\ADI_Test_Proc4\aol_font_table1.xcov,Test_MC\ADI_Test_Proc4\aol_GetCycleDuration.xcov,Test_MC\ADI_Test_Proc4\aol_HeadingWidget.xcov,Test_MC\ADI_Test_Proc4\aol_Init.xcov,Test_MC\ADI_Test_Proc4\aol_line_stipple_table.xcov,Test_MC\ADI_Test_Proc4\aol_line_width_table.xcov,Test_MC\ADI_Test_Proc4\aol_MAP.xcov,Test_MC\ADI_Test_Proc4\aol_nav_btn.xcov,Test_MC\ADI_Test_Proc4\aol_nav_info.xcov,Test_MC\ADI_Test_Proc4\aol_newSlider.xcov,Test_MC\ADI_Test_Proc4\aol_PFD.xcov,Test_MC\ADI_Test_Proc4\aol_speed.xcov,Test_MC\ADI_Test_Proc4\aol_SpeedArrow.xcov,Test_MC\ADI_Test_Proc4\aol_SpeedWidget_1.xcov,Test_MC\ADI_Test_Proc4\aol_statusAndMenu_1.xcov,Test_MC\ADI_Test_Proc4\aol_symbology_layer.xcov,Test_MC\ADI_Test_Proc4\aol_texture_table.xcov,Test_MC\ADI_Test_Proc4\aol_vsi.xcov"/>
+	</traceabilityFile>
+	<infoFile>
+		<InfoFile pathname="Test_MC\ADI_Test_Proc4\ADI_Test_Proc4_coverage.sdyinfo"/>
+	</infoFile>
+</ModelCoverageResult>
