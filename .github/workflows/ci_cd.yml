@@ -97,7 +97,7 @@ jobs:
           scade-version: "24.2"
 
       - name: "Generate Standalone"
-        uses: ansys/scade-actions/suite-code@main
+        uses: ansys/scade-actions/suite-code@v2
         with:
           scade-dir: ${{ steps.get-scade-dir.outputs.scade-directory }}
           project: 'model/scade-suite/GlassCockpit.etp'
