@@ -33,7 +33,7 @@ jobs:
     name: "Code style"
     runs-on: ubuntu-latest
     steps:
-      - uses: ansys/actions/code-style@v8
+      - uses: ansys/actions/code-style@v10
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           use-python-cache: false
@@ -42,7 +42,7 @@ jobs:
     name: "Documentation style"
     runs-on: ubuntu-latest
     steps:
-      - uses: ansys/actions/doc-style@v8
+      - uses: ansys/actions/doc-style@v10
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -52,7 +52,7 @@ jobs:
     timeout-minutes: 30
     needs: doc-style
     steps:
-      - uses: ansys/actions/doc-build@v8
+      - uses: ansys/actions/doc-build@v10
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           skip-install: true
@@ -61,7 +61,7 @@ jobs:
           check-links: false
 
   rules-checker:
-    name: "Rules Checker "
+    name: "Rules Checker"
     runs-on: [self-hosted, 'SCADE']
     strategy:
       matrix:
@@ -87,7 +87,7 @@ jobs:
           configuration: 'RulesChecker'
 
   standalone-executable:
-    name: "Standalone Executable "
+    name: "Standalone Executable"
     runs-on: [self-hosted, 'SCADE']
     strategy:
       matrix:

@@ -23,7 +23,7 @@ jobs:
     timeout-minutes: 30
     needs: doc-style
     steps:
-      - uses: ansys/actions/doc-build@v8
+      - uses: ansys/actions/doc-build@v10
         with:
           python-version: ${{ env.MAIN_PYTHON_VERSION }}
           skip-install: true
@@ -32,7 +32,7 @@ jobs:
           check-links: false
 
   rules-checker:
-    name: "Rules Checker "
+    name: "Rules Checker"
     runs-on: [self-hosted, 'SCADE']
     strategy:
       matrix:
@@ -58,7 +58,7 @@ jobs:
           configuration: 'RulesChecker'
 
   standalone-executable:
-    name: "Standalone Executable "
+    name: "Standalone Executable"
     runs-on: [self-hosted, 'SCADE']
     strategy:
       matrix:
@@ -97,7 +97,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [standalone-executable, doc-build]
     steps:
-      - uses: ansys/actions/doc-deploy-dev@v8
+      - uses: ansys/actions/doc-deploy-dev@v10
         with:
           doc-artifact-name: 'documentation-html'
           cname: ${{ env.DOCUMENTATION_CNAME }}
