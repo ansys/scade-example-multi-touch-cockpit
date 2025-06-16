@@ -1,0 +1,42 @@
+name: main
+on:
+  push:
+    branches:
+      - main
+
+env:
+  MAIN_PYTHON_VERSION: '3.10'
+  DOCUMENTATION_CNAME: 'multi-touch-cockpit.examples.scade.docs.pyansys.com'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+
+  doc-build:
+    name: "Build documentation"
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    needs: doc-style
+    steps:
+      - uses: ansys/actions/doc-build@v8
+        with:
+          python-version: ${{ env.MAIN_PYTHON_VERSION }}
+          skip-install: true
+          use-python-cache: false
+          dependencies: "texlive-fonts-extra qpdf"
+          check-links: false
+
+  doc-deploy-dev:
+    name: "Deploy development documentation"
+    runs-on: ubuntu-latest
+    needs: doc-build
+    steps:
+      - uses: ansys/actions/doc-deploy-dev@v8
+        with:
+          doc-artifact-name: 'documentation-html'
+          cname: ${{ env.DOCUMENTATION_CNAME }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          bot-user: ${{ secrets.PYANSYS_CI_BOT_USERNAME }}
+          bot-email: ${{ secrets.PYANSYS_CI_BOT_EMAIL }}
