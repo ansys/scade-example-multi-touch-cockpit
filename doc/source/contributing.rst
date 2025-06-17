@@ -52,7 +52,7 @@ source and enhance it.
    .. code:: bash
 
       python -m pip install -U pip     # Upgrading pip
-      python -m pip install -r requierements/doc.txt     # for building the documentation
+      python -m pip install -r requirements/requirements_doc.txt     # for building the documentation
 
 Use ``pre-commit``
 ^^^^^^^^^^^^^^^^^^
