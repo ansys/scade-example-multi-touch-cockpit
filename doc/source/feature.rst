@@ -18,8 +18,8 @@ The  example includes two main pages that users can swipe between:
 
 2. Map Page:
 
-   * Zoom Functionality: Use pinch gestures to zoom in and out of the map.
-   * Rotation: Rotate the map using two-finger touch gestures for better orientation.
+  * Zoom Functionality: Use pinch gestures to zoom in and out of the map.
+  * Rotation: Rotate the map using two-finger touch gestures for better orientation.
 
 Day/Night Mode
 --------------
@@ -34,8 +34,8 @@ Autopilot Page
 
 The **Autopilot Page** can be activated via the **Settings Menu**:
 
- * When enabled, this page replaces the Map Page.
- * Provides a control interface for autopilot settings and monitoring.
+  * When enabled, this page replaces the Map Page.
+  * Provides a control interface for autopilot settings and monitoring.
 
 Touch Interactions
 ------------------
