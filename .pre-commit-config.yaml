@@ -4,6 +4,19 @@ exclude: |
 
 repos:
 
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.12.0
+    hooks:
+      - id: ruff-check
+      - id: ruff-format
+
+  - repo: https://github.com/adamchainz/blacken-docs
+    rev: 1.19.1
+    hooks:
+    -   id: blacken-docs
+        additional_dependencies:
+        - black==22.12.0
+
   - repo: https://github.com/ansys/pre-commit-hooks
     rev: v0.5.2
     hooks:
