@@ -26,7 +26,6 @@ jobs:
           skip-install: true
           use-python-cache: false
           dependencies: "texlive-fonts-extra qpdf"
-          check-links: false
 
   doc-deploy-dev:
     name: "Deploy development documentation"
