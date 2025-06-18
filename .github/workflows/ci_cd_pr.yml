@@ -1,0 +1,122 @@
+name: pull-request
+on:
+  pull_request:
+
+env:
+  MAIN_PYTHON_VERSION: '3.10'
+  DOCUMENTATION_CNAME: 'multi-touch-cockpit.examples.scade.docs.pyansys.com'
+  LIBRARY_NAME: 'ansys-scade-examples-multi-touch-cockpit'
+  ARTIFACT_NAME: 'MultitouchCockpitStandaloneExecutable'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+
+  label-syncer:
+    name: Syncer
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: actions/checkout@v4
+      - uses: micnncim/action-label-syncer@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: "Label pull-request"
+        uses: actions/labeler@v5.0.0
+        with:
+         repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+  code-style:
+    name: "Code style"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ansys/actions/code-style@v10
+        with:
+          python-version: ${{ env.MAIN_PYTHON_VERSION }}
+          use-python-cache: false
+
+  doc-style:
+    name: "Documentation style"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ansys/actions/doc-style@v10
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+  doc-build:
+    name: "Build documentation"
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    needs: doc-style
+    steps:
+      - uses: ansys/actions/doc-build@v10
+        with:
+          python-version: ${{ env.MAIN_PYTHON_VERSION }}
+          skip-install: true
+          use-python-cache: false
+          dependencies: "texlive-fonts-extra qpdf"
+          check-links: false
+
+  rules-checker:
+    name: "Rules Checker"
+    runs-on: [self-hosted, 'SCADE']
+    strategy:
+      matrix:
+        os: [windows-latest]
+        scade-version: ['24.2']
+      fail-fast: false
+    needs: [code-style]
+    steps:
+      - name: "Install Git and clone project"
+        uses: actions/checkout@v4
+
+      - name: "Get SCADE installation directory"
+        uses: ansys/scade-actions/get-scade-dir@v2
+        id: get-scade-dir
+        with:
+          scade-version: "24.2"
+
+      - name: "Check Rules"
+        uses: ansys/scade-actions/suite-rules@v2.1
+        with:
+          scade-dir: ${{ steps.get-scade-dir.outputs.scade-directory }}
+          project: 'model/scade-suite/GlassCockpit.etp'
+          configuration: 'RulesChecker'
+
+  standalone-executable:
+    name: "Standalone Executable"
+    runs-on: [self-hosted, 'SCADE']
+    strategy:
+      matrix:
+        os: [windows-latest]
+        scade-version: ['24.2']
+      fail-fast: false
+    needs: [rules-checker]
+    steps:
+      - name: "Install Git and clone project"
+        uses: actions/checkout@v4
+
+      - name: "Get SCADE installation directory"
+        uses: ansys/scade-actions/get-scade-dir@v2
+        id: get-scade-dir
+        with:
+          scade-version: "24.2"
+
+      - name: "Generate Standalone"
+        uses: ansys/scade-actions/suite-code@v2
+        with:
+          scade-dir: ${{ steps.get-scade-dir.outputs.scade-directory }}
+          project: 'model/scade-suite/GlassCockpit.etp'
+          configuration: 'Standalone'
+          build: true
+
+      - name: "Upload folder to  artifacts"
+        uses: actions/upload-artifact@v4
+        with:
+          name:  ${{ env.ARTIFACT_NAME }}
+          path: ./model/scade-suite/Standalone/standalone
+          retention-days: 7
+          if-no-files-found: error
