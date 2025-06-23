@@ -17,6 +17,14 @@ concurrency:
 
 jobs:
 
+  doc-style:
+    name: "Documentation style"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ansys/actions/doc-style@v10
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
   doc-build:
     name: "Build documentation"
     runs-on: ubuntu-latest
@@ -39,7 +47,6 @@ jobs:
         os: [windows-latest]
         scade-version: ['24.2']
       fail-fast: false
-    needs: [code-style]
     steps:
       - name: "Install Git and clone project"
         uses: actions/checkout@v4
