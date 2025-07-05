@@ -1,0 +1,12 @@
+[
+  {
+    "name": "dev",
+    "version": "dev",
+    "url": "https://multi-touch-cockpit.examples.scade.docs.pyansys.com/version/dev/"
+  },
+  {
+    "name": "1.0 (stable)",
+    "version": "1.0",
+    "url": "https://multi-touch-cockpit.examples.scade.docs.pyansys.com/version/stable/"
+  }
+]
