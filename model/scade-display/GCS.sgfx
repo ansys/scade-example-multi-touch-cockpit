@@ -1187,77 +1187,25 @@
                                 </tessellate>
                             </properties>
                         </rectangle>
-                        <rectangle oid="6539b1a4-2955-43c3-8643-2a814f739116">
+                        <bitmap oid="4635125f-48f2-4fbc-a125-d5735e951c7c">
                             <pathFromRoot value="1,5"/>
                             <properties name="ansys">
                                 <visible>
                                     <init>true</init>
                                 </visible>
-                                <firstPoint>
+                                <position>
                                     <x>
-                                        <init>-637.0</init>
+                                        <init>-639.0</init>
                                     </x>
                                     <y>
-                                        <init>-383.0</init>
+                                        <init>-398.0</init>
                                     </y>
-                                </firstPoint>
-                                <thirdPoint>
-                                    <x>
-                                        <init>-486.0</init>
-                                    </x>
-                                    <y>
-                                        <init>-331.0</init>
-                                    </y>
-                                </thirdPoint>
-                                <lineWidth>
-                                    <init>0</init>
-                                </lineWidth>
-                                <lineStipple>
-                                    <init>0</init>
-                                </lineStipple>
-                                <lineCap>
-                                    <init>round</init>
-                                </lineCap>
-                                <haloing>
-                                    <init>false</init>
-                                </haloing>
-                                <haloColor>
-                                    <init>-1</init>
-                                </haloColor>
-                                <outlineColor>
-                                    <init>-1</init>
-                                </outlineColor>
-                                <outlineOpacity>
-                                    <init>255</init>
-                                </outlineOpacity>
-                                <fillColor>
-                                    <init>-1</init>
-                                </fillColor>
-                                <fillOpacity>
-                                    <init>255</init>
-                                </fillOpacity>
-                                <polygonSmooth>
-                                    <init>true</init>
-                                </polygonSmooth>
-                                <textureControl>
-                                    <init>false</init>
-                                </textureControl>
-                                <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
-                                    <textureId>
-                                        <init>102</init>
-                                    </textureId>
-                                </texture>
-                                <gradient>
-                                    <init>-1</init>
-                                </gradient>
-                                <modulate>
-                                    <init>false</init>
-                                </modulate>
-                                <tessellate>
-                                    <init>false</init>
-                                </tessellate>
+                                </position>
+                                <textureId>
+                                    <init>102</init>
+                                </textureId>
                             </properties>
-                        </rectangle>
+                        </bitmap>
                     </children>
                 </container>
                 <container oid="a925e021-eabb-4bd9-89bd-644748b98a16">
@@ -4964,5 +4912,5 @@
     </children>
 </specification>
 
-<!-- crc32 : 4239869854 -->
+<!-- crc32 : 2203509111 -->
 

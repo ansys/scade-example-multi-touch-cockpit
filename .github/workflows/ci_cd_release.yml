@@ -53,7 +53,7 @@ jobs:
     strategy:
       matrix:
         os: [windows-latest]
-        scade-version: ['24.2']
+        scade-version: ['25.2']
       fail-fast: false
     needs: [code-style]
     steps:
@@ -64,7 +64,7 @@ jobs:
         uses: ansys/scade-actions/get-scade-dir@v2
         id: get-scade-dir
         with:
-          scade-version: "24.2"
+          scade-version: "25.2"
 
       - name: "Check Rules"
         uses: ansys/scade-actions/suite-rules@v2.1
@@ -79,7 +79,7 @@ jobs:
     strategy:
       matrix:
         os: [windows-latest]
-        scade-version: ['24.2']
+        scade-version: ['25.2']
       fail-fast: false
     needs: [rules-checker]
     steps:
@@ -90,7 +90,7 @@ jobs:
         uses: ansys/scade-actions/get-scade-dir@v2
         id: get-scade-dir
         with:
-          scade-version: "24.2"
+          scade-version: "25.2"
 
       - name: "Generate Standalone"
         uses: ansys/scade-actions/suite-code@v2

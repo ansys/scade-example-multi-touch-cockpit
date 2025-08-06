@@ -570,7 +570,7 @@
                             </angle>
                         </rotate>
                         <orientation clockwise="false"/>
-                        <static editorLinked="true" generateStaticSequence="true" maxX="57.312523" maxY="193.18748" minX="-23.0" minY="163.0">
+                        <static editorLinked="true" generateStaticSequence="true" maxX="39.5" maxY="193.0" minX="-23.0" minY="163.0">
                             <init>false</init>
                         </static>
                     </properties>
@@ -689,5 +689,5 @@
     </children>
 </object>
 
-<!-- crc32 : 414027839 -->
+<!-- crc32 : 4129583092 -->
 
