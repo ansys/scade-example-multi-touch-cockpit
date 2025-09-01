@@ -74,13 +74,13 @@ jobs:
         uses: actions/checkout@v4
 
       - name: "Get SCADE installation directory"
-        uses: ansys/scade-actions/get-scade-dir@v2
+        uses: ansys/scade-actions/get-scade-dir@v2.2
         id: get-scade-dir
         with:
           scade-version: "25.2"
 
       - name: "Check Rules"
-        uses: ansys/scade-actions/suite-rules@v2.1
+        uses: ansys/scade-actions/suite-rules@v2.2
         with:
           scade-dir: ${{ steps.get-scade-dir.outputs.scade-directory }}
           project: 'model/scade-suite/GlassCockpit.etp'
@@ -100,13 +100,13 @@ jobs:
         uses: actions/checkout@v4
 
       - name: "Get SCADE installation directory"
-        uses: ansys/scade-actions/get-scade-dir@v2
+        uses: ansys/scade-actions/get-scade-dir@v2.2
         id: get-scade-dir
         with:
           scade-version: "25.2"
 
       - name: "Generate Standalone"
-        uses: ansys/scade-actions/suite-code@v2
+        uses: ansys/scade-actions/suite-code@v2.2
         with:
           scade-dir: ${{ steps.get-scade-dir.outputs.scade-directory }}
           project: 'model/scade-suite/GlassCockpit.etp'
