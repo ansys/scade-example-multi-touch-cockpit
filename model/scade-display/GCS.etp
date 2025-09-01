@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project id="1" oid_count="243">
+<Project id="1" oid_count="244">
 	<props>
 		<Prop id="1" name="@STUDIO:PRODUCT">
 			<value>DISPLAY</value>
 		</Prop>
 		<Prop id="3" name="@SDY:RELEASE">
-			<value>24.1</value>
+			<value>25.2</value>
 		</Prop>
 		<Prop id="4" name="@SDY:RATIO">
 			<value>1.0</value>
@@ -139,7 +139,6 @@
 		</Prop>
 		<Prop id="73" name="@SDY:@SDYREP:OUTPUT">
 			<value>%ModelName%_Report</value>
-			<configuration>70</configuration>
 		</Prop>
 		<Prop id="74" name="@SDYREP:INTERNATIONALIZATION">
 			<configuration>70</configuration>
@@ -308,6 +307,10 @@ $(CreatedDate)</value>
 			<value>0</value>
 			<value>1</value>
 			<configuration>21</configuration>
+		</Prop>
+		<Prop id="244" name="@SDYREP:OUTPUT">
+			<value>%ModelName%_Report</value>
+			<configuration>70</configuration>
 		</Prop>
 	</props>
 	<roots>

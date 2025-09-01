@@ -10,7 +10,7 @@ Multi-touch cockpit interface
    :target: https://www.ansys.com/fr-fr/products/embedded-software/
    :alt: Ansys SCADE Suite, Display, Test
 
-.. |version| image:: https://img.shields.io/badge/version-2024R2-blue
+.. |version| image:: https://img.shields.io/badge/version-2025R2-blue
    :alt: version
 
 .. |license| image:: https://img.shields.io/badge/License-MIT-yellow.svg
