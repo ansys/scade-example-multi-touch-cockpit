@@ -58,7 +58,7 @@ jobs:
     needs: [code-style]
     steps:
       - name: "Install Git and clone project"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: "Get SCADE installation directory"
         uses: ansys/scade-actions/get-scade-dir@v2.2
@@ -84,7 +84,7 @@ jobs:
     needs: [rules-checker]
     steps:
       - name: "Install Git and clone project"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: "Get SCADE installation directory"
         uses: ansys/scade-actions/get-scade-dir@v2.2
@@ -115,7 +115,7 @@ jobs:
     steps:
 
     - name: "Download HTML documentation"
-      uses: actions/download-artifact@v4
+      uses: actions/download-artifact@v5
       with:
         name: documentation-html
         path: documentation-html
@@ -127,7 +127,7 @@ jobs:
         dest: documentation-html.zip
 
     - name: "Download PDF documentation"
-      uses: actions/download-artifact@v4
+      uses: actions/download-artifact@v5
       with:
         name: documentation-pdf
         path: documentation-pdf
@@ -139,7 +139,7 @@ jobs:
         dest: documentation-pdf.zip
 
     - name: "Download Standalone"
-      uses: actions/download-artifact@v4
+      uses: actions/download-artifact@v5
       with:
         name: ${{ env.ARTIFACT_NAME }}
         path: ${{ env.ARTIFACT_NAME }}
