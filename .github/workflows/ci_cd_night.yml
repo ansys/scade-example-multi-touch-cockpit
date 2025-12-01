@@ -49,7 +49,7 @@ jobs:
       fail-fast: false
     steps:
       - name: "Install Git and clone project"
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: "Get SCADE installation directory"
         uses: ansys/scade-actions/get-scade-dir@v2.2
@@ -76,7 +76,7 @@ jobs:
     needs: [rules-checker]
     steps:
       - name: "Install Git and clone project"
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: "Get SCADE installation directory"
         uses: ansys/scade-actions/get-scade-dir@v2.2
