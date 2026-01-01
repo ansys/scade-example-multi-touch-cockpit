@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - uses: micnncim/action-label-syncer@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -71,7 +71,7 @@ jobs:
     needs: [code-style]
     steps:
       - name: "Install Git and clone project"
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: "Get SCADE installation directory"
         uses: ansys/scade-actions/get-scade-dir@v2.2
@@ -97,7 +97,7 @@ jobs:
     needs: [rules-checker]
     steps:
       - name: "Install Git and clone project"
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: "Get SCADE installation directory"
         uses: ansys/scade-actions/get-scade-dir@v2.2
@@ -114,7 +114,7 @@ jobs:
           build: true
 
       - name: "Upload folder to  artifacts"
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name:  ${{ env.ARTIFACT_NAME }}
           path: ./model/scade-suite/Standalone/standalone
