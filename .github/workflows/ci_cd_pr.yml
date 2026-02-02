@@ -3,7 +3,7 @@ on:
   pull_request:
 
 env:
-  MAIN_PYTHON_VERSION: '3.10'
+  MAIN_PYTHON_VERSION: '3.11'
   DOCUMENTATION_CNAME: 'multi-touch-cockpit.examples.scade.docs.pyansys.com'
   LIBRARY_NAME: 'ansys-scade-examples-multi-touch-cockpit'
   ARTIFACT_NAME: 'MultitouchCockpitStandaloneExecutable'
