@@ -9,6 +9,7 @@ env:
   DOCUMENTATION_CNAME: 'multi-touch-cockpit.examples.scade.docs.pyansys.com'
   LIBRARY_NAME: 'ansys-scade-examples-multi-touch-cockpit'
   ARTIFACT_NAME: 'MultitouchCockpitStandaloneExecutable'
+  SCADE_VERSION: '26.1'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -53,7 +54,7 @@ jobs:
     strategy:
       matrix:
         os: [windows-latest]
-        scade-version: ['25.2']
+        scade-version: ${{ env.SCADE_VERSION }}
       fail-fast: false
     needs: [code-style]
     steps:
@@ -64,7 +65,7 @@ jobs:
         uses: ansys/scade-actions/get-scade-dir@v3.0
         id: get-scade-dir
         with:
-          scade-version: "25.2"
+          scade-version: ${{ env.SCADE_VERSION }}
 
       - name: "Check Rules"
         uses: ansys/scade-actions/suite-rules@v3.0
@@ -79,7 +80,7 @@ jobs:
     strategy:
       matrix:
         os: [windows-latest]
-        scade-version: ['25.2']
+        scade-version: ${{ env.SCADE_VERSION }}
       fail-fast: false
     needs: [rules-checker]
     steps:
@@ -90,7 +91,7 @@ jobs:
         uses: ansys/scade-actions/get-scade-dir@v3.0
         id: get-scade-dir
         with:
-          scade-version: "25.2"
+          scade-version: ${{ env.SCADE_VERSION }}
 
       - name: "Generate Standalone"
         uses: ansys/scade-actions/suite-code@v3.0
