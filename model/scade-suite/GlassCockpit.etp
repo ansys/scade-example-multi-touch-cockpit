@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project id="1" oid_count="524" defaultConfiguration="12">
+<Project id="1" oid_count="525" defaultConfiguration="12">
 	<props>
 		<Prop id="10" name="@STUDIO:PRODUCT">
 			<value>SC</value>
@@ -527,6 +527,10 @@
 		<Prop id="461" name="@GENERATOR:ROOTNODE">
 			<value>GlassCockpit</value>
 			<configuration>12</configuration>
+		</Prop>
+		<Prop id="525" name="@GENERATOR:TARGET_ADAPTOR">
+			<value>SCADE Display Co-execution</value>
+			<configuration>302</configuration>
 		</Prop>
 	</props>
 	<roots>
