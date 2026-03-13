@@ -227,7 +227,7 @@
 			<configuration>302</configuration>
 		</Prop>
 		<Prop id="308" name="@GENERATOR:GENERATOR">
-			<value>C QUAL663</value>
+			<value>ADA QUAL663</value>
 			<configuration>302</configuration>
 		</Prop>
 		<Prop id="309" name="@GENERATOR:TARGET_DIR">
@@ -268,7 +268,7 @@
 			<configuration>302</configuration>
 		</Prop>
 		<Prop id="344" name="@GENERATOR:TARGET_ADAPTOR">
-			<value>SCADE Display Co-execution</value>
+			<value></value>
 			<configuration>302</configuration>
 		</Prop>
 		<Prop id="345" name="@GENERATOR:DISPLAY_SYNC_PANELS">
