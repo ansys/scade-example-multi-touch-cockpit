@@ -292,7 +292,7 @@ $(CreatedDate)</value>
 			<value>definitions.dgfx</value>
 		</Prop>
 		<Prop id="235" name="@SDY:SUITEKCG">
-			<value>C QUAL661</value>
+			<value>C QUAL663</value>
 			<configuration>42</configuration>
 		</Prop>
 		<Prop id="236" name="@SDY:MINPRIORITY">
