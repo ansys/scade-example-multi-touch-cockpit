@@ -227,7 +227,7 @@
 			<configuration>302</configuration>
 		</Prop>
 		<Prop id="308" name="@GENERATOR:GENERATOR">
-			<value>ADA QUAL663</value>
+			<value>C QUAL663</value>
 			<configuration>302</configuration>
 		</Prop>
 		<Prop id="309" name="@GENERATOR:TARGET_DIR">
@@ -265,10 +265,6 @@
 		<Prop id="333" name="@GENERATOR:NOT_EXPANDED_NODES">
 			<value>Triangular_Simulation</value>
 			<value>PFD::PFD_Compute</value>
-			<configuration>302</configuration>
-		</Prop>
-		<Prop id="344" name="@GENERATOR:TARGET_ADAPTOR">
-			<value></value>
 			<configuration>302</configuration>
 		</Prop>
 		<Prop id="345" name="@GENERATOR:DISPLAY_SYNC_PANELS">
