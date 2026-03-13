@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project id="1" oid_count="244">
+<Project id="1" oid_count="245">
 	<props>
 		<Prop id="1" name="@STUDIO:PRODUCT">
 			<value>DISPLAY</value>
@@ -311,6 +311,10 @@ $(CreatedDate)</value>
 		<Prop id="244" name="@SDYREP:OUTPUT">
 			<value>%ModelName%_Report</value>
 			<configuration>70</configuration>
+		</Prop>
+		<Prop id="245" name="@SDY:SUITEKCG">
+			<value>C QUAL663</value>
+			<configuration>34</configuration>
 		</Prop>
 	</props>
 	<roots>
