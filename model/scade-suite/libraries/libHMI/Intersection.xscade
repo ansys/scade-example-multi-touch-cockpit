@@ -495,7 +495,7 @@
 								</EquationGE>
 								<EquationGE presentable="!ed/58df/3486/23B4/5a1d33842f3a">
 									<position>
-										<Point x="2593" y="6668"/>
+										<Point x="2593" y="6932"/>
 									</position>
 									<size>
 										<Size width="265" height="502"/>
@@ -503,7 +503,7 @@
 								</EquationGE>
 								<EquationGE presentable="!ed/58eb/3486/23B4/5a1d33875e0f">
 									<position>
-										<Point x="4471" y="6006"/>
+										<Point x="4657" y="6747"/>
 									</position>
 									<size>
 										<Size width="1006" height="662"/>
@@ -513,16 +513,16 @@
 									<positions>
 										<Point x="2805" y="5953"/>
 										<Point x="3625" y="5953"/>
-										<Point x="3625" y="6218"/>
-										<Point x="4471" y="6218"/>
+										<Point x="3625" y="6959"/>
+										<Point x="4657" y="6959"/>
 									</positions>
 								</Edge>
 								<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/58df/3486/23B4/5a1d33842f3a" dstEquation="!ed/58eb/3486/23B4/5a1d33875e0f">
 									<positions>
-										<Point x="2858" y="6932"/>
-										<Point x="3651" y="6932"/>
-										<Point x="3651" y="6456"/>
-										<Point x="4471" y="6456"/>
+										<Point x="2858" y="7197"/>
+										<Point x="3757" y="7197"/>
+										<Point x="3757" y="7197"/>
+										<Point x="4657" y="7197"/>
 									</positions>
 								</Edge>
 								<EquationGE presentable="!ed/58f7/3486/23B4/5a1d33903178">
@@ -546,10 +546,10 @@
 								</Edge>
 								<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/58eb/3486/23B4/5a1d33875e0f" dstEquation="!ed/58f7/3486/23B4/5a1d33903178">
 									<positions>
-										<Point x="5477" y="6350"/>
-										<Point x="5477" y="6350"/>
-										<Point x="5477" y="6350"/>
-										<Point x="5477" y="6350"/>
+										<Point x="5662" y="7091"/>
+										<Point x="6350" y="7091"/>
+										<Point x="6350" y="6350"/>
+										<Point x="6350" y="6350"/>
 										<Point x="7541" y="6350"/>
 										<Point x="7541" y="4921"/>
 										<Point x="9604" y="4921"/>
