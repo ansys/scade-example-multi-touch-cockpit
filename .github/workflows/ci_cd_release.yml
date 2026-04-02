@@ -121,7 +121,7 @@ jobs:
         path: documentation-html
 
     - name: "Zip HTML documentation"
-      uses: vimtor/action-zip@v1.2
+      uses: vimtor/action-zip@v1.3
       with:
         files: documentation-html
         dest: documentation-html.zip
@@ -133,7 +133,7 @@ jobs:
         path: documentation-pdf
 
     - name: "Zip PDF documentation"
-      uses: vimtor/action-zip@v1.2
+      uses: vimtor/action-zip@v1.3
       with:
         files: documentation-pdf
         dest: documentation-pdf.zip
@@ -145,7 +145,7 @@ jobs:
         path: ${{ env.ARTIFACT_NAME }}
 
     - name: "Zip Standalone"
-      uses: vimtor/action-zip@v1.2
+      uses: vimtor/action-zip@v1.3
       with:
         files: ${{ env.ARTIFACT_NAME }}
         dest: ${{ env.ARTIFACT_NAME }}.zip
