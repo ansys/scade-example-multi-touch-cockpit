@@ -32,7 +32,7 @@ repos:
           .*\.scade|
           .*\.xscade|
           .*\.sct|
-          .*\.ann|
+          .*\.stt|
           .*\.swan.?
       )$
     args: ["--ignore-words", ".codespellignore" ]
