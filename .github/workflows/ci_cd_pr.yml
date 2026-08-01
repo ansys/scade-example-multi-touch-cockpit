@@ -19,13 +19,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - uses: micnncim/action-label-syncer@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: "Label pull-request"
-        uses: actions/labeler@v6.1.0
+        uses: actions/labeler@v7.0.0
         with:
          repo-token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -71,7 +71,7 @@ jobs:
     needs: [code-style]
     steps:
       - name: "Install Git and clone project"
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: "Get SCADE installation directory"
         uses: ansys/scade-actions/get-scade-dir@v3.0
@@ -97,7 +97,7 @@ jobs:
     needs: [rules-checker]
     steps:
       - name: "Install Git and clone project"
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: "Get SCADE installation directory"
         uses: ansys/scade-actions/get-scade-dir@v3.0
